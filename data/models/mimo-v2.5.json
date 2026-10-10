@@ -65,6 +65,11 @@
       "title": "config.json | XiaomiMiMo/MiMo-V2-Flash (Hugging Face)",
       "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2-Flash/blob/main/config.json",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "MiMo-V2.5 config.json | Hugging Face",
+      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/main/config.json",
+      "retrieved_at": "2026-10-10"
     }
   ],
   "providers": [

@@ -11,8 +11,8 @@
   },
   "limits": {
     "context": null,
-    "input": null,
-    "output": null
+    "input": 131072,
+    "output": 8192
   },
   "modalities": {
     "input": [

@@ -11,7 +11,7 @@
   },
   "limits": {
     "context": null,
-    "input": null,
+    "input": 1024,
     "output": null
   },
   "modalities": {
