@@ -1,7 +1,7 @@
 {
   "id": "sonic-turbo",
   "object": "model",
-  "created": null,
+  "created": 1741305600,
   "owned_by": "cartesia",
   "name": "Sonic Turbo",
   "api": {
@@ -30,7 +30,7 @@
   "features": [],
   "info": {
     "status": "deprecated",
-    "release_date": null,
+    "release_date": "2025-03-07",
     "knowledge_cutoff": null,
     "description": "Cartesia low-latency text-to-speech model for 9 languages; stops working after 2026-10-20, migrate to Sonic 3.6.",
     "docs": "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models",
