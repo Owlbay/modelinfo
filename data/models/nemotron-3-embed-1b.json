@@ -1,0 +1,63 @@
+{
+  "id": "nemotron-3-embed-1b",
+  "object": "model",
+  "created": 1784160000,
+  "owned_by": "nvidia",
+  "name": "Nemotron 3 Embed 1B",
+  "api": {
+    "types": [
+      "embeddings"
+    ]
+  },
+  "limits": {
+    "context": 32768,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": "2026-07-16",
+    "knowledge_cutoff": null,
+    "description": "1B embedding model for semantic search, retrieval and RAG applications.",
+    "docs": "https://build.nvidia.com/nvidia/nemotron-3-embed-1b/modelcard",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "nvidia/nemotron-3-embed-1b"
+  ],
+  "sources": [
+    {
+      "title": "nemotron-3-embed-1b Model Card | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3-embed-1b/modelcard",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "nvidia / nemotron-3-embed-1b | NVIDIA NIM API Reference",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-3-embed-1b",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "nvidia",
+      "model": "nvidia/nemotron-3-embed-1b",
+      "base_url": "https://integrate.api.nvidia.com",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

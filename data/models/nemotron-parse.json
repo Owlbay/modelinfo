@@ -1,0 +1,66 @@
+{
+  "id": "nemotron-parse",
+  "object": "model",
+  "created": 1761609600,
+  "owned_by": "nvidia",
+  "name": "Nemotron Parse",
+  "api": {
+    "types": [
+      "ocr"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "image",
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": "2025-10-28",
+    "knowledge_cutoff": null,
+    "description": "Vision-language model excelling at retrieving text and metadata from images.",
+    "docs": "https://build.nvidia.com/nvidia/nemotron-parse/modelcard",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "nvidia/nemotron-parse"
+  ],
+  "sources": [
+    {
+      "title": "nemotron-parse Model Card | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-parse/modelcard",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "nvidia / nemotron-parse | NVIDIA NIM API Reference",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-parse",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "nvidia",
+      "model": "nvidia/nemotron-parse",
+      "base_url": "https://integrate.api.nvidia.com",
+      "endpoints": {
+        "ocr": "POST /v1/chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "llama-3.2-nemoretriever-1b-vlm-embed-v1",
+  "object": "model",
+  "created": 1747699200,
+  "owned_by": "nvidia",
+  "name": "Llama 3.2 NeMo Retriever 1B VLM Embed v1",
+  "api": {
+    "types": [
+      "embeddings"
+    ]
+  },
+  "limits": {
+    "context": 8192,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "embedding"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": "2025-05-20",
+    "knowledge_cutoff": null,
+    "description": "Multimodal embedding model optimized for question-answering retrieval over image, text, or combined image-and-text documents.",
+    "docs": "https://docs.api.nvidia.com/nim/reference/nvidia-llama-3_2-nemoretriever-1b-vlm-embed-v1",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1"
+  ],
+  "sources": [
+    {
+      "title": "nvidia / llama-3.2-nemoretriever-1b-vlm-embed-v1 | NVIDIA NIM API Reference",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-llama-3_2-nemoretriever-1b-vlm-embed-v1",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "nvidia",
+      "model": "nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1",
+      "base_url": "https://integrate.api.nvidia.com",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "llama-3.1-nemoguard-8b-topic-control",
+  "object": "model",
+  "created": null,
+  "owned_by": "nvidia",
+  "name": "Llama 3.1 NemoGuard 8B TopicControl",
+  "api": {
+    "types": [
+      "moderation"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Topical and dialogue moderation model for task-oriented dialogue agents and custom policy-based moderation of user prompts.",
+    "docs": "https://docs.api.nvidia.com/nim/reference/nvidia-llama-3_1-nemoguard-8b-topic-control",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "nvidia/llama-3.1-nemoguard-8b-topic-control"
+  ],
+  "sources": [
+    {
+      "title": "nvidia / llama-3.1-nemoguard-8b-topic-control | NVIDIA NIM API Reference",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-llama-3_1-nemoguard-8b-topic-control",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "nvidia",
+      "model": "nvidia/llama-3.1-nemoguard-8b-topic-control",
+      "base_url": "https://integrate.api.nvidia.com",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

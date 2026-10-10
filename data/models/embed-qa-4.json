@@ -1,0 +1,58 @@
+{
+  "id": "embed-qa-4",
+  "object": "model",
+  "created": null,
+  "owned_by": "nvidia",
+  "name": "Embed QA 4",
+  "api": {
+    "types": [
+      "embeddings"
+    ]
+  },
+  "limits": {
+    "context": 512,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Embedding model optimized for text question-answering retrieval.",
+    "docs": "https://docs.api.nvidia.com/nim/reference/nvidia-embed-qa-4",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "nvidia/embed-qa-4"
+  ],
+  "sources": [
+    {
+      "title": "nvidia / embed-qa-4 | NVIDIA NIM API Reference",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-embed-qa-4",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "nvidia",
+      "model": "nvidia/embed-qa-4",
+      "base_url": "https://integrate.api.nvidia.com",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

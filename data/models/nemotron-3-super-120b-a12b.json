@@ -1,0 +1,68 @@
+{
+  "id": "nemotron-3-super-120b-a12b",
+  "object": "model",
+  "created": 1773187200,
+  "owned_by": "nvidia",
+  "name": "Nemotron 3 Super 120B A12B",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 1048576,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "tools",
+    "structured_output"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2026-03-11",
+    "knowledge_cutoff": null,
+    "description": "Open, efficient hybrid Mamba-Transformer MoE with 1M context, excelling in agentic reasoning, coding, planning and tool calling.",
+    "docs": "https://build.nvidia.com/nvidia/nemotron-3-super-120b-a12b/modelcard",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "nvidia/nemotron-3-super-120b-a12b"
+  ],
+  "sources": [
+    {
+      "title": "nemotron-3-super-120b-a12b Model Card | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3-super-120b-a12b/modelcard",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "nvidia / nemotron-3-super-120b-a12b | NVIDIA NIM API Reference",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-3-super-120b-a12b",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "nvidia",
+      "model": "nvidia/nemotron-3-super-120b-a12b",
+      "base_url": "https://integrate.api.nvidia.com",
+      "endpoints": {
+        "messages": "POST /v1/chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

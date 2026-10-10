@@ -1,0 +1,59 @@
+{
+  "id": "nvclip",
+  "object": "model",
+  "created": null,
+  "owned_by": "nvidia",
+  "name": "NV-CLIP",
+  "api": {
+    "types": [
+      "embeddings"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "embedding"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Multimodal embeddings model for image and text, the NVIDIA commercial version of CLIP.",
+    "docs": "https://docs.api.nvidia.com/nim/reference/nvidia-nvclip",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "nvidia/nvclip"
+  ],
+  "sources": [
+    {
+      "title": "nvidia / nvclip | NVIDIA NIM API Reference",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nvclip",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "nvidia",
+      "model": "nvidia/nvclip",
+      "base_url": "https://integrate.api.nvidia.com",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

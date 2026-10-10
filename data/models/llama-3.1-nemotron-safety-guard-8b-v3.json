@@ -1,0 +1,58 @@
+{
+  "id": "llama-3.1-nemotron-safety-guard-8b-v3",
+  "object": "model",
+  "created": 1761609600,
+  "owned_by": "nvidia",
+  "name": "Llama 3.1 Nemotron Safety Guard 8B v3",
+  "api": {
+    "types": [
+      "moderation"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": "2025-10-28",
+    "knowledge_cutoff": null,
+    "description": "Multilingual content safety model that moderates human-LLM interaction content and classifies user prompts and LLM responses as safe or unsafe.",
+    "docs": "https://docs.api.nvidia.com/nim/reference/nvidia-llama-3_1-nemotron-safety-guard-8b-v3",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "nvidia/llama-3.1-nemotron-safety-guard-8b-v3"
+  ],
+  "sources": [
+    {
+      "title": "nvidia / llama-3.1-nemotron-safety-guard-8b-v3 | NVIDIA NIM API Reference",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-llama-3_1-nemotron-safety-guard-8b-v3",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "nvidia",
+      "model": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
+      "base_url": "https://integrate.api.nvidia.com",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

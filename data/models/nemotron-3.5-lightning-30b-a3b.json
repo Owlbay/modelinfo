@@ -1,0 +1,68 @@
+{
+  "id": "nemotron-3.5-lightning-30b-a3b",
+  "object": "model",
+  "created": 1786406400,
+  "owned_by": "nvidia",
+  "name": "Nemotron 3.5 Lightning 30B A3B",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 1048576,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "tools",
+    "structured_output"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2026-08-11",
+    "knowledge_cutoff": null,
+    "description": "Fastest 30B A3B MoE model with leading domain accuracy for specialized agentic tasks.",
+    "docs": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "nvidia/nemotron-3.5-lightning-30b-a3b"
+  ],
+  "sources": [
+    {
+      "title": "nemotron-3.5-lightning-30b-a3b Model Card | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "nvidia / nemotron-3.5-lightning-30b-a3b | NVIDIA NIM API Reference",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-3-5-lightning-30b-a3b",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "nvidia",
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "base_url": "https://integrate.api.nvidia.com",
+      "endpoints": {
+        "messages": "POST /v1/chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

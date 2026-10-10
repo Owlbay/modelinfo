@@ -1,0 +1,66 @@
+{
+  "id": "nemotron-3.5-content-safety",
+  "object": "model",
+  "created": 1780358400,
+  "owned_by": "nvidia",
+  "name": "Nemotron 3.5 Content Safety",
+  "api": {
+    "types": [
+      "moderation"
+    ]
+  },
+  "limits": {
+    "context": 131072,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": "2026-06-02",
+    "knowledge_cutoff": null,
+    "description": "Multilingual, multimodal model for detecting unsafe and toxic content.",
+    "docs": "https://build.nvidia.com/nvidia/nemotron-3.5-content-safety/modelcard",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "nvidia/nemotron-3.5-content-safety"
+  ],
+  "sources": [
+    {
+      "title": "nemotron-3.5-content-safety Model Card | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-content-safety/modelcard",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "nvidia / nemotron-3.5-content-safety | NVIDIA NIM API Reference",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-3-5-content-safety",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "nvidia",
+      "model": "nvidia/nemotron-3.5-content-safety",
+      "base_url": "https://integrate.api.nvidia.com",
+      "endpoints": {
+        "moderation": "POST /v1/chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

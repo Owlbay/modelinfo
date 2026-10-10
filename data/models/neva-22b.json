@@ -1,0 +1,59 @@
+{
+  "id": "neva-22b",
+  "object": "model",
+  "created": null,
+  "owned_by": "nvidia",
+  "name": "NeVA 22B",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "NVIDIA's version of the LLaVA vision-language model, with the LLaMA language model replaced by a GPT model trained by NVIDIA.",
+    "docs": "https://docs.api.nvidia.com/nim/reference/nvidia-neva-22b",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "nvidia/neva-22b"
+  ],
+  "sources": [
+    {
+      "title": "nvidia / neva-22b | NVIDIA NIM API Reference",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-neva-22b",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "nvidia",
+      "model": "nvidia/neva-22b",
+      "base_url": "https://integrate.api.nvidia.com",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

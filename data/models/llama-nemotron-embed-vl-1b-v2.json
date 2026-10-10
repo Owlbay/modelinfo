@@ -1,0 +1,66 @@
+{
+  "id": "llama-nemotron-embed-vl-1b-v2",
+  "object": "model",
+  "created": 1770681600,
+  "owned_by": "nvidia",
+  "name": "Llama Nemotron Embed VL 1B v2",
+  "api": {
+    "types": [
+      "embeddings"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "embedding"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": "2026-02-10",
+    "knowledge_cutoff": null,
+    "description": "Multimodal question-answer retrieval model representing user queries as text and documents as images.",
+    "docs": "https://build.nvidia.com/nvidia/llama-nemotron-embed-vl-1b-v2/modelcard",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "nvidia/llama-nemotron-embed-vl-1b-v2"
+  ],
+  "sources": [
+    {
+      "title": "llama-nemotron-embed-vl-1b-v2 Model Card | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/llama-nemotron-embed-vl-1b-v2/modelcard",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "nvidia / llama-nemotron-embed-vl-1b-v2 | NVIDIA NIM API Reference",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-llama-nemotron-embed-vl-1b-v2",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "nvidia",
+      "model": "nvidia/llama-nemotron-embed-vl-1b-v2",
+      "base_url": "https://integrate.api.nvidia.com",
+      "endpoints": {
+        "embeddings": "POST /v1/embeddings"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "nemotron-3-ultra-550b-a55b",
+  "object": "model",
+  "created": 1780531200,
+  "owned_by": "nvidia",
+  "name": "Nemotron 3 Ultra 550B A55B",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 1048576,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "tools"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2026-06-04",
+    "knowledge_cutoff": null,
+    "description": "Open, efficient hybrid Mamba-Transformer MoE with 1M context, excelling in agentic reasoning, coding, planning and tool calling.",
+    "docs": "https://build.nvidia.com/nvidia/nemotron-3-ultra-550b-a55b/modelcard",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "nvidia/nemotron-3-ultra-550b-a55b"
+  ],
+  "sources": [
+    {
+      "title": "nemotron-3-ultra-550b-a55b Model Card | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3-ultra-550b-a55b/modelcard",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "nvidia / nemotron-3-ultra-550b-a55b | NVIDIA NIM API Reference",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-3-ultra-550b-a55b",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "nvidia",
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "base_url": "https://integrate.api.nvidia.com",
+      "endpoints": {
+        "messages": "POST /v1/chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
