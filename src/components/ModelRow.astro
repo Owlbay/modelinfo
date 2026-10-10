@@ -62,7 +62,12 @@ const cache = p && (p.cache_read !== null || p.cache_write !== null) ? `${format
     min-width: 0;
   }
   .mrow__name {
+    /* 名称优先占位，ID 先省略；名称超过整列时自身也省略，不撑宽行 */
     flex: none;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     font: 400 var(--fs-body-lg) / var(--lh-body-lg) var(--font-sans);
     color: var(--ink);
   }
@@ -141,7 +146,8 @@ const cache = p && (p.cache_read !== null || p.cache_write !== null) ? `${format
     }
     .mrow__main { grid-column: 1 / -1; }
     .mrow__num { text-align: left; }
-    .mrow__price { text-align: right; }
+    /* 带单位的价格较长，窄屏允许换行，不撑宽行 */
+    .mrow__price { text-align: right; white-space: normal; overflow-wrap: anywhere; }
     :global(.models--full) .mrow__main { grid-column: auto; }
   }
 </style>
