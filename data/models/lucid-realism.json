@@ -1,0 +1,64 @@
+{
+  "id": "lucid-realism",
+  "object": "model",
+  "created": null,
+  "owned_by": "leonardo",
+  "name": "Lucid Realism",
+  "api": {
+    "types": [
+      "images"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "image"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Leonardo.Ai image generation model, available through the Leonardo.Ai REST API v2 with style and content image guidance.",
+    "docs": "https://docs.leonardo.ai/docs/lucid-realism",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Lucid Realism | Leonardo.Ai API Docs",
+      "url": "https://docs.leonardo.ai/docs/lucid-realism",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Leonardo.Ai API documentation index",
+      "url": "https://docs.leonardo.ai/llms.txt",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "leonardo",
+      "model": "lucid-realism",
+      "base_url": "https://cloud.leonardo.ai",
+      "endpoints": {
+        "images": "POST /api/rest/v2/generations"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
