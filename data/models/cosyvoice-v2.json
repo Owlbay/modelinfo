@@ -1,0 +1,61 @@
+{
+  "id": "cosyvoice-v2",
+  "object": "model",
+  "created": null,
+  "owned_by": "alibaba",
+  "name": "CosyVoice-V2",
+  "api": {
+    "types": [
+      "audio"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "audio"
+    ]
+  },
+  "reasoning": {
+    "supported": false,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "CosyVoice v2 speech synthesis model, billed per input character.",
+    "docs": "https://help.aliyun.com/zh/model-studio/cosyvoice-websocket-api",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "CosyVoice 语音合成 | 大模型服务平台百炼",
+      "url": "https://help.aliyun.com/zh/model-studio/cosyvoice-websocket-api",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "模型调用计费 | 大模型服务平台百炼",
+      "url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "alibaba",
+      "model": "cosyvoice-v2",
+      "base_url": "https://{WorkspaceId}.cn-beijing.maas.aliyuncs.com",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

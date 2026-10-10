@@ -1,0 +1,62 @@
+{
+  "id": "wanx2.1-imageedit",
+  "object": "model",
+  "created": null,
+  "owned_by": "alibaba",
+  "name": "Wanx2.1-ImageEdit",
+  "api": {
+    "types": [
+      "images"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "image"
+    ]
+  },
+  "reasoning": {
+    "supported": false,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Wan general image editing model for outpainting, watermark removal, style transfer, instruction-based editing, inpainting and restoration.",
+    "docs": "https://help.aliyun.com/zh/model-studio/wanx-image-edit",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "通用图像编辑-万相2.1 | 大模型服务平台百炼",
+      "url": "https://help.aliyun.com/zh/model-studio/wanx-image-edit",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "模型调用计费 | 大模型服务平台百炼",
+      "url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "alibaba",
+      "model": "wanx2.1-imageedit",
+      "base_url": "https://{WorkspaceId}.cn-beijing.maas.aliyuncs.com",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}
