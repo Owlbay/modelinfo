@@ -32,6 +32,7 @@
 | 1K = 1024 | Google、DeepSeek、智谱（"200K" 为 202752）、Moonshot、字节、百度、腾讯、讯飞、小米、AI21、Mistral |
 | 1K = 1000 | OpenAI、Anthropic、xAI、Amazon、Cohere（对话与向量；重排模型文档写明 4096） |
 | 按模型给出精确数字 | 阿里、MiniMax、阶跃、Meta |
+
 - **思考等级**：`reasoning.efforts` 只写 API 可传的确切取值；只有开关或 Token 预算时为空数组。
 - **能力**：`features` 只列文档明确支持的能力；未写明的不列。
 - **接口地址**：`providers[].endpoints` 只写文档给出的路径；文档未给出路径时留空对象。
