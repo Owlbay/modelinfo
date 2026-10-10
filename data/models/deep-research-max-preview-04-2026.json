@@ -1,7 +1,7 @@
 {
   "id": "deep-research-max-preview-04-2026",
   "object": "model",
-  "created": null,
+  "created": 1776729600,
   "owned_by": "google",
   "name": "Gemini Deep Research Max Preview 04-2026",
   "api": {
@@ -37,7 +37,7 @@
   ],
   "info": {
     "status": "preview",
-    "release_date": null,
+    "release_date": "2026-04-21",
     "knowledge_cutoff": null,
     "description": "Deep Research variant for maximum comprehensiveness on long-running, accuracy-critical investigations (Interactions API).",
     "docs": "https://ai.google.dev/gemini-api/docs/models/deep-research-max-preview-04-2026",
@@ -68,6 +68,11 @@
     {
       "title": "Deprecations | Gemini API",
       "url": "https://ai.google.dev/gemini-api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Release notes | Gemini API",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog",
       "retrieved_at": "2026-10-11"
     }
   ],

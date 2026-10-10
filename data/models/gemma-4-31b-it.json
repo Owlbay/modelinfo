@@ -1,7 +1,7 @@
 {
   "id": "gemma-4-31b-it",
   "object": "model",
-  "created": null,
+  "created": 1775088000,
   "owned_by": "google",
   "name": "Gemma 4 31B IT",
   "api": {
@@ -36,7 +36,7 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-04-02",
     "knowledge_cutoff": "2025-01",
     "description": "Google open Gemma 4 model served on the Gemini API with 256K context, thinking and function calling (free tier only).",
     "docs": "https://ai.google.dev/gemma/docs/core/gemma_on_gemini_api",
@@ -67,6 +67,11 @@
     {
       "title": "Deprecations | Gemini API",
       "url": "https://ai.google.dev/gemini-api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Release notes | Gemini API",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog",
       "retrieved_at": "2026-10-11"
     }
   ],

@@ -1,7 +1,7 @@
 {
   "id": "gemini-3.5-transcribe",
   "object": "model",
-  "created": null,
+  "created": 1787702400,
   "owned_by": "google",
   "name": "Gemini 3.5 Transcribe",
   "api": {
@@ -26,15 +26,22 @@
     "supported": false,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 2,
+    "output": 12,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-08-26",
     "knowledge_cutoff": null,
     "description": "Speech-to-text model with language detection, speaker diarization, word-level timestamps and custom vocabulary.",
     "docs": "https://ai.google.dev/gemini-api/docs/models/gemini-3.5-transcribe",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -51,12 +58,17 @@
     {
       "title": "Pricing | Gemini API",
       "url": "https://ai.google.dev/gemini-api/docs/pricing",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Deprecations | Gemini API",
       "url": "https://ai.google.dev/gemini-api/docs/deprecations",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Release notes | Gemini API",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

@@ -40,12 +40,12 @@
     "tools"
   ],
   "info": {
-    "status": "preview",
+    "status": "deprecated",
     "release_date": "2026-03-11",
     "knowledge_cutoff": null,
     "description": "Legacy preview model for real-time, voice-first conversational applications.",
     "docs": "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-live-preview",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -62,12 +62,12 @@
     {
       "title": "Pricing | Gemini API",
       "url": "https://ai.google.dev/gemini-api/docs/pricing",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Deprecations | Gemini API",
       "url": "https://ai.google.dev/gemini-api/docs/deprecations",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Live API | Gemini API",

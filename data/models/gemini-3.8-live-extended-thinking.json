@@ -44,7 +44,7 @@
     "knowledge_cutoff": null,
     "description": "High-reasoning audio-to-audio model for complex multi-step problems in real-time voice interactions.",
     "docs": "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-live-extended-thinking",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -61,7 +61,7 @@
     {
       "title": "Pricing | Gemini API",
       "url": "https://ai.google.dev/gemini-api/docs/pricing",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Deprecations | Gemini API",

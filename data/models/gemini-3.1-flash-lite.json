@@ -47,12 +47,12 @@
     "batch"
   ],
   "info": {
-    "status": "active",
+    "status": "deprecated",
     "release_date": "2026-05-07",
     "knowledge_cutoff": null,
     "description": "Low-latency, cost-effective multimodal model for high-volume, lightweight work.",
     "docs": "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -74,7 +74,7 @@
     {
       "title": "Deprecations | Gemini API",
       "url": "https://ai.google.dev/gemini-api/docs/deprecations",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Generating content | Gemini API",

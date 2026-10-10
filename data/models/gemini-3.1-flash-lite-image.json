@@ -34,7 +34,14 @@
       "high"
     ]
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 0.25,
+    "output": 30,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [
     "batch"
   ],
@@ -44,7 +51,7 @@
     "knowledge_cutoff": null,
     "description": "Low-latency, low-cost image generation and editing model for high-volume interactive use.",
     "docs": "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite-image",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -61,7 +68,7 @@
     {
       "title": "Pricing | Gemini API",
       "url": "https://ai.google.dev/gemini-api/docs/pricing",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Deprecations | Gemini API",
