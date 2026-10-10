@@ -1,0 +1,61 @@
+{
+  "id": "senseaudio-asr-1.5-260319",
+  "object": "model",
+  "created": null,
+  "owned_by": "sensetime",
+  "name": "SenseAudio-ASR-1.5",
+  "api": {
+    "types": [
+      "audio"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "audio"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "General speech recognition.",
+    "docs": "https://docs.senseaudio.cn/guides/asr/overview",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "模型列表与计费 | SenseAudio 文档",
+      "url": "https://docs.senseaudio.cn/guides/account/model-list",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "语音识别介绍 | SenseAudio 文档",
+      "url": "https://docs.senseaudio.cn/guides/asr/overview",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "senseaudio",
+      "model": "senseaudio-asr-1.5-260319",
+      "base_url": "https://api.senseaudio.cn/v1",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

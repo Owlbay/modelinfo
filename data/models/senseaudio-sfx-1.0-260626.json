@@ -1,0 +1,61 @@
+{
+  "id": "senseaudio-sfx-1.0-260626",
+  "object": "model",
+  "created": null,
+  "owned_by": "sensetime",
+  "name": "SenseAudio-Sound-Effect-1.0",
+  "api": {
+    "types": [
+      "audio"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "audio"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Text-to-sound-effect generation.",
+    "docs": "https://docs.senseaudio.cn/guides/sfx/overview",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "模型列表与计费 | SenseAudio 文档",
+      "url": "https://docs.senseaudio.cn/guides/account/model-list",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "音效生成介绍 | SenseAudio 文档",
+      "url": "https://docs.senseaudio.cn/guides/sfx/overview",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "senseaudio",
+      "model": "senseaudio-sfx-1.0-260626",
+      "base_url": "https://api.senseaudio.cn/v1",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

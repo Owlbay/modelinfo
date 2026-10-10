@@ -1,0 +1,98 @@
+{
+  "id": "sensenova-6.8-flash-lite",
+  "object": "model",
+  "created": null,
+  "owned_by": "sensetime",
+  "name": "SenseNova 6.8 Flash Lite",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "CNY",
+    "input": 15,
+    "output": 90,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "streaming"
+  ],
+  "info": {
+    "status": "preview",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Lightweight multimodal agent model for complex real-world tasks (early preview).",
+    "docs": "https://github.com/OpenSenseNova/SenseNova6.8",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "模型列表与计费 | SenseAudio 文档",
+      "url": "https://docs.senseaudio.cn/guides/account/model-list",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "文本生成介绍 | SenseAudio 文档",
+      "url": "https://docs.senseaudio.cn/guides/llm/overview",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "对话 Chat API | SenseAudio 文档",
+      "url": "https://docs.senseaudio.cn/api-reference/endpoint/llm/chat",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Token Plan 概览 | SenseAudio 文档",
+      "url": "https://docs.senseaudio.cn/guides/token-plan/overview",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SenseNova6.8 | OpenSenseNova",
+      "url": "https://github.com/OpenSenseNova/SenseNova6.8",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "senseaudio",
+      "model": "sensenova-6.8-flash-lite",
+      "base_url": "https://api.senseaudio.cn/v1",
+      "endpoints": {
+        "messages": "POST /v1/chat/completions"
+      },
+      "reasoning_param": null
+    },
+    {
+      "id": "sensenova",
+      "model": "sensenova-6.8-flash-lite",
+      "base_url": "https://token.sensenova.cn/v1",
+      "endpoints": {
+        "messages": "POST /v1/chat/completions"
+      },
+      "reasoning_param": null,
+      "pricing": null
+    }
+  ]
+}

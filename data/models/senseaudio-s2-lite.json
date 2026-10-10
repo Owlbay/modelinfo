@@ -1,0 +1,77 @@
+{
+  "id": "senseaudio-s2-lite",
+  "object": "model",
+  "created": null,
+  "owned_by": "sensetime",
+  "name": "SenseAudio-S2-Lite",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "CNY",
+    "input": 2,
+    "output": 12,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "streaming"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "SenseAudio lightweight, low-cost text generation model.",
+    "docs": "https://docs.senseaudio.cn/guides/llm/overview",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "模型列表与计费 | SenseAudio 文档",
+      "url": "https://docs.senseaudio.cn/guides/account/model-list",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "文本生成介绍 | SenseAudio 文档",
+      "url": "https://docs.senseaudio.cn/guides/llm/overview",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "对话 Chat API | SenseAudio 文档",
+      "url": "https://docs.senseaudio.cn/api-reference/endpoint/llm/chat",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "senseaudio",
+      "model": "senseaudio-s2-lite",
+      "base_url": "https://api.senseaudio.cn/v1",
+      "endpoints": {
+        "messages": "POST /v1/chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

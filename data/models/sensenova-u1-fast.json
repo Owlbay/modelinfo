@@ -1,0 +1,71 @@
+{
+  "id": "sensenova-u1-fast",
+  "object": "model",
+  "created": null,
+  "owned_by": "sensetime",
+  "name": "SenseNova U1 Fast",
+  "api": {
+    "types": [
+      "images"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "image"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Accelerated SenseNova U1 image generation, optimized for infographics.",
+    "docs": "https://docs.senseaudio.cn/guides/token-plan/overview",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "模型列表与计费 | SenseAudio 文档",
+      "url": "https://docs.senseaudio.cn/guides/account/model-list",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Token Plan 概览 | SenseAudio 文档",
+      "url": "https://docs.senseaudio.cn/guides/token-plan/overview",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "图片生成介绍 | SenseAudio 文档",
+      "url": "https://docs.senseaudio.cn/guides/image/overview",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "同步图片生成 | SenseAudio 文档",
+      "url": "https://docs.senseaudio.cn/api-reference/endpoint/image/sync",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "senseaudio",
+      "model": "sensenova-u1-fast",
+      "base_url": "https://api.senseaudio.cn/v1",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}
