@@ -1,0 +1,56 @@
+{
+  "id": "viduq4-preview",
+  "object": "model",
+  "created": null,
+  "owned_by": "shengshu",
+  "name": "Vidu Q4 Preview",
+  "api": {
+    "types": [
+      "video"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "image"
+    ],
+    "output": [
+      "video"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Preview video generation model for image-to-video and reference-to-video, up to 4K, 1-16s clips.",
+    "docs": "https://platform.vidu.com/docs/overview/model-map",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Model Map | Vidu API",
+      "url": "https://platform.vidu.com/docs/overview/model-map",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "shengshu",
+      "model": "viduq4-preview",
+      "base_url": "https://api.vidu.com/ent/v2",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}
