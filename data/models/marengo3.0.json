@@ -1,7 +1,7 @@
 {
   "id": "marengo3.0",
   "object": "model",
-  "created": null,
+  "created": 1763337600,
   "owned_by": "twelvelabs",
   "name": "Marengo 3.0",
   "api": {
@@ -33,7 +33,7 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-11-17",
     "knowledge_cutoff": null,
     "description": "Embedding model for video understanding and search; creates 512-dimension embeddings from video, audio, images and text.",
     "docs": "https://docs.twelvelabs.io/v1.3/docs/concepts/models/marengo/marengo-3-0",
@@ -54,6 +54,11 @@
     {
       "title": "Migrate from Marengo 3.0 to Marengo 3.5 | TwelveLabs",
       "url": "https://docs.twelvelabs.io/v1.3/docs/get-started/migration-guides/marengo-3-0-to-3-5",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Release notes | TwelveLabs Docs",
+      "url": "https://docs.twelvelabs.io/v1.3/docs/get-started/release-notes",
       "retrieved_at": "2026-10-11"
     }
   ],

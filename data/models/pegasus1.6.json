@@ -1,7 +1,7 @@
 {
   "id": "pegasus1.6",
   "object": "model",
-  "created": null,
+  "created": 1791244800,
   "owned_by": "twelvelabs",
   "name": "Pegasus 1.6",
   "api": {
@@ -34,7 +34,7 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-10-06",
     "knowledge_cutoff": null,
     "description": "Generative video-to-text model; analyzes videos or images, with egocentric video understanding, improved entity recognition and in-segment events.",
     "docs": "https://docs.twelvelabs.io/v1.3/docs/concepts/models/pegasus/pegasus-1-6",
@@ -55,6 +55,11 @@
     {
       "title": "Analyze videos (API Reference) | TwelveLabs",
       "url": "https://docs.twelvelabs.io/v1.3/api-reference/analyze-videos/analyze",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Release notes | TwelveLabs Docs",
+      "url": "https://docs.twelvelabs.io/v1.3/docs/get-started/release-notes",
       "retrieved_at": "2026-10-11"
     }
   ],
