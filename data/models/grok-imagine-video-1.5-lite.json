@@ -28,7 +28,14 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "second",
+    "input": null,
+    "output": 0.02,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [
     "batch"
   ],
@@ -38,19 +45,24 @@
     "knowledge_cutoff": null,
     "description": "xAI video generation model, priced at $0.02 per second of output.",
     "docs": "https://docs.x.ai/developers/models/grok-imagine-video-1.5-lite",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
     {
       "title": "Grok Imagine Video 1.5 Lite | xAI Docs",
       "url": "https://docs.x.ai/developers/models/grok-imagine-video-1.5-lite",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Models and Pricing | xAI Docs",
       "url": "https://docs.x.ai/developers/models",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Pricing | xAI Docs",
+      "url": "https://docs.x.ai/developers/pricing",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

@@ -1,7 +1,7 @@
 {
   "id": "grok-4.6",
   "object": "model",
-  "created": null,
+  "created": 1786492800,
   "owned_by": "xai",
   "name": "Grok 4.6",
   "api": {
@@ -47,11 +47,11 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-08-12",
     "knowledge_cutoff": null,
     "description": "SpaceXAI's frontier model for coding, agentic tasks, and knowledge work.",
     "docs": "https://docs.x.ai/developers/models/grok-4.6",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -64,6 +64,11 @@
       "title": "Models and Pricing | xAI Docs",
       "url": "https://docs.x.ai/developers/models",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Release Notes | xAI Docs",
+      "url": "https://docs.x.ai/developers/release-notes",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
