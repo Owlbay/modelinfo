@@ -1,0 +1,79 @@
+{
+  "id": "baichuan-m3-plus",
+  "object": "model",
+  "created": null,
+  "owned_by": "baichuan",
+  "name": "Baichuan-M3-Plus",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 32000,
+    "input": null,
+    "output": 32000
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "document"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": false,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "CNY",
+    "input": 5,
+    "output": 9,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [
+    "streaming"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Baichuan medical chat model with evidence grounding and medical file conversations.",
+    "docs": "https://platform.baichuan-ai.com/docs-v2/medical",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "Baichuan-M3-Plus"
+  ],
+  "sources": [
+    {
+      "title": "医疗大模型对话 | 百川智能开放平台",
+      "url": "https://platform.baichuan-ai.com/docs-v2/medical",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "产品定价 | 百川智能开放平台",
+      "url": "https://platform.baichuan-ai.com/prices",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "baichuan-mcp-servers | Baichuan Inc. GitHub",
+      "url": "https://github.com/baichuan-inc/baichuan-mcp-servers",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "baichuan",
+      "model": "Baichuan-M3-Plus",
+      "base_url": "https://api.baichuan-ai.com/v1",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
