@@ -1,7 +1,7 @@
 {
   "id": "sea-lion-modernbert-embedding-600m",
   "object": "model",
-  "created": null,
+  "created": 1773619200,
   "owned_by": "aisingapore",
   "name": "SEA-LION ModernBERT Embedding 600M",
   "api": {
@@ -30,7 +30,7 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-03-16",
     "knowledge_cutoff": null,
     "description": "Embedding model built on ModernBERT for Southeast Asian languages (1024-dimensional embeddings).",
     "docs": "https://docs.sea-lion.ai/guides/inferencing/api",
@@ -53,6 +53,11 @@
     {
       "title": "Hugging Face aisingapore/SEA-LION-ModernBERT-Embedding-600M config.json (official org)",
       "url": "https://huggingface.co/aisingapore/SEA-LION-ModernBERT-Embedding-600M/blob/main/config.json",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Announcing the SEA-LION Embedding Suite | SEA-LION",
+      "url": "https://sea-lion.ai/blog/bridging-the-semantic-gap-announcing-the-sea-lion-embedding-suite/",
       "retrieved_at": "2026-10-11"
     }
   ],
