@@ -26,7 +26,14 @@
     "supported": false,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "CNY",
+    "unit": "second",
+    "input": 0.00022,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "preview",
@@ -34,19 +41,19 @@
     "knowledge_cutoff": null,
     "description": "Tencent speech recognition preview for Mandarin, English and Chinese dialects.",
     "docs": "https://cloud.tencent.com/document/product/1823/130051",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
     {
       "title": "模型列表 | 腾讯云 TokenHub",
       "url": "https://cloud.tencent.com/document/product/1823/130051",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "模型定价 | 腾讯云 TokenHub",
       "url": "https://cloud.tencent.com/document/product/1823/130055",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
