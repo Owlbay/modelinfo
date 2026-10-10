@@ -1,0 +1,78 @@
+{
+  "id": "palmyra-x6",
+  "object": "model",
+  "created": null,
+  "owned_by": "writer",
+  "name": "Palmyra X6",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 1000000,
+    "input": null,
+    "output": 8192
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 2,
+    "output": 8,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "streaming"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Agentic model for WRITER Agent and long-horizon enterprise workflows.",
+    "docs": "https://dev.writer.com/home/models",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Choose a model | Writer AI Studio",
+      "url": "https://dev.writer.com/home/models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Writer AI Studio",
+      "url": "https://dev.writer.com/home/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Chat completion | Writer API Reference",
+      "url": "https://dev.writer.com/api-reference/completion-api/chat-completion",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "writer",
+      "model": "palmyra-x6",
+      "base_url": "https://api.writer.com/v1",
+      "endpoints": {
+        "messages": "POST /chat"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "palmyra-x4",
+  "object": "model",
+  "created": null,
+  "owned_by": "writer",
+  "name": "Palmyra X4",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": 4096
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 2.5,
+    "output": 10,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "streaming"
+  ],
+  "info": {
+    "status": "deprecated",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Language model for complex tasks that require extended context; deprecation scheduled 2026-12-14.",
+    "docs": "https://dev.writer.com/home/models",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Choose a model | Writer AI Studio",
+      "url": "https://dev.writer.com/home/models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Writer AI Studio",
+      "url": "https://dev.writer.com/home/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Chat completion | Writer API Reference",
+      "url": "https://dev.writer.com/api-reference/completion-api/chat-completion",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Changelog | Writer AI Studio",
+      "url": "https://dev.writer.com/home/changelog",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "writer",
+      "model": "palmyra-x4",
+      "base_url": "https://api.writer.com/v1",
+      "endpoints": {
+        "messages": "POST /chat"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
