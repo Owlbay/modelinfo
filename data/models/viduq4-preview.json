@@ -1,7 +1,7 @@
 {
   "id": "viduq4-preview",
   "object": "model",
-  "created": null,
+  "created": 1791331200,
   "owned_by": "shengshu",
   "name": "Vidu Q4 Preview",
   "api": {
@@ -30,7 +30,7 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-10-07",
     "knowledge_cutoff": null,
     "description": "Preview video generation model for image-to-video and reference-to-video, up to 4K, 1-16s clips.",
     "docs": "https://platform.vidu.com/docs/overview/model-map",
@@ -41,6 +41,11 @@
     {
       "title": "Model Map | Vidu API",
       "url": "https://platform.vidu.com/docs/overview/model-map",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Vidu API Update Notice",
+      "url": "https://platform.vidu.com/docs/api-reference/updates",
       "retrieved_at": "2026-10-11"
     }
   ],

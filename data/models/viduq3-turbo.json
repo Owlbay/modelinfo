@@ -1,7 +1,7 @@
 {
   "id": "viduq3-turbo",
   "object": "model",
-  "created": null,
+  "created": 1770768000,
   "owned_by": "shengshu",
   "name": "Vidu Q3 Turbo",
   "api": {
@@ -31,7 +31,7 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-02-11",
     "knowledge_cutoff": null,
     "description": "Faster video generation model of the Vidu Q3 series, 1-16s clips.",
     "docs": "https://platform.vidu.com/docs/overview/model-map",
@@ -47,6 +47,11 @@
     {
       "title": "Text to Video | Vidu API",
       "url": "https://platform.vidu.com/docs/text-to-video",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Vidu API Update Notice",
+      "url": "https://platform.vidu.com/docs/api-reference/updates",
       "retrieved_at": "2026-10-11"
     }
   ],

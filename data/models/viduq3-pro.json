@@ -1,7 +1,7 @@
 {
   "id": "viduq3-pro",
   "object": "model",
-  "created": null,
+  "created": 1769472000,
   "owned_by": "shengshu",
   "name": "Vidu Q3 Pro",
   "api": {
@@ -31,7 +31,7 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-01-27",
     "knowledge_cutoff": null,
     "description": "Video generation model with synchronized audio-video and shot switching, 1-16s clips.",
     "docs": "https://platform.vidu.com/docs/overview/model-map",
@@ -47,6 +47,11 @@
     {
       "title": "Text to Video | Vidu API",
       "url": "https://platform.vidu.com/docs/text-to-video",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Vidu API Update Notice",
+      "url": "https://platform.vidu.com/docs/api-reference/updates",
       "retrieved_at": "2026-10-11"
     }
   ],

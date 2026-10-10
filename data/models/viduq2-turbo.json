@@ -1,7 +1,7 @@
 {
   "id": "viduq2-turbo",
   "object": "model",
-  "created": null,
+  "created": 1758672000,
   "owned_by": "shengshu",
   "name": "Vidu Q2 Turbo",
   "api": {
@@ -30,7 +30,7 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-09-24",
     "knowledge_cutoff": null,
     "description": "Fast video generation model supporting image-to-video and first/last frame, 1-10s clips.",
     "docs": "https://platform.vidu.com/docs/overview/model-map",
@@ -41,6 +41,11 @@
     {
       "title": "Model Map | Vidu API",
       "url": "https://platform.vidu.com/docs/overview/model-map",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Vidu API Update Notice",
+      "url": "https://platform.vidu.com/docs/api-reference/updates",
       "retrieved_at": "2026-10-11"
     }
   ],
