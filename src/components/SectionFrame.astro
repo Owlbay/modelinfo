@@ -22,8 +22,9 @@ const hasFoot = !plain && (source != null || stamp != null);
   <header class="frame__head">
     <h2 id={hid} class="frame__title">{title}</h2>
     {
-      (more || count != null) && (
+      (more || count != null || Astro.slots.has('actions')) && (
         <div class="frame__aside">
+          <slot name="actions" />
           {more && (
             <a class="frame__more" href={more.href}>
               {more.label}
@@ -86,7 +87,7 @@ const hasFoot = !plain && (source != null || stamp != null);
   }
   .frame__aside {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: var(--sp-5);
     margin-left: auto;
   }
@@ -108,7 +109,7 @@ const hasFoot = !plain && (source != null || stamp != null);
     .frame__more:hover :global(.icon) { transform: translateX(2px); }
   }
 
-  .frame__body { padding-bottom: var(--sp-6); }
+  .frame__body { min-width: 0; padding-bottom: var(--sp-6); }
 
   .frame__foot {
     display: flex;

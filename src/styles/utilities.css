@@ -21,6 +21,8 @@
 @media (max-width: 640px) {
   .page { --page-pad: var(--sp-4); }
 }
+/* 外框内的分区不被宽内容（如展开的表格）撑开，横向滚动只发生在内容自身 */
+.page > * { min-width: 0; }
 
 .sr-only {
   position: absolute !important;

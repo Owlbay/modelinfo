@@ -1,5 +1,8 @@
 ---
-/** 模型列表行：名称/ID · 模型厂商 · 上下文 · 最大输出 · 输入/输出价格 · 发布日期。骨架见 .list-row。 */
+/**
+ * 模型列表行。默认显示 6 列（名称 · 模型厂商 · 上下文 · 输出 · 价格 · 发布）；
+ * 外层 .models--full 时展开为全部字段。列定义与表头 ModelsHead 一致，骨架见 .list-row。
+ */
 import { formatPrice, formatTokens, modelKind, ownerName, type Model } from '../lib/models';
 import { dict, localePath, type Lang } from '../i18n';
 import VendorLogo from './VendorLogo.astro';
@@ -9,9 +12,14 @@ interface Props {
   model: Model;
 }
 const { lang, model: m } = Astro.props;
+const d = dict(lang);
 const p = m.pricing;
+const list = (v: string[]) => (v.length ? v.join(' · ') : '—');
 // 非 Token 计价时在价格后标注单位
-const unit = p && p.unit !== '1M_tokens' ? ` / ${dict(lang).units[p.unit]}` : '';
+const unit = p && p.unit !== '1M_tokens' ? ` / ${d.units[p.unit]}` : '';
+const reasoning =
+  m.reasoning.supported === null ? '—' : m.reasoning.supported ? list(m.reasoning.efforts) === '—' ? d.model.yes : list(m.reasoning.efforts) : d.model.no;
+const cache = p && (p.cache_read !== null || p.cache_write !== null) ? `${formatPrice(p.cache_read, p.currency)} / ${formatPrice(p.cache_write, p.currency)}` : '—';
 ---
 
 <a class="list-row mrow" href={localePath(lang, `/models/${m.id}/`)} data-model data-owner={m.owned_by} data-kind={modelKind(m)} data-hay={[m.id, m.name, m.owned_by, ownerName(m.owned_by), ...m.aliases].join(' ').toLowerCase()}>
@@ -20,21 +28,32 @@ const unit = p && p.unit !== '1M_tokens' ? ` / ${dict(lang).units[p.unit]}` : ''
     <span class="mrow__id">{m.id}</span>
   </span>
   <span class="mrow__owner"><VendorLogo id={m.owned_by} size={14} /><span>{ownerName(m.owned_by)}</span></span>
+  <span class="mrow__x">{d.models.kinds[modelKind(m)]}</span>
+  <span class="mrow__x">{list(m.api.types)}</span>
   <span class="mrow__num">{formatTokens(m.limits.context)}</span>
+  <span class="mrow__num mrow__x">{formatTokens(m.limits.input)}</span>
   <span class="mrow__num mrow__out">{formatTokens(m.limits.output)}</span>
+  <span class="mrow__x">{list(m.modalities.input)}</span>
+  <span class="mrow__x">{list(m.modalities.output)}</span>
+  <span class="mrow__x">{reasoning}</span>
   <span class="mrow__num mrow__price">
     {p ? `${formatPrice(p.input, p.currency)} / ${formatPrice(p.output, p.currency)}${unit}` : '—'}
   </span>
+  <span class="mrow__num mrow__x">{cache}</span>
+  <span class="mrow__x">{list(m.features)}</span>
+  <span class="mrow__x">{d.model.status[m.info.status]}</span>
   <span class="mrow__date">{m.info.release_date ?? '—'}</span>
+  <span class="mrow__date mrow__x">{m.info.knowledge_cutoff ?? '—'}</span>
 </a>
 
 <style>
-  /* 列：名称 · 模型厂商 · 上下文 · 输出 · 价格 · 发布；表头见 ModelsView，断点与之一致 */
+  /* 默认 6 列，按比例分配宽度；表头见 ModelsView，断点与之一致 */
   .mrow {
-    grid-template-columns: minmax(0, 1fr) 16ch 8ch 8ch 22ch 10ch;
+    grid-template-columns: minmax(0, 4fr) minmax(0, 1.6fr) minmax(0, 0.9fr) minmax(0, 0.9fr) minmax(0, 2fr) minmax(0, 1.1fr);
     column-gap: var(--sp-5);
     color: var(--ink);
   }
+  .mrow__x { display: none; }
   .mrow__main {
     display: flex;
     align-items: baseline;
@@ -68,14 +87,40 @@ const unit = p && p.unit !== '1M_tokens' ? ` / ${dict(lang).units[p.unit]}` : ''
   .mrow__date { color: var(--ink-3); text-align: right; white-space: nowrap; }
   .mrow__price { color: var(--ink-2); }
 
-  /* 平板：去掉输出与发布日期，ID 让位给名称 */
+  /* 展开：全部字段，列表区横向滚动，首列固定 */
+  :global(.models--full) .mrow {
+    grid-template-columns:
+      minmax(16rem, 2.4fr) minmax(9rem, 1.2fr) minmax(5rem, 0.6fr) minmax(8rem, 1fr)
+      minmax(5rem, 0.6fr) minmax(5rem, 0.6fr) minmax(5rem, 0.6fr) minmax(9rem, 1.1fr)
+      minmax(6rem, 0.8fr) minmax(9rem, 1.1fr) minmax(11rem, 1.3fr) minmax(8rem, 1fr)
+      minmax(12rem, 1.5fr) minmax(5rem, 0.6fr) minmax(7rem, 0.8fr) minmax(7rem, 0.8fr);
+    column-gap: var(--sp-4);
+    align-items: start;
+  }
+  :global(.models--full) .mrow__x { display: block; }
+  :global(.models--full) .mrow > span:not(.mrow__num):not(.mrow__date) { color: var(--ink-2); overflow-wrap: anywhere; }
+  :global(.models--full) .mrow .mrow__main {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    flex-direction: column;
+    gap: 0;
+    background: var(--bg);
+  }
+  :global(.models--full) .mrow:hover .mrow__main { background: var(--bg); }
+  :global(.models--full) .mrow .mrow__name { color: var(--ink); }
+
+  /* 平板（默认视图）：去掉输出与发布日期，ID 让位给名称 */
   @media (max-width: 1024px) {
-    .mrow { grid-template-columns: minmax(0, 1fr) 16ch 8ch 22ch; column-gap: var(--sp-4); }
+    .mrow { grid-template-columns: minmax(0, 3fr) minmax(0, 1.6fr) minmax(0, 0.9fr) minmax(0, 2fr); column-gap: var(--sp-4); }
     .mrow__out,
     .mrow__date,
     .mrow__id { display: none; }
+    :global(.models--full) .mrow__out,
+    :global(.models--full) .mrow__date,
+    :global(.models--full) .mrow__id { display: block; }
   }
-  /* 手机：名称一行，模型厂商 · 上下文 · 价格一行 */
+  /* 手机（默认视图）：名称一行，模型厂商 · 上下文 · 价格一行 */
   @media (max-width: 640px) {
     .mrow {
       grid-template-columns: auto auto minmax(0, 1fr);
@@ -85,5 +130,6 @@ const unit = p && p.unit !== '1M_tokens' ? ` / ${dict(lang).units[p.unit]}` : ''
     .mrow__main { grid-column: 1 / -1; }
     .mrow__num { text-align: left; }
     .mrow__price { text-align: right; }
+    :global(.models--full) .mrow__main { grid-column: auto; }
   }
 </style>

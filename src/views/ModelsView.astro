@@ -51,12 +51,23 @@ const kindOptions = [
       source={t.source}
       stamp={t.verified(latestVerified(models) ?? '—')}
     >
+      <button type="button" slot="actions" class="models__toggle" data-view-toggle aria-pressed="false">
+        <span data-view-label-off>{t.showAll}</span><span data-view-label-on hidden>{t.showLess}</span>
+      </button>
+      <div class="models__table" data-models-table>
       <div class="models__head mono" aria-hidden="true">
-        <span>{t.cols.model}</span><span>{t.cols.vendor}</span><span>{t.cols.context}</span><span class="head__out">{t.cols.output}</span><span>{t.cols.price}</span><span class="head__date">{t.cols.released}</span>
+        <span class="head__main">{t.cols.model}</span><span>{t.cols.vendor}</span>
+        <span class="hx">{t.cols.kind}</span><span class="hx">{t.cols.api}</span>
+        <span class="head__r">{t.cols.context}</span><span class="hx head__r">{t.cols.input}</span><span class="head__out head__r">{t.cols.output}</span>
+        <span class="hx">{t.cols.modIn}</span><span class="hx">{t.cols.modOut}</span><span class="hx">{t.cols.reasoning}</span>
+        <span class="head__r">{t.cols.price}</span><span class="hx head__r">{t.cols.cache}</span>
+        <span class="hx">{t.cols.features}</span><span class="hx">{t.cols.status}</span>
+        <span class="head__date head__r">{t.cols.released}</span><span class="hx head__r">{t.cols.cutoff}</span>
       </div>
       <div data-vt-list>
         {models.map((m) => <ModelRow lang={lang} model={m} />)}
         <p class="models__empty" data-empty hidden>{t.empty}</p>
+      </div>
       </div>
     </SectionFrame>
 
@@ -70,6 +81,27 @@ const kindOptions = [
   const input = document.querySelector<HTMLInputElement>('[data-filter-q]')!;
   const params = new URLSearchParams(location.search);
   const state = { q: params.get('q') ?? '', owner: params.get('owner') ?? '', kind: params.get('kind') ?? '' };
+  // 展开全部信息：网址参数 view=full 优先，其次记住上次选择
+  const main = document.querySelector<HTMLElement>('main.models')!;
+  const toggle = document.querySelector<HTMLButtonElement>('[data-view-toggle]')!;
+  let full = params.has('view') ? params.get('view') === 'full' : localStorage.getItem('modelinfo.view') === 'full';
+  function applyView() {
+    main.classList.toggle('models--full', full);
+    toggle.setAttribute('aria-pressed', String(full));
+    toggle.querySelector<HTMLElement>('[data-view-label-off]')!.hidden = full;
+    toggle.querySelector<HTMLElement>('[data-view-label-on]')!.hidden = !full;
+  }
+  toggle.addEventListener('click', () => {
+    full = !full;
+    try {
+      localStorage.setItem('modelinfo.view', full ? 'full' : 'compact');
+    } catch {
+      /* 隐私模式忽略 */
+    }
+    applyView();
+    apply();
+  });
+  applyView();
   input.value = state.q;
 
   function apply() {
@@ -97,6 +129,7 @@ const kindOptions = [
     // 筛选状态写入 URL，便于分享与返回
     const url = new URL(location.href);
     for (const [k, v] of Object.entries(state)) v ? url.searchParams.set(k, v) : url.searchParams.delete(k);
+    full ? url.searchParams.set('view', 'full') : url.searchParams.delete('view');
     history.replaceState(null, '', url);
   }
 
@@ -176,29 +209,58 @@ const kindOptions = [
   }
   .filters__search input:focus-visible { outline: none; }
   .filters__search input::-webkit-search-cancel-button { display: none; }
+  .models__toggle {
+    display: inline-flex;
+    align-items: center;
+    min-height: 32px;
+    padding: 0 var(--sp-3);
+    border: 1px solid var(--line);
+    font: 400 var(--fs-body-sm) / var(--lh-body-sm) var(--font-sans);
+    color: var(--ink-2);
+    align-self: center;
+    transition: color var(--dur-1) var(--ease-out), background-color var(--dur-1) var(--ease-out), border-color var(--dur-1) var(--ease-out);
+  }
+  .models__toggle:hover { color: var(--ink); border-color: var(--line-strong); background: var(--hover-row); }
+  .models__toggle[aria-pressed='true'] { background: var(--selected-bg); border-color: var(--selected-bg); color: var(--selected-ink); }
+  /* 表头与 ModelRow 同列定义、同字号 */
   .models__head {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 16ch 8ch 8ch 22ch 10ch;
+    grid-template-columns: minmax(0, 4fr) minmax(0, 1.6fr) minmax(0, 0.9fr) minmax(0, 0.9fr) minmax(0, 2fr) minmax(0, 1.1fr);
     column-gap: var(--sp-5);
     padding-bottom: var(--sp-2);
     border-bottom: 1px solid var(--line);
-    /* 与行同字号，保证 ch 列宽一致 */
     font-size: var(--fs-mono);
     line-height: var(--lh-mono);
     color: var(--ink-3);
   }
-  .models__head > :nth-child(n + 3) { text-align: right; }
+  .models__head .hx { display: none; }
+  .head__r { text-align: right; }
+  /* 展开：横向滚动，表头与首列固定 */
+  .models__table { min-width: 0; max-width: 100%; }
+  .models--full .models__table { overflow-x: auto; overscroll-behavior-x: contain; }
+  .models--full .models__table > * { min-width: 2000px; }
+  .models--full .models__head {
+    grid-template-columns:
+      minmax(16rem, 2.4fr) minmax(9rem, 1.2fr) minmax(5rem, 0.6fr) minmax(8rem, 1fr)
+      minmax(5rem, 0.6fr) minmax(5rem, 0.6fr) minmax(5rem, 0.6fr) minmax(9rem, 1.1fr)
+      minmax(6rem, 0.8fr) minmax(9rem, 1.1fr) minmax(11rem, 1.3fr) minmax(8rem, 1fr)
+      minmax(12rem, 1.5fr) minmax(5rem, 0.6fr) minmax(7rem, 0.8fr) minmax(7rem, 0.8fr);
+    column-gap: var(--sp-4);
+  }
+  .models--full .models__head .hx,
+  .models--full .models__head .head__out,
+  .models--full .models__head .head__date { display: block; }
+  .models--full .head__main { position: sticky; left: 0; z-index: 1; background: var(--bg); }
   .models__empty {
     padding: var(--sp-5) 0;
     color: var(--ink-3);
   }
   @media (max-width: 1024px) {
-    .models__head { grid-template-columns: minmax(0, 1fr) 16ch 8ch 22ch; column-gap: var(--sp-4); }
+    .models__head { grid-template-columns: minmax(0, 3fr) minmax(0, 1.6fr) minmax(0, 0.9fr) minmax(0, 2fr); column-gap: var(--sp-4); }
     .head__out,
     .head__date { display: none; }
-    .models__head > :nth-child(2) { text-align: left; }
   }
   @media (max-width: 640px) {
-    .models__head { display: none; }
+    .models:not(.models--full) .models__head { display: none; }
   }
 </style>

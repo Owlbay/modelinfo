@@ -80,12 +80,13 @@
   --search-h: 56px;
   --nav-h: 64px;
   --bar-h: 52px;
-  --content-max: 1200px;
+  /* 内容宽度随视口按比例变化：两侧留白为视口宽度的 4%（下限 20px），超宽屏封顶 */
+  --content-max: 2400px;
 
   /* 断点（媒体查询无法读取变量，此处仅作记录）：≤640 手机 · 641–1024 平板 · ≥1025 桌面 */
   --bp-sm: 640px;
   --bp-md: 1024px;
-  --gutter: 20px;
+  --gutter: max(20px, 4vw);
 
   /* 动效（§2.6） */
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
@@ -94,12 +95,6 @@
   --dur-3: 400ms;
 }
 
-@media (min-width: 641px) {
-  :root { --gutter: 40px; }
-}
-@media (min-width: 1025px) {
-  :root { --gutter: 48px; }
-}
 /* 减少动效偏好下不清零时长：颜色与透明度过渡保留，位移类动效在 motion.css 中单独关闭 */
 
 :root[data-scheme="light"] {
