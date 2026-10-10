@@ -1,7 +1,7 @@
 {
   "id": "mai-transcribe-1.5",
   "object": "model",
-  "created": null,
+  "created": 1780358400,
   "owned_by": "microsoft",
   "name": "MAI-Transcribe-1.5",
   "api": {
@@ -30,7 +30,7 @@
   "features": [],
   "info": {
     "status": "preview",
-    "release_date": null,
+    "release_date": "2026-06-02",
     "knowledge_cutoff": null,
     "description": "Microsoft AI speech-to-text model, predecessor of MAI-Transcribe-2, used via Azure Speech enhanced mode.",
     "docs": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe",
@@ -43,6 +43,11 @@
     {
       "title": "MAI-Transcribe-2 | Microsoft Learn",
       "url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Introducing MAI-Transcribe-1.5 | Microsoft AI",
+      "url": "https://microsoft.ai/news/mai-transcribe-1-5more-accurate-context-aware-and-built-for-production/",
       "retrieved_at": "2026-10-11"
     }
   ],

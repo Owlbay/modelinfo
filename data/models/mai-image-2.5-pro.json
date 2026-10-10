@@ -1,7 +1,7 @@
 {
   "id": "mai-image-2.5-pro",
   "object": "model",
-  "created": null,
+  "created": 1784764800,
   "owned_by": "microsoft",
   "name": "MAI-Image-2.5-Pro",
   "api": {
@@ -31,7 +31,7 @@
   "features": [],
   "info": {
     "status": "preview",
-    "release_date": null,
+    "release_date": "2026-07-23",
     "knowledge_cutoff": null,
     "description": "Highest-quality model in the MAI-Image-2.5 series for text-to-image generation and image-to-image editing.",
     "docs": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/use-foundry-models-mai-image",
@@ -44,6 +44,11 @@
     {
       "title": "Deploy and use MAI image models in Microsoft Foundry | Microsoft Learn",
       "url": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/use-foundry-models-mai-image",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Introducing MAI-Image-2.5-Pro and MAI-Voice-2-Flash | Microsoft AI",
+      "url": "https://microsoft.ai/news/introducing-mai-image-2-5-pro-and-mai-voice-2-flash/",
       "retrieved_at": "2026-10-11"
     }
   ],

@@ -1,7 +1,7 @@
 {
   "id": "mai-transcribe-2",
   "object": "model",
-  "created": null,
+  "created": 1788393600,
   "owned_by": "microsoft",
   "name": "MAI-Transcribe-2",
   "api": {
@@ -30,7 +30,7 @@
   "features": [],
   "info": {
     "status": "preview",
-    "release_date": null,
+    "release_date": "2026-09-03",
     "knowledge_cutoff": null,
     "description": "Microsoft AI speech-to-text model for 60 languages with diarization, word timestamps, keyword biasing and code switching.",
     "docs": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe",
@@ -43,6 +43,11 @@
     {
       "title": "MAI-Transcribe-2 | Microsoft Learn",
       "url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "MAI-Transcribe-2 | Microsoft AI",
+      "url": "https://microsoft.ai/news/mai-transcribe-2-is-the-fastest-most-accurate-and-cheapest-speech-recognition-model-in-the-world/",
       "retrieved_at": "2026-10-11"
     }
   ],

@@ -1,7 +1,7 @@
 {
   "id": "mai-image-2.6",
   "object": "model",
-  "created": null,
+  "created": 1788480000,
   "owned_by": "microsoft",
   "name": "MAI-Image-2.6",
   "api": {
@@ -31,7 +31,7 @@
   "features": [],
   "info": {
     "status": "preview",
-    "release_date": null,
+    "release_date": "2026-09-04",
     "knowledge_cutoff": null,
     "description": "Microsoft AI text-to-image generation and image-to-image editing model with stronger text rendering, portraits and 3D imagery.",
     "docs": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/use-foundry-models-mai-image",
@@ -44,6 +44,11 @@
     {
       "title": "Deploy and use MAI image models in Microsoft Foundry | Microsoft Learn",
       "url": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/use-foundry-models-mai-image",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pushing the quality-cost frontier with MAI-Image-2.6 | Microsoft AI",
+      "url": "https://microsoft.ai/news/pushing-the-quality-cost-frontier-with-mai-image-2-6/",
       "retrieved_at": "2026-10-11"
     }
   ],
