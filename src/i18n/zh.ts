@@ -36,7 +36,7 @@ export const zh = {
     filterAria: '按研发方筛选',
     kindAria: '按类型筛选',
     kindLabel: '类型',
-    kinds: { chat: '对话', embedding: '向量', rerank: '重排', image: '图像', video: '视频', audio: '音频' },
+    kinds: { chat: '对话', embedding: '向量', rerank: '重排', image: '图像', video: '视频', audio: '音频', '3d': '3D' },
     searchPlaceholder: '筛选模型',
     searchAria: '筛选模型',
     all: '全部',

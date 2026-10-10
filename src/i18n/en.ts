@@ -38,7 +38,7 @@ export const en: Dict = {
     filterAria: 'Filter by vendor',
     kindAria: 'Filter by type',
     kindLabel: 'Type',
-    kinds: { chat: 'Chat', embedding: 'Embedding', rerank: 'Rerank', image: 'Image', video: 'Video', audio: 'Audio' },
+    kinds: { chat: 'Chat', embedding: 'Embedding', rerank: 'Rerank', image: 'Image', video: 'Video', audio: 'Audio', '3d': '3D' },
     searchPlaceholder: 'Filter models',
     searchAria: 'Filter models',
     all: 'All',

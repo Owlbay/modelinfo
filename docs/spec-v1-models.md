@@ -71,11 +71,11 @@ info         ⑥ 源信息
 | `created` | integer \| null | 发布时间，Unix 秒 |
 | `owned_by` | string | 模型研发方，不是转售商或聚合网关 |
 | `name` | string | 展示名称 |
-| `api.types` | string[] | 接口类型：`messages`、`responses`、`generate`、`batch`、`realtime`、`completions`、`embeddings`、`images`、`video`、`audio`、`rerank`、`ocr`、`moderation` |
+| `api.types` | string[] | 接口类型：`messages`、`responses`、`generate`、`batch`、`realtime`、`completions`、`embeddings`、`images`、`video`、`audio`、`3d`、`rerank`、`ocr`、`moderation` |
 | `limits.context` | integer \| null | 输入与输出合计的上下文上限（Token） |
 | `limits.input` | integer \| null | 官方单独声明的最大输入 |
 | `limits.output` | integer \| null | 最大输出 |
-| `modalities.input` / `output` | string[] | `text`、`image`、`audio`、`video`、`document`；输出另有 `embedding`（向量模型）、`score`（重排模型） |
+| `modalities.input` / `output` | string[] | `text`、`image`、`audio`、`video`、`document`；输出另有 `embedding`（向量模型）、`score`（重排模型）、`3d`（3D 生成模型） |
 | `reasoning.supported` | boolean \| null | 是否支持思考 |
 | `reasoning.efforts` | string[] | 思考等级；空数组表示无等级档位（开关或 Token 预算控制）或未声明 |
 | `pricing` | object \| null | 见第 6 节；无公开报价为 `null` |

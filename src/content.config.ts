@@ -9,9 +9,9 @@ import { z } from 'astro/zod';
 const date = z.string().regex(/^\d{4}-\d{2}-\d{2}$/);
 const apiType = z.enum([
   'messages', 'responses', 'completions', 'generate', 'batch', 'realtime',
-  'embeddings', 'images', 'video', 'audio', 'rerank', 'ocr', 'moderation',
+  'embeddings', 'images', 'video', 'audio', '3d', 'rerank', 'ocr', 'moderation',
 ]);
-const modality = z.enum(['text', 'image', 'audio', 'video', 'document', 'embedding', 'score']);
+const modality = z.enum(['text', 'image', 'audio', 'video', 'document', 'embedding', 'score', '3d']);
 const feature = z.enum(['tools', 'structured_output', 'streaming', 'caching', 'batch']);
 const tokens = z.number().int().positive().nullable();
 const price = z.number().nonnegative().nullable();

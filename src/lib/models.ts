@@ -45,7 +45,7 @@ const VENDORS = new Map((await getCollection('vendors')).map((e) => [e.data.id, 
 export const ownerName = (id: string) => VENDORS.get(id)?.name ?? id;
 
 /** 模型类型：按输出与接口归类，用于列表筛选 */
-export const KINDS = ['chat', 'embedding', 'rerank', 'image', 'video', 'audio'] as const;
+export const KINDS = ['chat', 'embedding', 'rerank', 'image', 'video', 'audio', '3d'] as const;
 export type Kind = (typeof KINDS)[number];
 
 export function modelKind(m: Model): Kind {
@@ -54,6 +54,7 @@ export function modelKind(m: Model): Kind {
   if (out.includes('embedding') || api.includes('embeddings')) return 'embedding';
   if (out.includes('score') || api.includes('rerank')) return 'rerank';
   if (out.includes('text')) return 'chat';
+  if (out.includes('3d')) return '3d';
   if (out.includes('video')) return 'video';
   if (out.includes('image')) return 'image';
   if (out.includes('audio')) return 'audio';
