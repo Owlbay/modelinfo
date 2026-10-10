@@ -1,7 +1,7 @@
 {
   "id": "stable-image-core",
   "object": "model",
-  "created": null,
+  "created": 1710979200,
   "owned_by": "stability",
   "name": "Stable Image Core",
   "api": {
@@ -26,11 +26,18 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "image",
+    "input": null,
+    "output": 0.03,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2024-03-21",
     "knowledge_cutoff": null,
     "description": "Stability image service optimized for fast and cost-effective text-to-image generation.",
     "docs": "https://platform.stability.ai/docs/api-reference",
@@ -46,6 +53,11 @@
     {
       "title": "Pricing | Stability AI Developer Platform",
       "url": "https://platform.stability.ai/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Stability AI API Release Notes",
+      "url": "https://platform.stability.ai/docs/release-notes",
       "retrieved_at": "2026-10-11"
     }
   ],

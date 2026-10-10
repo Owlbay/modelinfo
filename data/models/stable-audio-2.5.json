@@ -1,7 +1,7 @@
 {
   "id": "stable-audio-2.5",
   "object": "model",
-  "created": null,
+  "created": 1757462400,
   "owned_by": "stability",
   "name": "Stable Audio 2.5",
   "api": {
@@ -27,11 +27,18 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "request",
+    "input": null,
+    "output": 0.08,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-09-10",
     "knowledge_cutoff": null,
     "description": "Stability audio model for text-to-audio, audio-to-audio and audio inpainting, with up to 3-minute 44.1 kHz stereo output.",
     "docs": "https://platform.stability.ai/docs/api-reference",
@@ -47,6 +54,11 @@
     {
       "title": "Pricing | Stability AI Developer Platform",
       "url": "https://platform.stability.ai/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Stability AI Introduces Stable Audio 2.5",
+      "url": "https://stability.ai/news-updates/stability-ai-introduces-stable-audio-25-the-first-audio-model-built-for-enterprise-sound-production-at-scale",
       "retrieved_at": "2026-10-11"
     }
   ],
