@@ -1,7 +1,7 @@
 {
   "id": "kimi-k2.7-code",
   "object": "model",
-  "created": null,
+  "created": 1781222400,
   "owned_by": "moonshot",
   "name": "Kimi K2.7 Code",
   "api": {
@@ -42,11 +42,11 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-06-12",
     "knowledge_cutoff": null,
     "description": "Kimi dedicated coding model with more reliable instruction following in long-context agentic coding.",
     "docs": "https://platform.kimi.ai/docs/guide/kimi-k2-7-code-quickstart",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -64,6 +64,11 @@
       "title": "Kimi K2.7 Code Quickstart | Kimi API Platform",
       "url": "https://platform.kimi.ai/docs/guide/kimi-k2-7-code-quickstart",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "What's New | Kimi Code Docs",
+      "url": "https://www.kimi.com/code/docs/en/kimi-code/whats-new.html",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
