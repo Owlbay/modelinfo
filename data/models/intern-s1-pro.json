@@ -1,7 +1,7 @@
 {
   "id": "intern-s1-pro",
   "object": "model",
-  "created": null,
+  "created": 1770163200,
   "owned_by": "shlab",
   "name": "Intern-S1-Pro",
   "api": {
@@ -34,7 +34,7 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-02-04",
     "knowledge_cutoff": null,
     "description": "Open-source multimodal reasoning model with built-in web search.",
     "docs": "https://internlm.intern-ai.org.cn/doc/docs/%E6%A8%A1%E5%9E%8B%E5%88%97%E8%A1%A8/",
@@ -55,6 +55,11 @@
     {
       "title": "Hugging Face internlm/Intern-S1-Pro config.json (official org)",
       "url": "https://huggingface.co/internlm/Intern-S1-Pro/blob/main/config.json",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "迈向AI4S 2.0，开源书生万亿科学大模型Intern-S1-Pro | 上海人工智能实验室",
+      "url": "https://www.shlab.org.cn/news/5444227",
       "retrieved_at": "2026-10-11"
     }
   ],

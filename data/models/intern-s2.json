@@ -1,7 +1,7 @@
 {
   "id": "intern-s2",
   "object": "model",
-  "created": null,
+  "created": 1789257600,
   "owned_by": "shlab",
   "name": "Intern-S2",
   "api": {
@@ -34,7 +34,7 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-09-13",
     "knowledge_cutoff": null,
     "description": "Shanghai AI Lab 397B multimodal scientific reasoning model; thinking mode on by default.",
     "docs": "https://internlm.intern-ai.org.cn/doc/docs/%E6%A8%A1%E5%9E%8B%E5%88%97%E8%A1%A8/",
@@ -57,6 +57,11 @@
     {
       "title": "Hugging Face internlm/Intern-S2 config.json (official org)",
       "url": "https://huggingface.co/internlm/Intern-S2/blob/main/config.json",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "书生-S2 发布 | 上海人工智能实验室",
+      "url": "https://www.shlab.org.cn/news/5444298",
       "retrieved_at": "2026-10-11"
     }
   ],
