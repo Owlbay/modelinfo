@@ -1,0 +1,67 @@
+{
+  "id": "kat-coder-pro-v2.5",
+  "object": "model",
+  "created": null,
+  "owned_by": "kuaishou",
+  "name": "KAT-Coder-Pro V2.5",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "CNY",
+    "input": 5,
+    "output": 20,
+    "cache_read": 1,
+    "cache_write": null
+  },
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "KwaiKAT coding model served on the StreamLake Wanqing platform, compatible with OpenAI and Claude protocols.",
+    "docs": "https://www.streamlake.com/document/WANQING/me6ymdjrqv8lp4iq0o9",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "KwaiKAT开发工具接入指南 - 快手万擎",
+      "url": "https://www.streamlake.com/document/WANQING/me6ymdjrqv8lp4iq0o9",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "大模型服务与开发平台（价格表）- StreamLake",
+      "url": "https://www.streamlake.com/product/wanqing",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "kuaishou",
+      "model": "kat-coder-pro-v2.5",
+      "base_url": "https://wanqing.streamlakeapi.com/api/gateway/v1/endpoints",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}
