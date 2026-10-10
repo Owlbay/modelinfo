@@ -1,0 +1,68 @@
+{
+  "id": "eleven_flash_v2",
+  "object": "model",
+  "created": null,
+  "owned_by": "elevenlabs",
+  "name": "Eleven Flash v2",
+  "api": {
+    "types": [
+      "audio"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "audio"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Fast English-only speech synthesis model for real-time use.",
+    "docs": "https://elevenlabs.io/docs/overview/models",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Models | ElevenLabs Documentation",
+      "url": "https://elevenlabs.io/docs/overview/models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "API pricing | ElevenLabs",
+      "url": "https://elevenlabs.io/pricing/api",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Create speech | ElevenLabs API Reference",
+      "url": "https://elevenlabs.io/docs/api-reference/text-to-speech/convert",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "elevenlabs",
+      "model": "eleven_flash_v2",
+      "base_url": "https://api.elevenlabs.io",
+      "endpoints": {
+        "audio": "POST /v1/text-to-speech/{voice_id}"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
