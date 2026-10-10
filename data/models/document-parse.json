@@ -1,0 +1,76 @@
+{
+  "id": "document-parse",
+  "object": "model",
+  "created": 1790726400,
+  "owned_by": "upstage",
+  "name": "Document Parse",
+  "api": {
+    "types": [
+      "ocr"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "image",
+      "document"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": "2026-09-30",
+    "knowledge_cutoff": null,
+    "description": "Converts complex documents into AI-readable HTML and Markdown; priced per page.",
+    "docs": "https://console.upstage.ai/docs/models/document-parse",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "document-parse-260930"
+  ],
+  "sources": [
+    {
+      "title": "Document Parse | Upstage Docs",
+      "url": "https://console.upstage.ai/docs/models/document-parse",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model history | Upstage Docs",
+      "url": "https://console.upstage.ai/docs/models/history",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Upstage",
+      "url": "https://upstage.ai/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Document parsing API | Upstage Docs",
+      "url": "https://console.upstage.ai/api/document-digitization/document-parsing",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "upstage",
+      "model": "document-parse",
+      "base_url": "https://api.upstage.ai/v1",
+      "endpoints": {
+        "ocr": "POST /document-digitization"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

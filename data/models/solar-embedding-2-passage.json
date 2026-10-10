@@ -1,0 +1,72 @@
+{
+  "id": "solar-embedding-2-passage",
+  "object": "model",
+  "created": 1782777600,
+  "owned_by": "upstage",
+  "name": "Solar Embedding 2 Passage",
+  "api": {
+    "types": [
+      "embeddings"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.02,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": "2026-06-30",
+    "knowledge_cutoff": null,
+    "description": "Passage-side embedding model (1024 dimensions) for longer fragments such as paragraphs.",
+    "docs": "https://console.upstage.ai/docs/capabilities/embeddings",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Embeddings | Upstage Docs",
+      "url": "https://console.upstage.ai/docs/capabilities/embeddings",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model history | Upstage Docs",
+      "url": "https://console.upstage.ai/docs/models/history",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Upstage",
+      "url": "https://upstage.ai/pricing",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "upstage",
+      "model": "solar-embedding-2-passage",
+      "base_url": "https://api.upstage.ai/v1",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

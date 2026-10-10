@@ -1,0 +1,69 @@
+{
+  "id": "information-extract",
+  "object": "model",
+  "created": 1788480000,
+  "owned_by": "upstage",
+  "name": "Information Extract",
+  "api": {
+    "types": [
+      "ocr"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "image",
+      "document"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": "2026-09-04",
+    "knowledge_cutoff": null,
+    "description": "Extracts structured key data from documents without additional training; priced per page.",
+    "docs": "https://console.upstage.ai/docs/models/information-extract",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "information-extract-260904"
+  ],
+  "sources": [
+    {
+      "title": "Information Extract | Upstage Docs",
+      "url": "https://console.upstage.ai/docs/models/information-extract",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model history | Upstage Docs",
+      "url": "https://console.upstage.ai/docs/models/history",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Upstage",
+      "url": "https://upstage.ai/pricing",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "upstage",
+      "model": "information-extract",
+      "base_url": "https://api.upstage.ai/v1",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

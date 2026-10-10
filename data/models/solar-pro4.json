@@ -1,0 +1,98 @@
+{
+  "id": "solar-pro4",
+  "object": "model",
+  "created": 1785974400,
+  "owned_by": "upstage",
+  "name": "Solar Pro 4",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": [
+      "none",
+      "minimal",
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ]
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.3,
+    "output": 1.2,
+    "cache_read": 0.06,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "streaming"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2026-08-06",
+    "knowledge_cutoff": "2026-02",
+    "description": "Upstage flagship Solar model specialized for agentic use, with reasoning, tool calling and structured outputs.",
+    "docs": "https://console.upstage.ai/docs/models/solar-pro-4",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "solar-pro4-260806"
+  ],
+  "sources": [
+    {
+      "title": "Solar Pro 4 | Upstage Docs",
+      "url": "https://console.upstage.ai/docs/models/solar-pro-4",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model history | Upstage Docs",
+      "url": "https://console.upstage.ai/docs/models/history",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Upstage",
+      "url": "https://upstage.ai/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Chat completions API | Upstage Docs",
+      "url": "https://console.upstage.ai/api/chat",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Reasoning | Upstage Docs",
+      "url": "https://console.upstage.ai/docs/capabilities/generate/reasoning",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "upstage",
+      "model": "solar-pro4",
+      "base_url": "https://api.upstage.ai/v1",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": "reasoning_effort"
+    }
+  ]
+}
