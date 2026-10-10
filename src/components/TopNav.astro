@@ -126,24 +126,15 @@ const current = navCurrent(page);
   @media (max-width: 640px) {
     .topnav__inner {
       height: var(--bar-h);
-      gap: var(--sp-3);
+      gap: var(--sp-2);
     }
     .topnav__brand { font-size: var(--fs-body); line-height: var(--lh-body); }
-    .topnav__nav { justify-content: flex-start; gap: var(--sp-4); }
+    .topnav__nav { justify-content: flex-start; gap: var(--sp-3); }
     .topnav__link { font-size: var(--fs-body-sm); line-height: var(--lh-body-sm); }
     .topnav__link--home { display: none; }
-    .topnav__feedback {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--sp-1);
-    min-height: var(--control-h);
-    padding: 0 var(--sp-3);
-    font: 400 var(--fs-body-sm) / var(--lh-body-sm) var(--font-sans);
-    color: var(--ink-2);
-    text-decoration: none;
-    transition: color var(--dur-1) var(--ease-out), background-color var(--dur-1) var(--ease-out);
-  }
-  .topnav__feedback:hover { color: var(--ink); background: var(--hover-row); }
-  .topnav__tools { gap: 0; }
+    /* 手机：反馈去掉箭头、收窄内距，避免英文等较长文案撑出顶栏 */
+    .topnav__feedback { padding: 0 var(--sp-1); }
+    .topnav__feedback :global(.icon) { display: none; }
+    .topnav__tools { gap: 0; }
   }
 </style>

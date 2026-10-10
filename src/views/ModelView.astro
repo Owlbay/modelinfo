@@ -8,6 +8,7 @@ import CodeBlock from '../components/CodeBlock.astro';
 import Endpoint from '../components/Endpoint.astro';
 import Icon from '../components/Icon.astro';
 import VendorLogo from '../components/VendorLogo.astro';
+import Modalities from '../components/Modalities.astro';
 import { correctionUrl } from '../lib/nav';
 import { formatPrice, formatTokens, ownerName, toPublic, type Model } from '../lib/models';
 import { dict, localePath, type Lang } from '../i18n';
@@ -24,7 +25,8 @@ const list = (v: string[]) => (v.length ? v.join(' · ') : '—');
 const yesNo = (v: boolean | null) => (v === null ? t.unknown : v ? t.yes : t.no);
 const g = t.groups;
 
-const groups: Array<{ title: string; rows: Array<[string, string]> }> = [
+// 值为数组时按模态图标渲染
+const groups: Array<{ title: string; rows: Array<[string, string | string[]]> }> = [
   { title: g.api, rows: [['types', list(m.api.types)]] },
   {
     title: g.limits,
@@ -34,7 +36,7 @@ const groups: Array<{ title: string; rows: Array<[string, string]> }> = [
       ['output', formatTokens(m.limits.output)],
     ],
   },
-  { title: g.modalities, rows: [['input', list(m.modalities.input)], ['output', list(m.modalities.output)]] },
+  { title: g.modalities, rows: [['input', m.modalities.input], ['output', m.modalities.output]] },
   { title: g.reasoning, rows: [['supported', yesNo(m.reasoning.supported)], ['efforts', list(m.reasoning.efforts)]] },
   {
     title: p ? `${g.pricing} · ${t.perUnit(p.currency, dict(lang).units[p.unit])}` : g.pricing,
@@ -84,7 +86,7 @@ const verified = tm.verified(m.info.verified_at ?? '—');
                 {grp.rows.map(([k, v]) => (
                   <div class="spec__row">
                     <dt>{k}</dt>
-                    <dd>{v}</dd>
+                    <dd>{typeof v === 'string' ? v : <Modalities lang={lang} items={v} labeled />}</dd>
                   </div>
                 ))}
               </dl>
@@ -206,6 +208,8 @@ const verified = tm.verified(m.info.verified_at ?? '—');
     line-height: var(--lh-mono);
     color: var(--ink-3);
   }
+  /* 参数路径很长时允许断行，避免手机上撑出页面 */
+  .prov__head > span { min-width: 0; overflow-wrap: anywhere; }
   .prov__id { color: var(--ink); }
   .prov__eps {
     display: grid;
