@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        每项更正都需要研发方官方来源（文档、模型页、价格页或官方公告）。第三方聚合站不能作为来源。
+        每项更正都需要模型厂商官方来源（文档、模型页、价格页或官方公告）。第三方聚合站不能作为来源。
         Every correction needs an official vendor source (docs, model page, pricing page or announcement). Third-party aggregators are not accepted.
   - type: input
     id: model
@@ -52,5 +52,5 @@ body:
     attributes:
       label: 确认 / Confirmation
       options:
-        - label: 来源是研发方官方页面 / The source is an official vendor page
+        - label: 来源是模型厂商官方页面 / The source is an official vendor page
           required: true

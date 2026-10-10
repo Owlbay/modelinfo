@@ -69,7 +69,7 @@ info         ⑥ 源信息
 | `id` | string | 模型 ID |
 | `object` | `"model"` | 固定值 |
 | `created` | integer \| null | 发布时间，Unix 秒 |
-| `owned_by` | string | 模型研发方，不是转售商或聚合网关 |
+| `owned_by` | string | 模型厂商，不是转售商或聚合网关 |
 | `name` | string | 展示名称 |
 | `api.types` | string[] | 接口类型：`messages`、`responses`、`generate`、`batch`、`realtime`、`completions`、`embeddings`、`images`、`video`、`audio`、`3d`、`rerank`、`ocr`、`moderation` |
 | `limits.context` | integer \| null | 输入与输出合计的上下文上限（Token） |
@@ -110,12 +110,12 @@ info         ⑥ 源信息
 
 - `input` 为输入侧计价（如识别的音频时长、合成的文本字符），`output` 为输出侧计价（如生成的图片、视频秒数、输出 Token，含思考内容）；
 - `cache_read` / `cache_write` 只用于 Token 计价；
-- 取研发方第一方标准价，一个对象只对应一种币种、一个计价区域、一种计价单位；有多档时取最低一档的标准价；
+- 取模型厂商第一方标准价，一个对象只对应一种币种、一个计价区域、一种计价单位；有多档时取最低一档的标准价；
 - 无单独报价的项为 `null`；同一模型按多种单位混合计费且无法用一个单位表达时，`pricing` 为 `null`。
 
 ## 7. 数据文件
 
-研发方登记在 `data/vendors/<id>.json`：`{ "id", "name", "url" }`，`id` 即模型的 `owned_by`，`name` 为界面显示名。新研发方的模型需要先登记研发方。
+模型厂商登记在 `data/vendors/<id>.json`：`{ "id", "name", "url", "icon"? }`（`icon` 为 `@lobehub/icons-static-svg` 图标名，可选），`id` 即模型的 `owned_by`，`name` 为界面显示名。新模型厂商的模型需要先登记模型厂商。
 
 
 `data/models/<id>.json` = 第 3 节的标准字段 + 三个维护字段（不发布）：

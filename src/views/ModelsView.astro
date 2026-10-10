@@ -1,11 +1,10 @@
 ---
-/** 模型列表：按研发方、类型筛选并支持关键词过滤，筛选状态同步到 URL。 */
+/** 模型列表：按模型厂商、类型筛选并支持关键词过滤，筛选状态同步到 URL。 */
 import BaseLayout from '../layouts/BaseLayout.astro';
 import TopNav from '../components/TopNav.astro';
-import Footer from '../components/Footer.astro';
 import PageHeader from '../components/PageHeader.astro';
 import SectionFrame from '../components/SectionFrame.astro';
-import Segmented from '../components/Segmented.astro';
+import FilterMenu from '../components/FilterMenu.astro';
 import ModelRow from '../components/ModelRow.astro';
 import Icon from '../components/Icon.astro';
 import { getModels, KINDS, latestVerified, modelKind, ownerName } from '../lib/models';
@@ -23,11 +22,11 @@ const ownerCounts = [...count(models, (m) => m.owned_by)].sort((a, b) => b[1] - 
 const kindCounts = count(models, modelKind);
 const ownerOptions = [
   { value: '', label: t.all, count: models.length },
-  ...ownerCounts.map(([o, n]) => ({ value: o, label: ownerName(o), count: n })),
+  ...ownerCounts.map(([o, n]) => ({ value: o, label: ownerName(o), count: n, vendor: o })),
 ];
 const kindOptions = [
   { value: '', label: t.all, count: models.length },
-  ...KINDS.filter((k) => kindCounts.has(k)).map((k) => ({ value: k, label: t.kinds[k], count: kindCounts.get(k) })),
+  ...KINDS.filter((k) => kindCounts.has(k)).map((k) => ({ value: k as string, label: t.kinds[k], count: kindCounts.get(k) ?? 0 })),
 ];
 ---
 
@@ -40,14 +39,8 @@ const kindOptions = [
           <Icon name="search" size={16} />
           <input type="search" data-filter-q placeholder={t.searchPlaceholder} aria-label={t.searchAria} autocomplete="off" spellcheck="false" />
         </label>
-        <div class="filters__row">
-          <span class="filters__label">{t.kindLabel}</span>
-          <Segmented name="kind" label={t.kindAria} options={kindOptions} value="" />
-        </div>
-        <div class="filters__row">
-          <span class="filters__label">{t.cols.vendor}</span>
-          <Segmented name="owner" label={t.filterAria} options={ownerOptions} value="" />
-        </div>
+        <FilterMenu name="kind" label={t.kindLabel} options={kindOptions} />
+        <FilterMenu name="owner" label={t.cols.vendor} options={ownerOptions} searchPlaceholder={t.vendorSearch} />
       </div>
     </PageHeader>
 
@@ -68,7 +61,6 @@ const kindOptions = [
     </SectionFrame>
 
   </main>
-  <Footer lang={lang} />
 </BaseLayout>
 
 <script>
@@ -92,9 +84,15 @@ const kindOptions = [
       if (hit) shown++;
     }
     empty.hidden = shown > 0;
-    for (const seg of document.querySelectorAll<HTMLElement>('[data-seg]')) {
-      const v = state[seg.dataset.seg as 'owner' | 'kind'];
-      seg.querySelectorAll<HTMLButtonElement>('.seg__item').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.value === v)));
+    for (const menu of document.querySelectorAll<HTMLElement>('[data-filter-menu]')) {
+      const v = state[menu.dataset.filterMenu as 'owner' | 'kind'];
+      let label = '';
+      menu.querySelectorAll<HTMLButtonElement>('[data-filter-option]').forEach((b) => {
+        const on = b.dataset.value === v;
+        b.setAttribute('aria-pressed', String(on));
+        if (on) label = b.dataset.label ?? '';
+      });
+      menu.querySelector('[data-filter-current]')!.textContent = label;
     }
     // 筛选状态写入 URL，便于分享与返回
     const url = new URL(location.href);
@@ -109,12 +107,32 @@ const kindOptions = [
   };
 
   document.addEventListener('click', (e) => {
-    const b = (e.target as Element | null)?.closest<HTMLButtonElement>('[data-seg] .seg__item');
-    if (!b) return;
-    const key = b.closest<HTMLElement>('[data-seg]')!.dataset.seg as 'owner' | 'kind';
-    state[key] = b.dataset.value ?? '';
-    transition(apply);
+    const target = e.target as Element | null;
+    const b = target?.closest<HTMLButtonElement>('[data-filter-option]');
+    if (b) {
+      state[b.dataset.name as 'owner' | 'kind'] = b.dataset.value ?? '';
+      (b.closest('details') as HTMLDetailsElement).open = false;
+      transition(apply);
+      return;
+    }
+    // 点击菜单外部时收起
+    for (const d of document.querySelectorAll<HTMLDetailsElement>('[data-filter-menu][open]')) {
+      if (!d.contains(target)) d.open = false;
+    }
   });
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    for (const d of document.querySelectorAll<HTMLDetailsElement>('[data-filter-menu][open]')) d.open = false;
+  });
+  // 菜单内搜索：按名称过滤厂商
+  for (const box of document.querySelectorAll<HTMLInputElement>('[data-filter-search]')) {
+    box.addEventListener('input', () => {
+      const q = box.value.trim().toLowerCase();
+      box.closest('details')!.querySelectorAll<HTMLElement>('[data-filter-option]').forEach((o) => {
+        o.hidden = !!q && !o.dataset.hay!.includes(q);
+      });
+    });
+  }
   input.addEventListener('input', () => {
     state.q = input.value.trim();
     apply();
@@ -124,29 +142,17 @@ const kindOptions = [
 
 <style>
   .models { padding-bottom: var(--sp-8); }
+  /* 搜索框 + 类型 + 模型厂商，同一行；窄屏换行 */
   .filters {
-    display: grid;
-    gap: var(--sp-3);
-  }
-  .filters__row {
-    display: grid;
-    grid-template-columns: 8ch minmax(0, 1fr);
-    align-items: start;
-    column-gap: var(--sp-3);
-  }
-  .filters__label {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    min-height: var(--control-h);
-    font: 400 var(--fs-mono) / var(--lh-mono) var(--font-mono);
-    color: var(--ink-3);
-  }
-  @media (max-width: 640px) {
-    .filters__row { grid-template-columns: minmax(0, 1fr); }
-    .filters__label { min-height: 0; }
+    gap: var(--sp-2);
+    width: 100%;
   }
   .filters__search {
     display: flex;
+    flex: 1 1 280px;
     align-items: center;
     gap: var(--sp-3);
     max-width: 480px;
@@ -172,7 +178,7 @@ const kindOptions = [
   .filters__search input::-webkit-search-cancel-button { display: none; }
   .models__head {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 10ch 8ch 8ch 22ch 10ch;
+    grid-template-columns: minmax(0, 1fr) 16ch 8ch 8ch 22ch 10ch;
     column-gap: var(--sp-5);
     padding-bottom: var(--sp-2);
     border-bottom: 1px solid var(--line);
@@ -187,7 +193,7 @@ const kindOptions = [
     color: var(--ink-3);
   }
   @media (max-width: 1024px) {
-    .models__head { grid-template-columns: minmax(0, 1fr) 10ch 8ch 22ch; column-gap: var(--sp-4); }
+    .models__head { grid-template-columns: minmax(0, 1fr) 16ch 8ch 22ch; column-gap: var(--sp-4); }
     .head__out,
     .head__date { display: none; }
     .models__head > :nth-child(2) { text-align: left; }

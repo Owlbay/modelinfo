@@ -18,7 +18,7 @@
 
 ## 检查 / Checklist
 
-- [ ] 数据只来自研发方官方页面，未知值为 `null`，没有推算 / Data comes only from official vendor pages; unknown values are `null`, nothing is estimated
+- [ ] 数据只来自模型厂商官方页面，未知值为 `null`，没有推算 / Data comes only from official vendor pages; unknown values are `null`, nothing is estimated
 - [ ] 已更新改动文件的 `sources[].retrieved_at` 与 `info.verified_at` / Updated `sources[].retrieved_at` and `info.verified_at` in changed files
 - [ ] `node scripts/validate-data.mjs` 通过 / passes
 - [ ] `pnpm check` 与 `pnpm build` 通过 / pass

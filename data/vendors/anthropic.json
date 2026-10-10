@@ -1,5 +1,6 @@
 {
   "id": "anthropic",
   "name": "Anthropic",
-  "url": "https://www.anthropic.com"
+  "url": "https://www.anthropic.com",
+  "icon": "anthropic"
 }

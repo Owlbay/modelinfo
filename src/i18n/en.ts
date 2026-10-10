@@ -12,12 +12,9 @@ export const en: Dict = {
     models: 'Models',
     docs: 'Docs',
     theme: 'Toggle theme',
+    feedback: 'Feedback',
+    feedbackAria: 'Report incorrect model data on GitHub Issues',
     language: 'Language',
-  },
-  footer: {
-    tagline: 'AI model directory',
-    note: "Data comes from official vendor docs and is verified by hand. Prices are for comparison only; your provider's bill is authoritative.",
-    built: (d: string) => `Built ${d}`,
   },
   code: { copy: 'Copy', copied: 'Copied', copyFailed: 'Copy failed' },
   units: {
@@ -48,6 +45,7 @@ export const en: Dict = {
     filterAria: 'Filter by vendor',
     kindAria: 'Filter by type',
     kindLabel: 'Type',
+    vendorSearch: 'Search vendors',
     kinds: { chat: 'Chat', embedding: 'Embedding', rerank: 'Rerank', image: 'Image', video: 'Video', audio: 'Audio', '3d': '3D' },
     searchPlaceholder: 'Filter models',
     searchAria: 'Filter models',
@@ -61,6 +59,7 @@ export const en: Dict = {
   },
   model: {
     back: 'All models',
+    report: 'Report incorrect data',
     specs: 'Specs',
     groups: {
       api: 'API',

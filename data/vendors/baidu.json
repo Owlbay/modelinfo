@@ -1,5 +1,6 @@
 {
   "id": "baidu",
   "name": "Baidu",
-  "url": "https://cloud.baidu.com/product/qianfan.html"
+  "url": "https://cloud.baidu.com/product/qianfan.html",
+  "icon": "baidu"
 }

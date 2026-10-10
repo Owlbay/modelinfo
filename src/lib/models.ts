@@ -3,11 +3,11 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 
 export type Model = CollectionEntry<'models'>['data'];
 
-/** 发布顺序：按发布日期新到旧，未知日期排最后；同日按研发方、ID */
+/** 发布顺序：按发布日期新到旧，未知日期排最后；同日按模型厂商、ID */
 export async function getModels(): Promise<Model[]> {
   const list = (await getCollection('models')).map((e) => e.data);
   const unknown = [...new Set(list.map((m) => m.owned_by).filter((o) => !VENDORS.has(o)))];
-  if (unknown.length) throw new Error(`data/vendors 缺少研发方：${unknown.join(', ')}`);
+  if (unknown.length) throw new Error(`data/vendors 缺少模型厂商：${unknown.join(', ')}`);
   return list.sort(
     (a, b) =>
       (b.created ?? -1) - (a.created ?? -1) ||
@@ -40,9 +40,10 @@ export function latestVerified(models: Model[]): string | null {
   return models.map((m) => m.info.verified_at).filter((d): d is string => !!d).sort().at(-1) ?? null;
 }
 
-/** 研发方显示名，来自 data/vendors/*.json */
+/** 模型厂商显示名，来自 data/vendors/*.json */
 const VENDORS = new Map((await getCollection('vendors')).map((e) => [e.data.id, e.data]));
 export const ownerName = (id: string) => VENDORS.get(id)?.name ?? id;
+export const vendor = (id: string) => VENDORS.get(id);
 
 /** 模型类型：按输出与接口归类，用于列表筛选 */
 export const KINDS = ['chat', 'embedding', 'rerank', 'image', 'video', 'audio', '3d'] as const;

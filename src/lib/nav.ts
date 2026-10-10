@@ -15,3 +15,10 @@ export const NAV: readonly NavItem[] = [
 
 /** 模型详情页归属模型列表 */
 export const navCurrent = (page: PageId) => (page === 'model' ? 'models' : page);
+
+/** 反馈入口：GitHub Issues 新建页（中英双语模板） */
+export const REPO_URL = 'https://github.com/Owlbay/modelinfo';
+export const FEEDBACK_URL = `${REPO_URL}/issues/new/choose`;
+/** 某个模型的数据更正：预填数据更正模板的模型 ID 字段 */
+export const correctionUrl = (id: string) =>
+  `${REPO_URL}/issues/new?template=data-correction.yml&model=${encodeURIComponent(id)}&title=${encodeURIComponent(`[数据 / Data] ${id}: `)}`;

@@ -1,17 +1,17 @@
 name: 新增模型 / New model
-description: 收录一个研发方官方 API 上可调用但尚未收录的模型 / Add a model callable on its vendor's official API
+description: 收录一个模型厂商官方 API 上可调用但尚未收录的模型 / Add a model callable on its vendor's official API
 title: "[新模型 / New model] <vendor>/<model-id>"
 labels: ["new-model"]
 body:
   - type: markdown
     attributes:
       value: |
-        只收录研发方自家官方 API 上可调用的模型；已退役、仅开源权重或仅限审批机构的模型不收录。
+        只收录模型厂商自家官方 API 上可调用的模型；已退役、仅开源权重或仅限审批机构的模型不收录。
         Only models callable on the vendor's own official API are listed. Retired, open-weight-only or approval-only models are out of scope.
   - type: input
     id: vendor
     attributes:
-      label: 研发方 / Vendor
+      label: 模型厂商 / Vendor
       placeholder: OpenAI
     validations:
       required: true

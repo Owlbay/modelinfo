@@ -2,12 +2,13 @@
 /** 模型详情：规格分组、Provider 调用方式（可复制地址）、标准 JSON 与官方来源。 */
 import BaseLayout from '../layouts/BaseLayout.astro';
 import TopNav from '../components/TopNav.astro';
-import Footer from '../components/Footer.astro';
 import PageHeader from '../components/PageHeader.astro';
 import SectionFrame from '../components/SectionFrame.astro';
 import CodeBlock from '../components/CodeBlock.astro';
 import Endpoint from '../components/Endpoint.astro';
 import Icon from '../components/Icon.astro';
+import VendorLogo from '../components/VendorLogo.astro';
+import { correctionUrl } from '../lib/nav';
 import { formatPrice, formatTokens, ownerName, toPublic, type Model } from '../lib/models';
 import { dict, localePath, type Lang } from '../i18n';
 
@@ -67,7 +68,9 @@ const verified = tm.verified(m.info.verified_at ?? '—');
     <a class="detail__back" href={localePath(lang, '/models/')}><Icon name="arrow-left" size={12} />{t.back}</a>
     <PageHeader title={m.name} intro={m.info.description ?? undefined}>
       <span class="detail__meta mono">
-        <span>{m.id}</span><span>{ownerName(m.owned_by)}</span>{m.info.release_date && <span>{m.info.release_date}</span>}
+        <span class="detail__vendor"><VendorLogo id={m.owned_by} size={14} />{ownerName(m.owned_by)}</span>
+        <span>{m.id}</span>{m.info.release_date && <span>{m.info.release_date}</span>}
+        <a class="detail__report" href={correctionUrl(m.id)} target="_blank" rel="noopener">{t.report}<Icon name="arrow-up-right" size={12} /></a>
       </span>
     </PageHeader>
 
@@ -134,7 +137,6 @@ const verified = tm.verified(m.info.verified_at ?? '—');
       }
     </SectionFrame>
   </main>
-  <Footer lang={lang} />
 </BaseLayout>
 
 <style>
@@ -152,6 +154,17 @@ const verified = tm.verified(m.info.verified_at ?? '—');
   }
   .detail__back:hover { color: var(--ink); }
   .detail :global(.phead) { padding-top: var(--sp-4); }
+  .detail__vendor { display: inline-flex; align-items: center; gap: var(--sp-2); color: var(--ink-2); }
+  .detail__report {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-1);
+    margin-left: auto;
+    font-family: var(--font-sans);
+    color: var(--ink-2);
+    text-decoration: none;
+  }
+  .detail__report:hover { color: var(--ink); }
   .detail__meta {
     display: flex;
     flex-wrap: wrap;

@@ -1,5 +1,6 @@
 {
   "id": "minimax",
   "name": "MiniMax",
-  "url": "https://www.minimax.io"
+  "url": "https://www.minimax.io",
+  "icon": "minimax"
 }

@@ -4,7 +4,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import TopNav from '../components/TopNav.astro';
 import WordField from '../components/WordField.astro';
 import HomeSearch from '../components/HomeSearch.astro';
-import Footer from '../components/Footer.astro';
 import { getModels } from '../lib/models';
 import { localePath, type Lang } from '../i18n';
 import type { FieldWord } from '../components/wordfield';
@@ -25,7 +24,6 @@ const words: FieldWord[] = models.map((m) => ({ t: m.name, href: localePath(lang
       <HomeSearch lang={lang} models={models} />
     </section>
   </main>
-  <Footer lang={lang} />
 </BaseLayout>
 
 <style>

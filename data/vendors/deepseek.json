@@ -1,5 +1,6 @@
 {
   "id": "deepseek",
   "name": "DeepSeek",
-  "url": "https://www.deepseek.com"
+  "url": "https://www.deepseek.com",
+  "icon": "deepseek"
 }

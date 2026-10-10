@@ -1,7 +1,8 @@
 ---
-/** 模型列表行：名称/ID · 研发方 · 上下文 · 最大输出 · 输入/输出价格 · 发布日期。骨架见 .list-row。 */
+/** 模型列表行：名称/ID · 模型厂商 · 上下文 · 最大输出 · 输入/输出价格 · 发布日期。骨架见 .list-row。 */
 import { formatPrice, formatTokens, modelKind, ownerName, type Model } from '../lib/models';
 import { dict, localePath, type Lang } from '../i18n';
+import VendorLogo from './VendorLogo.astro';
 
 interface Props {
   lang: Lang;
@@ -18,7 +19,7 @@ const unit = p && p.unit !== '1M_tokens' ? ` / ${dict(lang).units[p.unit]}` : ''
     <span class="mrow__name">{m.name}</span>
     <span class="mrow__id">{m.id}</span>
   </span>
-  <span class="mrow__owner">{ownerName(m.owned_by)}</span>
+  <span class="mrow__owner"><VendorLogo id={m.owned_by} size={14} /><span>{ownerName(m.owned_by)}</span></span>
   <span class="mrow__num">{formatTokens(m.limits.context)}</span>
   <span class="mrow__num mrow__out">{formatTokens(m.limits.output)}</span>
   <span class="mrow__num mrow__price">
@@ -28,9 +29,9 @@ const unit = p && p.unit !== '1M_tokens' ? ` / ${dict(lang).units[p.unit]}` : ''
 </a>
 
 <style>
-  /* 列：名称 · 研发方 · 上下文 · 输出 · 价格 · 发布；表头见 ModelsView，断点与之一致 */
+  /* 列：名称 · 模型厂商 · 上下文 · 输出 · 价格 · 发布；表头见 ModelsView，断点与之一致 */
   .mrow {
-    grid-template-columns: minmax(0, 1fr) 10ch 8ch 8ch 22ch 10ch;
+    grid-template-columns: minmax(0, 1fr) 16ch 8ch 8ch 22ch 10ch;
     column-gap: var(--sp-5);
     color: var(--ink);
   }
@@ -54,19 +55,27 @@ const unit = p && p.unit !== '1M_tokens' ? ` / ${dict(lang).units[p.unit]}` : ''
     line-height: var(--lh-mono-sm);
     color: var(--ink-3);
   }
-  .mrow__owner { color: var(--ink-2); white-space: nowrap; }
+  .mrow__owner {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-2);
+    min-width: 0;
+    color: var(--ink-2);
+    white-space: nowrap;
+  }
+  .mrow__owner > span:last-child { overflow: hidden; text-overflow: ellipsis; }
   .mrow__num,
   .mrow__date { color: var(--ink-3); text-align: right; white-space: nowrap; }
   .mrow__price { color: var(--ink-2); }
 
   /* 平板：去掉输出与发布日期，ID 让位给名称 */
   @media (max-width: 1024px) {
-    .mrow { grid-template-columns: minmax(0, 1fr) 10ch 8ch 22ch; column-gap: var(--sp-4); }
+    .mrow { grid-template-columns: minmax(0, 1fr) 16ch 8ch 22ch; column-gap: var(--sp-4); }
     .mrow__out,
     .mrow__date,
     .mrow__id { display: none; }
   }
-  /* 手机：名称一行，研发方 · 上下文 · 价格一行 */
+  /* 手机：名称一行，模型厂商 · 上下文 · 价格一行 */
   @media (max-width: 640px) {
     .mrow {
       grid-template-columns: auto auto minmax(0, 1fr);

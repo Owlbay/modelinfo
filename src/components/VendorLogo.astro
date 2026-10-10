@@ -1,0 +1,60 @@
+---
+/**
+ * 模型厂商 logo：@lobehub/icons-static-svg 单色图标（fill="currentColor"，随文字色适配深浅主题），
+ * 构建时内联；未登记图标的厂商显示首字母方块。
+ */
+import fs from 'node:fs';
+import { createRequire } from 'node:module';
+import { vendor } from '../lib/models';
+
+interface Props {
+  id: string;
+  size?: number;
+  class?: string;
+}
+const { id, size = 16, class: className } = Astro.props;
+const v = vendor(id);
+const require = createRequire(import.meta.url);
+
+let svg: string | null = null;
+if (v?.icon) {
+  try {
+    const file = require.resolve(`@lobehub/icons-static-svg/icons/${v.icon}.svg`);
+    svg = fs
+      .readFileSync(file, 'utf8')
+      .replace(/<title>.*?<\/title>/s, '')
+      .replace(/\s(width|height|style)="[^"]*"/g, '')
+      .replace('<svg', `<svg width="${size}" height="${size}" aria-hidden="true" focusable="false"`);
+  } catch {
+    svg = null;
+  }
+}
+const initial = (v?.name ?? id).slice(0, 1).toUpperCase();
+---
+
+{
+  svg ? (
+    <span class:list={['vlogo', className]} set:html={svg} />
+  ) : (
+    <span class:list={['vlogo', 'vlogo--text', className]} style={`--vlogo-size:${size}px`} aria-hidden="true">
+      {initial}
+    </span>
+  )
+}
+
+<style>
+  .vlogo {
+    display: inline-grid;
+    flex: none;
+    place-items: center;
+    color: var(--ink);
+  }
+  .vlogo :global(svg) { display: block; }
+  .vlogo--text {
+    width: var(--vlogo-size);
+    height: var(--vlogo-size);
+    border: 1px solid var(--line-strong);
+    font: 500 var(--fs-mono-xs) / 1 var(--font-mono);
+    color: var(--ink-2);
+  }
+</style>

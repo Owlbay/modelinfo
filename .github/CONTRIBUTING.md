@@ -9,15 +9,15 @@ ModelInfo 的模型数据全部在 `data/models/*.json`，一个模型一个文�
 ### 提交 Issue
 
 - **数据更正**：说明模型 ID、字段、当前值、正确值，并附上能看到该数值的官方页面。
-- **新增模型**：说明研发方、模型 ID、类型，并附上官方模型页或价格页。
+- **新增模型**：说明模型厂商、模型 ID、类型，并附上官方模型页或价格页。
 - **问题反馈 / 功能建议**：按模板填写。
 
 ### 提交 PR 更新数据
 
 1. Fork 仓库并新建分支，例如 `data/gpt-5.4-pricing`。
-2. 修改或新建 `data/models/<id>.json`，文件名与 `id` 一致；新研发方先新建 `data/vendors/<owned_by>.json`（`id`、`name`、`url`）。字段与顺序见 [接口规范](../docs/spec-v1-models.md)，收录范围与数据约定见 [数据维护](../docs/maintenance.md)。
+2. 修改或新建 `data/models/<id>.json`，文件名与 `id` 一致；新模型厂商先新建 `data/vendors/<owned_by>.json`（`id`、`name`、`url`）。字段与顺序见 [接口规范](../docs/spec-v1-models.md)，收录范围与数据约定见 [数据维护](../docs/maintenance.md)。
 3. 规则：
-   - 只用研发方官方文档、模型页、价格页与官方公告，并写进该文件的 `sources`。
+   - 只用模型厂商官方文档、模型页、价格页与官方公告，并写进该文件的 `sources`。
    - 官方没有给出的值写 `null` 或空数组，不推算、不填 0。
    - 更新 `sources[].retrieved_at` 与 `info.verified_at` 为核验当天日期。
 4. 本地检查：

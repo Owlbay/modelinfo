@@ -1,0 +1,168 @@
+---
+/**
+ * 筛选下拉菜单：原生 <details>，触发器显示当前选择；选项带计数，可选厂商 logo 与菜单内搜索。
+ * 选择事件由页面脚本处理：点击 [data-filter-option] 时读取 data-name / data-value。
+ */
+import Icon from './Icon.astro';
+import VendorLogo from './VendorLogo.astro';
+
+interface Option {
+  value: string;
+  label: string;
+  count: number;
+  /** 模型厂商 id，提供时显示 logo */
+  vendor?: string;
+}
+interface Props {
+  name: string;
+  label: string;
+  options: Option[];
+  /** 选项较多时显示菜单内搜索框 */
+  searchPlaceholder?: string;
+}
+const { name, label, options, searchPlaceholder } = Astro.props;
+const all = options[0]!;
+---
+
+<details class="fm" data-filter-menu={name}>
+  <summary class="fm__trigger">
+    <span class="fm__label">{label}</span>
+    <span class="fm__value" data-filter-current>{all.label}</span>
+    <Icon name="chevron-down" size={12} class="fm__chev" />
+  </summary>
+  <div class="fm__panel">
+    {
+      searchPlaceholder && (
+        <label class="fm__search">
+          <Icon name="search" size={14} />
+          <input type="search" data-filter-search placeholder={searchPlaceholder} aria-label={searchPlaceholder} autocomplete="off" spellcheck="false" />
+        </label>
+      )
+    }
+    <ul class="fm__list" role="list">
+      {
+        options.map((o) => (
+          <li>
+            <button
+              type="button"
+              class="fm__item"
+              data-filter-option
+              data-name={name}
+              data-value={o.value}
+              data-label={o.label}
+              data-hay={`${o.label} ${o.value}`.toLowerCase()}
+              aria-pressed={o.value === '' ? 'true' : 'false'}
+            >
+              {o.vendor && <VendorLogo id={o.vendor} size={14} />}
+              <span class="fm__name">{o.label}</span>
+              <span class="fm__count">{o.count}</span>
+            </button>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</details>
+
+<style>
+  .fm { position: relative; }
+  .fm__trigger {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-2);
+    height: var(--control-h);
+    padding: 0 var(--sp-3);
+    border: 1px solid var(--line-strong);
+    font: 400 var(--fs-body-sm) / var(--lh-body-sm) var(--font-sans);
+    color: var(--ink);
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+    transition: border-color var(--dur-1) var(--ease-out), background-color var(--dur-1) var(--ease-out);
+  }
+  .fm__trigger::-webkit-details-marker { display: none; }
+  .fm__trigger:hover { background: var(--hover-row); }
+  .fm[open] .fm__trigger { border-color: var(--accent-ui); }
+  .fm__label { color: var(--ink-3); }
+  .fm__value { max-width: 16ch; overflow: hidden; text-overflow: ellipsis; }
+  .fm__trigger :global(.fm__chev) { color: var(--ink-3); transition: transform var(--dur-2) var(--ease-out); }
+  .fm[open] .fm__trigger :global(.fm__chev) { transform: rotate(180deg); }
+
+  .fm__panel {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    width: max(100%, 260px);
+    max-height: min(60vh, 420px);
+    margin-top: -1px;
+    background: var(--bg-panel);
+    border: 1px solid var(--line);
+    animation: panel-in var(--dur-2) var(--ease-out);
+  }
+  .fm__search {
+    display: flex;
+    flex: none;
+    align-items: center;
+    gap: var(--sp-2);
+    height: var(--control-h);
+    padding: 0 var(--sp-3);
+    border-bottom: 1px solid var(--line-soft);
+    color: var(--ink-3);
+  }
+  .fm__search input {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    font: 400 var(--fs-body-sm) / var(--lh-body-sm) var(--font-sans);
+    color: var(--ink);
+    outline: none;
+  }
+  .fm__search input::-webkit-search-cancel-button { display: none; }
+  .fm__list {
+    flex: 1 1 auto;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+  .fm__item {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-2);
+    width: 100%;
+    min-height: 36px;
+    padding: 0 var(--sp-3);
+    font: 400 var(--fs-body-sm) / var(--lh-body-sm) var(--font-sans);
+    color: var(--ink-2);
+    text-align: left;
+    transition: color var(--dur-1) var(--ease-out), background-color var(--dur-1) var(--ease-out);
+  }
+  .fm__item[hidden] { display: none; }
+  .fm__item:hover { color: var(--ink); background: var(--hover-row); }
+  .fm__item:focus-visible { outline-offset: -2px; }
+  .fm__name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .fm__count { font: 400 var(--fs-mono-sm) / var(--lh-mono-sm) var(--font-mono); color: var(--ink-3); }
+  /* 当前选择：反白 */
+  .fm__item[aria-pressed='true'] { background: var(--selected-bg); color: var(--selected-ink); }
+  .fm__item[aria-pressed='true'] .fm__count,
+  .fm__item[aria-pressed='true'] :global(.vlogo) { color: var(--selected-ink); }
+  .fm__item[aria-pressed='true'] :global(.vlogo--text) { border-color: var(--selected-ink); }
+
+  @media (max-width: 640px) {
+    .fm { flex: 1; }
+    .fm__trigger { width: 100%; justify-content: space-between; }
+    .fm__panel { width: 100%; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .fm__panel { animation: vt-fade-in 160ms linear both; }
+  }
+</style>

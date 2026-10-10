@@ -10,12 +10,9 @@ export const zh = {
     models: '模型',
     docs: '文档',
     theme: '切换主题',
+    feedback: '反馈',
+    feedbackAria: '在 GitHub Issues 反馈模型信息错误',
     language: '语言',
-  },
-  footer: {
-    tagline: 'AI 模型目录',
-    note: '数据取自各研发方官方文档，人工核验；价格仅供比较，以 Provider 账单为准。',
-    built: (d: string) => `构建 ${d}`,
   },
   code: { copy: '复制', copied: '已复制', copyFailed: '复制失败' },
   units: {
@@ -30,7 +27,7 @@ export const zh = {
   },
   home: {
     title: ['AI 模型目录，', '一个标准接口。'],
-    placeholder: '搜索模型、研发方或接口类型',
+    placeholder: '搜索模型、模型厂商或接口类型',
     searchAria: '搜索模型',
     resultsAria: '搜索结果',
     panelHead: '模型',
@@ -42,10 +39,11 @@ export const zh = {
   },
   models: {
     title: '模型',
-    intro: '各研发方官方发布的模型：上下文、输入输出、思考等级与价格。价格默认为每百万 Token，其他计价单位单独标注。',
-    filterAria: '按研发方筛选',
+    intro: '各模型厂商官方发布的模型：上下文、输入输出、思考等级与价格。价格默认为每百万 Token，其他计价单位单独标注。',
+    filterAria: '按模型厂商筛选',
     kindAria: '按类型筛选',
     kindLabel: '类型',
+    vendorSearch: '搜索模型厂商',
     kinds: { chat: '对话', embedding: '向量', rerank: '重排', image: '图像', video: '视频', audio: '音频', '3d': '3D' },
     searchPlaceholder: '筛选模型',
     searchAria: '筛选模型',
@@ -54,11 +52,12 @@ export const zh = {
     count: (n: number) => `${n} 个模型`,
     source: '来源 · 官方文档',
     verified: (d: string) => `核验 ${d}`,
-    cols: { model: '模型', vendor: '研发方', context: '上下文', output: '输出', price: '输入 / 输出', released: '发布' },
+    cols: { model: '模型', vendor: '模型厂商', context: '上下文', output: '输出', price: '输入 / 输出', released: '发布' },
     empty: '没有匹配的模型',
   },
   model: {
     back: '全部模型',
+    report: '报告数据错误',
     specs: '规格',
     groups: {
       api: 'API',
@@ -87,7 +86,7 @@ export const zh = {
     tocAria: '目录',
     toc: { about: '简介', endpoint: '接口', playground: '在线调试', structure: '响应结构', fields: '字段', usage: '调用示例', data: '数据' },
     about: [
-      'ModelInfo 收录各研发方官方发布的 AI 模型，统一整理上下文、输入输出、思考等级与价格，并以 OpenAI 兼容的格式提供一个只读接口，方便模型选择器、网关和费用估算直接使用。',
+      'ModelInfo 收录各模型厂商官方发布的 AI 模型，统一整理上下文、输入输出、思考等级与价格，并以 OpenAI 兼容的格式提供一个只读接口，方便模型选择器、网关和费用估算直接使用。',
       '每个数值都来自官方文档并经人工核验；官方未给出的写 null，不推算。站点为纯静态文件，没有账号、配额或鉴权。',
     ],
     endpointNotes: [
@@ -110,7 +109,7 @@ export const zh = {
     },
     fields: {
       created: '发布时间，Unix 秒',
-      owned_by: '模型研发方，不是转售商或网关',
+      owned_by: '模型厂商，不是转售商或网关',
       api: 'messages · responses · generate · batch · embeddings 等',
       context: '输入与输出合计上限（Token）',
       input: '官方单独声明的最大输入',
@@ -127,7 +126,7 @@ export const zh = {
     fieldsNote: '未知值一律为 null 或空数组；客户端应把各分组视为可选，并容忍新增字段。',
     sdkComment: '# OpenAI SDK 会请求 {base_url}/models',
     dataNotes: [
-      '价格取研发方第一方报价；不同区域与转售平台价格可能不同，以 Provider 账单为准。',
+      '价格取模型厂商第一方报价；不同区域与转售平台价格可能不同，以 Provider 账单为准。',
       '每个模型页列出全部官方来源与核验日期。',
       '数据维护在 GitHub 仓库的 data/models 目录，欢迎提交更正：',
     ],

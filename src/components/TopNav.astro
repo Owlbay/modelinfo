@@ -1,8 +1,10 @@
 ---
-/** 全站顶栏：品牌、导航（来自 lib/nav.ts）、语言、主题。 */
+/** 全站顶栏：品牌、导航（来自 lib/nav.ts）、反馈、语言、主题。 */
 import { NAV, navCurrent, type PageId } from '../lib/nav';
 import { dict, localePath, type Lang } from '../i18n';
 import LangMenu from './LangMenu.astro';
+import Icon from './Icon.astro';
+import { FEEDBACK_URL } from '../lib/nav';
 import ThemeToggle from './ThemeToggle.astro';
 import Kbd from './Kbd.astro';
 
@@ -36,6 +38,9 @@ const current = navCurrent(page);
     </nav>
 
     <div class="topnav__tools">
+      <a class="topnav__feedback" href={FEEDBACK_URL} target="_blank" rel="noopener" aria-label={t.nav.feedbackAria}>
+        <span>{t.nav.feedback}</span><Icon name="arrow-up-right" size={12} />
+      </a>
       <LangMenu lang={lang} />
       <ThemeToggle label={t.nav.theme} />
     </div>
@@ -96,6 +101,18 @@ const current = navCurrent(page);
     height: 2px;
     background: var(--accent-ui);
   }
+  .topnav__feedback {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-1);
+    min-height: var(--control-h);
+    padding: 0 var(--sp-3);
+    font: 400 var(--fs-body-sm) / var(--lh-body-sm) var(--font-sans);
+    color: var(--ink-2);
+    text-decoration: none;
+    transition: color var(--dur-1) var(--ease-out), background-color var(--dur-1) var(--ease-out);
+  }
+  .topnav__feedback:hover { color: var(--ink); background: var(--hover-row); }
   .topnav__tools {
     display: flex;
     align-items: center;
@@ -115,6 +132,18 @@ const current = navCurrent(page);
     .topnav__nav { justify-content: flex-start; gap: var(--sp-4); }
     .topnav__link { font-size: var(--fs-body-sm); line-height: var(--lh-body-sm); }
     .topnav__link--home { display: none; }
-    .topnav__tools { gap: 0; }
+    .topnav__feedback {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-1);
+    min-height: var(--control-h);
+    padding: 0 var(--sp-3);
+    font: 400 var(--fs-body-sm) / var(--lh-body-sm) var(--font-sans);
+    color: var(--ink-2);
+    text-decoration: none;
+    transition: color var(--dur-1) var(--ease-out), background-color var(--dur-1) var(--ease-out);
+  }
+  .topnav__feedback:hover { color: var(--ink); background: var(--hover-row); }
+  .topnav__tools { gap: 0; }
   }
 </style>

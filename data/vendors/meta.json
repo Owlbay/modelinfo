@@ -1,5 +1,6 @@
 {
   "id": "meta",
   "name": "Meta",
-  "url": "https://dev.meta.ai"
+  "url": "https://dev.meta.ai",
+  "icon": "meta"
 }
