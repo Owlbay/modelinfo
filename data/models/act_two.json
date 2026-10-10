@@ -1,0 +1,62 @@
+{
+  "id": "act_two",
+  "object": "model",
+  "created": null,
+  "owned_by": "runway",
+  "name": "Act-Two",
+  "api": {
+    "types": [
+      "video"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "image",
+      "video"
+    ],
+    "output": [
+      "video"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Runway's motion capture model.",
+    "docs": "https://docs.dev.runwayml.com/guides/models/",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Available AI Models | Runway API",
+      "url": "https://docs.dev.runwayml.com/guides/models/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Runway API",
+      "url": "https://docs.dev.runwayml.com/guides/pricing/",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "runway",
+      "model": "act_two",
+      "base_url": "https://api.dev.runwayml.com/v1",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

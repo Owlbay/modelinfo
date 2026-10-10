@@ -1,0 +1,63 @@
+{
+  "id": "aleph2",
+  "object": "model",
+  "created": null,
+  "owned_by": "runway",
+  "name": "Aleph 2.0",
+  "api": {
+    "types": [
+      "video"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "video"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Runway's flagship in-context video editing model with keyframe-guided control.",
+    "docs": "https://docs.dev.runwayml.com/guides/models/",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Available AI Models | Runway API",
+      "url": "https://docs.dev.runwayml.com/guides/models/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Runway API",
+      "url": "https://docs.dev.runwayml.com/guides/pricing/",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "runway",
+      "model": "aleph2",
+      "base_url": "https://api.dev.runwayml.com/v1",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

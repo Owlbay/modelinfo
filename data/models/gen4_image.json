@@ -1,0 +1,62 @@
+{
+  "id": "gen4_image",
+  "object": "model",
+  "created": null,
+  "owned_by": "runway",
+  "name": "Gen-4 Image",
+  "api": {
+    "types": [
+      "images"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "image"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Runway's image generation model.",
+    "docs": "https://docs.dev.runwayml.com/guides/models/",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Available AI Models | Runway API",
+      "url": "https://docs.dev.runwayml.com/guides/models/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Runway API",
+      "url": "https://docs.dev.runwayml.com/guides/pricing/",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "runway",
+      "model": "gen4_image",
+      "base_url": "https://api.dev.runwayml.com/v1",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}
