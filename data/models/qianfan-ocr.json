@@ -7,7 +7,8 @@
   "api": {
     "types": [
       "ocr",
-      "chat"
+      "chat",
+      "messages"
     ]
   },
   "limits": {
@@ -61,6 +62,11 @@
       "title": "模型服务计费 | 百度千帆",
       "url": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Anthropic Claude API 兼容 | 百度千帆",
+      "url": "https://cloud.baidu.com/doc/qianfan-docs/s/6mh3e6gjp",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -69,7 +75,8 @@
       "model": "qianfan-ocr",
       "base_url": "https://qianfan.baidubce.com",
       "endpoints": {
-        "chat": "POST /v2/chat/completions"
+        "chat": "POST /v2/chat/completions",
+        "messages": "POST /anthropic/v1/messages"
       },
       "reasoning_param": null
     }

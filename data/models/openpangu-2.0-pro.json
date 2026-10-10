@@ -6,7 +6,8 @@
   "name": "openPangu-2.0-Pro",
   "api": {
     "types": [
-      "chat"
+      "chat",
+      "messages"
     ]
   },
   "limits": {
@@ -73,15 +74,21 @@
       "title": "openPangu-2.0-Pro | openPangu GitCode",
       "url": "https://gitcode.com/ascend-tribe/openPangu-2.0-Pro",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Anthropic兼容接口 | 华为云 MaaS",
+      "url": "https://support.huaweicloud.com/model-call-maas/model-call-022.html",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "huawei",
       "model": "openpangu-2.0-pro",
-      "base_url": "https://api.modelarts-maas.com/openai/v1",
+      "base_url": "https://api.modelarts-maas.com",
       "endpoints": {
-        "chat": "POST /chat/completions"
+        "chat": "POST /openai/v1/chat/completions",
+        "messages": "POST /anthropic/v1/messages"
       },
       "reasoning_param": "chat_template_kwargs.thinking"
     }

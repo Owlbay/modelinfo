@@ -6,7 +6,8 @@
   "name": "Step 3.5 Flash",
   "api": {
     "types": [
-      "chat"
+      "chat",
+      "messages"
     ]
   },
   "limits": {
@@ -45,7 +46,7 @@
     "knowledge_cutoff": null,
     "description": "Sparse MoE reasoning model (196B total, 11B active) for agents and long-horizon tasks.",
     "docs": "https://platform.stepfun.ai/docs/en/guides/models/step-3.5-flash",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -68,15 +69,21 @@
       "title": "Step 3.5 Flash | StepFun Documentation",
       "url": "https://platform.stepfun.ai/docs/en/guides/models/step-3.5-flash",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Messages API | StepFun Documentation",
+      "url": "https://platform.stepfun.ai/docs/en/api-reference/chat/messages-create",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "stepfun",
       "model": "step-3.5-flash",
-      "base_url": "https://api.stepfun.ai/v1",
+      "base_url": "https://api.stepfun.ai",
       "endpoints": {
-        "chat": "POST /chat/completions"
+        "chat": "POST /v1/chat/completions",
+        "messages": "POST /v1/messages"
       },
       "reasoning_param": null
     }

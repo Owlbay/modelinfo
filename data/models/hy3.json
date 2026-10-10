@@ -6,7 +6,8 @@
   "name": "Hy3",
   "api": {
     "types": [
-      "chat"
+      "chat",
+      "messages"
     ]
   },
   "limits": {
@@ -46,7 +47,7 @@
     "knowledge_cutoff": null,
     "description": "Tencent Hy3 295B-A21B MoE model with switchable reasoning depth, served on TokenHub.",
     "docs": "https://cloud.tencent.com/document/product/1823/132252",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -69,6 +70,11 @@
       "title": "腾讯混元Hy3正式上线发布 | 腾讯云开发者社区",
       "url": "https://cloud.tencent.com/developer/news/4205517",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "语言模型调用概览 | 腾讯云 TokenHub",
+      "url": "https://cloud.tencent.com/document/product/1823/130079",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -77,7 +83,8 @@
       "model": "hy3",
       "base_url": "https://tokenhub.tencentmaas.com/v1",
       "endpoints": {
-        "chat": "POST /chat/completions"
+        "chat": "POST /chat/completions",
+        "messages": "POST /messages"
       },
       "reasoning_param": "reasoning_effort"
     }

@@ -6,7 +6,8 @@
   "name": "MiMo-V2.6-Pro-UltraSpeed",
   "api": {
     "types": [
-      "chat"
+      "chat",
+      "messages"
     ]
   },
   "limits": {
@@ -49,7 +50,7 @@
     "knowledge_cutoff": null,
     "description": "MiMo-V2.6-Pro performance with output up to 20 times faster for real-time, latency-sensitive workloads.",
     "docs": "https://mimo.mi.com/models/zh-CN/mimo-v2.6-pro-ultraspeed",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -72,15 +73,21 @@
       "title": "config.json | XiaomiMiMo/MiMo-V2-Flash (Hugging Face)",
       "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2-Flash/blob/main/config.json",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Anthropic Messages API Compatibility | Xiaomi MiMo",
+      "url": "https://mimo.mi.com/docs/en-US/api/chat/anthropic-api",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "xiaomi",
       "model": "mimo-v2.6-pro-ultraspeed",
-      "base_url": "https://api.xiaomimimo.com/v1",
+      "base_url": "https://api.xiaomimimo.com",
       "endpoints": {
-        "chat": "POST /chat/completions"
+        "chat": "POST /v1/chat/completions",
+        "messages": "POST /anthropic/v1/messages"
       },
       "reasoning_param": "thinking"
     }

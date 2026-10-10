@@ -6,7 +6,8 @@
   "name": "GLM-5.3",
   "api": {
     "types": [
-      "chat"
+      "chat",
+      "messages"
     ]
   },
   "limits": {
@@ -50,14 +51,14 @@
     "knowledge_cutoff": null,
     "description": "Z.ai flagship text model with 1M context and stronger coding, built on the same base as GLM-5.2.",
     "docs": "https://docs.z.ai/guides/llm/glm-5.3",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
     {
       "title": "GLM-5.3 | Z.AI Developer Document",
       "url": "https://docs.z.ai/guides/llm/glm-5.3",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Pricing | Z.AI Developer Document",
@@ -84,9 +85,10 @@
     {
       "id": "zhipu",
       "model": "glm-5.3",
-      "base_url": "https://api.z.ai/api/paas/v4",
+      "base_url": "https://api.z.ai",
       "endpoints": {
-        "chat": "POST /chat/completions"
+        "chat": "POST /api/paas/v4/chat/completions",
+        "messages": "POST /api/anthropic/v1/messages"
       },
       "reasoning_param": "reasoning_effort"
     }

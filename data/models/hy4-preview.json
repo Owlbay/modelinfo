@@ -6,7 +6,8 @@
   "name": "Hy4 Preview",
   "api": {
     "types": [
-      "chat"
+      "chat",
+      "messages"
     ]
   },
   "limits": {
@@ -46,7 +47,7 @@
     "knowledge_cutoff": null,
     "description": "Tencent Hy4 preview model with 1M context and deep thinking, served on TokenHub.",
     "docs": "https://cloud.tencent.com/document/product/1823/132252",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -64,6 +65,11 @@
       "title": "模型定价 | 腾讯云 TokenHub",
       "url": "https://cloud.tencent.com/document/product/1823/130055",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "语言模型调用概览 | 腾讯云 TokenHub",
+      "url": "https://cloud.tencent.com/document/product/1823/130079",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -72,7 +78,8 @@
       "model": "hy4-preview",
       "base_url": "https://tokenhub.tencentmaas.com/v1",
       "endpoints": {
-        "chat": "POST /chat/completions"
+        "chat": "POST /chat/completions",
+        "messages": "POST /messages"
       },
       "reasoning_param": "thinking"
     }

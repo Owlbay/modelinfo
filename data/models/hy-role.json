@@ -6,7 +6,8 @@
   "name": "Hy-Role",
   "api": {
     "types": [
-      "chat"
+      "chat",
+      "messages"
     ]
   },
   "limits": {
@@ -41,7 +42,7 @@
     "knowledge_cutoff": null,
     "description": "Tencent role-play model for persona and scenario performance.",
     "docs": "https://cloud.tencent.com/document/product/1823/130051",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -54,6 +55,11 @@
       "title": "模型定价 | 腾讯云 TokenHub",
       "url": "https://cloud.tencent.com/document/product/1823/130055",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "语言模型调用概览 | 腾讯云 TokenHub",
+      "url": "https://cloud.tencent.com/document/product/1823/130079",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -62,7 +68,8 @@
       "model": "hy-role",
       "base_url": "https://tokenhub.tencentmaas.com/v1",
       "endpoints": {
-        "chat": "POST /chat/completions"
+        "chat": "POST /chat/completions",
+        "messages": "POST /messages"
       },
       "reasoning_param": null
     }

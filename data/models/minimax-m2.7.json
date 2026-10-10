@@ -6,7 +6,8 @@
   "name": "MiniMax-M2.7",
   "api": {
     "types": [
-      "chat"
+      "chat",
+      "messages"
     ]
   },
   "limits": {
@@ -45,7 +46,7 @@
     "knowledge_cutoff": null,
     "description": "Strong at real-world engineering, professional office tasks, and character-rich interaction.",
     "docs": "https://platform.minimax.io/docs/guides/models-intro",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [
     "MiniMax-M2.7"
@@ -69,21 +70,27 @@
     {
       "title": "Text generation (Anthropic-compatible) | MiniMax API Docs",
       "url": "https://platform.minimax.io/docs/api-reference/text-anthropic-api",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Model release notes | MiniMax API Docs",
       "url": "https://platform.minimax.io/docs/release-notes/models",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Messages API | MiniMax API Docs",
+      "url": "https://platform.minimax.io/docs/api-reference/text-chat-anthropic",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "minimax",
       "model": "MiniMax-M2.7",
-      "base_url": "https://api.minimax.io/v1",
+      "base_url": "https://api.minimax.io",
       "endpoints": {
-        "chat": "POST /chat/completions"
+        "chat": "POST /v1/chat/completions",
+        "messages": "POST /anthropic/v1/messages"
       },
       "reasoning_param": "thinking"
     }

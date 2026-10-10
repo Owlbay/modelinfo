@@ -6,7 +6,8 @@
   "name": "Kimi K2.6",
   "api": {
     "types": [
-      "chat"
+      "chat",
+      "messages"
     ]
   },
   "limits": {
@@ -46,7 +47,7 @@
     "knowledge_cutoff": null,
     "description": "Kimi general-purpose model with stronger long-horizon coding, instruction following and agent execution.",
     "docs": "https://platform.kimi.ai/docs/guide/kimi-k2-6-quickstart",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -69,15 +70,26 @@
       "title": "Kimi K2.6 | Kimi Blog",
       "url": "https://www.kimi.com/blog/kimi-k2-6",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "API Overview | Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/api/overview",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Use Kimi in Claude Code | Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/guide/claude-code-kimi",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "moonshot",
       "model": "kimi-k2.6",
-      "base_url": "https://api.moonshot.ai/v1",
+      "base_url": "https://api.moonshot.ai",
       "endpoints": {
-        "chat": "POST /chat/completions"
+        "chat": "POST /v1/chat/completions",
+        "messages": "POST /anthropic/v1/messages"
       },
       "reasoning_param": "thinking.type"
     }

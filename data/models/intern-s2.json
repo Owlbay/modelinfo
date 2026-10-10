@@ -6,7 +6,8 @@
   "name": "Intern-S2",
   "api": {
     "types": [
-      "chat"
+      "chat",
+      "messages"
     ]
   },
   "limits": {
@@ -63,15 +64,21 @@
       "title": "书生-S2 发布 | 上海人工智能实验室",
       "url": "https://www.shlab.org.cn/news/5444298",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Messages API | InternLM API 文档",
+      "url": "https://internlm.intern-ai.org.cn/doc/docs/API_DOCUMENTATION_ZH/",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "shlab",
       "model": "intern-s2",
-      "base_url": "https://chat.intern-ai.org.cn/api/v1",
+      "base_url": "https://chat.intern-ai.org.cn",
       "endpoints": {
-        "chat": "POST /chat/completions"
+        "chat": "POST /api/v1/chat/completions",
+        "messages": "POST /v1/messages"
       },
       "reasoning_param": "thinking_mode"
     }

@@ -6,7 +6,8 @@
   "name": "MiMo-V2.5",
   "api": {
     "types": [
-      "chat"
+      "chat",
+      "messages"
     ]
   },
   "limits": {
@@ -42,7 +43,7 @@
     "knowledge_cutoff": null,
     "description": "Native omni-modal Xiaomi model for long-context and multimodal agent scenarios; retires 2026-10-21.",
     "docs": "https://mimo.mi.com/models/zh-CN/mimo-v2.5",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -70,15 +71,21 @@
       "title": "MiMo-V2.5 config.json | Hugging Face",
       "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/main/config.json",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Anthropic Messages API Compatibility | Xiaomi MiMo",
+      "url": "https://mimo.mi.com/docs/en-US/api/chat/anthropic-api",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "xiaomi",
       "model": "mimo-v2.5",
-      "base_url": "https://api.xiaomimimo.com/v1",
+      "base_url": "https://api.xiaomimimo.com",
       "endpoints": {
-        "chat": "POST /chat/completions"
+        "chat": "POST /v1/chat/completions",
+        "messages": "POST /anthropic/v1/messages"
       },
       "reasoning_param": "thinking"
     }

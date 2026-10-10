@@ -6,7 +6,8 @@
   "name": "Qwen3.5-27B",
   "api": {
     "types": [
-      "chat"
+      "chat",
+      "messages"
     ]
   },
   "limits": {
@@ -70,6 +71,11 @@
       "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
       "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Anthropic-compatible Messages API | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/anthropic-api-messages",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -78,7 +84,8 @@
       "model": "qwen3.5-27b",
       "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
       "endpoints": {
-        "chat": "POST /compatible-mode/v1/chat/completions"
+        "chat": "POST /compatible-mode/v1/chat/completions",
+        "messages": "POST /apps/anthropic/v1/messages"
       },
       "reasoning_param": "enable_thinking"
     }

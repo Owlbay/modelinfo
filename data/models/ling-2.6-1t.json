@@ -6,7 +6,8 @@
   "name": "Ling-2.6-1T",
   "api": {
     "types": [
-      "chat"
+      "chat",
+      "messages"
     ]
   },
   "limits": {
@@ -74,15 +75,21 @@
       "title": "Hugging Face inclusionAI/Ling-2.6-1T config.json (official org)",
       "url": "https://huggingface.co/inclusionAI/Ling-2.6-1T/blob/main/config.json",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Anthropic Compatible API | Ant Ling Docs",
+      "url": "https://developer.ant-ling.com/en/docs/api-reference/anthropic/",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "ant",
       "model": "Ling-2.6-1T",
-      "base_url": "https://api.ant-ling.com/v1",
+      "base_url": "https://api.ant-ling.com",
       "endpoints": {
-        "chat": "POST /chat/completions"
+        "chat": "POST /v1/chat/completions",
+        "messages": "POST /anthropic/v1/messages"
       },
       "reasoning_param": null
     }

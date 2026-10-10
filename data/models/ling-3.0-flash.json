@@ -6,7 +6,8 @@
   "name": "Ling-3.0-flash",
   "api": {
     "types": [
-      "chat"
+      "chat",
+      "messages"
     ]
   },
   "limits": {
@@ -69,15 +70,21 @@
       "title": "Changelog | Ant Ling Docs",
       "url": "https://developer.ant-ling.com/en/docs/getting-started/changelog",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Anthropic Compatible API | Ant Ling Docs",
+      "url": "https://developer.ant-ling.com/en/docs/api-reference/anthropic/",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "ant",
       "model": "Ling-3.0-flash",
-      "base_url": "https://api.ant-ling.com/v1",
+      "base_url": "https://api.ant-ling.com",
       "endpoints": {
-        "chat": "POST /chat/completions"
+        "chat": "POST /v1/chat/completions",
+        "messages": "POST /anthropic/v1/messages"
       },
       "reasoning_param": "thinking.type"
     }

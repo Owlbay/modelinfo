@@ -7,6 +7,7 @@
   "api": {
     "types": [
       "chat",
+      "messages",
       "batch"
     ]
   },
@@ -51,7 +52,7 @@
     "knowledge_cutoff": null,
     "description": "Xiaomi's most capable omni-modal flagship for professional, long-running, complex workflows.",
     "docs": "https://mimo.mi.com/models/zh-CN/mimo-v2.6-pro",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -84,15 +85,21 @@
       "title": "MiMo-V2.6-Pro-RL config.json | Hugging Face",
       "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/main/config.json",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Anthropic Messages API Compatibility | Xiaomi MiMo",
+      "url": "https://mimo.mi.com/docs/en-US/api/chat/anthropic-api",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "xiaomi",
       "model": "mimo-v2.6-pro",
-      "base_url": "https://api.xiaomimimo.com/v1",
+      "base_url": "https://api.xiaomimimo.com",
       "endpoints": {
-        "chat": "POST /chat/completions"
+        "chat": "POST /v1/chat/completions",
+        "messages": "POST /anthropic/v1/messages"
       },
       "reasoning_param": "thinking"
     }

@@ -6,7 +6,8 @@
   "name": "DeepSeek-V4.1-Flash",
   "api": {
     "types": [
-      "chat"
+      "chat",
+      "messages"
     ]
   },
   "limits": {
@@ -51,7 +52,7 @@
     "knowledge_cutoff": null,
     "description": "DeepSeek-V4.1-Flash, the smallest model of the new architecture family, with native multimodal visual understanding.",
     "docs": "https://api-docs.deepseek.com/quick_start/pricing",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [
     "deepseek-v4-flash",
@@ -82,6 +83,11 @@
       "title": "DeepSeek-V4-Flash config.json (max_position_embeddings 1048576) | Hugging Face",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash/blob/main/config.json",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Using the Anthropic API | DeepSeek API Docs",
+      "url": "https://api-docs.deepseek.com/guides/anthropic_api",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -90,7 +96,8 @@
       "model": "deepseek-flash",
       "base_url": "https://api.deepseek.com",
       "endpoints": {
-        "chat": "POST /chat/completions"
+        "chat": "POST /chat/completions",
+        "messages": "POST /anthropic/v1/messages"
       },
       "reasoning_param": "reasoning_effort"
     }

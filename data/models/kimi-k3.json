@@ -6,7 +6,8 @@
   "name": "Kimi K3",
   "api": {
     "types": [
-      "chat"
+      "chat",
+      "messages"
     ]
   },
   "limits": {
@@ -51,7 +52,7 @@
     "knowledge_cutoff": null,
     "description": "Kimi flagship 2.8-trillion-parameter model with native visual understanding for software engineering, knowledge work and deep reasoning.",
     "docs": "https://platform.kimi.ai/docs/guide/kimi-k3-quickstart",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -74,15 +75,31 @@
       "title": "Kimi K3 | Kimi Blog",
       "url": "https://www.kimi.com/blog/kimi-k3",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "API Overview | Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/api/overview",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Use Kimi in Claude Code | Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/guide/claude-code-kimi",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Messages API | Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/api/messages",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "moonshot",
       "model": "kimi-k3",
-      "base_url": "https://api.moonshot.ai/v1",
+      "base_url": "https://api.moonshot.ai",
       "endpoints": {
-        "chat": "POST /chat/completions"
+        "chat": "POST /v1/chat/completions",
+        "messages": "POST /anthropic/v1/messages"
       },
       "reasoning_param": "reasoning_effort"
     }

@@ -6,7 +6,8 @@
   "name": "ERNIE 5.1",
   "api": {
     "types": [
-      "chat"
+      "chat",
+      "messages"
     ]
   },
   "limits": {
@@ -71,6 +72,11 @@
       "title": "ERNIE 5.1 Officially Released | ERNIE Blog",
       "url": "https://ernie.baidu.com/blog/posts/ernie-5.1-0508-release/",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Anthropic Claude API 兼容 | 百度千帆",
+      "url": "https://cloud.baidu.com/doc/qianfan-docs/s/6mh3e6gjp",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -79,7 +85,8 @@
       "model": "ernie-5.1",
       "base_url": "https://qianfan.baidubce.com",
       "endpoints": {
-        "chat": "POST /v2/chat/completions"
+        "chat": "POST /v2/chat/completions",
+        "messages": "POST /anthropic/v1/messages"
       },
       "reasoning_param": null
     }

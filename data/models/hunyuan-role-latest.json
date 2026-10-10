@@ -6,7 +6,8 @@
   "name": "Hy-Role-Latest",
   "api": {
     "types": [
-      "chat"
+      "chat",
+      "messages"
     ]
   },
   "limits": {
@@ -41,7 +42,7 @@
     "knowledge_cutoff": null,
     "description": "Tencent role-play model optimized for chat and story interaction.",
     "docs": "https://cloud.tencent.com/document/product/1823/130051",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -59,6 +60,11 @@
       "title": "产品概述 | 腾讯混元大模型",
       "url": "https://cloud.tencent.com/document/product/1729/104753",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "语言模型调用概览 | 腾讯云 TokenHub",
+      "url": "https://cloud.tencent.com/document/product/1823/130079",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -67,7 +73,8 @@
       "model": "hunyuan-role-latest",
       "base_url": "https://tokenhub.tencentmaas.com/v1",
       "endpoints": {
-        "chat": "POST /chat/completions"
+        "chat": "POST /chat/completions",
+        "messages": "POST /messages"
       },
       "reasoning_param": null
     }

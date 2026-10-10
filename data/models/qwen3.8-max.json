@@ -7,6 +7,7 @@
   "api": {
     "types": [
       "chat",
+      "messages",
       "responses"
     ]
   },
@@ -50,7 +51,7 @@
     "knowledge_cutoff": null,
     "description": "Alibaba 2.4-trillion-parameter MoE flagship (95B active) for coding and office productivity.",
     "docs": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-8-max",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [
     "qwen3.8-max-0902",
@@ -91,6 +92,11 @@
       "title": "Text generation models | Alibaba Cloud Model Studio",
       "url": "https://www.alibabacloud.com/help/en/model-studio/text-generation-model",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Anthropic-compatible Messages API | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/anthropic-api-messages",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -100,6 +106,7 @@
       "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
       "endpoints": {
         "chat": "POST /compatible-mode/v1/chat/completions",
+        "messages": "POST /apps/anthropic/v1/messages",
         "responses": "POST /compatible-mode/v1/responses"
       },
       "reasoning_param": "enable_thinking"

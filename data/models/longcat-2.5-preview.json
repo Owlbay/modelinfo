@@ -6,7 +6,8 @@
   "name": "LongCat-2.5-Preview",
   "api": {
     "types": [
-      "chat"
+      "chat",
+      "messages"
     ]
   },
   "limits": {
@@ -68,9 +69,10 @@
     {
       "id": "meituan",
       "model": "LongCat-2.5-Preview",
-      "base_url": "https://api.longcat.chat/openai/v1",
+      "base_url": "https://api.longcat.chat",
       "endpoints": {
-        "chat": "POST /chat/completions"
+        "chat": "POST /openai/v1/chat/completions",
+        "messages": "POST /anthropic/v1/messages"
       },
       "reasoning_param": "thinking.type"
     }
