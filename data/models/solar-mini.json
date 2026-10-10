@@ -1,0 +1,87 @@
+{
+  "id": "solar-mini",
+  "object": "model",
+  "created": 1745280000,
+  "owned_by": "upstage",
+  "name": "Solar Mini",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 32768,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": false,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 0.15,
+    "output": 0.15,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output"
+  ],
+  "info": {
+    "status": "deprecated",
+    "release_date": "2025-04-22",
+    "knowledge_cutoff": "2024-09",
+    "description": "Compact 10.7B-parameter Solar model for instruction-following conversation and fine-tuning; fully deprecated on 2026-10-30 (KST), migrate to Solar Mini 4.",
+    "docs": "https://console.upstage.ai/docs/models/solar-mini",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "solar-mini-250422",
+    "solar-mini-250123",
+    "solar-mini-240612"
+  ],
+  "sources": [
+    {
+      "title": "Solar Mini | Upstage Docs",
+      "url": "https://console.upstage.ai/docs/models/solar-mini",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model history | Upstage Docs",
+      "url": "https://console.upstage.ai/docs/models/history",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Upstage",
+      "url": "https://upstage.ai/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Chat completions API | Upstage Docs",
+      "url": "https://console.upstage.ai/api/chat",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "upstage",
+      "model": "solar-mini",
+      "base_url": "https://api.upstage.ai/v1",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
