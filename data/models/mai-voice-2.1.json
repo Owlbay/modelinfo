@@ -1,0 +1,65 @@
+{
+  "id": "mai-voice-2.1",
+  "object": "model",
+  "created": null,
+  "owned_by": "microsoft",
+  "name": "MAI-Voice-2.1",
+  "api": {
+    "types": [
+      "audio"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "audio"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "preview",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Highest-fidelity expressive text-to-speech model across 23 languages, used via Azure Speech SSML.",
+    "docs": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-voices",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "MAI-Voice-2.1"
+  ],
+  "sources": [
+    {
+      "title": "MAI-Voice-2.1 and MAI-Voice-2.1-Flash | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-voices",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Azure Speech pricing",
+      "url": "https://azure.microsoft.com/pricing/details/speech/",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "microsoft",
+      "model": "MAI-Voice-2.1",
+      "base_url": "https://<region>.tts.speech.microsoft.com",
+      "endpoints": {
+        "audio": "POST /cognitiveservices/v1"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

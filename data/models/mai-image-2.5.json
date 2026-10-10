@@ -1,0 +1,61 @@
+{
+  "id": "mai-image-2.5",
+  "object": "model",
+  "created": null,
+  "owned_by": "microsoft",
+  "name": "MAI-Image-2.5",
+  "api": {
+    "types": [
+      "images"
+    ]
+  },
+  "limits": {
+    "context": 32000,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "image"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "preview",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Microsoft AI text-to-image generation and image-to-image editing model.",
+    "docs": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/use-foundry-models-mai-image",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "MAI-Image-2.5"
+  ],
+  "sources": [
+    {
+      "title": "Deploy and use MAI image models in Microsoft Foundry | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/use-foundry-models-mai-image",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "microsoft",
+      "model": "MAI-Image-2.5",
+      "base_url": "https://<resource-name>.services.ai.azure.com/mai/v1",
+      "endpoints": {
+        "images": "POST /images/generations"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

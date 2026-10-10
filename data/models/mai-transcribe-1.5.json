@@ -1,0 +1,60 @@
+{
+  "id": "mai-transcribe-1.5",
+  "object": "model",
+  "created": null,
+  "owned_by": "microsoft",
+  "name": "MAI-Transcribe-1.5",
+  "api": {
+    "types": [
+      "audio"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "audio"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "preview",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Microsoft AI speech-to-text model, predecessor of MAI-Transcribe-2, used via Azure Speech enhanced mode.",
+    "docs": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "MAI-Transcribe-1.5"
+  ],
+  "sources": [
+    {
+      "title": "MAI-Transcribe-2 | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "microsoft",
+      "model": "MAI-Transcribe-1.5",
+      "base_url": "https://<resource-name>.cognitiveservices.azure.com",
+      "endpoints": {
+        "audio": "POST /speechtotext/transcriptions:transcribe?api-version=2025-10-15"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
