@@ -1,7 +1,7 @@
 {
   "id": "universal-3-5-pro",
   "object": "model",
-  "created": null,
+  "created": 1783382400,
   "owned_by": "assemblyai",
   "name": "Universal-3.5 Pro",
   "api": {
@@ -26,11 +26,18 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "hour",
+    "input": 0.21,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-07-07",
     "knowledge_cutoff": null,
     "description": "AssemblyAI highest-accuracy pre-recorded speech-to-text model with 18 languages, native code switching and contextual prompting.",
     "docs": "https://www.assemblyai.com/docs/pre-recorded-audio/select-the-speech-model",
@@ -51,6 +58,11 @@
     {
       "title": "Pricing | AssemblyAI",
       "url": "https://www.assemblyai.com/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Universal-3.5 Pro: native code switching, our most accurate speaker diarization yet, and expanded language support | AssemblyAI",
+      "url": "https://www.assemblyai.com/blog/universal-3-5-pro-async",
       "retrieved_at": "2026-10-11"
     }
   ],
