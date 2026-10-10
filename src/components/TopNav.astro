@@ -1,10 +1,9 @@
 ---
-/** 全站顶栏：品牌、导航（来自 lib/nav.ts）、语言、主题、GitHub。 */
+/** 全站顶栏：品牌、导航（来自 lib/nav.ts）、语言、主题。 */
 import { NAV, navCurrent, type PageId } from '../lib/nav';
 import { dict, localePath, type Lang } from '../i18n';
 import LangMenu from './LangMenu.astro';
 import ThemeToggle from './ThemeToggle.astro';
-import Icon from './Icon.astro';
 import Kbd from './Kbd.astro';
 
 interface Props {
@@ -39,9 +38,6 @@ const current = navCurrent(page);
     <div class="topnav__tools">
       <LangMenu lang={lang} />
       <ThemeToggle label={t.nav.theme} />
-      <a class="topnav__icon" href="https://github.com/Owlbay/modelinfo" aria-label="GitHub">
-        <Icon name="github" size={16} />
-      </a>
     </div>
   </div>
 </header>
@@ -105,15 +101,6 @@ const current = navCurrent(page);
     align-items: center;
     gap: var(--sp-1);
   }
-  .topnav__icon {
-    display: inline-grid;
-    place-items: center;
-    width: var(--control-h);
-    height: var(--control-h);
-    color: var(--ink-2);
-    transition: color var(--dur-1) var(--ease-out), background-color var(--dur-1) var(--ease-out);
-  }
-  .topnav__icon:hover { color: var(--ink); background: var(--hover-row); }
 
   @media (max-width: 1024px) {
     .topnav__nav { gap: var(--sp-5); }

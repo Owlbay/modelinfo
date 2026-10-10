@@ -33,7 +33,7 @@
 
 ## 组件
 
-- 顶栏 `TopNav`：品牌文字、导航（`src/lib/nav.ts`）、语言下拉 `LangMenu`、主题、GitHub。
+- 顶栏 `TopNav`：品牌文字、导航（`src/lib/nav.ts`）、语言下拉 `LangMenu`、主题。
 - 地址行 `Endpoint`：方法 + 完整地址 + 复制按钮，可插入操作按钮。
 - 代码块 `CodeBlock`：标题栏 + 复制按钮。复制逻辑统一在 `src/scripts/copy.ts`。
 - 在线调试 `Playground`：`Endpoint` + 发送按钮 + 状态 / 耗时 / 大小 / 模型数 + 响应正文。
