@@ -1,7 +1,7 @@
 {
   "id": "ctxl-rerank-v2-instruct-multilingual-mini",
   "object": "model",
-  "created": null,
+  "created": 1756252800,
   "owned_by": "contextual-ai",
   "name": "Contextual AI Reranker v2 Instruct Multilingual Mini",
   "api": {
@@ -26,11 +26,18 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 0.02,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-08-27",
     "knowledge_cutoff": null,
     "description": "Smaller, lower-cost multilingual instruction-following reranker in the Reranker v2 family.",
     "docs": "https://docs.contextual.ai/api-reference/rerank/rerank",

@@ -1,7 +1,7 @@
 {
   "id": "ctxl-rerank-v2-instruct-multilingual",
   "object": "model",
-  "created": null,
+  "created": 1756252800,
   "owned_by": "contextual-ai",
   "name": "Contextual AI Reranker v2 Instruct Multilingual",
   "api": {
@@ -26,11 +26,18 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 0.05,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-08-27",
     "knowledge_cutoff": null,
     "description": "Multilingual instruction-following reranker that ranks documents by relevance and then by custom instructions such as recency, document type or source.",
     "docs": "https://docs.contextual.ai/api-reference/rerank/rerank",
