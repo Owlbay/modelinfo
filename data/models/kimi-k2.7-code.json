@@ -1,0 +1,79 @@
+{
+  "id": "kimi-k2.7-code",
+  "object": "model",
+  "created": null,
+  "owned_by": "moonshot",
+  "name": "Kimi K2.7 Code",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 262144,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.95,
+    "output": 4.0,
+    "cache_read": 0.19,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "caching"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Kimi dedicated coding model with more reliable instruction following in long-context agentic coding.",
+    "docs": "https://platform.kimi.ai/docs/guide/kimi-k2-7-code-quickstart",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Model List | Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/models",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Chat Model Pricing | Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/pricing/chat",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Kimi K2.7 Code Quickstart | Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/guide/kimi-k2-7-code-quickstart",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "moonshot",
+      "model": "kimi-k2.7-code",
+      "base_url": "https://api.moonshot.ai/v1",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": "thinking.type"
+    }
+  ]
+}

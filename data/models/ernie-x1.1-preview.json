@@ -1,0 +1,81 @@
+{
+  "id": "ernie-x1.1-preview",
+  "object": "model",
+  "created": 1757376000,
+  "owned_by": "baidu",
+  "name": "ERNIE X1.1 Preview",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 65536,
+    "input": 56320,
+    "output": 65536
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "CNY",
+    "input": 1,
+    "output": 4,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [
+    "streaming"
+  ],
+  "info": {
+    "status": "deprecated",
+    "release_date": "2025-09-09",
+    "knowledge_cutoff": null,
+    "description": "Preview of ERNIE X1.1 deep thinking model; the platform marks it as going offline soon.",
+    "docs": "https://cloud.baidu.com/doc/qianfan/s/rmh4stp0j",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "模型列表 | 百度千帆",
+      "url": "https://cloud.baidu.com/doc/qianfan/s/rmh4stp0j",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "价格 | 百度千帆",
+      "url": "https://cloud.baidu.com/doc/qianfan-docs/s/Jm8r1826a",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "模型更新记录 | 百度千帆",
+      "url": "https://cloud.baidu.com/doc/qianfan/s/Kmh4stnjp",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "文本生成 API 参考 | 百度千帆",
+      "url": "https://cloud.baidu.com/doc/qianfan-api/s/3m7of64lb",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "baidu",
+      "model": "ernie-x1.1-preview",
+      "base_url": "https://qianfan.baidubce.com",
+      "endpoints": {
+        "messages": "POST /v2/chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

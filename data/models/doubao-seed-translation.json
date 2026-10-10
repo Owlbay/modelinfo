@@ -1,0 +1,81 @@
+{
+  "id": "doubao-seed-translation",
+  "object": "model",
+  "created": null,
+  "owned_by": "bytedance",
+  "name": "Doubao-Seed-Translation",
+  "api": {
+    "types": [
+      "messages",
+      "responses"
+    ]
+  },
+  "limits": {
+    "context": 4096,
+    "input": 1024,
+    "output": 3072
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": false,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "CNY",
+    "input": 1.2,
+    "output": 3.6,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [
+    "streaming",
+    "batch"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Doubao Seed model enhanced for translation.",
+    "docs": "https://www.volcengine.com/docs/82379/1330310",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "doubao-seed-translation-250915"
+  ],
+  "sources": [
+    {
+      "title": "模型列表 | 火山方舟",
+      "url": "https://www.volcengine.com/docs/82379/1330310",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "模型价格 | 火山方舟",
+      "url": "https://www.volcengine.com/docs/82379/1099320",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "深度思考 | 火山方舟",
+      "url": "https://www.volcengine.com/docs/82379/1449737",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "bytedance",
+      "model": "doubao-seed-translation-250915",
+      "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+      "endpoints": {
+        "messages": "POST /chat/completions",
+        "responses": "POST /responses"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

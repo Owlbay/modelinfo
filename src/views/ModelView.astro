@@ -1,0 +1,235 @@
+---
+/** 模型详情：规格分组、Provider 调用方式（可复制地址）、标准 JSON 与官方来源。 */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TopNav from '../components/TopNav.astro';
+import Footer from '../components/Footer.astro';
+import PageHeader from '../components/PageHeader.astro';
+import SectionFrame from '../components/SectionFrame.astro';
+import CodeBlock from '../components/CodeBlock.astro';
+import Endpoint from '../components/Endpoint.astro';
+import Icon from '../components/Icon.astro';
+import { formatPrice, formatTokens, ownerName, toPublic, type Model } from '../lib/models';
+import { dict, localePath, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+  model: Model;
+}
+const { lang, model: m } = Astro.props;
+const t = dict(lang).model;
+const tm = dict(lang).models;
+const p = m.pricing;
+const list = (v: string[]) => (v.length ? v.join(' · ') : '—');
+const yesNo = (v: boolean | null) => (v === null ? t.unknown : v ? t.yes : t.no);
+const g = t.groups;
+
+const groups: Array<{ title: string; rows: Array<[string, string]> }> = [
+  { title: g.api, rows: [['types', list(m.api.types)]] },
+  {
+    title: g.limits,
+    rows: [
+      ['context', formatTokens(m.limits.context)],
+      ['input', formatTokens(m.limits.input)],
+      ['output', formatTokens(m.limits.output)],
+    ],
+  },
+  { title: g.modalities, rows: [['input', list(m.modalities.input)], ['output', list(m.modalities.output)]] },
+  { title: g.reasoning, rows: [['supported', yesNo(m.reasoning.supported)], ['efforts', list(m.reasoning.efforts)]] },
+  {
+    title: p ? `${g.pricing} · ${t.perMillion(p.currency)}` : g.pricing,
+    rows: p
+      ? [
+          ['input', formatPrice(p.input, p.currency)],
+          ['output', formatPrice(p.output, p.currency)],
+          ['cache_read', formatPrice(p.cache_read, p.currency)],
+          ['cache_write', formatPrice(p.cache_write, p.currency)],
+        ]
+      : [['pricing', t.noPrice]],
+  },
+  { title: g.features, rows: [['features', list(m.features)]] },
+  {
+    title: g.info,
+    rows: [
+      ['status', t.status[m.info.status]],
+      ['release_date', m.info.release_date ?? '—'],
+      ['knowledge_cutoff', m.info.knowledge_cutoff ?? '—'],
+      ['verified_at', m.info.verified_at ?? '—'],
+    ],
+  },
+];
+const json = JSON.stringify(toPublic(m), null, 2);
+const verified = tm.verified(m.info.verified_at ?? '—');
+---
+
+<BaseLayout lang={lang} page="model" title={m.name} description={m.info.description ?? undefined}>
+  <TopNav lang={lang} page="model" />
+  <main id="main" class="page detail">
+    <a class="detail__back" href={localePath(lang, '/models/')}><Icon name="arrow-left" size={12} />{t.back}</a>
+    <PageHeader title={m.name} intro={m.info.description ?? undefined}>
+      <span class="detail__meta mono">
+        <span>{m.id}</span><span>{ownerName(m.owned_by)}</span>{m.info.release_date && <span>{m.info.release_date}</span>}
+      </span>
+    </PageHeader>
+
+    <SectionFrame id="spec" title={t.specs} count={m.id} source={tm.source} stamp={verified}>
+      <div class="spec">
+        {
+          groups.map((grp) => (
+            <section class="spec__group">
+              <h3 class="spec__title">{grp.title}</h3>
+              <dl class="spec__list">
+                {grp.rows.map(([k, v]) => (
+                  <div class="spec__row">
+                    <dt>{k}</dt>
+                    <dd>{v}</dd>
+                  </div>
+                ))}
+              </dl>
+            </section>
+          ))
+        }
+      </div>
+    </SectionFrame>
+
+    {
+      m.providers.length > 0 && (
+        <SectionFrame id="providers" title={t.call} count={t.providers(m.providers.length)}>
+          {m.providers.map((pv) => (
+            <div class="prov">
+              <p class="prov__head mono">
+                <span class="prov__id">{pv.id}</span>
+                <span>model = {pv.model}</span>
+                {pv.reasoning_param && <span>reasoning = {pv.reasoning_param}</span>}
+              </p>
+              <div class="prov__eps">
+                {Object.entries(pv.endpoints).map(([type, ep]) => {
+                  const [method, path] = ep.split(' ');
+                  return (
+                    <div class="prov__ep">
+                      <span class="prov__type mono">{type}</span>
+                      <Endpoint lang={lang} method={method!} url={pv.base_url + path} />
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          ))}
+        </SectionFrame>
+      )
+    }
+
+    <SectionFrame id="json" title={t.json} count={t.standard}>
+      <CodeBlock lang={lang} label={`${m.id}.json`} code={json} />
+    </SectionFrame>
+
+    <SectionFrame id="sources" title={t.sources} count={String(m.sources.length)}>
+      {
+        m.sources.map((s) => (
+          <a class="list-row src" href={s.url} rel="noopener">
+            <span class="src__title">{s.title}</span>
+            <span class="src__host">{new URL(s.url).host}</span>
+            <span class="src__date">{s.retrieved_at}</span>
+          </a>
+        ))
+      }
+    </SectionFrame>
+  </main>
+  <Footer lang={lang} />
+</BaseLayout>
+
+<style>
+  .detail { padding-bottom: var(--sp-8); }
+  .detail__back {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-2);
+    min-height: var(--control-h);
+    margin-top: var(--sp-5);
+    font-size: var(--fs-body-sm);
+    line-height: var(--lh-body-sm);
+    color: var(--ink-2);
+    text-decoration: none;
+  }
+  .detail__back:hover { color: var(--ink); }
+  .detail :global(.phead) { padding-top: var(--sp-4); }
+  .detail__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-4);
+    font-size: var(--fs-mono);
+    line-height: var(--lh-mono);
+    color: var(--ink-3);
+  }
+
+  .spec {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: var(--sp-5) var(--sp-6);
+  }
+  .spec__title {
+    padding-bottom: var(--sp-2);
+    border-bottom: 1px solid var(--line);
+    font: 500 var(--fs-body) / var(--lh-body) var(--font-sans);
+    color: var(--ink);
+  }
+  .spec__row {
+    display: grid;
+    grid-template-columns: 16ch minmax(0, 1fr);
+    gap: var(--sp-3);
+    padding: var(--sp-2) 0;
+    border-bottom: 1px solid var(--line-soft);
+    font: 400 var(--fs-mono) / var(--lh-mono) var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+  .spec__row dt { color: var(--ink-3); }
+  .spec__row dd { color: var(--ink); overflow-wrap: anywhere; }
+
+  .prov + .prov { margin-top: var(--sp-6); }
+  .prov__head {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2) var(--sp-5);
+    font-size: var(--fs-mono);
+    line-height: var(--lh-mono);
+    color: var(--ink-3);
+  }
+  .prov__id { color: var(--ink); }
+  .prov__eps {
+    display: grid;
+    gap: var(--sp-2);
+    margin-top: var(--sp-3);
+  }
+  .prov__ep {
+    display: grid;
+    grid-template-columns: 12ch minmax(0, 1fr);
+    align-items: center;
+    column-gap: var(--sp-4);
+  }
+  .prov__type {
+    font-size: var(--fs-mono);
+    line-height: var(--lh-mono);
+    color: var(--ink-3);
+  }
+
+
+  .src {
+    grid-template-columns: minmax(0, 1fr) auto 10ch;
+    column-gap: var(--sp-5);
+  }
+  .src__title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font: 400 var(--fs-body) / var(--lh-body) var(--font-sans);
+    color: var(--ink);
+  }
+  .src__host,
+  .src__date { color: var(--ink-3); white-space: nowrap; }
+
+  @media (max-width: 640px) {
+    .prov__ep { grid-template-columns: minmax(0, 1fr); row-gap: var(--sp-1); }
+    .spec__row { grid-template-columns: 14ch minmax(0, 1fr); }
+    .src { grid-template-columns: minmax(0, 1fr) auto; }
+    .src__host { display: none; }
+  }
+</style>

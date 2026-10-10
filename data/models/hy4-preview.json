@@ -1,0 +1,79 @@
+{
+  "id": "hy4-preview",
+  "object": "model",
+  "created": null,
+  "owned_by": "tencent",
+  "name": "Hy4 Preview",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 1048576,
+    "input": 983040,
+    "output": 65536
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "CNY",
+    "input": 6,
+    "output": 18,
+    "cache_read": 0.3,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "streaming",
+    "caching"
+  ],
+  "info": {
+    "status": "preview",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Tencent Hy4 preview model with 1M context and deep thinking, served on TokenHub.",
+    "docs": "https://cloud.tencent.com/document/product/1823/132252",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "混元调用指南 | 腾讯云 TokenHub",
+      "url": "https://cloud.tencent.com/document/product/1823/132252",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "模型列表 | 腾讯云 TokenHub",
+      "url": "https://cloud.tencent.com/document/product/1823/130051",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "模型定价 | 腾讯云 TokenHub",
+      "url": "https://cloud.tencent.com/document/product/1823/130055",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "tencent",
+      "model": "hy4-preview",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": "thinking"
+    }
+  ]
+}

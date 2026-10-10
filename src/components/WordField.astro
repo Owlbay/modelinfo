@@ -1,0 +1,46 @@
+---
+/**
+ * 首页字墙 canvas。词条以 #wordfield-data 注入；
+ * 放在带 data-wordfield-host 的容器内，静区取容器内的 [data-wordfield-quiet]。
+ */
+import type { FieldWord } from './wordfield';
+
+interface Props {
+  words: FieldWord[];
+}
+// JSON 内嵌进 <script>，转义 < 防止提前闭合
+const json = JSON.stringify(Astro.props.words).replace(/</g, '\\u003c');
+---
+
+<script is:inline type="application/json" id="wordfield-data" set:html={json} />
+
+<canvas class="wordfield" aria-hidden="true" data-wordfield></canvas>
+
+<script>
+  import { initWordField } from './wordfield';
+
+  for (const el of document.querySelectorAll<HTMLCanvasElement>('canvas[data-wordfield]')) {
+    initWordField(el);
+  }
+</script>
+
+<style>
+  .wordfield {
+    position: absolute;
+    inset: calc(-1 * var(--wf-top, var(--nav-h))) 0 0 0;
+    z-index: 0;
+    display: block;
+    width: 100%;
+    height: calc(100% + var(--wf-top, var(--nav-h)));
+    pointer-events: auto;
+    touch-action: pan-y;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  @media (max-width: 640px) {
+    .wordfield {
+      --wf-top: var(--bar-h);
+    }
+  }
+</style>

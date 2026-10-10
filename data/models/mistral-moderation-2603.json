@@ -1,0 +1,68 @@
+{
+  "id": "mistral-moderation-2603",
+  "object": "model",
+  "created": 1772323200,
+  "owned_by": "mistral",
+  "name": "Mistral Moderation 2",
+  "api": {
+    "types": [
+      "moderation"
+    ]
+  },
+  "limits": {
+    "context": 128000,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "batch"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2026-03-01",
+    "knowledge_cutoff": null,
+    "description": "Moderation model with a 128k context window and jailbreak detection, strong on multilingual and multi-turn conversations.",
+    "docs": "https://docs.mistral.ai/models/mistral-moderation-26-03",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Mistral Moderation 2 | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-moderation-26-03",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "API pricing | Mistral Docs",
+      "url": "https://docs.mistral.ai/inference/pricing",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Models overview | Mistral Docs",
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "mistral",
+      "model": "mistral-moderation-2603",
+      "base_url": "https://api.mistral.ai",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

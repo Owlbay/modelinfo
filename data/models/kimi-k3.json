@@ -1,0 +1,89 @@
+{
+  "id": "kimi-k3",
+  "object": "model",
+  "created": 1784160000,
+  "owned_by": "moonshot",
+  "name": "Kimi K3",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 1048576,
+    "input": null,
+    "output": 1048576
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": [
+      "low",
+      "high",
+      "max"
+    ]
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 3.0,
+    "output": 15.0,
+    "cache_read": 0.3,
+    "cache_write": 3.0
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "caching"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2026-07-16",
+    "knowledge_cutoff": null,
+    "description": "Kimi flagship 2.8-trillion-parameter model with native visual understanding for software engineering, knowledge work and deep reasoning.",
+    "docs": "https://platform.kimi.ai/docs/guide/kimi-k3-quickstart",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Model List | Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/models",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Chat Model Pricing | Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/pricing/chat",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Kimi K3 Quickstart | Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/guide/kimi-k3-quickstart",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Kimi K3 | Kimi Blog",
+      "url": "https://www.kimi.com/blog/kimi-k3",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "moonshot",
+      "model": "kimi-k3",
+      "base_url": "https://api.moonshot.ai/v1",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": "reasoning_effort"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "musesteamer-air-image",
+  "object": "model",
+  "created": null,
+  "owned_by": "baidu",
+  "name": "MuseSteamer Air Image",
+  "api": {
+    "types": [
+      "images"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "image"
+    ]
+  },
+  "reasoning": {
+    "supported": false,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Baidu MuseSteamer Air text-to-image model on Qianfan, priced per 1024x1024 image.",
+    "docs": "https://cloud.baidu.com/doc/qianfan-api/s/Ymio9i9i4",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "模型列表 | 百度千帆",
+      "url": "https://cloud.baidu.com/doc/qianfan/s/rmh4stp0j",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "价格 | 百度千帆",
+      "url": "https://cloud.baidu.com/doc/qianfan-docs/s/Jm8r1826a",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "蒸汽机 Air-Image API 参考 | 百度千帆",
+      "url": "https://cloud.baidu.com/doc/qianfan-api/s/Ymio9i9i4",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "baidu",
+      "model": "musesteamer-air-image",
+      "base_url": "https://qianfan.baidubce.com",
+      "endpoints": {
+        "images": "POST /v2/musesteamer/images/generations"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+---
+/** 接口地址行：方法 + 完整地址 + 复制按钮；可选插槽放操作按钮（如在线调试的「发送」）。 */
+import Icon from './Icon.astro';
+import { dict, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+  method: string;
+  url: string;
+  /** 用于区分同页多个地址行的标识 */
+  id?: string;
+}
+const { lang, method, url, id } = Astro.props;
+const t = dict(lang).code;
+---
+
+<div class="ep" id={id}>
+  <span class="ep__method">{method}</span>
+  <span class="ep__url">{url}</span>
+  <span class="ep__actions">
+    <button type="button" class="copy-btn" data-copy data-copy-text={url} data-copied={t.copied} data-failed={t.copyFailed}>
+      <Icon name="copy" size={14} /><span data-copy-label>{t.copy}</span>
+    </button>
+    <slot />
+  </span>
+</div>
+
+<style>
+  .ep {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    column-gap: var(--sp-3);
+    min-height: var(--control-h);
+    padding-left: var(--sp-4);
+    background: var(--bg-raised);
+    border: 1px solid var(--line-soft);
+    font: 400 var(--fs-mono) / var(--lh-mono) var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+  .ep__method { color: var(--accent-text); }
+  .ep__url {
+    color: var(--ink);
+    overflow-wrap: anywhere;
+    padding-block: var(--sp-2);
+  }
+  .ep__actions {
+    display: flex;
+    align-self: stretch;
+    border-left: 1px solid var(--line-soft);
+  }
+  /* 窄屏：地址独占一行，按钮换行铺满 */
+  @media (max-width: 640px) {
+    .ep {
+      grid-template-columns: auto minmax(0, 1fr);
+      padding-left: var(--sp-3);
+    }
+    .ep__actions {
+      grid-column: 1 / -1;
+      margin-left: calc(-1 * var(--sp-3));
+      border-left: 0;
+      border-top: 1px solid var(--line-soft);
+    }
+    .ep__actions > :global(*) {
+      flex: 1;
+      justify-content: center;
+      min-height: var(--control-h);
+    }
+    .ep__actions > :global(* + *) { border-left: 1px solid var(--line-soft); }
+  }
+</style>

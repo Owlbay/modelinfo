@@ -1,0 +1,50 @@
+/* 动效：只为状态变化服务；常规 120–200ms，视图切换约 300ms，缓出曲线。减少动效时保留淡入淡出，去掉位移。 */
+
+@view-transition {
+  navigation: auto;
+}
+
+/* 顶栏在跳页时原地不动，只有内容区切换 */
+.topnav { view-transition-name: topnav; }
+
+::view-transition-group(*) {
+  animation-duration: 300ms;
+  animation-timing-function: var(--ease-out);
+}
+::view-transition-old(root) { animation: vt-fade-out 100ms var(--ease-out) both; }
+::view-transition-new(root) { animation: vt-rise-in 300ms var(--ease-out) both; }
+
+/* 主题：整页交叉淡化，期间压住元素自身的颜色过渡 */
+:root[data-vt='scheme'] *,
+:root[data-vt='scheme'] *::before,
+:root[data-vt='scheme'] *::after { transition: none !important; }
+:root[data-vt='scheme']::view-transition-old(root) { animation: vt-fade-out 260ms var(--ease-out) both; }
+:root[data-vt='scheme']::view-transition-new(root) { animation: vt-fade-in 260ms var(--ease-out) both; }
+
+/* 筛选：只有列表区域淡入 */
+:root[data-vt='list'] [data-vt-list] { view-transition-name: model-list; }
+:root[data-vt='list']::view-transition-old(root),
+:root[data-vt='list']::view-transition-new(root) { animation: none; }
+:root[data-vt='list']::view-transition-old(model-list) { animation: vt-fade-out 120ms var(--ease-out) both; }
+:root[data-vt='list']::view-transition-new(model-list) { animation: vt-rise-in 240ms var(--ease-out) both; }
+:root[data-vt='list']::view-transition-old(model-list),
+:root[data-vt='list']::view-transition-new(model-list) {
+  height: 100%;
+  object-fit: none;
+  object-position: top;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :is(.btn-primary, .btn-ghost, .theme-toggle, .seg__item):active { scale: 0.97; }
+}
+
+@keyframes vt-fade-out { to { opacity: 0; } }
+@keyframes vt-fade-in { from { opacity: 0; } }
+@keyframes vt-rise-in { from { opacity: 0; transform: translateY(6px); } }
+@keyframes panel-in { from { opacity: 0; transform: translateY(4px); } }
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*) { animation-duration: 0s; }
+  ::view-transition-new(root),
+  :root[data-vt='list']::view-transition-new(model-list) { animation: vt-fade-in 160ms linear both; }
+}

@@ -1,0 +1,74 @@
+{
+  "id": "glm-4-32b-0414-128k",
+  "object": "model",
+  "created": null,
+  "owned_by": "zhipu",
+  "name": "GLM-4-32B-0414-128K",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 128000,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.1,
+    "output": 0.1,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "32B GLM-4 text model with 128K context.",
+    "docs": "https://docs.z.ai/guides/overview/pricing",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Pricing | Z.AI Developer Document",
+      "url": "https://docs.z.ai/guides/overview/pricing",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Pricing | Z.AI Developer Document",
+      "url": "https://docs.z.ai/guides/overview/pricing",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Release Notes | Z.AI Developer Document",
+      "url": "https://docs.z.ai/release-notes/new-released",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "zhipu",
+      "model": "glm-4-32b-0414-128k",
+      "base_url": "https://api.z.ai/api/paas/v4",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

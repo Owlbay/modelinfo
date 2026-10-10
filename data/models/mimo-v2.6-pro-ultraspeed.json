@@ -1,0 +1,77 @@
+{
+  "id": "mimo-v2.6-pro-ultraspeed",
+  "object": "model",
+  "created": null,
+  "owned_by": "xiaomi",
+  "name": "MiMo-V2.6-Pro-UltraSpeed",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 1000000,
+    "input": null,
+    "output": 128000
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "CNY",
+    "input": 30,
+    "output": 60,
+    "cache_read": 0.25,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "streaming",
+    "caching"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "MiMo-V2.6-Pro performance with output up to 20 times faster for real-time, latency-sensitive workloads.",
+    "docs": "https://mimo.mi.com/models/zh-CN/mimo-v2.6-pro-ultraspeed",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "mimo-v2.6-pro-ultraspeed | Xiaomi MiMo",
+      "url": "https://mimo.mi.com/models/zh-CN/mimo-v2.6-pro-ultraspeed",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "按量计费 | Xiaomi MiMo",
+      "url": "https://mimo.mi.com/docs/zh-CN/price/pay-as-you-go",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "xiaomi",
+      "model": "mimo-v2.6-pro-ultraspeed",
+      "base_url": "https://api.xiaomimimo.com/v1",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": "thinking"
+    }
+  ]
+}

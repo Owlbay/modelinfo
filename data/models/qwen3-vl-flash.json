@@ -1,0 +1,83 @@
+{
+  "id": "qwen3-vl-flash",
+  "object": "model",
+  "created": null,
+  "owned_by": "alibaba",
+  "name": "Qwen3-VL-Flash",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 262144,
+    "input": 260096,
+    "output": 32768
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.05,
+    "output": 0.4,
+    "cache_read": 0.005,
+    "cache_write": 0.0625
+  },
+  "features": [
+    "structured_output",
+    "streaming",
+    "caching"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Small vision-language model with thinking and non-thinking modes and 2D/3D localization.",
+    "docs": "https://www.alibabacloud.com/help/en/model-studio/text-generation-model",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "qwen3-vl-flash-2026-01-22",
+    "qwen3-vl-flash-2025-10-15"
+  ],
+  "sources": [
+    {
+      "title": "Vision models | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/vision-model",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Text generation models | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/text-generation-model",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Model Studio model pricing | Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "alibaba",
+      "model": "qwen3-vl-flash",
+      "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
+      "endpoints": {
+        "messages": "POST /compatible-mode/v1/chat/completions"
+      },
+      "reasoning_param": "enable_thinking"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "id": "gpt-image-2",
+  "object": "model",
+  "created": 1776729600,
+  "owned_by": "openai",
+  "name": "GPT-Image-2",
+  "api": {
+    "types": [
+      "images",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "image"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "batch"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2026-04-21",
+    "knowledge_cutoff": null,
+    "description": "State-of-the-art image generation model for fast, high-quality image generation and editing.",
+    "docs": "https://developers.openai.com/api/docs/models/gpt-image-2",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "gpt-image-2-2026-04-21"
+  ],
+  "sources": [
+    {
+      "title": "GPT-Image-2 Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-image-2",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Pricing | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/pricing",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Changelog | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/changelog",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "openai",
+      "model": "gpt-image-2",
+      "base_url": "https://api.openai.com",
+      "endpoints": {
+        "images": "POST /v1/images/generations",
+        "batch": "POST /v1/batches"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

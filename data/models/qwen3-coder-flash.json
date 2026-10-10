@@ -1,0 +1,74 @@
+{
+  "id": "qwen3-coder-flash",
+  "object": "model",
+  "created": null,
+  "owned_by": "alibaba",
+  "name": "Qwen3-Coder-Flash",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 1000000,
+    "input": 997952,
+    "output": 65536
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": false,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.3,
+    "output": 1.5,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [
+    "streaming",
+    "caching"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Coding model inheriting Coder-Plus agent ability, optimized for repository-level understanding.",
+    "docs": "https://www.alibabacloud.com/help/en/model-studio/text-generation-model",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "qwen3-coder-flash-2025-07-28"
+  ],
+  "sources": [
+    {
+      "title": "Text generation models | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/text-generation-model",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Model Studio model pricing | Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "alibaba",
+      "model": "qwen3-coder-flash",
+      "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
+      "endpoints": {
+        "messages": "POST /compatible-mode/v1/chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "xsparkx2flash",
+  "object": "model",
+  "created": null,
+  "owned_by": "iflytek",
+  "name": "Spark X2-Flash",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 262144,
+    "input": 196608,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "iFlytek Spark X2-Flash 30B mid-size model optimized for agent scenarios.",
+    "docs": "https://www.xfyun.cn/doc/spark/TokenPlan.html",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Astron Token Plan 使用文档 | 讯飞星辰 MaaS",
+      "url": "https://www.xfyun.cn/doc/spark/TokenPlan.html",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": []
+}

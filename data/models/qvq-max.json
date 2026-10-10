@@ -1,0 +1,80 @@
+{
+  "id": "qvq-max",
+  "object": "model",
+  "created": null,
+  "owned_by": "alibaba",
+  "name": "QVQ-Max",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 131072,
+    "input": 106496,
+    "output": 8192
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 1.2,
+    "output": 4.8,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [
+    "streaming"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Visual reasoning model that outputs chain-of-thought, strong at math, coding and visual analysis.",
+    "docs": "https://www.alibabacloud.com/help/en/model-studio/text-generation-model",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "qvq-max-2025-03-25"
+  ],
+  "sources": [
+    {
+      "title": "Vision models | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/vision-model",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Text generation models | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/text-generation-model",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Model Studio model pricing | Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "alibaba",
+      "model": "qvq-max",
+      "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
+      "endpoints": {
+        "messages": "POST /compatible-mode/v1/chat/completions"
+      },
+      "reasoning_param": "enable_thinking"
+    }
+  ]
+}

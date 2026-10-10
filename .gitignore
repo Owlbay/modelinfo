@@ -1,12 +1,35 @@
+# 依赖与构建产物
 node_modules/
 dist/
-.wrangler/
+build/
+out/
+target/
+coverage/
+*.tsbuildinfo
+
+# 环境与凭据
+.env
+.env.*
+!.env.example
+
+# 编辑器与系统
 .DS_Store
-*.log
+.idea/
+.vscode/*
+!.vscode/extensions.json
 
-# `pnpm sync` 生成的数据，不入库
-public/v1/
-public/data/
+# Agent 本地状态（skill 按 skills.json 重装，不入库）
+.claude/skills/
+.claude/agents/
+.claude/worktrees/
+.claude/settings.local.json
+.impeccable/review/
+.playwright-cli/
 
-# 本地工具配置
-.claude/
+# Astro / Wrangler 生成文件
+.astro/
+.wrangler/
+
+# Impeccable 临时产物
+.impeccable/questions/
+.impeccable/tmp/

@@ -1,0 +1,84 @@
+{
+  "id": "kimi-k2.6",
+  "object": "model",
+  "created": 1776643200,
+  "owned_by": "moonshot",
+  "name": "Kimi K2.6",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 262144,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.95,
+    "output": 4.0,
+    "cache_read": 0.16,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "caching"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2026-04-20",
+    "knowledge_cutoff": null,
+    "description": "Kimi general-purpose model with stronger long-horizon coding, instruction following and agent execution.",
+    "docs": "https://platform.kimi.ai/docs/guide/kimi-k2-6-quickstart",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Model List | Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/models",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Chat Model Pricing | Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/pricing/chat",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Kimi K2.6 Quickstart | Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/guide/kimi-k2-6-quickstart",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Kimi K2.6 | Kimi Blog",
+      "url": "https://www.kimi.com/blog/kimi-k2-6",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "moonshot",
+      "model": "kimi-k2.6",
+      "base_url": "https://api.moonshot.ai/v1",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": "thinking.type"
+    }
+  ]
+}

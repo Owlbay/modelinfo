@@ -1,0 +1,80 @@
+{
+  "id": "qwen-vl-ocr",
+  "object": "model",
+  "created": null,
+  "owned_by": "alibaba",
+  "name": "Qwen-VL-OCR",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": 8192
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": false,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.07,
+    "output": 0.16,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [
+    "streaming"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Qwen3-VL-architecture model for extracting text and structured data from scans, tables and receipts.",
+    "docs": "https://www.alibabacloud.com/help/en/model-studio/vision-model",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "qwen-vl-ocr-latest",
+    "qwen-vl-ocr-2025-11-20"
+  ],
+  "sources": [
+    {
+      "title": "Vision models | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/vision-model",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Text generation models | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/text-generation-model",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Model Studio model pricing | Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "alibaba",
+      "model": "qwen-vl-ocr",
+      "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
+      "endpoints": {
+        "messages": "POST /compatible-mode/v1/chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

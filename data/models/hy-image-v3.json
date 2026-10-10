@@ -1,0 +1,62 @@
+{
+  "id": "hy-image-v3",
+  "object": "model",
+  "created": null,
+  "owned_by": "tencent",
+  "name": "Hy-Image-3.0",
+  "api": {
+    "types": [
+      "images"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "image"
+    ]
+  },
+  "reasoning": {
+    "supported": false,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Tencent text-to-image and image-to-image generation model on TokenHub.",
+    "docs": "https://cloud.tencent.com/document/product/1823/130051",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "模型列表 | 腾讯云 TokenHub",
+      "url": "https://cloud.tencent.com/document/product/1823/130051",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "模型定价 | 腾讯云 TokenHub",
+      "url": "https://cloud.tencent.com/document/product/1823/130055",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "tencent",
+      "model": "hy-image-v3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

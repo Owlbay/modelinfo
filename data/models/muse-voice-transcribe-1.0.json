@@ -1,0 +1,72 @@
+{
+  "id": "muse-voice-transcribe-1.0",
+  "object": "model",
+  "created": null,
+  "owned_by": "meta",
+  "name": "Muse Voice Transcribe 1.0",
+  "api": {
+    "types": [
+      "audio",
+      "realtime"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "audio"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "streaming"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Meta's speech-to-text model for transcribing live audio streams or supported audio files.",
+    "docs": "https://dev.meta.ai/docs/speech-to-text",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Models | Meta Model API",
+      "url": "https://dev.meta.ai/docs/models",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Pricing and rate limits | Meta Model API",
+      "url": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Speech to text | Meta Model API",
+      "url": "https://dev.meta.ai/docs/speech-to-text",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "meta",
+      "model": "muse-voice-transcribe-1.0",
+      "base_url": "https://api.meta.ai/v1",
+      "endpoints": {
+        "audio": "POST /v1/asr/transcribe",
+        "realtime": "GET /v1/asr/realtime"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

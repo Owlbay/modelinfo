@@ -1,0 +1,72 @@
+{
+  "id": "qwen3-rerank",
+  "object": "model",
+  "created": null,
+  "owned_by": "alibaba",
+  "name": "Qwen3-Rerank",
+  "api": {
+    "types": [
+      "rerank"
+    ]
+  },
+  "limits": {
+    "context": 30000,
+    "input": 30000,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "score"
+    ]
+  },
+  "reasoning": {
+    "supported": false,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.1,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Text ranking model that orders candidate documents by relevance to a query, supporting over 100 languages.",
+    "docs": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-rerank",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "qwen3-rerank | Alibaba Cloud Model Studio",
+      "url": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-rerank",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Embedding and rerank models | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/embedding-rerank-model",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Model Studio model pricing | Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "alibaba",
+      "model": "qwen3-rerank",
+      "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

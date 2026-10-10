@@ -1,0 +1,80 @@
+{
+  "id": "codestral-embed-2505",
+  "object": "model",
+  "created": 1748390400,
+  "owned_by": "mistral",
+  "name": "Codestral Embed",
+  "api": {
+    "types": [
+      "embeddings",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": 8000,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.15,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [
+    "batch"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2025-05-28",
+    "knowledge_cutoff": null,
+    "description": "Semantic embedding model for extracting representations of code.",
+    "docs": "https://docs.mistral.ai/models/codestral-embed-25-05",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "codestral-embed"
+  ],
+  "sources": [
+    {
+      "title": "Codestral Embed | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/codestral-embed-25-05",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "API pricing | Mistral Docs",
+      "url": "https://docs.mistral.ai/inference/pricing",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Models overview | Mistral Docs",
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "mistral",
+      "model": "codestral-embed-2505",
+      "base_url": "https://api.mistral.ai",
+      "endpoints": {
+        "embeddings": "POST /v1/embeddings",
+        "batch": "POST /v1/batch"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

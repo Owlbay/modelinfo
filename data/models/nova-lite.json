@@ -1,0 +1,86 @@
+{
+  "id": "nova-lite",
+  "object": "model",
+  "created": 1733356800,
+  "owned_by": "amazon",
+  "name": "Amazon Nova Lite",
+  "api": {
+    "types": [
+      "messages",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": 300000,
+    "input": null,
+    "output": 10000
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "video",
+      "document"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": false,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.06,
+    "output": 0.24,
+    "cache_read": 0.015,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "streaming",
+    "caching",
+    "batch"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2024-12-05",
+    "knowledge_cutoff": "2024-10",
+    "description": "Amazon's low-cost multimodal model that processes text, images, and video inputs for tasks like document analysis and visual Q&A.",
+    "docs": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-lite.html",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "amazon.nova-lite-v1:0",
+    "us.amazon.nova-lite-v1:0"
+  ],
+  "sources": [
+    {
+      "title": "Amazon Bedrock model card: Amazon Nova Lite",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-lite.html",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Amazon Nova User Guide (Version 1): What is Amazon Nova?",
+      "url": "https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Amazon Bedrock Pricing",
+      "url": "https://aws.amazon.com/bedrock/pricing/",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "amazon-bedrock",
+      "model": "amazon.nova-lite-v1:0",
+      "base_url": "https://bedrock-runtime.us-east-1.amazonaws.com",
+      "endpoints": {
+        "messages": "POST /model/{modelId}/converse"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

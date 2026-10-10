@@ -1,0 +1,11 @@
+---
+import ModelView from '../../views/ModelView.astro';
+import { getModels, type Model } from '../../lib/models';
+
+export async function getStaticPaths() {
+  return (await getModels()).map((model) => ({ params: { id: model.id }, props: { model } }));
+}
+const { model } = Astro.props as { model: Model };
+---
+
+<ModelView lang="zh" model={model} />

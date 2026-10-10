@@ -1,0 +1,69 @@
+{
+  "id": "mistral-ocr-2512",
+  "object": "model",
+  "created": 1766016000,
+  "owned_by": "mistral",
+  "name": "Mistral OCR 3",
+  "api": {
+    "types": [
+      "ocr"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "image",
+      "document"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "batch"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2025-12-18",
+    "knowledge_cutoff": null,
+    "description": "OCR service powering Mistral's Document AI stack that extracts interleaved text and images.",
+    "docs": "https://docs.mistral.ai/models/ocr-3-25-12",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Mistral OCR 3 | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/ocr-3-25-12",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "API pricing | Mistral Docs",
+      "url": "https://docs.mistral.ai/inference/pricing",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Models overview | Mistral Docs",
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "mistral",
+      "model": "mistral-ocr-2512",
+      "base_url": "https://api.mistral.ai",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

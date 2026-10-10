@@ -1,0 +1,101 @@
+{
+  "id": "muse-spark-1.1",
+  "object": "model",
+  "created": null,
+  "owned_by": "meta",
+  "name": "Muse Spark 1.1",
+  "api": {
+    "types": [
+      "messages",
+      "responses"
+    ]
+  },
+  "limits": {
+    "context": 1048576,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "video",
+      "audio",
+      "document"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": [
+      "minimal",
+      "low",
+      "medium",
+      "high",
+      "xhigh"
+    ]
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 1.25,
+    "output": 4.25,
+    "cache_read": 0.15,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "streaming",
+    "caching"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Original Muse Spark version for agentic and coding work with long-context reasoning.",
+    "docs": "https://dev.meta.ai/docs/models",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Models | Meta Model API",
+      "url": "https://dev.meta.ai/docs/models",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Pricing and rate limits | Meta Model API",
+      "url": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Reasoning | Meta Model API",
+      "url": "https://dev.meta.ai/docs/reasoning",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Prompt caching | Meta Model API",
+      "url": "https://dev.meta.ai/docs/prompt-caching",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Structured output | Meta Model API",
+      "url": "https://dev.meta.ai/docs/structured-output",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "meta",
+      "model": "muse-spark-1.1",
+      "base_url": "https://api.meta.ai/v1",
+      "endpoints": {
+        "messages": "POST /v1/chat/completions",
+        "responses": "POST /v1/responses"
+      },
+      "reasoning_param": "reasoning_effort"
+    }
+  ]
+}

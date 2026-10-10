@@ -1,0 +1,79 @@
+{
+  "id": "glm-5",
+  "object": "model",
+  "created": 1770854400,
+  "owned_by": "zhipu",
+  "name": "GLM-5",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 200000,
+    "input": null,
+    "output": 128000
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 1.0,
+    "output": 3.2,
+    "cache_read": 0.2,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "streaming",
+    "caching"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2026-02-12",
+    "knowledge_cutoff": null,
+    "description": "Foundation model for agentic engineering, 744B total and 40B active parameters.",
+    "docs": "https://docs.z.ai/guides/llm/glm-5",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "GLM-5 | Z.AI Developer Document",
+      "url": "https://docs.z.ai/guides/llm/glm-5",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Pricing | Z.AI Developer Document",
+      "url": "https://docs.z.ai/guides/overview/pricing",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Release Notes | Z.AI Developer Document",
+      "url": "https://docs.z.ai/release-notes/new-released",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "zhipu",
+      "model": "glm-5",
+      "base_url": "https://api.z.ai/api/paas/v4",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": "thinking.type"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+---
+/** 分区：虚线框 + 四角角标（左下来源、右下快照日期）；plain 去掉框与角标。 */
+import Icon from './Icon.astro';
+
+interface Props {
+  id: string;
+  title: string;
+  count?: string;
+  source?: string;
+  stamp?: string;
+  more?: { href: string; label: string };
+  /** 无框形态：去掉虚线框与四角角标，标题与计数样式不变；用于博客外壳等不画栅格的页面 */
+  plain?: boolean;
+}
+
+const { id, title, count, source, stamp, more, plain = false } = Astro.props;
+const hid = `${id}-h`;
+const hasFoot = !plain && (source != null || stamp != null);
+---
+
+<section class:list={['frame', { 'frame--plain': plain }]} id={id} aria-labelledby={hid}>
+  <header class="frame__head">
+    <h2 id={hid} class="frame__title">{title}</h2>
+    {
+      (more || count != null) && (
+        <div class="frame__aside">
+          {more && (
+            <a class="frame__more" href={more.href}>
+              {more.label}
+              <Icon name="arrow-right" size={12} />
+            </a>
+          )}
+          {count != null && (
+            <span class="frame__corner frame__corner--tr corner">
+              {count}
+            </span>
+          )}
+        </div>
+      )
+    }
+  </header>
+  <div class="frame__body"><slot /></div>
+  {
+    hasFoot && (
+      <footer class="frame__foot">
+        <span class="frame__corner frame__corner--bl corner">
+          {source}
+        </span>
+        <span class="frame__corner frame__corner--br corner">{stamp}</span>
+      </footer>
+    )
+  }
+</section>
+
+<style>
+  /* 分区放在 .page 外框内：横向撑到两条竖线，顶部一条虚线与上一区分隔 */
+  .frame {
+    position: relative;
+    margin-inline: calc(-1 * var(--page-pad, 0px));
+    padding: var(--sp-6) var(--page-pad, 0px) 0;
+  }
+  .frame::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: repeating-linear-gradient(90deg, var(--line) 0 4px, transparent 4px 8px);
+  }
+
+  .frame__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--sp-2) var(--sp-5);
+    margin-bottom: var(--sp-5);
+  }
+  .frame__title {
+    font-size: var(--fs-h2);
+    line-height: 1.25;
+    letter-spacing: -0.015em;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .frame__aside {
+    display: flex;
+    align-items: baseline;
+    gap: var(--sp-5);
+    margin-left: auto;
+  }
+  .frame__more {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-1);
+    min-height: var(--control-h);
+    margin-block: calc((var(--lh-body-sm) - var(--control-h)) / 2);
+    font-size: var(--fs-body-sm);
+    line-height: var(--lh-body-sm);
+    color: var(--ink-2);
+    text-decoration: none;
+    align-self: center;
+  }
+  .frame__more:hover { color: var(--ink); }
+  .frame__more :global(.icon) { transition: transform var(--dur-2) var(--ease-out); }
+  @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .frame__more:hover :global(.icon) { transform: translateX(2px); }
+  }
+
+  .frame__body { padding-bottom: var(--sp-6); }
+
+  .frame__foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--sp-4);
+    height: 32px;
+    margin-inline: calc(-1 * var(--page-pad, 0px) + var(--sp-3));
+  }
+  .frame__corner { white-space: nowrap; }
+
+  .frame--plain {
+    border-inline: 0;
+    padding: 0;
+  }
+  .frame--plain::before { display: none; }
+  .frame--plain .frame__body { padding-bottom: 0; }
+
+  @media (max-width: 640px) {
+    .frame { padding-top: var(--sp-5); }
+    .frame--plain { padding: 0; }
+    .frame--plain .frame__body { padding-bottom: 0; }
+    .frame__body { padding-bottom: var(--sp-5); }
+    .frame__foot { margin-inline: calc(-1 * var(--page-pad, 0px) + var(--sp-2)); }
+  }
+</style>

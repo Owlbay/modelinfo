@@ -1,0 +1,73 @@
+{
+  "id": "stepaudio-3-tts",
+  "object": "model",
+  "created": null,
+  "owned_by": "stepfun",
+  "name": "StepAudio 3 TTS",
+  "api": {
+    "types": [
+      "audio"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "audio"
+    ]
+  },
+  "reasoning": {
+    "supported": false,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Text-to-speech with low-latency streaming and expressive delivery.",
+    "docs": "https://platform.stepfun.ai/docs/en/guides/models/stepaudio-3-tts",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Step Platform pricing | StepFun Documentation",
+      "url": "https://platform.stepfun.ai/docs/en/guides/pricing/details",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Model overview | StepFun Documentation",
+      "url": "https://platform.stepfun.ai/docs/en/guides/models/overview",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Chat completion | StepFun API reference",
+      "url": "https://platform.stepfun.ai/docs/en/api-reference/chat/chat-completion-create",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "StepAudio 3 TTS | StepFun Documentation",
+      "url": "https://platform.stepfun.ai/docs/en/guides/models/stepaudio-3-tts",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "stepfun",
+      "model": "stepaudio-3-tts",
+      "base_url": "https://api.stepfun.ai/v1",
+      "endpoints": {
+        "audio": "POST /audio/speech"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

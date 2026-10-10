@@ -1,0 +1,84 @@
+{
+  "id": "qwen-plus",
+  "object": "model",
+  "created": null,
+  "owned_by": "alibaba",
+  "name": "Qwen-Plus",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 1000000,
+    "input": 997952,
+    "output": 32768
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.4,
+    "output": 1.2,
+    "cache_read": 0.04,
+    "cache_write": 0.5
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "streaming",
+    "caching"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Mid-tier Qwen model balancing capability and speed, with improved code generation, reasoning and multilingual ability.",
+    "docs": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen-plus",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "qwen-plus-latest",
+    "qwen-plus-2025-12-01",
+    "qwen-plus-2025-09-11",
+    "qwen-plus-2025-07-28"
+  ],
+  "sources": [
+    {
+      "title": "qwen-plus | Alibaba Cloud Model Studio",
+      "url": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen-plus",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Text generation models | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/text-generation-model",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Model Studio model pricing | Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "alibaba",
+      "model": "qwen-plus",
+      "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
+      "endpoints": {
+        "messages": "POST /compatible-mode/v1/chat/completions"
+      },
+      "reasoning_param": "enable_thinking"
+    }
+  ]
+}

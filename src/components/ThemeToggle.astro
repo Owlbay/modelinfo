@@ -1,0 +1,27 @@
+---
+import Icon from './Icon.astro';
+
+interface Props {
+  label: string;
+}
+---
+
+<button type="button" class="theme-toggle" data-theme-toggle aria-label={Astro.props.label}>
+  <span class="tt-dark"><Icon name="sun" size={18} /></span>
+  <span class="tt-light"><Icon name="moon" size={18} /></span>
+</button>
+
+<style>
+  :global(html[data-scheme='dark']) .theme-toggle .tt-light,
+  :global(html[data-scheme='light']) .theme-toggle .tt-dark { display: none; }
+  .theme-toggle {
+    display: inline-grid;
+    place-items: center;
+    width: var(--control-h);
+    height: var(--control-h);
+    color: var(--ink-2);
+    transition: color var(--dur-1) var(--ease-out), background-color var(--dur-1) var(--ease-out), scale var(--dur-1) var(--ease-out);
+  }
+  .theme-toggle:hover { color: var(--ink); background: var(--hover-row); }
+  .theme-toggle > span { display: grid; place-items: center; }
+</style>

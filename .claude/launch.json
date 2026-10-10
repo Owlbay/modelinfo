@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "web",
+      "runtimeExecutable": "zsh",
+      "runtimeArgs": ["-lc", "pnpm dev"],
+      "port": 4321
+    },
+    {
+      "name": "preview",
+      "runtimeExecutable": "zsh",
+      "runtimeArgs": ["-lc", "pnpm exec wrangler dev --port 8787"],
+      "port": 8787
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "id": "nova-2-lite",
+  "object": "model",
+  "created": 1764633600,
+  "owned_by": "amazon",
+  "name": "Amazon Nova 2 Lite",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 1000000,
+    "input": null,
+    "output": 65536
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "video",
+      "document"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": [
+      "low",
+      "medium",
+      "high"
+    ]
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.3,
+    "output": 2.5,
+    "cache_read": 0.075,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "streaming",
+    "caching"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2025-12-02",
+    "knowledge_cutoff": "2025-10",
+    "description": "Amazon's cost-efficient multimodal model for simple automation, document processing, and customer support across text, images, and video.",
+    "docs": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-2-lite.html",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "amazon.nova-2-lite-v1:0",
+    "us.amazon.nova-2-lite-v1:0",
+    "global.amazon.nova-2-lite-v1:0"
+  ],
+  "sources": [
+    {
+      "title": "Amazon Bedrock model card: Nova 2 Lite",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-2-lite.html",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Amazon Nova 2 User Guide: What is Amazon Nova 2?",
+      "url": "https://docs.aws.amazon.com/nova/latest/nova2-userguide/what-is-nova-2.html",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Extended thinking in Amazon Nova 2",
+      "url": "https://docs.aws.amazon.com/nova/latest/nova2-userguide/extended-thinking.html",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Amazon Bedrock Pricing",
+      "url": "https://aws.amazon.com/bedrock/pricing/",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "amazon-bedrock",
+      "model": "amazon.nova-2-lite-v1:0",
+      "base_url": "https://bedrock-runtime.us-east-1.amazonaws.com",
+      "endpoints": {
+        "messages": "POST /model/{modelId}/converse"
+      },
+      "reasoning_param": "additionalModelRequestFields.reasoningConfig.maxReasoningEffort"
+    }
+  ]
+}

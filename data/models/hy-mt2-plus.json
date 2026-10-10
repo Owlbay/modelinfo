@@ -1,0 +1,69 @@
+{
+  "id": "hy-mt2-plus",
+  "object": "model",
+  "created": null,
+  "owned_by": "tencent",
+  "name": "Hy-MT2-Plus",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 8192,
+    "input": 4096,
+    "output": 4096
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "CNY",
+    "input": 0.5,
+    "output": 2,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Tencent translation model with strong instruction following.",
+    "docs": "https://cloud.tencent.com/document/product/1823/130051",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "模型列表 | 腾讯云 TokenHub",
+      "url": "https://cloud.tencent.com/document/product/1823/130051",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "模型定价 | 腾讯云 TokenHub",
+      "url": "https://cloud.tencent.com/document/product/1823/130055",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "tencent",
+      "model": "hy-mt2-plus",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

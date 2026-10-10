@@ -1,0 +1,85 @@
+{
+  "id": "grok-4.20-0309-non-reasoning",
+  "object": "model",
+  "created": null,
+  "owned_by": "xai",
+  "name": "Grok 4.20 (Non-Reasoning)",
+  "api": {
+    "types": [
+      "messages",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": 1000000,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": false,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 1.25,
+    "output": 2.5,
+    "cache_read": 0.2,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "caching",
+    "batch"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "A high-performance, non-reasoning model focused on speed, agentic tool calling, low hallucination rates, and strict prompt adherence.",
+    "docs": "https://docs.x.ai/developers/models/grok-4.20-0309-non-reasoning",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "grok-4.20-non-reasoning",
+    "grok-4.20-non-reasoning-latest",
+    "grok-4.20-beta-non-reasoning",
+    "grok-4.20-beta-latest-non-reasoning",
+    "grok-4.20-experimental-beta-0304-non-reasoning",
+    "grok-4.20-experimental-beta-non-reasoning-latest",
+    "grok-4.20-beta-0309-non-reasoning",
+    "grok-4.20-non-reasoning-gv2"
+  ],
+  "sources": [
+    {
+      "title": "Grok 4.20 (Non-Reasoning) | xAI Docs",
+      "url": "https://docs.x.ai/developers/models/grok-4.20-0309-non-reasoning",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Models and Pricing | xAI Docs",
+      "url": "https://docs.x.ai/developers/models",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "xai",
+      "model": "grok-4.20-0309-non-reasoning",
+      "base_url": "https://api.x.ai",
+      "endpoints": {
+        "messages": "POST /v1/chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

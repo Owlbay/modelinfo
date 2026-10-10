@@ -1,0 +1,82 @@
+{
+  "id": "glm-5.3-flash",
+  "object": "model",
+  "created": 1787702400,
+  "owned_by": "zhipu",
+  "name": "GLM-5.3-Flash",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 1000000,
+    "input": null,
+    "output": 128000
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "video",
+      "document"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.15,
+    "output": 0.5,
+    "cache_read": 0.03,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "streaming",
+    "caching"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2026-08-26",
+    "knowledge_cutoff": null,
+    "description": "First native multimodal model in the GLM-5 series, 320B total and 18B active parameters, low cost.",
+    "docs": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "GLM-5.3-Flash | Z.AI Developer Document",
+      "url": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Pricing | Z.AI Developer Document",
+      "url": "https://docs.z.ai/guides/overview/pricing",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Release Notes | Z.AI Developer Document",
+      "url": "https://docs.z.ai/release-notes/new-released",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "zhipu",
+      "model": "glm-5.3-flash",
+      "base_url": "https://api.z.ai/api/paas/v4",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": "thinking.type"
+    }
+  ]
+}

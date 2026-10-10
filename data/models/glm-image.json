@@ -1,0 +1,68 @@
+{
+  "id": "glm-image",
+  "object": "model",
+  "created": 1768348800,
+  "owned_by": "zhipu",
+  "name": "GLM-Image",
+  "api": {
+    "types": [
+      "images"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "image"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": "2026-01-14",
+    "knowledge_cutoff": null,
+    "description": "Flagship image generation model with improved text rendering, priced at $0.015 per image.",
+    "docs": "https://docs.z.ai/guides/image/glm-image",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "GLM-Image | Z.AI Developer Document",
+      "url": "https://docs.z.ai/guides/image/glm-image",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Pricing | Z.AI Developer Document",
+      "url": "https://docs.z.ai/guides/overview/pricing",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Release Notes | Z.AI Developer Document",
+      "url": "https://docs.z.ai/release-notes/new-released",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "zhipu",
+      "model": "glm-image",
+      "base_url": "https://api.z.ai/api/paas/v4",
+      "endpoints": {
+        "images": "POST /images/generations"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

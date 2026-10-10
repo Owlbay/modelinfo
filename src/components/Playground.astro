@@ -1,0 +1,131 @@
+---
+/**
+ * 在线调试：在页面内发送真实请求，显示状态码、耗时、大小、模型数与格式化后的响应。
+ * 请求同源的 path，地址行显示完整 URL 便于复制。
+ */
+import Endpoint from './Endpoint.astro';
+import Icon from './Icon.astro';
+import { dict, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+  url: string;
+  path: string;
+}
+const { lang, url, path } = Astro.props;
+const t = dict(lang);
+---
+
+<div class="pg" data-playground data-path={path} data-sending={t.playground.sending} data-error={t.playground.error}>
+  <Endpoint lang={lang} method="GET" url={url}>
+    <button type="button" class="pg__send" data-send>
+      <Icon name="arrow-right" size={14} /><span data-send-label>{t.playground.send}</span>
+    </button>
+  </Endpoint>
+
+  <div class="pg__res" data-code>
+    <div class="pg__meta">
+      <span>{t.playground.status} <b data-status>—</b></span>
+      <span>{t.playground.time} <b data-time>—</b></span>
+      <span>{t.playground.size} <b data-size>—</b></span>
+      <span>{t.playground.count} <b data-count>—</b></span>
+      <button type="button" class="copy-btn pg__copy" data-copy data-copied={t.code.copied} data-failed={t.code.copyFailed} hidden>
+        <Icon name="copy" size={14} /><span data-copy-label>{t.code.copy}</span>
+      </button>
+    </div>
+    <pre class="pg__body"><code data-body>{t.playground.idle}</code></pre>
+  </div>
+</div>
+
+<script>
+  for (const root of document.querySelectorAll<HTMLElement>('[data-playground]')) {
+    const btn = root.querySelector<HTMLButtonElement>('[data-send]')!;
+    const label = root.querySelector<HTMLElement>('[data-send-label]')!;
+    const body = root.querySelector<HTMLElement>('[data-body]')!;
+    const copy = root.querySelector<HTMLButtonElement>('.pg__copy')!;
+    const set = (key: string, v: string) => (root.querySelector<HTMLElement>(`[data-${key}]`)!.textContent = v);
+    const idle = label.textContent ?? '';
+
+    btn.addEventListener('click', async () => {
+      btn.disabled = true;
+      label.textContent = root.dataset.sending ?? idle;
+      const start = performance.now();
+      try {
+        // 跳过 HTTP 缓存，每次都看到真实请求
+        const res = await fetch(root.dataset.path!, { cache: 'no-store', headers: { Accept: 'application/json' } });
+        const text = await res.text();
+        set('status', `${res.status} ${res.statusText}`.trim());
+        set('time', `${Math.round(performance.now() - start)} ms`);
+        set('size', `${(new Blob([text]).size / 1024).toFixed(1)} KB`);
+        try {
+          const json = JSON.parse(text);
+          set('count', Array.isArray(json.data) ? String(json.data.length) : '—');
+          body.textContent = JSON.stringify(json, null, 2);
+        } catch {
+          set('count', '—');
+          body.textContent = text;
+        }
+        root.dataset.state = res.ok ? 'ok' : 'error';
+        copy.hidden = false;
+      } catch (err) {
+        set('status', root.dataset.error ?? 'Error');
+        body.textContent = String(err);
+        root.dataset.state = 'error';
+      } finally {
+        btn.disabled = false;
+        label.textContent = idle;
+      }
+    });
+  }
+</script>
+
+<style>
+  .pg { min-width: 0; }
+  .pg__send {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-2);
+    padding: 0 var(--sp-4);
+    background: var(--ink);
+    color: var(--bg);
+    font: 500 var(--fs-body-sm) / var(--lh-body-sm) var(--font-sans);
+    white-space: nowrap;
+    transition: background-color var(--dur-1) var(--ease-out), scale var(--dur-1) var(--ease-out);
+  }
+  .pg__send:hover { background: var(--ink-2); }
+  .pg__send:disabled { background: var(--ink-3); cursor: progress; }
+  @media (prefers-reduced-motion: no-preference) {
+    .pg__send:active { scale: 0.97; }
+  }
+
+  .pg__res {
+    margin-top: var(--sp-3);
+    border: 1px solid var(--line-soft);
+  }
+  .pg__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--sp-1) var(--sp-5);
+    min-height: 36px;
+    padding-left: var(--sp-3);
+    border-bottom: 1px solid var(--line-soft);
+    font: 400 var(--fs-mono-sm) / var(--lh-mono-sm) var(--font-mono);
+    color: var(--ink-3);
+  }
+  .pg__meta b { font-weight: 400; color: var(--ink); }
+  .pg[data-state='error'] [data-status] { color: var(--accent-text); }
+  .pg__copy { margin-left: auto; }
+  .pg__body {
+    max-height: 480px;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    margin: 0;
+    padding: var(--sp-4);
+    background: var(--bg-raised);
+    font-size: var(--fs-code);
+    line-height: var(--lh-code);
+    color: var(--ink-2);
+    overflow: auto;
+  }
+</style>

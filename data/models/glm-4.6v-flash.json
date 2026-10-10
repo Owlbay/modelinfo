@@ -1,0 +1,79 @@
+{
+  "id": "glm-4.6v-flash",
+  "object": "model",
+  "created": null,
+  "owned_by": "zhipu",
+  "name": "GLM-4.6V-Flash",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 128000,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "video",
+      "document"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0,
+    "output": 0,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [
+    "tools"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Lightweight and completely free GLM-4.6V series model.",
+    "docs": "https://docs.z.ai/guides/vlm/glm-4.6v",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "GLM-4.6V | Z.AI Developer Document",
+      "url": "https://docs.z.ai/guides/vlm/glm-4.6v",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Pricing | Z.AI Developer Document",
+      "url": "https://docs.z.ai/guides/overview/pricing",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Release Notes | Z.AI Developer Document",
+      "url": "https://docs.z.ai/release-notes/new-released",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "zhipu",
+      "model": "glm-4.6v-flash",
+      "base_url": "https://api.z.ai/api/paas/v4",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": "thinking.type"
+    }
+  ]
+}

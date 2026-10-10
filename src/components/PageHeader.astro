@@ -1,0 +1,64 @@
+---
+/**
+ * 页面标题区：所有页面统一为「标题 + 一句简介 + 可选操作」。
+ * 标题用 Headline 级（--fs-h1），始终比分区标题（--fs-h2）大一级。
+ */
+interface Props {
+  title: string;
+  intro?: string;
+}
+const { title, intro } = Astro.props;
+const hasActions = Astro.slots.has('default');
+const hasMedia = Astro.slots.has('media');
+---
+
+<header class:list={['phead', { 'phead--media': hasMedia }]}>
+  {hasMedia && <div class="phead__media"><slot name="media" /></div>}
+  <div class="phead__body">
+    <h1 class="phead__title">{title}</h1>
+    {intro && <p class="phead__intro">{intro}</p>}
+    <slot name="meta" />
+    {hasActions && <div class="phead__actions"><slot /></div>}
+  </div>
+</header>
+
+<style>
+  .phead {
+    padding-top: var(--sp-7);
+    margin-bottom: var(--sp-6);
+  }
+  .phead--media {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: start;
+    gap: var(--sp-6);
+  }
+  .phead__title {
+    margin: 0;
+    font: 500 var(--fs-h1) / 1.2 var(--font-sans);
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    text-wrap: balance;
+  }
+  .phead__intro {
+    max-width: 65ch;
+    margin: var(--sp-3) 0 0;
+    font: 400 var(--fs-body) / var(--lh-body) var(--font-sans);
+    color: var(--ink-2);
+    text-wrap: pretty;
+  }
+  .phead__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--sp-3);
+    margin-top: var(--sp-5);
+  }
+  @media (max-width: 640px) {
+    .phead--media { grid-template-columns: minmax(0, 1fr); gap: var(--sp-4); }
+    .phead {
+      padding-top: var(--sp-6);
+      margin-bottom: var(--sp-5);
+    }
+  }
+</style>

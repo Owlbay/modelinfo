@@ -1,0 +1,83 @@
+{
+  "id": "codestral-2508",
+  "object": "model",
+  "created": 1753833600,
+  "owned_by": "mistral",
+  "name": "Codestral",
+  "api": {
+    "types": [
+      "messages",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": 128000,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.3,
+    "output": 0.9,
+    "cache_read": 0.03,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "caching",
+    "batch"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2025-07-30",
+    "knowledge_cutoff": null,
+    "description": "Language model for code completion specializing in low-latency, high-frequency tasks such as fill-in-the-middle and code generation.",
+    "docs": "https://docs.mistral.ai/models/codestral-25-08",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "codestral-latest"
+  ],
+  "sources": [
+    {
+      "title": "Codestral | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/codestral-25-08",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "API pricing | Mistral Docs",
+      "url": "https://docs.mistral.ai/inference/pricing",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Models overview | Mistral Docs",
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "mistral",
+      "model": "codestral-2508",
+      "base_url": "https://api.mistral.ai",
+      "endpoints": {
+        "messages": "POST /v1/chat/completions",
+        "batch": "POST /v1/batch"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

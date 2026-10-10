@@ -1,0 +1,64 @@
+{
+  "id": "glm-ocr",
+  "object": "model",
+  "created": null,
+  "owned_by": "zhipu",
+  "name": "GLM-OCR",
+  "api": {
+    "types": [
+      "ocr"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "document",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Lightweight 0.9B-parameter OCR model for document parsing.",
+    "docs": "https://docs.z.ai/guides/vlm/glm-ocr",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "GLM-OCR | Z.AI Developer Document",
+      "url": "https://docs.z.ai/guides/vlm/glm-ocr",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Pricing | Z.AI Developer Document",
+      "url": "https://docs.z.ai/guides/overview/pricing",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "zhipu",
+      "model": "glm-ocr",
+      "base_url": "https://api.z.ai/api/paas/v4",
+      "endpoints": {
+        "ocr": "POST /layout_parsing"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

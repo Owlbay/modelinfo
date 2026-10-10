@@ -1,0 +1,91 @@
+{
+  "id": "mistral-small-2603",
+  "object": "model",
+  "created": 1773619200,
+  "owned_by": "mistral",
+  "name": "Mistral Small 4",
+  "api": {
+    "types": [
+      "messages",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": 256000,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": [
+      "none",
+      "high"
+    ]
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.15,
+    "output": 0.6,
+    "cache_read": 0.015,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "caching",
+    "batch"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2026-03-16",
+    "knowledge_cutoff": null,
+    "description": "Hybrid model unifying instruct, reasoning, and coding capabilities in a single model.",
+    "docs": "https://docs.mistral.ai/models/mistral-small-4-0-26-03",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "mistral-small-latest"
+  ],
+  "sources": [
+    {
+      "title": "Mistral Small 4 | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-small-4-0-26-03",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "API pricing | Mistral Docs",
+      "url": "https://docs.mistral.ai/inference/pricing",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Models overview | Mistral Docs",
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Reasoning | Mistral Docs",
+      "url": "https://docs.mistral.ai/capabilities/reasoning/",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "mistral",
+      "model": "mistral-small-2603",
+      "base_url": "https://api.mistral.ai",
+      "endpoints": {
+        "messages": "POST /v1/chat/completions",
+        "batch": "POST /v1/batch"
+      },
+      "reasoning_param": "reasoning_effort"
+    }
+  ]
+}

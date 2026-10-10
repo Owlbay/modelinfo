@@ -1,0 +1,79 @@
+{
+  "id": "glm-4.6",
+  "object": "model",
+  "created": 1759190400,
+  "owned_by": "zhipu",
+  "name": "GLM-4.6",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 200000,
+    "input": null,
+    "output": 128000
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.6,
+    "output": 2.2,
+    "cache_read": 0.11,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "streaming",
+    "caching"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2025-09-30",
+    "knowledge_cutoff": null,
+    "description": "Text model for coding, long-context work, reasoning, search and agentic tasks with 200K context.",
+    "docs": "https://docs.z.ai/guides/llm/glm-4.6",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "GLM-4.6 | Z.AI Developer Document",
+      "url": "https://docs.z.ai/guides/llm/glm-4.6",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Pricing | Z.AI Developer Document",
+      "url": "https://docs.z.ai/guides/overview/pricing",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Release Notes | Z.AI Developer Document",
+      "url": "https://docs.z.ai/release-notes/new-released",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "zhipu",
+      "model": "glm-4.6",
+      "base_url": "https://api.z.ai/api/paas/v4",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": "thinking.type"
+    }
+  ]
+}

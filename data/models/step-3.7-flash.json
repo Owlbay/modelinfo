@@ -1,0 +1,89 @@
+{
+  "id": "step-3.7-flash",
+  "object": "model",
+  "created": null,
+  "owned_by": "stepfun",
+  "name": "Step 3.7 Flash",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 262144,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": [
+      "low",
+      "medium",
+      "high"
+    ]
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.2,
+    "output": 1.15,
+    "cache_read": 0.04,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "streaming",
+    "caching"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Sparse MoE multimodal reasoning model (198B total, 11B active) with image and video understanding.",
+    "docs": "https://platform.stepfun.ai/docs/en/guides/models/step-3.7-flash",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Step Platform pricing | StepFun Documentation",
+      "url": "https://platform.stepfun.ai/docs/en/guides/pricing/details",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Model overview | StepFun Documentation",
+      "url": "https://platform.stepfun.ai/docs/en/guides/models/overview",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Chat completion | StepFun API reference",
+      "url": "https://platform.stepfun.ai/docs/en/api-reference/chat/chat-completion-create",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Step 3.7 Flash | StepFun Documentation",
+      "url": "https://platform.stepfun.ai/docs/en/guides/models/step-3.7-flash",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "stepfun",
+      "model": "step-3.7-flash",
+      "base_url": "https://api.stepfun.ai/v1",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": "reasoning_effort"
+    }
+  ]
+}

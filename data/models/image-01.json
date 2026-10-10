@@ -1,0 +1,73 @@
+{
+  "id": "image-01",
+  "object": "model",
+  "created": 1739577600,
+  "owned_by": "minimax",
+  "name": "image-01",
+  "api": {
+    "types": [
+      "images"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "image"
+    ]
+  },
+  "reasoning": {
+    "supported": false,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": "2025-02-15",
+    "knowledge_cutoff": null,
+    "description": "Text-to-image model supporting multiple aspect ratios and sizes.",
+    "docs": "https://platform.minimax.io/docs/api-reference/image-generation-t2i",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Models | MiniMax API Docs",
+      "url": "https://platform.minimax.io/docs/guides/models-intro",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Pay as You Go pricing | MiniMax API Docs",
+      "url": "https://platform.minimax.io/docs/guides/pricing-paygo",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Model release notes | MiniMax API Docs",
+      "url": "https://platform.minimax.io/docs/release-notes/models",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Image generation (text to image) | MiniMax API Docs",
+      "url": "https://platform.minimax.io/docs/api-reference/image-generation-t2i",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "minimax",
+      "model": "image-01",
+      "base_url": "https://api.minimax.io",
+      "endpoints": {
+        "images": "POST /v1/image_generation"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

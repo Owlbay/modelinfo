@@ -1,0 +1,65 @@
+{
+  "id": "wan3.0-video",
+  "object": "model",
+  "created": null,
+  "owned_by": "alibaba",
+  "name": "Wan3.0-Video",
+  "api": {
+    "types": [
+      "video"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "video",
+      "audio",
+      "document"
+    ],
+    "output": [
+      "video"
+    ]
+  },
+  "reasoning": {
+    "supported": false,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "All-in-one video generation model for text-to-video, image-to-video and reference-based generation.",
+    "docs": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/wan3-0-video",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "wan3.0-video | Alibaba Cloud Model Studio",
+      "url": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/wan3-0-video",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Model Studio model pricing | Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "alibaba",
+      "model": "wan3.0-video",
+      "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

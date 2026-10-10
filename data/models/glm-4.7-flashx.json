@@ -1,0 +1,79 @@
+{
+  "id": "glm-4.7-flashx",
+  "object": "model",
+  "created": 1766361600,
+  "owned_by": "zhipu",
+  "name": "GLM-4.7-FlashX",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 200000,
+    "input": null,
+    "output": 128000
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.07,
+    "output": 0.4,
+    "cache_read": 0.01,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "streaming",
+    "caching"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2025-12-22",
+    "knowledge_cutoff": null,
+    "description": "Lightweight, high-speed and affordable GLM-4.7 series model.",
+    "docs": "https://docs.z.ai/guides/llm/glm-4.7",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "GLM-4.7 | Z.AI Developer Document",
+      "url": "https://docs.z.ai/guides/llm/glm-4.7",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Pricing | Z.AI Developer Document",
+      "url": "https://docs.z.ai/guides/overview/pricing",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Release Notes | Z.AI Developer Document",
+      "url": "https://docs.z.ai/release-notes/new-released",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "zhipu",
+      "model": "glm-4.7-flashx",
+      "base_url": "https://api.z.ai/api/paas/v4",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": "thinking.type"
+    }
+  ]
+}

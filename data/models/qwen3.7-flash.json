@@ -1,0 +1,88 @@
+{
+  "id": "qwen3.7-flash",
+  "object": "model",
+  "created": null,
+  "owned_by": "alibaba",
+  "name": "Qwen3.7-Flash",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 1000000,
+    "input": 991808,
+    "output": 131072
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.03,
+    "output": 0.13,
+    "cache_read": 0.003,
+    "cache_write": 0.038
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "streaming",
+    "caching"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Flash model with enhanced multimodal understanding and agent execution over Qwen3.6-Flash.",
+    "docs": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-7-flash",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "qwen3.7-flash-2026-07-15"
+  ],
+  "sources": [
+    {
+      "title": "qwen3.7-flash | Alibaba Cloud Model Studio",
+      "url": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-7-flash",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Text generation models | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/text-generation-model",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Vision models | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/vision-model",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Model Studio model pricing | Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "alibaba",
+      "model": "qwen3.7-flash",
+      "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
+      "endpoints": {
+        "messages": "POST /compatible-mode/v1/chat/completions"
+      },
+      "reasoning_param": "enable_thinking"
+    }
+  ]
+}

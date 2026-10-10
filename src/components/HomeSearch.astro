@@ -1,0 +1,283 @@
+---
+/**
+ * 首页 hero：两行标题 + 模型搜索。结果面板在构建时渲染全部模型，输入时按关键词过滤；
+ * ↑↓ 选择、回车打开、Esc 关闭，首个结果预选中（反白）。
+ */
+import Icon from './Icon.astro';
+import { formatTokens, ownerName, type Model } from '../lib/models';
+import { dict, localePath, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+  models: Model[];
+}
+const { lang, models } = Astro.props;
+const t = dict(lang).home;
+const haystack = (m: Model) =>
+  [m.id, m.name, m.owned_by, ownerName(m.owned_by), ...m.aliases, ...m.api.types, ...m.modalities.input].join(' ').toLowerCase();
+---
+
+<div class="hs" data-wordfield-quiet>
+  <h1 class="hs__title">{t.title[0]}<br />{t.title[1]}</h1>
+
+  <div class="search" data-search>
+    <form class="search__bar" role="search" action={localePath(lang, '/models/')}>
+      <span class="search__lead" aria-hidden="true"><Icon name="search" size={16} /></span>
+      <input
+        class="search__input"
+        data-search-input
+        type="text"
+        name="q"
+        role="combobox"
+        aria-label={t.searchAria}
+        aria-autocomplete="list"
+        aria-expanded="false"
+        aria-controls="search-panel"
+        placeholder={t.placeholder}
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <kbd class="search__kbd" aria-hidden="true">/</kbd>
+    </form>
+    <div class="search__panel panel" id="search-panel" hidden>
+      <div class="panel__head"><span>{t.panelHead}</span><span data-search-count>{models.length}</span></div>
+      <div class="panel__list" role="listbox" aria-label={t.resultsAria}>
+        {
+          models.map((m) => (
+            <a class="panel__item" role="option" href={localePath(lang, `/models/${m.id}/`)} data-hay={haystack(m)} aria-selected="false">
+              <span class="panel__key">{m.id}</span>
+              <span class="panel__label">{m.name}</span>
+              <span class="panel__meta">{ownerName(m.owned_by)} · {formatTokens(m.limits.context)}</span>
+            </a>
+          ))
+        }
+      </div>
+      <p class="panel__msg" data-search-empty hidden>{t.empty}</p>
+      <div class="panel__foot"><span>{t.keys}</span><span>{t.esc}</span></div>
+    </div>
+  </div>
+
+  <p class="hs__hint">
+    <span>{t.hint}</span>
+    <a href={localePath(lang, '/models/')}>{t.all(models.length)}</a>
+  </p>
+</div>
+
+<script>
+  const root = document.querySelector<HTMLElement>('[data-search]');
+  if (root) {
+    const input = root.querySelector<HTMLInputElement>('[data-search-input]')!;
+    const panel = root.querySelector<HTMLElement>('.search__panel')!;
+    const items = [...root.querySelectorAll<HTMLAnchorElement>('.panel__item')];
+    const count = root.querySelector<HTMLElement>('[data-search-count]')!;
+    const empty = root.querySelector<HTMLElement>('[data-search-empty]')!;
+    let visible: HTMLAnchorElement[] = [];
+    let sel = 0;
+
+    const select = (i: number) => {
+      sel = Math.max(0, Math.min(i, visible.length - 1));
+      items.forEach((el) => el.setAttribute('aria-selected', 'false'));
+      const el = visible[sel];
+      if (el) {
+        el.setAttribute('aria-selected', 'true');
+        el.scrollIntoView({ block: 'nearest' });
+      }
+    };
+    const open = (show: boolean) => {
+      panel.hidden = !show;
+      input.setAttribute('aria-expanded', String(show));
+    };
+    const filter = () => {
+      const terms = input.value.toLowerCase().split(/\s+/).filter(Boolean);
+      visible = [];
+      for (const el of items) {
+        const hit = terms.every((t) => el.dataset.hay!.includes(t));
+        el.hidden = !hit;
+        if (hit) visible.push(el);
+      }
+      count.textContent = String(visible.length);
+      empty.hidden = visible.length > 0;
+      select(0);
+    };
+
+    input.addEventListener('focus', () => {
+      filter();
+      open(true);
+    });
+    input.addEventListener('input', () => {
+      filter();
+      open(true);
+    });
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowDown') select(sel + 1);
+      else if (e.key === 'ArrowUp') select(sel - 1);
+      else if (e.key === 'Escape') {
+        open(false);
+        input.blur();
+      } else return;
+      e.preventDefault();
+    });
+    root.querySelector('form')!.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const el = visible[sel];
+      if (el) location.href = el.href;
+    });
+    document.addEventListener('pointerdown', (e) => {
+      if (!root.contains(e.target as Node)) open(false);
+    });
+  }
+</script>
+
+<style>
+  .hs {
+    position: relative;
+    z-index: 1;
+    width: min(960px, 100%);
+    text-align: center;
+    /* 文字块之间的空白让字墙接收指针 */
+    pointer-events: none;
+  }
+  .hs__title,
+  .search,
+  .hs__hint a { pointer-events: auto; }
+  .hs__title {
+    font: 500 var(--fs-display) / 1 var(--font-sans);
+    letter-spacing: -0.025em;
+    color: var(--ink);
+  }
+
+  .search {
+    position: relative;
+    max-width: 720px;
+    margin: var(--sp-7) auto 0;
+    text-align: left;
+  }
+  .search__bar {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-3);
+    height: var(--search-h);
+    padding: 0 var(--sp-4);
+    border: 1px solid var(--line-strong);
+    background: color-mix(in srgb, var(--bg) 82%, transparent);
+    transition: border-color var(--dur-1) var(--ease-out);
+  }
+  .search__bar:focus-within { border-color: var(--accent-ui); }
+  .search__lead { display: flex; color: var(--ink-3); }
+  .search__input {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    font: 400 var(--fs-body-lg) / var(--lh-body-lg) var(--font-sans);
+    color: var(--ink);
+    outline: none;
+  }
+  .search__input:focus-visible { outline: none; }
+  .search__kbd {
+    display: inline-grid;
+    place-items: center;
+    width: 22px;
+    height: 22px;
+    font: 400 var(--fs-mono-sm) / 1 var(--font-mono);
+    color: var(--ink-3);
+    border: 1px solid var(--line);
+  }
+  .search__bar:focus-within .search__kbd { display: none; }
+  @media (pointer: coarse) { .search__kbd { display: none; } }
+
+  .panel {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 40;
+    display: flex;
+    flex-direction: column;
+    max-height: min(50vh, 440px);
+    margin-top: -1px;
+    background: var(--bg-panel);
+    border: 1px solid var(--line);
+    font: 400 var(--fs-mono) / var(--lh-mono) var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    animation: panel-in var(--dur-2) var(--ease-out);
+  }
+  .panel[hidden] { display: none; }
+  .panel__head,
+  .panel__foot {
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 32px;
+    padding: 0 var(--sp-3);
+    font: 500 var(--fs-mono-xs) / var(--lh-mono-xs) var(--font-mono);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+  }
+  .panel__head { border-bottom: 1px solid var(--line-soft); }
+  .panel__foot { border-top: 1px solid var(--line-soft); }
+  @media (pointer: coarse) { .panel__foot { display: none; } }
+  .panel__list { flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
+  .panel__item {
+    display: grid;
+    grid-template-columns: 22ch minmax(0, 1fr) auto;
+    align-items: center;
+    column-gap: var(--sp-3);
+    min-height: var(--control-h);
+    padding: 0 var(--sp-3);
+    color: var(--ink);
+    text-decoration: none;
+    transition: background-color var(--dur-1) var(--ease-out);
+  }
+  .panel__item[hidden] { display: none; }
+  .panel__item:hover { background: var(--hover-row); }
+  .panel__item:focus-visible { outline-offset: -2px; }
+  .panel__key { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .panel__label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font: 400 var(--fs-ui) / var(--lh-ui) var(--font-sans);
+    color: var(--ink-2);
+  }
+  .panel__meta { font-size: var(--fs-mono-sm); color: var(--ink-3); white-space: nowrap; }
+  /* 选中：反白 */
+  .panel__item[aria-selected='true'] { background: var(--selected-bg); }
+  .panel__item[aria-selected='true'] > * { color: var(--selected-ink); }
+  .panel__msg {
+    display: flex;
+    align-items: center;
+    min-height: var(--control-h);
+    padding: 0 var(--sp-3);
+    color: var(--ink-3);
+  }
+  .panel__msg[hidden] { display: none; }
+
+  .hs__hint {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--sp-4);
+    max-width: 720px;
+    margin: var(--sp-3) auto 0;
+    font: 400 var(--fs-caption) / var(--lh-caption) var(--font-sans);
+    color: var(--ink-3);
+  }
+  .hs__hint a { color: var(--ink-2); text-decoration: none; }
+  .hs__hint a:hover { color: var(--ink); }
+  @media (pointer: coarse) {
+    .hs__hint > span { display: none; }
+    .hs__hint { justify-content: center; }
+  }
+
+  @media (max-width: 640px) {
+    .hs__title { font-size: var(--fs-display-sm); line-height: 1.1; }
+    .search { margin-top: var(--sp-6); }
+    .search__bar { height: var(--bar-h); }
+    .panel__item { grid-template-columns: minmax(0, 1fr) auto; }
+    .panel__label { display: none; }
+  }
+</style>

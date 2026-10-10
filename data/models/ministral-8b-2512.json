@@ -1,0 +1,84 @@
+{
+  "id": "ministral-8b-2512",
+  "object": "model",
+  "created": 1764633600,
+  "owned_by": "mistral",
+  "name": "Ministral 3 8B",
+  "api": {
+    "types": [
+      "messages",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": 256000,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.15,
+    "output": 0.15,
+    "cache_read": 0.015,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "caching",
+    "batch"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2025-12-02",
+    "knowledge_cutoff": null,
+    "description": "Powerful and efficient Ministral 3 model with text and vision capabilities, built for edge deployment.",
+    "docs": "https://docs.mistral.ai/models/ministral-3-8b-25-12",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "ministral-8b-latest"
+  ],
+  "sources": [
+    {
+      "title": "Ministral 3 8B | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/ministral-3-8b-25-12",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "API pricing | Mistral Docs",
+      "url": "https://docs.mistral.ai/inference/pricing",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Models overview | Mistral Docs",
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "mistral",
+      "model": "ministral-8b-2512",
+      "base_url": "https://api.mistral.ai",
+      "endpoints": {
+        "messages": "POST /v1/chat/completions",
+        "batch": "POST /v1/batch"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

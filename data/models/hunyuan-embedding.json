@@ -1,0 +1,74 @@
+{
+  "id": "hunyuan-embedding",
+  "object": "model",
+  "created": 1704412800,
+  "owned_by": "tencent",
+  "name": "Hunyuan-Embedding",
+  "api": {
+    "types": [
+      "embeddings"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ]
+  },
+  "reasoning": {
+    "supported": false,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "CNY",
+    "input": 0.7,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": "2024-01-05",
+    "knowledge_cutoff": null,
+    "description": "Tencent Hunyuan text embedding model producing 1024-dimensional vectors.",
+    "docs": "https://cloud.tencent.com/document/product/1729/111007",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "混元生文计费概述 | 腾讯混元大模型",
+      "url": "https://cloud.tencent.com/document/product/1729/97731",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "产品动态 | 腾讯混元大模型",
+      "url": "https://cloud.tencent.com/document/product/1729/97765",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "OpenAI 兼容接口 | 腾讯混元大模型",
+      "url": "https://cloud.tencent.com/document/product/1729/111007",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "tencent",
+      "model": "hunyuan-embedding",
+      "base_url": "https://api.hunyuan.cloud.tencent.com/v1",
+      "endpoints": {
+        "embeddings": "POST /embeddings"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

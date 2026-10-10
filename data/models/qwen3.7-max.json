@@ -1,0 +1,86 @@
+{
+  "id": "qwen3.7-max",
+  "object": "model",
+  "created": null,
+  "owned_by": "alibaba",
+  "name": "Qwen3.7-Max",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 1000000,
+    "input": 991808,
+    "output": 131072
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 2.5,
+    "output": 7.5,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "streaming",
+    "caching"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Largest and most capable model in the Qwen3.7 series, a flagship for agent-centric work, programming and office tasks.",
+    "docs": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-7-max",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "qwen3.7-max-2026-05-20"
+  ],
+  "sources": [
+    {
+      "title": "qwen3.7-max | Alibaba Cloud Model Studio",
+      "url": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-7-max",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Text generation models | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/text-generation-model",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Vision models | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/vision-model",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Model Studio model pricing | Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "alibaba",
+      "model": "qwen3.7-max",
+      "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
+      "endpoints": {
+        "messages": "POST /compatible-mode/v1/chat/completions"
+      },
+      "reasoning_param": "enable_thinking"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "voxtral-small-2507",
+  "object": "model",
+  "created": 1752537600,
+  "owned_by": "mistral",
+  "name": "Voxtral Small",
+  "api": {
+    "types": [
+      "messages",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": 32000,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "audio"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.1,
+    "output": 0.4,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "batch"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2025-07-15",
+    "knowledge_cutoff": null,
+    "description": "First Mistral model with audio input capabilities for instruct use cases.",
+    "docs": "https://docs.mistral.ai/models/voxtral-small-25-07",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "voxtral-small-latest"
+  ],
+  "sources": [
+    {
+      "title": "Voxtral Small | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/voxtral-small-25-07",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "API pricing | Mistral Docs",
+      "url": "https://docs.mistral.ai/inference/pricing",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Models overview | Mistral Docs",
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "mistral",
+      "model": "voxtral-small-2507",
+      "base_url": "https://api.mistral.ai",
+      "endpoints": {
+        "messages": "POST /v1/chat/completions",
+        "batch": "POST /v1/batch"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

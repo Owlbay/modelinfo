@@ -1,0 +1,78 @@
+{
+  "id": "mistral-embed-2312",
+  "object": "model",
+  "created": 1702252800,
+  "owned_by": "mistral",
+  "name": "Mistral Embed",
+  "api": {
+    "types": [
+      "embeddings",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": 8000,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.1,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [
+    "batch"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2023-12-11",
+    "knowledge_cutoff": null,
+    "description": "Semantic text embedding model.",
+    "docs": "https://docs.mistral.ai/models/mistral-embed-23-12",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Mistral Embed | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-embed-23-12",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "API pricing | Mistral Docs",
+      "url": "https://docs.mistral.ai/inference/pricing",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Models overview | Mistral Docs",
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "mistral",
+      "model": "mistral-embed-2312",
+      "base_url": "https://api.mistral.ai",
+      "endpoints": {
+        "embeddings": "POST /v1/embeddings",
+        "batch": "POST /v1/batch"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "grok-imagine-image-2.0",
+  "object": "model",
+  "created": null,
+  "owned_by": "xai",
+  "name": "Grok Imagine Image 2.0",
+  "api": {
+    "types": [
+      "images",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "image"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "batch"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "xAI image generation and editing model, priced at $0.04 per image.",
+    "docs": "https://docs.x.ai/developers/models/grok-imagine-image-2.0",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Grok Imagine Image 2.0 | xAI Docs",
+      "url": "https://docs.x.ai/developers/models/grok-imagine-image-2.0",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Models and Pricing | xAI Docs",
+      "url": "https://docs.x.ai/developers/models",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "xai",
+      "model": "grok-imagine-image-2.0",
+      "base_url": "https://api.x.ai",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

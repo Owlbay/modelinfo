@@ -1,0 +1,133 @@
+---
+/** 全站顶栏：品牌、导航（来自 lib/nav.ts）、语言、主题、GitHub。 */
+import { NAV, navCurrent, type PageId } from '../lib/nav';
+import { dict, localePath, type Lang } from '../i18n';
+import LangMenu from './LangMenu.astro';
+import ThemeToggle from './ThemeToggle.astro';
+import Icon from './Icon.astro';
+import Kbd from './Kbd.astro';
+
+interface Props {
+  lang: Lang;
+  page: PageId;
+}
+const { lang, page } = Astro.props;
+const t = dict(lang);
+const current = navCurrent(page);
+---
+
+<header class:list={['topnav', { 'topnav--over': page === 'home' }]}>
+  <div class="container topnav__inner">
+    <a class="topnav__brand" href={localePath(lang, '/')}>ModelInfo</a>
+
+    <nav class="topnav__nav" aria-label={t.nav.aria}>
+      {
+        NAV.map((item) => (
+          <a
+            class:list={['topnav__link', `topnav__link--${item.id}`]}
+            href={localePath(lang, item.href)}
+            aria-current={current === item.id ? 'page' : undefined}
+            aria-keyshortcuts={item.key}
+          >
+            <Kbd k={item.key} class="topnav__kbd" />
+            <span>{t.nav[item.id]}</span>
+          </a>
+        ))
+      }
+    </nav>
+
+    <div class="topnav__tools">
+      <LangMenu lang={lang} />
+      <ThemeToggle label={t.nav.theme} />
+      <a class="topnav__icon" href="https://github.com/Owlbay/modelinfo" aria-label="GitHub">
+        <Icon name="github" size={16} />
+      </a>
+    </div>
+  </div>
+</header>
+
+<style>
+  .topnav {
+    position: relative;
+    z-index: 10;
+    background: var(--bg);
+    border-bottom: 1px solid var(--line-soft);
+  }
+  /* 首页：实底遮住字墙，底边虚线呼应下方栅格 */
+  .topnav--over {
+    border-bottom-style: dashed;
+    border-bottom-color: var(--line);
+  }
+  .topnav__inner {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    height: var(--nav-h);
+  }
+  .topnav__brand {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--control-h);
+    font: 500 var(--fs-body-lg) / var(--lh-body-lg) var(--font-sans);
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .topnav__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--sp-6);
+  }
+  .topnav__link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-2);
+    min-height: var(--control-h);
+    font: 400 var(--fs-body) / var(--lh-body) var(--font-sans);
+    color: var(--ink-2);
+    text-decoration: none;
+    transition: color var(--dur-1) var(--ease-out);
+  }
+  .topnav__link:hover,
+  .topnav__link[aria-current='page'] { color: var(--ink); }
+  /* 当前位置：陶土色 2px 细线 */
+  .topnav__link[aria-current='page']::after {
+    content: '';
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 2px;
+    background: var(--accent-ui);
+  }
+  .topnav__tools {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-1);
+  }
+  .topnav__icon {
+    display: inline-grid;
+    place-items: center;
+    width: var(--control-h);
+    height: var(--control-h);
+    color: var(--ink-2);
+    transition: color var(--dur-1) var(--ease-out), background-color var(--dur-1) var(--ease-out);
+  }
+  .topnav__icon:hover { color: var(--ink); background: var(--hover-row); }
+
+  @media (max-width: 1024px) {
+    .topnav__nav { gap: var(--sp-5); }
+    .topnav :global(.topnav__kbd) { display: none; }
+  }
+  @media (max-width: 640px) {
+    .topnav__inner {
+      height: var(--bar-h);
+      gap: var(--sp-3);
+    }
+    .topnav__brand { font-size: var(--fs-body); line-height: var(--lh-body); }
+    .topnav__nav { justify-content: flex-start; gap: var(--sp-4); }
+    .topnav__link { font-size: var(--fs-body-sm); line-height: var(--lh-body-sm); }
+    .topnav__link--home { display: none; }
+    .topnav__tools { gap: 0; }
+  }
+</style>

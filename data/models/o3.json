@@ -1,0 +1,92 @@
+{
+  "id": "o3",
+  "object": "model",
+  "created": 1744761600,
+  "owned_by": "openai",
+  "name": "o3",
+  "api": {
+    "types": [
+      "messages",
+      "responses",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": 200000,
+    "input": null,
+    "output": 100000
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 2,
+    "output": 8,
+    "cache_read": 0.5,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "streaming",
+    "caching",
+    "batch"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2025-04-16",
+    "knowledge_cutoff": "2024-06-01",
+    "description": "Reasoning model for complex tasks, succeeded by GPT-5.",
+    "docs": "https://developers.openai.com/api/docs/models/o3",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "o3-2025-04-16"
+  ],
+  "sources": [
+    {
+      "title": "o3 Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/o3",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Pricing | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/pricing",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Changelog | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/changelog",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "openai",
+      "model": "o3",
+      "base_url": "https://api.openai.com",
+      "endpoints": {
+        "messages": "POST /v1/chat/completions",
+        "responses": "POST /v1/responses",
+        "batch": "POST /v1/batches"
+      },
+      "reasoning_param": "reasoning.effort"
+    }
+  ]
+}

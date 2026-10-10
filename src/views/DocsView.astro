@@ -1,0 +1,213 @@
+---
+/** 文档：项目介绍、接口、在线调试、响应结构、字段、调用示例、数据说明。全站唯一一页文档。 */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TopNav from '../components/TopNav.astro';
+import Footer from '../components/Footer.astro';
+import PageHeader from '../components/PageHeader.astro';
+import SectionFrame from '../components/SectionFrame.astro';
+import CodeBlock from '../components/CodeBlock.astro';
+import Endpoint from '../components/Endpoint.astro';
+import Playground from '../components/Playground.astro';
+import { getModels, latestVerified, toPublic } from '../lib/models';
+import { dict, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = dict(lang);
+const d = t.docs;
+
+const models = await getModels();
+const origin = (Astro.site ?? Astro.url).origin;
+const url = `${origin}/v1/models`;
+const sample = toPublic(models.find((m) => m.id === 'claude-opus-5') ?? models[0]!);
+const example = JSON.stringify({ object: 'list', data: [sample] }, null, 2);
+
+const toc = Object.entries(d.toc) as Array<[keyof typeof d.toc, string]>;
+const groups: Array<[string, string]> = [
+  ['id · object · created · owned_by', d.groups.standard],
+  ['name', d.groups.name],
+  ['api', d.groups.api],
+  ['limits', d.groups.limits],
+  ['modalities', d.groups.modalities],
+  ['reasoning', d.groups.reasoning],
+  ['pricing', d.groups.pricing],
+  ['features', d.groups.features],
+  ['info', d.groups.info],
+];
+const f = d.fields;
+const fields: Array<[string, string, string]> = [
+  ['created', 'integer | null', f.created],
+  ['owned_by', 'string', f.owned_by],
+  ['api.types', 'string[]', f.api],
+  ['limits.context', 'integer | null', f.context],
+  ['limits.input', 'integer | null', f.input],
+  ['limits.output', 'integer | null', f.output],
+  ['modalities.*', 'string[]', f.modalities],
+  ['reasoning.efforts', 'string[]', f.efforts],
+  ['pricing.currency', 'string', f.currency],
+  ['pricing.input / output', 'number | null', f.price],
+  ['pricing.cache_*', 'number | null', f.cache],
+  ['features', 'string[]', f.features],
+  ['info.verified_at', 'string | null', f.verified],
+];
+
+const curl = `curl ${url}`;
+const python = `from openai import OpenAI
+
+${d.sdkComment}
+client = OpenAI(base_url="${origin}/v1", api_key="unused")
+
+for model in client.models.list():
+    print(model.id, model.owned_by)`;
+const js = `const res = await fetch("${url}");
+const { data } = await res.json();
+
+const cheapest = data
+  .filter((m) => m.pricing?.input != null)
+  .sort((a, b) => a.pricing.input - b.pricing.input)[0];
+console.log(cheapest.id, cheapest.pricing);`;
+---
+
+<BaseLayout lang={lang} page="docs" title={d.title}>
+  <TopNav lang={lang} page="docs" />
+  <main id="main" class="page docs">
+    <PageHeader title={d.title} intro={d.intro}>
+      <nav class="docs__toc" aria-label={d.tocAria}>
+        {toc.map(([id, label]) => <a href={`#${id}`}>{label}</a>)}
+      </nav>
+    </PageHeader>
+
+    <SectionFrame id="about" title={d.toc.about} count={t.models.count(models.length)}>
+      <div class="docs__prose">{d.about.map((p) => <p>{p}</p>)}</div>
+    </SectionFrame>
+
+    <SectionFrame id="endpoint" title={d.toc.endpoint} source="OpenAI compatible" stamp="JSON">
+      <Endpoint lang={lang} method="GET" url={url} />
+      <ul class="docs__list" role="list">{d.endpointNotes.map((n) => <li>{n}</li>)}</ul>
+    </SectionFrame>
+
+    <SectionFrame id="playground" title={d.toc.playground}>
+      <p class="docs__lead">{d.playgroundIntro}</p>
+      <Playground lang={lang} url={url} path="/v1/models" />
+    </SectionFrame>
+
+    <SectionFrame id="structure" title={d.toc.structure}>
+      <div class="docs__groups">
+        {
+          groups.map(([k, v]) => (
+            <p class="list-row docs__row">
+              <span class="docs__key">{k}</span>
+              <span class="docs__desc">{v}</span>
+            </p>
+          ))
+        }
+      </div>
+      <CodeBlock lang={lang} label="GET /v1/models" code={example} />
+    </SectionFrame>
+
+    <SectionFrame id="fields" title={d.toc.fields}>
+      {
+        fields.map(([k, type, v]) => (
+          <p class="list-row docs__field">
+            <span class="docs__key">{k}</span>
+            <span class="docs__type">{type}</span>
+            <span class="docs__desc">{v}</span>
+          </p>
+        ))
+      }
+      <p class="docs__note">{d.fieldsNote}</p>
+    </SectionFrame>
+
+    <SectionFrame id="usage" title={d.toc.usage}>
+      <div class="docs__code">
+        <CodeBlock lang={lang} label="curl" code={curl} />
+        <CodeBlock lang={lang} label="Python · OpenAI SDK" code={python} />
+        <CodeBlock lang={lang} label="JavaScript" code={js} />
+      </div>
+    </SectionFrame>
+
+    <SectionFrame id="data" title={d.toc.data} source={t.models.source} stamp={t.models.verified(latestVerified(models) ?? '—')}>
+      <ul class="docs__list" role="list">
+        <li>{d.dataNotes[0]}</li>
+        <li>{d.dataNotes[1]}</li>
+        <li>{d.dataNotes[2]} <a href="https://github.com/Owlbay/modelinfo">github.com/Owlbay/modelinfo</a></li>
+      </ul>
+    </SectionFrame>
+  </main>
+  <Footer lang={lang} />
+</BaseLayout>
+
+<style>
+  .docs { padding-bottom: var(--sp-8); }
+  .docs__toc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-1) var(--sp-5);
+  }
+  .docs__toc a {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--control-h);
+    font-size: var(--fs-body-sm);
+    line-height: var(--lh-body-sm);
+    color: var(--ink-2);
+    text-decoration: none;
+  }
+  .docs__toc a:hover { color: var(--ink); }
+
+  .docs__prose {
+    display: grid;
+    gap: var(--sp-4);
+    max-width: 72ch;
+    color: var(--ink-2);
+  }
+
+  .docs__list {
+    display: grid;
+    gap: var(--sp-2);
+    margin: var(--sp-4) 0 0;
+    padding-left: var(--sp-5);
+    color: var(--ink-2);
+  }
+  #data .docs__list { margin-top: 0; }
+  .docs__lead { margin-bottom: var(--sp-4); color: var(--ink-2); }
+
+  .docs__groups { margin-bottom: var(--sp-5); }
+  .docs__row {
+    grid-template-columns: 32ch minmax(0, 1fr);
+    column-gap: var(--sp-5);
+    margin-block: 0;
+  }
+  .docs__field {
+    grid-template-columns: 22ch 14ch minmax(0, 1fr);
+    column-gap: var(--sp-5);
+    margin-block: 0;
+  }
+  .docs__key { color: var(--ink); }
+  .docs__type { color: var(--ink-3); }
+  .docs__desc {
+    font: 400 var(--fs-body-sm) / var(--lh-body-sm) var(--font-sans);
+    color: var(--ink-2);
+  }
+  .docs__note {
+    margin-top: var(--sp-4);
+    font-size: var(--fs-body-sm);
+    line-height: var(--lh-body-sm);
+    color: var(--ink-3);
+  }
+  .docs__code {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--sp-4);
+  }
+
+  @media (max-width: 640px) {
+    .docs__row,
+    .docs__field {
+      grid-template-columns: minmax(0, 1fr);
+      row-gap: var(--sp-1);
+    }
+  }
+</style>

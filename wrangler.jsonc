@@ -1,12 +1,13 @@
-// 纯静态部署：Workers Static Assets，无 Worker 脚本、无存储绑定。
+// 纯静态：Cloudflare Workers Static Assets，无 Worker 脚本、无存储绑定。
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "modelinfo",
   "compatibility_date": "2026-10-01",
   "assets": {
     "directory": "./dist",
+    "html_handling": "auto-trailing-slash",
     "not_found_handling": "404-page"
   }
-  // 绑定自定义域名（域名需托管在 Cloudflare）：取消注释并替换为你的域名
+  // 自定义域名（需托管在 Cloudflare）：取消注释并替换
   // "routes": [{ "pattern": "modelinfo.example.com", "custom_domain": true }]
 }

@@ -1,0 +1,44 @@
+---
+/** 单选分段控件：选中反白。按钮带 data-value，由页面脚本处理切换。 */
+interface Props {
+  /** 筛选维度名，脚本据此区分多组分段控件 */
+  name: string;
+  label: string;
+  options: Array<{ value: string; label: string; count?: number }>;
+  value: string;
+}
+const { name, label, options, value } = Astro.props;
+---
+
+<div class="seg" role="group" aria-label={label} data-seg={name}>
+  {
+    options.map((o) => (
+      <button type="button" class="seg__item" data-value={o.value} aria-pressed={o.value === value ? "true" : "false"}>
+        {o.label}
+        {o.count != null && <span class="seg__count">{o.count}</span>}
+      </button>
+    ))
+  }
+</div>
+
+<style>
+  .seg {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-1);
+  }
+  .seg__item {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-2);
+    min-height: var(--control-h);
+    padding: 0 var(--sp-3);
+    font: 400 var(--fs-mono) / var(--lh-mono) var(--font-mono);
+    color: var(--ink-2);
+    transition: color var(--dur-1) var(--ease-out), background-color var(--dur-1) var(--ease-out), scale var(--dur-1) var(--ease-out);
+  }
+  .seg__item:hover { color: var(--ink); background: var(--hover-row); }
+  .seg__count { color: var(--ink-3); }
+  .seg__item[aria-pressed='true'] { background: var(--selected-bg); color: var(--selected-ink); }
+  .seg__item[aria-pressed='true'] .seg__count { color: var(--selected-ink); }
+</style>

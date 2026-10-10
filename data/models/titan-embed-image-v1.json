@@ -1,0 +1,72 @@
+{
+  "id": "titan-embed-image-v1",
+  "object": "model",
+  "created": 1701216000,
+  "owned_by": "amazon",
+  "name": "Amazon Titan Multimodal Embeddings G1",
+  "api": {
+    "types": [
+      "embeddings"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "embedding"
+    ]
+  },
+  "reasoning": {
+    "supported": false,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.8,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": "2023-11-29",
+    "knowledge_cutoff": null,
+    "description": "Amazon's model that generates embeddings from text and images for multimodal search and recommendation use cases.",
+    "docs": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-titan-multimodal-embeddings-g1.html",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "amazon.titan-embed-image-v1"
+  ],
+  "sources": [
+    {
+      "title": "Amazon Bedrock model card: Titan Multimodal Embeddings G1",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-titan-multimodal-embeddings-g1.html",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Amazon Bedrock Pricing",
+      "url": "https://aws.amazon.com/bedrock/pricing/",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "amazon-bedrock",
+      "model": "amazon.titan-embed-image-v1",
+      "base_url": "https://bedrock-runtime.us-east-1.amazonaws.com",
+      "endpoints": {
+        "embeddings": "POST /model/{modelId}/invoke"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

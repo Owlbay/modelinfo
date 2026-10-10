@@ -1,0 +1,70 @@
+{
+  "id": "voxtral-mini-tts-2603",
+  "object": "model",
+  "created": 1774224000,
+  "owned_by": "mistral",
+  "name": "Voxtral TTS",
+  "api": {
+    "types": [
+      "audio"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "audio"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": "2026-03-23",
+    "knowledge_cutoff": null,
+    "description": "Text-to-speech model with zero-shot voice cloning, 9 languages, and streaming with about 90ms time-to-first-audio.",
+    "docs": "https://docs.mistral.ai/models/voxtral-tts-26-03",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "voxtral-mini-tts-latest"
+  ],
+  "sources": [
+    {
+      "title": "Voxtral TTS | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/voxtral-tts-26-03",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "API pricing | Mistral Docs",
+      "url": "https://docs.mistral.ai/inference/pricing",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Models overview | Mistral Docs",
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "mistral",
+      "model": "voxtral-mini-tts-2603",
+      "base_url": "https://api.mistral.ai",
+      "endpoints": {
+        "audio": "POST /v1/audio/speech"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

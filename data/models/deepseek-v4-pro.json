@@ -1,0 +1,88 @@
+{
+  "id": "deepseek-v4-pro",
+  "object": "model",
+  "created": 1786579200,
+  "owned_by": "deepseek",
+  "name": "DeepSeek-V4-Pro",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 1000000,
+    "input": null,
+    "output": 393216
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": [
+      "low",
+      "high",
+      "max"
+    ]
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 1.32,
+    "output": 3.96,
+    "cache_read": 0.044,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "streaming",
+    "caching"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2026-08-13",
+    "knowledge_cutoff": null,
+    "description": "DeepSeek-V4-Pro, the flagship V4 model with thinking and non-thinking modes.",
+    "docs": "https://api-docs.deepseek.com/quick_start/pricing",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Models & Pricing | DeepSeek API Docs",
+      "url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Change Log | DeepSeek API Docs",
+      "url": "https://api-docs.deepseek.com/updates",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Thinking Mode | DeepSeek API Docs",
+      "url": "https://api-docs.deepseek.com/guides/thinking_mode",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Create Chat Completion | DeepSeek API Docs",
+      "url": "https://api-docs.deepseek.com/api/create-chat-completion",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "deepseek",
+      "model": "deepseek-v4-pro",
+      "base_url": "https://api.deepseek.com",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": "reasoning_effort"
+    }
+  ]
+}

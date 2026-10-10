@@ -1,0 +1,68 @@
+{
+  "id": "tiny-aya-water",
+  "object": "model",
+  "created": null,
+  "owned_by": "cohere",
+  "name": "Tiny Aya Water",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 8000,
+    "input": null,
+    "output": 8000
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "3.35B model specialized for European and Asia-Pacific languages.",
+    "docs": "https://docs.cohere.com/docs/tiny-aya",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Tiny Aya Water | Cohere Docs",
+      "url": "https://docs.cohere.com/docs/tiny-aya",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Cohere Model Overview",
+      "url": "https://docs.cohere.com/docs/models",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "How does Cohere pricing work?",
+      "url": "https://docs.cohere.com/docs/how-does-cohere-pricing-work",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "cohere",
+      "model": "tiny-aya-water",
+      "base_url": "https://api.cohere.com",
+      "endpoints": {
+        "messages": "POST /v2/chat"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

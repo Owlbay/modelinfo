@@ -1,0 +1,84 @@
+{
+  "id": "grok-4.3",
+  "object": "model",
+  "created": null,
+  "owned_by": "xai",
+  "name": "Grok 4.3",
+  "api": {
+    "types": [
+      "messages",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": 1000000,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": [
+      "none",
+      "low",
+      "medium",
+      "high",
+      "xhigh"
+    ]
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 1.25,
+    "output": 2.5,
+    "cache_read": 0.2,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "caching",
+    "batch"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Fast, reliable model with strong tool calling and instruction following capabilities.",
+    "docs": "https://docs.x.ai/developers/models/grok-4.3",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "grok-4.3-latest"
+  ],
+  "sources": [
+    {
+      "title": "Grok 4.3 | xAI Docs",
+      "url": "https://docs.x.ai/developers/models/grok-4.3",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Models and Pricing | xAI Docs",
+      "url": "https://docs.x.ai/developers/models",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "xai",
+      "model": "grok-4.3",
+      "base_url": "https://api.x.ai",
+      "endpoints": {
+        "messages": "POST /v1/chat/completions"
+      },
+      "reasoning_param": "reasoning_effort"
+    }
+  ]
+}

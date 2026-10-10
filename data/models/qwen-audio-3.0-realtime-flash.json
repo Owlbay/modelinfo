@@ -1,0 +1,70 @@
+{
+  "id": "qwen-audio-3.0-realtime-flash",
+  "object": "model",
+  "created": null,
+  "owned_by": "alibaba",
+  "name": "Qwen-Audio-3.0-Realtime-Flash",
+  "api": {
+    "types": [
+      "realtime"
+    ]
+  },
+  "limits": {
+    "context": 40960,
+    "input": 16384,
+    "output": 8192
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "audio"
+    ],
+    "output": [
+      "text",
+      "audio"
+    ]
+  },
+  "reasoning": {
+    "supported": false,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "streaming"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Low-latency duplex speech model.",
+    "docs": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Model Studio model pricing | Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Rate limits | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/rate-limit",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Model Studio model pricing | Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "alibaba",
+      "model": "qwen-audio-3.0-realtime-flash",
+      "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

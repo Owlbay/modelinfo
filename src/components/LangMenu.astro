@@ -1,0 +1,132 @@
+---
+/**
+ * 语言下拉菜单：列出 LOCALES 中的全部语言，链接到同一页面的对应语言版本，并记住选择。
+ * 原生 <details>，无脚本也可用；脚本只负责点外部 / Esc 关闭与记住选择。
+ */
+import Icon from './Icon.astro';
+import { basePath, dict, locale, localePath, LOCALES, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const base = basePath(Astro.url.pathname);
+const label = dict(lang).nav.language;
+---
+
+<details class="lm" data-lang-menu>
+  <summary class="lm__trigger" aria-label={label}>
+    <Icon name="globe" size={16} />
+    <span class="lm__current">{locale(lang).label}</span>
+    <Icon name="chevron-down" size={12} class="lm__chev" />
+  </summary>
+  <ul class="lm__list" role="list">
+    {
+      LOCALES.map((l) => (
+        <li>
+          <a
+            class="lm__item"
+            href={localePath(l.code, base)}
+            hreflang={l.htmlLang}
+            lang={l.htmlLang}
+            data-lang-switch={l.code}
+            aria-current={l.code === lang ? 'true' : undefined}
+          >
+            <span>{l.label}</span>
+            <span class="lm__code">{l.code}</span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</details>
+
+<script>
+  document.addEventListener('click', (e) => {
+    const target = e.target as Element | null;
+    const link = target?.closest<HTMLElement>('[data-lang-switch]');
+    if (link) {
+      try {
+        localStorage.setItem('modelinfo.lang', link.dataset.langSwitch!);
+      } catch {
+        /* 隐私模式忽略 */
+      }
+    }
+    for (const menu of document.querySelectorAll<HTMLDetailsElement>('[data-lang-menu][open]')) {
+      if (!menu.contains(target)) menu.open = false;
+    }
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    for (const menu of document.querySelectorAll<HTMLDetailsElement>('[data-lang-menu][open]')) {
+      menu.open = false;
+      menu.querySelector('summary')?.focus();
+    }
+  });
+</script>
+
+<style>
+  .lm { position: relative; }
+  .lm__trigger {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-2);
+    min-height: var(--control-h);
+    padding: 0 var(--sp-3);
+    font: 400 var(--fs-body-sm) / var(--lh-body-sm) var(--font-sans);
+    color: var(--ink-2);
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+    transition: color var(--dur-1) var(--ease-out), background-color var(--dur-1) var(--ease-out);
+  }
+  .lm__trigger::-webkit-details-marker { display: none; }
+  .lm__trigger:hover,
+  .lm[open] .lm__trigger { color: var(--ink); background: var(--hover-row); }
+  .lm__trigger :global(.lm__chev) { transition: transform var(--dur-2) var(--ease-out); }
+  .lm[open] .lm__trigger :global(.lm__chev) { transform: rotate(180deg); }
+
+  .lm__list {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 50;
+    /* 与触发按钮右对齐、至少同宽，紧贴按钮下沿 */
+    min-width: max(100%, 160px);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: var(--bg-panel);
+    border: 1px solid var(--line);
+    animation: panel-in var(--dur-2) var(--ease-out);
+  }
+  .lm__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--sp-4);
+    min-height: var(--control-h);
+    padding: 0 var(--sp-3);
+    font: 400 var(--fs-body-sm) / var(--lh-body-sm) var(--font-sans);
+    color: var(--ink-2);
+    text-decoration: none;
+    transition: color var(--dur-1) var(--ease-out), background-color var(--dur-1) var(--ease-out);
+  }
+  .lm__item:hover { color: var(--ink); background: var(--hover-row); }
+  .lm__item:focus-visible { outline-offset: -2px; }
+  /* 当前语言：反白 */
+  .lm__item[aria-current='true'] { background: var(--selected-bg); color: var(--selected-ink); }
+  .lm__code {
+    font: 400 var(--fs-mono-sm) / var(--lh-mono-sm) var(--font-mono);
+    color: var(--ink-3);
+  }
+  .lm__item[aria-current='true'] .lm__code { color: var(--selected-ink); }
+
+  @media (max-width: 640px) {
+    .lm__current { display: none; }
+    .lm__trigger { padding: 0 var(--sp-2); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .lm__list { animation: vt-fade-in 160ms linear both; }
+  }
+</style>

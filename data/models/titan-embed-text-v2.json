@@ -1,0 +1,71 @@
+{
+  "id": "titan-embed-text-v2",
+  "object": "model",
+  "created": 1714435200,
+  "owned_by": "amazon",
+  "name": "Amazon Titan Text Embeddings V2",
+  "api": {
+    "types": [
+      "embeddings"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ]
+  },
+  "reasoning": {
+    "supported": false,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.02,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": "2024-04-30",
+    "knowledge_cutoff": null,
+    "description": "Amazon's second-generation text embeddings model with configurable output dimensions and improved accuracy for retrieval tasks.",
+    "docs": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-titan-text-embeddings-v2.html",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "amazon.titan-embed-text-v2:0"
+  ],
+  "sources": [
+    {
+      "title": "Amazon Bedrock model card: Titan Text Embeddings V2",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-titan-text-embeddings-v2.html",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Amazon Bedrock Pricing",
+      "url": "https://aws.amazon.com/bedrock/pricing/",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "amazon-bedrock",
+      "model": "amazon.titan-embed-text-v2:0",
+      "base_url": "https://bedrock-runtime.us-east-1.amazonaws.com",
+      "endpoints": {
+        "embeddings": "POST /model/{modelId}/invoke"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "tongyi-embedding-vision-flash",
+  "object": "model",
+  "created": null,
+  "owned_by": "alibaba",
+  "name": "Tongyi Embedding Vision Flash",
+  "api": {
+    "types": [
+      "embeddings"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": 1024,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "embedding"
+    ]
+  },
+  "reasoning": {
+    "supported": false,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Lower-cost multimodal embedding for cross-modal retrieval, 64-768 dimensions.",
+    "docs": "https://www.alibabacloud.com/help/en/model-studio/embedding-rerank-model",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Embedding and rerank models | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/embedding-rerank-model",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Model Studio model pricing | Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Model Studio model pricing | Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "alibaba",
+      "model": "tongyi-embedding-vision-flash",
+      "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

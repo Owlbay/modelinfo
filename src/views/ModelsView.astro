@@ -1,0 +1,198 @@
+---
+/** 模型列表：按研发方、类型筛选并支持关键词过滤，筛选状态同步到 URL。 */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TopNav from '../components/TopNav.astro';
+import Footer from '../components/Footer.astro';
+import PageHeader from '../components/PageHeader.astro';
+import SectionFrame from '../components/SectionFrame.astro';
+import Segmented from '../components/Segmented.astro';
+import ModelRow from '../components/ModelRow.astro';
+import Icon from '../components/Icon.astro';
+import { getModels, KINDS, latestVerified, modelKind, ownerName } from '../lib/models';
+import { dict, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = dict(lang).models;
+
+const models = await getModels();
+const count = <T,>(list: T[], key: (x: T) => string) => list.reduce((acc, x) => acc.set(key(x), (acc.get(key(x)) ?? 0) + 1), new Map<string, number>());
+const ownerCounts = [...count(models, (m) => m.owned_by)].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+const kindCounts = count(models, modelKind);
+const ownerOptions = [
+  { value: '', label: t.all, count: models.length },
+  ...ownerCounts.map(([o, n]) => ({ value: o, label: ownerName(o), count: n })),
+];
+const kindOptions = [
+  { value: '', label: t.all, count: models.length },
+  ...KINDS.filter((k) => kindCounts.has(k)).map((k) => ({ value: k, label: t.kinds[k], count: kindCounts.get(k) })),
+];
+---
+
+<BaseLayout lang={lang} page="models" title={t.title}>
+  <TopNav lang={lang} page="models" />
+  <main id="main" class="page models">
+    <PageHeader title={t.title} intro={t.intro}>
+      <div class="filters">
+        <label class="filters__search">
+          <Icon name="search" size={16} />
+          <input type="search" data-filter-q placeholder={t.searchPlaceholder} aria-label={t.searchAria} autocomplete="off" spellcheck="false" />
+        </label>
+        <div class="filters__row">
+          <span class="filters__label">{t.kindLabel}</span>
+          <Segmented name="kind" label={t.kindAria} options={kindOptions} value="" />
+        </div>
+        <div class="filters__row">
+          <span class="filters__label">{t.cols.vendor}</span>
+          <Segmented name="owner" label={t.filterAria} options={ownerOptions} value="" />
+        </div>
+      </div>
+    </PageHeader>
+
+    <SectionFrame
+      id="list"
+      title={t.frame}
+      count={t.count(models.length)}
+      source={t.source}
+      stamp={t.verified(latestVerified(models) ?? '—')}
+    >
+      <div class="models__head mono" aria-hidden="true">
+        <span>{t.cols.model}</span><span>{t.cols.vendor}</span><span>{t.cols.context}</span><span class="head__out">{t.cols.output}</span><span>{t.cols.price}</span><span class="head__date">{t.cols.released}</span>
+      </div>
+      <div data-vt-list>
+        {models.map((m) => <ModelRow lang={lang} model={m} />)}
+        <p class="models__empty" data-empty hidden>{t.empty}</p>
+      </div>
+    </SectionFrame>
+
+  </main>
+  <Footer lang={lang} />
+</BaseLayout>
+
+<script>
+  const list = document.querySelector<HTMLElement>('[data-vt-list]')!;
+  const rows = [...list.querySelectorAll<HTMLElement>('[data-model]')];
+  const empty = list.querySelector<HTMLElement>('[data-empty]')!;
+  const input = document.querySelector<HTMLInputElement>('[data-filter-q]')!;
+  const params = new URLSearchParams(location.search);
+  const state = { q: params.get('q') ?? '', owner: params.get('owner') ?? '', kind: params.get('kind') ?? '' };
+  input.value = state.q;
+
+  function apply() {
+    const terms = state.q.toLowerCase().split(/\s+/).filter(Boolean);
+    let shown = 0;
+    for (const r of rows) {
+      const hit =
+        (!state.owner || r.dataset.owner === state.owner) &&
+        (!state.kind || r.dataset.kind === state.kind) &&
+        terms.every((t) => r.dataset.hay!.includes(t));
+      r.hidden = !hit;
+      if (hit) shown++;
+    }
+    empty.hidden = shown > 0;
+    for (const seg of document.querySelectorAll<HTMLElement>('[data-seg]')) {
+      const v = state[seg.dataset.seg as 'owner' | 'kind'];
+      seg.querySelectorAll<HTMLButtonElement>('.seg__item').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.value === v)));
+    }
+    // 筛选状态写入 URL，便于分享与返回
+    const url = new URL(location.href);
+    for (const [k, v] of Object.entries(state)) v ? url.searchParams.set(k, v) : url.searchParams.delete(k);
+    history.replaceState(null, '', url);
+  }
+
+  const transition = (run: () => void) => {
+    if (!document.startViewTransition) return run();
+    document.documentElement.dataset.vt = 'list';
+    document.startViewTransition(run).finished.finally(() => delete document.documentElement.dataset.vt);
+  };
+
+  document.addEventListener('click', (e) => {
+    const b = (e.target as Element | null)?.closest<HTMLButtonElement>('[data-seg] .seg__item');
+    if (!b) return;
+    const key = b.closest<HTMLElement>('[data-seg]')!.dataset.seg as 'owner' | 'kind';
+    state[key] = b.dataset.value ?? '';
+    transition(apply);
+  });
+  input.addEventListener('input', () => {
+    state.q = input.value.trim();
+    apply();
+  });
+  apply();
+</script>
+
+<style>
+  .models { padding-bottom: var(--sp-8); }
+  .filters {
+    display: grid;
+    gap: var(--sp-3);
+  }
+  .filters__row {
+    display: grid;
+    grid-template-columns: 8ch minmax(0, 1fr);
+    align-items: start;
+    column-gap: var(--sp-3);
+  }
+  .filters__label {
+    display: flex;
+    align-items: center;
+    min-height: var(--control-h);
+    font: 400 var(--fs-mono) / var(--lh-mono) var(--font-mono);
+    color: var(--ink-3);
+  }
+  @media (max-width: 640px) {
+    .filters__row { grid-template-columns: minmax(0, 1fr); }
+    .filters__label { min-height: 0; }
+  }
+  .filters__search {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-3);
+    max-width: 480px;
+    height: var(--control-h);
+    padding: 0 var(--sp-3);
+    border: 1px solid var(--line-strong);
+    color: var(--ink-3);
+    transition: border-color var(--dur-1) var(--ease-out);
+  }
+  .filters__search:focus-within { border-color: var(--accent-ui); }
+  .filters__search input {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    font: 400 var(--fs-body) / var(--lh-body) var(--font-sans);
+    color: var(--ink);
+    outline: none;
+  }
+  .filters__search input:focus-visible { outline: none; }
+  .filters__search input::-webkit-search-cancel-button { display: none; }
+  .models__head {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 10ch 8ch 8ch 16ch 10ch;
+    column-gap: var(--sp-5);
+    padding-bottom: var(--sp-2);
+    border-bottom: 1px solid var(--line);
+    /* 与行同字号，保证 ch 列宽一致 */
+    font-size: var(--fs-mono);
+    line-height: var(--lh-mono);
+    color: var(--ink-3);
+  }
+  .models__head > :nth-child(n + 3) { text-align: right; }
+  .models__empty {
+    padding: var(--sp-5) 0;
+    color: var(--ink-3);
+  }
+  @media (max-width: 1024px) {
+    .models__head { grid-template-columns: minmax(0, 1fr) 10ch 8ch 16ch; column-gap: var(--sp-4); }
+    .head__out,
+    .head__date { display: none; }
+    .models__head > :nth-child(2) { text-align: left; }
+  }
+  @media (max-width: 640px) {
+    .models__head { display: none; }
+  }
+</style>

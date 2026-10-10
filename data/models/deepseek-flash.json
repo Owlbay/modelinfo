@@ -1,0 +1,92 @@
+{
+  "id": "deepseek-flash",
+  "object": "model",
+  "created": 1788998400,
+  "owned_by": "deepseek",
+  "name": "DeepSeek-V4.1-Flash",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 1000000,
+    "input": null,
+    "output": 393216
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": [
+      "low",
+      "high",
+      "max"
+    ]
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.3,
+    "output": 1.2,
+    "cache_read": 0.006,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "streaming",
+    "caching"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2026-09-10",
+    "knowledge_cutoff": null,
+    "description": "DeepSeek-V4.1-Flash, the smallest model of the new architecture family, with native multimodal visual understanding.",
+    "docs": "https://api-docs.deepseek.com/quick_start/pricing",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "deepseek-v4-flash",
+    "deepseek-v4-flash-vision-exp"
+  ],
+  "sources": [
+    {
+      "title": "Models & Pricing | DeepSeek API Docs",
+      "url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Change Log | DeepSeek API Docs",
+      "url": "https://api-docs.deepseek.com/updates",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Thinking Mode | DeepSeek API Docs",
+      "url": "https://api-docs.deepseek.com/guides/thinking_mode",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Create Chat Completion | DeepSeek API Docs",
+      "url": "https://api-docs.deepseek.com/api/create-chat-completion",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "deepseek",
+      "model": "deepseek-flash",
+      "base_url": "https://api.deepseek.com",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": "reasoning_effort"
+    }
+  ]
+}

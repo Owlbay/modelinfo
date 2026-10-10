@@ -1,0 +1,143 @@
+/* 全局类：容器、虚线、角标、列表行、按钮 */
+
+.container {
+  width: 100%;
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+/* 内容页外框：左右两条实线从顶栏贯穿到页脚，与顶栏内容边缘对齐；
+   框内左右留白 --page-pad，分区（SectionFrame）的虚线横贯两条竖线之间 */
+.page {
+  --page-pad: var(--sp-6);
+  display: flex;
+  flex-direction: column;
+  width: calc(min(100%, var(--content-max)) - 2 * var(--gutter));
+  margin-inline: auto;
+  padding-inline: var(--page-pad);
+  border-inline: 1px solid var(--line);
+}
+@media (max-width: 640px) {
+  .page { --page-pad: var(--sp-4); }
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* 虚线统一用背景实现，线段 4px 间隔 4px */
+.hr-dash {
+  height: 1px;
+  border: 0;
+  background: repeating-linear-gradient(90deg, var(--line) 0 4px, transparent 4px 8px);
+}
+.vr-dash {
+  width: 1px;
+  background: repeating-linear-gradient(180deg, var(--line) 0 4px, transparent 4px 8px);
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+/* 角标：等宽 11px/500/0.06em 全大写；中文不转换（大写对汉字无效） */
+.corner {
+  font-family: var(--font-mono);
+  font-size: var(--fs-mono-xs);
+  line-height: var(--lh-mono-xs);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+  color: var(--ink-3);
+}
+
+/* 列表行：文章、项目等「一行一条」的列表共用的骨架；列布局由各组件定义。
+   行背景外扩到容器内边（--row-pad），≤640 不外扩，分隔线与栅格边对齐 */
+.list-row {
+  --row-pad: var(--sp-3);
+  display: grid;
+  align-items: center;
+  min-height: var(--row-h);
+  padding: var(--sp-3) var(--row-pad);
+  margin-inline: calc(-1 * var(--row-pad));
+  border-bottom: 1px solid var(--line-soft);
+  color: inherit;
+  text-decoration: none;
+  font: 400 var(--fs-mono) / var(--lh-mono) var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+  transition: background-color var(--dur-1) var(--ease-out);
+}
+.list-row[hidden] { display: none; }
+.list-row:focus-visible { outline-offset: -2px; }
+@media (hover: hover) {
+  .list-row:hover { background: var(--hover-row); }
+}
+@media (max-width: 640px) {
+  .list-row { --row-pad: 0px; }
+}
+
+/* 反白主按钮 */
+.btn-primary,
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-2);
+  min-height: var(--control-h);
+  padding: 0 var(--sp-4);
+  font: 500 var(--fs-ui) / 1 var(--font-sans);
+  text-decoration: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background-color var(--dur-1) var(--ease-out), color var(--dur-1) var(--ease-out),
+    border-color var(--dur-1) var(--ease-out), scale var(--dur-1) var(--ease-out);
+}
+.btn-primary {
+  background: var(--ink);
+  color: var(--bg);
+  border: 1px solid var(--ink);
+}
+.btn-primary:hover { background: var(--ink-2); border-color: var(--ink-2); }
+
+/* 1px 描边按钮 */
+.btn-ghost {
+  background: transparent;
+  color: var(--ink-2);
+  border: 1px solid var(--line);
+}
+.btn-ghost:hover { color: var(--ink); border-color: var(--line-strong); background: var(--hover-row); }
+.btn-ghost:disabled { color: var(--ink-4); cursor: default; background: transparent; }
+
+/* 安静链接：无下划线，hover 变 --ink */
+.link-quiet { color: var(--ink-2); text-decoration: none; }
+.link-quiet:hover { color: var(--ink); }
+
+/* 复制按钮：代码块标题栏、接口地址行共用；文案由 scripts/copy.ts 切换 */
+.copy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  height: 100%;
+  min-height: 36px;
+  padding: 0 var(--sp-3);
+  font: 400 var(--fs-mono-sm) / var(--lh-mono-sm) var(--font-mono);
+  color: var(--ink-2);
+  white-space: nowrap;
+  transition: color var(--dur-1) var(--ease-out), background-color var(--dur-1) var(--ease-out);
+}
+.copy-btn:hover { color: var(--ink); background: var(--hover-row); }

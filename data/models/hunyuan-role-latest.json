@@ -1,0 +1,74 @@
+{
+  "id": "hunyuan-role-latest",
+  "object": "model",
+  "created": 1758672000,
+  "owned_by": "tencent",
+  "name": "Hy-Role-Latest",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 32768,
+    "input": 28672,
+    "output": 4096
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "CNY",
+    "input": 2.4,
+    "output": 9.6,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": "2025-09-24",
+    "knowledge_cutoff": null,
+    "description": "Tencent role-play model optimized for chat and story interaction.",
+    "docs": "https://cloud.tencent.com/document/product/1823/130051",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "模型列表 | 腾讯云 TokenHub",
+      "url": "https://cloud.tencent.com/document/product/1823/130051",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "模型定价 | 腾讯云 TokenHub",
+      "url": "https://cloud.tencent.com/document/product/1823/130055",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "产品概述 | 腾讯混元大模型",
+      "url": "https://cloud.tencent.com/document/product/1729/104753",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "tencent",
+      "model": "hunyuan-role-latest",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

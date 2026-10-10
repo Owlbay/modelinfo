@@ -1,0 +1,77 @@
+{
+  "id": "command-a-03-2025",
+  "object": "model",
+  "created": null,
+  "owned_by": "cohere",
+  "name": "Command A",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 256000,
+    "input": null,
+    "output": 8000
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 2.5,
+    "output": 10,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": "2024-06",
+    "description": "Cohere's most performant model for enterprise agents, tool use, RAG, and multilingual tasks with a low compute footprint.",
+    "docs": "https://docs.cohere.com/docs/command-a",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Command A | Cohere Docs",
+      "url": "https://docs.cohere.com/docs/command-a",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Cohere Model Overview",
+      "url": "https://docs.cohere.com/docs/models",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "How does Cohere pricing work?",
+      "url": "https://docs.cohere.com/docs/how-does-cohere-pricing-work",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "cohere",
+      "model": "command-a-03-2025",
+      "base_url": "https://api.cohere.com",
+      "endpoints": {
+        "messages": "POST /v2/chat"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

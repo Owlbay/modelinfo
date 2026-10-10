@@ -1,0 +1,91 @@
+{
+  "id": "doubao-seed-evolving",
+  "object": "model",
+  "created": null,
+  "owned_by": "bytedance",
+  "name": "Doubao-Seed-Evolving",
+  "api": {
+    "types": [
+      "messages",
+      "responses"
+    ]
+  },
+  "limits": {
+    "context": 1048576,
+    "input": 1048576,
+    "output": 262144
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": [
+      "none",
+      "minimal",
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ]
+  },
+  "pricing": {
+    "currency": "CNY",
+    "input": 6,
+    "output": 30,
+    "cache_read": 1.2,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "streaming",
+    "caching"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Rapidly iterated Seed coding and agent model.",
+    "docs": "https://www.volcengine.com/docs/82379/1330310",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "模型列表 | 火山方舟",
+      "url": "https://www.volcengine.com/docs/82379/1330310",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "模型价格 | 火山方舟",
+      "url": "https://www.volcengine.com/docs/82379/1099320",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "深度思考 | 火山方舟",
+      "url": "https://www.volcengine.com/docs/82379/1449737",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "bytedance",
+      "model": "doubao-seed-evolving",
+      "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+      "endpoints": {
+        "messages": "POST /chat/completions",
+        "responses": "POST /responses"
+      },
+      "reasoning_param": "reasoning_effort"
+    }
+  ]
+}

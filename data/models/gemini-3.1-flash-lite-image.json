@@ -1,0 +1,89 @@
+{
+  "id": "gemini-3.1-flash-lite-image",
+  "object": "model",
+  "created": 1782777600,
+  "owned_by": "google",
+  "name": "Nano Banana 2 Lite",
+  "api": {
+    "types": [
+      "images",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": 65536,
+    "output": 4096
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "video",
+      "document"
+    ],
+    "output": [
+      "image",
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": [
+      "minimal",
+      "high"
+    ]
+  },
+  "pricing": null,
+  "features": [
+    "batch"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2026-06-30",
+    "knowledge_cutoff": null,
+    "description": "Low-latency, low-cost image generation and editing model for high-volume interactive use.",
+    "docs": "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite-image",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Nano Banana 2 Lite | Gemini API",
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite-image",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Models | Gemini API",
+      "url": "https://ai.google.dev/gemini-api/docs/models",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Pricing | Gemini API",
+      "url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Deprecations | Gemini API",
+      "url": "https://ai.google.dev/gemini-api/docs/deprecations",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Generating content | Gemini API",
+      "url": "https://ai.google.dev/api/generate-content",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "google",
+      "model": "gemini-3.1-flash-lite-image",
+      "base_url": "https://generativelanguage.googleapis.com",
+      "endpoints": {
+        "images": "POST /v1beta/models/{model}:generateContent",
+        "batch": "POST /v1beta/models/{model}:batchGenerateContent"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

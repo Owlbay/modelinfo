@@ -1,0 +1,69 @@
+{
+  "id": "c4ai-aya-vision-32b",
+  "object": "model",
+  "created": null,
+  "owned_by": "cohere",
+  "name": "Aya Vision 32B",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 16000,
+    "input": null,
+    "output": 4000
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "32B multimodal model for language, text, and image tasks covering 23 languages.",
+    "docs": "https://docs.cohere.com/docs/aya-vision",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Aya Vision 32B | Cohere Docs",
+      "url": "https://docs.cohere.com/docs/aya-vision",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Cohere Model Overview",
+      "url": "https://docs.cohere.com/docs/models",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "How does Cohere pricing work?",
+      "url": "https://docs.cohere.com/docs/how-does-cohere-pricing-work",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "cohere",
+      "model": "c4ai-aya-vision-32b",
+      "base_url": "https://api.cohere.com",
+      "endpoints": {
+        "messages": "POST /v2/chat"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

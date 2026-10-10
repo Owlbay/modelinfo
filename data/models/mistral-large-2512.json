@@ -1,0 +1,84 @@
+{
+  "id": "mistral-large-2512",
+  "object": "model",
+  "created": 1764633600,
+  "owned_by": "mistral",
+  "name": "Mistral Large 3",
+  "api": {
+    "types": [
+      "messages",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": 256000,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.5,
+    "output": 1.5,
+    "cache_read": 0.05,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "caching",
+    "batch"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2025-12-02",
+    "knowledge_cutoff": null,
+    "description": "State-of-the-art, open-weight, general-purpose multimodal model with a granular Mixture-of-Experts architecture.",
+    "docs": "https://docs.mistral.ai/models/mistral-large-3-25-12",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "mistral-large-latest"
+  ],
+  "sources": [
+    {
+      "title": "Mistral Large 3 | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-large-3-25-12",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "API pricing | Mistral Docs",
+      "url": "https://docs.mistral.ai/inference/pricing",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Models overview | Mistral Docs",
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "mistral",
+      "model": "mistral-large-2512",
+      "base_url": "https://api.mistral.ai",
+      "endpoints": {
+        "messages": "POST /v1/chat/completions",
+        "batch": "POST /v1/batch"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "north-mini-code-1-0",
+  "object": "model",
+  "created": null,
+  "owned_by": "cohere",
+  "name": "North Mini Code 1.0",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 256000,
+    "input": null,
+    "output": 64000
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "30B total / 3B active parameter MoE model for agentic coding.",
+    "docs": "https://docs.cohere.com/docs/north-mini-code-1.0",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "North Mini Code 1.0 | Cohere Docs",
+      "url": "https://docs.cohere.com/docs/north-mini-code-1.0",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Cohere Model Overview",
+      "url": "https://docs.cohere.com/docs/models",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "How does Cohere pricing work?",
+      "url": "https://docs.cohere.com/docs/how-does-cohere-pricing-work",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "cohere",
+      "model": "north-mini-code-1-0",
+      "base_url": "https://api.cohere.com",
+      "endpoints": {
+        "messages": "POST /v2/chat"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

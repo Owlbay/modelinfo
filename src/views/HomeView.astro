@@ -1,0 +1,47 @@
+---
+/** 首页：一屏——顶栏、字墙 hero（标题 + 模型搜索）、页脚。字墙全部为模型名称。 */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TopNav from '../components/TopNav.astro';
+import WordField from '../components/WordField.astro';
+import HomeSearch from '../components/HomeSearch.astro';
+import Footer from '../components/Footer.astro';
+import { getModels } from '../lib/models';
+import { localePath, type Lang } from '../i18n';
+import type { FieldWord } from '../components/wordfield';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const models = await getModels();
+const words: FieldWord[] = models.map((m) => ({ t: m.name, href: localePath(lang, `/models/${m.id}/`) }));
+---
+
+<BaseLayout lang={lang} page="home">
+  <TopNav lang={lang} page="home" />
+  <main id="main" class="home">
+    <section class="hero" data-wordfield-host>
+      <WordField words={words} />
+      <HomeSearch lang={lang} models={models} />
+    </section>
+  </main>
+  <Footer lang={lang} />
+</BaseLayout>
+
+<style>
+  :global(body.page-home) {
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
+  }
+  .home { flex: 1; display: grid; }
+  .hero {
+    position: relative;
+    display: grid;
+    place-items: center;
+    padding: var(--sp-8) var(--gutter);
+  }
+  @media (max-width: 640px) {
+    .hero { padding-block: var(--sp-7); }
+  }
+</style>

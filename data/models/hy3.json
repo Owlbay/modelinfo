@@ -1,0 +1,84 @@
+{
+  "id": "hy3",
+  "object": "model",
+  "created": 1783296000,
+  "owned_by": "tencent",
+  "name": "Hy3",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 262144,
+    "input": 196608,
+    "output": 131072
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "CNY",
+    "input": 1,
+    "output": 4,
+    "cache_read": 0.25,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "streaming",
+    "caching"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2026-07-06",
+    "knowledge_cutoff": null,
+    "description": "Tencent Hy3 295B-A21B MoE model with switchable reasoning depth, served on TokenHub.",
+    "docs": "https://cloud.tencent.com/document/product/1823/132252",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "混元调用指南 | 腾讯云 TokenHub",
+      "url": "https://cloud.tencent.com/document/product/1823/132252",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "模型列表 | 腾讯云 TokenHub",
+      "url": "https://cloud.tencent.com/document/product/1823/130051",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "模型定价 | 腾讯云 TokenHub",
+      "url": "https://cloud.tencent.com/document/product/1823/130055",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "腾讯混元Hy3正式上线发布 | 腾讯云开发者社区",
+      "url": "https://cloud.tencent.com/developer/news/4205517",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "tencent",
+      "model": "hy3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": "reasoning_effort"
+    }
+  ]
+}

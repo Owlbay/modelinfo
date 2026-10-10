@@ -1,0 +1,152 @@
+/** 中文文案：界面文案的结构基准，en.ts 必须与之同构。模型数据本身不翻译。 */
+export const zh = {
+  meta: {
+    description: 'AI 模型目录：上下文、输入输出、思考等级与价格，提供 OpenAI 兼容的模型接口。',
+  },
+  skip: '跳到主要内容',
+  nav: {
+    aria: '主导航',
+    home: '主页',
+    models: '模型',
+    docs: '文档',
+    theme: '切换主题',
+    language: '语言',
+  },
+  footer: {
+    tagline: 'AI 模型目录',
+    note: '数据取自各研发方官方文档，人工核验；价格仅供比较，以 Provider 账单为准。',
+    built: (d: string) => `构建 ${d}`,
+  },
+  code: { copy: '复制', copied: '已复制', copyFailed: '复制失败' },
+  home: {
+    title: ['AI 模型目录，', '一个标准接口。'],
+    placeholder: '搜索模型、研发方或接口类型',
+    searchAria: '搜索模型',
+    resultsAria: '搜索结果',
+    panelHead: '模型',
+    empty: '没有匹配的模型',
+    keys: '↑↓ 选择 · 回车打开',
+    esc: 'Esc 关闭',
+    hint: '按 / 聚焦搜索',
+    all: (n: number) => `全部 ${n} 个模型 →`,
+  },
+  models: {
+    title: '模型',
+    intro: '各研发方官方发布的模型：上下文、输入输出、思考等级与价格。价格为每百万 Token。',
+    filterAria: '按研发方筛选',
+    kindAria: '按类型筛选',
+    kindLabel: '类型',
+    kinds: { chat: '对话', embedding: '向量', rerank: '重排', image: '图像', video: '视频', audio: '音频' },
+    searchPlaceholder: '筛选模型',
+    searchAria: '筛选模型',
+    all: '全部',
+    frame: '全部模型',
+    count: (n: number) => `${n} 个模型`,
+    source: '来源 · 官方文档',
+    verified: (d: string) => `核验 ${d}`,
+    cols: { model: '模型', vendor: '研发方', context: '上下文', output: '输出', price: '输入 / 输出', released: '发布' },
+    empty: '没有匹配的模型',
+  },
+  model: {
+    back: '全部模型',
+    specs: '规格',
+    groups: {
+      api: 'API',
+      limits: '上下文',
+      modalities: '输入输出',
+      reasoning: '思考',
+      pricing: '价格',
+      features: '能力',
+      info: '源信息',
+    },
+    perMillion: (c: string) => `${c} / 1M tokens`,
+    noPrice: '无公开报价',
+    yes: '支持',
+    no: '不支持',
+    unknown: '未确认',
+    status: { preview: '预览', active: '可用', deprecated: '已弃用' },
+    call: '调用方式',
+    providers: (n: number) => `${n} 个 Provider`,
+    json: 'JSON',
+    standard: '标准格式',
+    sources: '官方来源',
+  },
+  docs: {
+    title: '文档',
+    intro: 'ModelInfo 是什么、接口返回什么，以及怎样调用。',
+    tocAria: '目录',
+    toc: { about: '简介', endpoint: '接口', playground: '在线调试', structure: '响应结构', fields: '字段', usage: '调用示例', data: '数据' },
+    about: [
+      'ModelInfo 收录各研发方官方发布的 AI 模型，统一整理上下文、输入输出、思考等级与价格，并以 OpenAI 兼容的格式提供一个只读接口，方便模型选择器、网关和费用估算直接使用。',
+      '每个数值都来自官方文档并经人工核验；官方未给出的写 null，不推算。站点为纯静态文件，没有账号、配额或鉴权。',
+    ],
+    endpointNotes: [
+      '无需鉴权，支持跨域（Access-Control-Allow-Origin: *）。',
+      '缓存 5 分钟，支持 ETag / If-None-Match 返回 304。',
+      '一次返回全部模型，不分页；查询参数会被忽略，请在客户端筛选。',
+      '/v1/models.json 返回相同内容。',
+    ],
+    playgroundIntro: '直接在页面里发送请求，查看真实响应。',
+    groups: {
+      standard: 'OpenAI 标准字段，位置与含义不变',
+      name: '展示名称',
+      api: '接口类型',
+      limits: '上下文与输入 / 输出上限',
+      modalities: '输入 / 输出类型',
+      reasoning: '思考支持与等级',
+      pricing: '价格，带币种，每百万 Token',
+      features: '已确认支持的能力',
+      info: '状态、发布日期、知识截止、简介、文档、核验日期',
+    },
+    fields: {
+      created: '发布时间，Unix 秒',
+      owned_by: '模型研发方，不是转售商或网关',
+      api: 'messages · responses · generate · batch · embeddings 等',
+      context: '输入与输出合计上限（Token）',
+      input: '官方单独声明的最大输入',
+      output: '最大输出',
+      modalities: 'text · image · audio · video · document',
+      efforts: '思考等级；空数组表示无档位或未声明',
+      currency: 'ISO 4217 币种代码，如 USD、CNY',
+      price: '每百万 Token；output 含思考内容',
+      cache: '缓存读取 / 写入价格',
+      features: 'tools · structured_output · streaming · caching · batch',
+      verified: '最近人工核验日期',
+    },
+    fieldsNote: '未知值一律为 null 或空数组；客户端应把各分组视为可选，并容忍新增字段。',
+    sdkComment: '# OpenAI SDK 会请求 {base_url}/models',
+    dataNotes: [
+      '价格取研发方第一方报价；不同区域与转售平台价格可能不同，以 Provider 账单为准。',
+      '每个模型页列出全部官方来源与核验日期。',
+      '数据维护在 GitHub 仓库的 data/models 目录，欢迎提交更正：',
+    ],
+  },
+  playground: {
+    send: '发送请求',
+    sending: '请求中…',
+    idle: '点击「发送请求」查看响应',
+    status: '状态',
+    time: '耗时',
+    size: '大小',
+    count: '模型数',
+    error: '请求失败',
+  },
+  notFound: {
+    title: '页面不存在',
+    intro: '这个地址没有内容。可以回到主页搜索模型，或浏览全部模型。',
+    models: '全部模型',
+    home: '回到主页',
+  },
+};
+
+/** 文案字典的结构：字符串、字符串数组或生成字符串的函数 */
+type Shape<T> = {
+  [K in keyof T]: T[K] extends (...a: infer A) => string
+    ? (...a: A) => string
+    : T[K] extends readonly string[]
+      ? string[]
+      : T[K] extends string
+        ? string
+        : Shape<T[K]>;
+};
+export type Dict = Shape<typeof zh>;

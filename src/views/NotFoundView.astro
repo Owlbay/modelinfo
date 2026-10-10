@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TopNav from '../components/TopNav.astro';
+import Footer from '../components/Footer.astro';
+import PageHeader from '../components/PageHeader.astro';
+import { dict, localePath, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = dict(lang).notFound;
+---
+
+<BaseLayout lang={lang} page="404" title={t.title}>
+  <TopNav lang={lang} page="404" />
+  <main id="main" class="page nf">
+    <PageHeader title={t.title} intro={t.intro}>
+      <a class="btn-primary" href={localePath(lang, '/models/')}>{t.models}</a>
+      <a class="btn-ghost" href={localePath(lang, '/')}>{t.home}</a>
+    </PageHeader>
+  </main>
+  <Footer lang={lang} />
+</BaseLayout>
+
+<style>
+  .nf { padding-bottom: var(--sp-8); }
+</style>

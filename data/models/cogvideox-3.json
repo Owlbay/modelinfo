@@ -1,0 +1,64 @@
+{
+  "id": "cogvideox-3",
+  "object": "model",
+  "created": null,
+  "owned_by": "zhipu",
+  "name": "CogVideoX-3",
+  "api": {
+    "types": [
+      "video"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "video"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Video generation model with start and end frame support, priced at $0.2 per video.",
+    "docs": "https://docs.z.ai/guides/video/cogvideox-3",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "CogVideoX-3 | Z.AI Developer Document",
+      "url": "https://docs.z.ai/guides/video/cogvideox-3",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Pricing | Z.AI Developer Document",
+      "url": "https://docs.z.ai/guides/overview/pricing",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "zhipu",
+      "model": "cogvideox-3",
+      "base_url": "https://api.z.ai/api/paas/v4",
+      "endpoints": {
+        "video": "POST /videos/generations"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

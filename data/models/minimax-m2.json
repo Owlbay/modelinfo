@@ -1,0 +1,90 @@
+{
+  "id": "minimax-m2",
+  "object": "model",
+  "created": 1761523200,
+  "owned_by": "minimax",
+  "name": "MiniMax-M2",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 204800,
+    "input": null,
+    "output": 131072
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.3,
+    "output": 1.2,
+    "cache_read": 0.03,
+    "cache_write": 0.375
+  },
+  "features": [
+    "tools",
+    "streaming",
+    "caching"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2025-10-27",
+    "knowledge_cutoff": null,
+    "description": "Legacy agentic model with function calling, advanced reasoning and real-time streaming.",
+    "docs": "https://platform.minimax.io/docs/guides/models-intro",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "MiniMax-M2"
+  ],
+  "sources": [
+    {
+      "title": "Models | MiniMax API Docs",
+      "url": "https://platform.minimax.io/docs/guides/models-intro",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Pay as You Go pricing | MiniMax API Docs",
+      "url": "https://platform.minimax.io/docs/guides/pricing-paygo",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Text generation (OpenAI-compatible) | MiniMax API Docs",
+      "url": "https://platform.minimax.io/docs/api-reference/text-openai-api",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Text generation (Anthropic-compatible) | MiniMax API Docs",
+      "url": "https://platform.minimax.io/docs/api-reference/text-anthropic-api",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Model release notes | MiniMax API Docs",
+      "url": "https://platform.minimax.io/docs/release-notes/models",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "minimax",
+      "model": "MiniMax-M2",
+      "base_url": "https://api.minimax.io/v1",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": "thinking"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "command-r7b-12-2024",
+  "object": "model",
+  "created": null,
+  "owned_by": "cohere",
+  "name": "Command R7B",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 128000,
+    "input": null,
+    "output": 4000
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.0375,
+    "output": 0.15,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": "2024-06",
+    "description": "Small, fast model for RAG, tool use, agents, and multi-step reasoning.",
+    "docs": "https://docs.cohere.com/docs/command-r7b",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Command R7B | Cohere Docs",
+      "url": "https://docs.cohere.com/docs/command-r7b",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Cohere Model Overview",
+      "url": "https://docs.cohere.com/docs/models",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "How does Cohere pricing work?",
+      "url": "https://docs.cohere.com/docs/how-does-cohere-pricing-work",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "cohere",
+      "model": "command-r7b-12-2024",
+      "base_url": "https://api.cohere.com",
+      "endpoints": {
+        "messages": "POST /v2/chat"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

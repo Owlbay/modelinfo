@@ -1,0 +1,48 @@
+---
+/** 可复制代码块：顶部标题栏（标签 + 复制按钮），等宽正文。复制逻辑见 scripts/copy.ts。 */
+import Icon from './Icon.astro';
+import { dict, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+  label: string;
+  code: string;
+}
+const { lang, label, code } = Astro.props;
+const t = dict(lang).code;
+---
+
+<div class="code" data-code>
+  <div class="code__bar">
+    <span class="code__label">{label}</span>
+    <button type="button" class="copy-btn" data-copy data-copied={t.copied} data-failed={t.copyFailed}>
+      <Icon name="copy" size={14} /><span data-copy-label>{t.copy}</span>
+    </button>
+  </div>
+  <pre class="code__body"><code>{code}</code></pre>
+</div>
+
+<style>
+  .code { min-width: 0; border: 1px solid var(--line-soft); }
+  .code__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 36px;
+    padding: 0 0 0 var(--sp-3);
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .code__label {
+    font: 400 var(--fs-mono-sm) / var(--lh-mono-sm) var(--font-mono);
+    color: var(--ink-3);
+  }
+  .code__body {
+    margin: 0;
+    padding: var(--sp-4);
+    background: var(--bg-raised);
+    font-size: var(--fs-code);
+    line-height: var(--lh-code);
+    color: var(--ink-2);
+    overflow-x: auto;
+  }
+</style>

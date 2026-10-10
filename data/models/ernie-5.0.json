@@ -1,0 +1,82 @@
+{
+  "id": "ernie-5.0",
+  "object": "model",
+  "created": 1762992000,
+  "owned_by": "baidu",
+  "name": "ERNIE 5.0",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 131072,
+    "input": 121856,
+    "output": 65536
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "CNY",
+    "input": 6,
+    "output": 24,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [
+    "streaming"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2025-11-13",
+    "knowledge_cutoff": null,
+    "description": "Baidu ERNIE 5.0 native omni-modal model with text generation, vision understanding and deep thinking.",
+    "docs": "https://cloud.baidu.com/doc/qianfan/s/rmh4stp0j",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "模型列表 | 百度千帆",
+      "url": "https://cloud.baidu.com/doc/qianfan/s/rmh4stp0j",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "价格 | 百度千帆",
+      "url": "https://cloud.baidu.com/doc/qianfan-docs/s/Jm8r1826a",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "模型更新记录 | 百度千帆",
+      "url": "https://cloud.baidu.com/doc/qianfan/s/Kmh4stnjp",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "文本生成 API 参考 | 百度千帆",
+      "url": "https://cloud.baidu.com/doc/qianfan-api/s/3m7of64lb",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "baidu",
+      "model": "ernie-5.0",
+      "base_url": "https://qianfan.baidubce.com",
+      "endpoints": {
+        "messages": "POST /v2/chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "rerank-multilingual-v3.0",
+  "object": "model",
+  "created": null,
+  "owned_by": "cohere",
+  "name": "Rerank Multilingual v3.0",
+  "api": {
+    "types": [
+      "rerank"
+    ]
+  },
+  "limits": {
+    "context": 4000,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "score"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Reranker for non-English documents and JSON.",
+    "docs": "https://docs.cohere.com/docs/rerank-overview",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Rerank Multilingual v3.0 | Cohere Docs",
+      "url": "https://docs.cohere.com/docs/rerank-overview",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Cohere Model Overview",
+      "url": "https://docs.cohere.com/docs/models",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "How does Cohere pricing work?",
+      "url": "https://docs.cohere.com/docs/how-does-cohere-pricing-work",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "cohere",
+      "model": "rerank-multilingual-v3.0",
+      "base_url": "https://api.cohere.com",
+      "endpoints": {
+        "rerank": "POST /v2/rerank"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

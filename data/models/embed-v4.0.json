@@ -1,0 +1,69 @@
+{
+  "id": "embed-v4.0",
+  "object": "model",
+  "created": null,
+  "owned_by": "cohere",
+  "name": "Embed v4.0",
+  "api": {
+    "types": [
+      "embeddings"
+    ]
+  },
+  "limits": {
+    "context": 128000,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "embedding"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Embedding model for text and images, also supports classification.",
+    "docs": "https://docs.cohere.com/docs/cohere-embed",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Embed v4.0 | Cohere Docs",
+      "url": "https://docs.cohere.com/docs/cohere-embed",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Cohere Model Overview",
+      "url": "https://docs.cohere.com/docs/models",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "How does Cohere pricing work?",
+      "url": "https://docs.cohere.com/docs/how-does-cohere-pricing-work",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "cohere",
+      "model": "embed-v4.0",
+      "base_url": "https://api.cohere.com",
+      "endpoints": {
+        "embeddings": "POST /v2/embed"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

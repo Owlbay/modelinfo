@@ -1,0 +1,14 @@
+---
+import ModelView from '../../../views/ModelView.astro';
+import { PREFIXED_LANGS, asLang } from '../../../i18n';
+import { getModels, type Model } from '../../../lib/models';
+
+export async function getStaticPaths() {
+  const models = await getModels();
+  return PREFIXED_LANGS.flatMap((lang) => models.map((model) => ({ params: { lang, id: model.id }, props: { model } })));
+}
+const lang = asLang(Astro.params.lang);
+const { model } = Astro.props as { model: Model };
+---
+
+<ModelView lang={lang} model={model} />

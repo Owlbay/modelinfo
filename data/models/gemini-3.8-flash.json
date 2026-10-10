@@ -1,0 +1,105 @@
+{
+  "id": "gemini-3.8-flash",
+  "object": "model",
+  "created": 1788307200,
+  "owned_by": "google",
+  "name": "Gemini 3.8 Flash",
+  "api": {
+    "types": [
+      "generate",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": 1048576,
+    "input": 1048576,
+    "output": 65536
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "video",
+      "audio",
+      "document"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": [
+      "low",
+      "medium",
+      "high"
+    ]
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.75,
+    "output": 3.75,
+    "cache_read": 0.075,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "streaming",
+    "caching",
+    "batch"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2026-09-02",
+    "knowledge_cutoff": null,
+    "description": "Most intelligent Flash model for long-horizon coding, agents and enterprise workflows.",
+    "docs": "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Gemini 3.8 Flash | Gemini API",
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Models | Gemini API",
+      "url": "https://ai.google.dev/gemini-api/docs/models",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Pricing | Gemini API",
+      "url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Deprecations | Gemini API",
+      "url": "https://ai.google.dev/gemini-api/docs/deprecations",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Generating content | Gemini API",
+      "url": "https://ai.google.dev/api/generate-content",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Batch API | Gemini API",
+      "url": "https://ai.google.dev/gemini-api/docs/batch-api",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "google",
+      "model": "gemini-3.8-flash",
+      "base_url": "https://generativelanguage.googleapis.com",
+      "endpoints": {
+        "generate": "POST /v1beta/models/{model}:generateContent",
+        "batch": "POST /v1beta/models/{model}:batchGenerateContent"
+      },
+      "reasoning_param": "generationConfig.thinkingConfig.thinkingLevel"
+    }
+  ]
+}

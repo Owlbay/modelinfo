@@ -1,0 +1,92 @@
+{
+  "id": "mistral-medium-3-5",
+  "object": "model",
+  "created": 1777334400,
+  "owned_by": "mistral",
+  "name": "Mistral Medium 3.5",
+  "api": {
+    "types": [
+      "messages",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": 256000,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": [
+      "none",
+      "high"
+    ]
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 1.5,
+    "output": 7.5,
+    "cache_read": 0.15,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "caching",
+    "batch"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2026-04-28",
+    "knowledge_cutoff": null,
+    "description": "Frontier-class multimodal model optimized for agentic and coding use cases.",
+    "docs": "https://docs.mistral.ai/models/mistral-medium-3-5-26-04",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "mistral-medium-latest"
+  ],
+  "sources": [
+    {
+      "title": "Mistral Medium 3.5 | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-medium-3-5-26-04",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "API pricing | Mistral Docs",
+      "url": "https://docs.mistral.ai/inference/pricing",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Models overview | Mistral Docs",
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Reasoning | Mistral Docs",
+      "url": "https://docs.mistral.ai/capabilities/reasoning/",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "mistral",
+      "model": "mistral-medium-3-5",
+      "base_url": "https://api.mistral.ai",
+      "endpoints": {
+        "messages": "POST /v1/chat/completions",
+        "batch": "POST /v1/batch"
+      },
+      "reasoning_param": "reasoning_effort"
+    }
+  ]
+}

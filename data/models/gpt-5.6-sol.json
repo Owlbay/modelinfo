@@ -1,0 +1,99 @@
+{
+  "id": "gpt-5.6-sol",
+  "object": "model",
+  "created": 1783555200,
+  "owned_by": "openai",
+  "name": "GPT-5.6 Sol",
+  "api": {
+    "types": [
+      "messages",
+      "responses",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": 1050000,
+    "input": 922000,
+    "output": 128000
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": [
+      "none",
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ]
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 4,
+    "output": 20,
+    "cache_read": 0.4,
+    "cache_write": 5
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "streaming",
+    "caching",
+    "batch"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2026-07-09",
+    "knowledge_cutoff": "2026-02-16",
+    "description": "Flagship GPT-5.6 model for complex professional work.",
+    "docs": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "gpt-5.6"
+  ],
+  "sources": [
+    {
+      "title": "GPT-5.6 Sol Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Pricing | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/pricing",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Changelog | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/changelog",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "openai",
+      "model": "gpt-5.6-sol",
+      "base_url": "https://api.openai.com",
+      "endpoints": {
+        "messages": "POST /v1/chat/completions",
+        "responses": "POST /v1/responses",
+        "batch": "POST /v1/batches"
+      },
+      "reasoning_param": "reasoning.effort"
+    }
+  ]
+}

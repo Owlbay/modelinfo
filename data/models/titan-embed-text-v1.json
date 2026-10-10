@@ -1,0 +1,71 @@
+{
+  "id": "titan-embed-text-v1",
+  "object": "model",
+  "created": 1695859200,
+  "owned_by": "amazon",
+  "name": "Amazon Titan Embeddings G1 - Text",
+  "api": {
+    "types": [
+      "embeddings"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ]
+  },
+  "reasoning": {
+    "supported": false,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.1,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": "2023-09-28",
+    "knowledge_cutoff": null,
+    "description": "Amazon's text embeddings model that converts text into numerical vector representations for search, personalization, and clustering.",
+    "docs": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-titan-embeddings-g1---text.html",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "amazon.titan-embed-text-v1"
+  ],
+  "sources": [
+    {
+      "title": "Amazon Bedrock model card: Titan Embeddings G1 - Text",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-titan-embeddings-g1---text.html",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Amazon Bedrock Pricing",
+      "url": "https://aws.amazon.com/bedrock/pricing/",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "amazon-bedrock",
+      "model": "amazon.titan-embed-text-v1",
+      "base_url": "https://bedrock-runtime.us-east-1.amazonaws.com",
+      "endpoints": {
+        "embeddings": "POST /model/{modelId}/invoke"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

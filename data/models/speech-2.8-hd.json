@@ -1,0 +1,73 @@
+{
+  "id": "speech-2.8-hd",
+  "object": "model",
+  "created": 1769126400,
+  "owned_by": "minimax",
+  "name": "speech-2.8-hd",
+  "api": {
+    "types": [
+      "audio"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "audio"
+    ]
+  },
+  "reasoning": {
+    "supported": false,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": "2026-01-23",
+    "knowledge_cutoff": null,
+    "description": "High-fidelity speech synthesis with sound tags and 40 languages.",
+    "docs": "https://platform.minimax.io/docs/api-reference/speech-t2a-http",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Models | MiniMax API Docs",
+      "url": "https://platform.minimax.io/docs/guides/models-intro",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Pay as You Go pricing | MiniMax API Docs",
+      "url": "https://platform.minimax.io/docs/guides/pricing-paygo",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Model release notes | MiniMax API Docs",
+      "url": "https://platform.minimax.io/docs/release-notes/models",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Speech synthesis (T2A HTTP) | MiniMax API Docs",
+      "url": "https://platform.minimax.io/docs/api-reference/speech-t2a-http",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "minimax",
+      "model": "speech-2.8-hd",
+      "base_url": "https://api.minimax.io",
+      "endpoints": {
+        "audio": "POST /v1/t2a_v2"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

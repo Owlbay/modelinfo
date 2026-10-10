@@ -1,0 +1,72 @@
+{
+  "id": "sam-3.1",
+  "object": "model",
+  "created": null,
+  "owned_by": "meta",
+  "name": "Segment Anything Model 3.1",
+  "api": {
+    "types": [
+      "responses"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "streaming"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Meta's segmentation model that returns boxes and masks for objects in images and video from a short text prompt.",
+    "docs": "https://dev.meta.ai/docs/media-segmentation",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Models | Meta Model API",
+      "url": "https://dev.meta.ai/docs/models",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Pricing and rate limits | Meta Model API",
+      "url": "https://dev.meta.ai/docs/pricing-rate-limits",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Media segmentation | Meta Model API",
+      "url": "https://dev.meta.ai/docs/media-segmentation",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "meta",
+      "model": "sam-3.1",
+      "base_url": "https://api.meta.ai/v1",
+      "endpoints": {
+        "responses": "POST /v1/responses"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

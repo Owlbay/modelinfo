@@ -1,0 +1,71 @@
+{
+  "id": "command-a-reasoning-08-2025",
+  "object": "model",
+  "created": null,
+  "owned_by": "cohere",
+  "name": "Command A Reasoning",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 256000,
+    "input": null,
+    "output": 32000
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "tools",
+    "structured_output"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": "2024-06",
+    "description": "Cohere's first reasoning model, for nuanced problem-solving and agent tasks in 23 languages.",
+    "docs": "https://docs.cohere.com/docs/command-a-reasoning",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Command A Reasoning | Cohere Docs",
+      "url": "https://docs.cohere.com/docs/command-a-reasoning",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Cohere Model Overview",
+      "url": "https://docs.cohere.com/docs/models",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "How does Cohere pricing work?",
+      "url": "https://docs.cohere.com/docs/how-does-cohere-pricing-work",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "cohere",
+      "model": "command-a-reasoning-08-2025",
+      "base_url": "https://api.cohere.com",
+      "endpoints": {
+        "messages": "POST /v2/chat"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

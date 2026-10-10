@@ -1,0 +1,65 @@
+{
+  "id": "cogview-4",
+  "object": "model",
+  "created": null,
+  "owned_by": "zhipu",
+  "name": "CogView-4",
+  "api": {
+    "types": [
+      "images"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "image"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Bilingual Chinese and English text-to-image model, priced at $0.01 per image.",
+    "docs": "https://docs.z.ai/guides/image/cogview-4",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "cogview-4-250304"
+  ],
+  "sources": [
+    {
+      "title": "CogView-4 | Z.AI Developer Document",
+      "url": "https://docs.z.ai/guides/image/cogview-4",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Pricing | Z.AI Developer Document",
+      "url": "https://docs.z.ai/guides/overview/pricing",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "zhipu",
+      "model": "cogview-4",
+      "base_url": "https://api.z.ai/api/paas/v4",
+      "endpoints": {
+        "images": "POST /images/generations"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

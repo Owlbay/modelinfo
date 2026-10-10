@@ -1,0 +1,72 @@
+{
+  "id": "command-a-plus-05-2026",
+  "object": "model",
+  "created": 1779235200,
+  "owned_by": "cohere",
+  "name": "Command A+",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 128000,
+    "input": null,
+    "output": 64000
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "tools",
+    "structured_output"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2026-05-20",
+    "knowledge_cutoff": "2025-04",
+    "description": "Mixture-of-Experts model combining vision, agentic, reasoning, and translation capabilities.",
+    "docs": "https://docs.cohere.com/docs/command-a-plus",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Command A+ | Cohere Docs",
+      "url": "https://docs.cohere.com/docs/command-a-plus",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Cohere Model Overview",
+      "url": "https://docs.cohere.com/docs/models",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "How does Cohere pricing work?",
+      "url": "https://docs.cohere.com/docs/how-does-cohere-pricing-work",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "cohere",
+      "model": "command-a-plus-05-2026",
+      "base_url": "https://api.cohere.com",
+      "endpoints": {
+        "messages": "POST /v2/chat"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

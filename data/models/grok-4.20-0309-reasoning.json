@@ -1,0 +1,92 @@
+{
+  "id": "grok-4.20-0309-reasoning",
+  "object": "model",
+  "created": null,
+  "owned_by": "xai",
+  "name": "Grok 4.20 (Reasoning)",
+  "api": {
+    "types": [
+      "messages",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": 1000000,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 1.25,
+    "output": 2.5,
+    "cache_read": 0.2,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "caching",
+    "batch"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "A high-performance model with industry-leading speed and agentic tool calling capabilities.",
+    "docs": "https://docs.x.ai/developers/models/grok-4.20-0309-reasoning",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "grok-4.20-reasoning-latest",
+    "grok-4.20",
+    "grok-4.20-reasoning",
+    "grok-4.20-0309",
+    "grok-4.20-beta-0309-reasoning",
+    "grok-4.20-beta",
+    "grok-4.20-beta-0309",
+    "grok-4.20-beta-latest",
+    "grok-4.20-beta-latest-reasoning",
+    "grok-4.20-beta-reasoning",
+    "grok-4.20-experimental-beta-0304-reasoning",
+    "grok-4.20-experimental-beta-0304",
+    "grok-4.20-experimental-beta-reasoning-latest",
+    "grok-4.20-experimental-beta-latest",
+    "grok-4.20-reasoning-gv2"
+  ],
+  "sources": [
+    {
+      "title": "Grok 4.20 (Reasoning) | xAI Docs",
+      "url": "https://docs.x.ai/developers/models/grok-4.20-0309-reasoning",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Models and Pricing | xAI Docs",
+      "url": "https://docs.x.ai/developers/models",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "xai",
+      "model": "grok-4.20-0309-reasoning",
+      "base_url": "https://api.x.ai",
+      "endpoints": {
+        "messages": "POST /v1/chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "doubao-seedream-5-0",
+  "object": "model",
+  "created": null,
+  "owned_by": "bytedance",
+  "name": "Doubao-Seedream-5.0",
+  "api": {
+    "types": [
+      "images"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "image"
+    ]
+  },
+  "reasoning": {
+    "supported": false,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "deprecated",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Image generation with text-to-image, image-to-image and group-image output (scheduled to go offline).",
+    "docs": "https://www.volcengine.com/docs/82379/1330310",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [
+    "doubao-seedream-5-0-260128",
+    "doubao-seedream-5-0-lite-260128",
+    "doubao-seedream-5-0-lite"
+  ],
+  "sources": [
+    {
+      "title": "模型列表 | 火山方舟",
+      "url": "https://www.volcengine.com/docs/82379/1330310",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "模型价格 | 火山方舟",
+      "url": "https://www.volcengine.com/docs/82379/1099320",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "bytedance",
+      "model": "doubao-seedream-5-0-260128",
+      "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+      "endpoints": {
+        "images": "POST /images/generations"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

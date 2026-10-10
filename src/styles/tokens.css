@@ -1,0 +1,125 @@
+/* ModelInfo 设计 token（沿用 Owlbay 设计体系，见 docs/design.md）。组件只引用变量，不写字面色值。 */
+
+:root {
+  color-scheme: dark;
+  /* 面 */
+  --bg: #141413;
+  --bg-raised: #1a1a18;
+  --bg-panel: #1e1d1b;
+  /* 字 */
+  --ink: #faf9f5;
+  --ink-2: #b0aea5;
+  --ink-3: #87867f;
+  --ink-4: #5e5d59; /* 仅装饰：字墙暗词、禁用态、点阵阴影、滚动条 */
+  /* 强调 */
+  --accent: #d97757;
+  --accent-ui: #d97757;
+  --accent-text: #d97757;
+  --accent-deep: #c15f3c;
+  /* 线 */
+  --line: rgba(250, 249, 245, 0.16);
+  --line-soft: rgba(250, 249, 245, 0.09);
+  --line-strong: rgba(250, 249, 245, 0.28);
+  /* 态 */
+  --hover-row: rgba(250, 249, 245, 0.045);
+  --selected-bg: var(--ink);
+  --selected-ink: var(--bg);
+  --selection: rgba(217, 119, 87, 0.35);
+  --focus: var(--accent-ui);
+  --scrollbar: var(--ink-4);
+  /* 字墙：rgb 三元组，canvas 内 rgba(var(--field-ink), a) */
+  --field-ink: 250, 249, 245;
+  --field-ember: 217, 119, 87;
+
+  /* 字体 */
+  --font-sans: "Geist Variable", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", sans-serif;
+  --font-mono: "Geist Mono Variable", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", monospace;
+
+  /* 字号阶梯（§2.3） */
+  --fs-display: clamp(32px, 1.2rem + 3.6vw, 80px);
+  --fs-h1: clamp(28px, 1.4rem + 1.2vw, 40px);
+  --fs-h2: clamp(22px, 1.2rem + 0.6vw, 28px);
+  --fs-h3: 20px;
+  --fs-body-lg: 18px;
+  --fs-body: 16px;
+  --fs-body-sm: 14px;
+  --fs-prose: 17px;
+  --fs-mono-nav: 15.75px;
+  --fs-mono: 13px;
+  --fs-mono-sm: 12px;
+  --fs-mono-xs: 11px;
+  --fs-ui: 15px; /* 面板条目、窄屏项目名等界面标签 */
+  --fs-caption: 13px; /* 首页搜索框下的说明 */
+  --fs-display-sm: clamp(30px, 8.6vw, 34px); /* ≤640 的身份标题 */
+  --lh-body-lg: 27px;
+  --lh-body: 24px;
+  --lh-body-sm: 20px;
+  --lh-mono-nav: 24px;
+  --lh-mono: 20px;
+  --lh-mono-sm: 18px;
+  --lh-mono-xs: 16px;
+  --lh-ui: 22px;
+  --lh-title-sm: 25px; /* ≤640 行标题（17px） */
+  --fs-code: 13px;
+  --lh-code: 1.65;
+  --lh-caption: 18px;
+
+  /* 间距与尺寸（§2.4） */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-7: 48px;
+  --sp-8: 64px;
+  --sp-9: 96px;
+  --sp-10: 128px;
+  --row-h: 52px;
+  --control-h: 44px;
+  --search-h: 56px;
+  --nav-h: 64px;
+  --bar-h: 52px;
+  --content-max: 1200px;
+
+  /* 断点（媒体查询无法读取变量，此处仅作记录）：≤640 手机 · 641–1024 平板 · ≥1025 桌面 */
+  --bp-sm: 640px;
+  --bp-md: 1024px;
+  --gutter: 20px;
+
+  /* 动效（§2.6） */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-1: 120ms;
+  --dur-2: 200ms;
+  --dur-3: 400ms;
+}
+
+@media (min-width: 641px) {
+  :root { --gutter: 40px; }
+}
+@media (min-width: 1025px) {
+  :root { --gutter: 48px; }
+}
+/* 减少动效偏好下不清零时长：颜色与透明度过渡保留，位移类动效在 motion.css 中单独关闭 */
+
+:root[data-scheme="light"] {
+  color-scheme: light;
+  --bg: #faf9f5;
+  --bg-raised: #f3f1ea;
+  --bg-panel: #ecebe3;
+  --ink: #141413;
+  --ink-2: #5e5d59;
+  --ink-3: #6e6d67;
+  --ink-4: #a3a199;
+  --accent: #d97757;
+  --accent-ui: #c15f3c;
+  --accent-text: #b0522f;
+  --accent-deep: #a04a2b;
+  --line: rgba(20, 20, 19, 0.16);
+  --line-soft: rgba(20, 20, 19, 0.08);
+  --line-strong: rgba(20, 20, 19, 0.28);
+  --hover-row: rgba(20, 20, 19, 0.04);
+  --selection: rgba(193, 95, 60, 0.28);
+  --field-ink: 20, 20, 19;
+  --field-ember: 193, 95, 60;
+}

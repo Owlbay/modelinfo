@@ -1,0 +1,61 @@
+{
+  "id": "hy-asr-3.0-preview",
+  "object": "model",
+  "created": null,
+  "owned_by": "tencent",
+  "name": "Hy-ASR-3.0-Preview",
+  "api": {
+    "types": [
+      "audio"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "audio"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": false,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "preview",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Tencent speech recognition preview for Mandarin, English and Chinese dialects.",
+    "docs": "https://cloud.tencent.com/document/product/1823/130051",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "模型列表 | 腾讯云 TokenHub",
+      "url": "https://cloud.tencent.com/document/product/1823/130051",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "模型定价 | 腾讯云 TokenHub",
+      "url": "https://cloud.tencent.com/document/product/1823/130055",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "tencent",
+      "model": "hy-asr-3.0-preview",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

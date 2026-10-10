@@ -1,0 +1,76 @@
+{
+  "id": "gpt-live-transcribe",
+  "object": "model",
+  "created": 1785196800,
+  "owned_by": "openai",
+  "name": "GPT-Live-Transcribe",
+  "api": {
+    "types": [
+      "realtime"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "audio",
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "streaming"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2026-07-28",
+    "knowledge_cutoff": null,
+    "description": "Low-latency speech-to-text model for realtime transcription.",
+    "docs": "https://developers.openai.com/api/docs/models/gpt-live-transcribe",
+    "verified_at": "2026-10-10"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "GPT-Live-Transcribe Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-live-transcribe",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Pricing | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/pricing",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Changelog | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/changelog",
+      "retrieved_at": "2026-10-10"
+    }
+  ],
+  "providers": [
+    {
+      "id": "openai",
+      "model": "gpt-live-transcribe",
+      "base_url": "https://api.openai.com",
+      "endpoints": {
+        "realtime": "POST /v1/realtime/transcription_sessions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
