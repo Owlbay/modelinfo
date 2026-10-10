@@ -1,0 +1,70 @@
+{
+  "id": "marengo3.5",
+  "object": "model",
+  "created": null,
+  "owned_by": "twelvelabs",
+  "name": "Marengo 3.5",
+  "api": {
+    "types": [
+      "embeddings"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "audio",
+      "video",
+      "document"
+    ],
+    "output": [
+      "embedding"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Embedding model for video understanding; creates 128, 256 or 512-dimension embeddings from video, audio, images, text and documents.",
+    "docs": "https://docs.twelvelabs.io/v1.3/docs/concepts/models/marengo/marengo-3-5",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Marengo 3.5 | TwelveLabs",
+      "url": "https://docs.twelvelabs.io/v1.3/docs/concepts/models/marengo/marengo-3-5",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Marengo | TwelveLabs",
+      "url": "https://docs.twelvelabs.io/v1.3/docs/concepts/models/marengo",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Create embeddings for a query | TwelveLabs",
+      "url": "https://docs.twelvelabs.io/v1.3/docs/guides/create-embeddings/query",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "twelvelabs",
+      "model": "marengo3.5",
+      "base_url": "https://api.twelvelabs.io/v1.3",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}
