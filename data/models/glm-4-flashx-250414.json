@@ -1,0 +1,89 @@
+{
+  "id": "glm-4-flashx-250414",
+  "object": "model",
+  "created": null,
+  "owned_by": "zhipu",
+  "name": "GLM-4-FlashX-250414",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 131072,
+    "input": null,
+    "output": 16384
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "CNY",
+    "input": 0.1,
+    "output": 0.1,
+    "cache_read": 0.05,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "streaming",
+    "caching"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Fast, high-concurrency enhanced version of the free GLM-4-Flash with long-context and multilingual support.",
+    "docs": "https://docs.bigmodel.cn/cn/guide/models/text/glm-4",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "GLM-4 | 智谱 AI 开放文档",
+      "url": "https://docs.bigmodel.cn/cn/guide/models/text/glm-4",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "API 定价 | 智谱 AI 开放文档",
+      "url": "https://docs.bigmodel.cn/cn/guide/start/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "模型概览 | 智谱 AI 开放文档",
+      "url": "https://docs.bigmodel.cn/cn/guide/start/model-overview",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "核心参数（各模型 max_tokens，128K 输出为 131072）| 智谱 AI 开放文档",
+      "url": "https://docs.bigmodel.cn/cn/guide/start/concept-param",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "对话补全 | 智谱 AI 开放文档",
+      "url": "https://docs.bigmodel.cn/api-reference/模型-api/对话补全",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "zhipu",
+      "model": "glm-4-flashx-250414",
+      "base_url": "https://open.bigmodel.cn/api/paas/v4",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

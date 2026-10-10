@@ -1,0 +1,96 @@
+{
+  "id": "glm-5v-turbo",
+  "object": "model",
+  "created": null,
+  "owned_by": "zhipu",
+  "name": "GLM-5V-Turbo",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 202752,
+    "input": null,
+    "output": 131072
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "video",
+      "document"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "CNY",
+    "input": 5,
+    "output": 22,
+    "cache_read": 1.2,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "streaming",
+    "caching"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Multimodal coding foundation model for visual programming, long-horizon planning and agent workflows.",
+    "docs": "https://docs.bigmodel.cn/cn/guide/models/vlm/glm-5v-turbo",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "GLM-5V-Turbo | 智谱 AI 开放文档",
+      "url": "https://docs.bigmodel.cn/cn/guide/models/vlm/glm-5v-turbo",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "API 定价 | 智谱 AI 开放文档",
+      "url": "https://docs.bigmodel.cn/cn/guide/start/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "模型概览 | 智谱 AI 开放文档",
+      "url": "https://docs.bigmodel.cn/cn/guide/start/model-overview",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "核心参数（各模型 max_tokens，128K 输出为 131072）| 智谱 AI 开放文档",
+      "url": "https://docs.bigmodel.cn/cn/guide/start/concept-param",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "对话补全 | 智谱 AI 开放文档",
+      "url": "https://docs.bigmodel.cn/api-reference/模型-api/对话补全",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "GLM-4.6 config.json (max_position_embeddings 202752) | Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-4.6/blob/main/config.json",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "zhipu",
+      "model": "glm-5v-turbo",
+      "base_url": "https://open.bigmodel.cn/api/paas/v4",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": "thinking.type"
+    }
+  ]
+}
