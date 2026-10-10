@@ -1,0 +1,74 @@
+{
+  "id": "voyage-3-large",
+  "object": "model",
+  "created": null,
+  "owned_by": "voyage",
+  "name": "Voyage 3 Large",
+  "api": {
+    "types": [
+      "embeddings"
+    ]
+  },
+  "limits": {
+    "context": 32000,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.18,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Previous-generation Voyage general-purpose and multilingual embedding model.",
+    "docs": "https://docs.voyageai.com/docs/embeddings",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Text Embeddings | Voyage AI Docs",
+      "url": "https://docs.voyageai.com/docs/embeddings",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Voyage AI Docs",
+      "url": "https://docs.voyageai.com/docs/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Text embeddings API | Voyage AI Docs",
+      "url": "https://docs.voyageai.com/reference/embeddings-api",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "voyage",
+      "model": "voyage-3-large",
+      "base_url": "https://api.voyageai.com",
+      "endpoints": {
+        "embeddings": "POST /v1/embeddings"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

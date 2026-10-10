@@ -1,0 +1,69 @@
+{
+  "id": "rerank-2.5-lite",
+  "object": "model",
+  "created": null,
+  "owned_by": "voyage",
+  "name": "Rerank 2.5 Lite",
+  "api": {
+    "types": [
+      "rerank"
+    ]
+  },
+  "limits": {
+    "context": 32000,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "score"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.02,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Voyage general-purpose reranker balancing latency and quality, with instruction-following and multilingual support.",
+    "docs": "https://docs.voyageai.com/docs/reranker",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Rerankers | Voyage AI Docs",
+      "url": "https://docs.voyageai.com/docs/reranker",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Voyage AI Docs",
+      "url": "https://docs.voyageai.com/docs/pricing",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "voyage",
+      "model": "rerank-2.5-lite",
+      "base_url": "https://api.voyageai.com",
+      "endpoints": {
+        "rerank": "POST /v1/rerank"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

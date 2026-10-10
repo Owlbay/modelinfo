@@ -1,0 +1,71 @@
+{
+  "id": "voyage-multimodal-3.5",
+  "object": "model",
+  "created": null,
+  "owned_by": "voyage",
+  "name": "Voyage Multimodal 3.5",
+  "api": {
+    "types": [
+      "embeddings"
+    ]
+  },
+  "limits": {
+    "context": 32000,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "embedding"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.12,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Voyage multimodal embedding model that vectorizes interleaved text, images and video.",
+    "docs": "https://docs.voyageai.com/docs/multimodal-embeddings",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Multimodal Embeddings | Voyage AI Docs",
+      "url": "https://docs.voyageai.com/docs/multimodal-embeddings",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Voyage AI Docs",
+      "url": "https://docs.voyageai.com/docs/pricing",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "voyage",
+      "model": "voyage-multimodal-3.5",
+      "base_url": "https://api.voyageai.com",
+      "endpoints": {
+        "embeddings": "POST /v1/multimodalembeddings"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
