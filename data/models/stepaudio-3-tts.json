@@ -26,7 +26,14 @@
     "supported": false,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_characters",
+    "input": 36,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
@@ -34,14 +41,14 @@
     "knowledge_cutoff": null,
     "description": "Text-to-speech with low-latency streaming and expressive delivery.",
     "docs": "https://platform.stepfun.ai/docs/en/guides/models/stepaudio-3-tts",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
     {
       "title": "Step Platform pricing | StepFun Documentation",
       "url": "https://platform.stepfun.ai/docs/en/guides/pricing/details",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Model overview | StepFun Documentation",
