@@ -8,6 +8,8 @@
     "html_handling": "auto-trailing-slash",
     "not_found_handling": "404-page"
   },
+  // PR 预览构建（Workers Builds 的 wrangler preview）需要此字段，留空即沿用上方配置
+  "previews": {},
   // 自定义域名（托管在 Cloudflare），首次部署时自动创建 DNS 记录与证书
   "routes": [{ "pattern": "modelinfo.dev", "custom_domain": true }]
 }
