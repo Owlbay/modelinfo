@@ -1,7 +1,7 @@
 {
   "id": "gen4.5",
   "object": "model",
-  "created": null,
+  "created": 1770681600,
   "owned_by": "runway",
   "name": "Gen-4.5",
   "api": {
@@ -27,11 +27,18 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "second",
+    "input": null,
+    "output": 0.12,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-02-10",
     "knowledge_cutoff": null,
     "description": "Runway's state-of-the-art text-to-video and image-to-video model.",
     "docs": "https://docs.dev.runwayml.com/guides/models/",
@@ -47,6 +54,11 @@
     {
       "title": "Pricing | Runway API",
       "url": "https://docs.dev.runwayml.com/guides/pricing/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Runway API Changelog",
+      "url": "https://docs.dev.runwayml.com/api-details/api_changelog/",
       "retrieved_at": "2026-10-11"
     }
   ],

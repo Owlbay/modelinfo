@@ -1,7 +1,7 @@
 {
   "id": "gen4_image_turbo",
   "object": "model",
-  "created": null,
+  "created": 1755561600,
   "owned_by": "runway",
   "name": "Gen-4 Image Turbo",
   "api": {
@@ -27,11 +27,18 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "image",
+    "input": null,
+    "output": 0.02,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-08-19",
     "knowledge_cutoff": null,
     "description": "Runway's fastest and most cost-efficient image model.",
     "docs": "https://docs.dev.runwayml.com/guides/models/",
@@ -47,6 +54,11 @@
     {
       "title": "Pricing | Runway API",
       "url": "https://docs.dev.runwayml.com/guides/pricing/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Runway API Changelog",
+      "url": "https://docs.dev.runwayml.com/api-details/api_changelog/",
       "retrieved_at": "2026-10-11"
     }
   ],
