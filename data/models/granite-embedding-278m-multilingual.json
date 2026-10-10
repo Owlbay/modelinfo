@@ -1,7 +1,7 @@
 {
   "id": "granite-embedding-278m-multilingual",
   "object": "model",
-  "created": null,
+  "created": 1734480000,
   "owned_by": "ibm",
   "name": "Granite Embedding 278M Multilingual",
   "api": {
@@ -37,7 +37,7 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2024-12-18",
     "knowledge_cutoff": null,
     "description": "IBM Granite multilingual embedding model on watsonx.ai (768 dimensions).",
     "docs": "https://www.ibm.com/docs/en/watsonx/saas?topic=models-supported-encoder",
@@ -60,6 +60,11 @@
     {
       "title": "watsonx.ai API reference | IBM Cloud",
       "url": "https://cloud.ibm.com/apidocs/watsonx-ai",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "IBM Granite 3.1 announcement - IBM",
+      "url": "https://www.ibm.com/new/announcements/ibm-granite-3-1-powerful-performance-long-context-and-more",
       "retrieved_at": "2026-10-11"
     }
   ],

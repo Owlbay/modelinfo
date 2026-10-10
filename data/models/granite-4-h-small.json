@@ -1,7 +1,7 @@
 {
   "id": "granite-4-h-small",
   "object": "model",
-  "created": null,
+  "created": 1759363200,
   "owned_by": "ibm",
   "name": "Granite 4 H Small",
   "api": {
@@ -39,7 +39,7 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-10-02",
     "knowledge_cutoff": null,
     "description": "IBM Granite 4 H Small foundation model on watsonx.ai.",
     "docs": "https://www.ibm.com/docs/en/watsonx/saas?topic=solutions-supported-foundation-models",
@@ -62,6 +62,11 @@
     {
       "title": "watsonx.ai API reference | IBM Cloud",
       "url": "https://cloud.ibm.com/apidocs/watsonx-ai",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "IBM Granite 4.0 announcement - IBM",
+      "url": "https://www.ibm.com/new/announcements/ibm-granite-4-0-hyper-efficient-high-performance-hybrid-models",
       "retrieved_at": "2026-10-11"
     }
   ],
