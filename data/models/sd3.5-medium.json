@@ -1,0 +1,71 @@
+{
+  "id": "sd3.5-medium",
+  "object": "model",
+  "created": 1730160000,
+  "owned_by": "stability",
+  "name": "Stable Diffusion 3.5 Medium",
+  "api": {
+    "types": [
+      "images"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "image"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": "2024-10-29",
+    "knowledge_cutoff": null,
+    "description": "Stable Diffusion 3.5 base model with 2.5 billion parameters, balancing prompt accuracy and image quality.",
+    "docs": "https://platform.stability.ai/docs/api-reference",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "sd3-medium"
+  ],
+  "sources": [
+    {
+      "title": "API Reference | Stability AI Developer Platform",
+      "url": "https://platform.stability.ai/docs/api-reference",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Stability AI Developer Platform",
+      "url": "https://platform.stability.ai/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Release Notes | Stability AI Developer Platform",
+      "url": "https://platform.stability.ai/docs/release-notes",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "stability",
+      "model": "sd3.5-medium",
+      "base_url": "https://api.stability.ai",
+      "endpoints": {
+        "images": "POST /v2beta/stable-image/generate/sd3"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

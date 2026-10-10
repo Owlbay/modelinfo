@@ -1,0 +1,64 @@
+{
+  "id": "stable-audio-2.5",
+  "object": "model",
+  "created": null,
+  "owned_by": "stability",
+  "name": "Stable Audio 2.5",
+  "api": {
+    "types": [
+      "audio"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "audio"
+    ],
+    "output": [
+      "audio"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Stability audio model for text-to-audio, audio-to-audio and audio inpainting, with up to 3-minute 44.1 kHz stereo output.",
+    "docs": "https://platform.stability.ai/docs/api-reference",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "API Reference | Stability AI Developer Platform",
+      "url": "https://platform.stability.ai/docs/api-reference",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Stability AI Developer Platform",
+      "url": "https://platform.stability.ai/pricing",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "stability",
+      "model": "stable-audio-2.5",
+      "base_url": "https://api.stability.ai",
+      "endpoints": {
+        "audio": "POST /v2beta/audio/stable-audio-2/text-to-audio"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
