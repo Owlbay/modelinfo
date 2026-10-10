@@ -1,0 +1,68 @@
+{
+  "id": "doubao-seed3d-2-0",
+  "object": "model",
+  "created": null,
+  "owned_by": "bytedance",
+  "name": "Doubao-Seed3D-2.0",
+  "api": {
+    "types": [
+      "3d"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "image"
+    ],
+    "output": [
+      "3d"
+    ]
+  },
+  "reasoning": {
+    "supported": false,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Image-to-3D generation model that produces textured 3D files with PBR materials (glb, obj, usd, usdz); asynchronous task API.",
+    "docs": "https://docs.volcengine.com/docs/ark/model-list?lang=zh",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "doubao-seed3d-2-0-260328"
+  ],
+  "sources": [
+    {
+      "title": "模型列表 | 火山方舟",
+      "url": "https://docs.volcengine.com/docs/ark/model-list?lang=zh",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "模型价格 | 火山方舟",
+      "url": "https://docs.volcengine.com/docs/ark/model-pricing?lang=zh",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "查询 3D 生成任务列表 | 火山方舟",
+      "url": "https://docs.volcengine.com/docs/82379/1860235?lang=zh",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "bytedance",
+      "model": "doubao-seed3d-2-0-260328",
+      "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}
