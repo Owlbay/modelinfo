@@ -1,7 +1,7 @@
 {
   "id": "eleven_v4_turbo",
   "object": "model",
-  "created": null,
+  "created": 1790553600,
   "owned_by": "elevenlabs",
   "name": "Eleven v4 Turbo",
   "api": {
@@ -27,13 +27,20 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_characters",
+    "input": 40,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [
     "streaming"
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-09-28",
     "knowledge_cutoff": null,
     "description": "Real-time version of Eleven v4 with the most expressive delivery among real-time models.",
     "docs": "https://elevenlabs.io/docs/overview/models",
@@ -54,6 +61,11 @@
     {
       "title": "Create speech | ElevenLabs API Reference",
       "url": "https://elevenlabs.io/docs/api-reference/text-to-speech/convert",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Changelog | ElevenLabs Documentation",
+      "url": "https://elevenlabs.io/docs/changelog",
       "retrieved_at": "2026-10-11"
     }
   ],

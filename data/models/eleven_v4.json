@@ -1,7 +1,7 @@
 {
   "id": "eleven_v4",
   "object": "model",
-  "created": null,
+  "created": 1790553600,
   "owned_by": "elevenlabs",
   "name": "Eleven v4",
   "api": {
@@ -26,11 +26,18 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_characters",
+    "input": 80,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-09-28",
     "knowledge_cutoff": null,
     "description": "Highest-emotion, highest-quality speech synthesis model with strong voice cloning and speaker preservation on long text.",
     "docs": "https://elevenlabs.io/docs/overview/models",
@@ -51,6 +58,11 @@
     {
       "title": "Create speech | ElevenLabs API Reference",
       "url": "https://elevenlabs.io/docs/api-reference/text-to-speech/convert",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Changelog | ElevenLabs Documentation",
+      "url": "https://elevenlabs.io/docs/changelog",
       "retrieved_at": "2026-10-11"
     }
   ],

@@ -1,7 +1,7 @@
 {
   "id": "scribe_v2_medical",
   "object": "model",
-  "created": null,
+  "created": 1789084800,
   "owned_by": "elevenlabs",
   "name": "Scribe v2 Medical",
   "api": {
@@ -26,11 +26,18 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "hour",
+    "input": 0.22,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-09-11",
     "knowledge_cutoff": null,
     "description": "Scribe v2 fine-tuned for clinical audio; batch only.",
     "docs": "https://elevenlabs.io/docs/overview/models",
@@ -51,6 +58,11 @@
     {
       "title": "Create transcript | ElevenLabs API Reference",
       "url": "https://elevenlabs.io/docs/api-reference/speech-to-text/convert",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Changelog | ElevenLabs Documentation",
+      "url": "https://elevenlabs.io/docs/changelog",
       "retrieved_at": "2026-10-11"
     }
   ],

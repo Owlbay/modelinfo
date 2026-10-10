@@ -27,7 +27,14 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "hour",
+    "input": 0.39,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [
     "streaming"
   ],
