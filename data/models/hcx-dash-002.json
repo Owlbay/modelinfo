@@ -1,7 +1,7 @@
 {
   "id": "hcx-dash-002",
   "object": "model",
-  "created": null,
+  "created": 1744848000,
   "owned_by": "naver",
   "name": "HyperCLOVA X HCX-DASH-002",
   "api": {
@@ -33,7 +33,7 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-04-17",
     "knowledge_cutoff": null,
     "description": "Lightweight, fast model suited to relatively simple tasks.",
     "docs": "https://guide.ncloud-docs.com/docs/clovastudio-model",
