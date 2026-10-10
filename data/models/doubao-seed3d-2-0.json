@@ -26,7 +26,14 @@
     "supported": false,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "CNY",
+    "unit": "request",
+    "input": null,
+    "output": 2.4,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
@@ -53,6 +60,11 @@
     {
       "title": "查询 3D 生成任务列表 | 火山方舟",
       "url": "https://docs.volcengine.com/docs/82379/1860235?lang=zh",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "模型价格 | 火山方舟",
+      "url": "https://www.volcengine.com/docs/82379/1099320",
       "retrieved_at": "2026-10-11"
     }
   ],

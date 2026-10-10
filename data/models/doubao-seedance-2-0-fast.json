@@ -28,7 +28,14 @@
     "supported": false,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "CNY",
+    "unit": "1M_tokens",
+    "input": null,
+    "output": 22,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
@@ -36,7 +43,7 @@
     "knowledge_cutoff": null,
     "description": "Faster Seedance 2.0 video generation at 480p and 720p.",
     "docs": "https://www.volcengine.com/docs/82379/1330310",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [
     "doubao-seedance-2-0-fast-260128"
@@ -50,7 +57,7 @@
     {
       "title": "模型价格 | 火山方舟",
       "url": "https://www.volcengine.com/docs/82379/1099320",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
