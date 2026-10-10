@@ -1,7 +1,7 @@
 {
   "id": "ling-3.0-flash-vl",
   "object": "model",
-  "created": null,
+  "created": 1788480000,
   "owned_by": "ant",
   "name": "Ling-3.0-flash-VL",
   "api": {
@@ -42,7 +42,7 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-09-04",
     "knowledge_cutoff": null,
     "description": "First native multimodal Ling model, with visual feedback for frontend code generation and GUI automation.",
     "docs": "https://developer.ant-ling.com/en/docs/models/ling",
@@ -65,6 +65,11 @@
     {
       "title": "OpenAI Compatible | Ant Ling API Reference",
       "url": "https://developer.ant-ling.com/en/docs/api-reference/openai",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Changelog | Ling Developer Docs",
+      "url": "https://developer.ant-ling.com/en/docs/getting-started/changelog/",
       "retrieved_at": "2026-10-11"
     }
   ],
