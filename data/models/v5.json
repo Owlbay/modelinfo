@@ -1,0 +1,64 @@
+{
+  "id": "v5",
+  "object": "model",
+  "created": null,
+  "owned_by": "pixverse",
+  "name": "PixVerse V5",
+  "api": {
+    "types": [
+      "video"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "video"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Legacy PixVerse video model; 5 or 8s clips.",
+    "docs": "https://docs.platform.pixverse.ai/text-to-video-generation-13016634e0",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Text-to-Video generation | PixVerse Platform Docs",
+      "url": "https://docs.platform.pixverse.ai/text-to-video-generation-13016634e0",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model Overview | PixVerse Platform Docs",
+      "url": "https://docs.platform.pixverse.ai/model-overview-2140345m0",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "pixverse",
+      "model": "v5",
+      "base_url": "https://app-api.pixverse.ai/openapi/v2",
+      "endpoints": {
+        "video": "POST /video/text/generate"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
