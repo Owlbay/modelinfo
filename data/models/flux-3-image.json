@@ -1,0 +1,74 @@
+{
+  "id": "flux-3-image",
+  "object": "model",
+  "created": 1790812800,
+  "owned_by": "black-forest-labs",
+  "name": "FLUX 3 Image",
+  "api": {
+    "types": [
+      "images"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "image"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": "2026-10-01",
+    "knowledge_cutoff": null,
+    "description": "FLUX 3 image generation and editing from one endpoint, with bounding-box layout control, up to ten references and up to 4K output.",
+    "docs": "https://docs.bfl.ml/flux_3/flux3_image_overview",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "FLUX 3 Image | Black Forest Labs Docs",
+      "url": "https://docs.bfl.ml/flux_3/flux3_image_overview",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Release Notes | Black Forest Labs Docs",
+      "url": "https://docs.bfl.ml/release-notes",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Black Forest Labs Docs",
+      "url": "https://docs.bfl.ml/quick_start/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "FLUX API OpenAPI specification",
+      "url": "https://api.bfl.ai/openapi.json",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "black-forest-labs",
+      "model": "flux-3-image",
+      "base_url": "https://api.bfl.ai",
+      "endpoints": {
+        "images": "POST /v1/flux-3-image"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

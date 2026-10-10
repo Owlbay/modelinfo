@@ -1,0 +1,69 @@
+{
+  "id": "flux-pro-1.1",
+  "object": "model",
+  "created": null,
+  "owned_by": "black-forest-labs",
+  "name": "FLUX1.1 [pro]",
+  "api": {
+    "types": [
+      "images"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "image"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Fast and reliable text-to-image model with strong prompt adherence.",
+    "docs": "https://docs.bfl.ml/flux_models/flux_1_1_pro",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "FLUX1.1 [pro] Image Generation | Black Forest Labs Docs",
+      "url": "https://docs.bfl.ml/flux_models/flux_1_1_pro",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Black Forest Labs Docs",
+      "url": "https://docs.bfl.ml/quick_start/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "FLUX API OpenAPI specification",
+      "url": "https://api.bfl.ai/openapi.json",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "black-forest-labs",
+      "model": "flux-pro-1.1",
+      "base_url": "https://api.bfl.ai",
+      "endpoints": {
+        "images": "POST /v1/flux-pro-1.1"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
