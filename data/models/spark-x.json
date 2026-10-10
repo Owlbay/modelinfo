@@ -26,7 +26,14 @@
     "supported": true,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "CNY",
+    "unit": "1M_tokens",
+    "input": 3,
+    "output": 3,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [
     "tools",
     "streaming"
@@ -37,7 +44,7 @@
     "knowledge_cutoff": null,
     "description": "iFlytek Spark X2 deep reasoning model with function calling and web search.",
     "docs": "https://www.xfyun.cn/doc/spark/X1http.html",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -50,6 +57,11 @@
       "title": "Astron Token Plan 使用文档 | 讯飞星辰 MaaS",
       "url": "https://www.xfyun.cn/doc/spark/TokenPlan.html",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "讯飞星火大模型API | 科大讯飞",
+      "url": "https://xinghuo.xfyun.cn/sparkapi",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
