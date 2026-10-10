@@ -1,7 +1,7 @@
 {
   "id": "ray-3.2",
   "object": "model",
-  "created": null,
+  "created": 1780963200,
   "owned_by": "luma",
   "name": "Ray 3.2",
   "api": {
@@ -28,11 +28,18 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "request",
+    "input": null,
+    "output": 0.15,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-06-09",
     "knowledge_cutoff": null,
     "description": "Luma video model for text-to-video, image-to-video, video editing and aspect-ratio reframing, at up to 1080p.",
     "docs": "https://docs.agents.lumalabs.ai/guides/model",
@@ -58,6 +65,11 @@
     {
       "title": "Quickstart | Luma Agents API Docs",
       "url": "https://docs.agents.lumalabs.ai/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Luma Introduces Ray3.2 Model and API",
+      "url": "https://lumalabs.ai/news/introducing-ray-3-2",
       "retrieved_at": "2026-10-11"
     }
   ],
