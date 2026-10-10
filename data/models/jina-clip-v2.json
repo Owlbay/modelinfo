@@ -1,0 +1,63 @@
+{
+  "id": "jina-clip-v2",
+  "object": "model",
+  "created": 1730764800,
+  "owned_by": "jina",
+  "name": "Jina CLIP v2",
+  "api": {
+    "types": [
+      "embeddings"
+    ]
+  },
+  "limits": {
+    "context": 8192,
+    "input": 8192,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": "2024-11-05",
+    "knowledge_cutoff": null,
+    "description": "Multilingual multimodal embedding model that maps text and images into a shared vector space.",
+    "docs": "https://jina.ai/models/jina-clip-v2",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "jina-clip-v2 | Jina AI",
+      "url": "https://jina.ai/models/jina-clip-v2",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Jina AI API docs",
+      "url": "https://docs.jina.ai/",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "jina",
+      "model": "jina-clip-v2",
+      "base_url": "https://api.jina.ai",
+      "endpoints": {
+        "embeddings": "POST /v1/embeddings"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

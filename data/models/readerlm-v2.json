@@ -1,0 +1,68 @@
+{
+  "id": "readerlm-v2",
+  "object": "model",
+  "created": 1736985600,
+  "owned_by": "jina",
+  "name": "ReaderLM-v2",
+  "api": {
+    "types": [
+      "ocr"
+    ]
+  },
+  "limits": {
+    "context": 512768,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": "2025-01-16",
+    "knowledge_cutoff": null,
+    "description": "Small language model (1.54B parameters) that converts HTML into clean Markdown or JSON, used by the Reader API.",
+    "docs": "https://jina.ai/models/ReaderLM-v2",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "ReaderLM-v2"
+  ],
+  "sources": [
+    {
+      "title": "ReaderLM-v2 | Jina AI",
+      "url": "https://jina.ai/models/ReaderLM-v2",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Jina AI API docs",
+      "url": "https://docs.jina.ai/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "ReaderLM-v2 config | Hugging Face (jinaai)",
+      "url": "https://huggingface.co/jinaai/ReaderLM-v2/blob/main/config.json",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "jina",
+      "model": "readerlm-v2",
+      "base_url": "https://r.jina.ai",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

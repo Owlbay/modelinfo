@@ -1,0 +1,68 @@
+{
+  "id": "jina-reranker-v3.5",
+  "object": "model",
+  "created": 1785110400,
+  "owned_by": "jina",
+  "name": "Jina Reranker v3.5",
+  "api": {
+    "types": [
+      "rerank"
+    ]
+  },
+  "limits": {
+    "context": 131072,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "score"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": "2026-07-27",
+    "knowledge_cutoff": null,
+    "description": "Listwise multilingual reranker (0.6B parameters), drop-in upgrade to jina-reranker-v3.",
+    "docs": "https://jina.ai/models/jina-reranker-v3.5",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "jina-reranker-v3.5 | Jina AI",
+      "url": "https://jina.ai/models/jina-reranker-v3.5",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Jina AI API docs",
+      "url": "https://docs.jina.ai/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "jina-reranker-v3.5 config | Hugging Face (jinaai)",
+      "url": "https://huggingface.co/jinaai/jina-reranker-v3.5/blob/main/config.json",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "jina",
+      "model": "jina-reranker-v3.5",
+      "base_url": "https://api.jina.ai",
+      "endpoints": {
+        "rerank": "POST /v1/rerank"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

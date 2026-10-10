@@ -1,0 +1,68 @@
+{
+  "id": "jina-embeddings-v5-text-small",
+  "object": "model",
+  "created": 1771372800,
+  "owned_by": "jina",
+  "name": "Jina Embeddings v5 Text Small",
+  "api": {
+    "types": [
+      "embeddings"
+    ]
+  },
+  "limits": {
+    "context": 32768,
+    "input": 32768,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": "2026-02-18",
+    "knowledge_cutoff": null,
+    "description": "Multilingual text embedding model (677M parameters) with task-specific adapters.",
+    "docs": "https://jina.ai/models/jina-embeddings-v5-text-small",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "jina-embeddings-v5-text-small | Jina AI",
+      "url": "https://jina.ai/models/jina-embeddings-v5-text-small",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Jina AI API docs",
+      "url": "https://docs.jina.ai/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "jina-embeddings-v5-text-small config | Hugging Face (jinaai)",
+      "url": "https://huggingface.co/jinaai/jina-embeddings-v5-text-small/blob/main/config.json",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "jina",
+      "model": "jina-embeddings-v5-text-small",
+      "base_url": "https://api.jina.ai",
+      "endpoints": {
+        "embeddings": "POST /v1/embeddings"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "jina-ocr-v1",
+  "object": "model",
+  "created": 1789344000,
+  "owned_by": "jina",
+  "name": "Jina OCR v1",
+  "api": {
+    "types": [
+      "ocr"
+    ]
+  },
+  "limits": {
+    "context": 32768,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "image",
+      "document"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": "2026-09-14",
+    "knowledge_cutoff": null,
+    "description": "Page-to-Markdown document parser handling text, formulas, tables and reading order; used by the Reader API.",
+    "docs": "https://jina.ai/models/jina-ocr-v1",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "jina-ocr-v1 | Jina AI",
+      "url": "https://jina.ai/models/jina-ocr-v1",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Jina AI API docs",
+      "url": "https://docs.jina.ai/",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "jina",
+      "model": "jina-ocr-v1",
+      "base_url": "https://r.jina.ai",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "jina-code-embeddings-1.5b",
+  "object": "model",
+  "created": 1756684800,
+  "owned_by": "jina",
+  "name": "Jina Code Embeddings 1.5B",
+  "api": {
+    "types": [
+      "embeddings"
+    ]
+  },
+  "limits": {
+    "context": 32768,
+    "input": 32768,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": "2025-09-01",
+    "knowledge_cutoff": null,
+    "description": "Code embedding model (1.5B parameters) for code retrieval from code and natural-language queries.",
+    "docs": "https://jina.ai/models/jina-code-embeddings-1.5b",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "jina-code-embeddings-1.5b | Jina AI",
+      "url": "https://jina.ai/models/jina-code-embeddings-1.5b",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Jina AI API docs",
+      "url": "https://docs.jina.ai/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "jina-code-embeddings-1.5b config | Hugging Face (jinaai)",
+      "url": "https://huggingface.co/jinaai/jina-code-embeddings-1.5b/blob/main/config.json",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "jina",
+      "model": "jina-code-embeddings-1.5b",
+      "base_url": "https://api.jina.ai",
+      "endpoints": {
+        "embeddings": "POST /v1/embeddings"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

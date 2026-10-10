@@ -1,0 +1,63 @@
+{
+  "id": "jina-embeddings-v3",
+  "object": "model",
+  "created": 1726617600,
+  "owned_by": "jina",
+  "name": "Jina Embeddings v3",
+  "api": {
+    "types": [
+      "embeddings"
+    ]
+  },
+  "limits": {
+    "context": 8192,
+    "input": 8192,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "deprecated",
+    "release_date": "2024-09-18",
+    "knowledge_cutoff": null,
+    "description": "Multilingual text embedding model (570M parameters) with task-specific LoRA adapters; the model page marks it as deprecated.",
+    "docs": "https://jina.ai/models/jina-embeddings-v3",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "jina-embeddings-v3 | Jina AI",
+      "url": "https://jina.ai/models/jina-embeddings-v3",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Jina AI API docs",
+      "url": "https://docs.jina.ai/",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "jina",
+      "model": "jina-embeddings-v3",
+      "base_url": "https://api.jina.ai",
+      "endpoints": {
+        "embeddings": "POST /v1/embeddings"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
