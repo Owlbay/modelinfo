@@ -1,7 +1,7 @@
 {
   "id": "kling-v3",
   "object": "model",
-  "created": null,
+  "created": 1771977600,
   "owned_by": "kuaishou",
   "name": "Kling 3.0",
   "api": {
@@ -34,7 +34,7 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-02-25",
     "knowledge_cutoff": null,
     "description": "Video model with enhanced native audio, element consistency and multi-shot storytelling (3-15s, 720P/1080P/4K); the same ID serves Kling Image 3.0 (1K/2K).",
     "docs": "https://kling.ai/document-api/guides/capability-map/video",
@@ -50,6 +50,21 @@
     {
       "title": "Image Capability Map | Kling AI API Documentation",
       "url": "https://kling.ai/document-api/guides/capability-map/image",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Kling AI API Updates",
+      "url": "https://kling.ai/document-api/updates/api",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Kling API Pricing - Video",
+      "url": "https://kling.ai/document-api/pricing/base/video",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Kling API Pricing - Image",
+      "url": "https://kling.ai/document-api/pricing/base/image",
       "retrieved_at": "2026-10-11"
     }
   ],

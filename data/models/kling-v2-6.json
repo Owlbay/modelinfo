@@ -1,7 +1,7 @@
 {
   "id": "kling-v2-6",
   "object": "model",
-  "created": null,
+  "created": 1765756800,
   "owned_by": "kuaishou",
   "name": "Kling 2.6",
   "api": {
@@ -28,11 +28,18 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "second",
+    "input": null,
+    "output": 0.042,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-12-15",
     "knowledge_cutoff": null,
     "description": "Video model with native audio, 3-10s clips at 720P/1080P.",
     "docs": "https://kling.ai/document-api/guides/capability-map/video",
@@ -43,6 +50,16 @@
     {
       "title": "Video Capability Map | Kling AI API Documentation",
       "url": "https://kling.ai/document-api/guides/capability-map/video",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Kling AI API Updates",
+      "url": "https://kling.ai/document-api/updates/api",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Kling API Pricing - Video",
+      "url": "https://kling.ai/document-api/pricing/base/video",
       "retrieved_at": "2026-10-11"
     }
   ],
