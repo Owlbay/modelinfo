@@ -1,0 +1,74 @@
+{
+  "id": "parse-v5.0",
+  "object": "model",
+  "created": null,
+  "owned_by": "cohere",
+  "name": "Parse v5.0",
+  "api": {
+    "types": [
+      "ocr"
+    ]
+  },
+  "limits": {
+    "context": 8192,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "image",
+      "document"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Vision language model that converts enterprise documents such as forms and PDFs into structured Markdown, tables and bounding boxes.",
+    "docs": "https://docs.cohere.com/docs/parse",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Parse (Details and Application) | Cohere Docs",
+      "url": "https://docs.cohere.com/docs/parse",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "An Overview of Cohere's Models | Cohere Docs",
+      "url": "https://docs.cohere.com/docs/models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Parse | Cohere API Reference",
+      "url": "https://docs.cohere.com/v2/reference/parse",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Release Notes | Cohere Docs",
+      "url": "https://docs.cohere.com/changelog",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "cohere",
+      "model": "parse-v5.0",
+      "base_url": "https://api.cohere.com",
+      "endpoints": {
+        "ocr": "POST /v2/parse"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
