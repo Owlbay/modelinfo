@@ -1,7 +1,7 @@
 {
   "id": "qwen-audio-3.0-tts-plus",
   "object": "model",
-  "created": null,
+  "created": 1783987200,
   "owned_by": "alibaba",
   "name": "Qwen-Audio-3.0-TTS-Plus",
   "api": {
@@ -26,15 +26,22 @@
     "supported": false,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_characters",
+    "input": 20,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-07-14",
     "knowledge_cutoff": null,
     "description": "High-performance speech synthesis model for audiobooks, dubbing and premium speech services.",
     "docs": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen-audio-3-0-tts-plus",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -46,7 +53,12 @@
     {
       "title": "Model Studio model pricing | Alibaba Cloud",
       "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

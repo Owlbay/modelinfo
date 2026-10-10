@@ -1,7 +1,7 @@
 {
   "id": "wan2.2-t2i-flash",
   "object": "model",
-  "created": null,
+  "created": 1753660800,
   "owned_by": "alibaba",
   "name": "Wan2.2-T2I-Flash",
   "api": {
@@ -26,22 +26,29 @@
     "supported": false,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "image",
+    "input": null,
+    "output": 0.025,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-07-28",
     "knowledge_cutoff": null,
     "description": "Faster Wan2.2 text-to-image, up to 2 megapixels, with prompt enhancement.",
     "docs": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
     {
       "title": "Model Studio model pricing | Alibaba Cloud",
       "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Rate limits | Alibaba Cloud Model Studio",
@@ -52,6 +59,11 @@
       "title": "Model Studio model pricing | Alibaba Cloud",
       "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

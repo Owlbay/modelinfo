@@ -1,7 +1,7 @@
 {
   "id": "text-embedding-v3",
   "object": "model",
-  "created": null,
+  "created": 1720742400,
   "owned_by": "alibaba",
   "name": "Text Embedding V3",
   "api": {
@@ -37,11 +37,11 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2024-07-12",
     "knowledge_cutoff": null,
     "description": "Multilingual text embedding model, 512-1024 dimensions, kept for migrating existing indexes.",
     "docs": "https://www.alibabacloud.com/help/en/model-studio/embedding-rerank-model",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -59,6 +59,11 @@
       "title": "Model Studio model pricing | Alibaba Cloud",
       "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

@@ -1,7 +1,7 @@
 {
   "id": "qvq-plus",
   "object": "model",
-  "created": null,
+  "created": 1748908800,
   "owned_by": "alibaba",
   "name": "QVQ-Plus",
   "api": {
@@ -34,11 +34,11 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-06-03",
     "knowledge_cutoff": null,
     "description": "Plus-tier visual reasoning model for math, programming and visual analysis.",
     "docs": "https://www.alibabacloud.com/help/en/model-studio/vision-model",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -56,6 +56,11 @@
       "title": "Model Studio model pricing | Alibaba Cloud",
       "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

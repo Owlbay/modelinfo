@@ -1,7 +1,7 @@
 {
   "id": "wan2.6-image",
   "object": "model",
-  "created": null,
+  "created": 1765756800,
   "owned_by": "alibaba",
   "name": "Wan2.6-Image",
   "api": {
@@ -28,11 +28,18 @@
     "supported": false,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "image",
+    "input": null,
+    "output": 0.03,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-12-15",
     "knowledge_cutoff": null,
     "description": "Wan2.6 model that edits images and generates interleaved text-image output, with multi-image input.",
     "docs": "https://www.alibabacloud.com/help/en/model-studio/wan-image-generation-api-reference",
@@ -48,6 +55,11 @@
     {
       "title": "Model Studio model pricing | Alibaba Cloud",
       "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
       "retrieved_at": "2026-10-11"
     }
   ],

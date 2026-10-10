@@ -1,7 +1,7 @@
 {
   "id": "qwen3.7-plus",
   "object": "model",
-  "created": null,
+  "created": 1780272000,
   "owned_by": "alibaba",
   "name": "Qwen3.7-Plus",
   "api": {
@@ -44,11 +44,11 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-06-01",
     "knowledge_cutoff": null,
     "description": "Cost-effective Plus model with robust text capabilities and multimodal agent abilities such as GUI interaction.",
     "docs": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-7-plus",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [
     "qwen3.7-plus-2026-05-26"
@@ -73,6 +73,11 @@
       "title": "Model Studio model pricing | Alibaba Cloud",
       "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

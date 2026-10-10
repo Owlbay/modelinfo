@@ -1,7 +1,7 @@
 {
   "id": "text-embedding-v4",
   "object": "model",
-  "created": null,
+  "created": 1749081600,
   "owned_by": "alibaba",
   "name": "Text Embedding V4",
   "api": {
@@ -37,11 +37,11 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-06-05",
     "knowledge_cutoff": null,
     "description": "Multilingual text vector model from Tongyi Lab based on Qwen3, with 64-2048 selectable dimensions.",
     "docs": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/text-embedding-v4",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -59,6 +59,11 @@
       "title": "Model Studio model pricing | Alibaba Cloud",
       "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

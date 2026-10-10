@@ -1,7 +1,7 @@
 {
   "id": "qwen3.7-text-embedding",
   "object": "model",
-  "created": null,
+  "created": 1785456000,
   "owned_by": "alibaba",
   "name": "Qwen3.7-Text-Embedding",
   "api": {
@@ -30,11 +30,11 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-07-31",
     "knowledge_cutoff": null,
     "description": "Multilingual text embedding on Qwen3.7 with output dimensions from 256 to 2560.",
     "docs": "https://www.alibabacloud.com/help/en/model-studio/embedding-rerank-model",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -52,6 +52,11 @@
       "title": "Model Studio model pricing | Alibaba Cloud",
       "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

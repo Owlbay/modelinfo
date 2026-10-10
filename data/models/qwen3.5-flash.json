@@ -1,7 +1,7 @@
 {
   "id": "qwen3.5-flash",
   "object": "model",
-  "created": null,
+  "created": 1771804800,
   "owned_by": "alibaba",
   "name": "Qwen3.5-Flash",
   "api": {
@@ -44,11 +44,11 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-02-23",
     "knowledge_cutoff": null,
     "description": "Native vision-language Flash model with hybrid linear attention and sparse MoE for fast responses.",
     "docs": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-5-flash",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [
     "qwen3.5-flash-2026-02-23"
@@ -73,6 +73,11 @@
       "title": "Model Studio model pricing | Alibaba Cloud",
       "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

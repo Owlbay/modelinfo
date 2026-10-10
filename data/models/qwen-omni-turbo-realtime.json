@@ -1,7 +1,7 @@
 {
   "id": "qwen-omni-turbo-realtime",
   "object": "model",
-  "created": null,
+  "created": 1746662400,
   "owned_by": "alibaba",
   "name": "Qwen-Omni-Turbo-Realtime",
   "api": {
@@ -36,11 +36,11 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-05-08",
     "knowledge_cutoff": null,
     "description": "Legacy real-time omni-modal model for text and audio; no longer updated.",
     "docs": "https://www.alibabacloud.com/help/en/model-studio/omni",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [
     "qwen-omni-turbo-realtime-latest",
@@ -55,7 +55,7 @@
     {
       "title": "Model Studio model pricing | Alibaba Cloud",
       "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Rate limits | Alibaba Cloud Model Studio",
@@ -66,6 +66,11 @@
       "title": "Model Studio model pricing | Alibaba Cloud",
       "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

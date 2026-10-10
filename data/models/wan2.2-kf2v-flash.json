@@ -1,7 +1,7 @@
 {
   "id": "wan2.2-kf2v-flash",
   "object": "model",
-  "created": null,
+  "created": 1757635200,
   "owned_by": "alibaba",
   "name": "Wan2.2-KF2V-Flash",
   "api": {
@@ -27,11 +27,18 @@
     "supported": false,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "second",
+    "input": null,
+    "output": 0.015,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-09-12",
     "knowledge_cutoff": null,
     "description": "Wan2.2 model that generates a smoothly transitioning video from a first frame, a last frame and a text prompt.",
     "docs": "https://www.alibabacloud.com/help/en/model-studio/image-to-video-by-first-and-last-frame-api-reference",
@@ -47,6 +54,11 @@
     {
       "title": "Model Studio model pricing | Alibaba Cloud",
       "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
       "retrieved_at": "2026-10-11"
     }
   ],

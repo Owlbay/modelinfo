@@ -1,7 +1,7 @@
 {
   "id": "qwen3.8-flash",
   "object": "model",
-  "created": null,
+  "created": 1787702400,
   "owned_by": "alibaba",
   "name": "Qwen3.8-Flash",
   "api": {
@@ -44,11 +44,11 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-08-26",
     "knowledge_cutoff": null,
     "description": "Multimodal Qwen model combining reasoning, generation and speed for coding assistance, agentic workflows and visual understanding.",
     "docs": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-8-flash",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -71,6 +71,11 @@
       "title": "Model Studio model pricing | Alibaba Cloud",
       "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

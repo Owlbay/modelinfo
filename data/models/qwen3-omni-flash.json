@@ -41,7 +41,7 @@
     "knowledge_cutoff": null,
     "description": "Thinker-Talker MoE omni-modal model with thinking mode and speech output.",
     "docs": "https://www.alibabacloud.com/help/en/model-studio/omni",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [
     "qwen3-omni-flash-2025-12-01",
@@ -56,7 +56,7 @@
     {
       "title": "Model Studio model pricing | Alibaba Cloud",
       "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Rate limits | Alibaba Cloud Model Studio",
@@ -67,6 +67,11 @@
       "title": "Model Studio model pricing | Alibaba Cloud",
       "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

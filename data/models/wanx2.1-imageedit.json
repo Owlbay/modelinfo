@@ -1,7 +1,7 @@
 {
   "id": "wanx2.1-imageedit",
   "object": "model",
-  "created": null,
+  "created": 1742860800,
   "owned_by": "alibaba",
   "name": "Wanx2.1-ImageEdit",
   "api": {
@@ -27,11 +27,18 @@
     "supported": false,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "CNY",
+    "unit": "image",
+    "input": null,
+    "output": 0.14,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-03-25",
     "knowledge_cutoff": null,
     "description": "Wan general image editing model for outpainting, watermark removal, style transfer, instruction-based editing, inpainting and restoration.",
     "docs": "https://help.aliyun.com/zh/model-studio/wanx-image-edit",
@@ -47,6 +54,11 @@
     {
       "title": "模型调用计费 | 大模型服务平台百炼",
       "url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
       "retrieved_at": "2026-10-11"
     }
   ],

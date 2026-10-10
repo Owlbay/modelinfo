@@ -1,7 +1,7 @@
 {
   "id": "qwen3-coder-next",
   "object": "model",
-  "created": null,
+  "created": 1771459200,
   "owned_by": "alibaba",
   "name": "Qwen3-Coder-Next",
   "api": {
@@ -39,11 +39,11 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-02-19",
     "knowledge_cutoff": null,
     "description": "Qwen3 coding model with performance close to Coder-Plus, optimized for repository-level understanding.",
     "docs": "https://www.alibabacloud.com/help/en/model-studio/text-generation-model",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -56,6 +56,11 @@
       "title": "Model Studio model pricing | Alibaba Cloud",
       "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

@@ -1,7 +1,7 @@
 {
   "id": "wan2.2-animate-mix",
   "object": "model",
-  "created": null,
+  "created": 1758240000,
   "owned_by": "alibaba",
   "name": "Wan2.2-Animate-Mix",
   "api": {
@@ -27,11 +27,18 @@
     "supported": false,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "second",
+    "input": null,
+    "output": 0.18,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-09-19",
     "knowledge_cutoff": null,
     "description": "Replaces the main character in a video with a character from an image while preserving the original scene, lighting and tone.",
     "docs": "https://www.alibabacloud.com/help/en/model-studio/wan-animate-mix-api",
@@ -47,6 +54,11 @@
     {
       "title": "Model Studio model pricing | Alibaba Cloud",
       "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
       "retrieved_at": "2026-10-11"
     }
   ],

@@ -1,7 +1,7 @@
 {
   "id": "qwen3.6-35b-a3b",
   "object": "model",
-  "created": null,
+  "created": 1776297600,
   "owned_by": "alibaba",
   "name": "Qwen3.6-35B-A3B",
   "api": {
@@ -43,11 +43,11 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-04-16",
     "knowledge_cutoff": null,
     "description": "Open-weight vision-language model improving agentic coding, math and code reasoning over Qwen3.5-35B-A3B.",
     "docs": "https://www.alibabacloud.com/help/en/model-studio/text-generation-model",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -65,6 +65,11 @@
       "title": "Model Studio model pricing | Alibaba Cloud",
       "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
