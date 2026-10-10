@@ -1,7 +1,7 @@
 {
   "id": "lucid-origin",
   "object": "model",
-  "created": null,
+  "created": 1754352000,
   "owned_by": "leonardo",
   "name": "Lucid Origin",
   "api": {
@@ -31,7 +31,7 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-08-05",
     "knowledge_cutoff": null,
     "description": "Leonardo.Ai image generation model, available through the Leonardo.Ai REST API v2 with style and content image guidance.",
     "docs": "https://docs.leonardo.ai/docs/lucid-origin",
@@ -47,6 +47,11 @@
     {
       "title": "Leonardo.Ai API documentation index",
       "url": "https://docs.leonardo.ai/llms.txt",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Introducing Lucid Origin (Leonardo.Ai news)",
+      "url": "https://leonardo.ai/news/lucid-origin-ai-image-model",
       "retrieved_at": "2026-10-11"
     }
   ],
