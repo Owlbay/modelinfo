@@ -6,7 +6,7 @@
   "name": "Qwen-Long",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -67,7 +67,7 @@
       "model": "qwen-long",
       "base_url": "https://{WorkspaceId}.cn-beijing.maas.aliyuncs.com",
       "endpoints": {
-        "messages": "POST /compatible-mode/v1/chat/completions"
+        "chat": "POST /compatible-mode/v1/chat/completions"
       },
       "reasoning_param": null
     }

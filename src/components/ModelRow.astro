@@ -1,11 +1,12 @@
 ---
 /**
  * 模型列表行。默认显示 6 列（名称 · 模型厂商 · 上下文 · 输出 · 价格 · 发布）；
- * 外层 .models--full 时展开为全部字段。列定义与表头 ModelsHead 一致，骨架见 .list-row。
+ * 外层 .models--full 时展开为全部字段，列宽由 ModelsView 的表格网格统一决定。列定义与表头 ModelsHead 一致，骨架见 .list-row。
  */
 import { formatPrice, formatTokens, modelKind, ownerName, type Model } from '../lib/models';
 import { dict, localePath, type Lang } from '../i18n';
 import VendorLogo from './VendorLogo.astro';
+import Modalities from './Modalities.astro';
 
 interface Props {
   lang: Lang;
@@ -33,8 +34,8 @@ const cache = p && (p.cache_read !== null || p.cache_write !== null) ? `${format
   <span class="mrow__num">{formatTokens(m.limits.context)}</span>
   <span class="mrow__num mrow__x">{formatTokens(m.limits.input)}</span>
   <span class="mrow__num mrow__out">{formatTokens(m.limits.output)}</span>
-  <span class="mrow__x">{list(m.modalities.input)}</span>
-  <span class="mrow__x">{list(m.modalities.output)}</span>
+  <span class="mrow__x"><Modalities lang={lang} items={m.modalities.input} /></span>
+  <span class="mrow__x"><Modalities lang={lang} items={m.modalities.output} /></span>
   <span class="mrow__x">{reasoning}</span>
   <span class="mrow__num mrow__price">
     {p ? `${formatPrice(p.input, p.currency)} / ${formatPrice(p.output, p.currency)}${unit}` : '—'}
@@ -87,18 +88,16 @@ const cache = p && (p.cache_read !== null || p.cache_write !== null) ? `${format
   .mrow__date { color: var(--ink-3); text-align: right; white-space: nowrap; }
   .mrow__price { color: var(--ink-2); }
 
-  /* 展开：全部字段，列表区横向滚动，首列固定 */
+  /* 展开：全部字段。行作为表格的 subgrid，列宽按全表内容统一，单元格不换行，行高一致 */
   :global(.models--full) .mrow {
-    grid-template-columns:
-      minmax(16rem, 2.4fr) minmax(9rem, 1.2fr) minmax(5rem, 0.6fr) minmax(8rem, 1fr)
-      minmax(5rem, 0.6fr) minmax(5rem, 0.6fr) minmax(5rem, 0.6fr) minmax(9rem, 1.1fr)
-      minmax(6rem, 0.8fr) minmax(9rem, 1.1fr) minmax(11rem, 1.3fr) minmax(8rem, 1fr)
-      minmax(12rem, 1.5fr) minmax(5rem, 0.6fr) minmax(7rem, 0.8fr) minmax(7rem, 0.8fr);
-    column-gap: var(--sp-4);
-    align-items: start;
+    grid-column: 1 / -1;
+    grid-template-columns: subgrid;
+    align-items: center;
+    column-gap: normal;
   }
   :global(.models--full) .mrow__x { display: block; }
-  :global(.models--full) .mrow > span:not(.mrow__num):not(.mrow__date) { color: var(--ink-2); overflow-wrap: anywhere; }
+  :global(.models--full) .mrow > span { white-space: nowrap; }
+  :global(.models--full) .mrow > span:not(.mrow__num):not(.mrow__date) { color: var(--ink-2); }
   :global(.models--full) .mrow .mrow__main {
     position: sticky;
     left: 0;
@@ -108,7 +107,8 @@ const cache = p && (p.cache_read !== null || p.cache_write !== null) ? `${format
     background: var(--bg);
   }
   :global(.models--full) .mrow:hover .mrow__main { background: var(--bg); }
-  :global(.models--full) .mrow .mrow__name { color: var(--ink); }
+  :global(.models--full) .mrow .mrow__name { max-width: 100%; overflow: hidden; text-overflow: ellipsis; color: var(--ink); }
+  :global(.models--full) .mrow .mrow__id { max-width: 100%; }
 
   /* 平板（默认视图）：去掉输出与发布日期，ID 让位给名称 */
   @media (max-width: 1024px) {

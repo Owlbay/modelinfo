@@ -6,7 +6,7 @@
   "name": "GLM-4-32B-0414-128K",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -82,7 +82,7 @@
       "model": "glm-4-32b-0414-128k",
       "base_url": "https://api.z.ai/api/paas/v4",
       "endpoints": {
-        "messages": "POST /chat/completions"
+        "chat": "POST /chat/completions"
       },
       "reasoning_param": null
     }

@@ -6,7 +6,7 @@
   "name": "Typhoon v2.1 12B Instruct",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -72,7 +72,7 @@
       "model": "typhoon-v2.1-12b-instruct",
       "base_url": "https://api.opentyphoon.ai/v1",
       "endpoints": {
-        "messages": "POST /chat/completions"
+        "chat": "POST /chat/completions"
       },
       "reasoning_param": null
     }

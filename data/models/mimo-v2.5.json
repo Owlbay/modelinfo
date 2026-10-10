@@ -6,7 +6,7 @@
   "name": "MiMo-V2.5",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -78,7 +78,7 @@
       "model": "mimo-v2.5",
       "base_url": "https://api.xiaomimimo.com/v1",
       "endpoints": {
-        "messages": "POST /chat/completions"
+        "chat": "POST /chat/completions"
       },
       "reasoning_param": "thinking"
     }

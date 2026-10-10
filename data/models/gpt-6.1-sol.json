@@ -6,7 +6,7 @@
   "name": "GPT-6.1 Sol",
   "api": {
     "types": [
-      "messages",
+      "chat",
       "responses",
       "batch"
     ]
@@ -87,7 +87,7 @@
       "model": "gpt-6.1-sol",
       "base_url": "https://api.openai.com",
       "endpoints": {
-        "messages": "POST /v1/chat/completions",
+        "chat": "POST /v1/chat/completions",
         "responses": "POST /v1/responses",
         "batch": "POST /v1/batches"
       },

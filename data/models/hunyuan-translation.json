@@ -6,7 +6,7 @@
   "name": "Hunyuan-Translation",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -74,7 +74,7 @@
       "model": "hunyuan-translation",
       "base_url": "https://api.hunyuan.cloud.tencent.com/v1",
       "endpoints": {
-        "messages": "POST /chat/completions"
+        "chat": "POST /chat/completions"
       },
       "reasoning_param": null
     }

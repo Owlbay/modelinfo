@@ -6,7 +6,7 @@
   "name": "Amazon Nova Micro",
   "api": {
     "types": [
-      "messages",
+      "chat",
       "batch"
     ]
   },
@@ -76,7 +76,7 @@
       "model": "amazon.nova-micro-v1:0",
       "base_url": "https://bedrock-runtime.us-east-1.amazonaws.com",
       "endpoints": {
-        "messages": "POST /model/{modelId}/converse"
+        "chat": "POST /model/{modelId}/converse"
       },
       "reasoning_param": null
     }

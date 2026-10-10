@@ -6,7 +6,7 @@
   "name": "InternVL3.5 241B-A28B",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -66,7 +66,7 @@
       "model": "internvl3.5-241b-a28b",
       "base_url": "https://chat.intern-ai.org.cn/api/v1",
       "endpoints": {
-        "messages": "POST /chat/completions"
+        "chat": "POST /chat/completions"
       },
       "reasoning_param": null
     }

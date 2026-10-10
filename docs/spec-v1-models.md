@@ -71,7 +71,7 @@ info         ⑥ 源信息
 | `created` | integer \| null | 发布时间，Unix 秒 |
 | `owned_by` | string | 模型厂商，不是转售商或聚合网关 |
 | `name` | string | 展示名称 |
-| `api.types` | string[] | 接口类型：`messages`、`responses`、`generate`、`batch`、`realtime`、`completions`、`embeddings`、`images`、`video`、`audio`、`3d`、`rerank`、`ocr`、`moderation` |
+| `api.types` | string[] | 接口类型：`chat`、`messages`、`responses`、`generate`、`batch`、`realtime`、`completions`、`embeddings`、`images`、`video`、`audio`、`3d`、`rerank`、`ocr`、`moderation` |
 | `limits.context` | integer \| null | 输入与输出合计的上下文上限（Token） |
 | `limits.input` | integer \| null | 官方单独声明的最大输入 |
 | `limits.output` | integer \| null | 最大输出 |
@@ -87,7 +87,7 @@ info         ⑥ 源信息
 | `info.docs` | string \| null | 官方文档地址 |
 | `info.verified_at` | string \| null | 最近人工核验日期 `YYYY-MM-DD` |
 
-`messages` 指 OpenAI Chat Completions 或 Anthropic Messages，`generate` 指 Google `generateContent`；类型表达用途，不代表请求体互相兼容。
+`chat` 指对话接口：OpenAI Chat Completions 格式（`/chat/completions`），厂商自有的对话格式（如 Cohere `/v2/chat`、Amazon Converse）也归此类，具体路径见 `providers[].endpoints`；`messages` 只指 Anthropic Messages 格式（`/v1/messages`），厂商官方提供 Anthropic 兼容端点时才标注；`generate` 指 Google `generateContent`。
 
 ## 6. 价格
 

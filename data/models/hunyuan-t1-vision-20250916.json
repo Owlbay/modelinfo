@@ -6,7 +6,7 @@
   "name": "HY-Vision-1.5-Thinking",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -73,7 +73,7 @@
       "model": "hunyuan-t1-vision-20250916",
       "base_url": "https://tokenhub.tencentmaas.com/v1",
       "endpoints": {
-        "messages": "POST /chat/completions"
+        "chat": "POST /chat/completions"
       },
       "reasoning_param": null
     }

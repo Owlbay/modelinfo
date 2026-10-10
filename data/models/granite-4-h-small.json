@@ -6,7 +6,7 @@
   "name": "Granite 4 H Small",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -76,7 +76,7 @@
       "model": "ibm/granite-4-h-small",
       "base_url": "https://us-south.ml.cloud.ibm.com",
       "endpoints": {
-        "messages": "POST /ml/v1/text/chat"
+        "chat": "POST /ml/v1/text/chat"
       },
       "reasoning_param": null
     }

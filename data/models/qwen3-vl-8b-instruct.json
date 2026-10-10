@@ -6,7 +6,7 @@
   "name": "Qwen3-VL-8B-Instruct",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -76,7 +76,7 @@
       "model": "qwen3-vl-8b-instruct",
       "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
       "endpoints": {
-        "messages": "POST /compatible-mode/v1/chat/completions"
+        "chat": "POST /compatible-mode/v1/chat/completions"
       },
       "reasoning_param": null
     }

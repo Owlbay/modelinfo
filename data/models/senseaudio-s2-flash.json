@@ -6,7 +6,7 @@
   "name": "SenseAudio-S2-Flash",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -70,7 +70,7 @@
       "model": "senseaudio-s2-flash",
       "base_url": "https://api.senseaudio.cn/v1",
       "endpoints": {
-        "messages": "POST /v1/chat/completions"
+        "chat": "POST /v1/chat/completions"
       },
       "reasoning_param": null
     }

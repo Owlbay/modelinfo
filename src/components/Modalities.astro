@@ -1,0 +1,48 @@
+---
+/**
+ * 输入 / 输出模态：每种模态一个小方框图标，名称作为提示与无障碍文本。
+ */
+import Icon from './Icon.astro';
+import { dict, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+  items: string[];
+}
+const { lang, items } = Astro.props;
+const names = dict(lang).models.modalityNames as Record<string, string>;
+const KNOWN = ['text', 'image', 'video', 'audio', 'document', 'embedding', 'score', '3d'] as const;
+type Known = (typeof KNOWN)[number];
+const isKnown = (v: string): v is Known => (KNOWN as readonly string[]).includes(v);
+---
+
+{
+  items.length ? (
+    <span class="mods">
+      {items.map((v) =>
+        isKnown(v) ? (
+          <span class="mods__item" title={names[v]}>
+            <Icon name={`mod-${v}`} size={12} label={names[v]} />
+          </span>
+        ) : (
+          <span class="mods__item mods__item--text" title={v}>{v}</span>
+        ),
+      )}
+    </span>
+  ) : (
+    '—'
+  )
+}
+
+<style>
+  .mods { display: inline-flex; gap: var(--sp-1); vertical-align: middle; }
+  .mods__item {
+    display: inline-grid;
+    place-items: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--line-strong);
+    color: var(--ink-2);
+  }
+  .mods__item--text { width: auto; padding: 0 var(--sp-1); font-size: var(--fs-mono-sm); }
+</style>

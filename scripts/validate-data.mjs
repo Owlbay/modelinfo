@@ -11,7 +11,7 @@ const DIR = path.join(path.dirname(new URL(import.meta.url).pathname), '..', 'da
 const VENDOR_DIR = path.join(DIR, '..', 'vendors');
 const VENDORS = new Set(fs.readdirSync(VENDOR_DIR).filter((f) => f.endsWith('.json')).map((f) => f.slice(0, -5)));
 const KEYS = ['id', 'object', 'created', 'owned_by', 'name', 'api', 'limits', 'modalities', 'reasoning', 'pricing', 'features', 'info', 'aliases', 'sources', 'providers'];
-const API = ['messages', 'responses', 'completions', 'generate', 'batch', 'realtime', 'embeddings', 'images', 'video', 'audio', '3d', 'rerank', 'ocr', 'moderation'];
+const API = ['chat', 'messages', 'responses', 'completions', 'generate', 'batch', 'realtime', 'embeddings', 'images', 'video', 'audio', '3d', 'rerank', 'ocr', 'moderation'];
 const MOD = ['text', 'image', 'audio', 'video', 'document', 'embedding', 'score', '3d'];
 const FEAT = ['tools', 'structured_output', 'streaming', 'caching', 'batch'];
 const DATE = /^\d{4}-\d{2}-\d{2}$/;

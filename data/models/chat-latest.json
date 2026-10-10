@@ -6,7 +6,7 @@
   "name": "chat-latest",
   "api": {
     "types": [
-      "messages",
+      "chat",
       "responses"
     ]
   },
@@ -79,7 +79,7 @@
       "model": "chat-latest",
       "base_url": "https://api.openai.com",
       "endpoints": {
-        "messages": "POST /v1/chat/completions",
+        "chat": "POST /v1/chat/completions",
         "responses": "POST /v1/responses"
       },
       "reasoning_param": null

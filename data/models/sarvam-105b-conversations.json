@@ -6,7 +6,7 @@
   "name": "Sarvam-105B Conversations",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -69,7 +69,7 @@
       "model": "sarvam-105b-conversations",
       "base_url": "https://api.sarvam.ai",
       "endpoints": {
-        "messages": "POST /v1/chat/completions"
+        "chat": "POST /v1/chat/completions"
       },
       "reasoning_param": null
     }

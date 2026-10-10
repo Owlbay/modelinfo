@@ -6,7 +6,7 @@
   "name": "ERNIE 5.0 Thinking Exp",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -69,7 +69,7 @@
       "model": "ernie-5.0-thinking-exp",
       "base_url": "https://qianfan.baidubce.com",
       "endpoints": {
-        "messages": "POST /v2/chat/completions"
+        "chat": "POST /v2/chat/completions"
       },
       "reasoning_param": null
     }

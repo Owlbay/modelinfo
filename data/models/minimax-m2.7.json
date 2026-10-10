@@ -6,7 +6,7 @@
   "name": "MiniMax-M2.7",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -83,7 +83,7 @@
       "model": "MiniMax-M2.7",
       "base_url": "https://api.minimax.io/v1",
       "endpoints": {
-        "messages": "POST /chat/completions"
+        "chat": "POST /chat/completions"
       },
       "reasoning_param": "thinking"
     }

@@ -6,7 +6,7 @@
   "name": "Spark X2.5",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {

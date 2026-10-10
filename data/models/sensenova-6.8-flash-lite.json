@@ -6,7 +6,7 @@
   "name": "SenseNova 6.8 Flash Lite",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -81,7 +81,7 @@
       "model": "sensenova-6.8-flash-lite",
       "base_url": "https://api.senseaudio.cn/v1",
       "endpoints": {
-        "messages": "POST /v1/chat/completions"
+        "chat": "POST /v1/chat/completions"
       },
       "reasoning_param": null
     },
@@ -90,7 +90,7 @@
       "model": "sensenova-6.8-flash-lite",
       "base_url": "https://token.sensenova.cn/v1",
       "endpoints": {
-        "messages": "POST /v1/chat/completions"
+        "chat": "POST /v1/chat/completions"
       },
       "reasoning_param": null,
       "pricing": null

@@ -6,7 +6,7 @@
   "name": "Sakana Namazu",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -77,7 +77,7 @@
       "model": "sakana-namazu",
       "base_url": "https://api.sakana.ai",
       "endpoints": {
-        "messages": "POST /v1/chat/completions"
+        "chat": "POST /v1/chat/completions"
       },
       "reasoning_param": null
     }

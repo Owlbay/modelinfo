@@ -6,7 +6,7 @@
   "name": "Qwen3-235B-A22B-Thinking-2507",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -69,7 +69,7 @@
       "model": "qwen3-235b-a22b-thinking-2507",
       "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
       "endpoints": {
-        "messages": "POST /compatible-mode/v1/chat/completions"
+        "chat": "POST /compatible-mode/v1/chat/completions"
       },
       "reasoning_param": "enable_thinking"
     }

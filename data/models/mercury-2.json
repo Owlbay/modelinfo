@@ -6,7 +6,7 @@
   "name": "Mercury 2",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -86,7 +86,7 @@
       "model": "mercury-2",
       "base_url": "https://api.inceptionlabs.ai/v1",
       "endpoints": {
-        "messages": "POST /chat/completions"
+        "chat": "POST /chat/completions"
       },
       "reasoning_param": "reasoning_effort"
     }

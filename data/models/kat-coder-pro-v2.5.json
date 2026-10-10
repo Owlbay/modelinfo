@@ -6,7 +6,7 @@
   "name": "KAT-Coder-Pro V2.5",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {

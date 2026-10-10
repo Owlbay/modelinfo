@@ -6,7 +6,7 @@
   "name": "MiMo-V2.6-Flash",
   "api": {
     "types": [
-      "messages",
+      "chat",
       "batch"
     ]
   },
@@ -87,7 +87,7 @@
       "model": "mimo-v2.6-flash",
       "base_url": "https://api.xiaomimimo.com/v1",
       "endpoints": {
-        "messages": "POST /chat/completions"
+        "chat": "POST /chat/completions"
       },
       "reasoning_param": "thinking"
     }

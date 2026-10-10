@@ -6,7 +6,7 @@
   "name": "Solar Pro 4",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -91,7 +91,7 @@
       "model": "solar-pro4",
       "base_url": "https://api.upstage.ai/v1",
       "endpoints": {
-        "messages": "POST /chat/completions"
+        "chat": "POST /chat/completions"
       },
       "reasoning_param": "reasoning_effort"
     }

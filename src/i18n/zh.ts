@@ -44,6 +44,7 @@ export const zh = {
     kindAria: '按类型筛选',
     kindLabel: '类型',
     vendorSearch: '搜索模型厂商',
+    modalityNames: { text: '文本', image: '图像', video: '视频', audio: '音频', document: '文档', embedding: '向量', score: '分数', '3d': '3D' },
     kinds: { chat: '对话', embedding: '向量', rerank: '重排', image: '图像', video: '视频', audio: '音频', '3d': '3D' },
     searchPlaceholder: '筛选模型',
     searchAria: '筛选模型',
@@ -129,7 +130,7 @@ export const zh = {
     fields: {
       created: '发布时间，Unix 秒',
       owned_by: '模型厂商，不是转售商或网关',
-      api: 'messages · responses · generate · batch · embeddings 等',
+      api: 'chat · messages · responses · generate · batch · embeddings 等',
       context: '输入与输出合计上限（Token）',
       input: '官方单独声明的最大输入',
       output: '最大输出',

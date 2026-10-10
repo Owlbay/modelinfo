@@ -7,7 +7,7 @@
   "api": {
     "types": [
       "ocr",
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -69,7 +69,7 @@
       "model": "qianfan-ocr",
       "base_url": "https://qianfan.baidubce.com",
       "endpoints": {
-        "messages": "POST /v2/chat/completions"
+        "chat": "POST /v2/chat/completions"
       },
       "reasoning_param": null
     }

@@ -6,7 +6,7 @@
   "name": "StepAudio 2.5 Chat",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -73,7 +73,7 @@
       "model": "stepaudio-2.5-chat",
       "base_url": "https://api.stepfun.ai/v1",
       "endpoints": {
-        "messages": "POST /chat/completions"
+        "chat": "POST /chat/completions"
       },
       "reasoning_param": null
     }

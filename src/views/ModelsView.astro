@@ -238,14 +238,19 @@ const kindOptions = [
   /* 展开：横向滚动，表头与首列固定 */
   .models__table { min-width: 0; max-width: 100%; }
   .models--full .models__table { overflow-x: auto; overscroll-behavior-x: contain; }
-  .models--full .models__table > * { min-width: 2000px; }
+  /* 列宽按全表最宽内容取宽，空余分给各列；固定的模型列定宽（窄屏按视口比例），给后续列留出位置。表头与各行用 subgrid 共享列线 */
+  .models--full .models__table {
+    display: grid;
+    grid-template-columns: min(20rem, 42vw) repeat(15, minmax(max-content, auto));
+    column-gap: var(--sp-5);
+  }
+  .models--full [data-vt-list] { display: contents; }
+  .models--full .models__empty { grid-column: 1 / -1; }
   .models--full .models__head {
-    grid-template-columns:
-      minmax(16rem, 2.4fr) minmax(9rem, 1.2fr) minmax(5rem, 0.6fr) minmax(8rem, 1fr)
-      minmax(5rem, 0.6fr) minmax(5rem, 0.6fr) minmax(5rem, 0.6fr) minmax(9rem, 1.1fr)
-      minmax(6rem, 0.8fr) minmax(9rem, 1.1fr) minmax(11rem, 1.3fr) minmax(8rem, 1fr)
-      minmax(12rem, 1.5fr) minmax(5rem, 0.6fr) minmax(7rem, 0.8fr) minmax(7rem, 0.8fr);
-    column-gap: var(--sp-4);
+    grid-column: 1 / -1;
+    grid-template-columns: subgrid;
+    white-space: nowrap;
+    column-gap: normal;
   }
   .models--full .models__head .hx,
   .models--full .models__head .head__out,

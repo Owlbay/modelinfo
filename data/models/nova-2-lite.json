@@ -6,7 +6,7 @@
   "name": "Amazon Nova 2 Lite",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -87,7 +87,7 @@
       "model": "amazon.nova-2-lite-v1:0",
       "base_url": "https://bedrock-runtime.us-east-1.amazonaws.com",
       "endpoints": {
-        "messages": "POST /model/{modelId}/converse"
+        "chat": "POST /model/{modelId}/converse"
       },
       "reasoning_param": "additionalModelRequestFields.reasoningConfig.maxReasoningEffort"
     }

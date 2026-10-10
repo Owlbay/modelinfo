@@ -6,7 +6,7 @@
   "name": "Kimi K2.6",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -77,7 +77,7 @@
       "model": "kimi-k2.6",
       "base_url": "https://api.moonshot.ai/v1",
       "endpoints": {
-        "messages": "POST /chat/completions"
+        "chat": "POST /chat/completions"
       },
       "reasoning_param": "thinking.type"
     }

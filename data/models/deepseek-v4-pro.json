@@ -6,7 +6,7 @@
   "name": "DeepSeek-V4-Pro",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -86,7 +86,7 @@
       "model": "deepseek-v4-pro",
       "base_url": "https://api.deepseek.com",
       "endpoints": {
-        "messages": "POST /chat/completions"
+        "chat": "POST /chat/completions"
       },
       "reasoning_param": "reasoning_effort"
     }

@@ -6,7 +6,7 @@
   "name": "Nemotron 3 Nano Omni 30B A3B Reasoning",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -62,7 +62,7 @@
       "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
       "base_url": "https://integrate.api.nvidia.com",
       "endpoints": {
-        "messages": "POST /v1/chat/completions"
+        "chat": "POST /v1/chat/completions"
       },
       "reasoning_param": null
     }

@@ -6,7 +6,7 @@
   "name": "AutoGLM-Phone",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {

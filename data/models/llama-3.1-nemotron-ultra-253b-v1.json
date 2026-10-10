@@ -6,7 +6,7 @@
   "name": "Llama 3.1 Nemotron Ultra 253B v1",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {

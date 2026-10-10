@@ -6,7 +6,7 @@
   "name": "GLM-4.6V-FlashX",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -83,7 +83,7 @@
       "model": "glm-4.6v-flashx",
       "base_url": "https://api.z.ai/api/paas/v4",
       "endpoints": {
-        "messages": "POST /chat/completions"
+        "chat": "POST /chat/completions"
       },
       "reasoning_param": "thinking.type"
     }

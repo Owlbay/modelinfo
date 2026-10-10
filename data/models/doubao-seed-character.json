@@ -6,7 +6,7 @@
   "name": "Doubao-Seed-Character",
   "api": {
     "types": [
-      "messages",
+      "chat",
       "responses"
     ]
   },
@@ -86,7 +86,7 @@
       "model": "doubao-seed-character-260628",
       "base_url": "https://ark.cn-beijing.volces.com/api/v3",
       "endpoints": {
-        "messages": "POST /chat/completions",
+        "chat": "POST /chat/completions",
         "responses": "POST /responses"
       },
       "reasoning_param": "reasoning_effort"

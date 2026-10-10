@@ -6,7 +6,7 @@
   "name": "Qwen3-Next-80B-A3B-Thinking",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -69,7 +69,7 @@
       "model": "qwen3-next-80b-a3b-thinking",
       "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
       "endpoints": {
-        "messages": "POST /compatible-mode/v1/chat/completions"
+        "chat": "POST /compatible-mode/v1/chat/completions"
       },
       "reasoning_param": "enable_thinking"
     }

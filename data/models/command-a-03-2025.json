@@ -6,7 +6,7 @@
   "name": "Command A",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -75,7 +75,7 @@
       "model": "command-a-03-2025",
       "base_url": "https://api.cohere.com",
       "endpoints": {
-        "messages": "POST /v2/chat"
+        "chat": "POST /v2/chat"
       },
       "reasoning_param": null
     }

@@ -6,7 +6,7 @@
   "name": "Palmyra X4",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -81,7 +81,7 @@
       "model": "palmyra-x4",
       "base_url": "https://api.writer.com/v1",
       "endpoints": {
-        "messages": "POST /chat"
+        "chat": "POST /chat"
       },
       "reasoning_param": null
     }

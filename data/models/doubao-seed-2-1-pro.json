@@ -6,7 +6,7 @@
   "name": "Doubao-Seed-2.1-Pro",
   "api": {
     "types": [
-      "messages",
+      "chat",
       "responses"
     ]
   },
@@ -87,7 +87,7 @@
       "model": "doubao-seed-2-1-pro-260915",
       "base_url": "https://ark.cn-beijing.volces.com/api/v3",
       "endpoints": {
-        "messages": "POST /chat/completions",
+        "chat": "POST /chat/completions",
         "responses": "POST /responses"
       },
       "reasoning_param": "reasoning_effort"

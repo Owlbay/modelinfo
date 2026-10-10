@@ -6,7 +6,7 @@
   "name": "Intern-S1-Pro",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -69,7 +69,7 @@
       "model": "intern-s1-pro",
       "base_url": "https://chat.intern-ai.org.cn/api/v1",
       "endpoints": {
-        "messages": "POST /chat/completions"
+        "chat": "POST /chat/completions"
       },
       "reasoning_param": "thinking_mode"
     }

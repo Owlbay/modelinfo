@@ -6,7 +6,7 @@
   "name": "HY-Vision-Video",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -75,7 +75,7 @@
       "model": "hunyuan-turbos-vision-video-20250728",
       "base_url": "https://tokenhub.tencentmaas.com/v1",
       "endpoints": {
-        "messages": "POST /chat/completions"
+        "chat": "POST /chat/completions"
       },
       "reasoning_param": null
     }

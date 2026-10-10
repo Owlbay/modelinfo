@@ -6,7 +6,7 @@
   "name": "GLM-5-Turbo",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -92,7 +92,7 @@
       "model": "glm-5-turbo",
       "base_url": "https://open.bigmodel.cn/api/paas/v4",
       "endpoints": {
-        "messages": "POST /chat/completions"
+        "chat": "POST /chat/completions"
       },
       "reasoning_param": "thinking.type"
     }

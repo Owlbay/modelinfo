@@ -6,7 +6,7 @@
   "name": "Nemotron 3 Ultra 550B A55B",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -59,7 +59,7 @@
       "model": "nvidia/nemotron-3-ultra-550b-a55b",
       "base_url": "https://integrate.api.nvidia.com",
       "endpoints": {
-        "messages": "POST /v1/chat/completions"
+        "chat": "POST /v1/chat/completions"
       },
       "reasoning_param": null
     }

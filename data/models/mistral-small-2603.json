@@ -6,7 +6,7 @@
   "name": "Mistral Small 4",
   "api": {
     "types": [
-      "messages",
+      "chat",
       "batch"
     ]
   },
@@ -88,7 +88,7 @@
       "model": "mistral-small-2603",
       "base_url": "https://api.mistral.ai",
       "endpoints": {
-        "messages": "POST /v1/chat/completions",
+        "chat": "POST /v1/chat/completions",
         "batch": "POST /v1/batch"
       },
       "reasoning_param": "reasoning_effort"

@@ -6,7 +6,7 @@
   "name": "Grok 4.20 (Reasoning)",
   "api": {
     "types": [
-      "messages",
+      "chat",
       "batch"
     ]
   },
@@ -90,7 +90,7 @@
       "model": "grok-4.20-0309-reasoning",
       "base_url": "https://api.x.ai",
       "endpoints": {
-        "messages": "POST /v1/chat/completions"
+        "chat": "POST /v1/chat/completions"
       },
       "reasoning_param": null
     }

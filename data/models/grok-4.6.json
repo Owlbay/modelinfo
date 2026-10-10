@@ -6,7 +6,7 @@
   "name": "Grok 4.6",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -77,7 +77,7 @@
       "model": "grok-4.6",
       "base_url": "https://api.x.ai",
       "endpoints": {
-        "messages": "POST /v1/chat/completions"
+        "chat": "POST /v1/chat/completions"
       },
       "reasoning_param": "reasoning_effort"
     }

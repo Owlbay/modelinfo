@@ -6,7 +6,7 @@
   "name": "GPT-Audio-1.5",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -70,7 +70,7 @@
       "model": "gpt-audio-1.5",
       "base_url": "https://api.openai.com",
       "endpoints": {
-        "messages": "POST /v1/chat/completions"
+        "chat": "POST /v1/chat/completions"
       },
       "reasoning_param": null
     }

@@ -6,7 +6,7 @@
   "name": "Sonar",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -70,7 +70,7 @@
       "model": "sonar",
       "base_url": "https://api.perplexity.ai",
       "endpoints": {
-        "messages": "POST /v1/sonar"
+        "chat": "POST /v1/sonar"
       },
       "reasoning_param": null
     }

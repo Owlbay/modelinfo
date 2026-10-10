@@ -6,7 +6,7 @@
   "name": "GPT-4o Mini",
   "api": {
     "types": [
-      "messages",
+      "chat",
       "responses",
       "batch"
     ]
@@ -83,7 +83,7 @@
       "model": "gpt-4o-mini",
       "base_url": "https://api.openai.com",
       "endpoints": {
-        "messages": "POST /v1/chat/completions",
+        "chat": "POST /v1/chat/completions",
         "responses": "POST /v1/responses",
         "batch": "POST /v1/batches"
       },

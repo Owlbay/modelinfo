@@ -6,7 +6,7 @@
   "name": "Ising Calibration 1.5 31B",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -58,7 +58,7 @@
       "model": "nvidia/ising-calibration-1.5-31b",
       "base_url": "https://integrate.api.nvidia.com",
       "endpoints": {
-        "messages": "POST /v1/chat/completions"
+        "chat": "POST /v1/chat/completions"
       },
       "reasoning_param": null
     }

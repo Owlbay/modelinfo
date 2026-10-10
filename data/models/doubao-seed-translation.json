@@ -6,7 +6,7 @@
   "name": "Doubao-Seed-Translation",
   "api": {
     "types": [
-      "messages",
+      "chat",
       "responses"
     ]
   },
@@ -73,7 +73,7 @@
       "model": "doubao-seed-translation-250915",
       "base_url": "https://ark.cn-beijing.volces.com/api/v3",
       "endpoints": {
-        "messages": "POST /chat/completions",
+        "chat": "POST /chat/completions",
         "responses": "POST /responses"
       },
       "reasoning_param": null

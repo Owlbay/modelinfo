@@ -6,7 +6,7 @@
   "name": "Riva Translate 4B Instruct v2",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -57,7 +57,7 @@
       "model": "nvidia/riva-translate-4b-instruct-v2",
       "base_url": "https://integrate.api.nvidia.com",
       "endpoints": {
-        "messages": "POST /v1/chat/completions"
+        "chat": "POST /v1/chat/completions"
       },
       "reasoning_param": null
     }

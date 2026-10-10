@@ -6,7 +6,7 @@
   "name": "ERNIE X1.1 Preview",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -74,7 +74,7 @@
       "model": "ernie-x1.1-preview",
       "base_url": "https://qianfan.baidubce.com",
       "endpoints": {
-        "messages": "POST /v2/chat/completions"
+        "chat": "POST /v2/chat/completions"
       },
       "reasoning_param": null
     }

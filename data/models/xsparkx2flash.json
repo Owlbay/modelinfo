@@ -6,7 +6,7 @@
   "name": "Spark X2-Flash",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {

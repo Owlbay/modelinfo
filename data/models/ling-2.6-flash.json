@@ -6,7 +6,7 @@
   "name": "Ling-2.6-flash",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -72,7 +72,7 @@
       "model": "Ling-2.6-flash",
       "base_url": "https://api.ant-ling.com/v1",
       "endpoints": {
-        "messages": "POST /chat/completions"
+        "chat": "POST /chat/completions"
       },
       "reasoning_param": null
     }

@@ -6,7 +6,7 @@
   "name": "Jamba Large 1.7",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -88,7 +88,7 @@
       "model": "jamba-large",
       "base_url": "https://api.ai21.com/studio/v1",
       "endpoints": {
-        "messages": "POST /chat/completions"
+        "chat": "POST /chat/completions"
       },
       "reasoning_param": null
     }

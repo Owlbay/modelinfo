@@ -6,7 +6,7 @@
   "name": "Qwen-Deep-Research",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {

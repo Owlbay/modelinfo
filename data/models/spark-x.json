@@ -6,7 +6,7 @@
   "name": "Spark X2",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -70,7 +70,7 @@
       "model": "spark-x",
       "base_url": "https://spark-api-open.xf-yun.com/x2",
       "endpoints": {
-        "messages": "POST /chat/completions"
+        "chat": "POST /chat/completions"
       },
       "reasoning_param": "thinking"
     }

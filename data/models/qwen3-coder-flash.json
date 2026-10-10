@@ -6,7 +6,7 @@
   "name": "Qwen3-Coder-Flash",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -72,7 +72,7 @@
       "model": "qwen3-coder-flash",
       "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
       "endpoints": {
-        "messages": "POST /compatible-mode/v1/chat/completions"
+        "chat": "POST /compatible-mode/v1/chat/completions"
       },
       "reasoning_param": null
     }

@@ -6,7 +6,7 @@
   "name": "Ministral 3 3B",
   "api": {
     "types": [
-      "messages",
+      "chat",
       "batch"
     ]
   },
@@ -81,7 +81,7 @@
       "model": "ministral-3b-2512",
       "base_url": "https://api.mistral.ai",
       "endpoints": {
-        "messages": "POST /v1/chat/completions",
+        "chat": "POST /v1/chat/completions",
         "batch": "POST /v1/batch"
       },
       "reasoning_param": null

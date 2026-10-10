@@ -6,7 +6,7 @@
   "name": "VILA",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {

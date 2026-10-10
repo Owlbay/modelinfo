@@ -6,7 +6,7 @@
   "name": "Aya Expanse 32B",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -67,7 +67,7 @@
       "model": "c4ai-aya-expanse-32b",
       "base_url": "https://api.cohere.com",
       "endpoints": {
-        "messages": "POST /v2/chat"
+        "chat": "POST /v2/chat"
       },
       "reasoning_param": null
     }

@@ -6,7 +6,7 @@
   "name": "ERNIE 4.5 Turbo VL",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -75,7 +75,7 @@
       "model": "ernie-4.5-turbo-vl",
       "base_url": "https://qianfan.baidubce.com",
       "endpoints": {
-        "messages": "POST /v2/chat/completions"
+        "chat": "POST /v2/chat/completions"
       },
       "reasoning_param": null
     }

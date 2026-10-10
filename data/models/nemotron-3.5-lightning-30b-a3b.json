@@ -6,7 +6,7 @@
   "name": "Nemotron 3.5 Lightning 30B A3B",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -60,7 +60,7 @@
       "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
       "base_url": "https://integrate.api.nvidia.com",
       "endpoints": {
-        "messages": "POST /v1/chat/completions"
+        "chat": "POST /v1/chat/completions"
       },
       "reasoning_param": null
     }

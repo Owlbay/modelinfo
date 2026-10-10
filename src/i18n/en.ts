@@ -46,6 +46,7 @@ export const en: Dict = {
     kindAria: 'Filter by type',
     kindLabel: 'Type',
     vendorSearch: 'Search vendors',
+    modalityNames: { text: 'Text', image: 'Image', video: 'Video', audio: 'Audio', document: 'Document', embedding: 'Embedding', score: 'Score', '3d': '3D' },
     kinds: { chat: 'Chat', embedding: 'Embedding', rerank: 'Rerank', image: 'Image', video: 'Video', audio: 'Audio', '3d': '3D' },
     searchPlaceholder: 'Filter models',
     searchAria: 'Filter models',
@@ -131,7 +132,7 @@ export const en: Dict = {
     fields: {
       created: 'Release time, Unix seconds',
       owned_by: 'Model vendor, not a reseller or gateway',
-      api: 'messages · responses · generate · batch · embeddings, etc.',
+      api: 'chat · messages · responses · generate · batch · embeddings, etc.',
       context: 'Combined input + output limit (tokens)',
       input: 'Max input, when stated separately',
       output: 'Max output',

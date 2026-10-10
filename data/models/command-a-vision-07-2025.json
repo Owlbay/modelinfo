@@ -6,7 +6,7 @@
   "name": "Command A Vision",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -66,7 +66,7 @@
       "model": "command-a-vision-07-2025",
       "base_url": "https://api.cohere.com",
       "endpoints": {
-        "messages": "POST /v2/chat"
+        "chat": "POST /v2/chat"
       },
       "reasoning_param": null
     }

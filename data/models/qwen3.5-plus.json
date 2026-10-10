@@ -6,7 +6,7 @@
   "name": "Qwen3.5-Plus",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -87,7 +87,7 @@
       "model": "qwen3.5-plus",
       "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
       "endpoints": {
-        "messages": "POST /compatible-mode/v1/chat/completions"
+        "chat": "POST /compatible-mode/v1/chat/completions"
       },
       "reasoning_param": "enable_thinking"
     }

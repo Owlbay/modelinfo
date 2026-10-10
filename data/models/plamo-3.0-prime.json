@@ -6,7 +6,7 @@
   "name": "PLaMo 3.0 Prime",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -74,7 +74,7 @@
       "model": "plamo-3.0-prime",
       "base_url": "https://api.platform.preferredai.jp",
       "endpoints": {
-        "messages": "POST /v1/chat/completions"
+        "chat": "POST /v1/chat/completions"
       },
       "reasoning_param": "reasoning_effort"
     }

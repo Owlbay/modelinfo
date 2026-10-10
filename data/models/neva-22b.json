@@ -6,7 +6,7 @@
   "name": "NeVA 22B",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {

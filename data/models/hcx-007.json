@@ -6,7 +6,7 @@
   "name": "HyperCLOVA X HCX-007",
   "api": {
     "types": [
-      "messages"
+      "chat"
     ]
   },
   "limits": {
@@ -71,7 +71,7 @@
       "model": "HCX-007",
       "base_url": "https://clovastudio.stream.ntruss.com",
       "endpoints": {
-        "messages": "POST /v3/chat-completions/{modelName}"
+        "chat": "POST /v3/chat-completions/{modelName}"
       },
       "reasoning_param": "thinking.effort"
     }
