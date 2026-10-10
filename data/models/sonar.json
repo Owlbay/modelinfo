@@ -1,7 +1,7 @@
 {
   "id": "sonar",
   "object": "model",
-  "created": null,
+  "created": 1737417600,
   "owned_by": "perplexity",
   "name": "Sonar",
   "api": {
@@ -40,7 +40,7 @@
   ],
   "info": {
     "status": "deprecated",
-    "release_date": null,
+    "release_date": "2025-01-21",
     "knowledge_cutoff": null,
     "description": "Perplexity web-grounded search model for the Sonar API; Sonar Chat Completions support ended 2026-09-27 in favor of the Agent API.",
     "docs": "https://docs.perplexity.ai/docs/agent-api/migrate-from-sonar/overview",
@@ -56,6 +56,11 @@
     {
       "title": "Pricing | Perplexity Docs",
       "url": "https://docs.perplexity.ai/docs/getting-started/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Introducing the Sonar Pro API by Perplexity",
+      "url": "https://www.perplexity.ai/hub/blog/introducing-the-sonar-pro-api",
       "retrieved_at": "2026-10-11"
     }
   ],

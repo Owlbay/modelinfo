@@ -1,7 +1,7 @@
 {
   "id": "pplx-embed-context-v1-0.6b",
   "object": "model",
-  "created": null,
+  "created": 1772064000,
   "owned_by": "perplexity",
   "name": "pplx-embed-context-v1-0.6b",
   "api": {
@@ -37,7 +37,7 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-02-26",
     "knowledge_cutoff": null,
     "description": "Perplexity contextualized text embedding model, 1024 dimensions, for document chunks that share context.",
     "docs": "https://docs.perplexity.ai/docs/embeddings/quickstart",
@@ -63,6 +63,11 @@
     {
       "title": "perplexity-ai/pplx-embed-context-v1-0.6b config.json | Hugging Face",
       "url": "https://huggingface.co/perplexity-ai/pplx-embed-context-v1-0.6b/blob/main/config.json",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Introducing pplx-embed | Perplexity API Platform Forum",
+      "url": "https://community.perplexity.ai/t/introducing-pplx-embed-state-of-the-art-embedding-models-for-web-scale-retrieval/4732",
       "retrieved_at": "2026-10-11"
     }
   ],
