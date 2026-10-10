@@ -1,7 +1,7 @@
 {
   "id": "palmyra-x4",
   "object": "model",
-  "created": null,
+  "created": 1728432000,
   "owned_by": "writer",
   "name": "Palmyra X4",
   "api": {
@@ -41,7 +41,7 @@
   ],
   "info": {
     "status": "deprecated",
-    "release_date": null,
+    "release_date": "2024-10-09",
     "knowledge_cutoff": null,
     "description": "Language model for complex tasks that require extended context; deprecation scheduled 2026-12-14.",
     "docs": "https://dev.writer.com/home/models",
@@ -67,6 +67,11 @@
     {
       "title": "Changelog | Writer AI Studio",
       "url": "https://dev.writer.com/home/changelog",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Introducing intelligent actions with Palmyra X4 - WRITER",
+      "url": "https://writer.com/blog/actions-with-palmyra-x4/",
       "retrieved_at": "2026-10-11"
     }
   ],

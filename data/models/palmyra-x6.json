@@ -1,7 +1,7 @@
 {
   "id": "palmyra-x6",
   "object": "model",
-  "created": null,
+  "created": 1786579200,
   "owned_by": "writer",
   "name": "Palmyra X6",
   "api": {
@@ -41,7 +41,7 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-08-13",
     "knowledge_cutoff": null,
     "description": "Agentic model for WRITER Agent and long-horizon enterprise workflows.",
     "docs": "https://dev.writer.com/home/models",
@@ -62,6 +62,11 @@
     {
       "title": "Chat completion | Writer API Reference",
       "url": "https://dev.writer.com/api-reference/completion-api/chat-completion",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "WRITER Palmyra X6 release - WRITER",
+      "url": "https://writer.com/blog/palmyra-x6-major-harness-release/",
       "retrieved_at": "2026-10-11"
     }
   ],
