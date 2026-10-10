@@ -1,0 +1,84 @@
+{
+  "id": "sakana-namazu",
+  "object": "model",
+  "created": 1785715200,
+  "owned_by": "sakana",
+  "name": "Sakana Namazu",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.95,
+    "output": 4,
+    "cache_read": 0.15,
+    "cache_write": null
+  },
+  "features": [
+    "tools"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2026-08-03",
+    "knowledge_cutoff": null,
+    "description": "Sakana AI's Japanese-focused LLM API, tuned for Japanese language, culture and business, with built-in web search and code execution.",
+    "docs": "https://console.sakana.ai/models",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "sakana-namazu-v1.0"
+  ],
+  "sources": [
+    {
+      "title": "Models | Sakana AI Console",
+      "url": "https://console.sakana.ai/models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Get started | Sakana AI Console",
+      "url": "https://console.sakana.ai/get-started",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Sakana Namazu | Sakana AI",
+      "url": "https://sakana.ai/namazu",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Sakana Namazu API 提供開始 | Sakana AI",
+      "url": "https://sakana.ai/namazu-api/",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "sakana",
+      "model": "sakana-namazu",
+      "base_url": "https://api.sakana.ai",
+      "endpoints": {
+        "messages": "POST /v1/chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
