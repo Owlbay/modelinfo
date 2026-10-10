@@ -1,0 +1,70 @@
+{
+  "id": "mxbai-rerank-v3.1-listwise",
+  "object": "model",
+  "created": 1785110400,
+  "owned_by": "mixedbread",
+  "name": "mxbai-rerank-v3.1-listwise",
+  "api": {
+    "types": [
+      "rerank"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "score"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": "2026-07-27",
+    "knowledge_cutoff": null,
+    "description": "Listwise reranker that reads the whole candidate set at once and follows natural-language instructions; default reranker in Mixedbread Search.",
+    "docs": "https://www.mixedbread.com/blog/mxbai-rerank-v3-1-listwise",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "mixedbread-ai/mxbai-rerank-v3.1-listwise"
+  ],
+  "sources": [
+    {
+      "title": "mxbai-rerank-v3.1-listwise | Mixedbread Blog",
+      "url": "https://www.mixedbread.com/blog/mxbai-rerank-v3-1-listwise",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Reranking | Mixedbread Docs",
+      "url": "https://www.mixedbread.com/docs/stores/search/rerank",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Changelog | Mixedbread Docs",
+      "url": "https://www.mixedbread.com/docs/changelog",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "mixedbread",
+      "model": "mixedbread-ai/mxbai-rerank-v3.1-listwise",
+      "base_url": "https://api.mixedbread.com",
+      "endpoints": {
+        "rerank": "POST /v1/stores/search"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
