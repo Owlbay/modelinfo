@@ -1,0 +1,76 @@
+{
+  "id": "sarvam-105b-conversations",
+  "object": "model",
+  "created": null,
+  "owned_by": "sarvam",
+  "name": "Sarvam-105B Conversations",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 32768,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "INR",
+    "input": 15,
+    "output": 60,
+    "cache_read": 5,
+    "cache_write": null
+  },
+  "features": [
+    "streaming"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Conversational variant of Sarvam-105B post-trained for real-time dialogue and voice agents.",
+    "docs": "https://docs.sarvam.ai/api/getting-started/models/sarvam-105b",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Sarvam-105B | Sarvam Docs",
+      "url": "https://docs.sarvam.ai/api/getting-started/models/sarvam-105b",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Sarvam Docs",
+      "url": "https://docs.sarvam.ai/api/getting-started/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "sarvamai/sarvam-105b config.json | Hugging Face",
+      "url": "https://huggingface.co/sarvamai/sarvam-105b/blob/main/config.json",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "sarvam",
+      "model": "sarvam-105b-conversations",
+      "base_url": "https://api.sarvam.ai",
+      "endpoints": {
+        "messages": "POST /v1/chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

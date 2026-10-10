@@ -1,0 +1,76 @@
+{
+  "id": "sarvam-105b",
+  "object": "model",
+  "created": null,
+  "owned_by": "sarvam",
+  "name": "Sarvam-105B",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 131072,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "INR",
+    "input": 15,
+    "output": 60,
+    "cache_read": 5,
+    "cache_write": null
+  },
+  "features": [
+    "streaming"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Sarvam flagship 105B Mixture-of-Experts chat model for Indian language understanding, reasoning, coding and agentic tasks.",
+    "docs": "https://docs.sarvam.ai/api/getting-started/models/sarvam-105b",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Sarvam-105B | Sarvam Docs",
+      "url": "https://docs.sarvam.ai/api/getting-started/models/sarvam-105b",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Sarvam Docs",
+      "url": "https://docs.sarvam.ai/api/getting-started/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "sarvamai/sarvam-105b config.json | Hugging Face",
+      "url": "https://huggingface.co/sarvamai/sarvam-105b/blob/main/config.json",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "sarvam",
+      "model": "sarvam-105b",
+      "base_url": "https://api.sarvam.ai",
+      "endpoints": {
+        "messages": "POST /v1/chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

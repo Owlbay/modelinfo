@@ -1,0 +1,63 @@
+{
+  "id": "mayura-v1",
+  "object": "model",
+  "created": null,
+  "owned_by": "sarvam",
+  "name": "Mayura v1",
+  "api": {
+    "types": [
+      "completions"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Text translation model between English and 10 Indian languages with multiple translation styles, up to 1,000 characters per request.",
+    "docs": "https://docs.sarvam.ai/api/getting-started/models/mayura",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "mayura:v1"
+  ],
+  "sources": [
+    {
+      "title": "Mayura | Sarvam Docs",
+      "url": "https://docs.sarvam.ai/api/getting-started/models/mayura",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Sarvam Docs",
+      "url": "https://docs.sarvam.ai/api/getting-started/pricing",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "sarvam",
+      "model": "mayura:v1",
+      "base_url": "https://api.sarvam.ai",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

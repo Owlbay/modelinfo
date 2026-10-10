@@ -1,0 +1,75 @@
+{
+  "id": "saaras-v3-realtime",
+  "object": "model",
+  "created": null,
+  "owned_by": "sarvam",
+  "name": "Saaras v3 Realtime",
+  "api": {
+    "types": [
+      "realtime"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "audio"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Realtime WebSocket speech-to-text model for voice agents and live transcription with interim transcripts.",
+    "docs": "https://docs.sarvam.ai/api/getting-started/models/saaras",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "saaras:v3-realtime"
+  ],
+  "sources": [
+    {
+      "title": "Saaras | Sarvam Docs",
+      "url": "https://docs.sarvam.ai/api/getting-started/models/saaras",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Sarvam Docs",
+      "url": "https://docs.sarvam.ai/api/getting-started/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Realtime Streaming | Sarvam Docs",
+      "url": "https://docs.sarvam.ai/api/api-guides-tutorials/speech-to-text/realtime-streaming",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Changelog | Sarvam Docs",
+      "url": "https://docs.sarvam.ai/changelog",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "sarvam",
+      "model": "saaras:v3-realtime",
+      "base_url": "https://api.sarvam.ai",
+      "endpoints": {
+        "realtime": "GET /speech-to-text-realtime/ws"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
