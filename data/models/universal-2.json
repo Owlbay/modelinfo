@@ -1,0 +1,68 @@
+{
+  "id": "universal-2",
+  "object": "model",
+  "created": null,
+  "owned_by": "assemblyai",
+  "name": "Universal-2",
+  "api": {
+    "types": [
+      "audio"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "audio"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "AssemblyAI accurate, cost-effective pre-recorded speech-to-text model supporting 99 languages.",
+    "docs": "https://www.assemblyai.com/docs/pre-recorded-audio/select-the-speech-model",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Model selection | AssemblyAI Docs",
+      "url": "https://www.assemblyai.com/docs/pre-recorded-audio/select-the-speech-model",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Models | AssemblyAI Docs",
+      "url": "https://www.assemblyai.com/docs/getting-started/models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | AssemblyAI",
+      "url": "https://www.assemblyai.com/pricing",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "assemblyai",
+      "model": "universal-2",
+      "base_url": "https://api.assemblyai.com",
+      "endpoints": {
+        "audio": "POST /v2/transcript"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
