@@ -1,0 +1,61 @@
+{
+  "id": "melia-1",
+  "object": "model",
+  "created": null,
+  "owned_by": "speechmatics",
+  "name": "Melia 1",
+  "api": {
+    "types": [
+      "audio"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "audio"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Speechmatics multilingual speech-to-text model that handles speakers switching languages mid-conversation, Batch only.",
+    "docs": "https://docs.speechmatics.com/speech-to-text/models",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Models | Speechmatics Docs",
+      "url": "https://docs.speechmatics.com/speech-to-text/models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Speechmatics",
+      "url": "https://www.speechmatics.com/pricing",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "speechmatics",
+      "model": "melia-1",
+      "base_url": "https://eu1.asr.api.speechmatics.com",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

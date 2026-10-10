@@ -1,0 +1,68 @@
+{
+  "id": "linden-1",
+  "object": "model",
+  "created": null,
+  "owned_by": "speechmatics",
+  "name": "Linden 1",
+  "api": {
+    "types": [
+      "realtime"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "audio"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Speechmatics model powering Agent STT, returning speaker-attributed turn-based segments for voice agents.",
+    "docs": "https://docs.speechmatics.com/speech-to-text/models",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Models | Speechmatics Docs",
+      "url": "https://docs.speechmatics.com/speech-to-text/models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Speechmatics",
+      "url": "https://www.speechmatics.com/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Authentication | Speechmatics Docs",
+      "url": "https://docs.speechmatics.com/get-started/authentication",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "speechmatics",
+      "model": "linden-1",
+      "base_url": "https://eu.rt.speechmatics.com",
+      "endpoints": {
+        "realtime": "GET /v2/agent"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
