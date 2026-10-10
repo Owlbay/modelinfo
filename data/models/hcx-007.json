@@ -1,0 +1,79 @@
+{
+  "id": "hcx-007",
+  "object": "model",
+  "created": 1753747200,
+  "owned_by": "naver",
+  "name": "HyperCLOVA X HCX-007",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 128000,
+    "input": 128000,
+    "output": 32768
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": [
+      "none",
+      "low",
+      "medium",
+      "high"
+    ]
+  },
+  "pricing": null,
+  "features": [
+    "tools",
+    "structured_output",
+    "streaming"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2025-07-29",
+    "knowledge_cutoff": null,
+    "description": "Hybrid reasoning model for complex problems such as math, science, language reasoning and essay writing.",
+    "docs": "https://guide.ncloud-docs.com/docs/clovastudio-model",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "HCX-007"
+  ],
+  "sources": [
+    {
+      "title": "CLOVA Studio 모델 | NAVER Cloud 가이드",
+      "url": "https://guide.ncloud-docs.com/docs/clovastudio-model",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "CLOVA Studio 릴리스 노트 | NAVER Cloud 가이드",
+      "url": "https://guide.ncloud-docs.com/docs/clovastudio-releasenote",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "추론(Thinking) | NAVER Cloud API",
+      "url": "https://api.ncloud-docs.com/docs/clovastudio-chatcompletionsv3-thinking",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "naver",
+      "model": "HCX-007",
+      "base_url": "https://clovastudio.stream.ntruss.com",
+      "endpoints": {
+        "messages": "POST /v3/chat-completions/{modelName}"
+      },
+      "reasoning_param": "thinking.effort"
+    }
+  ]
+}
