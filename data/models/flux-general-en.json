@@ -1,7 +1,7 @@
 {
   "id": "flux-general-en",
   "object": "model",
-  "created": null,
+  "created": 1759276800,
   "owned_by": "deepgram",
   "name": "Flux General (English)",
   "api": {
@@ -26,11 +26,18 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "minute",
+    "input": 0.0077,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-10-01",
     "knowledge_cutoff": null,
     "description": "Deepgram Flux speech-to-text model for voice agents with turn detection, English.",
     "docs": "https://developers.deepgram.com/docs/models-languages-overview",
@@ -51,6 +58,11 @@
     {
       "title": "Pricing | Deepgram",
       "url": "https://deepgram.com/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Introducing Flux | Deepgram",
+      "url": "https://deepgram.com/learn/introducing-flux-conversational-speech-recognition",
       "retrieved_at": "2026-10-11"
     }
   ],

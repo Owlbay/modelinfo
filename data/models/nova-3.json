@@ -1,7 +1,7 @@
 {
   "id": "nova-3",
   "object": "model",
-  "created": null,
+  "created": 1739318400,
   "owned_by": "deepgram",
   "name": "Nova-3",
   "api": {
@@ -26,11 +26,18 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "minute",
+    "input": 0.0043,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-02-12",
     "knowledge_cutoff": null,
     "description": "Deepgram general-purpose speech-to-text model with multilingual code-switching.",
     "docs": "https://developers.deepgram.com/docs/models-languages-overview",
@@ -48,6 +55,11 @@
     {
       "title": "Pricing | Deepgram",
       "url": "https://deepgram.com/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Introducing Nova-3 | Deepgram",
+      "url": "https://deepgram.com/learn/introducing-nova-3-speech-to-text-api",
       "retrieved_at": "2026-10-11"
     }
   ],
