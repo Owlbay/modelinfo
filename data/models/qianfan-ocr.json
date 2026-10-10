@@ -1,0 +1,76 @@
+{
+  "id": "qianfan-ocr",
+  "object": "model",
+  "created": null,
+  "owned_by": "baidu",
+  "name": "Qianfan-OCR",
+  "api": {
+    "types": [
+      "ocr",
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 32768,
+    "input": 32768,
+    "output": 28672
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "CNY",
+    "input": 0.45,
+    "output": 1.8,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Baidu Qianfan OCR model that converts document images to structured Markdown, with optional thinking mode.",
+    "docs": "https://cloud.baidu.com/doc/qianfan-docs/s/Qmispikeo",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Qianfan-OCR | 百度千帆",
+      "url": "https://cloud.baidu.com/doc/qianfan-docs/s/Qmispikeo",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "模型列表 | 百度千帆",
+      "url": "https://cloud.baidu.com/doc/qianfan/s/rmh4stp0j",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "模型服务计费 | 百度千帆",
+      "url": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "baidu",
+      "model": "qianfan-ocr",
+      "base_url": "https://qianfan.baidubce.com",
+      "endpoints": {
+        "messages": "POST /v2/chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
