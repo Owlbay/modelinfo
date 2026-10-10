@@ -1,7 +1,7 @@
 {
   "id": "paddleocr-vl-0.9b",
   "object": "model",
-  "created": null,
+  "created": 1764288000,
   "owned_by": "baidu",
   "name": "PaddleOCR-VL-0.9B",
   "api": {
@@ -27,11 +27,18 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "CNY",
+    "unit": "page",
+    "input": 0.18,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-11-28",
     "knowledge_cutoff": null,
     "description": "PaddleOCR-VL document parsing model with layout analysis, formula, table and chart recognition on Qianfan.",
     "docs": "https://cloud.baidu.com/doc/qianfan-api/s/zmho8omz3",
@@ -52,6 +59,11 @@
     {
       "title": "模型服务计费 | 百度千帆",
       "url": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "模型更新记录 | 百度千帆",
+      "url": "https://cloud.baidu.com/doc/qianfan/s/Kmh4stnjp",
       "retrieved_at": "2026-10-11"
     }
   ],

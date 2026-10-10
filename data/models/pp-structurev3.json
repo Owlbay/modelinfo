@@ -1,7 +1,7 @@
 {
   "id": "pp-structurev3",
   "object": "model",
-  "created": null,
+  "created": 1765497600,
   "owned_by": "baidu",
   "name": "PP-StructureV3",
   "api": {
@@ -27,11 +27,18 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "CNY",
+    "unit": "page",
+    "input": 0.18,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-12-12",
     "knowledge_cutoff": null,
     "description": "PP-StructureV3 document structure recognition with layout, table, formula and seal recognition on Qianfan.",
     "docs": "https://cloud.baidu.com/doc/qianfan-api/s/Nmj124ro4",
@@ -52,6 +59,11 @@
     {
       "title": "模型服务计费 | 百度千帆",
       "url": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "模型更新记录 | 百度千帆",
+      "url": "https://cloud.baidu.com/doc/qianfan/s/Kmh4stnjp",
       "retrieved_at": "2026-10-11"
     }
   ],

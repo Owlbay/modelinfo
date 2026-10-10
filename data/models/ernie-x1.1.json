@@ -36,29 +36,29 @@
     "knowledge_cutoff": null,
     "description": "Baidu ERNIE X1.1 deep thinking model; the platform marks it as going offline soon.",
     "docs": "https://cloud.baidu.com/doc/qianfan/s/rmh4stp0j",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
     {
       "title": "模型列表 | 百度千帆",
       "url": "https://cloud.baidu.com/doc/qianfan/s/rmh4stp0j",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "价格 | 百度千帆",
       "url": "https://cloud.baidu.com/doc/qianfan-docs/s/Jm8r1826a",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "模型更新记录 | 百度千帆",
       "url": "https://cloud.baidu.com/doc/qianfan/s/Kmh4stnjp",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "文本生成 API 参考 | 百度千帆",
       "url": "https://cloud.baidu.com/doc/qianfan-api/s/3m7of64lb",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
