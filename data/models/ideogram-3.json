@@ -1,0 +1,74 @@
+{
+  "id": "ideogram-3",
+  "object": "model",
+  "created": null,
+  "owned_by": "ideogram",
+  "name": "Ideogram 3.0",
+  "api": {
+    "types": [
+      "images"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "image"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Ideogram text-to-image generation with style codes, style presets, color palettes and style reference images.",
+    "docs": "https://developer.ideogram.ai/api-reference/images/generate/ideogram-3",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Generate with Ideogram 3.0 | Ideogram API Docs",
+      "url": "https://developer.ideogram.ai/api-reference/images/generate/ideogram-3",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Ideogram API documentation index",
+      "url": "https://developer.ideogram.ai/v2/llms.txt",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "API Setup | Ideogram API Docs",
+      "url": "https://developer.ideogram.ai/ideogram-api/api-setup",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "API Pricing | Ideogram",
+      "url": "https://ideogram.ai/api-pricing",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "ideogram",
+      "model": "ideogram-3",
+      "base_url": "https://api.ideogram.ai",
+      "endpoints": {
+        "images": "POST /v2/image/generate/ideogram-3"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

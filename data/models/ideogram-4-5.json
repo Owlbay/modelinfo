@@ -1,0 +1,74 @@
+{
+  "id": "ideogram-4-5",
+  "object": "model",
+  "created": null,
+  "owned_by": "ideogram",
+  "name": "Ideogram 4.5",
+  "api": {
+    "types": [
+      "images"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "image"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Ideogram image generation from natural-language or structured JSON prompts, with optional source images and masks for editing.",
+    "docs": "https://developer.ideogram.ai/api-reference/images/generate/ideogram-4-5",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Generate with Ideogram 4.5 | Ideogram API Docs",
+      "url": "https://developer.ideogram.ai/api-reference/images/generate/ideogram-4-5",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Ideogram API documentation index",
+      "url": "https://developer.ideogram.ai/v2/llms.txt",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "API Setup | Ideogram API Docs",
+      "url": "https://developer.ideogram.ai/ideogram-api/api-setup",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "API Pricing | Ideogram",
+      "url": "https://ideogram.ai/api-pricing",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "ideogram",
+      "model": "ideogram-4-5",
+      "base_url": "https://api.ideogram.ai",
+      "endpoints": {
+        "images": "POST /v2/image/generate/ideogram-4-5"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
