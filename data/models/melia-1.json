@@ -1,7 +1,7 @@
 {
   "id": "melia-1",
   "object": "model",
-  "created": null,
+  "created": 1781654400,
   "owned_by": "speechmatics",
   "name": "Melia 1",
   "api": {
@@ -26,11 +26,18 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "hour",
+    "input": 0.24,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-06-17",
     "knowledge_cutoff": null,
     "description": "Speechmatics multilingual speech-to-text model that handles speakers switching languages mid-conversation, Batch only.",
     "docs": "https://docs.speechmatics.com/speech-to-text/models",
@@ -46,6 +53,11 @@
     {
       "title": "Pricing | Speechmatics",
       "url": "https://www.speechmatics.com/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Introducing Melia, our new multilingual speech-to-text model | Speechmatics",
+      "url": "https://www.speechmatics.com/company/articles-and-news/introducing-melia-multilingual-speech-to-text-model",
       "retrieved_at": "2026-10-11"
     }
   ],

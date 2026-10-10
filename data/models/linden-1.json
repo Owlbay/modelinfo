@@ -1,7 +1,7 @@
 {
   "id": "linden-1",
   "object": "model",
-  "created": null,
+  "created": 1789603200,
   "owned_by": "speechmatics",
   "name": "Linden 1",
   "api": {
@@ -26,11 +26,18 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "hour",
+    "input": 0.3,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-09-17",
     "knowledge_cutoff": null,
     "description": "Speechmatics model powering Agent STT, returning speaker-attributed turn-based segments for voice agents.",
     "docs": "https://docs.speechmatics.com/speech-to-text/models",
@@ -51,6 +58,11 @@
     {
       "title": "Authentication | Speechmatics Docs",
       "url": "https://docs.speechmatics.com/get-started/authentication",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Introducing Agent STT: built for the words that cost you the call | Speechmatics",
+      "url": "https://www.speechmatics.com/company/articles-and-news/meet-agent-stt-powered-by-linden-1-fast-accurate-speech-recognition",
       "retrieved_at": "2026-10-11"
     }
   ],
