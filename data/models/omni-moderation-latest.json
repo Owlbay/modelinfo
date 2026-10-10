@@ -1,0 +1,76 @@
+{
+  "id": "omni-moderation-latest",
+  "object": "model",
+  "created": null,
+  "owned_by": "openai",
+  "name": "omni-moderation-latest",
+  "api": {
+    "types": [
+      "moderation",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": false,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [
+    "batch"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Free moderation model that detects harmful content in text and images.",
+    "docs": "https://developers.openai.com/api/docs/models/omni-moderation-latest",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "omni-moderation-2024-09-26"
+  ],
+  "sources": [
+    {
+      "title": "omni-moderation-latest Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/omni-moderation-latest",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/pricing",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "openai",
+      "model": "omni-moderation-latest",
+      "base_url": "https://api.openai.com",
+      "endpoints": {
+        "moderation": "POST /v1/moderations",
+        "batch": "POST /v1/batches"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
