@@ -1,0 +1,65 @@
+{
+  "id": "nova-3",
+  "object": "model",
+  "created": null,
+  "owned_by": "deepgram",
+  "name": "Nova-3",
+  "api": {
+    "types": [
+      "audio"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "audio"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Deepgram general-purpose speech-to-text model with multilingual code-switching.",
+    "docs": "https://developers.deepgram.com/docs/models-languages-overview",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "nova-3-general"
+  ],
+  "sources": [
+    {
+      "title": "Models & Languages Overview | Deepgram Docs",
+      "url": "https://developers.deepgram.com/docs/models-languages-overview",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Deepgram",
+      "url": "https://deepgram.com/pricing",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "deepgram",
+      "model": "nova-3",
+      "base_url": "https://api.deepgram.com",
+      "endpoints": {
+        "audio": "POST /v1/listen"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

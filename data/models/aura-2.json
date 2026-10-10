@@ -1,0 +1,76 @@
+{
+  "id": "aura-2",
+  "object": "model",
+  "created": null,
+  "owned_by": "deepgram",
+  "name": "Aura-2",
+  "api": {
+    "types": [
+      "audio"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "audio"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Deepgram Aura-2 text-to-speech model family; each voice is a model ID of the form aura-2-{voice}-{language}.",
+    "docs": "https://developers.deepgram.com/docs/tts-models",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "aura-2-thalia-en",
+    "aura-2-celeste-es",
+    "aura-2-julius-de",
+    "aura-2-agathe-fr",
+    "aura-2-rhea-nl",
+    "aura-2-livia-it",
+    "aura-2-fujin-ja"
+  ],
+  "sources": [
+    {
+      "title": "Text to Speech Models | Deepgram Docs",
+      "url": "https://developers.deepgram.com/docs/tts-models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Text to Speech REST API | Deepgram Docs",
+      "url": "https://developers.deepgram.com/docs/text-to-speech",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Deepgram",
+      "url": "https://deepgram.com/pricing",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "deepgram",
+      "model": "aura-2",
+      "base_url": "https://api.deepgram.com",
+      "endpoints": {
+        "audio": "POST /v1/speak"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
