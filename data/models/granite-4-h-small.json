@@ -1,0 +1,78 @@
+{
+  "id": "granite-4-h-small",
+  "object": "model",
+  "created": null,
+  "owned_by": "ibm",
+  "name": "Granite 4 H Small",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 131072,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.0636,
+    "output": 0.265,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [
+    "streaming"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "IBM Granite 4 H Small foundation model on watsonx.ai.",
+    "docs": "https://www.ibm.com/docs/en/watsonx/saas?topic=solutions-supported-foundation-models",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "ibm/granite-4-h-small"
+  ],
+  "sources": [
+    {
+      "title": "Supported foundation models | IBM watsonx.ai docs",
+      "url": "https://www.ibm.com/docs/en/watsonx/saas?topic=solutions-supported-foundation-models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "watsonx.ai pricing | IBM",
+      "url": "https://www.ibm.com/products/watsonx-ai/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "watsonx.ai API reference | IBM Cloud",
+      "url": "https://cloud.ibm.com/apidocs/watsonx-ai",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "ibm",
+      "model": "ibm/granite-4-h-small",
+      "base_url": "https://us-south.ml.cloud.ibm.com",
+      "endpoints": {
+        "messages": "POST /ml/v1/text/chat"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
