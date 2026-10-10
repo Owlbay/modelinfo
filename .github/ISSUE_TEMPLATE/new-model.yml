@@ -1,0 +1,51 @@
+name: 新增模型 / New model
+description: 收录一个研发方官方 API 上可调用但尚未收录的模型 / Add a model callable on its vendor's official API
+title: "[新模型 / New model] <vendor>/<model-id>"
+labels: ["new-model"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        只收录研发方自家官方 API 上可调用的模型；已退役、仅开源权重或仅限审批机构的模型不收录。
+        Only models callable on the vendor's own official API are listed. Retired, open-weight-only or approval-only models are out of scope.
+  - type: input
+    id: vendor
+    attributes:
+      label: 研发方 / Vendor
+      placeholder: OpenAI
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: 模型 ID / Model ID
+      description: API 请求时使用的 ID / The ID used in API requests
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 类型 / Type
+      options:
+        - 对话 / Chat
+        - 向量 / Embedding
+        - 重排 / Rerank
+        - 图像 / Image
+        - 视频 / Video
+        - 音频 / Audio
+        - 其他 / Other
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: 官方来源 / Official sources
+      description: 模型页、价格页、接口文档等，一行一个 / Model page, pricing page, API reference — one per line
+    validations:
+      required: true
+  - type: checkboxes
+    id: pr
+    attributes:
+      label: 贡献 / Contribution
+      options:
+        - label: 我愿意提交 PR 添加数据文件 / I'm willing to open a PR with the data file

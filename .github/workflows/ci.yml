@@ -1,5 +1,6 @@
-name: deploy
+name: ci
 
+# 检查与构建：推送与 PR 都会运行。发布由 Cloudflare Workers Builds 在 main 更新后自动完成。
 on:
   push:
     branches: [main]
@@ -7,14 +8,14 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: deploy-${{ github.ref }}
+  group: ci-${{ github.ref }}
   cancel-in-progress: true
 
 permissions:
   contents: read
 
 jobs:
-  build:
+  check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
@@ -24,13 +25,7 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
+      - name: 数据校验 / Validate data
+        run: node scripts/validate-data.mjs
       - run: pnpm check
       - run: pnpm build
-        env:
-          SITE_URL: ${{ vars.SITE_URL }}
-      - name: 发布到 Cloudflare Workers
-        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
-        run: pnpm exec wrangler deploy
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

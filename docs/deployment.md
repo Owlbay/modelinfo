@@ -12,43 +12,39 @@
 | `assets.directory` | `./dist` | 构建产物目录 |
 | `assets.html_handling` | `auto-trailing-slash` | `/models` 自动补全为 `/models/` |
 | `assets.not_found_handling` | `404-page` | 未命中时返回 `dist/404.html` |
-| `routes` | 默认注释 | 绑定自定义域名时启用 |
+| `routes` | `modelinfo.dev` | 自定义域名 |
 
 `public/_headers`：`/v1/*` 允许跨域、缓存 5 分钟；`/_astro/*`（带 hash 的静态资源）长期缓存。
 `public/_redirects`：`/v1/models` 内部重写到 `/v1/models.json`。
 
-## 自动部署（GitHub Actions）
+## 自动部署（Cloudflare Workers Builds）
 
-`.github/workflows/deploy.yml`：
+Cloudflare 直接连接 GitHub 仓库 `Owlbay/modelinfo`，`main` 每次更新后在 Cloudflare 构建并发布，GitHub 不保存任何 Cloudflare 凭据。
 
-- 推送到 `main`：检查 → 构建 → `wrangler deploy`。
-- Pull Request：只检查与构建，不发布。
-- 也可在 Actions 页面手动触发。
+Cloudflare Dashboard → Workers & Pages → `modelinfo` → Settings → Build：
 
-需要在 GitHub 仓库 Settings → Secrets and variables → Actions 配置：
+| 项 | 值 |
+| --- | --- |
+| Git 仓库 | `Owlbay/modelinfo`，生产分支 `main` |
+| Build command | `pnpm build` |
+| Deploy command | `npx wrangler deploy` |
+| Root directory | `/` |
 
-| 类型 | 名称 | 说明 |
-| --- | --- | --- |
-| Secret | `CLOUDFLARE_API_TOKEN` | Cloudflare API Token，模板「Edit Cloudflare Workers」；绑定自定义域名还需要该域名 Zone 的 DNS 与 Workers Routes 编辑权限 |
-| Secret | `CLOUDFLARE_ACCOUNT_ID` | Cloudflare 账号 ID（Dashboard 右侧栏） |
-| Variable | `SITE_URL` | 站点正式地址，如 `https://models.example.com`；用于 canonical、hreflang 与文档中的接口地址 |
+站点地址默认 `https://modelinfo.dev`（`astro.config.mjs`），需要改成其他地址时在构建环境变量里设置 `SITE_URL`。
 
-## 绑定自定义域名
+## 自定义域名
 
-前提：域名已托管在 Cloudflare（DNS 由 Cloudflare 解析）。
+`wrangler.jsonc` 的 `routes` 已绑定 `modelinfo.dev`（`custom_domain: true`）。域名托管在同一 Cloudflare 账号下时，首次部署会自动创建 DNS 记录与证书。
 
-1. 在 `wrangler.jsonc` 取消 `routes` 注释，填写域名：
-   ```jsonc
-   "routes": [{ "pattern": "models.example.com", "custom_domain": true }]
-   ```
-2. 仓库变量 `SITE_URL` 设为 `https://models.example.com`。
-3. 推送到 `main`。`wrangler deploy` 会自动创建 DNS 记录与证书。
+## 检查（GitHub Actions）
+
+`.github/workflows/ci.yml` 在推送与 PR 时运行数据校验、`pnpm check` 与 `pnpm build`，不负责发布。PR 合并前需要通过。
 
 ## 本地手动发布
 
 ```bash
 pnpm exec wrangler login
-SITE_URL=https://models.example.com pnpm deploy
+pnpm deploy
 ```
 
 ## 其他托管

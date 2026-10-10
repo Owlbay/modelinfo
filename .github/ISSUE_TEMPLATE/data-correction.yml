@@ -1,0 +1,56 @@
+name: 数据更正 / Data correction
+description: 某个模型的数值有误或已过时 / A model's value is wrong or outdated
+title: "[数据 / Data] <model-id>: "
+labels: ["data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        每项更正都需要研发方官方来源（文档、模型页、价格页或官方公告）。第三方聚合站不能作为来源。
+        Every correction needs an official vendor source (docs, model page, pricing page or announcement). Third-party aggregators are not accepted.
+  - type: input
+    id: model
+    attributes:
+      label: 模型 ID / Model ID
+      description: data/models 下的文件名（不含 .json） / File name under data/models without .json
+      placeholder: gpt-5.4
+    validations:
+      required: true
+  - type: input
+    id: field
+    attributes:
+      label: 字段 / Field
+      placeholder: pricing.input
+    validations:
+      required: true
+  - type: input
+    id: current
+    attributes:
+      label: 当前值 / Current value
+    validations:
+      required: true
+  - type: input
+    id: correct
+    attributes:
+      label: 正确值 / Correct value
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 官方来源 / Official source
+      description: 能直接看到该数值的官方页面 / Official page where the value is visible
+      placeholder: https://
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: 补充说明 / Notes
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 确认 / Confirmation
+      options:
+        - label: 来源是研发方官方页面 / The source is an official vendor page
+          required: true

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 文档 / Documentation
+    url: https://modelinfo.dev/docs/
+    about: 接口说明、字段定义与调用示例 / API, fields and usage examples
+  - name: 贡献指南 / Contributing guide
+    url: https://github.com/Owlbay/modelinfo/blob/main/.github/CONTRIBUTING.md
+    about: 如何通过 PR 更新模型数据 / How to update model data with a pull request

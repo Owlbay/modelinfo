@@ -1,0 +1,39 @@
+name: 问题反馈 / Bug report
+description: 网站或接口出现错误 / Something on the site or API is broken
+title: "[问题 / Bug] "
+labels: ["bug"]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: 页面或接口地址 / Page or endpoint URL
+      placeholder: https://modelinfo.dev/
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤 / Steps to reproduce
+      placeholder: |
+        1.
+        2.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果 / Expected
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果 / Actual
+      description: 可附截图 / Screenshots welcome
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: 浏览器与设备 / Browser and device
+      placeholder: Chrome 142 / macOS · Safari / iPhone
