@@ -26,7 +26,14 @@
     "supported": false,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_characters",
+    "input": 60,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
@@ -34,29 +41,29 @@
     "knowledge_cutoff": null,
     "description": "Fast speech synthesis with natural flow and 40 languages.",
     "docs": "https://platform.minimax.io/docs/api-reference/speech-t2a-http",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
     {
       "title": "Models | MiniMax API Docs",
       "url": "https://platform.minimax.io/docs/guides/models-intro",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Pay as You Go pricing | MiniMax API Docs",
       "url": "https://platform.minimax.io/docs/guides/pricing-paygo",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Model release notes | MiniMax API Docs",
       "url": "https://platform.minimax.io/docs/release-notes/models",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Speech synthesis (T2A HTTP) | MiniMax API Docs",
       "url": "https://platform.minimax.io/docs/api-reference/speech-t2a-http",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

@@ -27,7 +27,14 @@
     "supported": false,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "request",
+    "input": null,
+    "output": 0.19,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
@@ -35,29 +42,29 @@
     "knowledge_cutoff": null,
     "description": "Image-to-video model focused on value and efficiency.",
     "docs": "https://platform.minimax.io/docs/api-reference/video-generation-t2v",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
     {
       "title": "Models | MiniMax API Docs",
       "url": "https://platform.minimax.io/docs/guides/models-intro",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Pay as You Go pricing | MiniMax API Docs",
       "url": "https://platform.minimax.io/docs/guides/pricing-paygo",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Model release notes | MiniMax API Docs",
       "url": "https://platform.minimax.io/docs/release-notes/models",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Video generation (text to video) | MiniMax API Docs",
       "url": "https://platform.minimax.io/docs/api-reference/video-generation-t2v",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

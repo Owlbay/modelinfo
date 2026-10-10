@@ -26,7 +26,14 @@
     "supported": false,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "image",
+    "input": null,
+    "output": 0.0035,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
@@ -34,29 +41,29 @@
     "knowledge_cutoff": null,
     "description": "Text-to-image model supporting multiple aspect ratios and sizes.",
     "docs": "https://platform.minimax.io/docs/api-reference/image-generation-t2i",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
     {
       "title": "Models | MiniMax API Docs",
       "url": "https://platform.minimax.io/docs/guides/models-intro",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Pay as You Go pricing | MiniMax API Docs",
       "url": "https://platform.minimax.io/docs/guides/pricing-paygo",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Model release notes | MiniMax API Docs",
       "url": "https://platform.minimax.io/docs/release-notes/models",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Image generation (text to image) | MiniMax API Docs",
       "url": "https://platform.minimax.io/docs/api-reference/image-generation-t2i",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
