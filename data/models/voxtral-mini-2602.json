@@ -26,7 +26,14 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "minute",
+    "input": 0.003,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
@@ -34,7 +41,7 @@
     "knowledge_cutoff": null,
     "description": "Efficient audio input model optimized for transcription only.",
     "docs": "https://docs.mistral.ai/models/voxtral-mini-transcribe-26-02",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [
     "voxtral-mini-latest"
@@ -43,12 +50,12 @@
     {
       "title": "Voxtral Mini Transcribe 2 | Mistral Docs",
       "url": "https://docs.mistral.ai/models/voxtral-mini-transcribe-26-02",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "API pricing | Mistral Docs",
       "url": "https://docs.mistral.ai/inference/pricing",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Models overview | Mistral Docs",

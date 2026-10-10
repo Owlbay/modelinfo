@@ -27,7 +27,14 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "page",
+    "input": 0.004,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [
     "batch"
   ],
@@ -37,7 +44,7 @@
     "knowledge_cutoff": null,
     "description": "OCR service powering Mistral's Document AI stack, with paragraph-level bounding boxes, block labels, and confidence scores.",
     "docs": "https://docs.mistral.ai/models/ocr-4-1",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [
     "mistral-ocr-latest"
@@ -46,12 +53,12 @@
     {
       "title": "Mistral OCR 4.1 | Mistral Docs",
       "url": "https://docs.mistral.ai/models/ocr-4-1",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "API pricing | Mistral Docs",
       "url": "https://docs.mistral.ai/inference/pricing",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Models overview | Mistral Docs",

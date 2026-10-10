@@ -27,7 +27,14 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "page",
+    "input": 0.002,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [
     "batch"
   ],
@@ -37,19 +44,19 @@
     "knowledge_cutoff": null,
     "description": "OCR service powering Mistral's Document AI stack that extracts interleaved text and images.",
     "docs": "https://docs.mistral.ai/models/ocr-3-25-12",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
     {
       "title": "Mistral OCR 3 | Mistral Docs",
       "url": "https://docs.mistral.ai/models/ocr-3-25-12",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "API pricing | Mistral Docs",
       "url": "https://docs.mistral.ai/inference/pricing",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Models overview | Mistral Docs",
