@@ -1,0 +1,85 @@
+{
+  "id": "deep-research-max-preview-04-2026",
+  "object": "model",
+  "created": null,
+  "owned_by": "google",
+  "name": "Gemini Deep Research Max Preview 04-2026",
+  "api": {
+    "types": [
+      "responses"
+    ]
+  },
+  "limits": {
+    "context": 1048576,
+    "input": 1048576,
+    "output": 65536
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "document",
+      "audio",
+      "video"
+    ],
+    "output": [
+      "text",
+      "image"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "streaming"
+  ],
+  "info": {
+    "status": "preview",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Deep Research variant for maximum comprehensiveness on long-running, accuracy-critical investigations (Interactions API).",
+    "docs": "https://ai.google.dev/gemini-api/docs/models/deep-research-max-preview-04-2026",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Deep Research Max preview 04-2026 | Gemini API",
+      "url": "https://ai.google.dev/gemini-api/docs/models/deep-research-max-preview-04-2026",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Gemini Deep Research agent | Gemini API",
+      "url": "https://ai.google.dev/gemini-api/docs/deep-research",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Models | Gemini API",
+      "url": "https://ai.google.dev/gemini-api/docs/models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Gemini API",
+      "url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Deprecations | Gemini API",
+      "url": "https://ai.google.dev/gemini-api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "google",
+      "model": "deep-research-max-preview-04-2026",
+      "base_url": "https://generativelanguage.googleapis.com",
+      "endpoints": {
+        "responses": "POST /v1beta/interactions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
