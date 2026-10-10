@@ -26,7 +26,14 @@
     "supported": false,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "CNY",
+    "unit": "hour",
+    "input": 0.5,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [
     "streaming"
   ],
@@ -36,7 +43,7 @@
     "knowledge_cutoff": null,
     "description": "Xiaomi bilingual Chinese and English speech recognition with several Chinese dialects.",
     "docs": "https://mimo.mi.com/models/zh-CN/mimo-v2.5-asr",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -48,7 +55,7 @@
     {
       "title": "按量计费 | Xiaomi MiMo",
       "url": "https://mimo.mi.com/docs/zh-CN/price/pay-as-you-go",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
