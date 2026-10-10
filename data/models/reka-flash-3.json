@@ -1,0 +1,65 @@
+{
+  "id": "reka-flash-3",
+  "object": "model",
+  "created": null,
+  "owned_by": "reka",
+  "name": "Reka Flash 3",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "structured_output"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Reka's reasoning text model served on the Reka API.",
+    "docs": "https://docs.reka.ai/chat/models",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Models | Reka API Docs",
+      "url": "https://docs.reka.ai/chat/models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "API Pricing | Reka API Docs",
+      "url": "https://docs.reka.ai/pricing",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "reka",
+      "model": "reka-flash-3",
+      "base_url": "https://api.reka.ai/v1",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
