@@ -255,7 +255,16 @@ const kindOptions = [
   .models--full .models__head .hx,
   .models--full .models__head .head__out,
   .models--full .models__head .head__date { display: block; }
-  .models--full .head__main { position: sticky; left: 0; z-index: 1; background: var(--bg); }
+  .models--full .head__main {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    align-self: stretch;
+    margin-bottom: calc(-1 * var(--sp-2));
+    padding-bottom: var(--sp-2);
+    background: var(--bg);
+    box-shadow: var(--sp-5) 0 0 var(--bg);
+  }
   .models__empty {
     padding: var(--sp-5) 0;
     color: var(--ink-3);

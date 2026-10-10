@@ -98,15 +98,27 @@ const cache = p && (p.cache_read !== null || p.cache_write !== null) ? `${format
   :global(.models--full) .mrow__x { display: block; }
   :global(.models--full) .mrow > span { white-space: nowrap; }
   :global(.models--full) .mrow > span:not(.mrow__num):not(.mrow__date) { color: var(--ink-2); }
+  /* 固定列：撑满整行（含行内边距），右侧阴影盖住列间距，横向滚动时下层内容不外露；悬停时随行变色 */
+  :global(.models--full) .mrow { --row-pad: 0px; }
   :global(.models--full) .mrow .mrow__main {
     position: sticky;
     left: 0;
     z-index: 1;
+    align-self: stretch;
     flex-direction: column;
+    justify-content: center;
     gap: 0;
+    margin-block: calc(-1 * var(--sp-3));
+    padding-block: var(--sp-3);
     background: var(--bg);
+    box-shadow: var(--sp-5) 0 0 var(--bg);
   }
-  :global(.models--full) .mrow:hover .mrow__main { background: var(--bg); }
+  @media (hover: hover) {
+    :global(.models--full) .mrow:hover .mrow__main {
+      background: var(--hover-row-solid);
+      box-shadow: var(--sp-5) 0 0 var(--hover-row-solid);
+    }
+  }
   :global(.models--full) .mrow .mrow__name { max-width: 100%; overflow: hidden; text-overflow: ellipsis; color: var(--ink); }
   :global(.models--full) .mrow .mrow__id { max-width: 100%; }
 

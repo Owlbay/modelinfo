@@ -22,6 +22,8 @@
   --line-strong: rgba(250, 249, 245, 0.28);
   /* 态 */
   --hover-row: rgba(250, 249, 245, 0.045);
+  /* 与 --hover-row 叠在 --bg 上的效果相同的不透明色，用于需要遮挡下层内容的固定列 */
+  --hover-row-solid: #1e1e1d;
   --selected-bg: var(--ink);
   --selected-ink: var(--bg);
   --selection: rgba(217, 119, 87, 0.35);
@@ -114,6 +116,7 @@
   --line-soft: rgba(20, 20, 19, 0.08);
   --line-strong: rgba(20, 20, 19, 0.28);
   --hover-row: rgba(20, 20, 19, 0.04);
+  --hover-row-solid: #f1f0ec;
   --selection: rgba(193, 95, 60, 0.28);
   --field-ink: 20, 20, 19;
   --field-ember: 193, 95, 60;
