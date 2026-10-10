@@ -10,9 +10,9 @@
     ]
   },
   "limits": {
-    "context": 200000,
+    "context": 202752,
     "input": null,
-    "output": 128000
+    "output": 131072
   },
   "modalities": {
     "input": [
@@ -62,6 +62,16 @@
     {
       "title": "Release Notes | Z.AI Developer Document",
       "url": "https://docs.z.ai/release-notes/new-released",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Create Chat Completion (max_tokens maximum 131072) | Z.AI Developer Document",
+      "url": "https://docs.z.ai/api-reference/llm/chat-completion",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "GLM-4.6 config.json (max_position_embeddings 202752) | Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-4.6/blob/main/config.json",
       "retrieved_at": "2026-10-10"
     }
   ],

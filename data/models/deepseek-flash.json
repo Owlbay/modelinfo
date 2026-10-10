@@ -10,7 +10,7 @@
     ]
   },
   "limits": {
-    "context": 1000000,
+    "context": 1048576,
     "input": null,
     "output": 393216
   },
@@ -75,6 +75,11 @@
     {
       "title": "Create Chat Completion | DeepSeek API Docs",
       "url": "https://api-docs.deepseek.com/api/create-chat-completion",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "DeepSeek-V4-Flash config.json (max_position_embeddings 1048576) | Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash/blob/main/config.json",
       "retrieved_at": "2026-10-10"
     }
   ],

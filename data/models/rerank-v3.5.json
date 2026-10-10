@@ -10,7 +10,7 @@
     ]
   },
   "limits": {
-    "context": 4000,
+    "context": 4096,
     "input": null,
     "output": null
   },
@@ -51,6 +51,11 @@
     {
       "title": "How does Cohere pricing work?",
       "url": "https://docs.cohere.com/docs/how-does-cohere-pricing-work",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Rerank Overview (context length of 4096 tokens) | Cohere Docs",
+      "url": "https://docs.cohere.com/docs/rerank",
       "retrieved_at": "2026-10-10"
     }
   ],

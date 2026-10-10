@@ -10,7 +10,7 @@
     ]
   },
   "limits": {
-    "context": 256000,
+    "context": 262144,
     "input": null,
     "output": 4096
   },
@@ -68,6 +68,11 @@
     {
       "title": "AI21 Pricing",
       "url": "https://www.ai21.com/pricing/",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "AI21-Jamba2-Mini config.json (max_position_embeddings 262144 for 256K) | Hugging Face",
+      "url": "https://huggingface.co/ai21labs/AI21-Jamba2-Mini/blob/main/config.json",
       "retrieved_at": "2026-10-10"
     }
   ],

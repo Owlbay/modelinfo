@@ -11,7 +11,7 @@
     ]
   },
   "limits": {
-    "context": 1000000,
+    "context": 1048576,
     "input": null,
     "output": null
   },
@@ -74,6 +74,11 @@
     {
       "title": "Reasoning | Mistral Docs",
       "url": "https://docs.mistral.ai/capabilities/reasoning/",
+      "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Mistral-Large-3-675B-Instruct-2512 (256k context, 262144) | Hugging Face",
+      "url": "https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512",
       "retrieved_at": "2026-10-10"
     }
   ],
