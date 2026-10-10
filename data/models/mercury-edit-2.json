@@ -1,7 +1,7 @@
 {
   "id": "mercury-edit-2",
   "object": "model",
-  "created": null,
+  "created": 1774828800,
   "owned_by": "inception",
   "name": "Mercury Edit 2",
   "api": {
@@ -39,7 +39,7 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-03-30",
     "knowledge_cutoff": null,
     "description": "Code editing model for autocomplete (FIM) and next edit suggestions.",
     "docs": "https://docs.inceptionlabs.ai/get-started/models",
@@ -65,6 +65,11 @@
     {
       "title": "Inception API OpenAPI specification",
       "url": "https://api.inceptionlabs.ai/openapi.json",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Introducing Mercury Edit 2 - Inception Blog",
+      "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-edit-2",
       "retrieved_at": "2026-10-11"
     }
   ],

@@ -1,7 +1,7 @@
 {
   "id": "mercury-2.5",
   "object": "model",
-  "created": null,
+  "created": 1788825600,
   "owned_by": "inception",
   "name": "Mercury 2.5",
   "api": {
@@ -46,7 +46,7 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-09-08",
     "knowledge_cutoff": null,
     "description": "Latest reasoning diffusion model for fast chat, agents and structured workflows.",
     "docs": "https://docs.inceptionlabs.ai/get-started/models",
@@ -72,6 +72,11 @@
     {
       "title": "List available models | Inception API",
       "url": "https://api.inceptionlabs.ai/v1/models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Introducing Mercury 2.5 - Inception Blog",
+      "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-2-5",
       "retrieved_at": "2026-10-11"
     }
   ],
