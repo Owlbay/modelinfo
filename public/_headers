@@ -1,0 +1,18 @@
+# Cloudflare Static Assets 响应头。自托管时与 deploy/Caddyfile 保持一致。
+
+/v1/*
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+  Cache-Control: public, max-age=300, stale-while-revalidate=3600
+
+# 多条规则命中时同名头会被拼接，先移除 /v1/* 设置的值
+/v1/meta.json
+  ! Cache-Control
+  Cache-Control: public, max-age=60, must-revalidate
+
+/data/*
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable

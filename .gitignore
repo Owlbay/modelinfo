@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.wrangler/
+.DS_Store
+*.log
+
+# `pnpm sync` 生成的数据，不入库
+public/v1/
+public/data/
+
+# 本地工具配置
+.claude/

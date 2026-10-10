@@ -1,0 +1,5 @@
+# 无扩展名的 API 路径重写到静态 JSON（200 = 内部重写，地址不变）。查询参数不参与匹配。
+/v1/models                       /v1/models.json                       200
+/v1/health                       /v1/meta.json                         200
+/v1/meta                         /v1/meta.json                         200
+/v1/providers/:provider/models   /v1/providers/:provider/models.json   200
