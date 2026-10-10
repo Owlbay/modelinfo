@@ -38,12 +38,12 @@
   },
   "features": [],
   "info": {
-    "status": "active",
+    "status": "deprecated",
     "release_date": "2025-03-20",
     "knowledge_cutoff": "2024-06-01",
     "description": "Speech-to-text model powered by GPT-4o Mini.",
     "docs": "https://developers.openai.com/api/docs/models/gpt-4o-mini-transcribe",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [
     "gpt-4o-mini-transcribe-2025-03-20",
@@ -53,22 +53,22 @@
     {
       "title": "GPT-4o Mini Transcribe Model | OpenAI API",
       "url": "https://developers.openai.com/api/docs/models/gpt-4o-mini-transcribe",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Pricing | OpenAI API",
       "url": "https://developers.openai.com/api/docs/pricing",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Models | OpenAI API",
       "url": "https://developers.openai.com/api/docs/models/all",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Changelog | OpenAI API",
       "url": "https://developers.openai.com/api/docs/changelog",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

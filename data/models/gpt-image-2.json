@@ -28,7 +28,14 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 5,
+    "output": 30,
+    "cache_read": 1.25,
+    "cache_write": null
+  },
   "features": [
     "batch"
   ],
@@ -38,7 +45,7 @@
     "knowledge_cutoff": null,
     "description": "State-of-the-art image generation model for fast, high-quality image generation and editing.",
     "docs": "https://developers.openai.com/api/docs/models/gpt-image-2",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [
     "gpt-image-2-2026-04-21"
@@ -47,22 +54,22 @@
     {
       "title": "GPT-Image-2 Model | OpenAI API",
       "url": "https://developers.openai.com/api/docs/models/gpt-image-2",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Pricing | OpenAI API",
       "url": "https://developers.openai.com/api/docs/pricing",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Models | OpenAI API",
       "url": "https://developers.openai.com/api/docs/models/all",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Changelog | OpenAI API",
       "url": "https://developers.openai.com/api/docs/changelog",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

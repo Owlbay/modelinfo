@@ -28,7 +28,14 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "minute",
+    "input": 0.05,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [
     "tools",
     "streaming"
@@ -39,29 +46,29 @@
     "knowledge_cutoff": "2025-07-31",
     "description": "Premier model for natural, expressive voice conversations with smooth interruption handling.",
     "docs": "https://developers.openai.com/api/docs/models/gpt-live-1",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
     {
       "title": "GPT-Live 1 Model | OpenAI API",
       "url": "https://developers.openai.com/api/docs/models/gpt-live-1",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Pricing | OpenAI API",
       "url": "https://developers.openai.com/api/docs/pricing",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Models | OpenAI API",
       "url": "https://developers.openai.com/api/docs/models/all",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Changelog | OpenAI API",
       "url": "https://developers.openai.com/api/docs/changelog",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

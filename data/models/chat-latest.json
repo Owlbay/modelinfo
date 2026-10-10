@@ -1,7 +1,7 @@
 {
   "id": "chat-latest",
   "object": "model",
-  "created": null,
+  "created": 1777939200,
   "owned_by": "openai",
   "name": "chat-latest",
   "api": {
@@ -44,33 +44,33 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-05-05",
     "knowledge_cutoff": "2025-08-31",
     "description": "Points to the latest Instant model currently used in ChatGPT.",
     "docs": "https://developers.openai.com/api/docs/models/chat-latest",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
     {
       "title": "chat-latest Model | OpenAI API",
       "url": "https://developers.openai.com/api/docs/models/chat-latest",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Pricing | OpenAI API",
       "url": "https://developers.openai.com/api/docs/pricing",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Models | OpenAI API",
       "url": "https://developers.openai.com/api/docs/models/all",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Changelog | OpenAI API",
       "url": "https://developers.openai.com/api/docs/changelog",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
