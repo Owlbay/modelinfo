@@ -1,7 +1,7 @@
 {
   "id": "muse-image-1.0",
   "object": "model",
-  "created": null,
+  "created": 1787616000,
   "owned_by": "meta",
   "name": "Muse Image 1.0",
   "api": {
@@ -28,15 +28,22 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "image",
+    "input": null,
+    "output": 0.01,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-08-25",
     "knowledge_cutoff": null,
     "description": "Meta's image model that generates and edits images from text prompts and reference images.",
     "docs": "https://dev.meta.ai/docs/image-generation",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -48,12 +55,17 @@
     {
       "title": "Pricing and rate limits | Meta Model API",
       "url": "https://dev.meta.ai/docs/pricing-rate-limits",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Image generation | Meta Model API",
       "url": "https://dev.meta.ai/docs/image-generation",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Muse Image on Meta Model API | Meta for Developers",
+      "url": "https://developer.meta.com/ai/resources/blog/build-with-muse-Image/",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

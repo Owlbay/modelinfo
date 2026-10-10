@@ -1,7 +1,7 @@
 {
   "id": "sam-3.1",
   "object": "model",
-  "created": null,
+  "created": 1774569600,
   "owned_by": "meta",
   "name": "Segment Anything Model 3.1",
   "api": {
@@ -34,11 +34,11 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-03-27",
     "knowledge_cutoff": null,
     "description": "Meta's segmentation model that returns boxes and masks for objects in images and video from a short text prompt.",
     "docs": "https://dev.meta.ai/docs/media-segmentation",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -56,6 +56,11 @@
       "title": "Media segmentation | Meta Model API",
       "url": "https://dev.meta.ai/docs/media-segmentation",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "SAM 3.1 | Meta AI",
+      "url": "https://ai.meta.com/blog/segment-anything-model-3/",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

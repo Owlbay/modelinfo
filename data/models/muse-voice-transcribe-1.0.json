@@ -1,7 +1,7 @@
 {
   "id": "muse-voice-transcribe-1.0",
   "object": "model",
-  "created": null,
+  "created": 1788220800,
   "owned_by": "meta",
   "name": "Muse Voice Transcribe 1.0",
   "api": {
@@ -27,17 +27,24 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "hour",
+    "input": 0.18,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [
     "streaming"
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-09-01",
     "knowledge_cutoff": null,
     "description": "Meta's speech-to-text model for transcribing live audio streams or supported audio files.",
     "docs": "https://dev.meta.ai/docs/speech-to-text",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -49,12 +56,17 @@
     {
       "title": "Pricing and rate limits | Meta Model API",
       "url": "https://dev.meta.ai/docs/pricing-rate-limits",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Speech to text | Meta Model API",
       "url": "https://dev.meta.ai/docs/speech-to-text",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Introducing Muse Voice Transcribe | Meta",
+      "url": "https://research.meta.ai/blog/introducing-muse-voice-transcribe",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
