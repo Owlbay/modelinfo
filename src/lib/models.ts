@@ -3,15 +3,15 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 
 export type Model = CollectionEntry<'models'>['data'];
 
-/** 发布顺序：研发方，再按发布日期新到旧，未知日期排后 */
+/** 发布顺序：按发布日期新到旧，未知日期排最后；同日按研发方、ID */
 export async function getModels(): Promise<Model[]> {
   const list = (await getCollection('models')).map((e) => e.data);
   const unknown = [...new Set(list.map((m) => m.owned_by).filter((o) => !VENDORS.has(o)))];
   if (unknown.length) throw new Error(`data/vendors 缺少研发方：${unknown.join(', ')}`);
   return list.sort(
     (a, b) =>
+      (b.created ?? -1) - (a.created ?? -1) ||
       a.owned_by.localeCompare(b.owned_by) ||
-      (b.created ?? 0) - (a.created ?? 0) ||
       a.id.localeCompare(b.id),
   );
 }
