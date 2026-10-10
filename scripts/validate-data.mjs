@@ -8,6 +8,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const DIR = path.join(path.dirname(new URL(import.meta.url).pathname), '..', 'data', 'models');
+const VENDOR_DIR = path.join(DIR, '..', 'vendors');
+const VENDORS = new Set(fs.readdirSync(VENDOR_DIR).filter((f) => f.endsWith('.json')).map((f) => f.slice(0, -5)));
 const KEYS = ['id', 'object', 'created', 'owned_by', 'name', 'api', 'limits', 'modalities', 'reasoning', 'pricing', 'features', 'info', 'aliases', 'sources', 'providers'];
 const API = ['messages', 'responses', 'completions', 'generate', 'batch', 'realtime', 'embeddings', 'images', 'video', 'audio', 'rerank', 'ocr', 'moderation'];
 const MOD = ['text', 'image', 'audio', 'video', 'document', 'embedding', 'score'];
@@ -40,6 +42,7 @@ for (const file of files) {
   if (m.object !== 'model') e('object 必须为 "model"');
   if (!(m.created === null || (Number.isInteger(m.created) && m.created > 0))) e('created 为 Unix 秒或 null');
   if (!/^[a-z0-9-]+$/.test(m.owned_by ?? '')) e('owned_by 只能是小写字母数字 -');
+  else if (!VENDORS.has(m.owned_by)) e(`owned_by "${m.owned_by}" 未在 data/vendors/ 登记（需新增 data/vendors/${m.owned_by}.json）`);
   if (!m.name) e('name 必填');
   if (!Array.isArray(m.api?.types) || !m.api.types.length || m.api.types.some((t) => !API.includes(t)) || Object.keys(m.api).join() !== 'types') e(`api 只含 types，取值 ${API.join('|')}`);
   const tok = (v) => v === null || (Number.isInteger(v) && v > 0);

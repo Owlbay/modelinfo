@@ -15,7 +15,7 @@ ModelInfo 的模型数据全部在 `data/models/*.json`，一个模型一个文�
 ### 提交 PR 更新数据
 
 1. Fork 仓库并新建分支，例如 `data/gpt-5.4-pricing`。
-2. 修改或新建 `data/models/<id>.json`，文件名与 `id` 一致。字段与顺序见 [接口规范](../docs/spec-v1-models.md)，收录范围与数据约定见 [数据维护](../docs/maintenance.md)。
+2. 修改或新建 `data/models/<id>.json`，文件名与 `id` 一致；新研发方先新建 `data/vendors/<owned_by>.json`（`id`、`name`、`url`）。字段与顺序见 [接口规范](../docs/spec-v1-models.md)，收录范围与数据约定见 [数据维护](../docs/maintenance.md)。
 3. 规则：
    - 只用研发方官方文档、模型页、价格页与官方公告，并写进该文件的 `sources`。
    - 官方没有给出的值写 `null` 或空数组，不推算、不填 0。
@@ -47,7 +47,7 @@ All model data lives in `data/models/*.json`, one file per model. Issues and pul
 ### Updating data with a pull request
 
 1. Fork the repository and create a branch, e.g. `data/gpt-5.4-pricing`.
-2. Edit or add `data/models/<id>.json`; the file name must match `id`. Field order is defined in the [API spec](../docs/spec-v1-models.md); scope and conventions are in [data maintenance](../docs/maintenance.md) (Chinese).
+2. Edit or add `data/models/<id>.json`; the file name must match `id`. For a new vendor, first add `data/vendors/<owned_by>.json` (`id`, `name`, `url`). Field order is defined in the [API spec](../docs/spec-v1-models.md); scope and conventions are in [data maintenance](../docs/maintenance.md) (Chinese).
 3. Rules:
    - Use only official vendor docs, model pages, pricing pages and announcements, and list them in the file's `sources`.
    - Values the vendor does not publish are `null` or an empty array — never estimated, never 0.

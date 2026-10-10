@@ -20,8 +20,9 @@
 
 ```text
 data/models/*.json        模型数据，唯一真源（规范见 spec-v1-models.md）
+data/vendors/*.json       研发方登记：id、显示名、官网
 src/content.config.ts     数据 schema，构建时校验，不合规即失败
-src/lib/models.ts         取数、排序、发布字段裁剪 toPublic()、格式化、研发方显示名、模型类型
+src/lib/models.ts         取数、排序、发布字段裁剪 toPublic()、格式化、研发方显示名（读 data/vendors）、模型类型
 src/lib/nav.ts            导航与快捷键
 src/i18n/                 多语言：zh.ts（结构基准）、en.ts、index.ts（语言注册表）
 src/pages/                路由：默认语言在根目录，其他语言在 [lang]/ 动态生成；v1/models.json.ts 生成接口

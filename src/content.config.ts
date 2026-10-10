@@ -88,4 +88,16 @@ const models = defineCollection({
     }),
 });
 
-export const collections = { models };
+/** 研发方：data/vendors/<id>.json，id 即模型的 owned_by */
+const vendors = defineCollection({
+  loader: glob({ pattern: '*.json', base: './data/vendors' }),
+  schema: z
+    .object({
+      id: z.string().regex(/^[a-z0-9-]+$/),
+      name: z.string().min(1),
+      url: z.url().startsWith('https://'),
+    })
+    .strict(),
+});
+
+export const collections = { models, vendors };

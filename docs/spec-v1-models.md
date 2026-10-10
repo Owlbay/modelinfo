@@ -103,6 +103,9 @@ info         ⑥ 源信息
 
 ## 7. 数据文件
 
+研发方登记在 `data/vendors/<id>.json`：`{ "id", "name", "url" }`，`id` 即模型的 `owned_by`，`name` 为界面显示名。新研发方的模型需要先登记研发方。
+
+
 `data/models/<id>.json` = 第 3 节的标准字段 + 三个维护字段（不发布）：
 
 | 字段 | 说明 |

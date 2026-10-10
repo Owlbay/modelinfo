@@ -6,6 +6,8 @@ export type Model = CollectionEntry<'models'>['data'];
 /** 发布顺序：研发方，再按发布日期新到旧，未知日期排后 */
 export async function getModels(): Promise<Model[]> {
   const list = (await getCollection('models')).map((e) => e.data);
+  const unknown = [...new Set(list.map((m) => m.owned_by).filter((o) => !VENDORS.has(o)))];
+  if (unknown.length) throw new Error(`data/vendors 缺少研发方：${unknown.join(', ')}`);
   return list.sort(
     (a, b) =>
       a.owned_by.localeCompare(b.owned_by) ||
@@ -38,30 +40,9 @@ export function latestVerified(models: Model[]): string | null {
   return models.map((m) => m.info.verified_at).filter((d): d is string => !!d).sort().at(-1) ?? null;
 }
 
-/** 研发方显示名；未登记时显示 owned_by 原值 */
-export const OWNER_NAMES: Record<string, string> = {
-  openai: 'OpenAI',
-  anthropic: 'Anthropic',
-  google: 'Google',
-  alibaba: 'Alibaba',
-  deepseek: 'DeepSeek',
-  moonshot: 'Moonshot AI',
-  zhipu: 'Zhipu AI',
-  minimax: 'MiniMax',
-  stepfun: 'StepFun',
-  bytedance: 'ByteDance',
-  baidu: 'Baidu',
-  tencent: 'Tencent',
-  xiaomi: 'Xiaomi',
-  iflytek: 'iFlytek',
-  xai: 'xAI',
-  mistral: 'Mistral AI',
-  cohere: 'Cohere',
-  amazon: 'Amazon',
-  meta: 'Meta',
-  ai21: 'AI21 Labs',
-};
-export const ownerName = (id: string) => OWNER_NAMES[id] ?? id;
+/** 研发方显示名，来自 data/vendors/*.json */
+const VENDORS = new Map((await getCollection('vendors')).map((e) => [e.data.id, e.data]));
+export const ownerName = (id: string) => VENDORS.get(id)?.name ?? id;
 
 /** 模型类型：按输出与接口归类，用于列表筛选 */
 export const KINDS = ['chat', 'embedding', 'rerank', 'image', 'video', 'audio'] as const;
