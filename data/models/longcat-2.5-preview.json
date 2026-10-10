@@ -1,0 +1,78 @@
+{
+  "id": "longcat-2.5-preview",
+  "object": "model",
+  "created": 1790294400,
+  "owned_by": "meituan",
+  "name": "LongCat-2.5-Preview",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 1048576,
+    "input": null,
+    "output": 131072
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "streaming"
+  ],
+  "info": {
+    "status": "preview",
+    "release_date": "2026-09-25",
+    "knowledge_cutoff": null,
+    "description": "Meituan LongCat high-performance agentic model with image understanding and strong coding capability.",
+    "docs": "https://longcat.chat/platform/docs/pricing/longcat-2.5",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "LongCat-2.5-Preview"
+  ],
+  "sources": [
+    {
+      "title": "Quick Start / Models | LongCat API Docs",
+      "url": "https://longcat.chat/platform/docs/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Chat Completions | LongCat API Docs",
+      "url": "https://longcat.chat/platform/docs/api/chat",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Change Log | LongCat API Docs",
+      "url": "https://longcat.chat/platform/docs/change-log",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "LongCat-2.5-Preview Pricing | LongCat API Docs",
+      "url": "https://longcat.chat/platform/docs/pricing/longcat-2.5",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "meituan",
+      "model": "LongCat-2.5-Preview",
+      "base_url": "https://api.longcat.chat/openai/v1",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": "thinking.type"
+    }
+  ]
+}

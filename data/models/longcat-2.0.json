@@ -1,0 +1,78 @@
+{
+  "id": "longcat-2.0",
+  "object": "model",
+  "created": 1782777600,
+  "owned_by": "meituan",
+  "name": "LongCat-2.0",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 1048576,
+    "input": null,
+    "output": 131072
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "tools",
+    "streaming"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2026-06-30",
+    "knowledge_cutoff": null,
+    "description": "Meituan LongCat trillion-parameter agentic model with 1M context, native tool calling and multi-step reasoning.",
+    "docs": "https://longcat.chat/platform/docs/pricing/longcat-2.0",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "LongCat-2.0"
+  ],
+  "sources": [
+    {
+      "title": "Quick Start / Models | LongCat API Docs",
+      "url": "https://longcat.chat/platform/docs/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Chat Completions | LongCat API Docs",
+      "url": "https://longcat.chat/platform/docs/api/chat",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Change Log | LongCat API Docs",
+      "url": "https://longcat.chat/platform/docs/change-log",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "LongCat-2.0 Pricing | LongCat API Docs",
+      "url": "https://longcat.chat/platform/docs/pricing/longcat-2.0",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "meituan",
+      "model": "LongCat-2.0",
+      "base_url": "https://api.longcat.chat/openai/v1",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": "thinking.type"
+    }
+  ]
+}
