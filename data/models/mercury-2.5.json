@@ -1,0 +1,88 @@
+{
+  "id": "mercury-2.5",
+  "object": "model",
+  "created": null,
+  "owned_by": "inception",
+  "name": "Mercury 2.5",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 260000,
+    "input": null,
+    "output": 65536
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": [
+      "instant",
+      "low",
+      "medium",
+      "high"
+    ]
+  },
+  "pricing": {
+    "currency": "USD",
+    "input": 0.2,
+    "output": 0.75,
+    "cache_read": 0.02,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "streaming"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Latest reasoning diffusion model for fast chat, agents and structured workflows.",
+    "docs": "https://docs.inceptionlabs.ai/get-started/models",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Models | Inception Docs",
+      "url": "https://docs.inceptionlabs.ai/get-started/models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Reasoning Efforts | Inception Docs",
+      "url": "https://docs.inceptionlabs.ai/capabilities/reasoning-efforts",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Inception API OpenAPI specification",
+      "url": "https://api.inceptionlabs.ai/openapi.json",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "List available models | Inception API",
+      "url": "https://api.inceptionlabs.ai/v1/models",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "inception",
+      "model": "mercury-2.5",
+      "base_url": "https://api.inceptionlabs.ai/v1",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": "reasoning_effort"
+    }
+  ]
+}
