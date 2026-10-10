@@ -1,7 +1,7 @@
 {
   "id": "flux-kontext-pro",
   "object": "model",
-  "created": null,
+  "created": 1748476800,
   "owned_by": "black-forest-labs",
   "name": "FLUX.1 Kontext [pro]",
   "api": {
@@ -27,11 +27,18 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "image",
+    "input": null,
+    "output": 0.04,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-05-29",
     "knowledge_cutoff": null,
     "description": "Previous-generation model combining text-to-image generation with context-aware image editing.",
     "docs": "https://docs.bfl.ml/kontext/kontext_overview",
@@ -57,6 +64,11 @@
     {
       "title": "FLUX API OpenAPI specification",
       "url": "https://api.bfl.ai/openapi.json",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Introducing FLUX.1 Kontext and the BFL Playground",
+      "url": "https://bfl.ai/announcements/flux-1-kontext",
       "retrieved_at": "2026-10-11"
     }
   ],

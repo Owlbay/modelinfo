@@ -1,7 +1,7 @@
 {
   "id": "flux-pro-1.0-fill",
   "object": "model",
-  "created": null,
+  "created": 1732147200,
   "owned_by": "black-forest-labs",
   "name": "FLUX.1 Fill [pro]",
   "api": {
@@ -27,11 +27,18 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "image",
+    "input": null,
+    "output": 0.05,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2024-11-21",
     "knowledge_cutoff": null,
     "description": "Text-driven inpainting that edits masked regions of an image.",
     "docs": "https://docs.bfl.ml/flux_1_fill",
@@ -52,6 +59,11 @@
     {
       "title": "FLUX API OpenAPI specification",
       "url": "https://api.bfl.ai/openapi.json",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Introducing FLUX.1 Tools",
+      "url": "https://bfl.ai/announcements/24-11-21-tools",
       "retrieved_at": "2026-10-11"
     }
   ],
