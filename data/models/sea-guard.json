@@ -1,0 +1,65 @@
+{
+  "id": "sea-guard",
+  "object": "model",
+  "created": null,
+  "owned_by": "aisingapore",
+  "name": "SEA-Guard",
+  "api": {
+    "types": [
+      "moderation"
+    ]
+  },
+  "limits": {
+    "context": 131072,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Safety model for Southeast Asian languages returning a binary safe / unsafe classification; no system prompts or multi-turn conversations.",
+    "docs": "https://docs.sea-lion.ai/guides/inferencing/api",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "aisingapore/SEA-Guard"
+  ],
+  "sources": [
+    {
+      "title": "Inferencing API | SEA-LION Docs",
+      "url": "https://docs.sea-lion.ai/guides/inferencing/api",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SEA-GUARD | SEA-LION Docs",
+      "url": "https://docs.sea-lion.ai/models/sea-guard/qwennllama-sea-guard",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "aisingapore",
+      "model": "aisingapore/SEA-Guard",
+      "base_url": "https://api.sea-lion.ai/v1",
+      "endpoints": {
+        "moderation": "POST /chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

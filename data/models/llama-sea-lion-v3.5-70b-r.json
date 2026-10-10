@@ -1,0 +1,70 @@
+{
+  "id": "llama-sea-lion-v3.5-70b-r",
+  "object": "model",
+  "created": null,
+  "owned_by": "aisingapore",
+  "name": "Llama-SEA-LION v3.5 70B R",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 131072,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Hybrid reasoning model for Southeast Asian languages built on Llama 3.1; reasoning on by default and can be turned off.",
+    "docs": "https://docs.sea-lion.ai/guides/inferencing/api",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "aisingapore/Llama-SEA-LION-v3.5-70B-R"
+  ],
+  "sources": [
+    {
+      "title": "Inferencing API | SEA-LION Docs",
+      "url": "https://docs.sea-lion.ai/guides/inferencing/api",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Llama-SEA-LION-v3.5-70B | SEA-LION Docs",
+      "url": "https://docs.sea-lion.ai/models/sea-lion-v3.5/llama-sea-lion-v3.5-70b",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Hugging Face aisingapore/Llama-SEA-LION-v3.5-70B-R config.json (official org)",
+      "url": "https://huggingface.co/aisingapore/Llama-SEA-LION-v3.5-70B-R/blob/main/config.json",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "aisingapore",
+      "model": "aisingapore/Llama-SEA-LION-v3.5-70B-R",
+      "base_url": "https://api.sea-lion.ai/v1",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": "chat_template_kwargs.thinking_mode"
+    }
+  ]
+}
