@@ -1,7 +1,7 @@
 {
   "id": "voyage-3-large",
   "object": "model",
-  "created": null,
+  "created": 1736208000,
   "owned_by": "voyage",
   "name": "Voyage 3 Large",
   "api": {
@@ -37,7 +37,7 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-01-07",
     "knowledge_cutoff": null,
     "description": "Previous-generation Voyage general-purpose and multilingual embedding model.",
     "docs": "https://docs.voyageai.com/docs/embeddings",
@@ -58,6 +58,11 @@
     {
       "title": "Text embeddings API | Voyage AI Docs",
       "url": "https://docs.voyageai.com/reference/embeddings-api",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Voyage AI Blog: voyage-3-large",
+      "url": "https://blog.voyageai.com/2025/01/07/voyage-3-large",
       "retrieved_at": "2026-10-11"
     }
   ],

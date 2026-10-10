@@ -1,7 +1,7 @@
 {
   "id": "voyage-3.5-lite",
   "object": "model",
-  "created": null,
+  "created": 1747699200,
   "owned_by": "voyage",
   "name": "Voyage 3.5 Lite",
   "api": {
@@ -37,7 +37,7 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-05-20",
     "knowledge_cutoff": null,
     "description": "Previous-generation Voyage embedding model optimized for latency and cost.",
     "docs": "https://docs.voyageai.com/docs/embeddings",
@@ -58,6 +58,11 @@
     {
       "title": "Text embeddings API | Voyage AI Docs",
       "url": "https://docs.voyageai.com/reference/embeddings-api",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Voyage AI Blog: voyage-3.5-lite",
+      "url": "https://blog.voyageai.com/2025/05/20/voyage-3-5",
       "retrieved_at": "2026-10-11"
     }
   ],

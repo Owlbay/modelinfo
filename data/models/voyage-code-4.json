@@ -1,7 +1,7 @@
 {
   "id": "voyage-code-4",
   "object": "model",
-  "created": null,
+  "created": 1786579200,
   "owned_by": "voyage",
   "name": "Voyage Code 4",
   "api": {
@@ -37,7 +37,7 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-08-13",
     "knowledge_cutoff": null,
     "description": "Voyage embedding model optimized for code retrieval and coding agent use cases.",
     "docs": "https://docs.voyageai.com/docs/embeddings",
@@ -58,6 +58,11 @@
     {
       "title": "Text embeddings API | Voyage AI Docs",
       "url": "https://docs.voyageai.com/reference/embeddings-api",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Voyage AI Blog: voyage-code-4",
+      "url": "https://blog.voyageai.com/2026/08/13/voyage-code-4",
       "retrieved_at": "2026-10-11"
     }
   ],

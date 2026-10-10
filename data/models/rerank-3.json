@@ -1,7 +1,7 @@
 {
   "id": "rerank-3",
   "object": "model",
-  "created": null,
+  "created": 1790726400,
   "owned_by": "voyage",
   "name": "Rerank 3",
   "api": {
@@ -37,7 +37,7 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-09-30",
     "knowledge_cutoff": null,
     "description": "Voyage reranker with the highest accuracy, recommended for most applications.",
     "docs": "https://docs.voyageai.com/docs/reranker",
@@ -53,6 +53,11 @@
     {
       "title": "Pricing | Voyage AI Docs",
       "url": "https://docs.voyageai.com/docs/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Voyage AI Blog: rerank-3",
+      "url": "https://blog.voyageai.com/2026/09/30/rerank-3",
       "retrieved_at": "2026-10-11"
     }
   ],
