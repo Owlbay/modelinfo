@@ -1,7 +1,7 @@
 {
   "id": "glm-5v-turbo",
   "object": "model",
-  "created": null,
+  "created": 1775088000,
   "owned_by": "zhipu",
   "name": "GLM-5V-Turbo",
   "api": {
@@ -44,7 +44,7 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-04-02",
     "knowledge_cutoff": null,
     "description": "Multimodal coding foundation model for visual programming, long-horizon planning and agent workflows.",
     "docs": "https://docs.bigmodel.cn/cn/guide/models/vlm/glm-5v-turbo",
@@ -80,6 +80,11 @@
     {
       "title": "GLM-4.6 config.json (max_position_embeddings 202752) | Hugging Face",
       "url": "https://huggingface.co/zai-org/GLM-4.6/blob/main/config.json",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "最新动态 | 智谱 AI 开放文档",
+      "url": "https://docs.bigmodel.cn/cn/update/new-releases",
       "retrieved_at": "2026-10-11"
     }
   ],

@@ -1,7 +1,7 @@
 {
   "id": "glm-asr-2512",
   "object": "model",
-  "created": null,
+  "created": 1765324800,
   "owned_by": "zhipu",
   "name": "GLM-ASR-2512",
   "api": {
@@ -26,15 +26,22 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 0.03,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-12-10",
     "knowledge_cutoff": null,
     "description": "Speech recognition model for meeting notes, call transcription and dictation.",
     "docs": "https://docs.z.ai/guides/audio/glm-asr-2512",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -46,7 +53,12 @@
     {
       "title": "Pricing | Z.AI Developer Document",
       "url": "https://docs.z.ai/guides/overview/pricing",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "最新动态 | 智谱 AI 开放文档",
+      "url": "https://docs.bigmodel.cn/cn/update/new-releases",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

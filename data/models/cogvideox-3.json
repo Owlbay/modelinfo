@@ -1,7 +1,7 @@
 {
   "id": "cogvideox-3",
   "object": "model",
-  "created": null,
+  "created": 1752537600,
   "owned_by": "zhipu",
   "name": "CogVideoX-3",
   "api": {
@@ -27,15 +27,22 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "request",
+    "input": null,
+    "output": 0.2,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-07-15",
     "knowledge_cutoff": null,
     "description": "Video generation model with start and end frame support, priced at $0.2 per video.",
     "docs": "https://docs.z.ai/guides/video/cogvideox-3",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -47,7 +54,12 @@
     {
       "title": "Pricing | Z.AI Developer Document",
       "url": "https://docs.z.ai/guides/overview/pricing",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "最新动态 | 智谱 AI 开放文档",
+      "url": "https://docs.bigmodel.cn/cn/update/new-releases",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

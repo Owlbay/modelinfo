@@ -1,7 +1,7 @@
 {
   "id": "glm-4-flash-250414",
   "object": "model",
-  "created": null,
+  "created": 1744588800,
   "owned_by": "zhipu",
   "name": "GLM-4-Flash-250414",
   "api": {
@@ -41,7 +41,7 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-04-14",
     "knowledge_cutoff": null,
     "description": "Free GLM-4 series text model.",
     "docs": "https://docs.bigmodel.cn/cn/guide/models/text/glm-4",
@@ -72,6 +72,11 @@
     {
       "title": "对话补全 | 智谱 AI 开放文档",
       "url": "https://docs.bigmodel.cn/api-reference/模型-api/对话补全",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "最新动态 | 智谱 AI 开放文档",
+      "url": "https://docs.bigmodel.cn/cn/update/new-releases",
       "retrieved_at": "2026-10-11"
     }
   ],

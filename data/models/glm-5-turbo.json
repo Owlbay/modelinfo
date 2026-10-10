@@ -1,7 +1,7 @@
 {
   "id": "glm-5-turbo",
   "object": "model",
-  "created": null,
+  "created": 1773532800,
   "owned_by": "zhipu",
   "name": "GLM-5-Turbo",
   "api": {
@@ -42,7 +42,7 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-03-15",
     "knowledge_cutoff": null,
     "description": "Foundation model optimized for long-running agent tasks with strong tool calling and instruction following.",
     "docs": "https://docs.bigmodel.cn/cn/guide/models/text/glm-5-turbo",
@@ -78,6 +78,11 @@
     {
       "title": "GLM-4.6 config.json (max_position_embeddings 202752) | Hugging Face",
       "url": "https://huggingface.co/zai-org/GLM-4.6/blob/main/config.json",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "最新动态 | 智谱 AI 开放文档",
+      "url": "https://docs.bigmodel.cn/cn/update/new-releases",
       "retrieved_at": "2026-10-11"
     }
   ],

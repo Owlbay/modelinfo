@@ -1,7 +1,7 @@
 {
   "id": "glm-4.5v",
   "object": "model",
-  "created": null,
+  "created": 1754870400,
   "owned_by": "zhipu",
   "name": "GLM-4.5V",
   "api": {
@@ -40,11 +40,11 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-08-11",
     "knowledge_cutoff": null,
     "description": "Visual reasoning MoE model, 106B total and 12B active parameters, based on GLM-4.5-Air.",
     "docs": "https://docs.z.ai/guides/vlm/glm-4.5v",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -72,6 +72,11 @@
       "title": "GLM-4.6 config.json (max_position_embeddings 202752) | Hugging Face",
       "url": "https://huggingface.co/zai-org/GLM-4.6/blob/main/config.json",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "最新动态 | 智谱 AI 开放文档",
+      "url": "https://docs.bigmodel.cn/cn/update/new-releases",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

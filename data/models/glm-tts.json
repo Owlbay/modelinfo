@@ -1,7 +1,7 @@
 {
   "id": "glm-tts",
   "object": "model",
-  "created": null,
+  "created": 1765411200,
   "owned_by": "zhipu",
   "name": "GLM-TTS",
   "api": {
@@ -26,11 +26,18 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "CNY",
+    "unit": "1M_characters",
+    "input": 200,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-12-11",
     "knowledge_cutoff": null,
     "description": "Speech synthesis model with emotional expression, with streaming and non-streaming interfaces.",
     "docs": "https://docs.bigmodel.cn/cn/guide/models/sound-and-video/glm-tts",
@@ -56,6 +63,11 @@
     {
       "title": "文本转语音 | 智谱 AI 开放文档",
       "url": "https://docs.bigmodel.cn/api-reference/模型-api/文本转语音",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "最新动态 | 智谱 AI 开放文档",
+      "url": "https://docs.bigmodel.cn/cn/update/new-releases",
       "retrieved_at": "2026-10-11"
     }
   ],

@@ -1,0 +1,67 @@
+{
+  "id": "autoglm-phone",
+  "object": "model",
+  "created": 1765411200,
+  "owned_by": "zhipu",
+  "name": "AutoGLM-Phone",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 20480,
+    "input": null,
+    "output": 2048
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": "2025-12-11",
+    "knowledge_cutoff": null,
+    "description": "Vision-language phone assistant model that understands the screen and operates Android phones through ADB actions.",
+    "docs": "https://docs.bigmodel.cn/cn/guide/models/vlm/autoglm-phone",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "AutoGLM-Phone | 智谱 AI 开放文档",
+      "url": "https://docs.bigmodel.cn/cn/guide/models/vlm/autoglm-phone",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "模型概览 | 智谱 AI 开放文档",
+      "url": "https://docs.bigmodel.cn/cn/guide/start/model-overview",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "最新动态 | 智谱 AI 开放文档",
+      "url": "https://docs.bigmodel.cn/cn/update/new-releases",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "zhipu",
+      "model": "autoglm-phone",
+      "base_url": "https://open.bigmodel.cn/api/paas/v4",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

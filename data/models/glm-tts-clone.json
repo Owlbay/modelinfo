@@ -1,7 +1,7 @@
 {
   "id": "glm-tts-clone",
   "object": "model",
-  "created": null,
+  "created": 1765411200,
   "owned_by": "zhipu",
   "name": "GLM-TTS-Clone",
   "api": {
@@ -27,11 +27,18 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "CNY",
+    "unit": "request",
+    "input": null,
+    "output": 6,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-12-11",
     "knowledge_cutoff": null,
     "description": "Voice cloning model that learns a speaker's timbre from a 3-second audio sample.",
     "docs": "https://docs.bigmodel.cn/cn/guide/models/sound-and-video/glm-tts-clone",
@@ -57,6 +64,11 @@
     {
       "title": "音色复刻 | 智谱 AI 开放文档",
       "url": "https://docs.bigmodel.cn/api-reference/模型-api/音色复刻",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "最新动态 | 智谱 AI 开放文档",
+      "url": "https://docs.bigmodel.cn/cn/update/new-releases",
       "retrieved_at": "2026-10-11"
     }
   ],
