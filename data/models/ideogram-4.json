@@ -26,7 +26,14 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "image",
+    "input": null,
+    "output": 0.03,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
@@ -56,6 +63,11 @@
     {
       "title": "API Pricing | Ideogram",
       "url": "https://ideogram.ai/api-pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Ideogram 4.0",
+      "url": "https://ideogram.ai/models/4.0/",
       "retrieved_at": "2026-10-11"
     }
   ],
