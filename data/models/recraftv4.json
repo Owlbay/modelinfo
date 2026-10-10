@@ -1,0 +1,76 @@
+{
+  "id": "recraftv4",
+  "object": "model",
+  "created": null,
+  "owned_by": "recraft",
+  "name": "Recraft V4",
+  "api": {
+    "types": [
+      "images"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "image"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "unit": "image",
+    "input": null,
+    "output": 0.04,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Recraft V4 standard raster model, 1K output.",
+    "docs": "https://www.recraft.ai/docs/api-reference/models/recraft-v4",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Recraft V4 | Recraft API Docs",
+      "url": "https://www.recraft.ai/docs/api-reference/models/recraft-v4",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "All models | Recraft API Docs",
+      "url": "https://www.recraft.ai/docs/api-reference/models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Recraft API Docs",
+      "url": "https://www.recraft.ai/docs/api-reference/pricing",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "recraft",
+      "model": "recraftv4",
+      "base_url": "https://external.api.recraft.ai",
+      "endpoints": {
+        "images": "POST /v1/images/generations"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
