@@ -1,0 +1,65 @@
+{
+  "id": "sonic-3.6",
+  "object": "model",
+  "created": 1787788800,
+  "owned_by": "cartesia",
+  "name": "Sonic 3.6",
+  "api": {
+    "types": [
+      "audio"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "audio"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": "2026-08-27",
+    "knowledge_cutoff": null,
+    "description": "Cartesia fastest, most natural text-to-speech model with native support for 44 languages.",
+    "docs": "https://docs.cartesia.ai/build-with-cartesia/tts-models/latest",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "sonic-3.6-2026-08-27"
+  ],
+  "sources": [
+    {
+      "title": "Sonic 3.6 | Cartesia Docs",
+      "url": "https://docs.cartesia.ai/build-with-cartesia/tts-models/latest",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Cartesia Docs",
+      "url": "https://docs.cartesia.ai/pricing",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "cartesia",
+      "model": "sonic-3.6",
+      "base_url": "https://api.cartesia.ai",
+      "endpoints": {
+        "audio": "POST /tts/bytes"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

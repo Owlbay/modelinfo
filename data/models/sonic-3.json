@@ -1,0 +1,66 @@
+{
+  "id": "sonic-3",
+  "object": "model",
+  "created": null,
+  "owned_by": "cartesia",
+  "name": "Sonic 3",
+  "api": {
+    "types": [
+      "audio"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "audio"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Cartesia text-to-speech model with support for 42 languages; superseded by Sonic 3.6.",
+    "docs": "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "sonic-3-2026-01-12",
+    "sonic-3-2025-10-27"
+  ],
+  "sources": [
+    {
+      "title": "Older Models | Cartesia Docs",
+      "url": "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Cartesia Docs",
+      "url": "https://docs.cartesia.ai/pricing",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "cartesia",
+      "model": "sonic-3",
+      "base_url": "https://api.cartesia.ai",
+      "endpoints": {
+        "audio": "POST /tts/bytes"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

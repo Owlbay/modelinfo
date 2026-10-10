@@ -1,0 +1,65 @@
+{
+  "id": "sonic-turbo",
+  "object": "model",
+  "created": null,
+  "owned_by": "cartesia",
+  "name": "Sonic Turbo",
+  "api": {
+    "types": [
+      "audio"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "audio"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "deprecated",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Cartesia low-latency text-to-speech model for 9 languages; stops working after 2026-10-20, migrate to Sonic 3.6.",
+    "docs": "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "sonic-turbo-2025-06-04"
+  ],
+  "sources": [
+    {
+      "title": "Older Models | Cartesia Docs",
+      "url": "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Cartesia Docs",
+      "url": "https://docs.cartesia.ai/pricing",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "cartesia",
+      "model": "sonic-turbo",
+      "base_url": "https://api.cartesia.ai",
+      "endpoints": {
+        "audio": "POST /tts/bytes"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
