@@ -1,0 +1,69 @@
+{
+  "id": "recraftv4_pro_vector",
+  "object": "model",
+  "created": null,
+  "owned_by": "recraft",
+  "name": "Recraft V4 Pro Vector",
+  "api": {
+    "types": [
+      "images"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "image"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Recraft V4 Pro variant that returns editable SVG vector images.",
+    "docs": "https://www.recraft.ai/docs/api-reference/models/recraft-v4",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Recraft V4 | Recraft API Docs",
+      "url": "https://www.recraft.ai/docs/api-reference/models/recraft-v4",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "All models | Recraft API Docs",
+      "url": "https://www.recraft.ai/docs/api-reference/models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Recraft API Docs",
+      "url": "https://www.recraft.ai/docs/api-reference/pricing",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "recraft",
+      "model": "recraftv4_pro_vector",
+      "base_url": "https://external.api.recraft.ai",
+      "endpoints": {
+        "images": "POST /v1/images/generations"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

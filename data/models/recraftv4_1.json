@@ -1,0 +1,69 @@
+{
+  "id": "recraftv4_1",
+  "object": "model",
+  "created": null,
+  "owned_by": "recraft",
+  "name": "Recraft V4.1",
+  "api": {
+    "types": [
+      "images"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "image"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Default Recraft API model: polished raster images with strong photorealism and prompt following.",
+    "docs": "https://www.recraft.ai/docs/api-reference/models/recraft-v4-1",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Recraft V4.1 | Recraft API Docs",
+      "url": "https://www.recraft.ai/docs/api-reference/models/recraft-v4-1",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "All models | Recraft API Docs",
+      "url": "https://www.recraft.ai/docs/api-reference/models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Recraft API Docs",
+      "url": "https://www.recraft.ai/docs/api-reference/pricing",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "recraft",
+      "model": "recraftv4_1",
+      "base_url": "https://external.api.recraft.ai",
+      "endpoints": {
+        "images": "POST /v1/images/generations"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
