@@ -1,7 +1,7 @@
 {
   "id": "nomic-embed-text-v1",
   "object": "model",
-  "created": null,
+  "created": 1706745600,
   "owned_by": "nomic",
   "name": "Nomic Embed Text v1",
   "api": {
@@ -30,7 +30,7 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2024-02-01",
     "knowledge_cutoff": null,
     "description": "Nomic text embedding model with 768 dimensions.",
     "docs": "https://docs.nomic.ai/atlas/embeddings-and-retrieval/text-embedding",
@@ -46,6 +46,11 @@
     {
       "title": "Embed Text API Reference | Nomic Atlas Docs",
       "url": "https://docs.nomic.ai/reference/api/embed-text-v-1-embedding-text-post",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Introducing Nomic Embed: A Truly Open Embedding Model - Nomic",
+      "url": "https://www.nomic.ai/news/nomic-embed-text-v1",
       "retrieved_at": "2026-10-11"
     }
   ],
