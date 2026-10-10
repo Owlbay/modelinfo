@@ -1,7 +1,7 @@
 {
   "id": "v5",
   "object": "model",
-  "created": null,
+  "created": 1756425600,
   "owned_by": "pixverse",
   "name": "PixVerse V5",
   "api": {
@@ -31,7 +31,7 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-08-29",
     "knowledge_cutoff": null,
     "description": "Legacy PixVerse video model; 5 or 8s clips.",
     "docs": "https://docs.platform.pixverse.ai/text-to-video-generation-13016634e0",
@@ -47,6 +47,11 @@
     {
       "title": "Model Overview | PixVerse Platform Docs",
       "url": "https://docs.platform.pixverse.ai/model-overview-2140345m0",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "PixVerse API Changelogs",
+      "url": "https://docs.platform.pixverse.ai/changelogs-906383m0",
       "retrieved_at": "2026-10-11"
     }
   ],
