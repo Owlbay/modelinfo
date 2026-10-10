@@ -1,7 +1,7 @@
 {
   "id": "embed-v5.0-pro",
   "object": "model",
-  "created": null,
+  "created": 1790726400,
   "owned_by": "cohere",
   "name": "Embed v5.0 Pro",
   "api": {
@@ -27,15 +27,22 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 0.12,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-09-30",
     "knowledge_cutoff": null,
     "description": "Highest-capability embedding model for text and images.",
     "docs": "https://docs.cohere.com/docs/cohere-embed",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -53,6 +60,16 @@
       "title": "How does Cohere pricing work?",
       "url": "https://docs.cohere.com/docs/how-does-cohere-pricing-work",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Announcing Cohere's Embed 5 Models | Cohere Release Notes",
+      "url": "https://docs.cohere.com/changelog/embed-v5",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Cohere Pricing",
+      "url": "https://cohere.com/pricing",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

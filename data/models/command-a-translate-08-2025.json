@@ -1,7 +1,7 @@
 {
   "id": "command-a-translate-08-2025",
   "object": "model",
-  "created": null,
+  "created": 1756339200,
   "owned_by": "cohere",
   "name": "Command A Translate",
   "api": {
@@ -30,11 +30,11 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-08-28",
     "knowledge_cutoff": "2024-06",
     "description": "Machine translation model covering 23 languages.",
     "docs": "https://docs.cohere.com/docs/command-a-translate",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -52,6 +52,11 @@
       "title": "How does Cohere pricing work?",
       "url": "https://docs.cohere.com/docs/how-does-cohere-pricing-work",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Announcing Cohere's Command A Translate Model | Cohere Release Notes",
+      "url": "https://docs.cohere.com/changelog/2025-08-28-command-a-translate",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

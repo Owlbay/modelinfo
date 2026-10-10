@@ -1,7 +1,7 @@
 {
   "id": "command-r7b-12-2024",
   "object": "model",
-  "created": null,
+  "created": 1734048000,
   "owned_by": "cohere",
   "name": "Command R7B",
   "api": {
@@ -40,11 +40,11 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2024-12-13",
     "knowledge_cutoff": "2024-06",
     "description": "Small, fast model for RAG, tool use, agents, and multi-step reasoning.",
     "docs": "https://docs.cohere.com/docs/command-r7b",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -62,6 +62,11 @@
       "title": "How does Cohere pricing work?",
       "url": "https://docs.cohere.com/docs/how-does-cohere-pricing-work",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Announcing Command R7B | Cohere Release Notes",
+      "url": "https://docs.cohere.com/changelog/command-r-7b",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

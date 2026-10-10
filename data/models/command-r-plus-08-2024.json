@@ -1,7 +1,7 @@
 {
   "id": "command-r-plus-08-2024",
   "object": "model",
-  "created": null,
+  "created": 1724976000,
   "owned_by": "cohere",
   "name": "Command R+",
   "api": {
@@ -40,11 +40,11 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2024-08-30",
     "knowledge_cutoff": "2024-06",
     "description": "August 2024 update of Command R+, optimized for conversational interaction, complex RAG and multi-step tool use.",
     "docs": "https://docs.cohere.com/docs/command-r-plus",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -62,6 +62,11 @@
       "title": "How does Cohere pricing work?",
       "url": "https://docs.cohere.com/docs/how-does-cohere-pricing-work",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Command models get an August refresh | Cohere Release Notes",
+      "url": "https://docs.cohere.com/changelog/command-gets-refreshed",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

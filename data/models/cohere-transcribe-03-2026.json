@@ -1,7 +1,7 @@
 {
   "id": "cohere-transcribe-03-2026",
   "object": "model",
-  "created": null,
+  "created": 1774483200,
   "owned_by": "cohere",
   "name": "Cohere Transcribe",
   "api": {
@@ -30,11 +30,11 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-03-26",
     "knowledge_cutoff": null,
     "description": "Open-source model for high-accuracy, multilingual speech transcription (max file size 25MB).",
     "docs": "https://docs.cohere.com/docs/transcribe",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -52,6 +52,11 @@
       "title": "How does Cohere pricing work?",
       "url": "https://docs.cohere.com/docs/how-does-cohere-pricing-work",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Announcing the Cohere Transcribe model | Cohere Release Notes",
+      "url": "https://docs.cohere.com/changelog/cohere-transcribe-03-2026",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

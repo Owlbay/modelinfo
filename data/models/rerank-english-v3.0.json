@@ -1,7 +1,7 @@
 {
   "id": "rerank-english-v3.0",
   "object": "model",
-  "created": null,
+  "created": 1712620800,
   "owned_by": "cohere",
   "name": "Rerank English v3.0",
   "api": {
@@ -30,11 +30,11 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2024-04-09",
     "knowledge_cutoff": null,
     "description": "Reranker for English documents and JSON.",
     "docs": "https://docs.cohere.com/docs/rerank-overview",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -57,6 +57,11 @@
       "title": "Rerank Overview (context length of 4096 tokens) | Cohere Docs",
       "url": "https://docs.cohere.com/docs/rerank",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Advanced Retrieval Launch release (Rerank 3) | Cohere Release Notes",
+      "url": "https://docs.cohere.com/changelog/advanced-retrieval-launch",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

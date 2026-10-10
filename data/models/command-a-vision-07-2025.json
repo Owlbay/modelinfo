@@ -1,7 +1,7 @@
 {
   "id": "command-a-vision-07-2025",
   "object": "model",
-  "created": null,
+  "created": 1753920000,
   "owned_by": "cohere",
   "name": "Command A Vision",
   "api": {
@@ -31,11 +31,11 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-07-31",
     "knowledge_cutoff": "2024-06",
     "description": "Image-processing model for charts, tables, diagrams, OCR, document Q&A, and object detection.",
     "docs": "https://docs.cohere.com/docs/command-a-vision",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -53,6 +53,11 @@
       "title": "How does Cohere pricing work?",
       "url": "https://docs.cohere.com/docs/how-does-cohere-pricing-work",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Announcing Cohere's Command A Vision Model | Cohere Release Notes",
+      "url": "https://docs.cohere.com/changelog/2025-07-31-command-a-vision",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

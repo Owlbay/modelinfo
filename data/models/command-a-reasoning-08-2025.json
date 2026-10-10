@@ -1,7 +1,7 @@
 {
   "id": "command-a-reasoning-08-2025",
   "object": "model",
-  "created": null,
+  "created": 1755734400,
   "owned_by": "cohere",
   "name": "Command A Reasoning",
   "api": {
@@ -33,11 +33,11 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-08-21",
     "knowledge_cutoff": "2024-06",
     "description": "Cohere's first reasoning model, for nuanced problem-solving and agent tasks in 23 languages.",
     "docs": "https://docs.cohere.com/docs/command-a-reasoning",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -55,6 +55,11 @@
       "title": "How does Cohere pricing work?",
       "url": "https://docs.cohere.com/docs/how-does-cohere-pricing-work",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Announcing Cohere's Command A Reasoning Model | Cohere Release Notes",
+      "url": "https://docs.cohere.com/changelog/2025-08-21-command-a-reasoning",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

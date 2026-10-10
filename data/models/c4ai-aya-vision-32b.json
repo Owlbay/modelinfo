@@ -1,7 +1,7 @@
 {
   "id": "c4ai-aya-vision-32b",
   "object": "model",
-  "created": null,
+  "created": 1741046400,
   "owned_by": "cohere",
   "name": "Aya Vision 32B",
   "api": {
@@ -31,11 +31,11 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-03-04",
     "knowledge_cutoff": null,
     "description": "32B multimodal model for language, text, and image tasks covering 23 languages.",
     "docs": "https://docs.cohere.com/docs/aya-vision",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -53,6 +53,11 @@
       "title": "How does Cohere pricing work?",
       "url": "https://docs.cohere.com/docs/how-does-cohere-pricing-work",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Our Groundbreaking Multimodal Model, Aya Vision, is Here! | Cohere Release Notes",
+      "url": "https://docs.cohere.com/changelog/aya-vision-announcement",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

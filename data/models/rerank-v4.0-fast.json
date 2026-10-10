@@ -1,7 +1,7 @@
 {
   "id": "rerank-v4.0-fast",
   "object": "model",
-  "created": null,
+  "created": 1765411200,
   "owned_by": "cohere",
   "name": "Rerank v4.0 Fast",
   "api": {
@@ -26,15 +26,22 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "request",
+    "input": 0.002,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-12-11",
     "knowledge_cutoff": null,
     "description": "Lower-latency, higher-throughput version of rerank-v4.0-pro. Multilingual.",
     "docs": "https://docs.cohere.com/docs/rerank-overview",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -52,6 +59,16 @@
       "title": "How does Cohere pricing work?",
       "url": "https://docs.cohere.com/docs/how-does-cohere-pricing-work",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Cohere's Rerank v4.0 Model is Here! | Cohere Release Notes",
+      "url": "https://docs.cohere.com/changelog/rerank-v4.0",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Cohere Pricing",
+      "url": "https://cohere.com/pricing",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
