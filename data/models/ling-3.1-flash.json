@@ -1,0 +1,73 @@
+{
+  "id": "ling-3.1-flash",
+  "object": "model",
+  "created": null,
+  "owned_by": "ant",
+  "name": "Ling-3.1-flash",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 262144,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "tools",
+    "streaming"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Hybrid reasoning model for long-horizon tasks, office work, software development and agent workflows; free for a limited time.",
+    "docs": "https://developer.ant-ling.com/en/docs/models/ling",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "Ling-3.1-flash"
+  ],
+  "sources": [
+    {
+      "title": "Ling | Ant Ling Docs",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Ant Ling Docs",
+      "url": "https://developer.ant-ling.com/en/docs/models/price",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "OpenAI Compatible | Ant Ling API Reference",
+      "url": "https://developer.ant-ling.com/en/docs/api-reference/openai",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "ant",
+      "model": "Ling-3.1-flash",
+      "base_url": "https://api.ant-ling.com/v1",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

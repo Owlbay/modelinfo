@@ -1,0 +1,79 @@
+{
+  "id": "ling-2.6-flash",
+  "object": "model",
+  "created": 1776816000,
+  "owned_by": "ant",
+  "name": "Ling-2.6-flash",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "CNY",
+    "input": 0.6,
+    "output": 1.8,
+    "cache_read": 0.12,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "streaming"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2026-04-22",
+    "knowledge_cutoff": null,
+    "description": "Cost-effective Ling model.",
+    "docs": "https://developer.ant-ling.com/en/docs/models/ling",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "Ling-2.6-flash"
+  ],
+  "sources": [
+    {
+      "title": "Pricing | Ant Ling Docs",
+      "url": "https://developer.ant-ling.com/en/docs/models/price",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "OpenAI Compatible | Ant Ling API Reference",
+      "url": "https://developer.ant-ling.com/en/docs/api-reference/openai",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Changelog | Ant Ling Docs",
+      "url": "https://developer.ant-ling.com/en/docs/getting-started/changelog",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "ant",
+      "model": "Ling-2.6-flash",
+      "base_url": "https://api.ant-ling.com/v1",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

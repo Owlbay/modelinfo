@@ -1,0 +1,81 @@
+{
+  "id": "ling-3.0-flash-vl",
+  "object": "model",
+  "created": null,
+  "owned_by": "ant",
+  "name": "Ling-3.0-flash-VL",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 262144,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "CNY",
+    "input": 0.5,
+    "output": 1.5,
+    "cache_read": 0.1,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "streaming"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "First native multimodal Ling model, with visual feedback for frontend code generation and GUI automation.",
+    "docs": "https://developer.ant-ling.com/en/docs/models/ling",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "Ling-3.0-flash-VL"
+  ],
+  "sources": [
+    {
+      "title": "Ling | Ant Ling Docs",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Ant Ling Docs",
+      "url": "https://developer.ant-ling.com/en/docs/models/price",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "OpenAI Compatible | Ant Ling API Reference",
+      "url": "https://developer.ant-ling.com/en/docs/api-reference/openai",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "ant",
+      "model": "Ling-3.0-flash-VL",
+      "base_url": "https://api.ant-ling.com/v1",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

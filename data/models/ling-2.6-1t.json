@@ -1,0 +1,89 @@
+{
+  "id": "ling-2.6-1t",
+  "object": "model",
+  "created": 1777420800,
+  "owned_by": "ant",
+  "name": "Ling-2.6-1T",
+  "api": {
+    "types": [
+      "messages"
+    ]
+  },
+  "limits": {
+    "context": 262144,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "CNY",
+    "input": 4.5,
+    "output": 18,
+    "cache_read": 0.9,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "streaming"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": "2026-04-29",
+    "knowledge_cutoff": null,
+    "description": "Flagship long-context model for multi-step reasoning, agent tasks and coding.",
+    "docs": "https://developer.ant-ling.com/en/docs/models/ling",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "Ling-2.6-1T"
+  ],
+  "sources": [
+    {
+      "title": "Ling | Ant Ling Docs",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | Ant Ling Docs",
+      "url": "https://developer.ant-ling.com/en/docs/models/price",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "OpenAI Compatible | Ant Ling API Reference",
+      "url": "https://developer.ant-ling.com/en/docs/api-reference/openai",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Changelog | Ant Ling Docs",
+      "url": "https://developer.ant-ling.com/en/docs/getting-started/changelog",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Hugging Face inclusionAI/Ling-2.6-1T config.json (official org)",
+      "url": "https://huggingface.co/inclusionAI/Ling-2.6-1T/blob/main/config.json",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "ant",
+      "model": "Ling-2.6-1T",
+      "base_url": "https://api.ant-ling.com/v1",
+      "endpoints": {
+        "messages": "POST /chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
