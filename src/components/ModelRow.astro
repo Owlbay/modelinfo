@@ -1,7 +1,7 @@
 ---
 /** 模型列表行：名称/ID · 研发方 · 上下文 · 最大输出 · 输入/输出价格 · 发布日期。骨架见 .list-row。 */
 import { formatPrice, formatTokens, modelKind, ownerName, type Model } from '../lib/models';
-import { localePath, type Lang } from '../i18n';
+import { dict, localePath, type Lang } from '../i18n';
 
 interface Props {
   lang: Lang;
@@ -9,6 +9,8 @@ interface Props {
 }
 const { lang, model: m } = Astro.props;
 const p = m.pricing;
+// 非 Token 计价时在价格后标注单位
+const unit = p && p.unit !== '1M_tokens' ? ` / ${dict(lang).units[p.unit]}` : '';
 ---
 
 <a class="list-row mrow" href={localePath(lang, `/models/${m.id}/`)} data-model data-owner={m.owned_by} data-kind={modelKind(m)} data-hay={[m.id, m.name, m.owned_by, ownerName(m.owned_by), ...m.aliases].join(' ').toLowerCase()}>
@@ -20,7 +22,7 @@ const p = m.pricing;
   <span class="mrow__num">{formatTokens(m.limits.context)}</span>
   <span class="mrow__num mrow__out">{formatTokens(m.limits.output)}</span>
   <span class="mrow__num mrow__price">
-    {p ? `${formatPrice(p.input, p.currency)} / ${formatPrice(p.output, p.currency)}` : '—'}
+    {p ? `${formatPrice(p.input, p.currency)} / ${formatPrice(p.output, p.currency)}${unit}` : '—'}
   </span>
   <span class="mrow__date">{m.info.release_date ?? '—'}</span>
 </a>
@@ -28,7 +30,7 @@ const p = m.pricing;
 <style>
   /* 列：名称 · 研发方 · 上下文 · 输出 · 价格 · 发布；表头见 ModelsView，断点与之一致 */
   .mrow {
-    grid-template-columns: minmax(0, 1fr) 10ch 8ch 8ch 16ch 10ch;
+    grid-template-columns: minmax(0, 1fr) 10ch 8ch 8ch 22ch 10ch;
     column-gap: var(--sp-5);
     color: var(--ink);
   }
@@ -59,7 +61,7 @@ const p = m.pricing;
 
   /* 平板：去掉输出与发布日期，ID 让位给名称 */
   @media (max-width: 1024px) {
-    .mrow { grid-template-columns: minmax(0, 1fr) 10ch 8ch 16ch; column-gap: var(--sp-4); }
+    .mrow { grid-template-columns: minmax(0, 1fr) 10ch 8ch 22ch; column-gap: var(--sp-4); }
     .mrow__out,
     .mrow__date,
     .mrow__id { display: none; }

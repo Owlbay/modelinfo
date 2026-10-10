@@ -28,6 +28,7 @@
   },
   "pricing": {
     "currency": "INR",
+    "unit": "1M_tokens",
     "input": 15,
     "output": 60,
     "cache_read": 5,

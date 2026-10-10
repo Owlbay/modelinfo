@@ -15,6 +15,7 @@ const API = ['messages', 'responses', 'completions', 'generate', 'batch', 'realt
 const MOD = ['text', 'image', 'audio', 'video', 'document', 'embedding', 'score', '3d'];
 const FEAT = ['tools', 'structured_output', 'streaming', 'caching', 'batch'];
 const DATE = /^\d{4}-\d{2}-\d{2}$/;
+const UNITS = ['1M_tokens', '1M_characters', 'image', 'second', 'minute', 'hour', 'request', 'page'];
 
 const files = process.argv.slice(2).length
   ? process.argv.slice(2)
@@ -52,7 +53,7 @@ for (const file of files) {
   const price = (v) => v === null || (typeof v === 'number' && v >= 0);
   const checkPricing = (p, where) => {
     if (p === null) return;
-    if (!p || Object.keys(p).join() !== 'currency,input,output,cache_read,cache_write' || !/^[A-Z]{3}$/.test(p.currency) || !['input', 'output', 'cache_read', 'cache_write'].every((k) => price(p[k]))) e(`${where} 为 {currency,input,output,cache_read,cache_write} 或 null`);
+    if (!p || Object.keys(p).join() !== 'currency,unit,input,output,cache_read,cache_write' || !/^[A-Z]{3}$/.test(p.currency) || !UNITS.includes(p.unit) || !['input', 'output', 'cache_read', 'cache_write'].every((k) => price(p[k]))) e(`${where} 为 {currency,unit,input,output,cache_read,cache_write} 或 null；unit 取值 ${UNITS.join('|')}`);
   };
   checkPricing(m.pricing, 'pricing');
   if (!Array.isArray(m.features) || m.features.some((f) => !FEAT.includes(f))) e(`features 取值 ${FEAT.join('|')}`);

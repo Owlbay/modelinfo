@@ -34,10 +34,11 @@
   },
   "pricing": {
     "currency": "USD",
-    "input": 3.0,
-    "output": 15.0,
+    "unit": "1M_tokens",
+    "input": 3,
+    "output": 15,
     "cache_read": 0.3,
-    "cache_write": 3.0
+    "cache_write": 3
   },
   "features": [
     "tools",

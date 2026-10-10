@@ -47,7 +47,7 @@ info         ⑥ 源信息
       "limits": { "context": 1000000, "input": 1000000, "output": 128000 },
       "modalities": { "input": ["text", "image", "document"], "output": ["text"] },
       "reasoning": { "supported": true, "efforts": ["low", "medium", "high", "xhigh", "max"] },
-      "pricing": { "currency": "USD", "input": 5, "output": 25, "cache_read": 0.5, "cache_write": 6.25 },
+      "pricing": { "currency": "USD", "unit": "1M_tokens", "input": 5, "output": 25, "cache_read": 0.5, "cache_write": 6.25 },
       "features": ["tools", "structured_output", "streaming", "caching", "batch"],
       "info": {
         "status": "active",
@@ -78,7 +78,7 @@ info         ⑥ 源信息
 | `modalities.input` / `output` | string[] | `text`、`image`、`audio`、`video`、`document`；输出另有 `embedding`（向量模型）、`score`（重排模型）、`3d`（3D 生成模型） |
 | `reasoning.supported` | boolean \| null | 是否支持思考 |
 | `reasoning.efforts` | string[] | 思考等级；空数组表示无等级档位（开关或 Token 预算控制）或未声明 |
-| `pricing` | object \| null | 见第 6 节；无公开报价为 `null` |
+| `pricing` | object \| null | 见第 6 节：币种、计价单位与价格；无公开报价为 `null` |
 | `features` | string[] | 已确认支持：`tools`、`structured_output`、`streaming`、`caching`、`batch`；未列出即不支持或未确认 |
 | `info.status` | string | `preview`、`active`、`deprecated` |
 | `info.release_date` | string \| null | `YYYY-MM-DD`，与 `created` 一致 |
@@ -92,14 +92,26 @@ info         ⑥ 源信息
 ## 6. 价格
 
 ```json
-"pricing": { "currency": "USD", "input": 2, "output": 6, "cache_read": null, "cache_write": null }
+"pricing": { "currency": "USD", "unit": "1M_tokens", "input": 2, "output": 6, "cache_read": null, "cache_write": null }
 ```
 
 - `currency`：ISO 4217 币种代码（`USD`、`CNY` 等），必填；
-- 单位固定为**每百万 Token**；`output` 含思考内容；
-- `cache_read` 为缓存命中，`cache_write` 为创建或写入缓存；
-- 取研发方第一方 Provider 的标准价，一个对象只对应一种币种与一个计价区域；
-- 无单独报价的项为 `null`；按时间计费的缓存存储等非 Token 费用不写入。
+- `unit`：计价单位，必填：
+
+| unit | 含义 | 典型模型 |
+| --- | --- | --- |
+| `1M_tokens` | 每百万 Token | 对话、向量、重排、按 Token 计费的音视频模型 |
+| `1M_characters` | 每百万字符 | 语音合成（按字符计费） |
+| `image` | 每张图片 | 图像生成 |
+| `second` | 每秒 | 视频生成、按秒计费的语音 |
+| `minute` / `hour` | 每分钟 / 每小时音频 | 语音识别 |
+| `request` | 每次请求 | 按次计费（如固定时长的视频） |
+| `page` | 每页 | OCR、文档解析 |
+
+- `input` 为输入侧计价（如识别的音频时长、合成的文本字符），`output` 为输出侧计价（如生成的图片、视频秒数、输出 Token，含思考内容）；
+- `cache_read` / `cache_write` 只用于 Token 计价；
+- 取研发方第一方标准价，一个对象只对应一种币种、一个计价区域、一种计价单位；有多档时取最低一档的标准价；
+- 无单独报价的项为 `null`；同一模型按多种单位混合计费且无法用一个单位表达时，`pricing` 为 `null`。
 
 ## 7. 数据文件
 

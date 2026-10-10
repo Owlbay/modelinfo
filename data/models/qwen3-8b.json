@@ -28,6 +28,7 @@
   },
   "pricing": {
     "currency": "USD",
+    "unit": "1M_tokens",
     "input": 0.18,
     "output": 0.7,
     "cache_read": null,

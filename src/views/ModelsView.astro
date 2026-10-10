@@ -172,7 +172,7 @@ const kindOptions = [
   .filters__search input::-webkit-search-cancel-button { display: none; }
   .models__head {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 10ch 8ch 8ch 16ch 10ch;
+    grid-template-columns: minmax(0, 1fr) 10ch 8ch 8ch 22ch 10ch;
     column-gap: var(--sp-5);
     padding-bottom: var(--sp-2);
     border-bottom: 1px solid var(--line);
@@ -187,7 +187,7 @@ const kindOptions = [
     color: var(--ink-3);
   }
   @media (max-width: 1024px) {
-    .models__head { grid-template-columns: minmax(0, 1fr) 10ch 8ch 16ch; column-gap: var(--sp-4); }
+    .models__head { grid-template-columns: minmax(0, 1fr) 10ch 8ch 22ch; column-gap: var(--sp-4); }
     .head__out,
     .head__date { display: none; }
     .models__head > :nth-child(2) { text-align: left; }

@@ -36,7 +36,7 @@ const groups: Array<{ title: string; rows: Array<[string, string]> }> = [
   { title: g.modalities, rows: [['input', list(m.modalities.input)], ['output', list(m.modalities.output)]] },
   { title: g.reasoning, rows: [['supported', yesNo(m.reasoning.supported)], ['efforts', list(m.reasoning.efforts)]] },
   {
-    title: p ? `${g.pricing} · ${t.perMillion(p.currency)}` : g.pricing,
+    title: p ? `${g.pricing} · ${t.perUnit(p.currency, dict(lang).units[p.unit])}` : g.pricing,
     rows: p
       ? [
           ['input', formatPrice(p.input, p.currency)],

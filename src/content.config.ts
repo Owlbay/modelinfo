@@ -18,9 +18,12 @@ const price = z.number().nonnegative().nullable();
 
 const limits = z.object({ context: tokens, input: tokens, output: tokens }).strict();
 const modalities = z.object({ input: z.array(modality).min(1), output: z.array(modality).min(1) }).strict();
+/** 计价单位：Token 模型为 1M_tokens；媒体类按字符、张、秒、分钟、小时、次、页计费 */
+const priceUnit = z.enum(['1M_tokens', '1M_characters', 'image', 'second', 'minute', 'hour', 'request', 'page']);
 const pricing = z
   .object({
     currency: z.string().regex(/^[A-Z]{3}$/),
+    unit: priceUnit,
     input: price,
     output: price,
     cache_read: price,

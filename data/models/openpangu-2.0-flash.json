@@ -28,6 +28,7 @@
   },
   "pricing": {
     "currency": "CNY",
+    "unit": "1M_tokens",
     "input": 0.8,
     "output": 1.6,
     "cache_read": 0.2,
