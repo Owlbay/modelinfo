@@ -1,7 +1,7 @@
 {
   "id": "reka-edge-2603",
   "object": "model",
-  "created": null,
+  "created": 1773187200,
   "owned_by": "reka",
   "name": "Reka Edge 2603",
   "api": {
@@ -28,7 +28,14 @@
     "supported": false,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 0.1,
+    "output": 0.1,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [
     "tools",
     "structured_output",
@@ -36,7 +43,7 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-03-11",
     "knowledge_cutoff": null,
     "description": "Reka's compact multimodal model accepting text, image and video input.",
     "docs": "https://docs.reka.ai/chat/models",
@@ -57,6 +64,16 @@
     {
       "title": "Hugging Face RekaAI/reka-edge-2603 config.json (official org)",
       "url": "https://huggingface.co/RekaAI/reka-edge-2603/blob/main/config.json",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Reka Edge: Frontier-Level Edge Intelligence for Physical AI - Reka",
+      "url": "https://reka.ai/news/reka-edge-frontier-level-edge-intelligence-for-physical-ai",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Models - Reka Gateway",
+      "url": "https://developer.reka.ai/models",
       "retrieved_at": "2026-10-11"
     }
   ],

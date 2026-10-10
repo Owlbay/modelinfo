@@ -1,7 +1,7 @@
 {
   "id": "reka-flash-3",
   "object": "model",
-  "created": null,
+  "created": 1741564800,
   "owned_by": "reka",
   "name": "Reka Flash 3",
   "api": {
@@ -26,13 +26,20 @@
     "supported": true,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 0.1,
+    "output": 0.2,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [
     "structured_output"
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-03-10",
     "knowledge_cutoff": null,
     "description": "Reka's reasoning text model served on the Reka API.",
     "docs": "https://docs.reka.ai/chat/models",
@@ -48,6 +55,16 @@
     {
       "title": "API Pricing | Reka API Docs",
       "url": "https://docs.reka.ai/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Reasoning with Reka Flash 3 - Reka",
+      "url": "https://reka.ai/labs/research/introducing-reka-flash",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Models - Reka Gateway",
+      "url": "https://developer.reka.ai/models",
       "retrieved_at": "2026-10-11"
     }
   ],
