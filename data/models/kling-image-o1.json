@@ -1,0 +1,57 @@
+{
+  "id": "kling-image-o1",
+  "object": "model",
+  "created": null,
+  "owned_by": "kuaishou",
+  "name": "Kling Image O1",
+  "api": {
+    "types": [
+      "images"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "image"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Image model with high feature consistency, precise detail editing and style transfer, 1K/2K output.",
+    "docs": "https://kling.ai/document-api/guides/capability-map/image",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Image Capability Map | Kling AI API Documentation",
+      "url": "https://kling.ai/document-api/guides/capability-map/image",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "kling",
+      "model": "kling-image-o1",
+      "base_url": "https://api-singapore.klingai.com",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

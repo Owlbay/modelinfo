@@ -1,0 +1,65 @@
+{
+  "id": "kling-v3-omni",
+  "object": "model",
+  "created": null,
+  "owned_by": "kuaishou",
+  "name": "Kling 3.0 Omni",
+  "api": {
+    "types": [
+      "video",
+      "images"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "video",
+      "image"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "All-in-one multimodal video model with voice-driven characters and native audio (3-15s, 720P/1080P/4K); the same ID serves Kling Image 3.0 Omni (1K/2K/4K, series generation).",
+    "docs": "https://kling.ai/document-api/guides/capability-map/video",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Video Capability Map | Kling AI API Documentation",
+      "url": "https://kling.ai/document-api/guides/capability-map/video",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Image Capability Map | Kling AI API Documentation",
+      "url": "https://kling.ai/document-api/guides/capability-map/image",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "kling",
+      "model": "kling-v3-omni",
+      "base_url": "https://api-singapore.klingai.com",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "kling-v2-5-turbo",
+  "object": "model",
+  "created": null,
+  "owned_by": "kuaishou",
+  "name": "Kling 2.5 Turbo",
+  "api": {
+    "types": [
+      "video"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "video"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Video model with strong creativity and value, 5s or 10s clips at 720P/1080P.",
+    "docs": "https://kling.ai/document-api/guides/capability-map/video",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Video Capability Map | Kling AI API Documentation",
+      "url": "https://kling.ai/document-api/guides/capability-map/video",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "kling",
+      "model": "kling-v2-5-turbo",
+      "base_url": "https://api-singapore.klingai.com",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}
