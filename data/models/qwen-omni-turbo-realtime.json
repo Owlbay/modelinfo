@@ -35,7 +35,7 @@
     "streaming"
   ],
   "info": {
-    "status": "active",
+    "status": "retired",
     "release_date": "2025-05-08",
     "knowledge_cutoff": null,
     "description": "Legacy real-time omni-modal model for text and audio; no longer updated.",
@@ -70,6 +70,11 @@
     {
       "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
       "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "[Model Studio] Notice of Retirement for Selected Legacy Long-tail Models | Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/en/notice/model_studio_notice_of_retirement_for_selected_legacy_longtail_models_7d4",
       "retrieved_at": "2026-10-11"
     }
   ],

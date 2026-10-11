@@ -38,7 +38,7 @@
     "streaming"
   ],
   "info": {
-    "status": "active",
+    "status": "retired",
     "release_date": "2025-07-22",
     "knowledge_cutoff": null,
     "description": "Qwen translation model, 92 languages, no longer updated; Qwen-MT-Flash recommended.",
@@ -65,6 +65,11 @@
     {
       "title": "qwen-mt-turbo | Alibaba Cloud Model Studio",
       "url": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen-mt-turbo",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "[Model Studio] Notice of Retirement for Selected Legacy Long-tail Models | Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/en/notice/model_studio_notice_of_retirement_for_selected_legacy_longtail_models_7d4",
       "retrieved_at": "2026-10-11"
     }
   ],

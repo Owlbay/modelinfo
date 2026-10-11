@@ -38,7 +38,7 @@
     "streaming"
   ],
   "info": {
-    "status": "active",
+    "status": "retired",
     "release_date": "2025-09-11",
     "knowledge_cutoff": null,
     "description": "Open-weight Qwen3-Next 80B MoE (3B active), thinking-only.",
@@ -65,6 +65,11 @@
     {
       "title": "qwen3-next-80b-a3b-thinking | Alibaba Cloud Model Studio",
       "url": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-next-80b-a3b-thinking",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "[Model Studio] Notice on the Postponed Retirement of Selected Legacy Models | Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/en/notice/model_studio_notice_on_the_postponed_retirement_of_selected_legacy_models_7d0",
       "retrieved_at": "2026-10-11"
     }
   ],

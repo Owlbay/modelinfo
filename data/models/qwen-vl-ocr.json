@@ -39,12 +39,12 @@
     "streaming"
   ],
   "info": {
-    "status": "active",
+    "status": "retired",
     "release_date": null,
     "knowledge_cutoff": null,
     "description": "Qwen3-VL-architecture model for extracting text and structured data from scans, tables and receipts.",
     "docs": "https://www.alibabacloud.com/help/en/model-studio/vision-model",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [
     "qwen-vl-ocr-latest",
@@ -65,6 +65,11 @@
       "title": "Model Studio model pricing | Alibaba Cloud",
       "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "[Model Studio] Notice of Retirement for Selected Legacy Long-tail Models | Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/en/notice/model_studio_notice_of_retirement_for_selected_legacy_longtail_models_7d4",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

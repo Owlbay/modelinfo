@@ -39,7 +39,7 @@
     "streaming"
   ],
   "info": {
-    "status": "active",
+    "status": "retired",
     "release_date": "2025-07-22",
     "knowledge_cutoff": null,
     "description": "Open-weight Qwen3 235B MoE, non-thinking 2507 version.",
@@ -61,6 +61,11 @@
     {
       "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
       "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "[Model Studio] Notice on the Postponed Retirement of Selected Legacy Models | Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/en/notice/model_studio_notice_on_the_postponed_retirement_of_selected_legacy_models_7d0",
       "retrieved_at": "2026-10-11"
     }
   ],
