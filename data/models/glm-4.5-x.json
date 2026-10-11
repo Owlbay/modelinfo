@@ -41,12 +41,12 @@
     "caching"
   ],
   "info": {
-    "status": "active",
+    "status": "deprecated",
     "release_date": null,
     "knowledge_cutoff": null,
     "description": "High-performance GLM-4.5 variant with strong reasoning and ultra-fast response.",
     "docs": "https://docs.z.ai/guides/llm/glm-4.5",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -64,6 +64,11 @@
       "title": "Release Notes | Z.AI Developer Document",
       "url": "https://docs.z.ai/release-notes/new-released",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "GLM-4.5 | 智谱AI开放文档",
+      "url": "https://docs.bigmodel.cn/cn/guide/models/text/glm-4.5",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

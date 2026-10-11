@@ -1,0 +1,59 @@
+{
+  "id": "step-image-edit-2",
+  "object": "model",
+  "created": null,
+  "owned_by": "stepfun",
+  "name": "Step Image Edit 2",
+  "api": {
+    "types": [
+      "images"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "image"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "retired",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Image editing model. Retired on 2026-10-10 per the official image model retirement notice.",
+    "docs": "https://platform.stepfun.ai/docs/en/guides/image-offline-notice",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Image Model Retirement Notice | StepFun Documentation",
+      "url": "https://platform.stepfun.ai/docs/en/guides/image-offline-notice",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "stepfun",
+      "model": "step-image-edit-2",
+      "base_url": "https://api.stepfun.ai",
+      "endpoints": {
+        "images": "POST /v1/images/edits"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "step-2x-large",
+  "object": "model",
+  "created": null,
+  "owned_by": "stepfun",
+  "name": "Step-2X Large",
+  "api": {
+    "types": [
+      "images"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "image"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "unit": "image",
+    "input": null,
+    "output": 0.02,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [],
+  "info": {
+    "status": "retired",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Next-generation text-to-image model with more realistic texture and stronger Chinese and English text rendering. Retired on 2026-10-10 per the official image model retirement notice.",
+    "docs": "https://platform.stepfun.ai/docs/en/guides/image-offline-notice",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Image Model Retirement Notice | StepFun Documentation",
+      "url": "https://platform.stepfun.ai/docs/en/guides/image-offline-notice",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model Lifecycle & Deprecations | StepFun Documentation",
+      "url": "https://platform.stepfun.ai/docs/en/guides/model-migration",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "生图改图模型 | 阶跃星辰开放平台文档（存档，原网址 https://platform.stepfun.com/docs/llm/image）",
+      "url": "https://web.archive.org/web/20260212200211/https://platform.stepfun.com/docs/llm/image",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "stepfun",
+      "model": "step-2x-large",
+      "base_url": "https://api.stepfun.ai",
+      "endpoints": {
+        "images": "POST /v1/images/generations"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

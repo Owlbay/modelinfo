@@ -41,7 +41,7 @@
     "caching"
   ],
   "info": {
-    "status": "active",
+    "status": "retired",
     "release_date": null,
     "knowledge_cutoff": null,
     "description": "Free GLM-4.5 variant suited to reasoning, coding and agents.",

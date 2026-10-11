@@ -1,0 +1,85 @@
+{
+  "id": "glm-z1-air",
+  "object": "model",
+  "created": 1744588800,
+  "owned_by": "zhipu",
+  "name": "GLM-Z1-Air",
+  "api": {
+    "types": [
+      "chat"
+    ]
+  },
+  "limits": {
+    "context": 131072,
+    "input": null,
+    "output": 32768
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "CNY",
+    "unit": "1M_tokens",
+    "input": 0.5,
+    "output": 0.5,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [],
+  "info": {
+    "status": "retired",
+    "release_date": "2025-04-14",
+    "knowledge_cutoff": null,
+    "description": "Cost-effective deep-thinking reasoning model with strong math and logic reasoning. Shut down on 2025-11-15 per the official notice.",
+    "docs": "https://web.archive.org/web/20251115025218/https://docs.bigmodel.cn/cn/guide/models/text/glm-z1",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "GLM-Z1 | 智谱AI开放文档（存档，原网址 https://docs.bigmodel.cn/cn/guide/models/text/glm-z1）",
+      "url": "https://web.archive.org/web/20251115025218/https://docs.bigmodel.cn/cn/guide/models/text/glm-z1",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "模型概览 | 智谱AI开放文档（存档，原网址 https://docs.bigmodel.cn/cn/guide/start/model-overview）",
+      "url": "https://web.archive.org/web/20260716095218/https://docs.bigmodel.cn/cn/guide/start/model-overview",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "模型概览 | 智谱AI开放文档（存档，原网址 https://docs.bigmodel.cn/cn/guide/start/model-overview）",
+      "url": "https://web.archive.org/web/20250728235515/https://docs.bigmodel.cn/cn/guide/start/model-overview",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "API 定价 | 智谱AI开放文档（存档，原网址 https://docs.bigmodel.cn/cn/guide/start/pricing）",
+      "url": "https://web.archive.org/web/20260909091015/https://docs.bigmodel.cn/cn/guide/start/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "模型与产品发布记录 | 智谱AI开放文档（存档，原网址 https://docs.bigmodel.cn/cn/update/new-releases）",
+      "url": "https://web.archive.org/web/20260125124217/https://docs.bigmodel.cn/cn/update/new-releases",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "zhipu",
+      "model": "glm-z1-air",
+      "base_url": "https://open.bigmodel.cn/api/paas/v4",
+      "endpoints": {
+        "chat": "POST /chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

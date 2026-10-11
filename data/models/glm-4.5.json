@@ -41,7 +41,7 @@
     "caching"
   ],
   "info": {
-    "status": "active",
+    "status": "deprecated",
     "release_date": "2025-07-28",
     "knowledge_cutoff": null,
     "description": "Reasoning model with 355B total and 32B active parameters for agents, coding and tool use.",
@@ -78,6 +78,11 @@
     {
       "title": "最新动态 | 智谱 AI 开放文档",
       "url": "https://docs.bigmodel.cn/cn/update/new-releases",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "GLM-4.5 | 智谱AI开放文档",
+      "url": "https://docs.bigmodel.cn/cn/guide/models/text/glm-4.5",
       "retrieved_at": "2026-10-11"
     }
   ],
