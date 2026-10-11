@@ -6,7 +6,8 @@
   "name": "Grok 4.5",
   "api": {
     "types": [
-      "chat"
+      "chat",
+      "responses"
     ]
   },
   "limits": {
@@ -72,6 +73,16 @@
       "title": "Release Notes | xAI Docs",
       "url": "https://docs.x.ai/developers/release-notes",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Responses | xAI Docs",
+      "url": "https://docs.x.ai/developers/rest-api-reference/inference/responses",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Generate Text | xAI Docs",
+      "url": "https://docs.x.ai/developers/model-capabilities/text/generate-text",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -80,7 +91,8 @@
       "model": "grok-4.5",
       "base_url": "https://api.x.ai",
       "endpoints": {
-        "chat": "POST /v1/chat/completions"
+        "chat": "POST /v1/chat/completions",
+        "responses": "POST /v1/responses"
       },
       "reasoning_param": "reasoning_effort"
     }
