@@ -1,0 +1,76 @@
+{
+  "id": "o1-preview",
+  "object": "model",
+  "created": null,
+  "owned_by": "openai",
+  "name": "o1 Preview",
+  "api": {
+    "types": [
+      "chat"
+    ]
+  },
+  "limits": {
+    "context": 128000,
+    "input": null,
+    "output": 32768
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 15,
+    "output": 60,
+    "cache_read": 7.5,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "streaming"
+  ],
+  "info": {
+    "status": "retired",
+    "release_date": null,
+    "knowledge_cutoff": "2023-10-01",
+    "description": "Preview of our first o-series reasoning model",
+    "docs": "https://developers.openai.com/api/docs/models/o1-preview",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "o1-preview-2024-09-12"
+  ],
+  "sources": [
+    {
+      "title": "o1 Preview Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/o1-preview",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Deprecations | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "openai",
+      "model": "o1-preview",
+      "base_url": "https://api.openai.com",
+      "endpoints": {
+        "chat": "POST /v1/chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

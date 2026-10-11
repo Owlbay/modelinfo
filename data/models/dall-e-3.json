@@ -1,0 +1,63 @@
+{
+  "id": "dall-e-3",
+  "object": "model",
+  "created": null,
+  "owned_by": "openai",
+  "name": "DALL·E 3",
+  "api": {
+    "types": [
+      "images"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "image"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "retired",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Deprecated image generation model",
+    "docs": "https://developers.openai.com/api/docs/models/dall-e-3",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "DALL·E 3 Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/dall-e-3",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Deprecations | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "openai",
+      "model": "dall-e-3",
+      "base_url": "https://api.openai.com",
+      "endpoints": {
+        "images": "POST /v1/images/generations"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

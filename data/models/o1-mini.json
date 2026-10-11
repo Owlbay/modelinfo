@@ -1,0 +1,74 @@
+{
+  "id": "o1-mini",
+  "object": "model",
+  "created": null,
+  "owned_by": "openai",
+  "name": "o1-mini",
+  "api": {
+    "types": [
+      "chat"
+    ]
+  },
+  "limits": {
+    "context": 128000,
+    "input": null,
+    "output": 65536
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 1.1,
+    "output": 4.4,
+    "cache_read": 0.55,
+    "cache_write": null
+  },
+  "features": [
+    "streaming"
+  ],
+  "info": {
+    "status": "retired",
+    "release_date": null,
+    "knowledge_cutoff": "2023-10-01",
+    "description": "A small model alternative to o1",
+    "docs": "https://developers.openai.com/api/docs/models/o1-mini",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "o1-mini-2024-09-12"
+  ],
+  "sources": [
+    {
+      "title": "o1-mini Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/o1-mini",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Deprecations | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "openai",
+      "model": "o1-mini",
+      "base_url": "https://api.openai.com",
+      "endpoints": {
+        "chat": "POST /v1/chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

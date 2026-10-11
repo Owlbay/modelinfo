@@ -1,0 +1,75 @@
+{
+  "id": "chatgpt-4o-latest",
+  "object": "model",
+  "created": null,
+  "owned_by": "openai",
+  "name": "ChatGPT-4o",
+  "api": {
+    "types": [
+      "chat",
+      "responses"
+    ]
+  },
+  "limits": {
+    "context": 128000,
+    "input": null,
+    "output": 16384
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 5,
+    "output": 15,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [
+    "streaming"
+  ],
+  "info": {
+    "status": "retired",
+    "release_date": null,
+    "knowledge_cutoff": "2023-10-01",
+    "description": "GPT-4o model used in ChatGPT",
+    "docs": "https://developers.openai.com/api/docs/models/chatgpt-4o-latest",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "ChatGPT-4o Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/chatgpt-4o-latest",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Deprecations | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "openai",
+      "model": "chatgpt-4o-latest",
+      "base_url": "https://api.openai.com",
+      "endpoints": {
+        "chat": "POST /v1/chat/completions",
+        "responses": "POST /v1/responses"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

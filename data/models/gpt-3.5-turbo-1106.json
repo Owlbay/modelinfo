@@ -1,0 +1,56 @@
+{
+  "id": "gpt-3.5-turbo-1106",
+  "object": "model",
+  "created": null,
+  "owned_by": "openai",
+  "name": "gpt-3.5-turbo-1106",
+  "api": {
+    "types": [
+      "chat"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "retired",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": null,
+    "docs": null,
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Deprecations | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "openai",
+      "model": "gpt-3.5-turbo-1106",
+      "base_url": "https://api.openai.com",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "gpt-4o-realtime-preview",
+  "object": "model",
+  "created": null,
+  "owned_by": "openai",
+  "name": "GPT-4o Realtime",
+  "api": {
+    "types": [
+      "realtime"
+    ]
+  },
+  "limits": {
+    "context": 32000,
+    "input": null,
+    "output": 4096
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "audio"
+    ],
+    "output": [
+      "text",
+      "audio"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "tools",
+    "caching"
+  ],
+  "info": {
+    "status": "retired",
+    "release_date": null,
+    "knowledge_cutoff": "2023-10-01",
+    "description": "Model capable of realtime text and audio inputs and outputs",
+    "docs": "https://developers.openai.com/api/docs/models/gpt-4o-realtime-preview",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "gpt-4o-realtime-preview-2025-06-03",
+    "gpt-4o-realtime-preview-2024-12-17",
+    "gpt-4o-realtime-preview-2024-10-01"
+  ],
+  "sources": [
+    {
+      "title": "GPT-4o Realtime Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-4o-realtime-preview",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Deprecations | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "openai",
+      "model": "gpt-4o-realtime-preview",
+      "base_url": "https://api.openai.com",
+      "endpoints": {
+        "realtime": "GET /v1/realtime"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

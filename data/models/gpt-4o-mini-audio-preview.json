@@ -1,0 +1,70 @@
+{
+  "id": "gpt-4o-mini-audio-preview",
+  "object": "model",
+  "created": null,
+  "owned_by": "openai",
+  "name": "GPT-4o Mini Audio",
+  "api": {
+    "types": [
+      "chat"
+    ]
+  },
+  "limits": {
+    "context": 128000,
+    "input": null,
+    "output": 16384
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "audio"
+    ],
+    "output": [
+      "text",
+      "audio"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "tools",
+    "streaming"
+  ],
+  "info": {
+    "status": "retired",
+    "release_date": null,
+    "knowledge_cutoff": "2023-10-01",
+    "description": "Smaller model capable of audio inputs and outputs",
+    "docs": "https://developers.openai.com/api/docs/models/gpt-4o-mini-audio-preview",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "gpt-4o-mini-audio-preview-2024-12-17"
+  ],
+  "sources": [
+    {
+      "title": "GPT-4o Mini Audio Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-4o-mini-audio-preview",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Deprecations | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "openai",
+      "model": "gpt-4o-mini-audio-preview",
+      "base_url": "https://api.openai.com",
+      "endpoints": {
+        "chat": "POST /v1/chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

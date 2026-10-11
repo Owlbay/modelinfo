@@ -1,0 +1,77 @@
+{
+  "id": "gpt-5.2-chat-latest",
+  "object": "model",
+  "created": null,
+  "owned_by": "openai",
+  "name": "GPT-5.2 Chat",
+  "api": {
+    "types": [
+      "chat",
+      "responses"
+    ]
+  },
+  "limits": {
+    "context": 128000,
+    "input": 272000,
+    "output": 16384
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 1.75,
+    "output": 14,
+    "cache_read": 0.175,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "streaming"
+  ],
+  "info": {
+    "status": "retired",
+    "release_date": null,
+    "knowledge_cutoff": "2025-08-31",
+    "description": "GPT-5.2 model used in ChatGPT",
+    "docs": "https://developers.openai.com/api/docs/models/gpt-5.2-chat-latest",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "GPT-5.2 Chat Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.2-chat-latest",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Deprecations | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "openai",
+      "model": "gpt-5.2-chat-latest",
+      "base_url": "https://api.openai.com",
+      "endpoints": {
+        "chat": "POST /v1/chat/completions",
+        "responses": "POST /v1/responses"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

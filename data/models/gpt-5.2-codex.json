@@ -1,0 +1,81 @@
+{
+  "id": "gpt-5.2-codex",
+  "object": "model",
+  "created": null,
+  "owned_by": "openai",
+  "name": "GPT-5.2-Codex",
+  "api": {
+    "types": [
+      "responses"
+    ]
+  },
+  "limits": {
+    "context": 400000,
+    "input": 272000,
+    "output": 128000
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh"
+    ]
+  },
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 1.75,
+    "output": 14,
+    "cache_read": 0.175,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "streaming",
+    "caching"
+  ],
+  "info": {
+    "status": "retired",
+    "release_date": null,
+    "knowledge_cutoff": "2025-08-31",
+    "description": "Our most intelligent coding model optimized for long-horizon, agentic coding tasks.",
+    "docs": "https://developers.openai.com/api/docs/models/gpt-5.2-codex",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "GPT-5.2-Codex Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.2-codex",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Deprecations | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "openai",
+      "model": "gpt-5.2-codex",
+      "base_url": "https://api.openai.com",
+      "endpoints": {
+        "responses": "POST /v1/responses"
+      },
+      "reasoning_param": "reasoning.effort"
+    }
+  ]
+}

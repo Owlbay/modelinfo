@@ -1,0 +1,78 @@
+{
+  "id": "computer-use-preview",
+  "object": "model",
+  "created": null,
+  "owned_by": "openai",
+  "name": "computer-use-preview",
+  "api": {
+    "types": [
+      "responses",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": 8192,
+    "input": null,
+    "output": 1024
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 3,
+    "output": 12,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "batch"
+  ],
+  "info": {
+    "status": "retired",
+    "release_date": null,
+    "knowledge_cutoff": "2023-10-01",
+    "description": "Specialized model for computer use tool",
+    "docs": "https://developers.openai.com/api/docs/models/computer-use-preview",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "computer-use-preview-2025-03-11"
+  ],
+  "sources": [
+    {
+      "title": "computer-use-preview Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/computer-use-preview",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Deprecations | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "openai",
+      "model": "computer-use-preview",
+      "base_url": "https://api.openai.com",
+      "endpoints": {
+        "responses": "POST /v1/responses",
+        "batch": "POST /v1/batches"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "sora-2-pro",
+  "object": "model",
+  "created": null,
+  "owned_by": "openai",
+  "name": "Sora 2 Pro",
+  "api": {
+    "types": [
+      "video"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "video",
+      "audio"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "unit": "second",
+    "input": null,
+    "output": 0.3,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [],
+  "info": {
+    "status": "retired",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Most advanced synced-audio video generation",
+    "docs": "https://developers.openai.com/api/docs/models/sora-2-pro",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "sora-2-pro-2025-10-06"
+  ],
+  "sources": [
+    {
+      "title": "Sora 2 Pro Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/sora-2-pro",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Deprecations | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "openai",
+      "model": "sora-2-pro",
+      "base_url": "https://api.openai.com",
+      "endpoints": {
+        "video": "POST /v1/videos"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "text-davinci-001",
+  "object": "model",
+  "created": null,
+  "owned_by": "openai",
+  "name": "text-davinci-001",
+  "api": {
+    "types": [
+      "completions"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 20,
+    "output": 20,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [],
+  "info": {
+    "status": "retired",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": null,
+    "docs": null,
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Deprecations | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "openai",
+      "model": "text-davinci-001",
+      "base_url": "https://api.openai.com",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

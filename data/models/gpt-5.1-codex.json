@@ -1,0 +1,76 @@
+{
+  "id": "gpt-5.1-codex",
+  "object": "model",
+  "created": null,
+  "owned_by": "openai",
+  "name": "GPT-5.1-Codex",
+  "api": {
+    "types": [
+      "responses"
+    ]
+  },
+  "limits": {
+    "context": 400000,
+    "input": null,
+    "output": 128000
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 1.25,
+    "output": 10,
+    "cache_read": 0.125,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "streaming",
+    "caching"
+  ],
+  "info": {
+    "status": "retired",
+    "release_date": null,
+    "knowledge_cutoff": "2024-09-30",
+    "description": "A version of GPT-5.1 optimized for agentic coding in Codex.",
+    "docs": "https://developers.openai.com/api/docs/models/gpt-5.1-codex",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "GPT-5.1-Codex Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.1-codex",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Deprecations | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "openai",
+      "model": "gpt-5.1-codex",
+      "base_url": "https://api.openai.com",
+      "endpoints": {
+        "responses": "POST /v1/responses"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
