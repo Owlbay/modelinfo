@@ -1,0 +1,86 @@
+---
+/**
+ * 关键数据：一组「小标签 + 大数字」。标签用 Geist，数值用 Geist Mono 等宽数字，可带小号单位。
+ * 详情页规格区顶部与模型页标题区右侧共用；每格左侧一条 1px 竖线，窄屏换行。
+ */
+interface Item {
+  label: string;
+  value: string;
+  unit?: string;
+}
+interface Props {
+  items: Item[];
+  /** 标题区右侧：靠右排列，不铺满 */
+  inline?: boolean;
+}
+const { items, inline = false } = Astro.props;
+---
+
+<dl class:list={['stats', { 'stats--inline': inline }]}>
+  {
+    items.map((s) => (
+      <div class="stats__item">
+        <dt class="stats__label">{s.label}</dt>
+        <dd class="stats__value mono">
+          {s.value}
+          {s.unit && <span class="stats__unit">{s.unit}</span>}
+        </dd>
+      </div>
+    ))
+  }
+</dl>
+
+<style>
+  /* 每格左侧一条 1px 竖线，换行后依然成立 */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+    gap: var(--sp-4) var(--sp-5);
+    margin: 0;
+  }
+  .stats__item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-1);
+    min-width: 0;
+    padding: var(--sp-1) 0 var(--sp-1) var(--sp-4);
+    border-left: 1px solid var(--line-strong);
+  }
+  .stats__label {
+    font: 400 var(--fs-body-sm) / var(--lh-body-sm) var(--font-sans);
+    color: var(--ink-3);
+  }
+  .stats__value {
+    margin: 0;
+    font-size: var(--fs-h2);
+    line-height: 1.25;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    overflow-wrap: break-word;
+  }
+  .stats__unit {
+    margin-left: var(--sp-2);
+    font-size: var(--fs-mono-sm);
+    line-height: var(--lh-mono-sm);
+    letter-spacing: 0;
+    color: var(--ink-3);
+    white-space: nowrap;
+  }
+
+  .stats--inline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  /* 标题区在平板及以下改为上下排列，数据随正文左对齐 */
+  @media (max-width: 1024px) {
+    .stats--inline { justify-content: flex-start; }
+  }
+  @media (max-width: 640px) {
+    .stats:not(.stats--inline) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .stats__item { padding-left: var(--sp-3); }
+    .stats__value { font-size: var(--fs-h3); }
+  }
+</style>

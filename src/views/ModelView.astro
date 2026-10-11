@@ -9,6 +9,7 @@ import Endpoint from '../components/Endpoint.astro';
 import Icon from '../components/Icon.astro';
 import VendorLogo from '../components/VendorLogo.astro';
 import Modalities from '../components/Modalities.astro';
+import Stats from '../components/Stats.astro';
 import { correctionUrl } from '../lib/nav';
 import { formatPrice, formatTokens, ownerName, toPublic, type Model } from '../lib/models';
 import { dict, localePath, type Lang } from '../i18n';
@@ -21,44 +22,68 @@ const { lang, model: m } = Astro.props;
 const t = dict(lang).model;
 const tm = dict(lang).models;
 const p = m.pricing;
-const list = (v: string[]) => (v.length ? v.join(' · ') : '—');
-const yesNo = (v: boolean | null) => (v === null ? t.unknown : v ? t.yes : t.no);
+const f = t.fields;
 const g = t.groups;
+const unit = p ? dict(lang).units[p.unit] : '';
 
-// 值为数组时按模态图标渲染
-const groups: Array<{ title: string; rows: Array<[string, string | string[]]> }> = [
-  { title: g.api, rows: [['types', list(m.api.types)]] },
+/** 行值：文本（null 为未知）、模态图标、或小方框标签（接口类型、能力） */
+type Value = { kind: 'text'; v: string | null } | { kind: 'mods' | 'tags'; v: string[] };
+const text = (v: string | null): Value => ({ kind: 'text', v: v === '—' ? null : v });
+const isEmpty = (x: Value) => (x.kind === 'text' ? x.v === null : x.v.length === 0);
+const yesNo = (v: boolean | null) => (v === null ? null : v ? t.yes : t.no);
+
+const keyStats = [
+  { label: t.keyStats.context, value: formatTokens(m.limits.context) },
+  { label: t.keyStats.output, value: formatTokens(m.limits.output) },
+  { label: t.keyStats.inputPrice, value: p ? formatPrice(p.input, p.currency) : '—', unit: p && p.input !== null ? `/ ${unit}` : undefined },
+  { label: t.keyStats.outputPrice, value: p ? formatPrice(p.output, p.currency) : '—', unit: p && p.output !== null ? `/ ${unit}` : undefined },
+  { label: t.keyStats.released, value: m.info.release_date ?? '—' },
+];
+
+// 顺序按桌面 4 列排：第一行 上下文(3) 价格(4) 输入输出(2) API(1)，第二行 思考(1–2) 源信息(3) 能力(1)，行高接近
+const groups: Array<{ title: string; rows: Array<[string, Value]> }> = [
   {
     title: g.limits,
     rows: [
-      ['context', formatTokens(m.limits.context)],
-      ['input', formatTokens(m.limits.input)],
-      ['output', formatTokens(m.limits.output)],
+      [f.context, text(formatTokens(m.limits.context))],
+      [f.maxInput, text(formatTokens(m.limits.input))],
+      [f.maxOutput, text(formatTokens(m.limits.output))],
     ],
   },
-  { title: g.modalities, rows: [['input', m.modalities.input], ['output', m.modalities.output]] },
-  { title: g.reasoning, rows: [['supported', yesNo(m.reasoning.supported)], ['efforts', list(m.reasoning.efforts)]] },
   {
-    title: p ? `${g.pricing} · ${t.perUnit(p.currency, dict(lang).units[p.unit])}` : g.pricing,
-    rows: p
-      ? [
-          ['input', formatPrice(p.input, p.currency)],
-          ['output', formatPrice(p.output, p.currency)],
-          ['cache_read', formatPrice(p.cache_read, p.currency)],
-          ['cache_write', formatPrice(p.cache_write, p.currency)],
-        ]
-      : [['pricing', t.noPrice]],
+    title: p ? `${g.pricing} · ${t.perUnit(p.currency, unit)}` : g.pricing,
+    rows: [
+      [f.input, text(p ? formatPrice(p.input, p.currency) : null)],
+      [f.output, text(p ? formatPrice(p.output, p.currency) : null)],
+      [f.cacheRead, text(p ? formatPrice(p.cache_read, p.currency) : null)],
+      [f.cacheWrite, text(p ? formatPrice(p.cache_write, p.currency) : null)],
+    ],
   },
-  { title: g.features, rows: [['features', list(m.features)]] },
+  {
+    title: g.modalities,
+    rows: [
+      [f.input, { kind: 'mods', v: m.modalities.input }],
+      [f.output, { kind: 'mods', v: m.modalities.output }],
+    ],
+  },
+  { title: g.api, rows: [[f.types, { kind: 'tags', v: m.api.types }]] },
+  {
+    title: g.reasoning,
+    rows: [
+      [f.supported, text(yesNo(m.reasoning.supported))],
+      // 明确不支持思考时不显示等级
+      ...(m.reasoning.supported === false ? [] : [[f.efforts, { kind: 'tags', v: m.reasoning.efforts }] as [string, Value]]),
+    ],
+  },
   {
     title: g.info,
     rows: [
-      ['status', t.status[m.info.status]],
-      ['release_date', m.info.release_date ?? '—'],
-      ['knowledge_cutoff', m.info.knowledge_cutoff ?? '—'],
-      ['verified_at', m.info.verified_at ?? '—'],
+      [f.status, text(t.status[m.info.status])],
+      [f.released, text(m.info.release_date)],
+      [f.cutoff, text(m.info.knowledge_cutoff)],
     ],
   },
+  { title: g.features, rows: [[f.features, { kind: 'tags', v: m.features }]] },
 ];
 const json = JSON.stringify(toPublic(m), null, 2);
 const verified = tm.verified(m.info.verified_at ?? '—');
@@ -76,19 +101,40 @@ const verified = tm.verified(m.info.verified_at ?? '—');
       </span>
     </PageHeader>
 
-    <SectionFrame id="spec" title={t.specs} count={m.id} source={tm.source} stamp={verified}>
+    <SectionFrame id="spec" title={t.specs} source={tm.source} stamp={verified}>
+      <Stats items={keyStats} />
       <div class="spec">
         {
           groups.map((grp) => (
             <section class="spec__group">
               <h3 class="spec__title">{grp.title}</h3>
               <dl class="spec__list">
-                {grp.rows.map(([k, v]) => (
-                  <div class="spec__row">
-                    <dt>{k}</dt>
-                    <dd>{typeof v === 'string' ? v : <Modalities lang={lang} items={v} labeled />}</dd>
+                {grp.rows.every(([, v]) => isEmpty(v)) ? (
+                  <div class="spec__row spec__row--none">
+                    <dd>{t.notPublished}</dd>
                   </div>
-                ))}
+                ) : (
+                  grp.rows.map(([k, v]) => (
+                    <div class="spec__row">
+                      <dt>{k}</dt>
+                      <dd>
+                        {isEmpty(v) ? (
+                          '—'
+                        ) : v.kind === 'text' ? (
+                          v.v
+                        ) : v.kind === 'mods' ? (
+                          <Modalities lang={lang} items={v.v} labeled />
+                        ) : (
+                          <span class="tags">
+                            {v.v.map((x) => (
+                              <span class="tag">{x}</span>
+                            ))}
+                          </span>
+                        )}
+                      </dd>
+                    </div>
+                  ))
+                )}
               </dl>
             </section>
           ))
@@ -176,28 +222,64 @@ const verified = tm.verified(m.info.verified_at ?? '—');
     color: var(--ink-3);
   }
 
+  /* 规格分组：桌面 4 列、平板 2 列、手机 1 列 */
   .spec {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: var(--sp-5) var(--sp-6);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--sp-6) var(--sp-6);
+    margin-top: var(--sp-6);
   }
+  .spec__group { min-width: 0; }
   .spec__title {
     padding-bottom: var(--sp-2);
     border-bottom: 1px solid var(--line);
     font: 500 var(--fs-body) / var(--lh-body) var(--font-sans);
     color: var(--ink);
   }
+  /* 标签列按本组最长标签取宽，各行用 subgrid 共享列线 */
+  .spec__list {
+    display: grid;
+    grid-template-columns: max-content minmax(0, 1fr);
+    column-gap: var(--sp-4);
+    margin: 0;
+  }
   .spec__row {
     display: grid;
-    grid-template-columns: 18ch minmax(0, 1fr);
-    gap: var(--sp-3);
+    grid-column: 1 / -1;
+    grid-template-columns: subgrid;
+    align-items: baseline;
     padding: var(--sp-2) 0;
     border-bottom: 1px solid var(--line-soft);
+  }
+  .spec__row dt {
+    font: 400 var(--fs-body-sm) / var(--lh-body-sm) var(--font-sans);
+    color: var(--ink-3);
+  }
+  .spec__row dd {
+    min-width: 0;
+    margin: 0;
     font: 400 var(--fs-mono) / var(--lh-mono) var(--font-mono);
     font-variant-numeric: tabular-nums;
+    color: var(--ink);
+    overflow-wrap: anywhere;
   }
-  .spec__row dt { color: var(--ink-3); }
-  .spec__row dd { color: var(--ink); overflow-wrap: anywhere; }
+  .spec__row--none dd {
+    grid-column: 1 / -1;
+    font: 400 var(--fs-body-sm) / var(--lh-body-sm) var(--font-sans);
+    color: var(--ink-3);
+  }
+  /* 接口类型、能力、思考等级：小方框标签，与模态图标同一描边 */
+  .tags { display: flex; flex-wrap: wrap; gap: var(--sp-1); }
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    min-height: 20px;
+    padding: 0 var(--sp-1);
+    border: 1px solid var(--line-strong);
+    font-size: var(--fs-mono-sm);
+    line-height: var(--lh-mono-sm);
+    color: var(--ink-2);
+  }
 
   .prov + .prov { margin-top: var(--sp-6); }
   .prov__head {
@@ -243,9 +325,12 @@ const verified = tm.verified(m.info.verified_at ?? '—');
   .src__host,
   .src__date { color: var(--ink-3); white-space: nowrap; }
 
+  @media (max-width: 1024px) {
+    .spec { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
   @media (max-width: 640px) {
+    .spec { grid-template-columns: minmax(0, 1fr); gap: var(--sp-5); margin-top: var(--sp-5); }
     .prov__ep { grid-template-columns: minmax(0, 1fr); row-gap: var(--sp-1); }
-    .spec__row { grid-template-columns: 14ch minmax(0, 1fr); }
     .src { grid-template-columns: minmax(0, 1fr) auto; }
     .src__host { display: none; }
   }

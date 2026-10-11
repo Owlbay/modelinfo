@@ -2,6 +2,7 @@
 /**
  * 页面标题区：所有页面统一为「标题 + 一句简介 + 可选操作」。
  * 标题用 Headline 级（--fs-h1），始终比分区标题（--fs-h2）大一级。
+ * aside 插槽：桌面放在标题右侧（如关键数据），平板及以下排到简介下方。
  */
 interface Props {
   title: string;
@@ -10,9 +11,10 @@ interface Props {
 const { title, intro } = Astro.props;
 const hasActions = Astro.slots.has('default');
 const hasMedia = Astro.slots.has('media');
+const hasAside = Astro.slots.has('aside');
 ---
 
-<header class:list={['phead', { 'phead--media': hasMedia }]}>
+<header class:list={['phead', { 'phead--media': hasMedia, 'phead--aside': hasAside }]}>
   {hasMedia && <div class="phead__media"><slot name="media" /></div>}
   <div class="phead__body">
     <h1 class="phead__title">{title}</h1>
@@ -20,6 +22,7 @@ const hasMedia = Astro.slots.has('media');
     <slot name="meta" />
     {hasActions && <div class="phead__actions"><slot /></div>}
   </div>
+  {hasAside && <div class="phead__aside"><slot name="aside" /></div>}
 </header>
 
 <style>
@@ -33,6 +36,13 @@ const hasMedia = Astro.slots.has('media');
     align-items: start;
     gap: var(--sp-6);
   }
+  .phead--aside {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: end;
+    gap: var(--sp-5) var(--sp-7);
+  }
+  .phead__aside { min-width: 0; }
   .phead__title {
     margin: 0;
     font: 500 var(--fs-h1) / 1.2 var(--font-sans);
@@ -53,6 +63,9 @@ const hasMedia = Astro.slots.has('media');
     align-items: center;
     gap: var(--sp-3);
     margin-top: var(--sp-5);
+  }
+  @media (max-width: 1024px) {
+    .phead--aside { grid-template-columns: minmax(0, 1fr); }
   }
   @media (max-width: 640px) {
     .phead--media { grid-template-columns: minmax(0, 1fr); gap: var(--sp-4); }

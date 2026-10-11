@@ -7,6 +7,7 @@ import SectionFrame from '../components/SectionFrame.astro';
 import FilterMenu from '../components/FilterMenu.astro';
 import ModelRow from '../components/ModelRow.astro';
 import Icon from '../components/Icon.astro';
+import Stats from '../components/Stats.astro';
 import { getModels, KINDS, latestVerified, modelKind, ownerName } from '../lib/models';
 import { dict, type Lang } from '../i18n';
 
@@ -28,32 +29,39 @@ const kindOptions = [
   { value: '', label: t.all, count: models.length },
   ...KINDS.filter((k) => kindCounts.has(k)).map((k) => ({ value: k as string, label: t.kinds[k], count: kindCounts.get(k) ?? 0 })),
 ];
+const verifiedAt = latestVerified(models) ?? '—';
 ---
 
 <BaseLayout lang={lang} page="models" title={t.title}>
   <TopNav lang={lang} page="models" />
   <main id="main" class="page models">
     <PageHeader title={t.title} intro={t.intro}>
-      <div class="filters">
-        <label class="filters__search">
+      <Stats
+        slot="aside"
+        inline
+        items={[
+          { label: t.stats.models, value: String(models.length) },
+          { label: t.stats.vendors, value: String(ownerCounts.length) },
+          { label: t.stats.verified, value: verifiedAt },
+        ]}
+      />
+    </PageHeader>
+
+    <SectionFrame id="list" title={t.frame} titleHidden source={t.source} stamp={t.verified(verifiedAt)}>
+      <div class="tbar" role="search" data-vt-toolbar aria-label={t.toolbarAria}>
+        <label class="tbar__search">
           <Icon name="search" size={16} />
           <input type="search" data-filter-q placeholder={t.searchPlaceholder} aria-label={t.searchAria} autocomplete="off" spellcheck="false" />
         </label>
         <FilterMenu name="kind" label={t.kindLabel} options={kindOptions} />
         <FilterMenu name="owner" label={t.cols.vendor} options={ownerOptions} searchPlaceholder={t.vendorSearch} />
+        <div class="tbar__end">
+          <span class="tbar__count mono" aria-live="polite"><span data-shown>{models.length}</span> {t.total(models.length)}</span>
+          <button type="button" class="models__toggle" data-view-toggle aria-pressed="false">
+            <span data-view-label-off>{t.showAll}</span><span data-view-label-on hidden>{t.showLess}</span>
+          </button>
+        </div>
       </div>
-    </PageHeader>
-
-    <SectionFrame
-      id="list"
-      title={t.frame}
-      count={t.count(models.length)}
-      source={t.source}
-      stamp={t.verified(latestVerified(models) ?? '—')}
-    >
-      <button type="button" slot="actions" class="models__toggle" data-view-toggle aria-pressed="false">
-        <span data-view-label-off>{t.showAll}</span><span data-view-label-on hidden>{t.showLess}</span>
-      </button>
       <div class="models__table" data-models-table>
       <div class="models__head mono" aria-hidden="true">
         <span class="head__main">{t.cols.model}</span><span>{t.cols.vendor}</span>
@@ -78,6 +86,7 @@ const kindOptions = [
   const list = document.querySelector<HTMLElement>('[data-vt-list]')!;
   const rows = [...list.querySelectorAll<HTMLElement>('[data-model]')];
   const empty = list.querySelector<HTMLElement>('[data-empty]')!;
+  const shownEl = document.querySelector<HTMLElement>('[data-shown]')!;
   const input = document.querySelector<HTMLInputElement>('[data-filter-q]')!;
   const params = new URLSearchParams(location.search);
   const state = { q: params.get('q') ?? '', owner: params.get('owner') ?? '', kind: params.get('kind') ?? '' };
@@ -116,6 +125,7 @@ const kindOptions = [
       if (hit) shown++;
     }
     empty.hidden = shown > 0;
+    shownEl.textContent = String(shown);
     for (const menu of document.querySelectorAll<HTMLElement>('[data-filter-menu]')) {
       const v = state[menu.dataset.filterMenu as 'owner' | 'kind'];
       let label = '';
@@ -175,28 +185,35 @@ const kindOptions = [
 
 <style>
   .models { padding-bottom: var(--sp-8); }
-  /* 搜索框 + 类型 + 模型厂商，同一行；窄屏换行 */
-  .filters {
+  /* 列表工具栏：搜索 + 类型 + 模型厂商 + 计数与视图切换，一行铺满。顶栏不固定，工具栏滚动时吸在视口顶部；
+     z-index 20 高于全字段视图的固定列（1），下拉面板（50）在工具栏的层叠上下文内，因此盖住下方表格 */
+  .tbar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: var(--sp-2);
-    width: 100%;
+    margin: calc(-1 * var(--sp-3)) calc(-1 * var(--page-pad)) var(--sp-4);
+    padding: var(--sp-3) var(--page-pad);
+    border-bottom: 1px solid var(--line-soft);
+    background: var(--bg);
   }
-  .filters__search {
+  .tbar__search {
     display: flex;
     flex: 1 1 280px;
     align-items: center;
     gap: var(--sp-3);
-    max-width: 480px;
+    min-width: 0;
     height: var(--control-h);
     padding: 0 var(--sp-3);
     border: 1px solid var(--line-strong);
     color: var(--ink-3);
     transition: border-color var(--dur-1) var(--ease-out);
   }
-  .filters__search:focus-within { border-color: var(--accent-ui); }
-  .filters__search input {
+  .tbar__search:focus-within { border-color: var(--accent-ui); }
+  .tbar__search input {
     flex: 1;
     min-width: 0;
     height: 100%;
@@ -207,20 +224,33 @@ const kindOptions = [
     color: var(--ink);
     outline: none;
   }
-  .filters__search input:focus-visible { outline: none; }
-  .filters__search input::-webkit-search-cancel-button { display: none; }
+  .tbar__search input:focus-visible { outline: none; }
+  .tbar__search input::-webkit-search-cancel-button { display: none; }
+  .tbar__end {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-4);
+    margin-left: auto;
+    padding-left: var(--sp-3);
+  }
+  .tbar__count {
+    font-size: var(--fs-mono);
+    line-height: var(--lh-mono);
+    color: var(--ink-3);
+    white-space: nowrap;
+  }
   .models__toggle {
     display: inline-flex;
     align-items: center;
-    min-height: 32px;
+    height: var(--control-h);
     padding: 0 var(--sp-3);
-    border: 1px solid var(--line);
+    border: 1px solid var(--line-strong);
     font: 400 var(--fs-body-sm) / var(--lh-body-sm) var(--font-sans);
     color: var(--ink-2);
-    align-self: center;
+    white-space: nowrap;
     transition: color var(--dur-1) var(--ease-out), background-color var(--dur-1) var(--ease-out), border-color var(--dur-1) var(--ease-out);
   }
-  .models__toggle:hover { color: var(--ink); border-color: var(--line-strong); background: var(--hover-row); }
+  .models__toggle:hover { color: var(--ink); background: var(--hover-row); }
   .models__toggle[aria-pressed='true'] { background: var(--selected-bg); border-color: var(--selected-bg); color: var(--selected-ink); }
   /* 表头与 ModelRow 同列定义、同字号 */
   .models__head {
@@ -276,5 +306,9 @@ const kindOptions = [
   }
   @media (max-width: 640px) {
     .models:not(.models--full) .models__head { display: none; }
+    /* 手机：工具栏占三行，不吸顶，把屏幕留给列表 */
+    .tbar { position: static; padding-top: 0; margin-top: 0; }
+    .tbar__search { flex-basis: 100%; }
+    .tbar__end { width: 100%; justify-content: space-between; padding-left: 0; }
   }
 </style>

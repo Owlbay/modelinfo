@@ -11,18 +11,23 @@ interface Props {
   more?: { href: string; label: string };
   /** 无框形态：去掉虚线框与四角角标，标题与计数样式不变；用于博客外壳等不画栅格的页面 */
   plain?: boolean;
+  /** 标题只给读屏器：页面里已有更醒目的标题或工具栏时用，避免重复 */
+  titleHidden?: boolean;
 }
 
-const { id, title, count, source, stamp, more, plain = false } = Astro.props;
+const { id, title, count, source, stamp, more, plain = false, titleHidden = false } = Astro.props;
 const hid = `${id}-h`;
 const hasFoot = !plain && (source != null || stamp != null);
+const hasAside = !!more || count != null || Astro.slots.has('actions');
 ---
 
 <section class:list={['frame', { 'frame--plain': plain }]} id={id} aria-labelledby={hid}>
+  {titleHidden && <h2 id={hid} class="sr-only">{title}</h2>}
+  {(!titleHidden || hasAside) && (
   <header class="frame__head">
-    <h2 id={hid} class="frame__title">{title}</h2>
+    {!titleHidden && <h2 id={hid} class="frame__title">{title}</h2>}
     {
-      (more || count != null || Astro.slots.has('actions')) && (
+      hasAside && (
         <div class="frame__aside">
           <slot name="actions" />
           {more && (
@@ -40,6 +45,7 @@ const hasFoot = !plain && (source != null || stamp != null);
       )
     }
   </header>
+  )}
   <div class="frame__body"><slot /></div>
   {
     hasFoot && (

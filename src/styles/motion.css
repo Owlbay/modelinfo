@@ -23,6 +23,8 @@
 
 /* 筛选：只有列表区域淡入 */
 :root[data-vt='list'] [data-vt-list] { view-transition-name: model-list; }
+/* 吸顶工具栏单独成层，过渡期间不被列表快照盖住 */
+:root[data-vt='list'] [data-vt-toolbar] { view-transition-name: model-toolbar; }
 :root[data-vt='list']::view-transition-old(root),
 :root[data-vt='list']::view-transition-new(root) { animation: none; }
 :root[data-vt='list']::view-transition-old(model-list) { animation: vt-fade-out 120ms var(--ease-out) both; }
