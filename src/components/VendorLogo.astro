@@ -2,33 +2,25 @@
 /**
  * 模型厂商 logo：@lobehub/icons-static-svg 单色图标（fill="currentColor"，随文字色适配深浅主题），
  * 构建时内联；未登记图标的厂商显示首字母方块。
+ * sprite 为 true 时只输出 <use>，引用页面中 Sprites 组件生成的 symbol（长列表用，避免每行重复整段路径）。
  */
-import fs from 'node:fs';
-import { createRequire } from 'node:module';
 import { vendor } from '../lib/models';
+import { vendorSvg } from '../lib/vendor-icons';
 
 interface Props {
   id: string;
   size?: number;
   class?: string;
+  sprite?: boolean;
 }
-const { id, size = 16, class: className } = Astro.props;
+const { id, size = 16, class: className, sprite = false } = Astro.props;
 const v = vendor(id);
-const require = createRequire(import.meta.url);
-
-let svg: string | null = null;
-if (v?.icon) {
-  try {
-    const file = require.resolve(`@lobehub/icons-static-svg/icons/${v.icon}.svg`);
-    svg = fs
-      .readFileSync(file, 'utf8')
-      .replace(/<title>.*?<\/title>/s, '')
-      .replace(/\s(width|height|style)="[^"]*"/g, '')
-      .replace('<svg', `<svg width="${size}" height="${size}" aria-hidden="true" focusable="false"`);
-  } catch {
-    svg = null;
-  }
-}
+const icon = vendorSvg(id);
+const svg = icon
+  ? sprite
+    ? `<svg width="${size}" height="${size}" aria-hidden="true" focusable="false"><use href="#${icon.symbol}"/></svg>`
+    : `<svg width="${size}" height="${size}" aria-hidden="true" focusable="false" ${icon.attrs}>${icon.inner}</svg>`
+  : null;
 const initial = (v?.name ?? id).slice(0, 1).toUpperCase();
 ---
 

@@ -1,0 +1,28 @@
+---
+/**
+ * 图标精灵：长列表页一次性输出厂商 logo 与模态图标的 <symbol>，行内用 <use href="#…"> 引用。
+ * 模态图标按 12px 显示，描边宽度与 Icon 组件在 12px 时一致。
+ */
+import { PATHS } from '../lib/icons';
+import { vendorSvg } from '../lib/vendor-icons';
+
+interface Props {
+  vendors: string[];
+}
+const { vendors } = Astro.props;
+const logos = [...new Map(vendors.map((id) => vendorSvg(id)).filter((x) => x !== null).map((x) => [x.symbol, x])).values()];
+const MODS = ['text', 'image', 'video', 'audio', 'document', 'embedding', 'score', '3d'] as const;
+const symbols = [
+  ...logos.map((l) => `<symbol id="${l.symbol}" ${l.attrs}>${l.inner}</symbol>`),
+  ...MODS.map(
+    (k) =>
+      `<symbol id="i-mod-${k}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter">${PATHS[`mod-${k}`].map((d) => `<path d="${d}"/>`).join('')}</symbol>`,
+  ),
+].join('');
+---
+
+<svg class="sprites" aria-hidden="true" focusable="false" set:html={symbols} />
+
+<style>
+  .sprites { position: absolute; width: 0; height: 0; overflow: hidden; }
+</style>

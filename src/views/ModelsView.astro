@@ -10,7 +10,9 @@ import Icon from '../components/Icon.astro';
 import CompareToggle from '../components/CompareToggle.astro';
 import CompareTray from '../components/CompareTray.astro';
 import Stats from '../components/Stats.astro';
+import Sprites from '../components/Sprites.astro';
 import { getModels, KINDS, latestVerified, modelKind, ownerName } from '../lib/models';
+import { rowCells, monoWidth } from '../lib/row';
 import { dict, type Lang } from '../i18n';
 
 interface Props {
@@ -32,6 +34,36 @@ const kindOptions = [
   ...KINDS.filter((k) => kindCounts.has(k)).map((k) => ({ value: k as string, label: t.kinds[k], count: kindCounts.get(k) ?? 0 })),
 ];
 const verifiedAt = latestVerified(models) ?? '—';
+
+// 全字段视图列宽：构建时按全部数据（含表头）算出各列最长文本，单位 ch（等宽字体）。
+// 固定列宽让各行无需互相测量，配合 content-visibility 只排版可见行；每列含右侧间距，模型列固定在左侧时只盖住自身宽度。
+const d = dict(lang);
+const cells = models.map((m) => rowCells(m, d));
+const textCol = (key: keyof (typeof cells)[number], label: string) =>
+  `calc(${Math.ceil(Math.max(monoWidth(label), ...cells.map((c) => monoWidth(c[key])))) + 1}ch + var(--sp-5))`;
+const iconCol = (key: 'input' | 'output', label: string) => {
+  const n = Math.max(...models.map((m) => m.modalities[key].length));
+  return `max(${Math.ceil(monoWidth(label))}ch, calc(${n} * 1.25rem + ${n - 1} * var(--sp-1))) + var(--sp-5)`;
+};
+const cols = [
+  'min(17rem, 42vw)',
+  `calc(${Math.ceil(Math.max(monoWidth(t.cols.vendor), ...cells.map((c) => monoWidth(c.owner) + 2.5))) + 1}ch + var(--sp-5))`,
+  textCol('kind', t.cols.kind),
+  textCol('api', t.cols.api),
+  textCol('context', t.cols.context),
+  textCol('input', t.cols.input),
+  textCol('output', t.cols.output),
+  `calc(${iconCol('input', t.cols.modIn)})`,
+  `calc(${iconCol('output', t.cols.modOut)})`,
+  textCol('reasoning', t.cols.reasoning),
+  textCol('price', t.cols.price),
+  textCol('cache', t.cols.cache),
+  textCol('features', t.cols.features),
+  textCol('status', t.cols.status),
+  textCol('release', t.cols.released),
+  textCol('cutoff', t.cols.cutoff),
+  'minmax(0, 1fr)',
+].join(' ');
 ---
 
 <BaseLayout lang={lang} page="models" title={t.title}>
@@ -65,7 +97,8 @@ const verifiedAt = latestVerified(models) ?? '—';
           </button>
         </div>
       </div>
-      <div class="models__table" data-models-table>
+      <Sprites vendors={ownerCounts.map(([o]) => o)} />
+      <div class="models__table" data-models-table style={`--cols: ${cols}`}>
       <div class="models__head mono" aria-hidden="true">
         <span class="head__main">{t.cols.model}</span><span>{t.cols.vendor}</span>
         <span class="hx">{t.cols.kind}</span><span class="hx">{t.cols.api}</span>
@@ -116,6 +149,9 @@ const verifiedAt = latestVerified(models) ?? '—';
   });
   applyView();
   input.value = state.q;
+  // 全字段视图横向滚动时标记，固定列显示右缘细线
+  const table = document.querySelector<HTMLElement>('[data-models-table]')!;
+  table.addEventListener('scroll', () => table.toggleAttribute('data-scrolled', table.scrollLeft > 0), { passive: true });
 
   function apply() {
     const terms = state.q.toLowerCase().split(/\s+/).filter(Boolean);
@@ -147,8 +183,9 @@ const verifiedAt = latestVerified(models) ?? '—';
     history.replaceState(null, '', url);
   }
 
+  // 视图过渡要给新旧画面各截一张图；全字段视图的宽表截图代价高，直接更新
   const transition = (run: () => void) => {
-    if (!document.startViewTransition) return run();
+    if (!document.startViewTransition || full) return run();
     document.documentElement.dataset.vt = 'list';
     document.startViewTransition(run).finished.finally(() => delete document.documentElement.dataset.vt);
   };
@@ -272,20 +309,15 @@ const verifiedAt = latestVerified(models) ?? '—';
   /* 展开：横向滚动，表头与首列固定 */
   .models__table { min-width: 0; max-width: 100%; }
   .models--full .models__table { overflow-x: auto; overscroll-behavior-x: contain; }
-  /* 列宽按全表最宽内容取宽，空余分给各列；固定的模型列定宽（窄屏按视口比例），给后续列留出位置。表头与各行用 subgrid 共享列线 */
-  .models--full .models__table {
-    display: grid;
-    grid-template-columns: min(20rem, 42vw) repeat(15, minmax(max-content, auto));
-    column-gap: var(--sp-5);
-  }
-  .models--full [data-vt-list] { display: contents; }
-  .models--full .models__empty { grid-column: 1 / -1; }
+  /* 表头与各行共用构建时算出的 --cols（固定列宽，末尾一列吸收剩余宽度）；列间距算进每列宽度，单元格自带右内距 */
   .models--full .models__head {
-    grid-column: 1 / -1;
-    grid-template-columns: subgrid;
+    grid-template-columns: var(--cols);
+    column-gap: 0;
+    width: max-content;
+    min-width: 100%;
     white-space: nowrap;
-    column-gap: normal;
   }
+  .models--full .models__head > span { padding-right: var(--sp-5); }
   .models--full .models__head .hx,
   .models--full .models__head .head__out,
   .models--full .models__head .head__date { display: block; }
@@ -297,8 +329,9 @@ const verifiedAt = latestVerified(models) ?? '—';
     margin-bottom: calc(-1 * var(--sp-2));
     padding-bottom: var(--sp-2);
     background: var(--bg);
-    box-shadow: var(--sp-5) 0 0 var(--bg);
   }
+  /* 横向滚动后，固定列右缘一条细线，表明下方内容被它盖住 */
+  .models--full [data-scrolled] .head__main { box-shadow: inset -1px 0 0 var(--line); }
   .models__empty {
     padding: var(--sp-5) 0;
     color: var(--ink-3);

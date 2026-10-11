@@ -1,0 +1,34 @@
+/** 站内图标路径：统一 24 网格、无填充描边；Icon 组件与图标精灵共用 */
+export type IconName = 'globe' | 'chevron-down' | 'search' | 'slash' | 'arrow-up-right' | 'arrow-left' | 'arrow-right' | 'sun' | 'moon' | 'hash' | 'copy' | 'download' | 'check' | 'close' | 'plus'
+  | 'mod-text' | 'mod-image' | 'mod-video' | 'mod-audio' | 'mod-document' | 'mod-embedding' | 'mod-score' | 'mod-3d';
+
+export const PATHS: Record<IconName, string[]> = {
+  globe: ['M12 3.5a8.5 8.5 0 1 0 0 17a8.5 8.5 0 1 0 0-17z', 'M3.5 12h17', 'M12 3.5c2.3 2.4 3.5 5.2 3.5 8.5s-1.2 6.1-3.5 8.5c-2.3-2.4-3.5-5.2-3.5-8.5s1.2-6.1 3.5-8.5z'],
+  'chevron-down': ['M6 9.5l6 6 6-6'],
+  search: ['M10.5 4a6.5 6.5 0 1 0 0 13a6.5 6.5 0 1 0 0-13z', 'M15.25 15.25 20 20'],
+  slash: ['M15.5 3.5 8.5 20.5'],
+  copy: ['M9 9h11v11H9z', 'M15 5V4H4v11h1'],
+  download: ['M12 4v11', 'M7 10l5 5 5-5', 'M5 20h14'],
+  check: ['M5 12.5l4.5 4.5L19 7.5'],
+  close: ['M6 6l12 12', 'M18 6 6 18'],
+  plus: ['M12 5v14', 'M5 12h14'],
+  'arrow-up-right': ['M7 17 17 7', 'M8.5 7H17v8.5'],
+  'arrow-left': ['M19.5 12h-15', 'M10.5 6l-6 6 6 6'],
+  'arrow-right': ['M4.5 12h15', 'M13.5 6l6 6-6 6'],
+  sun: [
+    'M12 8a4 4 0 1 0 0 8a4 4 0 1 0 0-8z',
+    'M12 2.5v2', 'M12 19.5v2', 'M2.5 12h2', 'M19.5 12h2',
+    'M5.3 5.3l1.4 1.4', 'M17.3 17.3l1.4 1.4', 'M5.3 18.7l1.4-1.4', 'M17.3 6.7l1.4-1.4',
+  ],
+  moon: ['M19.5 14.6A7.75 7.75 0 0 1 9.4 4.5a7.75 7.75 0 1 0 10.1 10.1z'],
+  hash: ['M4.5 9h15', 'M4.5 15h15', 'M10 4l-2 16', 'M16 4l-2 16'],
+  // 输入输出模态
+  'mod-text': ['M5 5h14', 'M12 5v14', 'M9 19h6'],
+  'mod-image': ['M4 4h16v16H4z', 'M4 16l5-5 4 4 2-2 5 5', 'M15 8h1v1h-1z'],
+  'mod-video': ['M3 6.5h12v11H3z', 'M15 10.5l6-3.5v10l-6-3.5'],
+  'mod-audio': ['M4 9.5h3.5L12 5v14l-4.5-4.5H4z', 'M15.5 9a4 4 0 0 1 0 6', 'M18 6.5a7.5 7.5 0 0 1 0 11'],
+  'mod-document': ['M6 3.5h8l4 4v13H6z', 'M14 3.5v4h4', 'M9 12h6', 'M9 15.5h6'],
+  'mod-embedding': ['M5 5h2v2H5z', 'M11 5h2v2h-2z', 'M17 5h2v2h-2z', 'M5 11h2v2H5z', 'M11 11h2v2h-2z', 'M17 11h2v2h-2z', 'M5 17h2v2H5z', 'M11 17h2v2h-2z', 'M17 17h2v2h-2z'],
+  'mod-score': ['M4 20h16', 'M6 20v-5', 'M12 20V9', 'M18 20V4'],
+  'mod-3d': ['M12 3.5l7.5 4.25v8.5L12 20.5l-7.5-4.25v-8.5z', 'M4.5 7.75 12 12l7.5-4.25', 'M12 12v8.5'],
+};
