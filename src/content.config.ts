@@ -5,6 +5,7 @@
 import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
+import { LOCALES } from './i18n';
 
 const date = z.string().regex(/^\d{4}-\d{2}-\d{2}$/);
 const apiType = z.enum([
@@ -60,6 +61,8 @@ const models = defineCollection({
         .strict(),
       // 维护字段（不发布）
       aliases: z.array(z.string()).default([]),
+      // 介绍类文本的译文，键为界面语言代码；只翻译 info.description 官方原文，不增删信息。缺省时页面显示原文
+      translations: z.partialRecord(z.enum(LOCALES.map((l) => l.code)), z.object({ description: z.string().min(1) }).strict()).optional(),
       sources: z
         .array(z.object({ title: z.string(), url: z.url().startsWith('https://'), retrieved_at: date }).strict())
         .min(1),

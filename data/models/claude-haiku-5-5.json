@@ -59,6 +59,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "适用于分类、信息抽取、路由等高并发、低延迟任务。"
+    }
+  },
   "sources": [
     {
       "title": "Claude Haiku 5.5 | Claude Platform Docs",

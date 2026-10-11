@@ -12,7 +12,7 @@ import Modalities from '../components/Modalities.astro';
 import CompareButton from '../components/CompareButton.astro';
 import Stats from '../components/Stats.astro';
 import { correctionUrl } from '../lib/nav';
-import { formatPrice, formatTokens, ownerName, toPublic, type Model } from '../lib/models';
+import { formatPrice, formatTokens, localDescription, ownerName, toPublic, type Model } from '../lib/models';
 import { dict, localePath, type Lang } from '../i18n';
 
 interface Props {
@@ -90,11 +90,11 @@ const json = JSON.stringify(toPublic(m), null, 2);
 const verified = tm.verified(m.info.verified_at ?? '—');
 ---
 
-<BaseLayout lang={lang} page="model" title={m.name} description={m.info.description ?? undefined}>
+<BaseLayout lang={lang} page="model" title={m.name} description={localDescription(m, lang) ?? undefined}>
   <TopNav lang={lang} page="model" />
   <main id="main" class="page detail">
     <a class="detail__back" href={localePath(lang, '/models/')}><Icon name="arrow-left" size={12} />{t.back}</a>
-    <PageHeader title={m.name} intro={m.info.description ?? undefined}>
+    <PageHeader title={m.name} intro={localDescription(m, lang) ?? undefined}>
       <span class="detail__meta mono">
         <span class="detail__vendor"><VendorLogo id={m.owned_by} size={14} />{ownerName(m.owned_by)}</span>
         <span>{m.id}</span>{m.info.release_date && <span>{m.info.release_date}</span>}

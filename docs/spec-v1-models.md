@@ -118,11 +118,12 @@ info         ⑥ 源信息
 模型厂商登记在 `data/vendors/<id>.json`：`{ "id", "name", "url", "icon"? }`（`icon` 为 `@lobehub/icons-static-svg` 图标名，可选），`id` 即模型的 `owned_by`，`name` 为界面显示名。新模型厂商的模型需要先登记模型厂商。
 
 
-`data/models/<id>.json` = 第 3 节的标准字段 + 三个维护字段（不发布）：
+`data/models/<id>.json` = 第 3 节的标准字段 + 维护字段（不发布）：
 
 | 字段 | 说明 |
 |---|---|
 | `aliases` | 官方别名或快照 ID，用于搜索 |
+| `translations` | 可选。介绍类文本的译文：`{ "<语言代码>": { "description": "…" } }`，语言代码取 `src/i18n` 的 `LOCALES`。只翻译 `info.description` 官方原文，页面按界面语言显示，缺省显示原文；`/v1/models` 始终返回原文 |
 | `sources` | 官方来源 `{ title, url, retrieved_at }`，至少一条 HTTPS |
 | `providers` | 调用方式：`id`、`model`、`base_url`、`endpoints`、`reasoning_param`，以及与标准字段不同时的覆盖值（`limits`、`modalities`、`features`、`pricing`、`reasoning_efforts`） |
 

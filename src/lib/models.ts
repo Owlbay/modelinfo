@@ -87,6 +87,11 @@ export function modelKind(m: Model): Kind {
   return 'chat';
 }
 
+/** 当前语言下的模型简介：有该语言译文用译文，否则用官方原文（info.description） */
+export function localDescription(m: Model, lang: string): string | null {
+  return (m.translations as Partial<Record<string, { description: string }>> | undefined)?.[lang]?.description ?? m.info.description;
+}
+
 /** 某模型厂商最新的 n 个可用对话模型（只输出文本、非弃用或下线、按百万 Token 计价），供比较页推荐组合；models 需已按发布顺序排序 */
 export function latestChat(models: Model[], owner: string, n = 1): Model[] {
   return models

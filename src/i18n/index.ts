@@ -1,6 +1,7 @@
 /**
  * 多语言：构建时为每种语言生成一套静态页。默认语言在 /，其他语言在 /<code>/。运行时不加载文案。
- * 新增语言：1) 复制 en.ts 翻译为 <code>.ts（Dict 类型强制与 zh.ts 同构）；2) 在 LOCALES 与 DICTS 各登记一行。
+ * 新增语言：1) 复制 en.ts 翻译为 <code>.ts（Dict 类型强制与 zh.ts 同构）；2) 在 LOCALES 与 DICTS 各登记一行；
+ * 3) 模型简介译文（data/models 的 translations）的语言代码随 LOCALES 生效，同时更新 scripts/validate-data.mjs 的 LANGS。
  */
 import { zh, type Dict } from './zh';
 import { en } from './en';

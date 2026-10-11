@@ -10,7 +10,10 @@ import path from 'node:path';
 const DIR = path.join(path.dirname(new URL(import.meta.url).pathname), '..', 'data', 'models');
 const VENDOR_DIR = path.join(DIR, '..', 'vendors');
 const VENDORS = new Set(fs.readdirSync(VENDOR_DIR).filter((f) => f.endsWith('.json')).map((f) => f.slice(0, -5)));
-const KEYS = ['id', 'object', 'created', 'owned_by', 'name', 'api', 'limits', 'modalities', 'reasoning', 'pricing', 'features', 'info', 'aliases', 'sources', 'providers'];
+const KEYS = ['id', 'object', 'created', 'owned_by', 'name', 'api', 'limits', 'modalities', 'reasoning', 'pricing', 'features', 'info', 'aliases', 'translations', 'sources', 'providers'];
+// translations 可省略；语言代码与 src/i18n/index.ts 的 LOCALES 一致
+const OPTIONAL = new Set(['translations']);
+const LANGS = ['zh', 'en'];
 const API = ['chat', 'messages', 'responses', 'completions', 'generate', 'batch', 'realtime', 'embeddings', 'images', 'video', 'audio', '3d', 'rerank', 'ocr', 'moderation'];
 const MOD = ['text', 'image', 'audio', 'video', 'document', 'embedding', 'score', '3d'];
 const FEAT = ['tools', 'structured_output', 'streaming', 'caching', 'batch'];
@@ -35,7 +38,8 @@ for (const file of files) {
     continue;
   }
   const keys = Object.keys(m);
-  if (keys.join() !== KEYS.join()) e(`顶层字段与顺序必须为 ${KEYS.join(', ')}；实际 ${keys.join(', ')}`);
+  const expect = KEYS.filter((k) => !OPTIONAL.has(k) || k in m);
+  if (keys.join() !== expect.join()) e(`顶层字段与顺序必须为 ${KEYS.join(', ')}（translations 可省略）；实际 ${keys.join(', ')}`);
   if (!/^[a-z0-9][a-z0-9._-]*$/.test(m.id ?? '')) e('id 只能是小写字母数字 . _ -');
   if (path.basename(file) !== `${m.id}.json`) e('文件名必须为 <id>.json');
   if (ids.has(m.id)) e(`id 与 ${ids.get(m.id)} 重复`);
@@ -66,6 +70,16 @@ for (const file of files) {
   if (m.created !== null && i.release_date !== new Date(m.created * 1000).toISOString().slice(0, 10)) e('release_date 必须等于 created 的 UTC 日期');
   if (m.created === null && i.release_date !== null) e('有 release_date 时 created 不能为空');
   if (!Array.isArray(m.aliases)) e('aliases 为数组');
+  if ('translations' in m) {
+    const t = m.translations;
+    if (!t || typeof t !== 'object' || Array.isArray(t)) e('translations 为 {语言代码: {description}}');
+    else
+      for (const [lang, v] of Object.entries(t)) {
+        if (!LANGS.includes(lang)) e(`translations 的语言代码取值 ${LANGS.join('|')}`);
+        if (!v || Object.keys(v).join() !== 'description' || typeof v.description !== 'string' || !v.description) e(`translations.${lang} 只含非空 description`);
+      }
+    if (!i.description && t && Object.keys(t).length) e('info.description 为 null 时不能有译文');
+  }
   if (!Array.isArray(m.sources) || !m.sources.length || m.sources.some((s) => Object.keys(s).join() !== 'title,url,retrieved_at' || !s.url.startsWith('https://') || !DATE.test(s.retrieved_at))) e('sources 至少一条 {title,url(https),retrieved_at}');
   if (!Array.isArray(m.providers)) e('providers 为数组');
   for (const [n, p] of (m.providers ?? []).entries()) {
