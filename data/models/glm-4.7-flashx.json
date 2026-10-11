@@ -1,7 +1,7 @@
 {
   "id": "glm-4.7-flashx",
   "object": "model",
-  "created": 1766361600,
+  "created": null,
   "owned_by": "zhipu",
   "name": "GLM-4.7-FlashX",
   "api": {
@@ -42,7 +42,7 @@
   ],
   "info": {
     "status": "active",
-    "release_date": "2025-12-22",
+    "release_date": null,
     "knowledge_cutoff": null,
     "description": "Lightweight, high-speed and affordable GLM-4.7 series model.",
     "docs": "https://docs.z.ai/guides/llm/glm-4.7",

@@ -1,7 +1,7 @@
 {
   "id": "minimax-m2.1",
   "object": "model",
-  "created": 1766361600,
+  "created": null,
   "owned_by": "minimax",
   "name": "MiniMax-M2.1",
   "api": {
@@ -42,7 +42,7 @@
   ],
   "info": {
     "status": "active",
-    "release_date": "2025-12-22",
+    "release_date": null,
     "knowledge_cutoff": null,
     "description": "Legacy 230B-parameter model (10B active) for code generation and enhanced reasoning.",
     "docs": "https://platform.minimax.io/docs/guides/models-intro",
