@@ -1,0 +1,65 @@
+{
+  "id": "jamba-mini-1.7",
+  "object": "model",
+  "created": 1751500800,
+  "owned_by": "ai21",
+  "name": "Jamba Mini 1.7",
+  "api": {
+    "types": [
+      "chat"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "retired",
+    "release_date": "2025-07-03",
+    "knowledge_cutoff": null,
+    "description": null,
+    "docs": "https://docs.ai21.com/docs/jamba-foundation-models",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "jamba-mini-1.7-2025-08"
+  ],
+  "sources": [
+    {
+      "title": "Jamba | AI21 Docs（Model Deprecation 表）",
+      "url": "https://docs.ai21.com/docs/jamba-foundation-models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "存档：Changelog | AI21 Docs（原网址 https://docs.ai21.com/changelog）",
+      "url": "https://web.archive.org/web/20250911211703/https://docs.ai21.com/changelog",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "ai21",
+      "model": "jamba-mini-1.7-2025-08",
+      "base_url": "https://api.ai21.com/studio/v1",
+      "endpoints": {
+        "chat": "POST /chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

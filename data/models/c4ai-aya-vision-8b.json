@@ -1,0 +1,62 @@
+{
+  "id": "c4ai-aya-vision-8b",
+  "object": "model",
+  "created": null,
+  "owned_by": "cohere",
+  "name": "Aya Vision 8B",
+  "api": {
+    "types": [
+      "chat"
+    ]
+  },
+  "limits": {
+    "context": 16000,
+    "input": null,
+    "output": 4000
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "retired",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": null,
+    "docs": "https://docs.cohere.com/docs/deprecations",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Deprecations | Cohere Docs",
+      "url": "https://docs.cohere.com/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "存档：Aya Vision | Cohere Docs（原网址 https://docs.cohere.com/docs/aya-vision）",
+      "url": "https://web.archive.org/web/20250409184044/https://docs.cohere.com/docs/aya-vision",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "cohere",
+      "model": "c4ai-aya-vision-8b",
+      "base_url": "https://api.cohere.com",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

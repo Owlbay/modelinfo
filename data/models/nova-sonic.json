@@ -1,0 +1,63 @@
+{
+  "id": "nova-sonic",
+  "object": "model",
+  "created": null,
+  "owned_by": "amazon",
+  "name": "Amazon Nova Sonic",
+  "api": {
+    "types": [
+      "realtime"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "audio"
+    ],
+    "output": [
+      "audio"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "retired",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": null,
+    "docs": "https://docs.aws.amazon.com/nova/latest/userguide/speech.html",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "amazon.nova-sonic-v1:0"
+  ],
+  "sources": [
+    {
+      "title": "Model lifecycle (Legacy) - Amazon Bedrock",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-lifecycle-legacy.html",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Using the Amazon Nova Sonic Speech-to-Speech model - Amazon Nova User Guide (Version 1)",
+      "url": "https://docs.aws.amazon.com/nova/latest/userguide/speech.html",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "amazon-bedrock",
+      "model": "amazon.nova-sonic-v1:0",
+      "base_url": "https://bedrock-runtime.us-east-1.amazonaws.com",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

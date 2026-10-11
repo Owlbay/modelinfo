@@ -1,0 +1,70 @@
+{
+  "id": "command-r-03-2024",
+  "object": "model",
+  "created": 1710115200,
+  "owned_by": "cohere",
+  "name": "Command R (03-2024)",
+  "api": {
+    "types": [
+      "chat"
+    ]
+  },
+  "limits": {
+    "context": 128000,
+    "input": null,
+    "output": 4000
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "tools"
+  ],
+  "info": {
+    "status": "retired",
+    "release_date": "2024-03-11",
+    "knowledge_cutoff": null,
+    "description": null,
+    "docs": "https://docs.cohere.com/docs/deprecations",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "command-r"
+  ],
+  "sources": [
+    {
+      "title": "Deprecations | Cohere Docs",
+      "url": "https://docs.cohere.com/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "存档：Command R | Cohere Docs（原网址 https://docs.cohere.com/docs/command-r）",
+      "url": "https://web.archive.org/web/20250801231213/https://docs.cohere.com/docs/command-r",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Command R: Retrieval-Augmented Generation at Production Scale | Cohere Blog",
+      "url": "https://cohere.com/blog/command-r",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "cohere",
+      "model": "command-r-03-2024",
+      "base_url": "https://api.cohere.com",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

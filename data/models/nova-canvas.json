@@ -1,0 +1,66 @@
+{
+  "id": "nova-canvas",
+  "object": "model",
+  "created": 1733184000,
+  "owned_by": "amazon",
+  "name": "Amazon Nova Canvas",
+  "api": {
+    "types": [
+      "images"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "image"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "retired",
+    "release_date": "2024-12-03",
+    "knowledge_cutoff": null,
+    "description": null,
+    "docs": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-canvas.html",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "amazon.nova-canvas-v1:0"
+  ],
+  "sources": [
+    {
+      "title": "Model lifecycle (Legacy) - Amazon Bedrock",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-lifecycle-legacy.html",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Amazon Bedrock model card: Nova Canvas",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-canvas.html",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "amazon-bedrock",
+      "model": "amazon.nova-canvas-v1:0",
+      "base_url": "https://bedrock-runtime.us-east-1.amazonaws.com",
+      "endpoints": {
+        "images": "POST /model/{modelId}/invoke"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
