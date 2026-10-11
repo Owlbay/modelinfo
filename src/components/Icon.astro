@@ -3,7 +3,7 @@
  * 站内图标：统一 24 网格、1.5 描边、无填充。
  * 均为本项目自绘几何形。
  */
-type Name = 'globe' | 'chevron-down' | 'search' | 'slash' | 'arrow-up-right' | 'arrow-left' | 'arrow-right' | 'sun' | 'moon' | 'hash' | 'copy' | 'download' | 'check'
+type Name = 'globe' | 'chevron-down' | 'search' | 'slash' | 'arrow-up-right' | 'arrow-left' | 'arrow-right' | 'sun' | 'moon' | 'hash' | 'copy' | 'download' | 'check' | 'close' | 'plus'
   | 'mod-text' | 'mod-image' | 'mod-video' | 'mod-audio' | 'mod-document' | 'mod-embedding' | 'mod-score' | 'mod-3d';
 
 interface Props {
@@ -23,6 +23,8 @@ const PATHS: Record<Name, string[]> = {
   copy: ['M9 9h11v11H9z', 'M15 5V4H4v11h1'],
   download: ['M12 4v11', 'M7 10l5 5 5-5', 'M5 20h14'],
   check: ['M5 12.5l4.5 4.5L19 7.5'],
+  close: ['M6 6l12 12', 'M18 6 6 18'],
+  plus: ['M12 5v14', 'M5 12h14'],
   'arrow-up-right': ['M7 17 17 7', 'M8.5 7H17v8.5'],
   'arrow-left': ['M19.5 12h-15', 'M10.5 6l-6 6 6 6'],
   'arrow-right': ['M4.5 12h15', 'M13.5 6l6 6-6 6'],

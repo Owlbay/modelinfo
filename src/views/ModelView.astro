@@ -9,6 +9,7 @@ import Endpoint from '../components/Endpoint.astro';
 import Icon from '../components/Icon.astro';
 import VendorLogo from '../components/VendorLogo.astro';
 import Modalities from '../components/Modalities.astro';
+import CompareButton from '../components/CompareButton.astro';
 import Stats from '../components/Stats.astro';
 import { correctionUrl } from '../lib/nav';
 import { formatPrice, formatTokens, ownerName, toPublic, type Model } from '../lib/models';
@@ -98,6 +99,7 @@ const verified = tm.verified(m.info.verified_at ?? '—');
         <span class="detail__vendor"><VendorLogo id={m.owned_by} size={14} />{ownerName(m.owned_by)}</span>
         <span>{m.id}</span>{m.info.release_date && <span>{m.info.release_date}</span>}
         <a class="detail__report" href={correctionUrl(m.id)} target="_blank" rel="noopener">{t.report}<Icon name="arrow-up-right" size={12} /></a>
+        <CompareButton lang={lang} id={m.id} />
       </span>
     </PageHeader>
 

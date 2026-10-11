@@ -1,0 +1,31 @@
+---
+/** 模型列表「选择比较」开关：放在分区操作区，行为由 CompareTray 的脚本处理。 */
+import { dict, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+const t = dict(Astro.props.lang).pick;
+---
+
+<button type="button" class="ctoggle" data-compare-mode aria-pressed="false">
+  <span data-compare-mode-off>{t.select}</span><span data-compare-mode-on hidden>{t.done}</span>
+</button>
+
+<style>
+  /* 与「显示全部信息」开关同一形态 */
+  .ctoggle {
+    display: inline-flex;
+    align-items: center;
+    min-height: 32px;
+    padding: 0 var(--sp-3);
+    border: 1px solid var(--line);
+    font: 400 var(--fs-body-sm) / var(--lh-body-sm) var(--font-sans);
+    color: var(--ink-2);
+    white-space: nowrap;
+    align-self: center;
+    transition: color var(--dur-1) var(--ease-out), background-color var(--dur-1) var(--ease-out), border-color var(--dur-1) var(--ease-out);
+  }
+  .ctoggle:hover { color: var(--ink); border-color: var(--line-strong); background: var(--hover-row); }
+  .ctoggle[aria-pressed='true'] { background: var(--selected-bg); border-color: var(--selected-bg); color: var(--selected-ink); }
+</style>

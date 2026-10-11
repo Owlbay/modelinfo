@@ -1,0 +1,71 @@
+---
+/**
+ * 详情页「加入比较」：切换该模型是否在比较选择中（localStorage，见 scripts/compare-store.ts）；
+ * 已加入时旁边出现「去比较」链接。
+ */
+import Icon from './Icon.astro';
+import { dict, localePath, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+  id: string;
+}
+const { lang, id } = Astro.props;
+const t = dict(lang).pick;
+---
+
+<span class="cbtn" data-compare-btn={id}>
+  <button type="button" class="cbtn__toggle" aria-pressed="false">
+    <Icon name="plus" size={12} class="cbtn__plus" /><Icon name="check" size={12} class="cbtn__check" />
+    <span data-cbtn-add>{t.add}</span><span data-cbtn-added hidden>{t.added}</span>
+  </button>
+  <a class="cbtn__go" href={localePath(lang, '/compare/')} data-cbtn-go hidden>{t.go}<Icon name="arrow-right" size={12} /></a>
+  <span class="sr-only" role="status" data-cbtn-status></span>
+  <span hidden data-cbtn-full>{t.full}</span>
+</span>
+
+<script>
+  import { compareHref, onPickedChange, readPicked, togglePicked } from '../scripts/compare-store';
+
+  const prefix = document.documentElement.dataset.prefix ?? '';
+  for (const root of document.querySelectorAll<HTMLElement>('[data-compare-btn]')) {
+    const id = root.dataset.compareBtn!;
+    const btn = root.querySelector<HTMLButtonElement>('.cbtn__toggle')!;
+    const go = root.querySelector<HTMLAnchorElement>('[data-cbtn-go]')!;
+    const status = root.querySelector<HTMLElement>('[data-cbtn-status]')!;
+    const sync = (ids: string[]) => {
+      const on = ids.includes(id);
+      btn.setAttribute('aria-pressed', String(on));
+      root.querySelector<HTMLElement>('[data-cbtn-add]')!.hidden = on;
+      root.querySelector<HTMLElement>('[data-cbtn-added]')!.hidden = !on;
+      go.hidden = !on;
+      go.href = compareHref(prefix, ids);
+    };
+    btn.addEventListener('click', () => {
+      if (!togglePicked(id)) status.textContent = root.querySelector('[data-cbtn-full]')!.textContent;
+    });
+    onPickedChange(sync);
+    sync(readPicked());
+  }
+</script>
+
+<style>
+  .cbtn { display: inline-flex; align-items: center; gap: var(--sp-3); }
+  .cbtn__toggle,
+  .cbtn__go {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-1);
+    font: 400 var(--fs-mono) / var(--lh-mono) var(--font-sans);
+    color: var(--ink-2);
+    text-decoration: none;
+    transition: color var(--dur-1) var(--ease-out);
+  }
+  .cbtn__toggle:hover,
+  .cbtn__go:hover { color: var(--ink); }
+  .cbtn__toggle[aria-pressed='true'] { color: var(--ink); }
+  .cbtn__toggle :global(.cbtn__check),
+  .cbtn__toggle[aria-pressed='true'] :global(.cbtn__plus) { display: none; }
+  .cbtn__toggle[aria-pressed='true'] :global(.cbtn__check) { display: block; }
+  .cbtn__go[hidden] { display: none; }
+</style>

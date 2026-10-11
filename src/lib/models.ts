@@ -22,17 +22,31 @@ export function toPublic(m: Model) {
   return { id, object, created, owned_by, name, api, limits, modalities, reasoning, pricing, features, info };
 }
 
-export function formatTokens(v: number | null): string {
-  if (v === null) return '—';
-  if (v >= 1_000_000) return `${+(v / 1_000_000).toFixed(2)}M`;
-  if (v >= 1_000) return `${+(v / 1_000).toFixed(1)}K`;
-  return String(v);
-}
+/** 格式化函数定义在 format.ts（不依赖构建期数据，客户端脚本也能引用），服务端从这里取用 */
+export { formatTokens, formatPrice, formatCost } from './format';
 
-const SYMBOL: Record<string, string> = { USD: '$', CNY: '¥', EUR: '€' };
-export function formatPrice(v: number | null, currency: string): string {
-  if (v === null) return '—';
-  return `${SYMBOL[currency] ?? `${currency} `}${+v.toFixed(4)}`;
+/**
+ * 比较页嵌入的紧凑记录：只含比较所需字段，按位置编码以减小页面体积。
+ * 顺序：id, name, owned_by, kind, api.types, context, input, output, 输入模态, 输出模态,
+ * reasoning.supported, reasoning.efforts, pricing, features, status, release_date, knowledge_cutoff, docs。
+ * pricing 为 [currency, unit, input, output, cache_read, cache_write] 或 null。
+ */
+export type ComparePricing = [string, string, number | null, number | null, number | null, number | null];
+export type CompareRecord = [
+  string, string, string, Kind, string[],
+  number | null, number | null, number | null, string[], string[],
+  boolean | null, string[], ComparePricing | null, string[],
+  Model['info']['status'], string | null, string | null, string | null,
+];
+export function toCompare(m: Model): CompareRecord {
+  const p = m.pricing;
+  return [
+    m.id, m.name, m.owned_by, modelKind(m), m.api.types,
+    m.limits.context, m.limits.input, m.limits.output, m.modalities.input, m.modalities.output,
+    m.reasoning.supported, m.reasoning.efforts,
+    p ? [p.currency, p.unit, p.input, p.output, p.cache_read, p.cache_write] : null,
+    m.features, m.info.status, m.info.release_date, m.info.knowledge_cutoff, m.info.docs,
+  ];
 }
 
 /** 最近一次人工核验日期 */
@@ -60,4 +74,17 @@ export function modelKind(m: Model): Kind {
   if (out.includes('image')) return 'image';
   if (out.includes('audio')) return 'audio';
   return 'chat';
+}
+
+/** 某模型厂商最新的 n 个可用对话模型（只输出文本、非弃用、按百万 Token 计价），供比较页推荐组合；models 需已按发布顺序排序 */
+export function latestChat(models: Model[], owner: string, n = 1): Model[] {
+  return models
+    .filter(
+      (m) =>
+        m.owned_by === owner &&
+        m.info.status !== 'deprecated' &&
+        m.modalities.output.every((o) => o === 'text') &&
+        m.pricing?.unit === '1M_tokens',
+    )
+    .slice(0, n);
 }

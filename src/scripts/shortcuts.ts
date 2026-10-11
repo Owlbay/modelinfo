@@ -1,6 +1,6 @@
 import { NAV } from '../lib/nav';
 
-/** 单键导航（H / M / D）与 / 聚焦搜索；输入框内、带修饰键时不触发 */
+/** 单键导航（H / M / C / D）与 / 聚焦搜索；输入框内、带修饰键时不触发 */
 export function installShortcuts() {
   const prefix = document.documentElement.dataset.prefix ?? '';
   document.addEventListener('keydown', (e) => {

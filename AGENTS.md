@@ -21,7 +21,7 @@
 
 ## 代码边界
 
-- 取数与格式化只在 `src/lib/models.ts`；页面通过 `getModels()` 取数，不直接读 JSON。
+- 取数只在 `src/lib/models.ts`，格式化只在 `src/lib/format.ts`（由 models.ts 重新导出，客户端脚本可直接引用）；页面通过 `getModels()` 取数，不直接读 JSON。
 - 发布字段的裁剪只在 `toPublic()`；新增标准字段时同时改 schema、`toPublic()`、`scripts/validate-data.mjs` 与规范文档。
 - 界面文案只在 `src/i18n/`；`zh.ts` 是结构基准，其他语言由 `Dict` 类型约束。
 - 导航与快捷键只在 `src/lib/nav.ts` 定义。

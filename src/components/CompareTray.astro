@@ -1,0 +1,161 @@
+---
+/**
+ * 模型列表的比较选择：「选择比较」开关（CompareToggle）打开后，点击模型行加入或移出比较，
+ * 不再跳转；关闭后恢复原行为。底部吸附条显示已选数量、清空与「去比较」。
+ * 选择存 localStorage（scripts/compare-store.ts），与详情页、比较页共用。放在 <main> 末尾。
+ */
+import Icon from './Icon.astro';
+import { dict, localePath, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+const t = dict(Astro.props.lang).pick;
+---
+
+<div class="tray" data-compare-tray hidden>
+  <div class="tray__inner">
+    <span class="tray__count mono" data-tray-count></span>
+    <span class="tray__names" data-tray-names></span>
+    <span class="tray__hint" data-tray-hint>{t.hint}</span>
+    <button type="button" class="tray__btn" data-tray-clear>{t.clear}</button>
+    <a class="tray__go" href={localePath(Astro.props.lang, '/compare/')} data-tray-go>{t.go}<Icon name="arrow-right" size={12} /></a>
+  </div>
+  <span class="sr-only" role="status" data-tray-status></span>
+  <template data-tray-labels data-count={t.count(0).replace('0', '{n}')} data-full={t.full}></template>
+</div>
+
+<script>
+  import { compareHref, onPickedChange, readPicked, togglePicked, writePicked } from '../scripts/compare-store';
+
+  const tray = document.querySelector<HTMLElement>('[data-compare-tray]');
+  const toggle = document.querySelector<HTMLButtonElement>('button[data-compare-mode]');
+  if (tray && toggle) {
+    const prefix = document.documentElement.dataset.prefix ?? '';
+    const labels = tray.querySelector<HTMLElement>('[data-tray-labels]')!.dataset;
+    const rows = [...document.querySelectorAll<HTMLAnchorElement>('[data-model]')];
+    const names = new Map(rows.map((r) => [r.getAttribute('href')!.split('/').filter(Boolean).at(-1)!, r.querySelector('.mrow__name')?.textContent ?? '']));
+    const idOf = (r: HTMLElement) => r.getAttribute('href')!.split('/').filter(Boolean).at(-1)!;
+    const status = tray.querySelector<HTMLElement>('[data-tray-status]')!;
+    let on = false;
+
+    const sync = (ids: string[]) => {
+      tray.hidden = !on && ids.length === 0;
+      tray.querySelector('[data-tray-count]')!.textContent = labels.count!.replace('{n}', String(ids.length));
+      tray.querySelector('[data-tray-names]')!.textContent = ids.map((id) => names.get(id) ?? id).join(' · ');
+      tray.querySelector<HTMLElement>('[data-tray-hint]')!.hidden = ids.length > 0;
+      tray.querySelector<HTMLButtonElement>('[data-tray-clear]')!.hidden = ids.length === 0;
+      const go = tray.querySelector<HTMLAnchorElement>('[data-tray-go]')!;
+      go.href = compareHref(prefix, ids);
+      for (const r of rows) {
+        if (on) r.setAttribute('aria-pressed', String(ids.includes(idOf(r))));
+        else r.removeAttribute('aria-pressed');
+      }
+    };
+    const setMode = (v: boolean) => {
+      on = v;
+      document.documentElement.toggleAttribute('data-comparing', on);
+      toggle.setAttribute('aria-pressed', String(on));
+      toggle.querySelector<HTMLElement>('[data-compare-mode-off]')!.hidden = on;
+      toggle.querySelector<HTMLElement>('[data-compare-mode-on]')!.hidden = !on;
+      // 选择模式下行作为切换按钮，退出后恢复为链接
+      for (const r of rows) on ? r.setAttribute('role', 'button') : r.removeAttribute('role');
+      sync(readPicked());
+    };
+    const pick = (r: HTMLElement) => {
+      if (!togglePicked(idOf(r))) status.textContent = labels.full ?? '';
+    };
+
+    toggle.addEventListener('click', () => setMode(!on));
+    // 捕获阶段拦截：选择模式下点击行只切换选择，不跳转
+    document.addEventListener(
+      'click',
+      (e) => {
+        if (!on) return;
+        const r = (e.target as Element).closest<HTMLAnchorElement>('[data-model]');
+        if (!r) return;
+        e.preventDefault();
+        pick(r);
+      },
+      true,
+    );
+    document.addEventListener('keydown', (e) => {
+      if (!on || e.key !== ' ') return;
+      const r = (e.target as Element).closest<HTMLAnchorElement>('[data-model]');
+      if (!r) return;
+      e.preventDefault();
+      pick(r);
+    });
+    tray.querySelector('[data-tray-clear]')!.addEventListener('click', () => writePicked([]));
+    onPickedChange(sync);
+    sync(readPicked());
+  }
+</script>
+
+<style>
+  /* 吸附在视口底部，宽度与内容区一致 */
+  .tray {
+    position: sticky;
+    bottom: 0;
+    z-index: 5;
+    margin-top: auto;
+    margin-inline: calc(-1 * var(--page-pad, 0px));
+    padding: 0 var(--page-pad, 0px);
+    background: var(--bg-panel);
+    border-top: 1px solid var(--line);
+  }
+  .tray__inner {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-4);
+    min-height: var(--row-h);
+  }
+  .tray__count { flex: none; font-size: var(--fs-mono); line-height: var(--lh-mono); color: var(--ink); }
+  .tray__names,
+  .tray__hint {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: var(--fs-body-sm);
+    line-height: var(--lh-body-sm);
+    color: var(--ink-2);
+  }
+  .tray__names:empty { display: none; }
+  .tray__btn,
+  .tray__go {
+    display: inline-flex;
+    flex: none;
+    align-items: center;
+    gap: var(--sp-1);
+    min-height: 36px;
+    padding: 0 var(--sp-3);
+    font: 400 var(--fs-body-sm) / var(--lh-body-sm) var(--font-sans);
+    color: var(--ink-2);
+    text-decoration: none;
+    transition: color var(--dur-1) var(--ease-out), background-color var(--dur-1) var(--ease-out);
+  }
+  .tray__btn:hover { color: var(--ink); background: var(--hover-row); }
+  .tray__go { background: var(--selected-bg); color: var(--selected-ink); }
+  .tray__go:hover { background: var(--ink-2); }
+  .tray__go[hidden],
+  .tray__btn[hidden] { display: none; }
+
+  /* 选择模式：已选行左侧 2px 竖线 + 实底 */
+  :global([data-comparing] [data-model][aria-pressed='true']) {
+    background: var(--hover-row-solid);
+    box-shadow: inset 2px 0 0 var(--ink);
+  }
+  :global([data-comparing] [data-model][aria-pressed='true'] .mrow__name) { font-weight: 500; }
+  /* 全字段视图的固定列盖在行背景之上，竖线与实底画在固定列上 */
+  :global([data-comparing] .models--full [data-model][aria-pressed='true'] .mrow__main) {
+    background: var(--hover-row-solid);
+    box-shadow: inset 2px 0 0 var(--ink), var(--sp-5) 0 0 var(--hover-row-solid);
+  }
+
+  @media (max-width: 640px) {
+    .tray__inner { gap: var(--sp-2); }
+    .tray__names { display: none; }
+  }
+</style>

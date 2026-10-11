@@ -7,6 +7,8 @@ import SectionFrame from '../components/SectionFrame.astro';
 import FilterMenu from '../components/FilterMenu.astro';
 import ModelRow from '../components/ModelRow.astro';
 import Icon from '../components/Icon.astro';
+import CompareToggle from '../components/CompareToggle.astro';
+import CompareTray from '../components/CompareTray.astro';
 import Stats from '../components/Stats.astro';
 import { getModels, KINDS, latestVerified, modelKind, ownerName } from '../lib/models';
 import { dict, type Lang } from '../i18n';
@@ -57,6 +59,7 @@ const verifiedAt = latestVerified(models) ?? '—';
         <FilterMenu name="owner" label={t.cols.vendor} options={ownerOptions} searchPlaceholder={t.vendorSearch} />
         <div class="tbar__end">
           <span class="tbar__count mono" aria-live="polite"><span data-shown>{models.length}</span> {t.total(models.length)}</span>
+          <CompareToggle lang={lang} />
           <button type="button" class="models__toggle" data-view-toggle aria-pressed="false">
             <span data-view-label-off>{t.showAll}</span><span data-view-label-on hidden>{t.showLess}</span>
           </button>
@@ -78,6 +81,7 @@ const verifiedAt = latestVerified(models) ?? '—';
       </div>
       </div>
     </SectionFrame>
+    <CompareTray lang={lang} />
 
   </main>
 </BaseLayout>
@@ -309,6 +313,7 @@ const verifiedAt = latestVerified(models) ?? '—';
     /* 手机：工具栏占三行，不吸顶，把屏幕留给列表 */
     .tbar { position: static; padding-top: 0; margin-top: 0; }
     .tbar__search { flex-basis: 100%; }
-    .tbar__end { width: 100%; justify-content: space-between; padding-left: 0; }
+    .tbar__end { flex-wrap: wrap; gap: var(--sp-2) var(--sp-3); width: 100%; padding-left: 0; }
+    .tbar__count { margin-right: auto; }
   }
 </style>

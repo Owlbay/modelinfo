@@ -131,7 +131,9 @@ const current = navCurrent(page);
     .topnav__brand { font-size: var(--fs-body); line-height: var(--lh-body); }
     .topnav__nav { justify-content: flex-start; gap: var(--sp-3); }
     .topnav__link { font-size: var(--fs-body-sm); line-height: var(--lh-body-sm); }
-    .topnav__link--home { display: none; }
+    /* 手机：主页与比较不进顶栏（比较可从模型列表与详情页进入），避免英文等较长文案撑出顶栏 */
+    .topnav__link--home,
+    .topnav__link--compare { display: none; }
     /* 手机：反馈去掉箭头、收窄内距，避免英文等较长文案撑出顶栏 */
     .topnav__feedback { padding: 0 var(--sp-1); }
     .topnav__feedback :global(.icon) { display: none; }

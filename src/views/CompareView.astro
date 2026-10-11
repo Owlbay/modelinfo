@@ -1,0 +1,1112 @@
+---
+/**
+ * 模型比较：选择 2–6 个模型并排比较规格与价格，附 Token 费用估算。
+ * 选择同步到网址 ?m=id1,id2 并存入 localStorage（与模型列表、详情页共用）。
+ * 客户端数据：构建时嵌入只含比较字段的紧凑 JSON（toCompare），不请求 /v1/models.json。
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TopNav from '../components/TopNav.astro';
+import PageHeader from '../components/PageHeader.astro';
+import SectionFrame from '../components/SectionFrame.astro';
+import FilterMenu from '../components/FilterMenu.astro';
+import Icon from '../components/Icon.astro';
+import VendorLogo from '../components/VendorLogo.astro';
+import Modalities from '../components/Modalities.astro';
+import { getModels, latestChat, latestVerified, ownerName, toCompare, type Model } from '../lib/models';
+import { dict, localePath, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const d = dict(lang);
+const t = d.compare;
+const g = d.model.groups;
+
+const models = await getModels();
+const owners = [...new Set(models.map((m) => m.owned_by))];
+const ownerCounts = owners
+  .map((o) => [o, models.filter((m) => m.owned_by === o).length] as const)
+  .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+const vendorOptions = [
+  { value: '', label: t.all, count: models.length },
+  ...ownerCounts.map(([o, n]) => ({ value: o, label: ownerName(o), count: n, vendor: o })),
+];
+
+// 常见组合：构建时按数据自动选出各厂商最新的对话模型，数据更新后无需改代码
+const pickLatest = (list: string[]) => list.flatMap((o) => latestChat(models, o));
+const suggestions = [
+  { title: t.suggest.intl, models: pickLatest(['openai', 'anthropic', 'google', 'xai']) },
+  { title: t.suggest.cn, models: pickLatest(['deepseek', 'alibaba', 'moonshot', 'zhipu']) },
+  { title: t.suggest.family(ownerName('anthropic')), models: latestChat(models, 'anthropic', 3) },
+  { title: t.suggest.family(ownerName('openai')), models: latestChat(models, 'openai', 3) },
+].filter((s) => s.models.length >= 2);
+const compareUrl = (list: Model[]) => localePath(lang, `/compare/?m=${list.map((m) => m.id).join(',')}`);
+
+// 表格行：key 与客户端渲染一一对应；best 为最优方向
+const rows = t.rows;
+const groups: Array<{ title: string; rows: Array<{ key: string; label: string }> }> = [
+  { title: t.overview, rows: [{ key: 'vendor', label: rows.vendor }, { key: 'kind', label: rows.kind }] },
+  { title: g.api, rows: [{ key: 'api', label: rows.api }] },
+  {
+    title: g.limits,
+    rows: [
+      { key: 'context', label: rows.context },
+      { key: 'input', label: rows.input },
+      { key: 'output', label: rows.output },
+    ],
+  },
+  { title: g.modalities, rows: [{ key: 'modIn', label: rows.modIn }, { key: 'modOut', label: rows.modOut }] },
+  { title: g.reasoning, rows: [{ key: 'reasoning', label: rows.reasoning }, { key: 'efforts', label: rows.efforts }] },
+  {
+    title: g.pricing,
+    rows: [
+      { key: 'unit', label: rows.unit },
+      { key: 'priceIn', label: rows.priceIn },
+      { key: 'priceOut', label: rows.priceOut },
+      { key: 'cacheRead', label: rows.cacheRead },
+      { key: 'cacheWrite', label: rows.cacheWrite },
+    ],
+  },
+  { title: g.features, rows: [{ key: 'features', label: rows.features }] },
+  {
+    title: g.info,
+    rows: [
+      { key: 'status', label: rows.status },
+      { key: 'released', label: rows.released },
+      { key: 'cutoff', label: rows.cutoff },
+      { key: 'docs', label: rows.docs },
+    ],
+  },
+];
+
+// 嵌入数据：厂商显示名 + 紧凑记录；文案只放客户端需要的部分
+const data = {
+  v: Object.fromEntries(owners.map((o) => [o, ownerName(o)])),
+  m: models.map(toCompare),
+};
+const labels = {
+  kinds: d.models.kinds,
+  units: d.units,
+  status: d.model.status,
+  yes: d.model.yes,
+  no: d.model.no,
+  unknown: d.model.unknown,
+  perUnit: d.model.perUnit('{c}', '{u}'),
+  best: t.best,
+  open: t.open,
+  remove: t.remove,
+  removeAria: t.removeAria('{name}'),
+  inList: t.inList,
+  full: t.full,
+  count: t.count(0).replace('0', '{n}'),
+  na: t.calc.na,
+  calc: { model: t.calc.model, inputCost: t.calc.inputCost, cachedCost: t.calc.cachedCost, outputCost: t.calc.outputCost, total: t.calc.total },
+};
+const json = (v: unknown) => JSON.stringify(v).replace(/</g, '\\u003c');
+const modalityKeys = ['text', 'image', 'video', 'audio', 'document', 'embedding', 'score', '3d'];
+const presets: Array<[number, number, string]> = [
+  [1_000, 1_000, '1K / 1K'],
+  [10_000, 1_000, '10K / 1K'],
+  [100_000, 10_000, '100K / 10K'],
+  [1_000_000, 1_000_000, '1M / 1M'],
+];
+---
+
+<BaseLayout lang={lang} page="compare" title={t.title}>
+  <TopNav lang={lang} page="compare" />
+  <main id="main" class="page cmp">
+    <PageHeader title={t.title} intro={t.intro}>
+      <div class="cmp__add">
+        <div class="pick" data-pick>
+          <label class="pick__bar">
+            <Icon name="plus" size={16} />
+            <input
+              class="pick__input"
+              data-pick-input
+              data-search-input
+              type="text"
+              role="combobox"
+              aria-label={t.addAria}
+              aria-autocomplete="list"
+              aria-expanded="false"
+              aria-controls="pick-list"
+              placeholder={t.addPlaceholder}
+              autocomplete="off"
+              spellcheck="false"
+            />
+          </label>
+          <div class="pick__panel" data-pick-panel hidden>
+            <div class="pick__head"><span>{t.resultsHead}</span><span data-pick-count></span></div>
+            <ul class="pick__list" id="pick-list" role="listbox" aria-label={t.resultsAria} data-pick-list></ul>
+            <p class="pick__msg" data-pick-empty hidden>{t.noMatch}</p>
+            <div class="pick__foot"><span>{t.keys}</span><span>{t.esc}</span></div>
+          </div>
+        </div>
+        <FilterMenu name="owner" label={t.vendorLabel} options={vendorOptions} searchPlaceholder={t.vendorSearch} />
+        <button type="button" class="btn-ghost cmp__btn" data-copy data-copy-text="" data-copied={d.code.copied} data-failed={d.code.copyFailed} data-cmp-copy disabled>
+          <Icon name="copy" size={14} /><span data-copy-label>{t.copyLink}</span>
+        </button>
+        <button type="button" class="btn-ghost cmp__btn" data-cmp-clear disabled>{t.clear}</button>
+      </div>
+      <p class="sr-only" role="status" aria-live="polite" data-cmp-status></p>
+    </PageHeader>
+
+    <SectionFrame id="compare" title={t.frame} count={t.count(0)} source={d.models.source} stamp={d.models.verified(latestVerified(models) ?? '—')}>
+      <button type="button" slot="actions" class="cmp__toggle" data-diff-toggle aria-pressed="false" disabled>{t.diffOnly}</button>
+
+      <div class="empty" data-cmp-empty>
+        <h3 class="empty__title">{t.emptyTitle}</h3>
+        <p class="empty__intro">{t.emptyIntro}</p>
+        <h4 class="empty__sub corner">{t.suggestTitle}</h4>
+        <ul class="sugg" role="list">
+          {
+            suggestions.map((s) => (
+              <li>
+                <a class="list-row sugg__row" href={compareUrl(s.models)} data-suggest={s.models.map((m) => m.id).join(',')}>
+                  <span class="sugg__title">{s.title}</span>
+                  <span class="sugg__models">
+                    {s.models.map((m) => (
+                      <span class="sugg__model">
+                        <VendorLogo id={m.owned_by} size={14} />
+                        {m.name}
+                      </span>
+                    ))}
+                  </span>
+                  <Icon name="arrow-right" size={14} class="sugg__arrow" />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <p class="cmp__more" data-cmp-more hidden>{t.needMore}</p>
+      <p class="cmp__more" data-cmp-nodiff hidden>{t.noDiff}</p>
+
+      <div class="cmp__scroll" data-cmp-scroll role="region" aria-label={t.tableCaption} tabindex="0" hidden>
+        <table class="ctable mono" data-cmp-table>
+          <caption class="sr-only">{t.tableCaption}</caption>
+          <thead>
+            <tr data-cmp-head>
+              <th scope="col" class="ctable__corner"><span class="corner">{t.attr}</span></th>
+            </tr>
+          </thead>
+          {
+            groups.map((grp) => (
+              <tbody data-cmp-group>
+                <tr class="ctable__group">
+                  <th scope="colgroup" colspan="1" data-cmp-span>
+                    <span class="ctable__gtitle">{grp.title}</span>
+                  </th>
+                </tr>
+                {grp.rows.map((r) => (
+                  <tr data-cmp-row={r.key}>
+                    <th scope="row">{r.label}</th>
+                  </tr>
+                ))}
+              </tbody>
+            ))
+          }
+        </table>
+      </div>
+      <p class="cmp__note" data-cmp-note hidden>{t.bestNote}</p>
+    </SectionFrame>
+
+    <SectionFrame id="cost" title={t.calc.title}>
+      <p class="calc__intro">{t.calc.intro}</p>
+      <div class="calc__form">
+        <label class="field">
+          <span class="field__label">{t.calc.input}</span>
+          <input class="field__input mono" data-calc="in" type="text" inputmode="decimal" value="100K" autocomplete="off" spellcheck="false" aria-describedby="calc-parse" />
+        </label>
+        <label class="field">
+          <span class="field__label">{t.calc.output}</span>
+          <input class="field__input mono" data-calc="out" type="text" inputmode="decimal" value="10K" autocomplete="off" spellcheck="false" aria-describedby="calc-parse" />
+        </label>
+        <label class="field">
+          <span class="field__label">{t.calc.cached}</span>
+          <input class="field__input mono" data-calc="cached" type="text" inputmode="decimal" value="0" autocomplete="off" spellcheck="false" aria-describedby="calc-parse calc-cached" />
+        </label>
+      </div>
+      <div class="calc__presets" role="group" aria-label={t.calc.presets}>
+        <span class="calc__plabel">{t.calc.presets}</span>
+        {presets.map(([i, o, label]) => <button type="button" class="calc__preset mono" data-preset={`${i},${o}`}>{label}</button>)}
+      </div>
+      <p class="calc__hint"><span id="calc-parse">{t.calc.parseHint}</span> · <span id="calc-cached">{t.calc.cachedHint}</span></p>
+      <div class="calc__out" data-calc-out aria-live="polite"></div>
+      <p class="calc__empty" data-calc-empty>{t.calc.empty}</p>
+      <p class="cmp__note" data-calc-note hidden>{t.calc.naNote}</p>
+    </SectionFrame>
+  </main>
+
+  <!-- 客户端渲染用的模板：模态图标、移除图标（构建时生成，避免在脚本里复制 SVG）；厂商 logo 复用厂商筛选菜单里已内联的图标 -->
+  <div hidden>
+    {modalityKeys.map((k) => <template data-tpl-mod={k}><Modalities lang={lang} items={[k]} /></template>)}
+    <template data-tpl-close><Icon name="close" size={12} /></template>
+  </div>
+  <script type="application/json" id="cmp-data" set:html={json(data)} />
+  <script type="application/json" id="cmp-labels" set:html={json(labels)} />
+</BaseLayout>
+
+<script>
+  import { formatCost, formatPrice, formatTokens } from '../lib/format';
+  import { COMPARE_MAX, compareHref, readPicked, writePicked } from '../scripts/compare-store';
+  import type { CompareRecord } from '../lib/models';
+
+  type Labels = {
+    kinds: Record<string, string>;
+    units: Record<string, string>;
+    status: Record<string, string>;
+    yes: string;
+    no: string;
+    unknown: string;
+    perUnit: string;
+    best: string;
+    open: string;
+    remove: string;
+    removeAria: string;
+    inList: string;
+    full: string;
+    count: string;
+    na: string;
+    calc: Record<'model' | 'inputCost' | 'cachedCost' | 'outputCost' | 'total', string>;
+  };
+  const DATA = JSON.parse(document.getElementById('cmp-data')!.textContent!) as { v: Record<string, string>; m: CompareRecord[] };
+  const L = JSON.parse(document.getElementById('cmp-labels')!.textContent!) as Labels;
+  const byId = new Map(DATA.m.map((r) => [r[0], r]));
+  const prefix = document.documentElement.dataset.prefix ?? '';
+  const $ = <T extends Element = HTMLElement>(sel: string) => document.querySelector<T>(sel)!;
+
+  // ---------- 记录字段访问 ----------
+  const F = {
+    id: (r: CompareRecord) => r[0],
+    name: (r: CompareRecord) => r[1],
+    owner: (r: CompareRecord) => r[2],
+    vendor: (r: CompareRecord) => DATA.v[r[2]] ?? r[2],
+  };
+  const list = (v: string[]) => (v.length ? v.join(' · ') : '—');
+
+  // ---------- 模板 ----------
+  const tpl = (sel: string) => document.querySelector<HTMLTemplateElement>(sel)?.content.firstElementChild?.cloneNode(true) as HTMLElement | undefined;
+  const vendorLogo = (o: string) =>
+    document.querySelector(`[data-filter-option][data-value="${o}"] .vlogo`)?.cloneNode(true) as HTMLElement | undefined;
+  function modalities(items: string[]): Node {
+    if (!items.length) return document.createTextNode('—');
+    const wrap = tpl('[data-tpl-mod="text"]')!;
+    wrap.replaceChildren();
+    for (const k of items) {
+      const one = tpl(`[data-tpl-mod="${k}"]`);
+      if (one) wrap.append(...one.childNodes);
+      else {
+        const s = document.createElement('span');
+        s.textContent = k;
+        wrap.append(s);
+      }
+    }
+    return wrap;
+  }
+  const el = (tag: string, cls?: string, text?: string) => {
+    const e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  };
+
+  // ---------- 状态 ----------
+  const params = new URLSearchParams(location.search);
+  const fromUrl = params.has('m') ? (params.get('m') ?? '').split(',') : readPicked();
+  let ids = [...new Set(fromUrl.map((s) => s.trim()).filter((id) => byId.has(id)))].slice(0, COMPARE_MAX);
+  let diffOnly = params.get('diff') === '1';
+
+  const status = $('[data-cmp-status]');
+  const say = (msg: string) => {
+    status.textContent = '';
+    requestAnimationFrame(() => (status.textContent = msg));
+  };
+
+  function setIds(next: string[]) {
+    ids = next.slice(0, COMPARE_MAX);
+    writePicked(ids);
+    render();
+  }
+
+  // ---------- 表格单元 ----------
+  type Cell = { node: Node | string; key: string; num?: number | null; group?: string; best?: 'max' | 'min' };
+  function cellsFor(key: string, r: CompareRecord): Cell {
+    const p = r[12];
+    const price = (i: 2 | 3 | 4 | 5): Cell => {
+      if (!p) return { node: '—', key: '—' };
+      const v = p[i];
+      return { node: formatPrice(v, p[0]), key: `${p[0]}|${p[1]}|${v}`, num: v, group: `${p[0]}|${p[1]}`, best: 'min' };
+    };
+    const tokens = (v: number | null): Cell => ({ node: formatTokens(v), key: String(v), num: v, group: 'all', best: 'max' });
+    switch (key) {
+      case 'vendor': {
+        const s = el('span', 'cv');
+        const logo = vendorLogo(F.owner(r));
+        if (logo) s.append(logo);
+        s.append(el('span', '', F.vendor(r)));
+        return { node: s, key: F.owner(r) };
+      }
+      case 'kind':
+        return { node: L.kinds[r[3]] ?? r[3], key: r[3] };
+      case 'api':
+        return { node: list(r[4]), key: r[4].join() };
+      case 'context':
+        return tokens(r[5]);
+      case 'input':
+        return tokens(r[6]);
+      case 'output':
+        return tokens(r[7]);
+      case 'modIn':
+        return { node: modalities(r[8]), key: r[8].join() };
+      case 'modOut':
+        return { node: modalities(r[9]), key: r[9].join() };
+      case 'reasoning':
+        return { node: r[10] === null ? L.unknown : r[10] ? L.yes : L.no, key: String(r[10]) };
+      case 'efforts':
+        return { node: list(r[11]), key: r[11].join() };
+      case 'unit':
+        return p
+          ? { node: L.perUnit.replace('{c}', p[0]).replace('{u}', L.units[p[1]] ?? p[1]), key: `${p[0]}|${p[1]}` }
+          : { node: '—', key: '—' };
+      case 'priceIn':
+        return price(2);
+      case 'priceOut':
+        return price(3);
+      case 'cacheRead':
+        return price(4);
+      case 'cacheWrite':
+        return price(5);
+      case 'features':
+        return { node: list(r[13]), key: r[13].join() };
+      case 'status':
+        return { node: L.status[r[14]] ?? r[14], key: r[14] };
+      case 'released':
+        return { node: r[15] ?? '—', key: String(r[15]) };
+      case 'cutoff':
+        return { node: r[16] ?? '—', key: String(r[16]) };
+      case 'docs': {
+        if (!r[17]) return { node: '—', key: '—' };
+        const a = el('a', 'cdoc', `${new URL(r[17]).host}`) as HTMLAnchorElement;
+        a.href = r[17];
+        a.target = '_blank';
+        a.rel = 'noopener';
+        return { node: a, key: r[17] };
+      }
+    }
+    return { node: '—', key: '—' };
+  }
+
+  /** 每行最优：同组（价格为同币种同单位）至少两个非空值且不全相同时，标出最大或最小值 */
+  function markBest(cells: Cell[]): Set<number> {
+    const out = new Set<number>();
+    const groups = new Map<string, number[]>();
+    cells.forEach((c, i) => {
+      if (c.best && c.num != null && c.group) groups.set(c.group, [...(groups.get(c.group) ?? []), i]);
+    });
+    for (const idx of groups.values()) {
+      if (idx.length < 2) continue;
+      const vals = idx.map((i) => cells[i]!.num!);
+      const target = cells[idx[0]!]!.best === 'max' ? Math.max(...vals) : Math.min(...vals);
+      if (vals.every((v) => v === target)) continue;
+      idx.forEach((i) => cells[i]!.num === target && out.add(i));
+    }
+    return out;
+  }
+
+  // ---------- 渲染 ----------
+  const table = $('[data-cmp-table]');
+  const scroll = $('[data-cmp-scroll]');
+  const head = $('[data-cmp-head]');
+  const empty = $('[data-cmp-empty]');
+  const more = $('[data-cmp-more]');
+  const noDiff = $('[data-cmp-nodiff]');
+  const note = $('[data-cmp-note]');
+  const diffBtn = $<HTMLButtonElement>('[data-diff-toggle]');
+  const clearBtn = $<HTMLButtonElement>('[data-cmp-clear]');
+  const copyBtn = $<HTMLButtonElement>('[data-cmp-copy]');
+  const countEl = document.querySelector('#compare .frame__corner--tr');
+
+  function headCell(r: CompareRecord, i: number): HTMLElement {
+    const th = el('th', 'ctable__model') as HTMLTableCellElement;
+    th.scope = 'col';
+    const box = el('div', 'cm');
+    const v = el('span', 'cm__vendor');
+    const logo = vendorLogo(F.owner(r));
+    if (logo) v.append(logo);
+    v.append(el('span', '', F.vendor(r)));
+    const a = el('a', 'cm__name', F.name(r)) as HTMLAnchorElement;
+    a.href = `${prefix}/models/${F.id(r)}/`;
+    const id = el('span', 'cm__id', F.id(r));
+    const rm = el('button', 'cm__remove') as HTMLButtonElement;
+    rm.type = 'button';
+    rm.dataset.remove = F.id(r);
+    rm.dataset.index = String(i);
+    rm.setAttribute('aria-label', L.removeAria.replace('{name}', F.name(r)));
+    rm.title = L.remove;
+    const icon = tpl('[data-tpl-close]');
+    if (icon) rm.append(icon);
+    box.append(v, a, id, rm);
+    th.append(box);
+    return th;
+  }
+
+  function render() {
+    const recs = ids.map((id) => byId.get(id)!);
+    const n = recs.length;
+    empty.hidden = n > 0;
+    scroll.hidden = n === 0;
+    more.hidden = n !== 1;
+    note.hidden = n < 2;
+    diffBtn.disabled = n < 2;
+    diffBtn.setAttribute('aria-pressed', String(diffOnly && n >= 2));
+    clearBtn.disabled = n === 0;
+    copyBtn.disabled = n === 0;
+    if (countEl) countEl.textContent = L.count.replace('{n}', String(n));
+    table.style.setProperty('--n', String(n));
+
+    head.querySelectorAll('.ctable__model').forEach((c) => c.remove());
+    recs.forEach((r, i) => head.append(headCell(r, i)));
+
+    let shownRows = 0;
+    for (const body of table.querySelectorAll<HTMLElement>('[data-cmp-group]')) {
+      body.querySelector<HTMLTableCellElement>('[data-cmp-span]')!.colSpan = n + 1;
+      let visible = 0;
+      for (const tr of body.querySelectorAll<HTMLTableRowElement>('[data-cmp-row]')) {
+        tr.querySelectorAll('td').forEach((c) => c.remove());
+        const cells = recs.map((r) => cellsFor(tr.dataset.cmpRow!, r));
+        const best = markBest(cells);
+        cells.forEach((c, i) => {
+          const td = el('td');
+          if (typeof c.node === 'string') td.textContent = c.node;
+          else td.append(c.node);
+          if (best.has(i)) {
+            td.classList.add('is-best');
+            td.append(' ', el('span', 'best', L.best));
+          }
+          tr.append(td);
+        });
+        const same = n >= 2 && cells.every((c) => c.key === cells[0]!.key);
+        tr.hidden = diffOnly && same;
+        tr.classList.toggle('is-same', same);
+        if (!tr.hidden) visible++;
+      }
+      body.hidden = visible === 0;
+      shownRows += visible;
+    }
+    noDiff.hidden = !(diffOnly && n >= 2 && shownRows === 0);
+
+    // 网址与复制链接
+    // 逗号不转义，网址更易读；模型 ID 只含 [a-z0-9._-]
+    const href = compareHref(prefix, ids) + (diffOnly && n ? '&diff=1' : '');
+    history.replaceState(null, '', href + location.hash);
+    copyBtn.dataset.copyText = new URL(href, location.origin).href;
+
+    renderCalc();
+    refreshPicker();
+  }
+
+  // ---------- 表格交互 ----------
+  table.addEventListener('click', (e) => {
+    const b = (e.target as Element).closest<HTMLButtonElement>('[data-remove]');
+    if (!b) return;
+    const i = Number(b.dataset.index);
+    const name = F.name(byId.get(b.dataset.remove!)!);
+    setIds(ids.filter((x) => x !== b.dataset.remove));
+    say(`${L.remove} · ${name}`);
+    // 焦点移到相邻的移除按钮，没有时回到搜索框
+    const next = table.querySelectorAll<HTMLButtonElement>('[data-remove]');
+    (next[Math.min(i, next.length - 1)] ?? input).focus();
+  });
+  diffBtn.addEventListener('click', () => {
+    diffOnly = !diffOnly;
+    render();
+  });
+  clearBtn.addEventListener('click', () => {
+    setIds([]);
+    input.focus();
+  });
+
+  // ---------- 搜索添加 ----------
+  const pick = $('[data-pick]');
+  const input = $<HTMLInputElement>('[data-pick-input]');
+  const panel = $('[data-pick-panel]');
+  const listEl = $('[data-pick-list]');
+  const pickCount = $('[data-pick-count]');
+  const pickEmpty = $('[data-pick-empty]');
+  const LIMIT = 50;
+  const hay = new Map(DATA.m.map((r) => [r[0], `${r[0]} ${r[1]} ${r[2]} ${DATA.v[r[2]] ?? ''}`.toLowerCase()]));
+  let owner = '';
+  let results: CompareRecord[] = [];
+  let sel = 0;
+
+  function open(show: boolean) {
+    panel.hidden = !show;
+    input.setAttribute('aria-expanded', String(show));
+    if (!show) input.removeAttribute('aria-activedescendant');
+  }
+  function select(i: number) {
+    const opts = listEl.querySelectorAll<HTMLElement>('[role="option"]');
+    sel = Math.max(0, Math.min(i, opts.length - 1));
+    opts.forEach((o, k) => o.setAttribute('aria-selected', String(k === sel)));
+    const cur = opts[sel];
+    if (cur) {
+      input.setAttribute('aria-activedescendant', cur.id);
+      cur.scrollIntoView({ block: 'nearest' });
+    } else input.removeAttribute('aria-activedescendant');
+  }
+  function refreshPicker() {
+    const terms = input.value.toLowerCase().split(/\s+/).filter(Boolean);
+    const all = DATA.m.filter((r) => (!owner || r[2] === owner) && terms.every((t) => hay.get(r[0])!.includes(t)));
+    results = all.slice(0, LIMIT);
+    pickCount.textContent = ids.length >= COMPARE_MAX ? L.full : all.length > LIMIT ? `${LIMIT} / ${all.length}` : String(all.length);
+    pickEmpty.hidden = results.length > 0;
+    const full = ids.length >= COMPARE_MAX;
+    listEl.replaceChildren(
+      ...results.map((r, k) => {
+        const li = el('li', 'pick__item');
+        li.id = `pick-opt-${k}`;
+        li.setAttribute('role', 'option');
+        li.dataset.id = r[0];
+        const added = ids.includes(r[0]);
+        if (added || full) li.setAttribute('aria-disabled', 'true');
+        const logo = vendorLogo(r[2]);
+        const nm = el('span', 'pick__name');
+        if (logo) nm.append(logo);
+        nm.append(el('span', 'pick__label', r[1]));
+        li.append(nm, el('span', 'pick__id', r[0]), el('span', 'pick__meta', added ? L.inList : formatTokens(r[5])));
+        return li;
+      }),
+    );
+    select(Math.min(sel, results.length - 1));
+  }
+  function add(id: string) {
+    if (ids.includes(id)) return say(L.inList);
+    if (ids.length >= COMPARE_MAX) return say(L.full);
+    setIds([...ids, id]);
+    say(`${F.name(byId.get(id)!)} · ${L.count.replace('{n}', String(ids.length))}`);
+    input.value = '';
+    refreshPicker();
+  }
+  input.addEventListener('focus', () => {
+    refreshPicker();
+    open(true);
+  });
+  input.addEventListener('input', () => {
+    sel = 0;
+    refreshPicker();
+    open(true);
+  });
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowDown') {
+      if (panel.hidden) open(true);
+      select(sel + 1);
+    } else if (e.key === 'ArrowUp') select(sel - 1);
+    else if (e.key === 'Enter') {
+      const r = results[sel];
+      if (r && !panel.hidden) add(r[0]);
+    } else if (e.key === 'Escape') {
+      if (panel.hidden) input.blur();
+      open(false);
+    } else return;
+    e.preventDefault();
+  });
+  listEl.addEventListener('pointerdown', (e) => e.preventDefault()); // 保持输入框焦点
+  listEl.addEventListener('click', (e) => {
+    const li = (e.target as Element).closest<HTMLElement>('[role="option"]');
+    if (li) add(li.dataset.id!);
+  });
+  document.addEventListener('pointerdown', (e) => {
+    if (!pick.contains(e.target as Node)) open(false);
+  });
+
+  // 厂商筛选（FilterMenu）
+  function applyOwner() {
+    const menu = $('[data-filter-menu="owner"]');
+    let label = '';
+    menu.querySelectorAll<HTMLButtonElement>('[data-filter-option]').forEach((b) => {
+      const on = b.dataset.value === owner;
+      b.setAttribute('aria-pressed', String(on));
+      if (on) label = b.dataset.label ?? '';
+    });
+    menu.querySelector('[data-filter-current]')!.textContent = label;
+  }
+  document.addEventListener('click', (e) => {
+    const target = e.target as Element | null;
+    const b = target?.closest<HTMLButtonElement>('[data-filter-option]');
+    if (b) {
+      owner = b.dataset.value ?? '';
+      (b.closest('details') as HTMLDetailsElement).open = false;
+      applyOwner();
+      sel = 0;
+      refreshPicker();
+      input.focus();
+      return;
+    }
+    for (const det of document.querySelectorAll<HTMLDetailsElement>('[data-filter-menu][open]')) {
+      if (!det.contains(target)) det.open = false;
+    }
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    for (const det of document.querySelectorAll<HTMLDetailsElement>('[data-filter-menu][open]')) det.open = false;
+  });
+  for (const box of document.querySelectorAll<HTMLInputElement>('[data-filter-search]')) {
+    box.addEventListener('input', () => {
+      const q = box.value.trim().toLowerCase();
+      box.closest('details')!.querySelectorAll<HTMLElement>('[data-filter-option]').forEach((o) => {
+        o.hidden = !!q && !o.dataset.hay!.includes(q);
+      });
+    });
+  }
+
+  // 推荐组合：同页切换，不整页刷新
+  document.addEventListener('click', (e) => {
+    const a = (e.target as Element).closest<HTMLAnchorElement>('[data-suggest]');
+    if (!a || e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+    e.preventDefault();
+    setIds(a.dataset.suggest!.split(',').filter((id) => byId.has(id)));
+    scroll.focus({ preventScroll: true });
+  });
+
+  // ---------- 费用估算 ----------
+  const calcInputs = {
+    in: $<HTMLInputElement>('[data-calc="in"]'),
+    out: $<HTMLInputElement>('[data-calc="out"]'),
+    cached: $<HTMLInputElement>('[data-calc="cached"]'),
+  };
+  const calcOut = $('[data-calc-out]');
+  const calcEmpty = $('[data-calc-empty]');
+  const calcNote = $('[data-calc-note]');
+  const MULT: Record<string, number> = { '': 1, k: 1e3, m: 1e6, b: 1e9, 万: 1e4 };
+  function parseTokens(box: HTMLInputElement): number {
+    const m = /^(\d+(?:\.\d+)?)\s*([kmb万]?)$/i.exec(box.value.replace(/[,\s_]/g, ''));
+    box.setAttribute('aria-invalid', String(!m && box.value.trim() !== ''));
+    return m ? Math.round(Number(m[1]) * MULT[m[2]!.toLowerCase()]!) : 0;
+  }
+  const short = (v: number) => (v >= 1e6 ? `${+(v / 1e6).toFixed(2)}M` : v >= 1e3 ? `${+(v / 1e3).toFixed(1)}K` : String(v));
+
+  function renderCalc() {
+    const recs = ids.map((id) => byId.get(id)!);
+    calcEmpty.hidden = recs.length > 0;
+    const tin = parseTokens(calcInputs.in);
+    const tout = parseTokens(calcInputs.out);
+    const tc = Math.min(parseTokens(calcInputs.cached), tin);
+    type Row = { r: CompareRecord; parts: [number, number, number]; total: number } | { r: CompareRecord; total: null };
+    const byCur = new Map<string, Row[]>();
+    const na: Row[] = [];
+    for (const r of recs) {
+      const p = r[12];
+      if (!p || p[1] !== '1M_tokens' || (tin - tc > 0 && p[2] === null) || (tout > 0 && p[3] === null) || (tc > 0 && p[4] === null && p[2] === null)) {
+        na.push({ r, total: null });
+        continue;
+      }
+      const parts: [number, number, number] = [((tin - tc) * (p[2] ?? 0)) / 1e6, (tc * (p[4] ?? p[2] ?? 0)) / 1e6, (tout * (p[3] ?? 0)) / 1e6];
+      byCur.set(p[0], [...(byCur.get(p[0]) ?? []), { r, parts, total: parts[0] + parts[1] + parts[2] }]);
+    }
+    const tables: HTMLElement[] = [];
+    const head = (cur: string) => {
+      const thead = el('thead');
+      const tr = el('tr');
+      [L.calc.model, L.calc.inputCost, L.calc.cachedCost, L.calc.outputCost, L.calc.total].forEach((h, i) => {
+        const th = el('th', i === 0 ? '' : i === 4 ? 'num' : 'num part', i === 4 ? `${h} · ${cur}` : h);
+        (th as HTMLTableCellElement).scope = 'col';
+        tr.append(th);
+      });
+      thead.append(tr);
+      return thead;
+    };
+    const nameCell = (r: CompareRecord) => {
+      const th = el('th') as HTMLTableCellElement;
+      th.scope = 'row';
+      const s = el('span', 'cv');
+      const logo = vendorLogo(r[2]);
+      if (logo) s.append(logo);
+      s.append(el('span', '', r[1]));
+      th.append(s);
+      return th;
+    };
+    for (const [cur, list] of byCur) {
+      list.sort((a, b) => a.total! - b.total!);
+      const min = list[0]!.total!;
+      const showBest = list.length > 1 && list.some((x) => x.total !== min);
+      const t = el('table', 'ctable2 mono');
+      const cap = el('caption', 'ctable2__cap corner', `${cur} · ${short(tin)} / ${short(tout)}${tc ? ` · ${L.calc.cachedCost} ${short(tc)}` : ''}`);
+      t.append(cap, head(cur));
+      const body = el('tbody');
+      for (const x of list) {
+        if (x.total === null) continue;
+        const tr = el('tr');
+        tr.append(nameCell(x.r));
+        x.parts.forEach((v) => tr.append(el('td', 'num part', formatCost(v, cur))));
+        const tot = el('td', 'num total', formatCost(x.total, cur));
+        if (showBest && x.total === min) {
+          tot.classList.add('is-best');
+          tot.append(' ', el('span', 'best', L.best));
+        }
+        tr.append(tot);
+        body.append(tr);
+      }
+      t.append(body);
+      const wrap = el('div', 'calc__scroll');
+      wrap.append(t);
+      tables.push(wrap);
+    }
+    if (na.length) {
+      const t = el('table', 'ctable2 mono');
+      t.append(el('caption', 'ctable2__cap corner', L.na));
+      const body = el('tbody');
+      for (const x of na) {
+        const tr = el('tr');
+        const p = x.r[12];
+        tr.append(nameCell(x.r), el('td', 'muted', p ? L.perUnit.replace('{c}', p[0]).replace('{u}', L.units[p[1]] ?? p[1]) : '—'), el('td', 'num total', '—'));
+        body.append(tr);
+      }
+      t.append(body);
+      const wrap = el('div', 'calc__scroll');
+      wrap.append(t);
+      tables.push(wrap);
+    }
+    calcOut.replaceChildren(...tables);
+    calcNote.hidden = na.length === 0;
+  }
+  for (const box of Object.values(calcInputs)) box.addEventListener('input', renderCalc);
+  document.querySelectorAll<HTMLButtonElement>('[data-preset]').forEach((b) =>
+    b.addEventListener('click', () => {
+      const [i, o] = b.dataset.preset!.split(',').map(Number);
+      calcInputs.in.value = short(i!);
+      calcInputs.out.value = short(o!);
+      renderCalc();
+    }),
+  );
+
+  applyOwner();
+  render();
+</script>
+
+<style>
+  .cmp { padding-bottom: var(--sp-8); }
+
+  /* 添加控件：搜索 + 厂商筛选 + 操作，同一行；窄屏换行 */
+  .cmp__add {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--sp-2);
+    width: 100%;
+  }
+  .cmp__btn { min-height: var(--control-h); font-weight: 400; font-size: var(--fs-body-sm); }
+
+  .pick { position: relative; flex: 1 1 280px; max-width: 480px; }
+  .pick__bar {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-3);
+    height: var(--control-h);
+    padding: 0 var(--sp-3);
+    border: 1px solid var(--line-strong);
+    color: var(--ink-3);
+    transition: border-color var(--dur-1) var(--ease-out);
+  }
+  .pick__bar:focus-within { border-color: var(--accent-ui); }
+  .pick__input {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    font: 400 var(--fs-body) / var(--lh-body) var(--font-sans);
+    color: var(--ink);
+    outline: none;
+  }
+  .pick__input:focus-visible { outline: none; }
+  .pick__panel {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    width: max(100%, min(560px, 88vw));
+    max-height: min(56vh, 440px);
+    margin-top: -1px;
+    background: var(--bg-panel);
+    border: 1px solid var(--line);
+    font: 400 var(--fs-mono) / var(--lh-mono) var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    animation: panel-in var(--dur-2) var(--ease-out);
+  }
+  .pick__panel[hidden] { display: none; }
+  .pick__head,
+  .pick__foot {
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 32px;
+    padding: 0 var(--sp-3);
+    font: 500 var(--fs-mono-xs) / var(--lh-mono-xs) var(--font-mono);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+  }
+  .pick__head { border-bottom: 1px solid var(--line-soft); }
+  .pick__foot { border-top: 1px solid var(--line-soft); }
+  @media (pointer: coarse) { .pick__foot { display: none; } }
+  .pick__list { flex: 1 1 auto; min-height: 0; margin: 0; padding: 0; list-style: none; overflow-y: auto; overscroll-behavior: contain; }
+  .pick__list :global(.pick__item) {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) auto;
+    align-items: center;
+    column-gap: var(--sp-3);
+    min-height: var(--control-h);
+    padding: 0 var(--sp-3);
+    color: var(--ink);
+    cursor: pointer;
+    transition: background-color var(--dur-1) var(--ease-out);
+  }
+  .pick__list :global(.pick__item:hover) { background: var(--hover-row); }
+  .pick__list :global(.pick__item[aria-disabled='true']) { color: var(--ink-3); cursor: default; }
+  .pick__list :global(.pick__name) { display: flex; align-items: center; gap: var(--sp-2); min-width: 0; }
+  .pick__list :global(.pick__label) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font: 400 var(--fs-ui) / var(--lh-ui) var(--font-sans);
+  }
+  .pick__list :global(.pick__id) { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--ink-3); }
+  .pick__list :global(.pick__meta) { font-size: var(--fs-mono-sm); color: var(--ink-3); white-space: nowrap; }
+  /* 选中：反白 */
+  .pick__list :global(.pick__item[aria-selected='true']) { background: var(--selected-bg); }
+  .pick__list :global(.pick__item[aria-selected='true'] *) { color: var(--selected-ink); }
+  .pick__msg { display: flex; align-items: center; min-height: var(--control-h); padding: 0 var(--sp-3); color: var(--ink-3); }
+
+  .cmp__toggle {
+    display: inline-flex;
+    align-items: center;
+    min-height: 32px;
+    padding: 0 var(--sp-3);
+    border: 1px solid var(--line);
+    font: 400 var(--fs-body-sm) / var(--lh-body-sm) var(--font-sans);
+    color: var(--ink-2);
+    align-self: center;
+    transition: color var(--dur-1) var(--ease-out), background-color var(--dur-1) var(--ease-out), border-color var(--dur-1) var(--ease-out);
+  }
+  .cmp__toggle:hover:not(:disabled) { color: var(--ink); border-color: var(--line-strong); background: var(--hover-row); }
+  .cmp__toggle:disabled { color: var(--ink-4); cursor: default; }
+  .cmp__toggle[aria-pressed='true'] { background: var(--selected-bg); border-color: var(--selected-bg); color: var(--selected-ink); }
+
+  /* 空状态与推荐组合 */
+  .empty__title { font: 500 var(--fs-body-lg) / var(--lh-body-lg) var(--font-sans); color: var(--ink); }
+  .empty__intro { max-width: 65ch; margin-top: var(--sp-2); color: var(--ink-2); }
+  .empty__sub { margin-top: var(--sp-6); padding-bottom: var(--sp-2); border-bottom: 1px solid var(--line); }
+  .sugg { margin: 0; padding: 0; list-style: none; }
+  .sugg__row { grid-template-columns: minmax(0, 16rem) minmax(0, 1fr) auto; column-gap: var(--sp-5); }
+  .sugg__title { font: 400 var(--fs-body) / var(--lh-body) var(--font-sans); color: var(--ink); }
+  .sugg__models { display: flex; flex-wrap: wrap; gap: var(--sp-1) var(--sp-4); color: var(--ink-2); }
+  .sugg__model { display: inline-flex; align-items: center; gap: var(--sp-2); }
+  .sugg__row :global(.sugg__arrow) { color: var(--ink-3); }
+
+  .cmp__more { padding: var(--sp-3) 0; color: var(--ink-2); }
+  .cmp__note { margin-top: var(--sp-3); max-width: 80ch; font-size: var(--fs-body-sm); line-height: var(--lh-body-sm); color: var(--ink-3); }
+
+  /* 对比表：横纵双向在容器内滚动，表头行与首列固定 */
+  .cmp__scroll {
+    --label-w: 10rem;
+    --col-min: 11rem;
+    max-width: 100%;
+    max-height: calc(100dvh - var(--sp-6));
+    overflow: auto;
+    overscroll-behavior-x: contain;
+    border-top: 1px solid var(--line);
+  }
+  .cmp__scroll:focus-visible { outline-offset: -2px; }
+  .ctable {
+    width: max(100%, calc(var(--label-w) + var(--n, 1) * var(--col-min)));
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: var(--fs-mono);
+    line-height: var(--lh-mono);
+  }
+  .ctable :global(th),
+  .ctable :global(td) {
+    padding: var(--sp-2) var(--sp-3);
+    border-bottom: 1px solid var(--line-soft);
+    text-align: left;
+    vertical-align: top;
+    font-weight: 400;
+    overflow-wrap: anywhere;
+  }
+  .ctable :global(td) { color: var(--ink-2); }
+  .ctable thead :global(th) {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: var(--bg);
+    border-bottom-color: var(--line);
+    vertical-align: bottom;
+  }
+  .ctable :global(th:first-child) {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    width: var(--label-w);
+    padding-left: 0;
+    background: var(--bg);
+    color: var(--ink-3);
+    box-shadow: 1px 0 0 var(--line-soft);
+  }
+  .ctable thead :global(th:first-child) { z-index: 3; }
+  .ctable__group :global(th) {
+    padding-top: var(--sp-5);
+    border-bottom-color: var(--line);
+    background: var(--bg);
+  }
+  .ctable__group :global(th:first-child) { position: static; box-shadow: none; }
+  .ctable__gtitle {
+    position: sticky;
+    left: 0;
+    font: 500 var(--fs-body) / var(--lh-body) var(--font-sans);
+    color: var(--ink);
+  }
+  .ctable tbody:first-of-type .ctable__group :global(th) { padding-top: var(--sp-3); }
+  @media (hover: hover) {
+    .ctable [data-cmp-row]:hover :global(td),
+    .ctable [data-cmp-row]:hover :global(th) { background: var(--hover-row-solid); }
+  }
+  .ctable :global(td.is-best) { color: var(--ink); font-weight: 500; }
+  .ctable :global(.best),
+  .calc__out :global(.best) {
+    display: inline-block;
+    margin-left: var(--sp-1);
+    padding: 0 var(--sp-1);
+    border: 1px solid var(--line-strong);
+    font: 500 var(--fs-mono-xs) / var(--lh-mono-xs) var(--font-mono);
+    letter-spacing: 0.06em;
+    color: var(--ink-2);
+    vertical-align: 1px;
+  }
+  .ctable :global(.cv),
+  .calc__out :global(.cv) { display: inline-flex; align-items: center; gap: var(--sp-2); }
+  .ctable :global(.cdoc) { color: var(--ink-2); }
+  .ctable :global(.cdoc:hover) { color: var(--ink); }
+
+  /* 模型表头：厂商、名称（链接）、ID、移除 */
+  .ctable :global(.cm) {
+    position: relative;
+    display: grid;
+    gap: var(--sp-1);
+    padding-right: var(--sp-6);
+    padding-bottom: var(--sp-1);
+  }
+  .ctable :global(.cm__vendor) { display: inline-flex; align-items: center; gap: var(--sp-2); color: var(--ink-3); font-size: var(--fs-mono-sm); line-height: var(--lh-mono-sm); }
+  .ctable :global(.cm__name) {
+    font: 500 var(--fs-body) / var(--lh-body) var(--font-sans);
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .ctable :global(.cm__name:hover) { text-decoration: underline; text-decoration-color: var(--line-strong); }
+  .ctable :global(.cm__id) { font-size: var(--fs-mono-sm); line-height: var(--lh-mono-sm); color: var(--ink-3); }
+  .ctable :global(.cm__remove) {
+    position: absolute;
+    top: calc(-1 * var(--sp-1));
+    right: calc(-1 * var(--sp-2));
+    display: inline-grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    color: var(--ink-3);
+    transition: color var(--dur-1) var(--ease-out), background-color var(--dur-1) var(--ease-out);
+  }
+  .ctable :global(.cm__remove:hover) { color: var(--ink); background: var(--hover-row); }
+
+  /* 费用估算 */
+  .calc__intro { max-width: 65ch; color: var(--ink-2); }
+  .calc__form {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 14rem));
+    gap: var(--sp-3) var(--sp-4);
+    margin-top: var(--sp-5);
+  }
+  .field { display: grid; gap: var(--sp-1); min-width: 0; }
+  .field__label { font-size: var(--fs-body-sm); line-height: var(--lh-body-sm); color: var(--ink-3); }
+  .field__input {
+    width: 100%;
+    min-width: 0;
+    height: var(--control-h);
+    padding: 0 var(--sp-3);
+    border: 1px solid var(--line-strong);
+    background: transparent;
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+    color: var(--ink);
+    transition: border-color var(--dur-1) var(--ease-out);
+  }
+  .field__input:focus-visible { outline: none; border-color: var(--accent-ui); }
+  .field__input[aria-invalid='true'] { border-style: dashed; }
+  .calc__presets { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-2); margin-top: var(--sp-4); }
+  .calc__plabel { margin-right: var(--sp-2); font-size: var(--fs-body-sm); line-height: var(--lh-body-sm); color: var(--ink-3); }
+  .calc__preset {
+    min-height: 32px;
+    padding: 0 var(--sp-3);
+    border: 1px solid var(--line);
+    font-size: var(--fs-mono-sm);
+    line-height: var(--lh-mono-sm);
+    color: var(--ink-2);
+    transition: color var(--dur-1) var(--ease-out), background-color var(--dur-1) var(--ease-out), border-color var(--dur-1) var(--ease-out);
+  }
+  .calc__preset:hover { color: var(--ink); border-color: var(--line-strong); background: var(--hover-row); }
+  .calc__hint { margin-top: var(--sp-3); font-size: var(--fs-body-sm); line-height: var(--lh-body-sm); color: var(--ink-3); }
+  .calc__out { display: grid; gap: var(--sp-5); margin-top: var(--sp-5); }
+  .calc__out :global(.calc__scroll) { max-width: 100%; overflow-x: auto; }
+  .calc__out :global(.ctable2) {
+    width: 100%;
+    min-width: 34rem;
+    table-layout: fixed;
+    border-collapse: collapse;
+    font-size: var(--fs-mono);
+    line-height: var(--lh-mono);
+  }
+  .calc__out :global(.ctable2__cap) { padding-bottom: var(--sp-2); text-align: left; }
+  .calc__out :global(.ctable2 th),
+  .calc__out :global(.ctable2 td) {
+    padding: var(--sp-2) var(--sp-3) var(--sp-2) 0;
+    border-bottom: 1px solid var(--line-soft);
+    text-align: left;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+  .calc__out :global(.ctable2 thead th) { border-bottom-color: var(--line); color: var(--ink-3); }
+  .calc__out :global(.ctable2 tbody th) { white-space: normal; overflow-wrap: anywhere; color: var(--ink); }
+  /* 各币种表格列宽一致：模型列固定比例，其余平分 */
+  .calc__out :global(.ctable2 th:first-child) { width: 36%; }
+  .calc__out :global(.ctable2 .num) { text-align: right; color: var(--ink-2); }
+  .calc__out :global(.ctable2 .total) { color: var(--ink); }
+  .calc__out :global(.ctable2 .muted) { color: var(--ink-3); }
+  .calc__out :global(.ctable2 .is-best) { font-weight: 500; }
+  .calc__empty { margin-top: var(--sp-5); color: var(--ink-3); }
+
+  @media (max-width: 1024px) {
+    .sugg__row { grid-template-columns: minmax(0, 1fr) auto; row-gap: var(--sp-2); }
+    .sugg__models { grid-row: 2; }
+    .sugg__row :global(.sugg__arrow) { grid-row: 1 / 3; grid-column: 2; }
+  }
+  @media (max-width: 640px) {
+    .cmp__scroll { --label-w: 7rem; --col-min: 10.5rem; }
+    .calc__form { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+    .calc__form .field:last-child { grid-column: 1 / -1; }
+    /* 手机只显示合计，分项列隐藏，表格不横向滚动 */
+    .calc__out :global(.ctable2) { min-width: 0; }
+    .calc__out :global(.ctable2 .part) { display: none; }
+    .calc__out :global(.ctable2 th:first-child) { width: 58%; }
+    .pick { flex-basis: 100%; max-width: none; }
+    .cmp__add :global(.fm) { flex: 1 1 auto; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .pick__panel { animation: vt-fade-in 160ms linear both; }
+  }
+</style>
