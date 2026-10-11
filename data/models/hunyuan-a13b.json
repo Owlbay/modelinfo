@@ -46,6 +46,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "腾讯混合推理 MoE 模型，总参数 80B，激活参数 13B。"
+    }
+  },
   "sources": [
     {
       "title": "产品概述 | 腾讯混元大模型",

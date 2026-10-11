@@ -50,6 +50,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "面向授权漏洞研究和安全测试的高级网络安全模型（仅限获批访问）。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-5.6 Cyber Model | OpenAI API",

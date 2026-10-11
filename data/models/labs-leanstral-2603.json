@@ -41,6 +41,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "我们首个为 Lean 4 设计的开源代码智能体，用于真实代码仓库中的形式化证明工程。119B 参数，激活 6.5B。"
+    }
+  },
   "sources": [
     {
       "title": "Leanstral | Mistral Docs",

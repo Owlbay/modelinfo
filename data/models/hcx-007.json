@@ -48,6 +48,11 @@
   "aliases": [
     "HCX-007"
   ],
+  "translations": {
+    "zh": {
+      "description": "混合推理模型，适用于数学、科学、语言推理和作文写作等复杂问题。"
+    }
+  },
   "sources": [
     {
       "title": "CLOVA Studio 모델 | NAVER Cloud 가이드",

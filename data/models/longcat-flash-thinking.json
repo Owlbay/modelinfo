@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "LongCat-Flash-Thinking，已下线。官方通知：平台自 2026-05-29 起停止该模型的调用服务。自 2026-03-12 20:00（UTC+8）起请求已切换至 LongCat-Flash-Thinking-2601。"
+    }
+  },
   "sources": [
     {
       "title": "更新日志 | LongCat API 开放平台",

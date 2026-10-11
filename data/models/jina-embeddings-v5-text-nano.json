@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "多语言文本向量模型（239M 参数），适用于边缘和资源受限的部署。"
+    }
+  },
   "sources": [
     {
       "title": "jina-embeddings-v5-text-nano | Jina AI",

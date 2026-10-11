@@ -48,6 +48,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "多模态向量模型（约 1.74B 参数），将文本、图像、视频、音频和 PDF 映射到共享的 1024 维空间。"
+    }
+  },
   "sources": [
     {
       "title": "jina-embeddings-v5-omni-small | Jina AI",

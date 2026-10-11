@@ -40,6 +40,11 @@
   "aliases": [
     "nvidia/llama-nemotron-rerank-vl-1b-v2"
   ],
+  "translations": {
+    "zh": {
+      "description": "多模态交叉编码器重排模型，对文档页面（图像、文本或两者）与文本查询的相关程度打分。"
+    }
+  },
   "sources": [
     {
       "title": "llama-nemotron-rerank-vl-1b-v2 Model Card | NVIDIA NIM",

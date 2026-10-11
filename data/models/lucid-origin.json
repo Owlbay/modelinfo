@@ -38,6 +38,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Leonardo.Ai 图像生成模型，可通过 Leonardo.Ai REST API v2 使用，支持风格和内容图像引导。"
+    }
+  },
   "sources": [
     {
       "title": "Lucid Origin | Leonardo.Ai API Docs",

@@ -52,6 +52,11 @@
   "aliases": [
     "Ling-3.0-flash-VL"
   ],
+  "translations": {
+    "zh": {
+      "description": "首个原生多模态 Ling 模型，为前端代码生成和 GUI 自动化提供视觉反馈。"
+    }
+  },
   "sources": [
     {
       "title": "Ling | Ant Ling Docs",

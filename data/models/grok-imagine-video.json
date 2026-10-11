@@ -49,6 +49,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "xAI 视频生成模型，价格为每秒输出 $0.05。"
+    }
+  },
   "sources": [
     {
       "title": "Grok Imagine Video | xAI Docs",

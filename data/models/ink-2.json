@@ -38,6 +38,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Cartesia 面向语音智能体的流式语音转文字模型，内置轮次检测，支持英语、法语、印地语、日语和西班牙语。"
+    }
+  },
   "sources": [
     {
       "title": "Ink 2 | Cartesia Docs",

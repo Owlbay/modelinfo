@@ -38,6 +38,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "根据文本脚本或音频文件生成角色说话的视频。"
+    }
+  },
   "sources": [
     {
       "title": "Available AI Models | Runway API",

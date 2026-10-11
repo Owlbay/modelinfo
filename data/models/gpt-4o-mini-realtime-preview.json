@@ -44,6 +44,11 @@
   "aliases": [
     "gpt-4o-mini-realtime-preview-2024-12-17"
   ],
+  "translations": {
+    "zh": {
+      "description": "支持文本和音频输入输出的较小实时模型。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-4o Mini Realtime Model | OpenAI API",

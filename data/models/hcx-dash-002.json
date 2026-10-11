@@ -42,6 +42,11 @@
   "aliases": [
     "HCX-DASH-002"
   ],
+  "translations": {
+    "zh": {
+      "description": "轻量、快速的模型，适用于相对简单的任务。"
+    }
+  },
   "sources": [
     {
       "title": "CLOVA Studio 모델 | NAVER Cloud 가이드",

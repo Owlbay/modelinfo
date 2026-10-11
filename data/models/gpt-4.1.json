@@ -55,6 +55,11 @@
   "aliases": [
     "gpt-4.1-2025-04-14"
   ],
+  "translations": {
+    "zh": {
+      "description": "最智能的非推理模型，指令遵循和工具调用能力出色。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-4.1 Model | OpenAI API",

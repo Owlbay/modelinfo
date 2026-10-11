@@ -59,6 +59,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "OpenAI 能力最强的模型，适用于要求最高的工作。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-6 Astra Model | OpenAI API",

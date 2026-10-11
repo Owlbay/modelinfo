@@ -47,6 +47,11 @@
     "gpt-4o-mini-tts-2025-03-20",
     "gpt-4o-mini-tts-2025-12-15"
   ],
+  "translations": {
+    "zh": {
+      "description": "由 GPT-4o Mini 驱动的文字转语音模型。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-4o Mini TTS Model | OpenAI API",

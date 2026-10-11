@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "页面转 Markdown 的文档解析器，可处理文本、公式、表格和阅读顺序；供 Reader API 使用。"
+    }
+  },
   "sources": [
     {
       "title": "jina-ocr-v1 | Jina AI",

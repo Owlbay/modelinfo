@@ -41,6 +41,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Kimi K2 Thinking 的高速版本，输出速度为每秒 60 至 100 tokens。官方已于 2026-05-25 停止服务。"
+    }
+  },
   "sources": [
     {
       "title": "Model List | Kimi API Platform",

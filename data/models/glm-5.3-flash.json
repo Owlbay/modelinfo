@@ -52,6 +52,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "GLM-5 系列首个原生多模态模型，总参数 320B，激活参数 18B，低成本。"
+    }
+  },
   "sources": [
     {
       "title": "GLM-5.3-Flash | Z.AI Developer Document",

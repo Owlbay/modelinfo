@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "旗舰图像生成模型，文字渲染有所改进，价格为每张图像 $0.015。"
+    }
+  },
   "sources": [
     {
       "title": "GLM-Image | Z.AI Developer Document",

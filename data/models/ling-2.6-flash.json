@@ -50,6 +50,11 @@
   "aliases": [
     "Ling-2.6-flash"
   ],
+  "translations": {
+    "zh": {
+      "description": "高性价比的 Ling 模型。"
+    }
+  },
   "sources": [
     {
       "title": "Pricing | Ant Ling Docs",

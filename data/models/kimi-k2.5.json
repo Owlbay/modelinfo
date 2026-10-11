@@ -42,6 +42,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "原生支持视觉和文本输入的多模态模型，支持思考与非思考模式，用于对话和智能体任务。官方已于 2026-08-31 停止服务。"
+    }
+  },
   "sources": [
     {
       "title": "Model List | Kimi API Platform",

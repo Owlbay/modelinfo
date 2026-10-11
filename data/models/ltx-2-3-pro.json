@@ -47,6 +47,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "更高质量的 LTX-2.3 变体，支持文生视频、图生视频、音频生视频、重拍和延长，最高 4K。"
+    }
+  },
   "sources": [
     {
       "title": "LTX-2.3 | LTX API Docs",

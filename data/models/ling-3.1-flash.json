@@ -42,6 +42,11 @@
   "aliases": [
     "Ling-3.1-flash"
   ],
+  "translations": {
+    "zh": {
+      "description": "混合推理模型，适用于长周期任务、办公、软件开发和智能体工作流；限时免费。"
+    }
+  },
   "sources": [
     {
       "title": "Ling | Ant Ling Docs",

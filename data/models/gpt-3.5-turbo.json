@@ -50,6 +50,11 @@
   "aliases": [
     "gpt-3.5-turbo-0125"
   ],
+  "translations": {
+    "zh": {
+      "description": "旧版 GPT 模型，用于成本更低的对话和非对话任务。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-3.5 Turbo Model | OpenAI API",

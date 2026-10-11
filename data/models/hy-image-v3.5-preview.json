@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "TokenHub 上的腾讯文生图和图生图模型。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 腾讯云 TokenHub",

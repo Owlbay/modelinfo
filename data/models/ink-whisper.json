@@ -40,6 +40,11 @@
   "aliases": [
     "ink-whisper-2025-06-04"
   ],
+  "translations": {
+    "zh": {
+      "description": "Cartesia 的实惠语音转文字模型，准确率高于基线 Whisper，延迟更低。"
+    }
+  },
   "sources": [
     {
       "title": "Older STT Models | Cartesia Docs",

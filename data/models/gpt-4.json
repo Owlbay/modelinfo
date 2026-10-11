@@ -52,6 +52,11 @@
     "gpt-4-0613",
     "gpt-4-0314"
   ],
+  "translations": {
+    "zh": {
+      "description": "较早的高智能 GPT 模型。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-4 Model | OpenAI API",

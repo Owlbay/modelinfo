@@ -47,6 +47,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "用于实时转写的低延迟语音转文字模型。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-Live-Transcribe Model | OpenAI API",

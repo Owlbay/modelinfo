@@ -62,6 +62,11 @@
   "aliases": [
     "gpt-5.6"
   ],
+  "translations": {
+    "zh": {
+      "description": "面向复杂专业工作的旗舰 GPT-5.6 模型。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-5.6 Sol Model | OpenAI API",

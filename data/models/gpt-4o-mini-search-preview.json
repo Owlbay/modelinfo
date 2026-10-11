@@ -49,6 +49,11 @@
   "aliases": [
     "gpt-4o-mini-search-preview-2025-03-11"
   ],
+  "translations": {
+    "zh": {
+      "description": "用于网络搜索的快速、实惠的小型模型。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-4o Mini Search Preview Model | OpenAI API",

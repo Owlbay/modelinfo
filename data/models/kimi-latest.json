@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "官方弃用模型列表中的 Kimi 最新模型别名。官方已于 2026-01-28 停止服务。"
+    }
+  },
   "sources": [
     {
       "title": "Model List | Kimi API Platform",

@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "快速、低成本的 LTX-2.3 变体，用于文生视频和图生视频，最高 4K。"
+    }
+  },
   "sources": [
     {
       "title": "LTX-2.3 | LTX API Docs",

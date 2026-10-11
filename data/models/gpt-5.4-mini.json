@@ -61,6 +61,11 @@
   "aliases": [
     "gpt-5.4-mini-2026-03-17"
   ],
+  "translations": {
+    "zh": {
+      "description": "更快、更高效的模型，适用于编码、计算机使用和子智能体。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-5.4 Mini Model | OpenAI API",

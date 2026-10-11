@@ -49,6 +49,11 @@
     "gpt-4o-mini-transcribe-2025-03-20",
     "gpt-4o-mini-transcribe-2025-12-15"
   ],
+  "translations": {
+    "zh": {
+      "description": "由 GPT-4o Mini 驱动的语音转文字模型。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-4o Mini Transcribe Model | OpenAI API",

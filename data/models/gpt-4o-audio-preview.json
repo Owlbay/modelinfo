@@ -46,6 +46,11 @@
     "gpt-4o-audio-preview-2024-12-17",
     "gpt-4o-audio-preview-2024-10-01"
   ],
+  "translations": {
+    "zh": {
+      "description": "支持音频输入和输出的 GPT-4o 模型。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-4o Audio Model | OpenAI API",

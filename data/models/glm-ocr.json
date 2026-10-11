@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "用于文档解析的轻量级 0.9B 参数 OCR 模型。"
+    }
+  },
   "sources": [
     {
       "title": "GLM-OCR | Z.AI Developer Document",

@@ -48,6 +48,11 @@
     "gpt-4-0125-preview",
     "gpt-4-1106-vision-preview"
   ],
+  "translations": {
+    "zh": {
+      "description": "较早的快速 GPT 模型。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-4 Turbo Preview Model | OpenAI API",

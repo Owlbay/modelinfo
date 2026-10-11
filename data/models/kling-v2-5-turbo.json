@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "创意能力强、性价比高的视频模型，5 秒或 10 秒片段，720P/1080P。"
+    }
+  },
   "sources": [
     {
       "title": "Video Capability Map | Kling AI API Documentation",

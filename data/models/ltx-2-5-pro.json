@@ -47,6 +47,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "更高保真的 LTX-2.5 变体，用于文生视频、图生视频和音频生视频，最高 4K，原生支持多镜头场景。"
+    }
+  },
   "sources": [
     {
       "title": "LTX-2.5 | LTX API Docs",

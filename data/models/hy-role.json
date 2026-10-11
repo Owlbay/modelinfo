@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "腾讯角色扮演模型，用于人设和场景演绎。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 腾讯云 TokenHub",

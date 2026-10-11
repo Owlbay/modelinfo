@@ -39,6 +39,11 @@
   "aliases": [
     "hunyuan-2.0-instruct-20251111"
   ],
+  "translations": {
+    "zh": {
+      "description": "Hunyuan-2.0-Instruct，已下线。官方下线信息：按旧版模型下线通知，服务自 2026-06-22 00:00（北京时间）起停止。"
+    }
+  },
   "sources": [
     {
       "title": "旧版本模型下线迁移公告 | 腾讯混元大模型",

@@ -41,6 +41,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "一体化多模态视频模型，支持语音驱动角色和原生音频（3 至 15 秒，720P/1080P/4K）；同一 ID 同时提供 Kling Image 3.0 Omni（1K/2K/4K，组图生成）。"
+    }
+  },
   "sources": [
     {
       "title": "Video Capability Map | Kling AI API Documentation",

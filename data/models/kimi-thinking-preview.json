@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "官方弃用模型列表中的 Kimi 思考预览模型。官方已于 2025-11-11 停止服务。"
+    }
+  },
   "sources": [
     {
       "title": "Model List | Kimi API Platform",

@@ -50,6 +50,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Kimi 专用编码模型，在长上下文智能体编码中指令遵循更可靠。"
+    }
+  },
   "sources": [
     {
       "title": "Model List | Kimi API Platform",

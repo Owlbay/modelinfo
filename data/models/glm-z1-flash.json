@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "面向轻量应用的免费推理模型。已按官方通知于 2025-11-15 停用。"
+    }
+  },
   "sources": [
     {
       "title": "GLM-Z1 | 智谱AI开放文档（存档，原网址 https://docs.bigmodel.cn/cn/guide/models/text/glm-z1）",

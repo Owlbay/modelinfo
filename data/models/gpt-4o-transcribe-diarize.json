@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "可识别谁在何时说话的转写模型。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-4o Transcribe Diarize Model | OpenAI API",

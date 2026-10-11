@@ -43,6 +43,11 @@
   "aliases": [
     "HCX-005"
   ],
+  "translations": {
+    "zh": {
+      "description": "可解读和理解图像并处理各类指令的多模态模型。"
+    }
+  },
   "sources": [
     {
       "title": "CLOVA Studio 모델 | NAVER Cloud 가이드",

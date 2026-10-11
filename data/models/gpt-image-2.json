@@ -50,6 +50,11 @@
   "aliases": [
     "gpt-image-2-2026-04-21"
   ],
+  "translations": {
+    "zh": {
+      "description": "最先进的图像生成模型，用于快速、高质量的图像生成和编辑。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-Image-2 Model | OpenAI API",

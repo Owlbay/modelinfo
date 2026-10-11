@@ -49,6 +49,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "用于自然、富有表现力的语音对话的旗舰模型，打断处理流畅。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-Live 1 Model | OpenAI API",

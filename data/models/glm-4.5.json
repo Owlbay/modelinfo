@@ -49,6 +49,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "面向智能体、编码和工具使用的推理模型，总参数 355B，激活参数 32B。"
+    }
+  },
   "sources": [
     {
       "title": "GLM-4.5 | Z.AI Developer Document",

@@ -60,6 +60,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "最高效的模型，适用于专注的高吞吐量任务。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-6 Luna Model | OpenAI API",

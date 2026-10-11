@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "多语言文本向量模型（677M 参数），带有任务专用适配器。"
+    }
+  },
   "sources": [
     {
       "title": "jina-embeddings-v5-text-small | Jina AI",

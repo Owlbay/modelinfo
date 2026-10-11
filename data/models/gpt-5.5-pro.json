@@ -56,6 +56,11 @@
   "aliases": [
     "gpt-5.5-pro-2026-04-23"
   ],
+  "translations": {
+    "zh": {
+      "description": "能给出更智能、更精确回答的 GPT-5.5 版本。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-5.5 Pro Model | OpenAI API",

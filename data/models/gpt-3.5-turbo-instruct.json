@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "仅兼容旧版 Completions 端点的较早模型。"
+    }
+  },
   "sources": [
     {
       "title": "gpt-3.5-turbo-instruct Model | OpenAI API",

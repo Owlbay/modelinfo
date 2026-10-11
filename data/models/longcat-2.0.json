@@ -43,6 +43,11 @@
   "aliases": [
     "LongCat-2.0"
   ],
+  "translations": {
+    "zh": {
+      "description": "美团 LongCat 万亿参数智能体模型，上下文 1M，原生支持工具调用和多步推理。"
+    }
+  },
   "sources": [
     {
       "title": "Quick Start / Models | LongCat API Docs",

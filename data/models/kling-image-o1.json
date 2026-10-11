@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "特征一致性高的图像模型，支持精确的细节编辑和风格迁移，输出 1K/2K。"
+    }
+  },
   "sources": [
     {
       "title": "Image Capability Map | Kling AI API Documentation",

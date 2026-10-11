@@ -54,6 +54,11 @@
     "grok-code-fast",
     "grok-code-fast-1-0825"
   ],
+  "translations": {
+    "zh": {
+      "description": "SpaceXAI 的智能编码模型，用于智能体软件、工程和工作流任务。"
+    }
+  },
   "sources": [
     {
       "title": "Grok Build 0.1 | xAI Docs",

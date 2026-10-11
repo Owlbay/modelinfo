@@ -55,6 +55,11 @@
   "aliases": [
     "gpt-5-pro-2025-10-06"
   ],
+  "translations": {
+    "zh": {
+      "description": "能给出更智能、更精确回答的 GPT-5 版本。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-5 Pro Model | OpenAI API",

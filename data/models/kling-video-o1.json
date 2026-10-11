@@ -46,6 +46,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "统一视频模型，支持一体化多模态指令和一致性，3 至 10 秒片段，720P/1080P。"
+    }
+  },
   "sources": [
     {
       "title": "Video Capability Map | Kling AI API Documentation",

@@ -59,6 +59,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "以更低成本在复杂工作上提供接近 Astra 的性能。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-6.1 Sol Model | OpenAI API",

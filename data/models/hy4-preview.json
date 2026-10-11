@@ -50,6 +50,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "腾讯 Hy4 预览模型，上下文 1M，支持深度思考，部署于 TokenHub。"
+    }
+  },
   "sources": [
     {
       "title": "混元调用指南 | 腾讯云 TokenHub",

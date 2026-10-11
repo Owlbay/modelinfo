@@ -44,6 +44,11 @@
   "aliases": [
     "magistral-medium-latest"
   ],
+  "translations": {
+    "zh": {
+      "description": "我们 2025 年 9 月更新的前沿级多模态推理模型。"
+    }
+  },
   "sources": [
     {
       "title": "Magistral Medium 1.2 | Mistral Docs",

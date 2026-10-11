@@ -61,6 +61,11 @@
   "aliases": [
     "gpt-5.2-2025-12-11"
   ],
+  "translations": {
+    "zh": {
+      "description": "上一代面向专业工作的旗舰模型，推理强度可配置。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-5.2 Model | OpenAI API",

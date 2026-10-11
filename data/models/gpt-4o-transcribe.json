@@ -46,6 +46,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "由 GPT-4o 驱动的语音转文字模型。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-4o Transcribe Model | OpenAI API",

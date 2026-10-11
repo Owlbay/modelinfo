@@ -50,6 +50,11 @@
     "jamba-large",
     "jamba-large-1.7-2025-07"
   ],
+  "translations": {
+    "zh": {
+      "description": "AI21 最强大的 Jamba 模型（398B 参数，94B 激活），上下文窗口 256K。"
+    }
+  },
   "sources": [
     {
       "title": "Jamba | AI21 Documentation",

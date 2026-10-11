@@ -39,6 +39,11 @@
   "aliases": [
     "ibm/granite-embedding-107m-multilingual"
   ],
+  "translations": {
+    "zh": {
+      "description": "watsonx.ai 上的 IBM 基础模型；已于 2025-11-12 撤下。"
+    }
+  },
   "sources": [
     {
       "title": "Foundation model lifecycle | IBM watsonx docs",

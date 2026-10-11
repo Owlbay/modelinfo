@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "声音克隆模型，可从 3 秒音频样本中学习说话人的音色。"
+    }
+  },
   "sources": [
     {
       "title": "GLM-TTS-Clone | 智谱 AI 开放文档",

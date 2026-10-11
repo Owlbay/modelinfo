@@ -43,6 +43,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "支持工具使用的推理模型，用于语音到语音的语音智能体工作流。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-Realtime-2.1 Model | OpenAI API",

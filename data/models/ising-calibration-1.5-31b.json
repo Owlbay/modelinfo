@@ -40,6 +40,11 @@
   "aliases": [
     "nvidia/ising-calibration-1.5-31b"
   ],
+  "translations": {
+    "zh": {
+      "description": "稠密多模态视觉语言模型，可分析量子计算校准实验图并生成结构化技术文本。"
+    }
+  },
   "sources": [
     {
       "title": "ising-calibration-1.5-31b Model Card | NVIDIA NIM",

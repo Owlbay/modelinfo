@@ -50,6 +50,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "ChatGPT 中使用的 GPT-5.1 模型。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-5.1 Chat Model | OpenAI API",

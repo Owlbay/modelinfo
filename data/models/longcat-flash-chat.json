@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "LongCat-Flash-Chat，已下线。官方通知：平台自 2026-05-29 起停止该模型的调用服务。上下文已于 2025-12-22 由 128K 提升至 256K。"
+    }
+  },
   "sources": [
     {
       "title": "更新日志 | LongCat API 开放平台",

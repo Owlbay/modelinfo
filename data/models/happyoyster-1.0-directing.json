@@ -38,6 +38,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "支持指令注入、可表演的实时世界模型。"
+    }
+  },
   "sources": [
     {
       "title": "Model Studio model pricing | Alibaba Cloud",

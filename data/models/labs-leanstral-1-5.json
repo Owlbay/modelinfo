@@ -41,6 +41,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "更新的 Lean 4 形式化证明工程模型，针对自动定理证明和自动形式化优化。总参数 119B，激活参数 6.5B。"
+    }
+  },
   "sources": [
     {
       "title": "Leanstral 1.5 | Mistral Docs",

@@ -48,6 +48,11 @@
   "aliases": [
     "ibm/granite-4-h-small"
   ],
+  "translations": {
+    "zh": {
+      "description": "watsonx.ai 上的 IBM Granite 4 H Small 基础模型。"
+    }
+  },
   "sources": [
     {
       "title": "Supported foundation models | IBM watsonx.ai docs",

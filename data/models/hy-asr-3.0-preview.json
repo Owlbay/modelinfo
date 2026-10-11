@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "腾讯语音识别预览版，支持普通话、英语和中文方言。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 腾讯云 TokenHub",

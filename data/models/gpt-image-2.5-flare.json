@@ -50,6 +50,11 @@
   "aliases": [
     "gpt-image-2.5-flare-2026-09-08"
   ],
+  "translations": {
+    "zh": {
+      "description": "快速、高质量的日常图像生成。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-Image-2.5 Flare Model | OpenAI API",

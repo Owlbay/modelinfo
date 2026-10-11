@@ -41,6 +41,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "具备跨模态推理能力的实时音视频通话模型，提供 Flash（9B）和 Air（32B）两个版本。"
+    }
+  },
   "sources": [
     {
       "title": "GLM-Realtime | 智谱 AI 开放文档",

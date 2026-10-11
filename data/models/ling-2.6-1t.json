@@ -50,6 +50,11 @@
   "aliases": [
     "Ling-2.6-1T"
   ],
+  "translations": {
+    "zh": {
+      "description": "旗舰长上下文模型，用于多步推理、智能体任务和编码。"
+    }
+  },
   "sources": [
     {
       "title": "Ling | Ant Ling Docs",

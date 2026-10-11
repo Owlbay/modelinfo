@@ -38,6 +38,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Kling 2.1 视频模型，已下线。官方通知：已于 2026-09-15 下线。"
+    }
+  },
   "sources": [
     {
       "title": "Kling 2.1 | 可灵 API 文档",

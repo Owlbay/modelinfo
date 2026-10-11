@@ -55,6 +55,11 @@
   "aliases": [
     "gpt-5-nano-2025-08-07"
   ],
+  "translations": {
+    "zh": {
+      "description": "GPT-5 中最快、成本效益最高的版本。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-5 Nano Model | OpenAI API",

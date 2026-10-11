@@ -50,6 +50,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "针对 Codex 中的智能体编码优化的 GPT-5.1 版本。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-5.1-Codex Model | OpenAI API",

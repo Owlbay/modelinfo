@@ -49,6 +49,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "面向长周期任务的旗舰基础模型，可自主工作长达 8 小时。"
+    }
+  },
   "sources": [
     {
       "title": "GLM-5.1 | Z.AI Developer Document",

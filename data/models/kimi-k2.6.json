@@ -50,6 +50,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Kimi 通用模型，长周期编码、指令遵循和智能体执行能力更强。"
+    }
+  },
   "sources": [
     {
       "title": "Model List | Kimi API Platform",

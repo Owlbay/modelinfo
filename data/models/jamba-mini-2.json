@@ -50,6 +50,11 @@
     "jamba-mini",
     "jamba-mini-2-2026-01"
   ],
+  "translations": {
+    "zh": {
+      "description": "AI21 的高效 Jamba 模型（52B 参数，12B 激活），在效率与可控性之间取得平衡，适用于核心企业工作流。"
+    }
+  },
   "sources": [
     {
       "title": "Jamba | AI21 Documentation",

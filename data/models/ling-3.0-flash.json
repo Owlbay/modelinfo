@@ -50,6 +50,11 @@
   "aliases": [
     "Ling-3.0-flash"
   ],
+  "translations": {
+    "zh": {
+      "description": "高性价比的混合推理模型，吞吐量高，适用于高频和批量任务。"
+    }
+  },
   "sources": [
     {
       "title": "Ling | Ant Ling Docs",

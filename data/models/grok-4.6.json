@@ -55,6 +55,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "SpaceXAI 的前沿模型，用于编码、智能体任务和知识工作。"
+    }
+  },
   "sources": [
     {
       "title": "Grok 4.6 | xAI Docs",

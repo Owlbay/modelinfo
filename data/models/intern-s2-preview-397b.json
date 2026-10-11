@@ -41,6 +41,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "上海人工智能实验室 397B 多模态预览模型；将于 2026-10-31 下线，由 intern-s2 取代。"
+    }
+  },
   "sources": [
     {
       "title": "获取模型列表 | InternLM API 文档",

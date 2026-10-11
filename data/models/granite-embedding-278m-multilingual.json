@@ -46,6 +46,11 @@
   "aliases": [
     "ibm/granite-embedding-278m-multilingual"
   ],
+  "translations": {
+    "zh": {
+      "description": "watsonx.ai 上的 IBM Granite 多语言向量模型（768 维）。"
+    }
+  },
   "sources": [
     {
       "title": "Supported encoder models | IBM watsonx.ai docs",

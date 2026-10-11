@@ -47,6 +47,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "用于实时多语言音频的流式语音到语音翻译模型。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-Realtime-Translate Model | OpenAI API",

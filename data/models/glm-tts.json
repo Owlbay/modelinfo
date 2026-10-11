@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "具备情感表达的语音合成模型，提供流式和非流式接口。"
+    }
+  },
   "sources": [
     {
       "title": "GLM-TTS | 智谱 AI 开放文档",

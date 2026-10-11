@@ -52,6 +52,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "GLM-5.3-Flash 的高速变体，约 200 tokens/s。"
+    }
+  },
   "sources": [
     {
       "title": "GLM-5.3-FlashX | Z.AI Developer Document",

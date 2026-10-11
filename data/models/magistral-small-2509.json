@@ -44,6 +44,11 @@
   "aliases": [
     "magistral-small-latest"
   ],
+  "translations": {
+    "zh": {
+      "description": "我们 2025 年 9 月更新的小型多模态推理模型。"
+    }
+  },
   "sources": [
     {
       "title": "Magistral Small 1.2 | Mistral Docs",

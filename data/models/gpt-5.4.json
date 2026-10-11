@@ -61,6 +61,11 @@
   "aliases": [
     "gpt-5.4-2026-03-05"
   ],
+  "translations": {
+    "zh": {
+      "description": "更实惠的模型，适用于编码和专业工作。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-5.4 Model | OpenAI API",

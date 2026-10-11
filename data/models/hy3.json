@@ -50,6 +50,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "腾讯 Hy3 295B-A21B MoE 模型，推理深度可切换，部署于 TokenHub。"
+    }
+  },
   "sources": [
     {
       "title": "混元调用指南 | 腾讯云 TokenHub",

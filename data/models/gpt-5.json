@@ -60,6 +60,11 @@
   "aliases": [
     "gpt-5-2025-08-07"
   ],
+  "translations": {
+    "zh": {
+      "description": "上一代智能推理模型，用于编码和智能体任务，推理强度可配置。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-5 Model | OpenAI API",

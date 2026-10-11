@@ -49,6 +49,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "面向长时间工程工作的旗舰基础模型，上下文 1M。"
+    }
+  },
   "sources": [
     {
       "title": "GLM-5.2 | Z.AI Developer Document",

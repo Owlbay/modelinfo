@@ -42,6 +42,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "一款实验性的专用小型模型，基于精心筛选的数据训练，面向创意写作、叙事生成、角色扮演和角色驱动的对话、通用指令遵循以及对话智能体。"
+    }
+  },
   "sources": [
     {
       "title": "Mistral Small Creative | Mistral Docs",

@@ -55,6 +55,11 @@
   "aliases": [
     "gpt-4.5-preview-2025-02-27"
   ],
+  "translations": {
+    "zh": {
+      "description": "已弃用的大型模型。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-4.5 Preview Model | OpenAI API",

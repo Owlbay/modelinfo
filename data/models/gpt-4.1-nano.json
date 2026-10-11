@@ -55,6 +55,11 @@
   "aliases": [
     "gpt-4.1-nano-2025-04-14"
   ],
+  "translations": {
+    "zh": {
+      "description": "GPT-4.1 中最快、成本效益最高的版本。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-4.1 nano Model | OpenAI API",

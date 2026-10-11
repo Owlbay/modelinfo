@@ -43,6 +43,11 @@
   "aliases": [
     "internvl3.5-latest"
   ],
+  "translations": {
+    "zh": {
+      "description": "图文理解能力强的多模态模型。"
+    }
+  },
   "sources": [
     {
       "title": "获取模型列表 | InternLM API 文档",

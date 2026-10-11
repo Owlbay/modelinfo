@@ -41,6 +41,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "视频模型，增强了原生音频、元素一致性和多镜头叙事（3 至 15 秒，720P/1080P/4K）；同一 ID 同时提供 Kling Image 3.0（1K/2K）。"
+    }
+  },
   "sources": [
     {
       "title": "Video Capability Map | Kling AI API Documentation",

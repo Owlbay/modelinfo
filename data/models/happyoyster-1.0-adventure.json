@@ -38,6 +38,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "实时交互式开放世界模型。"
+    }
+  },
   "sources": [
     {
       "title": "Model Studio model pricing | Alibaba Cloud",

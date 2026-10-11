@@ -51,6 +51,11 @@
   "aliases": [
     "gpt-image-1.5-2025-12-16"
   ],
+  "translations": {
+    "zh": {
+      "description": "上一代图像生成模型，指令遵循和提示词贴合度更好。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-Image-1.5 Model | OpenAI API",

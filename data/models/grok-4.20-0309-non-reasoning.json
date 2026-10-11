@@ -61,6 +61,11 @@
     "grok-4.20-beta-0309-non-reasoning",
     "grok-4.20-non-reasoning-gv2"
   ],
+  "translations": {
+    "zh": {
+      "description": "高性能非推理模型，侧重速度、智能体工具调用、低幻觉率和严格遵循提示词。"
+    }
+  },
   "sources": [
     {
       "title": "Grok 4.20 (Non-Reasoning) | xAI Docs",

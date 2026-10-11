@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "实验性实时器乐生成，通过流式 WebSocket 提供，支持加权提示词。"
+    }
+  },
   "sources": [
     {
       "title": "Lyria RealTime | Gemini API",

@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Ling-1T，已下线。官方下线时间：2026-06-15 00:00（UTC+8）。"
+    }
+  },
   "sources": [
     {
       "title": "Deprecation | Ant Ling API Docs",

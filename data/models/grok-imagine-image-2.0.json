@@ -48,6 +48,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "xAI 图像生成和编辑模型，价格为每张图像 $0.04。"
+    }
+  },
   "sources": [
     {
       "title": "Grok Imagine Image 2.0 | xAI Docs",

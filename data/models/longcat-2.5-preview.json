@@ -43,6 +43,11 @@
   "aliases": [
     "LongCat-2.5-Preview"
   ],
+  "translations": {
+    "zh": {
+      "description": "美团 LongCat 高性能智能体模型，支持图像理解，编码能力强。"
+    }
+  },
   "sources": [
     {
       "title": "Quick Start / Models | LongCat API Docs",

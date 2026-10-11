@@ -46,6 +46,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "多模态多语言向量模型（3.8B 参数），适用于文本、图像和视觉文档。"
+    }
+  },
   "sources": [
     {
       "title": "jina-embeddings-v4 | Jina AI",

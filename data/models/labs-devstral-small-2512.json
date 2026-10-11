@@ -45,6 +45,11 @@
   "aliases": [
     "devstral-small-latest"
   ],
+  "translations": {
+    "zh": {
+      "description": "我们的开源模型，擅长使用工具探索代码库、编辑多个文件，并驱动软件工程智能体。"
+    }
+  },
   "sources": [
     {
       "title": "Devstral Small 2 | Mistral Docs",

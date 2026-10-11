@@ -54,6 +54,11 @@
   "aliases": [
     "gpt-5.2-pro-2025-12-11"
   ],
+  "translations": {
+    "zh": {
+      "description": "上一代面向专业工作的 pro 模型，能给出更智能、更精确的回答。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-5.2 Pro Model | OpenAI API",

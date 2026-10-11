@@ -49,6 +49,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "改进了编码、多步推理和智能体执行能力。"
+    }
+  },
   "sources": [
     {
       "title": "GLM-4.7 | Z.AI Developer Document",

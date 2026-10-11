@@ -50,6 +50,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "GPT-5.1-Codex 的更小、更具成本效益但能力较弱的版本。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-5.1-Codex Mini Model | OpenAI API",

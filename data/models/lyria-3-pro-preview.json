@@ -46,6 +46,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "上一代音乐生成模型，用于完整歌曲。"
+    }
+  },
   "sources": [
     {
       "title": "Lyria 3 Pro Preview | Gemini API",

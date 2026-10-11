@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "部署在 StreamLake 万擎平台上的 KwaiKAT 编码模型，兼容 OpenAI 和 Claude 协议。"
+    }
+  },
   "sources": [
     {
       "title": "KwaiKAT开发工具接入指南 - 快手万擎",

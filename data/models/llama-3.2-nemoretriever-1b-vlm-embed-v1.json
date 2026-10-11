@@ -40,6 +40,11 @@
   "aliases": [
     "nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1"
   ],
+  "translations": {
+    "zh": {
+      "description": "多模态向量模型，针对图像、文本或图文混合文档的问答检索优化。"
+    }
+  },
   "sources": [
     {
       "title": "nvidia / llama-3.2-nemoretriever-1b-vlm-embed-v1 | NVIDIA NIM API Reference",

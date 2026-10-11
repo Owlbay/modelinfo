@@ -43,6 +43,11 @@
   "aliases": [
     "grok-voice-latest"
   ],
+  "translations": {
+    "zh": {
+      "description": "xAI 语音到语音模型，智能水平、转写准确率和对话能力均有提升。"
+    }
+  },
   "sources": [
     {
       "title": "grok-voice-think-fast-2.0 | xAI Docs",

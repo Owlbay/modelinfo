@@ -43,6 +43,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "语音到语音的实时语音模型，推理强度可配置，工具使用可靠。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-Realtime-2 Model | OpenAI API",

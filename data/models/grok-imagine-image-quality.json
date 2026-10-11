@@ -49,6 +49,11 @@
     "grok-imagine-image-quality-latest",
     "grok-imagine-image-pro"
   ],
+  "translations": {
+    "zh": {
+      "description": "xAI 图像生成和编辑模型，价格为每张图像 $0.05。"
+    }
+  },
   "sources": [
     {
       "title": "Grok Imagine Image Quality | xAI Docs",

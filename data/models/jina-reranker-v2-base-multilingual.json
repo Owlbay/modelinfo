@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "多语言交叉编码器重排模型（278M 参数）；模型页面标注为已弃用。"
+    }
+  },
   "sources": [
     {
       "title": "jina-reranker-v2-base-multilingual | Jina AI",

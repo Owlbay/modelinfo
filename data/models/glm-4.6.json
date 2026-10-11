@@ -49,6 +49,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "面向编码、长上下文任务、推理、搜索和智能体任务的文本模型，上下文 200K。"
+    }
+  },
   "sources": [
     {
       "title": "GLM-4.6 | Z.AI Developer Document",

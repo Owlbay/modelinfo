@@ -47,6 +47,11 @@
   "aliases": [
     "hunyuan-turbos-vision-video"
   ],
+  "translations": {
+    "zh": {
+      "description": "腾讯视频理解模型，用于视频描述和视频问答。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 腾讯云 TokenHub",

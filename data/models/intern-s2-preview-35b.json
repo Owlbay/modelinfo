@@ -43,6 +43,11 @@
   "aliases": [
     "intern-s2-preview"
   ],
+  "translations": {
+    "zh": {
+      "description": "上海人工智能实验室 Intern-S2 的 35B-A3B 多模态预览模型。"
+    }
+  },
   "sources": [
     {
       "title": "获取模型列表 | InternLM API 文档",

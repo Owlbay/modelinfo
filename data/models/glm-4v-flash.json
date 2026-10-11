@@ -47,6 +47,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "免费的图像理解模型，用于单图识别、问答和推理。"
+    }
+  },
   "sources": [
     {
       "title": "GLM-4V-Flash | 智谱 AI 开放文档",

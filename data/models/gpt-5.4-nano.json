@@ -61,6 +61,11 @@
   "aliases": [
     "gpt-5.4-nano-2026-03-17"
   ],
+  "translations": {
+    "zh": {
+      "description": "GPT-5.4 级别中最便宜的模型，适用于简单的高吞吐量任务。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-5.4 nano Model | OpenAI API",

@@ -46,6 +46,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "基于 Hunyuan 2B-Dense 基座的腾讯翻译专用模型。"
+    }
+  },
   "sources": [
     {
       "title": "产品概述 | 腾讯混元大模型",

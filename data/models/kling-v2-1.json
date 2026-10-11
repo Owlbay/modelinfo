@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "提示词遵循能力强的图像模型，输出 1K/2K。"
+    }
+  },
   "sources": [
     {
       "title": "Image Capability Map | Kling AI API Documentation",

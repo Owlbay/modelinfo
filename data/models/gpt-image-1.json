@@ -49,6 +49,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "上一代原生多模态图像生成模型。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-Image-1 Model | OpenAI API",

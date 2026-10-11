@@ -49,6 +49,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "面向智能体工程的基础模型，总参数 744B，激活参数 40B。"
+    }
+  },
   "sources": [
     {
       "title": "GLM-5 | Z.AI Developer Document",

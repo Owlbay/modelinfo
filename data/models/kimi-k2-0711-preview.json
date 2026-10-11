@@ -41,6 +41,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Kimi K2 MoE 基础模型，总参数 1T，激活参数 32B，擅长代码和智能体任务。官方已于 2026-05-25 停止服务。"
+    }
+  },
   "sources": [
     {
       "title": "Model List | Kimi API Platform",

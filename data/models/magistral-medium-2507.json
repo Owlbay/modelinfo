@@ -41,6 +41,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "我们于 2025 年 7 月发布的前沿级推理模型。"
+    }
+  },
   "sources": [
     {
       "title": "Magistral Medium 1.1 | Mistral Docs",

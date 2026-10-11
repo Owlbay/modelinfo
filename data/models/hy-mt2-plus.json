@@ -44,6 +44,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "指令遵循能力强的腾讯翻译模型。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 腾讯云 TokenHub",

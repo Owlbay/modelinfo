@@ -38,6 +38,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Ideogram 文生图，支持风格代码、风格预设、调色板和风格参考图。"
+    }
+  },
   "sources": [
     {
       "title": "Generate with Ideogram 3.0 | Ideogram API Docs",

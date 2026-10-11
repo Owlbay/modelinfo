@@ -44,6 +44,11 @@
   "aliases": [
     "gpt-4o-mini-audio-preview-2024-12-17"
   ],
+  "translations": {
+    "zh": {
+      "description": "支持音频输入和输出的较小模型。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-4o Mini Audio Model | OpenAI API",

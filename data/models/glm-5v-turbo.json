@@ -51,6 +51,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "面向视觉编程、长周期规划和智能体工作流的多模态编码基础模型。"
+    }
+  },
   "sources": [
     {
       "title": "GLM-5V-Turbo | 智谱 AI 开放文档",

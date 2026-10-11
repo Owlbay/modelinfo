@@ -45,6 +45,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "腾讯深度思考视觉模型，用于 VQA、OCR、图表和视觉定位。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 腾讯云 TokenHub",

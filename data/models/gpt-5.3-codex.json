@@ -55,6 +55,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "针对 Codex 或类似环境优化的智能体编码模型。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-5.3-Codex Model | OpenAI API",

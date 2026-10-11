@@ -46,6 +46,11 @@
     "gpt-4o-realtime-preview-2024-12-17",
     "gpt-4o-realtime-preview-2024-10-01"
   ],
+  "translations": {
+    "zh": {
+      "description": "支持实时文本和音频输入输出的模型。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-4o Realtime Model | OpenAI API",

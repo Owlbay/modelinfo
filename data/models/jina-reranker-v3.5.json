@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "列表式多语言重排模型（0.6B 参数），可直接替换升级 jina-reranker-v3。"
+    }
+  },
   "sources": [
     {
       "title": "jina-reranker-v3.5 | Jina AI",

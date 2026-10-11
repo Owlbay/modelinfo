@@ -54,6 +54,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Z.ai 旗舰文本模型，上下文 1M，编码能力更强，与 GLM-5.2 基于同一基座。"
+    }
+  },
   "sources": [
     {
       "title": "GLM-5.3 | Z.AI Developer Document",

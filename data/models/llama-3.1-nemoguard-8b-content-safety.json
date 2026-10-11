@@ -39,6 +39,11 @@
   "aliases": [
     "nvidia/llama-3.1-nemoguard-8b-content-safety"
   ],
+  "translations": {
+    "zh": {
+      "description": "内容安全模型，审核人类与 LLM 交互的内容，并将用户提示词和 LLM 回复分类为安全或不安全。"
+    }
+  },
   "sources": [
     {
       "title": "nvidia / llama-3.1-nemoguard-8b-content-safety | NVIDIA NIM API Reference",

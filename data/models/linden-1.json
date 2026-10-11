@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "驱动 Agent STT 的 Speechmatics 模型，为语音智能体返回带说话人归属的按轮次分段结果。"
+    }
+  },
   "sources": [
     {
       "title": "Models | Speechmatics Docs",

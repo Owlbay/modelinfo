@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "TokenHub 上的混元视频生成模型，支持文生视频和图生视频（固定 5 秒，720p）。"
+    }
+  },
   "sources": [
     {
       "title": "Video Generation Model Invocation Overview | Tencent Cloud",

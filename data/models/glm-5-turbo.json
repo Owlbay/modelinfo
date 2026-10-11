@@ -49,6 +49,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "针对长时间运行的智能体任务优化的基础模型，具备出色的工具调用和指令遵循能力。"
+    }
+  },
   "sources": [
     {
       "title": "GLM-5-Turbo | 智谱 AI 开放文档",

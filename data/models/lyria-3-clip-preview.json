@@ -46,6 +46,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "音乐生成模型，用于最长 30 秒的短片段、循环和预览。"
+    }
+  },
   "sources": [
     {
       "title": "Lyria 3 Clip Preview | Gemini API",

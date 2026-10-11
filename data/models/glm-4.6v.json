@@ -50,6 +50,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Z.ai 多模态模型，原生支持函数调用，上下文 128K，用于视觉理解和智能体。"
+    }
+  },
   "sources": [
     {
       "title": "GLM-4.6V | Z.AI Developer Document",

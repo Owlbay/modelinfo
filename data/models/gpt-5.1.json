@@ -60,6 +60,11 @@
   "aliases": [
     "gpt-5.1-2025-11-13"
   ],
+  "translations": {
+    "zh": {
+      "description": "适用于编码和智能体任务的最佳模型，推理强度可配置。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-5.1 Model | OpenAI API",

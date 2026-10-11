@@ -51,6 +51,11 @@
     "grok-imagine-video-1.5-preview",
     "grok-imagine-video-1.5-2026-05-30"
   ],
+  "translations": {
+    "zh": {
+      "description": "xAI 视频生成模型，价格为每秒输出 $0.08。"
+    }
+  },
   "sources": [
     {
       "title": "Grok Imagine Video 1.5 | xAI Docs",

@@ -39,6 +39,11 @@
   "aliases": [
     "ibm/granite-3-3-8b-instruct"
   ],
+  "translations": {
+    "zh": {
+      "description": "watsonx.ai 上的 IBM 基础模型；已于 2026-02-22 撤下。"
+    }
+  },
   "sources": [
     {
       "title": "Foundation model lifecycle | IBM watsonx docs",

@@ -42,6 +42,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "用于 Chat Completions 的音频输入、音频输出语音模型。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-Audio-1.5 Model | OpenAI API",

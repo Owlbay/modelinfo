@@ -55,6 +55,11 @@
   "aliases": [
     "gpt-4o-mini-2024-07-18"
   ],
+  "translations": {
+    "zh": {
+      "description": "快速、实惠的小型模型，适用于专注的任务。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-4o Mini Model | OpenAI API",

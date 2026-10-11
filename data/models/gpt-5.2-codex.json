@@ -55,6 +55,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "我们最智能的编码模型，针对长周期智能体编码任务优化。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-5.2-Codex Model | OpenAI API",

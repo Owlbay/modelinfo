@@ -39,6 +39,11 @@
   "aliases": [
     "aisingapore/Llama-SEA-LION-v3.5-70B-R"
   ],
+  "translations": {
+    "zh": {
+      "description": "基于 Llama 3.1 的东南亚语言混合推理模型；默认开启推理，可关闭。"
+    }
+  },
   "sources": [
     {
       "title": "Inferencing API | SEA-LION Docs",

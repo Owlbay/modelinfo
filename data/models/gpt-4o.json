@@ -57,6 +57,11 @@
     "gpt-4o-2024-11-20",
     "gpt-4o-2024-05-13"
   ],
+  "translations": {
+    "zh": {
+      "description": "快速、智能、灵活的 GPT 模型。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-4o Model | OpenAI API",

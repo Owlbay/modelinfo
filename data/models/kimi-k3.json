@@ -55,6 +55,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Kimi 旗舰 2.8 万亿参数模型，原生支持视觉理解，用于软件工程、知识工作和深度推理。"
+    }
+  },
   "sources": [
     {
       "title": "Model List | Kimi API Platform",

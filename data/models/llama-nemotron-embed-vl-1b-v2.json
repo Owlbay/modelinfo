@@ -40,6 +40,11 @@
   "aliases": [
     "nvidia/llama-nemotron-embed-vl-1b-v2"
   ],
+  "translations": {
+    "zh": {
+      "description": "多模态问答检索模型，将用户查询表示为文本，将文档表示为图像。"
+    }
+  },
   "sources": [
     {
       "title": "llama-nemotron-embed-vl-1b-v2 Model Card | NVIDIA NIM",

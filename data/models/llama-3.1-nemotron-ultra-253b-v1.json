@@ -39,6 +39,11 @@
   "aliases": [
     "nvidia/llama-3.1-nemotron-ultra-253b-v1"
   ],
+  "translations": {
+    "zh": {
+      "description": "由 Meta Llama-3.1-405B-Instruct 衍生的推理模型，经后训练以提升推理、对话偏好、RAG 和工具调用能力。"
+    }
+  },
   "sources": [
     {
       "title": "nvidia / llama-3.1-nemotron-ultra-253b-v1 | NVIDIA NIM API Reference",

@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "多语言多模态向量模型，将文本和图像映射到共享向量空间。"
+    }
+  },
   "sources": [
     {
       "title": "jina-clip-v2 | Jina AI",

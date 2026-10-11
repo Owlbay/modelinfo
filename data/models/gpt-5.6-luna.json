@@ -60,6 +60,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "针对成本敏感工作负载优化的 GPT-5.6 模型。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-5.6 Luna Model | OpenAI API",

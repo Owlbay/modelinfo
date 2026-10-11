@@ -57,6 +57,11 @@
     "grok-4.20-multi-agent-experimental-beta-latest",
     "grok-4.20-multi-agent-beta-0309"
   ],
+  "translations": {
+    "zh": {
+      "description": "多个智能体并行协作，执行深度研究任务。"
+    }
+  },
   "sources": [
     {
       "title": "Grok 4.20 Multi-Agent | xAI Docs",

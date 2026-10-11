@@ -53,6 +53,11 @@
   "aliases": [
     "gpt-4-turbo-2024-04-09"
   ],
+  "translations": {
+    "zh": {
+      "description": "较早的高智能 GPT 模型。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-4 Turbo Model | OpenAI API",

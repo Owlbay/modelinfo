@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Ideogram 图像生成，支持自然语言或结构化 JSON 提示词，渲染速度可选。"
+    }
+  },
   "sources": [
     {
       "title": "Generate with Ideogram 4.0 | Ideogram API Docs",

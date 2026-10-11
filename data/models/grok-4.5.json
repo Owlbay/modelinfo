@@ -58,6 +58,11 @@
     "grok-4.5-latest",
     "grok-build-latest"
   ],
+  "translations": {
+    "zh": {
+      "description": "SpaceXAI 的智能编码模型，用于智能体软件、工程和工作流任务。"
+    }
+  },
   "sources": [
     {
       "title": "Grok 4.5 | xAI Docs",

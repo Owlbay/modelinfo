@@ -68,6 +68,11 @@
     "grok-4.20-experimental-beta-latest",
     "grok-4.20-reasoning-gv2"
   ],
+  "translations": {
+    "zh": {
+      "description": "高性能模型，具备业界领先的速度和智能体工具调用能力。"
+    }
+  },
   "sources": [
     {
       "title": "Grok 4.20 (Reasoning) | xAI Docs",

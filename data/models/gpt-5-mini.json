@@ -55,6 +55,11 @@
   "aliases": [
     "gpt-5-mini-2025-08-07"
   ],
+  "translations": {
+    "zh": {
+      "description": "智能水平强，适用于成本敏感、低延迟、高吞吐量的工作负载。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-5 Mini Model | OpenAI API",

@@ -44,6 +44,11 @@
   "aliases": [
     "intern-latest"
   ],
+  "translations": {
+    "zh": {
+      "description": "上海人工智能实验室 397B 多模态科学推理模型；默认开启思考模式。"
+    }
+  },
   "sources": [
     {
       "title": "获取模型列表 | InternLM API 文档",

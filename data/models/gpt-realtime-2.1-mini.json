@@ -43,6 +43,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "蒸馏推理模型，用于更快、成本更低的实时语音交互，支持工具使用。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-Realtime-2.1 Mini Model | OpenAI API",

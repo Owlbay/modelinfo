@@ -47,6 +47,11 @@
   "aliases": [
     "MAI-Image-2.5-Flash"
   ],
+  "translations": {
+    "zh": {
+      "description": "Microsoft AI 文生图和图像编辑模型；MAI-Image-2.5 的更快、更低成本变体。"
+    }
+  },
   "sources": [
     {
       "title": "Deploy and use MAI image models in Microsoft Foundry | Microsoft Learn",

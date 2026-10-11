@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "列表式多语言重排模型（597M 参数），在一个上下文窗口内将查询与候选文档进行排序。"
+    }
+  },
   "sources": [
     {
       "title": "jina-reranker-v3 | Jina AI",

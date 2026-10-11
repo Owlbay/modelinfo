@@ -61,6 +61,11 @@
   "aliases": [
     "gpt-5.5-2026-04-23"
   ],
+  "translations": {
+    "zh": {
+      "description": "面向编码和专业工作的新一类智能。"
+    }
+  },
   "sources": [
     {
       "title": "GPT-5.5 Model | OpenAI API",

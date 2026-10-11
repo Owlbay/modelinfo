@@ -49,6 +49,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Kimi K2.7 Code 的高速变体，输出约 180 tokens/s。"
+    }
+  },
   "sources": [
     {
       "title": "Model List | Kimi API Platform",

@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "图生视频，质量和一致性更好。"
+    }
+  },
   "sources": [
     {
       "title": "Model Studio model pricing | Alibaba Cloud",
