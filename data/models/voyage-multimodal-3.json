@@ -38,6 +38,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "上一代 Voyage 多模态向量模型，用于交错的文本和图像。"
+    }
+  },
   "sources": [
     {
       "title": "Multimodal Embeddings | Voyage AI Docs",

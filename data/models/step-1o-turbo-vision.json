@@ -46,6 +46,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "用于图像和视频理解的视觉模型。"
+    }
+  },
   "sources": [
     {
       "title": "Step Platform pricing | StepFun Documentation",

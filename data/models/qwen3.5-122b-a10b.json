@@ -51,6 +51,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "开放权重的原生视觉语言 MoE 模型（总参数 122B，激活参数 10B）。"
+    }
+  },
   "sources": [
     {
       "title": "Text generation models | Alibaba Cloud Model Studio",

@@ -55,6 +55,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "稀疏 MoE 多模态推理模型（总参数 198B，激活参数 11B），支持图像和视频理解。"
+    }
+  },
   "sources": [
     {
       "title": "Step Platform pricing | StepFun Documentation",

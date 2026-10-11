@@ -51,6 +51,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "开放权重的原生视觉语言稠密模型。"
+    }
+  },
   "sources": [
     {
       "title": "Text generation models | Alibaba Cloud Model Studio",

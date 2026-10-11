@@ -57,6 +57,11 @@
     "qwen3.8-max-0902",
     "qwen3.8-max-2026-09-02"
   ],
+  "translations": {
+    "zh": {
+      "description": "阿里巴巴 2.4 万亿参数的 MoE 旗舰（激活参数 95B），面向编程和办公效率。"
+    }
+  },
   "sources": [
     {
       "title": "qwen3.8-max | Alibaba Cloud Model Studio",

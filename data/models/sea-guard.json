@@ -39,6 +39,11 @@
   "aliases": [
     "aisingapore/SEA-Guard"
   ],
+  "translations": {
+    "zh": {
+      "description": "面向东南亚语言的安全模型，返回安全 / 不安全的二元分类；不支持系统提示词或多轮对话。"
+    }
+  },
   "sources": [
     {
       "title": "Inferencing API | SEA-LION Docs",

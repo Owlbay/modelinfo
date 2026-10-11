@@ -47,6 +47,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "较早的向量模型。"
+    }
+  },
   "sources": [
     {
       "title": "text-embedding-ada-002 Model | OpenAI API",

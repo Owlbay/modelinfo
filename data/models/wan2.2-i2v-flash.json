@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Wan2.2 Flash 图生视频模型，根据首帧图像和文本提示生成 5 秒视频。"
+    }
+  },
   "sources": [
     {
       "title": "Wan - image-to-video - first frame API reference (2.1-2.6) | Alibaba Cloud Model Studio",

@@ -47,6 +47,11 @@
   "aliases": [
     "sd3-medium"
   ],
+  "translations": {
+    "zh": {
+      "description": "拥有 25 亿参数的 Stable Diffusion 3.5 基础模型，在提示词准确性与图像质量之间取得平衡。"
+    }
+  },
   "sources": [
     {
       "title": "API Reference | Stability AI Developer Platform",

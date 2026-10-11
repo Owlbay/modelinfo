@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "阶跃星辰最大的语音识别模型，基于大语言模型构建，支持上下文感知转写。"
+    }
+  },
   "sources": [
     {
       "title": "Pricing and Rate Limits | StepFun Documentation",

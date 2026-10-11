@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "上一代 Voyage 向量模型，针对延迟和成本进行了优化。"
+    }
+  },
   "sources": [
     {
       "title": "Text Embeddings | Voyage AI Docs",

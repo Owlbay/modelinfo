@@ -56,6 +56,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "面向智能体工作的旗舰多模态推理模型，上下文 1M tokens。"
+    }
+  },
   "sources": [
     {
       "title": "Step Platform pricing | StepFun Documentation",

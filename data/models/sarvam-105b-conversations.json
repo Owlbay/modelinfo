@@ -46,6 +46,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Sarvam-105B 的对话变体，针对实时对话和语音智能体进行了后训练。"
+    }
+  },
   "sources": [
     {
       "title": "Sarvam-105B | Sarvam Docs",

@@ -48,6 +48,11 @@
     "tts-rt-v1",
     "tts-rt-v1-preview"
   ],
+  "translations": {
+    "zh": {
+      "description": "Soniox 实时文字转语音模型，支持 60 多种语言的自然语音、音频标签情感控制和声音克隆。"
+    }
+  },
   "sources": [
     {
       "title": "Models | Soniox Docs (Text-to-Speech)",

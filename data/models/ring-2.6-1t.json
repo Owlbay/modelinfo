@@ -53,6 +53,11 @@
   "aliases": [
     "Ring-2.6-1T"
   ],
+  "translations": {
+    "zh": {
+      "description": "万亿参数思考模型，专为智能体工作流、工具使用和长时间运行任务打造。"
+    }
+  },
   "sources": [
     {
       "title": "Ring | Ant Ling Docs",

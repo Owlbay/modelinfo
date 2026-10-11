@@ -40,6 +40,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "视频生成（文本、参考，1-10 秒片段）和图像生成模型（文生图、参考生图、编辑）。"
+    }
+  },
   "sources": [
     {
       "title": "Model Map | Vidu API",

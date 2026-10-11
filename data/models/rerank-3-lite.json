@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Voyage 低延迟、高性价比的重排模型。"
+    }
+  },
   "sources": [
     {
       "title": "Rerankers | Voyage AI Docs",

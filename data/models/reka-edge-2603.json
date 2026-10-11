@@ -50,6 +50,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Reka 的紧凑型多模态模型，接受文本、图像和视频输入。"
+    }
+  },
   "sources": [
     {
       "title": "Models | Reka API Docs",

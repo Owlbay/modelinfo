@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Vidu Q3 系列中面向漫剧行业的视频生成模型。"
+    }
+  },
   "sources": [
     {
       "title": "Model Map | Vidu API",

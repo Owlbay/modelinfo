@@ -39,6 +39,11 @@
   "aliases": [
     "aisingapore/SEA-LION-ModernBERT-Embedding-600M"
   ],
+  "translations": {
+    "zh": {
+      "description": "基于 ModernBERT、面向东南亚语言的向量模型（1024 维向量）。"
+    }
+  },
   "sources": [
     {
       "title": "Inferencing API | SEA-LION Docs",

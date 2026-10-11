@@ -46,6 +46,11 @@
   "aliases": [
     "saaras:v3"
   ],
+  "translations": {
+    "zh": {
+      "description": "语音转文字模型，支持 22 种印度语言和印度英语，提供 transcribe、translate、verbatim、translit 和 codemix 模式。"
+    }
+  },
   "sources": [
     {
       "title": "Saaras | Sarvam Docs",

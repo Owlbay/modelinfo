@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Voyage 通用重排模型，侧重质量，支持指令遵循和多语言。"
+    }
+  },
   "sources": [
     {
       "title": "Rerankers | Voyage AI Docs",

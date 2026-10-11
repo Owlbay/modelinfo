@@ -39,6 +39,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Voyage 多模态向量模型，可对交错的文本、图像和视频进行向量化。"
+    }
+  },
   "sources": [
     {
       "title": "Multimodal Embeddings | Voyage AI Docs",

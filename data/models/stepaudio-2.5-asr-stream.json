@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "StepAudio 2.5 ASR 的流式变体，通过双向 WebSocket 提供，带服务端 VAD 和逐词时间信息。"
+    }
+  },
   "sources": [
     {
       "title": "Pricing and Rate Limits | StepFun Documentation",

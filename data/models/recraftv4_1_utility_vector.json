@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "返回可编辑 SVG 矢量图像的 Recraft V4.1 Utility 变体。"
+    }
+  },
   "sources": [
     {
       "title": "Recraft V4.1 | Recraft API Docs",

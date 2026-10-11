@@ -52,6 +52,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "全模态模型，用于音视频理解和内容分析，输出文本。"
+    }
+  },
   "sources": [
     {
       "title": "qwen3.8-omni-flash | Alibaba Cloud Model Studio",

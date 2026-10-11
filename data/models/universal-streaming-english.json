@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "AssemblyAI 英语流式语音转文字模型，在速度与成本之间取得平衡。"
+    }
+  },
   "sources": [
     {
       "title": "Model selection | AssemblyAI Docs",

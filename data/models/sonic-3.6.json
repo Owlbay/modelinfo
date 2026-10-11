@@ -39,6 +39,11 @@
   "aliases": [
     "sonic-3.6-2026-08-27"
   ],
+  "translations": {
+    "zh": {
+      "description": "Cartesia 最快、最自然的文字转语音模型，原生支持 44 种语言。"
+    }
+  },
   "sources": [
     {
       "title": "Sonic 3.6 | Cartesia Docs",

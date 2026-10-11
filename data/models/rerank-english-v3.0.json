@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "面向英文文档和 JSON 的重排模型。"
+    }
+  },
   "sources": [
     {
       "title": "Rerank English v3.0 | Cohere Docs",

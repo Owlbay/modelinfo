@@ -38,6 +38,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "图像编辑模型，可根据图片和文字描述修改并增强图像。官方图像模型下线通知中列为已不再可用。"
+    }
+  },
   "sources": [
     {
       "title": "Image Model Retirement Notice | StepFun Documentation",

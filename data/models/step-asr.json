@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "中英文语音识别，支持实时和离线识别。"
+    }
+  },
   "sources": [
     {
       "title": "Pricing and Rate Limits | StepFun Documentation",

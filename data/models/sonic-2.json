@@ -41,6 +41,11 @@
     "sonic-2-2025-05-08",
     "sonic-2-2025-04-16"
   ],
+  "translations": {
+    "zh": {
+      "description": "Cartesia 文字转语音模型，支持 8 种语言；2026-10-20 之后停止工作，请迁移至 Sonic 3.6。"
+    }
+  },
   "sources": [
     {
       "title": "Older Models | Cartesia Docs",

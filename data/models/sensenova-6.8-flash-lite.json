@@ -48,6 +48,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "轻量多模态智能体模型，面向复杂的真实世界任务（早期预览）。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表与计费 | SenseAudio 文档",

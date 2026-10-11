@@ -52,6 +52,11 @@
   "aliases": [
     "voxtral-small-latest"
   ],
+  "translations": {
+    "zh": {
+      "description": "Mistral 首个具备音频输入能力的模型，用于指令场景。"
+    }
+  },
   "sources": [
     {
       "title": "Voxtral Small | Mistral Docs",

@@ -49,6 +49,11 @@
     "sora-2-2025-12-08",
     "sora-2-2025-10-06"
   ],
+  "translations": {
+    "zh": {
+      "description": "旗舰视频生成，音画同步"
+    }
+  },
   "sources": [
     {
       "title": "Sora 2 Model | OpenAI API",

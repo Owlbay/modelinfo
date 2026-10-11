@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "针对临床音频微调的 Scribe v2；仅支持批量。"
+    }
+  },
   "sources": [
     {
       "title": "Models | ElevenLabs Documentation",

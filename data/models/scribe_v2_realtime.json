@@ -47,6 +47,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "实时语音转文字，部分转写结果的延迟约 150ms。"
+    }
+  },
   "sources": [
     {
       "title": "Models | ElevenLabs Documentation",

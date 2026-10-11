@@ -38,6 +38,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "根据文字描述、歌词、人声或参考音频生成音乐；限时免费。"
+    }
+  },
   "sources": [
     {
       "title": "Pricing and Rate Limits | StepFun Documentation",

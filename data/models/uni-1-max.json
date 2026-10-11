@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "质量更高的 Luma 图像模型，参数与 uni-1 相同，用于图像生成和编辑。"
+    }
+  },
   "sources": [
     {
       "title": "Models | Luma Agents API Docs",

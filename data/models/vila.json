@@ -41,6 +41,11 @@
   "aliases": [
     "nvidia/vila"
   ],
+  "translations": {
+    "zh": {
+      "description": "视觉语言模型，可对来自物理或虚拟世界的图像和视频进行查询与摘要。"
+    }
+  },
   "sources": [
     {
       "title": "nvidia / vila | NVIDIA NIM API Reference",

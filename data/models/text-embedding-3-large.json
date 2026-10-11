@@ -47,6 +47,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "能力最强的向量模型，适用于英文和非英文任务。"
+    }
+  },
   "sources": [
     {
       "title": "text-embedding-3-large Model | OpenAI API",

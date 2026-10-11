@@ -46,6 +46,11 @@
   "aliases": [
     "stt-rt-v4"
   ],
+  "translations": {
+    "zh": {
+      "description": "Soniox 实时语音转文字与翻译模型，面向实时音频，支持 60 多种语言。"
+    }
+  },
   "sources": [
     {
       "title": "Models | Soniox Docs",

@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "AssemblyAI 准确率最高的预录制语音转文字模型，支持 18 种语言、原生语码转换和上下文提示。"
+    }
+  },
   "sources": [
     {
       "title": "Model selection | AssemblyAI Docs",

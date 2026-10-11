@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "升级版 Wan2.2 文生视频，支持电影级镜头控制。"
+    }
+  },
   "sources": [
     {
       "title": "Model Studio model pricing | Alibaba Cloud",

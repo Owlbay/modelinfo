@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "根据歌词或提示词生成完整歌曲。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表与计费 | SenseAudio 文档",

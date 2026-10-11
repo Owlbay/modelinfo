@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "上一代上下文化分块向量模型，针对通用和多语言检索质量进行了优化。"
+    }
+  },
   "sources": [
     {
       "title": "Contextualized Chunk Embeddings | Voyage AI Docs",

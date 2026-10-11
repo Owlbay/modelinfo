@@ -39,6 +39,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "混合推理模型，增强了泰语能力。"
+    }
+  },
   "sources": [
     {
       "title": "Models | Typhoon Docs",

@@ -38,6 +38,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "支持音视频同步和镜头切换的视频生成模型，1-16 秒片段。"
+    }
+  },
   "sources": [
     {
       "title": "Model Map | Vidu API",

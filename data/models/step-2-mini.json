@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "基于自研 MFA 注意力架构的快速语言模型，擅长通用任务和代码。根据官方生命周期页面，已于 2026-07-08 下线。"
+    }
+  },
   "sources": [
     {
       "title": "Model Lifecycle & Deprecations | StepFun Documentation",

@@ -39,6 +39,11 @@
   "aliases": [
     "sonic-turbo-2025-06-04"
   ],
+  "translations": {
+    "zh": {
+      "description": "Cartesia 低延迟文字转语音模型，支持 9 种语言；2026-10-20 之后停止工作，请迁移至 Sonic 3.6。"
+    }
+  },
   "sources": [
     {
       "title": "Older Models | Cartesia Docs",

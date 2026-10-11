@@ -52,6 +52,11 @@
   "aliases": [
     "qwen3.7-max-2026-05-20"
   ],
+  "translations": {
+    "zh": {
+      "description": "Qwen3.7 系列中最大、能力最强的模型，是面向智能体、编程和办公任务的旗舰。"
+    }
+  },
   "sources": [
     {
       "title": "qwen3.7-max | Alibaba Cloud Model Studio",

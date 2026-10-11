@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Stability 音频模型，支持文本生成音频、音频生成音频和音频局部重绘，最长输出 3 分钟、44.1 kHz 立体声。"
+    }
+  },
   "sources": [
     {
       "title": "API Reference | Stability AI Developer Platform",

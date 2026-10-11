@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "3.35B 指令微调多语言模型，在各语言和地区之间取得最佳平衡。"
+    }
+  },
   "sources": [
     {
       "title": "Tiny Aya Global | Cohere Docs",

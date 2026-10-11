@@ -46,6 +46,11 @@
   "aliases": [
     "voxtral-mini-realtime-latest"
   ],
+  "translations": {
+    "zh": {
+      "description": "高效的音频输入模型，仅针对实时转写进行了优化。"
+    }
+  },
   "sources": [
     {
       "title": "Voxtral Mini Transcribe Realtime | Mistral Docs",

@@ -40,6 +40,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "同声传译：实时识别、翻译并语音输出。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表与计费 | SenseAudio 文档",

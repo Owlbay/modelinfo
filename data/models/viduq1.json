@@ -40,6 +40,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "视频生成（5 秒 1080p 片段）和参考生图模型。"
+    }
+  },
   "sources": [
     {
       "title": "Model Map | Vidu API",

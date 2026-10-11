@@ -58,6 +58,11 @@
   "aliases": [
     "solar-pro4-260806"
   ],
+  "translations": {
+    "zh": {
+      "description": "Upstage 旗舰 Solar 模型，专为智能体使用打造，支持推理、工具调用和结构化输出。"
+    }
+  },
   "sources": [
     {
       "title": "Solar Pro 4 | Upstage Docs",

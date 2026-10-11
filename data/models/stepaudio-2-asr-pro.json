@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "专业 32B 参数语音识别模型。"
+    }
+  },
   "sources": [
     {
       "title": "Pricing and Rate Limits | StepFun Documentation",

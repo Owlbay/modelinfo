@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "专注于南亚语言的 3.35B 模型。"
+    }
+  },
   "sources": [
     {
       "title": "Tiny Aya Fire | Cohere Docs",

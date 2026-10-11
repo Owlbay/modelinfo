@@ -46,6 +46,11 @@
   "aliases": [
     "voxtral-mini-tts-latest"
   ],
+  "translations": {
+    "zh": {
+      "description": "文字转语音模型，支持零样本声音克隆和 9 种语言，流式输出的首个音频延迟约 90ms。"
+    }
+  },
   "sources": [
     {
       "title": "Voxtral TTS | Mistral Docs",

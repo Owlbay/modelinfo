@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "批量语音转文字，支持词级时间戳、说话人分离和关键词提示。"
+    }
+  },
   "sources": [
     {
       "title": "Models | ElevenLabs Documentation",

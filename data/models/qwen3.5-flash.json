@@ -54,6 +54,11 @@
   "aliases": [
     "qwen3.5-flash-2026-02-23"
   ],
+  "translations": {
+    "zh": {
+      "description": "原生视觉语言 Flash 模型，采用混合线性注意力与稀疏 MoE，响应快速。"
+    }
+  },
   "sources": [
     {
       "title": "qwen3.5-flash | Alibaba Cloud Model Studio",

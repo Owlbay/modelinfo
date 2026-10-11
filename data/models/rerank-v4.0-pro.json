@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "面向英文及非英文文档和 JSON 的多语言重排模型，在复杂场景下质量最佳。"
+    }
+  },
   "sources": [
     {
       "title": "Rerank v4.0 Pro | Cohere Docs",

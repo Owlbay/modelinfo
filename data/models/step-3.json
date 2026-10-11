@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "具备强大视觉感知和复杂推理能力的推理模型。根据官方生命周期页面，已于 2026-07-08 下线。"
+    }
+  },
   "sources": [
     {
       "title": "Model Lifecycle & Deprecations | StepFun Documentation",

@@ -48,6 +48,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "端到端音频模型，用于声音理解和自然交互，原生支持工具调用和联网搜索。"
+    }
+  },
   "sources": [
     {
       "title": "Pricing and Rate Limits | StepFun Documentation",

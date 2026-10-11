@@ -46,6 +46,11 @@
   "aliases": [
     "sarvam-translate:v1"
   ],
+  "translations": {
+    "zh": {
+      "description": "文本翻译模型，覆盖 22 种印度语言和英语，采用正式文体，每次请求最多 2,000 个字符。"
+    }
+  },
   "sources": [
     {
       "title": "Sarvam-Translate | Sarvam Docs",

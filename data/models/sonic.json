@@ -40,6 +40,11 @@
     "sonic-2024-12-12",
     "sonic-2024-10-19"
   ],
+  "translations": {
+    "zh": {
+      "description": "第一代 Cartesia 文字转语音模型；已停止服务。"
+    }
+  },
   "sources": [
     {
       "title": "Older Models | Cartesia Docs",

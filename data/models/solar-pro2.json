@@ -51,6 +51,11 @@
     "solar-pro2-250909",
     "solar-pro2-250710"
   ],
+  "translations": {
+    "zh": {
+      "description": "高性能 Solar 模型（31B 参数），同时支持聊天和推理模式；将于 2026-10-30（KST）完全弃用，请迁移至 Solar Pro 4。"
+    }
+  },
   "sources": [
     {
       "title": "Solar Pro 2 | Upstage Docs",

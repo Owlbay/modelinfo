@@ -39,6 +39,11 @@
   "aliases": [
     "nvidia/riva-translate-4b-instruct-v2"
   ],
+  "translations": {
+    "zh": {
+      "description": "支持 37 种语言的翻译模型，具备少样本示例提示能力。"
+    }
+  },
   "sources": [
     {
       "title": "riva-translate-4b-instruct-v2 Model Card | NVIDIA NIM",

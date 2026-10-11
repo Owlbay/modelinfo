@@ -48,6 +48,11 @@
   "aliases": [
     "sora-2-pro-2025-10-06"
   ],
+  "translations": {
+    "zh": {
+      "description": "最先进的音画同步视频生成"
+    }
+  },
   "sources": [
     {
       "title": "Sora 2 Pro Model | OpenAI API",

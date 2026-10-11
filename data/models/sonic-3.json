@@ -40,6 +40,11 @@
     "sonic-3-2026-01-12",
     "sonic-3-2025-10-27"
   ],
+  "translations": {
+    "zh": {
+      "description": "Cartesia 文字转语音模型，支持 42 种语言；已被 Sonic 3.6 取代。"
+    }
+  },
   "sources": [
     {
       "title": "Older Models | Cartesia Docs",

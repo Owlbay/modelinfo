@@ -39,6 +39,11 @@
   "aliases": [
     "syn-pro-251021"
   ],
+  "translations": {
+    "zh": {
+      "description": "由 Upstage 与 Karakuri 共同开发、面向日语的 LLM（约 30B 参数），用于企业商务。"
+    }
+  },
   "sources": [
     {
       "title": "Model history | Upstage Docs",

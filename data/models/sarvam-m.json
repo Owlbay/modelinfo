@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "基于 Mistral-Small 构建的多语言混合推理文本模型，针对印度语系语言进行了后训练。"
+    }
+  },
   "sources": [
     {
       "title": "Sarvam-M (Deprecated) | Sarvam API Docs",

@@ -55,6 +55,11 @@
     "qwen3.5-plus-2026-02-15",
     "qwen3.5-plus-2026-04-20"
   ],
+  "translations": {
+    "zh": {
+      "description": "原生视觉语言 Plus 模型，采用混合线性注意力与稀疏 MoE 架构。"
+    }
+  },
   "sources": [
     {
       "title": "qwen3.5-plus | Alibaba Cloud Model Studio",

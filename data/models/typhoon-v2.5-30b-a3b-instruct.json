@@ -40,6 +40,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "智能体混合专家模型，具备先进的泰语能力。"
+    }
+  },
   "sources": [
     {
       "title": "Models | Typhoon Docs",

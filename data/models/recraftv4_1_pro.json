@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "生成 2K 位图图像、细节更精细的 Recraft V4.1 变体。"
+    }
+  },
   "sources": [
     {
       "title": "Recraft V4.1 | Recraft API Docs",

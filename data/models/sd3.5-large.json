@@ -47,6 +47,11 @@
   "aliases": [
     "sd3-large"
   ],
+  "translations": {
+    "zh": {
+      "description": "拥有 80 亿参数的 Stable Diffusion 3.5 基础模型，适用于 1 百万像素分辨率的专业用途。"
+    }
+  },
   "sources": [
     {
       "title": "API Reference | Stability AI Developer Platform",

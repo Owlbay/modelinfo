@@ -52,6 +52,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "针对高频智能体工作负载调优的 Step 3.5 Flash，带有低推理模式。"
+    }
+  },
   "sources": [
     {
       "title": "Step Platform pricing | StepFun Documentation",

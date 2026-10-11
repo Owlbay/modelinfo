@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Luma 默认图像模型，用于图像生成和编辑，最多支持 9 张参考图像，并可选联网搜索增强。"
+    }
+  },
   "sources": [
     {
       "title": "Models | Luma Agents API Docs",

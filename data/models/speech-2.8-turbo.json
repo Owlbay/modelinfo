@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "快速语音合成，流畅自然，支持 40 种语言。"
+    }
+  },
   "sources": [
     {
       "title": "Models | MiniMax API Docs",

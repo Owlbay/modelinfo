@@ -47,6 +47,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "小型向量模型，是 ada 向量模型的改进版，性能更好。"
+    }
+  },
   "sources": [
     {
       "title": "text-embedding-3-small Model | OpenAI API",

@@ -40,6 +40,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "开放权重的 Solar 模型；Upstage API 已于 2026-08-12 停止提供服务。"
+    }
+  },
   "sources": [
     {
       "title": "All Models and Version History | Upstage Console",

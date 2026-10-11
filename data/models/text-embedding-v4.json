@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "通义实验室基于 Qwen3 的多语言文本向量模型，维度可选 64-2048。"
+    }
+  },
   "sources": [
     {
       "title": "text-embedding-v4 | Alibaba Cloud Model Studio",

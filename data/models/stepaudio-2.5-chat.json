@@ -45,6 +45,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "能理解语音（包括犹豫和笑声）并输出文本的对话模型。"
+    }
+  },
   "sources": [
     {
       "title": "Step Platform pricing | StepFun Documentation",

@@ -46,6 +46,11 @@
   "aliases": [
     "amazon.titan-embed-text-v1"
   ],
+  "translations": {
+    "zh": {
+      "description": "Amazon 的文本向量模型，将文本转换为数值向量表示，用于搜索、个性化和聚类。"
+    }
+  },
   "sources": [
     {
       "title": "Amazon Bedrock model card: Titan Embeddings G1 - Text",

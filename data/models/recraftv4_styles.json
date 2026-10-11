@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "基于 1 至 10 张参考图像或已保存风格的风格一致生成；必须指定风格。"
+    }
+  },
   "sources": [
     {
       "title": "Recraft V4 Styles | Recraft API Docs",

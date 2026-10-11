@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "查询侧向量模型（1024 维），适用于简短的搜索词和问题。"
+    }
+  },
   "sources": [
     {
       "title": "Embeddings | Upstage Docs",

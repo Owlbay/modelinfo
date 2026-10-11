@@ -46,6 +46,11 @@
   "aliases": [
     "ReaderLM-v2"
   ],
+  "translations": {
+    "zh": {
+      "description": "小型语言模型（1.54B 参数），可将 HTML 转换为干净的 Markdown 或 JSON，用于 Reader API。"
+    }
+  },
   "sources": [
     {
       "title": "ReaderLM-v2 | Jina AI",

@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "面向审核和校对场景的语音识别。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表与计费 | SenseAudio 文档",

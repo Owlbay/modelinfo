@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "图像理解模型，输入为文本和图像，输出为文本，上下文 32K。根据官方生命周期页面，已于 2026-07-08 下线。"
+    }
+  },
   "sources": [
     {
       "title": "Model Lifecycle & Deprecations | StepFun Documentation",

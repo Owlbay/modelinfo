@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "AssemblyAI 多语言流式语音转文字模型，支持英语、西班牙语、德语、法语、葡萄牙语和意大利语。"
+    }
+  },
   "sources": [
     {
       "title": "Model selection | AssemblyAI Docs",

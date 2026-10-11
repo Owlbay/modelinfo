@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "快速、低成本的位图模型，质量接近 V4.1，每张图像约 1.3 秒；无风格。"
+    }
+  },
   "sources": [
     {
       "title": "Recraft V4.1 Flash | Recraft API Docs",

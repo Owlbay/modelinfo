@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "AssemblyAI 旗舰流式语音转文字模型，面向语音智能体，支持 32 种语言、原生语码转换、提示和对话上下文。"
+    }
+  },
   "sources": [
     {
       "title": "Model selection | AssemblyAI Docs",

@@ -47,6 +47,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "讯飞星火 X2 深度推理模型，支持函数调用和联网搜索。"
+    }
+  },
   "sources": [
     {
       "title": "Spark-X2 http 协议文档 | 讯飞星火",

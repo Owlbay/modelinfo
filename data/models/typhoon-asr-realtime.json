@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "流式语音识别模型（114M 参数）；接受 wav、mp3、flac、ogg 和 opus。"
+    }
+  },
   "sources": [
     {
       "title": "ASR | Typhoon Docs",

@@ -52,6 +52,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "开放权重的原生视觉语言稠密模型，专注于编程和办公效率。"
+    }
+  },
   "sources": [
     {
       "title": "qwen3.8-27b | Alibaba Cloud Model Studio",

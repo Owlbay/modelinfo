@@ -46,6 +46,11 @@
   "aliases": [
     "stt-async-v4"
   ],
+  "translations": {
+    "zh": {
+      "description": "Soniox 异步语音转文字与翻译模型，面向录制音频，支持 60 多种语言。"
+    }
+  },
   "sources": [
     {
       "title": "Models | Soniox Docs",

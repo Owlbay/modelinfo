@@ -54,6 +54,11 @@
   "aliases": [
     "qwen3.6-plus-2026-04-02"
   ],
+  "translations": {
+    "zh": {
+      "description": "原生视觉语言 Plus 模型，在智能体编程、前端编程、OCR 和目标定位方面有所提升。"
+    }
+  },
   "sources": [
     {
       "title": "qwen3.6-plus | Alibaba Cloud Model Studio",

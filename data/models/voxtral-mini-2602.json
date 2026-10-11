@@ -46,6 +46,11 @@
   "aliases": [
     "voxtral-mini-latest"
   ],
+  "translations": {
+    "zh": {
+      "description": "高效的音频输入模型，仅针对转写进行了优化。"
+    }
+  },
   "sources": [
     {
       "title": "Voxtral Mini Transcribe 2 | Mistral Docs",

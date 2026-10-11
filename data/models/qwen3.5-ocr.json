@@ -48,6 +48,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "基于 Qwen3.5 架构的 OCR 模型，用于文档解析、文本定位和关键信息提取，包括 PDF 解析。"
+    }
+  },
   "sources": [
     {
       "title": "Text extraction (OCR) | 大模型服务平台百炼",

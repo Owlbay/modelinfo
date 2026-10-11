@@ -41,6 +41,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Meta 的分割模型，可根据简短文本提示返回图像和视频中对象的边界框和掩码。"
+    }
+  },
   "sources": [
     {
       "title": "Models | Meta Model API",

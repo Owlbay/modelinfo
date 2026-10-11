@@ -38,6 +38,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "图像编辑模型。根据官方图像模型下线通知，已于 2026-10-10 下线。"
+    }
+  },
   "sources": [
     {
       "title": "Image Model Retirement Notice | StepFun Documentation",

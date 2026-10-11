@@ -39,6 +39,11 @@
   "aliases": [
     "saaras:v3-realtime"
   ],
+  "translations": {
+    "zh": {
+      "description": "基于 WebSocket 的实时语音转文字模型，适用于语音智能体和实时转写，支持中间转写结果。"
+    }
+  },
   "sources": [
     {
       "title": "Saaras | Sarvam Docs",

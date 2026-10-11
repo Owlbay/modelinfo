@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "上一代 Recraft 位图模型。"
+    }
+  },
   "sources": [
     {
       "title": "Recraft V2 | Recraft API Docs",

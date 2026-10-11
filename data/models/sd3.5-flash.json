@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Stable Diffusion 3.5 Medium 的蒸馏版本，4 步即可生成高质量图像。"
+    }
+  },
   "sources": [
     {
       "title": "API Reference | Stability AI Developer Platform",

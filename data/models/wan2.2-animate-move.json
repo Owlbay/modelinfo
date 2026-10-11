@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "将参考视频中的动作和表情迁移到角色图片上，生成动画视频。"
+    }
+  },
   "sources": [
     {
       "title": "Wan image-to-action API reference | Alibaba Cloud Model Studio",

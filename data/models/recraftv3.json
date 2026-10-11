@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "上一代 Recraft 模型，以照片级真实感和文字渲染见长；支持局部重绘、外延绘制和背景操作。"
+    }
+  },
   "sources": [
     {
       "title": "Recraft V3 | Recraft API Docs",

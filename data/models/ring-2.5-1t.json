@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Ring-2.5-1T，计划下线。官方弃用页面列出的计划下线日期为 2026-09-30 00:00（UTC+8），且仍列在即将弃用项下。"
+    }
+  },
   "sources": [
     {
       "title": "Deprecation | Ant Ling API Docs",

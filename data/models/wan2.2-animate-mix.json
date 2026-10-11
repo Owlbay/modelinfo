@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "将视频中的主角替换为图片中的角色，同时保留原始场景、光照和色调。"
+    }
+  },
   "sources": [
     {
       "title": "Wan - video character swap API reference | Alibaba Cloud Model Studio",

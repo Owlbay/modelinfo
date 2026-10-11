@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "意图识别与槽位填充模型，以 JSON 返回 API 意图和槽位参数。"
+    }
+  },
   "sources": [
     {
       "title": "tongyi-intent-detect-v3 | 大模型服务平台百炼",

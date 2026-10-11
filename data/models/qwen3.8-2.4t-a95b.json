@@ -50,6 +50,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "最新 Qwen 旗舰的开源版本，为稀疏 MoE，总参数 2.4T，激活参数约 95B。"
+    }
+  },
   "sources": [
     {
       "title": "Text generation models | Alibaba Cloud Model Studio",

@@ -46,6 +46,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Wan2.6 模型，可编辑图像并生成图文交错输出，支持多图输入。"
+    }
+  },
   "sources": [
     {
       "title": "Wan2.6 - image generation and editing | Alibaba Cloud Model Studio",

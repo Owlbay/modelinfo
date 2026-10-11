@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Wan2.2 模型，根据首帧、尾帧和文本提示生成平滑过渡的视频。"
+    }
+  },
   "sources": [
     {
       "title": "Wan - image-to-video - first and last frames API reference (2.2) | Alibaba Cloud Model Studio",

@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "视频生成模型，支持图生视频、参考生视频、首尾帧和特效模板，4 秒或 8 秒片段。"
+    }
+  },
   "sources": [
     {
       "title": "Model Map | Vidu API",

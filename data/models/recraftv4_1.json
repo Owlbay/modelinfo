@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Recraft API 默认模型：精致的位图图像，具有出色的照片级真实感和提示词遵循能力。"
+    }
+  },
   "sources": [
     {
       "title": "Recraft V4.1 | Recraft API Docs",

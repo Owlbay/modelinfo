@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Stability 图像服务，针对快速、高性价比的文生图进行了优化。"
+    }
+  },
   "sources": [
     {
       "title": "API Reference | Stability AI Developer Platform",

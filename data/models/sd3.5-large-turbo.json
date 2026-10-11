@@ -47,6 +47,11 @@
   "aliases": [
     "sd3-large-turbo"
   ],
+  "translations": {
+    "zh": {
+      "description": "Stable Diffusion 3.5 Large 的蒸馏版本，用于快速生成高质量图像。"
+    }
+  },
   "sources": [
     {
       "title": "API Reference | Stability AI Developer Platform",

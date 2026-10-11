@@ -40,6 +40,11 @@
     "text-moderation-stable",
     "text-moderation-007"
   ],
+  "translations": {
+    "zh": {
+      "description": "上一代纯文本内容审核模型"
+    }
+  },
   "sources": [
     {
       "title": "text-moderation Model | OpenAI API",

@@ -54,6 +54,11 @@
   "aliases": [
     "qwen3.7-plus-2026-05-26"
   ],
+  "translations": {
+    "zh": {
+      "description": "高性价比的 Plus 模型，具备稳健的文本能力以及 GUI 交互等多模态智能体能力。"
+    }
+  },
   "sources": [
     {
       "title": "qwen3.7-plus | Alibaba Cloud Model Studio",

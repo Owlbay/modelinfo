@@ -46,6 +46,11 @@
   "aliases": [
     "amazon.titan-embed-text-v2:0"
   ],
+  "translations": {
+    "zh": {
+      "description": "Amazon 的第二代文本向量模型，输出维度可配置，检索任务的准确率有所提升。"
+    }
+  },
   "sources": [
     {
       "title": "Amazon Bedrock model card: Titan Text Embeddings V2",

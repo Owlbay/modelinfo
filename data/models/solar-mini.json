@@ -51,6 +51,11 @@
     "solar-mini-250123",
     "solar-mini-240612"
   ],
+  "translations": {
+    "zh": {
+      "description": "紧凑的 10.7B 参数 Solar 模型，用于遵循指令的对话和微调；将于 2026-10-30（KST）完全弃用，请迁移至 Solar Mini 4。"
+    }
+  },
   "sources": [
     {
       "title": "Solar Mini | Upstage Docs",

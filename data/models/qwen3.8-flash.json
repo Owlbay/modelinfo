@@ -52,6 +52,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "多模态 Qwen 模型，兼顾推理、生成与速度，适用于编程辅助、智能体工作流和视觉理解。"
+    }
+  },
   "sources": [
     {
       "title": "qwen3.8-flash | Alibaba Cloud Model Studio",

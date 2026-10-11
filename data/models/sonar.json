@@ -47,6 +47,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Sonar API 的 Perplexity 联网搜索模型；Sonar Chat Completions 支持已于 2026-09-27 结束，改用 Agent API。"
+    }
+  },
   "sources": [
     {
       "title": "Migrate from Sonar to the Agent API | Perplexity Docs",

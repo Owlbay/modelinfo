@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "文段侧向量模型（1024 维），适用于段落等较长片段。"
+    }
+  },
   "sources": [
     {
       "title": "Embeddings | Upstage Docs",

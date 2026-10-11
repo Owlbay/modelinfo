@@ -46,6 +46,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "多模态向量模型，用于文搜图等跨模态检索，64-1152 维。"
+    }
+  },
   "sources": [
     {
       "title": "Embedding and rerank models | Alibaba Cloud Model Studio",

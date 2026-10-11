@@ -46,6 +46,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Wan2.7 视频编辑模型，支持基于指令的编辑和风格迁移。"
+    }
+  },
   "sources": [
     {
       "title": "Wan2.7 - video editing API reference | Alibaba Cloud Model Studio",

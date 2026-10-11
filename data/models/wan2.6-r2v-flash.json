@@ -46,6 +46,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Wan2.6 Flash 参考生视频模型，按视频时长计费，有无音频均可。"
+    }
+  },
   "sources": [
     {
       "title": "Model Studio model pricing | Alibaba Cloud",

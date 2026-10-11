@@ -37,6 +37,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "讯飞 4B 稠密 Spark X2.5 模型，上下文 1M，适用于中小型企业集成。"
+    }
+  },
   "sources": [
     {
       "title": "Spark-X2.5 模型介绍 | 讯飞星火",

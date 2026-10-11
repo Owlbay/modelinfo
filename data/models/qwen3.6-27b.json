@@ -51,6 +51,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "开放权重的稠密视觉语言模型，在智能体编程和 STEM 推理方面较 Qwen3.5-27B 有所提升。"
+    }
+  },
   "sources": [
     {
       "title": "Text generation models | Alibaba Cloud Model Studio",

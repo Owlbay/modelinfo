@@ -46,6 +46,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Luma 视频模型，支持文生视频、图生视频、视频编辑和画幅重构，最高 1080p。"
+    }
+  },
   "sources": [
     {
       "title": "Models | Luma Agents API Docs",

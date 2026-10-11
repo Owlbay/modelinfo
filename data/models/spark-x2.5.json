@@ -37,6 +37,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "讯飞 Spark X2.5 旗舰 293B-A30B MoE 模型，面向复杂推理和长文本任务。"
+    }
+  },
   "sources": [
     {
       "title": "Spark-X2.5 模型介绍 | 讯飞星火",

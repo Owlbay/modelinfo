@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "文生图模型，原生支持中文提示词。根据官方生命周期页面，已于 2026-07-08 下线。"
+    }
+  },
   "sources": [
     {
       "title": "Model Lifecycle & Deprecations | StepFun Documentation",

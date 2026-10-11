@@ -58,6 +58,11 @@
   "aliases": [
     "solar-mini4-260922"
   ],
+  "translations": {
+    "zh": {
+      "description": "高性价比的紧凑型 Solar 模型，面向智能体使用，支持推理、工具调用和结构化输出。"
+    }
+  },
   "sources": [
     {
       "title": "Solar Mini 4 | Upstage Docs",

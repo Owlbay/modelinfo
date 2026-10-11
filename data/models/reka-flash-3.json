@@ -46,6 +46,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Reka 的推理文本模型，通过 Reka API 提供服务。"
+    }
+  },
   "sources": [
     {
       "title": "Models | Reka API Docs",

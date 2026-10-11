@@ -47,6 +47,11 @@
   "aliases": [
     "amazon.titan-embed-image-v1"
   ],
+  "translations": {
+    "zh": {
+      "description": "Amazon 的模型，可根据文本和图像生成向量，用于多模态搜索和推荐场景。"
+    }
+  },
   "sources": [
     {
       "title": "Amazon Bedrock model card: Titan Multimodal Embeddings G1",

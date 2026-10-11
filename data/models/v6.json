@@ -39,6 +39,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "通用视频生成模型，支持文生视频、图生视频、首尾帧、参考生视频和视频延长，1-15 秒片段，最高 1080p，可选音频和多片段输出。"
+    }
+  },
   "sources": [
     {
       "title": "V6 | PixVerse Platform Docs",

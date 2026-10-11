@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "注重成本与吞吐的文本向量模型，输出维度为 256 至 1024。"
+    }
+  },
   "sources": [
     {
       "title": "向量与重排序 | 大模型服务平台百炼",

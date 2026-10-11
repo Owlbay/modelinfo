@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "基于 Stable Diffusion 3.5 Large 的 Stability 旗舰图像服务，提供最高的质量和细节。"
+    }
+  },
   "sources": [
     {
       "title": "API Reference | Stability AI Developer Platform",

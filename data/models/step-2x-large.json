@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "新一代文生图模型，纹理更真实，中英文文字渲染更强。根据官方图像模型下线通知，已于 2026-10-10 下线。"
+    }
+  },
   "sources": [
     {
       "title": "Image Model Retirement Notice | StepFun Documentation",

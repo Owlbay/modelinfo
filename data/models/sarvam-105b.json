@@ -46,6 +46,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Sarvam 旗舰 105B 混合专家聊天模型，面向印度语言理解、推理、编程和智能体任务。"
+    }
+  },
   "sources": [
     {
       "title": "Sarvam-105B | Sarvam Docs",

@@ -50,6 +50,11 @@
   "aliases": [
     "qwen3.7-max-2026-05-17"
   ],
+  "translations": {
+    "zh": {
+      "description": "最大的 Qwen3.7 模型的预览版，仅支持思考模式。"
+    }
+  },
   "sources": [
     {
       "title": "Text generation models | Alibaba Cloud Model Studio",

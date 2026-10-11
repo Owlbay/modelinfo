@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Recraft V4 标准位图模型，输出 1K。"
+    }
+  },
   "sources": [
     {
       "title": "Recraft V4 | Recraft API Docs",

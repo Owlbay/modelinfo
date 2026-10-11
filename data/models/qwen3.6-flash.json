@@ -54,6 +54,11 @@
   "aliases": [
     "qwen3.6-flash-2026-04-16"
   ],
+  "translations": {
+    "zh": {
+      "description": "原生视觉语言 Flash 模型，具备出色的智能体编程、数学和代码推理能力。"
+    }
+  },
   "sources": [
     {
       "title": "qwen3.6-flash | Alibaba Cloud Model Studio",

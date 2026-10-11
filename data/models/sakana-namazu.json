@@ -50,6 +50,11 @@
   "aliases": [
     "sakana-namazu-v1.0"
   ],
+  "translations": {
+    "zh": {
+      "description": "Sakana AI 面向日语的 LLM API，针对日语语言、文化和商务进行了调优，内置网页搜索和代码执行。"
+    }
+  },
   "sources": [
     {
       "title": "Models | Sakana AI Console",
