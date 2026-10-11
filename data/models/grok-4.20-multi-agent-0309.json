@@ -37,7 +37,6 @@
     "cache_write": null
   },
   "features": [
-    "tools",
     "structured_output",
     "caching",
     "batch"
