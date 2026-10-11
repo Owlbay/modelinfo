@@ -1,0 +1,68 @@
+{
+  "id": "mistral-large-2407",
+  "object": "model",
+  "created": 1721779200,
+  "owned_by": "mistral",
+  "name": "Mistral Large 2.0",
+  "api": {
+    "types": [
+      "chat"
+    ]
+  },
+  "limits": {
+    "context": 131072,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "retired",
+    "release_date": "2024-07-24",
+    "knowledge_cutoff": null,
+    "description": "A powerfull model with open weights under a MRL license, competing agains SOTA much larger models.",
+    "docs": "https://docs.mistral.ai/models/mistral-large-2-0-24-07",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Mistral Large 2.0 | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-large-2-0-24-07",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Models overview（含 Deprecation 与 Retirement 日期表） | Mistral Docs",
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model lifecycle policy | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/model-lifecycle",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "mistral",
+      "model": "mistral-large-2407",
+      "base_url": "https://api.mistral.ai",
+      "endpoints": {
+        "chat": "POST /v1/chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "mistral-small-2503",
+  "object": "model",
+  "created": 1742169600,
+  "owned_by": "mistral",
+  "name": "Mistral Small 3.1",
+  "api": {
+    "types": [
+      "chat",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": 131072,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "tools",
+    "structured_output",
+    "batch"
+  ],
+  "info": {
+    "status": "retired",
+    "release_date": "2025-03-17",
+    "knowledge_cutoff": null,
+    "description": "A new leader in the small models category with image understanding capabilities, released March 2025.",
+    "docs": "https://docs.mistral.ai/models/mistral-small-3-1-25-03",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Mistral Small 3.1 | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-small-3-1-25-03",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Models overview（含 Deprecation 与 Retirement 日期表） | Mistral Docs",
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model lifecycle policy | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/model-lifecycle",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "mistral",
+      "model": "mistral-small-2503",
+      "base_url": "https://api.mistral.ai",
+      "endpoints": {
+        "chat": "POST /v1/chat/completions",
+        "batch": "POST /v1/batch"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

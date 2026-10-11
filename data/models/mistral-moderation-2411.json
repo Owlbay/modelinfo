@@ -1,0 +1,71 @@
+{
+  "id": "mistral-moderation-2411",
+  "object": "model",
+  "created": 1730851200,
+  "owned_by": "mistral",
+  "name": "Mistral Moderation",
+  "api": {
+    "types": [
+      "moderation",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": 8192,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "batch"
+  ],
+  "info": {
+    "status": "retired",
+    "release_date": "2024-11-06",
+    "knowledge_cutoff": null,
+    "description": "Our moderation service that enables our users to detect harmful text content",
+    "docs": "https://docs.mistral.ai/models/mistral-moderation-24-11",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Mistral Moderation | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-moderation-24-11",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Models overview（含 Deprecation 与 Retirement 日期表） | Mistral Docs",
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model lifecycle policy | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/model-lifecycle",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "mistral",
+      "model": "mistral-moderation-2411",
+      "base_url": "https://api.mistral.ai",
+      "endpoints": {
+        "batch": "POST /v1/batch"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

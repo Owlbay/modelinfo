@@ -1,0 +1,61 @@
+{
+  "id": "sonic",
+  "object": "model",
+  "created": 1729296000,
+  "owned_by": "cartesia",
+  "name": "Sonic",
+  "api": {
+    "types": [
+      "audio"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "audio"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "retired",
+    "release_date": "2024-10-19",
+    "knowledge_cutoff": null,
+    "description": "First-generation Cartesia text-to-speech model; sunsetted.",
+    "docs": "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "sonic-2024-12-12",
+    "sonic-2024-10-19"
+  ],
+  "sources": [
+    {
+      "title": "Older Models | Cartesia Docs",
+      "url": "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "cartesia",
+      "model": "sonic",
+      "base_url": "https://api.cartesia.ai",
+      "endpoints": {
+        "audio": "POST /tts/bytes"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

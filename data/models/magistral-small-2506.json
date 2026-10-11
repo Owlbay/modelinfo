@@ -1,0 +1,73 @@
+{
+  "id": "magistral-small-2506",
+  "object": "model",
+  "created": 1749513600,
+  "owned_by": "mistral",
+  "name": "Magistral Small 1.0",
+  "api": {
+    "types": [
+      "chat",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": 40960,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "tools",
+    "batch"
+  ],
+  "info": {
+    "status": "retired",
+    "release_date": "2025-06-10",
+    "knowledge_cutoff": null,
+    "description": null,
+    "docs": "https://docs.mistral.ai/models/magistral-small-1-0-25-06",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Magistral Small 1.0 | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/magistral-small-1-0-25-06",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Models overview（含 Deprecation 与 Retirement 日期表） | Mistral Docs",
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model lifecycle policy | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/model-lifecycle",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "mistral",
+      "model": "magistral-small-2506",
+      "base_url": "https://api.mistral.ai",
+      "endpoints": {
+        "chat": "POST /v1/chat/completions",
+        "batch": "POST /v1/batch"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

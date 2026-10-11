@@ -1,0 +1,74 @@
+{
+  "id": "codestral-2501",
+  "object": "model",
+  "created": 1736726400,
+  "owned_by": "mistral",
+  "name": "Codestral",
+  "api": {
+    "types": [
+      "chat",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": 131072,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "tools",
+    "structured_output",
+    "batch"
+  ],
+  "info": {
+    "status": "retired",
+    "release_date": "2025-01-13",
+    "knowledge_cutoff": null,
+    "description": "Our cutting-edge language model for coding. Codestral specializes in low-latency, high-frequency tasks such as fill-in-the-middle (FIM), code correction and test generation.",
+    "docs": "https://docs.mistral.ai/models/codestral-25-01",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Codestral | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/codestral-25-01",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Models overview（含 Deprecation 与 Retirement 日期表） | Mistral Docs",
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model lifecycle policy | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/model-lifecycle",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "mistral",
+      "model": "codestral-2501",
+      "base_url": "https://api.mistral.ai",
+      "endpoints": {
+        "chat": "POST /v1/chat/completions",
+        "batch": "POST /v1/batch"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

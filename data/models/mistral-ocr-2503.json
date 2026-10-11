@@ -1,0 +1,67 @@
+{
+  "id": "mistral-ocr-2503",
+  "object": "model",
+  "created": 1741219200,
+  "owned_by": "mistral",
+  "name": "OCR",
+  "api": {
+    "types": [
+      "ocr"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "image",
+      "document"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "retired",
+    "release_date": "2025-03-06",
+    "knowledge_cutoff": null,
+    "description": "Our first OCR optimized model.",
+    "docs": "https://docs.mistral.ai/models/ocr-25-03",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "OCR | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/ocr-25-03",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Models overview（含 Deprecation 与 Retirement 日期表） | Mistral Docs",
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model lifecycle policy | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/model-lifecycle",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "mistral",
+      "model": "mistral-ocr-2503",
+      "base_url": "https://api.mistral.ai",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "pixtral-12b-2409",
+  "object": "model",
+  "created": 1726012800,
+  "owned_by": "mistral",
+  "name": "Pixtral 12B",
+  "api": {
+    "types": [
+      "chat",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": 131072,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "tools",
+    "structured_output",
+    "batch"
+  ],
+  "info": {
+    "status": "retired",
+    "release_date": "2024-09-11",
+    "knowledge_cutoff": null,
+    "description": "A 12B model with image understanding capabilities in addition to text.",
+    "docs": "https://docs.mistral.ai/models/pixtral-12b-24-09",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Pixtral 12B | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/pixtral-12b-24-09",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Models overview（含 Deprecation 与 Retirement 日期表） | Mistral Docs",
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model lifecycle policy | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/model-lifecycle",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "mistral",
+      "model": "pixtral-12b-2409",
+      "base_url": "https://api.mistral.ai",
+      "endpoints": {
+        "chat": "POST /v1/chat/completions",
+        "batch": "POST /v1/batch"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "sarvam-m",
+  "object": "model",
+  "created": null,
+  "owned_by": "sarvam",
+  "name": "Sarvam-M",
+  "api": {
+    "types": [
+      "chat"
+    ]
+  },
+  "limits": {
+    "context": 8192,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "retired",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Multilingual hybrid-reasoning text model built on Mistral-Small, post-trained for Indic languages.",
+    "docs": "https://docs.sarvam.ai/api/getting-started/models/sarvam-m",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Sarvam-M (Deprecated) | Sarvam API Docs",
+      "url": "https://docs.sarvam.ai/api/getting-started/models/sarvam-m",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Models（Legacy Models） | Sarvam API Docs",
+      "url": "https://docs.sarvam.ai/api-reference-docs/getting-started/models",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "sarvam",
+      "model": "sarvam-m",
+      "base_url": "https://api.sarvam.ai",
+      "endpoints": {
+        "chat": "POST /v1/chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "pegasus1.1",
+  "object": "model",
+  "created": 1720310400,
+  "owned_by": "twelvelabs",
+  "name": "Pegasus 1.1",
+  "api": {
+    "types": [
+      "generate"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "video"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "retired",
+    "release_date": "2024-07-07",
+    "knowledge_cutoff": null,
+    "description": "Video language model; discontinued on 2025-02-25.",
+    "docs": "https://docs.twelvelabs.io/docs/get-started/release-notes",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Release notes | TwelveLabs Docs",
+      "url": "https://docs.twelvelabs.io/docs/get-started/release-notes",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "twelvelabs",
+      "model": "pegasus1.1",
+      "base_url": "https://api.twelvelabs.io/v1.3",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

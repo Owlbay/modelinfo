@@ -1,0 +1,76 @@
+{
+  "id": "magistral-small-2509",
+  "object": "model",
+  "created": 1758153600,
+  "owned_by": "mistral",
+  "name": "Magistral Small 1.2",
+  "api": {
+    "types": [
+      "chat",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": 131072,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "tools",
+    "batch"
+  ],
+  "info": {
+    "status": "retired",
+    "release_date": "2025-09-18",
+    "knowledge_cutoff": null,
+    "description": "Our small multimodal reasoning model update of September 2025.",
+    "docs": "https://docs.mistral.ai/models/magistral-small-1-2-25-09",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "magistral-small-latest"
+  ],
+  "sources": [
+    {
+      "title": "Magistral Small 1.2 | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/magistral-small-1-2-25-09",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Models overview（含 Deprecation 与 Retirement 日期表） | Mistral Docs",
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model lifecycle policy | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/model-lifecycle",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "mistral",
+      "model": "magistral-small-2509",
+      "base_url": "https://api.mistral.ai",
+      "endpoints": {
+        "chat": "POST /v1/chat/completions",
+        "batch": "POST /v1/batch"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

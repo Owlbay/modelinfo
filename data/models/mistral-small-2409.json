@@ -1,0 +1,74 @@
+{
+  "id": "mistral-small-2409",
+  "object": "model",
+  "created": 1726531200,
+  "owned_by": "mistral",
+  "name": "Mistral Small 2.0",
+  "api": {
+    "types": [
+      "chat",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": 32768,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "tools",
+    "structured_output",
+    "batch"
+  ],
+  "info": {
+    "status": "retired",
+    "release_date": "2024-09-17",
+    "knowledge_cutoff": null,
+    "description": "An update to our efficient small model with open weights under an MRL license.",
+    "docs": "https://docs.mistral.ai/models/mistral-small-2-0-24-09",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Mistral Small 2.0 | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-small-2-0-24-09",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Models overview（含 Deprecation 与 Retirement 日期表） | Mistral Docs",
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model lifecycle policy | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/model-lifecycle",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "mistral",
+      "model": "mistral-small-2409",
+      "base_url": "https://api.mistral.ai",
+      "endpoints": {
+        "chat": "POST /v1/chat/completions",
+        "batch": "POST /v1/batch"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

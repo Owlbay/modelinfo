@@ -1,0 +1,70 @@
+{
+  "id": "mistral-saba-2502",
+  "object": "model",
+  "created": 1739750400,
+  "owned_by": "mistral",
+  "name": "Mistral Saba",
+  "api": {
+    "types": [
+      "chat"
+    ]
+  },
+  "limits": {
+    "context": 32768,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "retired",
+    "release_date": "2025-02-17",
+    "knowledge_cutoff": null,
+    "description": "A finetuned Small model trained on meticulously curated datasets from across the Middle East and South Asia.",
+    "docs": "https://docs.mistral.ai/models/mistral-saba-25-02",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "mistral-saba-latest"
+  ],
+  "sources": [
+    {
+      "title": "Mistral Saba | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-saba-25-02",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Models overview（含 Deprecation 与 Retirement 日期表） | Mistral Docs",
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model lifecycle policy | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/model-lifecycle",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "mistral",
+      "model": "mistral-saba-2502",
+      "base_url": "https://api.mistral.ai",
+      "endpoints": {
+        "chat": "POST /v1/chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

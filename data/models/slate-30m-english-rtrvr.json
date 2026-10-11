@@ -1,0 +1,60 @@
+{
+  "id": "slate-30m-english-rtrvr",
+  "object": "model",
+  "created": null,
+  "owned_by": "ibm",
+  "name": "Slate 30M English Retriever",
+  "api": {
+    "types": [
+      "embeddings"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "retired",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "IBM foundation model on watsonx.ai; withdrawn on 2025-11-12.",
+    "docs": "https://ibm.com/docs/en/SSYOK8/wsj/analyze-data/fm-model-lifecycle.html",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "ibm/slate-30m-english-rtrvr"
+  ],
+  "sources": [
+    {
+      "title": "Foundation model lifecycle | IBM watsonx docs",
+      "url": "https://ibm.com/docs/en/SSYOK8/wsj/analyze-data/fm-model-lifecycle.html",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "ibm",
+      "model": "ibm/slate-30m-english-rtrvr",
+      "base_url": "https://us-south.ml.cloud.ibm.com",
+      "endpoints": {
+        "embeddings": "POST /ml/v1/text/embeddings"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "labs-mistral-small-creative",
+  "object": "model",
+  "created": 1765411200,
+  "owned_by": "mistral",
+  "name": "Mistral Small Creative",
+  "api": {
+    "types": [
+      "chat",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": 32768,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "tools",
+    "structured_output",
+    "batch"
+  ],
+  "info": {
+    "status": "retired",
+    "release_date": "2025-12-11",
+    "knowledge_cutoff": null,
+    "description": "An experimental specialized small model trained on meticulously curated data, designed for creative writing, narrative generation, roleplay and character-driven dialog, general-purpose instruction following and conversational agents.",
+    "docs": "https://docs.mistral.ai/models/mistral-small-creative-25-12",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Mistral Small Creative | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-small-creative-25-12",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Models overview（含 Deprecation 与 Retirement 日期表） | Mistral Docs",
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model lifecycle policy | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/model-lifecycle",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "mistral",
+      "model": "labs-mistral-small-creative",
+      "base_url": "https://api.mistral.ai",
+      "endpoints": {
+        "chat": "POST /v1/chat/completions",
+        "batch": "POST /v1/batch"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

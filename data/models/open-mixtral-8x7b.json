@@ -1,0 +1,68 @@
+{
+  "id": "open-mixtral-8x7b",
+  "object": "model",
+  "created": 1702252800,
+  "owned_by": "mistral",
+  "name": "Mixtral 8x7B",
+  "api": {
+    "types": [
+      "chat"
+    ]
+  },
+  "limits": {
+    "context": 32768,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "retired",
+    "release_date": "2023-12-11",
+    "knowledge_cutoff": null,
+    "description": "Our first open MoE model, SOTA competing against models up to 2 to 3x larger.",
+    "docs": "https://docs.mistral.ai/models/mixtral-8x7b-0-1",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Mixtral 8x7B | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mixtral-8x7b-0-1",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Models overview（含 Deprecation 与 Retirement 日期表） | Mistral Docs",
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model lifecycle policy | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/model-lifecycle",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "mistral",
+      "model": "open-mixtral-8x7b",
+      "base_url": "https://api.mistral.ai",
+      "endpoints": {
+        "chat": "POST /v1/chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

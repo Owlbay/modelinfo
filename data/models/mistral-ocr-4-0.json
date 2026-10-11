@@ -1,0 +1,72 @@
+{
+  "id": "mistral-ocr-4-0",
+  "object": "model",
+  "created": 1782172800,
+  "owned_by": "mistral",
+  "name": "OCR 4.0",
+  "api": {
+    "types": [
+      "ocr",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "image",
+      "document"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "batch"
+  ],
+  "info": {
+    "status": "retired",
+    "release_date": "2026-06-23",
+    "knowledge_cutoff": null,
+    "description": "Our latest OCR service powering our Document AI stack, with native paragraph-level bounding box extraction and structural block labels.",
+    "docs": "https://docs.mistral.ai/models/ocr-4-0",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "OCR 4.0 | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/ocr-4-0",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Models overview（含 Deprecation 与 Retirement 日期表） | Mistral Docs",
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model lifecycle policy | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/model-lifecycle",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "mistral",
+      "model": "mistral-ocr-4-0",
+      "base_url": "https://api.mistral.ai",
+      "endpoints": {
+        "batch": "POST /v1/batch"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

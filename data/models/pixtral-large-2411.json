@@ -1,0 +1,77 @@
+{
+  "id": "pixtral-large-2411",
+  "object": "model",
+  "created": 1731888000,
+  "owned_by": "mistral",
+  "name": "Pixtral Large",
+  "api": {
+    "types": [
+      "chat",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": 131072,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "tools",
+    "structured_output",
+    "batch"
+  ],
+  "info": {
+    "status": "retired",
+    "release_date": "2024-11-18",
+    "knowledge_cutoff": null,
+    "description": null,
+    "docs": "https://docs.mistral.ai/models/pixtral-large-24-11",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "pixtral-large-latest"
+  ],
+  "sources": [
+    {
+      "title": "Pixtral Large | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/pixtral-large-24-11",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Models overview（含 Deprecation 与 Retirement 日期表） | Mistral Docs",
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model lifecycle policy | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/model-lifecycle",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "mistral",
+      "model": "pixtral-large-2411",
+      "base_url": "https://api.mistral.ai",
+      "endpoints": {
+        "chat": "POST /v1/chat/completions",
+        "batch": "POST /v1/batch"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

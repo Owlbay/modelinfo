@@ -1,0 +1,66 @@
+{
+  "id": "solar-open2",
+  "object": "model",
+  "created": 1783468800,
+  "owned_by": "upstage",
+  "name": "Solar Open 2",
+  "api": {
+    "types": [
+      "chat"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "tools",
+    "structured_output"
+  ],
+  "info": {
+    "status": "retired",
+    "release_date": "2026-07-08",
+    "knowledge_cutoff": null,
+    "description": "Open-weight Solar model; Upstage API serving ended on 2026-08-12.",
+    "docs": "https://console.upstage.ai/docs/models/history",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "All Models and Version History | Upstage Console",
+      "url": "https://console.upstage.ai/docs/models/history",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Solar models | Upstage Console",
+      "url": "https://console.upstage.ai/docs/models/solar-open2",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "upstage",
+      "model": "solar-open2",
+      "base_url": "https://api.upstage.ai/v1",
+      "endpoints": {
+        "chat": "POST /chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": "voxtral-mini-2507",
+  "object": "model",
+  "created": 1752537600,
+  "owned_by": "mistral",
+  "name": "Voxtral Mini",
+  "api": {
+    "types": [
+      "chat",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": 32768,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "audio"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "structured_output",
+    "batch"
+  ],
+  "info": {
+    "status": "retired",
+    "release_date": "2025-07-15",
+    "knowledge_cutoff": null,
+    "description": "A mini version of our first audio input model.",
+    "docs": "https://docs.mistral.ai/models/voxtral-mini-25-07",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "voxtral-mini-latest"
+  ],
+  "sources": [
+    {
+      "title": "Voxtral Mini | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/voxtral-mini-25-07",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Models overview（含 Deprecation 与 Retirement 日期表） | Mistral Docs",
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model lifecycle policy | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/model-lifecycle",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Voxtral Mini Transcribe | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/voxtral-mini-transcribe-25-07",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "mistral",
+      "model": "voxtral-mini-2507",
+      "base_url": "https://api.mistral.ai",
+      "endpoints": {
+        "chat": "POST /v1/chat/completions",
+        "batch": "POST /v1/batch"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

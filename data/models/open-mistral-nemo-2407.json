@@ -1,0 +1,76 @@
+{
+  "id": "open-mistral-nemo-2407",
+  "object": "model",
+  "created": 1721260800,
+  "owned_by": "mistral",
+  "name": "Mistral Nemo 12B",
+  "api": {
+    "types": [
+      "chat",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": 131072,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [
+    "tools",
+    "structured_output",
+    "batch"
+  ],
+  "info": {
+    "status": "retired",
+    "release_date": "2024-07-18",
+    "knowledge_cutoff": null,
+    "description": "Our best multilingual open source model released July 2024.",
+    "docs": "https://docs.mistral.ai/models/mistral-nemo-12b-24-07",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "open-mistral-nemo"
+  ],
+  "sources": [
+    {
+      "title": "Mistral Nemo 12B | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-nemo-12b-24-07",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Models overview（含 Deprecation 与 Retirement 日期表） | Mistral Docs",
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model lifecycle policy | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/model-lifecycle",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "mistral",
+      "model": "open-mistral-nemo-2407",
+      "base_url": "https://api.mistral.ai",
+      "endpoints": {
+        "chat": "POST /v1/chat/completions",
+        "batch": "POST /v1/batch"
+      },
+      "reasoning_param": null
+    }
+  ]
+}
