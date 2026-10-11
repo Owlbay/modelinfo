@@ -61,14 +61,21 @@
       "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
       "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio API Reference — qwen-audio-realtime-user-guides",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen-audio-realtime-user-guides",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "alibaba",
       "model": "qwen-audio-3.0-realtime-plus",
-      "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
-      "endpoints": {},
+      "base_url": "wss://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
+      "endpoints": {
+        "realtime": "WS /api-ws/v1/realtime?model=qwen-audio-3.0-realtime-plus"
+      },
       "reasoning_param": null
     }
   ]

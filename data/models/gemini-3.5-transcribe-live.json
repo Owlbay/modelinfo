@@ -84,14 +84,21 @@
       "title": "Gemini 3.5 Audio - Model Card — Google DeepMind",
       "url": "https://deepmind.google/models/model-cards/gemini-3-5-audio/",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official API reference",
+      "url": "https://ai.google.dev/api/live",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "google",
       "model": "gemini-3.5-transcribe-live",
-      "base_url": "https://generativelanguage.googleapis.com",
-      "endpoints": {},
+      "base_url": "wss://generativelanguage.googleapis.com",
+      "endpoints": {
+        "realtime": "WS /ws/google.ai.generativelanguage.v1beta.GenerativeService.BidiGenerateContent"
+      },
       "reasoning_param": null
     }
   ]

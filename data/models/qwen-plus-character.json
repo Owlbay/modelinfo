@@ -1,7 +1,7 @@
 {
   "id": "qwen-plus-character",
   "object": "model",
-  "created": null,
+  "created": 1769731200,
   "owned_by": "alibaba",
   "name": "Qwen-Plus-Character",
   "api": {
@@ -40,7 +40,7 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-01-30",
     "knowledge_cutoff": null,
     "description": "Role-playing model for virtual companions, game NPCs and IP characters, with improved character consistency and topic progression.",
     "docs": "https://www.alibabacloud.com/help/en/model-studio/role-play",
@@ -61,6 +61,11 @@
     {
       "title": "Model Studio model pricing | Alibaba Cloud",
       "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio model lifecycle and release dates",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
       "retrieved_at": "2026-10-11"
     }
   ],

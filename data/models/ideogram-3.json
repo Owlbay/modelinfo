@@ -1,7 +1,7 @@
 {
   "id": "ideogram-3",
   "object": "model",
-  "created": null,
+  "created": 1742947200,
   "owned_by": "ideogram",
   "name": "Ideogram 3.0",
   "api": {
@@ -27,11 +27,18 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "image",
+    "input": null,
+    "output": 0.03,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-03-26",
     "knowledge_cutoff": null,
     "description": "Ideogram text-to-image generation with style codes, style presets, color palettes and style reference images.",
     "docs": "https://developer.ideogram.ai/api-reference/images/generate/ideogram-3",
@@ -62,6 +69,16 @@
     {
       "title": "API Pricing | Ideogram",
       "url": "https://ideogram.ai/api-pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Ideogram API pricing (dynamic table, lowest text-to-image tier)",
+      "url": "https://ideogram.ai/pricing/?pricing_tab=api",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release announcement",
+      "url": "https://about.ideogram.ai/3.0",
       "retrieved_at": "2026-10-11"
     }
   ],

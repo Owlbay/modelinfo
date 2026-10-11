@@ -1,7 +1,7 @@
 {
   "id": "ernie-4.5-turbo-128k-preview",
   "object": "model",
-  "created": null,
+  "created": 1750809600,
   "owned_by": "baidu",
   "name": "ERNIE-4.5-Turbo-128K-Preview",
   "api": {
@@ -30,7 +30,7 @@
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2025-06-25",
     "knowledge_cutoff": null,
     "description": "ERNIE-4.5-Turbo-128K-Preview, retired. Official retirement date: 2026-04-23.",
     "docs": "https://cloud.baidu.com/doc/qianfan/s/zmh4stou3",

@@ -1,7 +1,7 @@
 {
   "id": "syn-pro",
   "object": "model",
-  "created": null,
+  "created": 1761177600,
   "owned_by": "upstage",
   "name": "Syn Pro",
   "api": {
@@ -30,7 +30,7 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-10-23",
     "knowledge_cutoff": null,
     "description": "Japanese-focused LLM (about 30B parameters) co-developed by Upstage and Karakuri for enterprise business.",
     "docs": "https://console.upstage.ai/docs/models/history#syn-pro-251021",
@@ -58,6 +58,11 @@
     {
       "title": "Models | Upstage Docs",
       "url": "https://console.upstage.ai/docs/models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release history",
+      "url": "https://www.upstage.ai/blog/en/upstage-ai-jp-syn-pro",
       "retrieved_at": "2026-10-11"
     }
   ],

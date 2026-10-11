@@ -1,7 +1,7 @@
 {
   "id": "qianfan-toytalk",
   "object": "model",
-  "created": null,
+  "created": 1754524800,
   "owned_by": "baidu",
   "name": "Qianfan-ToyTalk",
   "api": {
@@ -30,7 +30,7 @@
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2025-08-07",
     "knowledge_cutoff": null,
     "description": "Qianfan-ToyTalk, retired. Official retirement date: 2026-06-30.",
     "docs": "https://cloud.baidu.com/doc/qianfan/s/zmh4stou3",

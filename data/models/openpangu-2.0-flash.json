@@ -1,7 +1,7 @@
 {
   "id": "openpangu-2.0-flash",
   "object": "model",
-  "created": null,
+  "created": 1782777600,
   "owned_by": "huawei",
   "name": "openPangu-2.0-Flash",
   "api": {
@@ -42,7 +42,7 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-06-30",
     "knowledge_cutoff": null,
     "description": "Huawei openPangu 2.0 efficient MoE model with 512K context, deep thinking, function calling and prefix continuation (cn-southwest-2 only).",
     "docs": "https://support.huaweicloud.com/bestpractice-maas/bestpractice_maas_0021_01.html",
@@ -83,6 +83,11 @@
     {
       "title": "Anthropic兼容接口 | 华为云 MaaS",
       "url": "https://support.huaweicloud.com/model-call-maas/model-call-022.html",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release history",
+      "url": "https://support.huaweicloud.com/wtsnew-maas/index.html",
       "retrieved_at": "2026-10-11"
     }
   ],

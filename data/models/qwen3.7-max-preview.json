@@ -6,7 +6,8 @@
   "name": "Qwen3.7-Max-Preview",
   "api": {
     "types": [
-      "chat"
+      "chat",
+      "responses"
     ]
   },
   "limits": {
@@ -70,6 +71,11 @@
       "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
       "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio API Reference — qwen-api-via-openai-responses",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen-api-via-openai-responses",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -78,9 +84,13 @@
       "model": "qwen3.7-max-preview",
       "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
       "endpoints": {
-        "chat": "POST /compatible-mode/v1/chat/completions"
+        "chat": "POST /compatible-mode/v1/chat/completions",
+        "responses": "POST /compatible-mode/v1/responses"
       },
-      "reasoning_param": "enable_thinking"
+      "reasoning_param": "enable_thinking",
+      "reasoning_params": {
+        "responses": "reasoning.effort"
+      }
     }
   ]
 }

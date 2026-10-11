@@ -6,7 +6,8 @@
   "name": "Gemma 4 31B IT",
   "api": {
     "types": [
-      "generate"
+      "generate",
+      "interactions"
     ]
   },
   "limits": {
@@ -78,6 +79,11 @@
       "title": "Release notes | Gemini API",
       "url": "https://ai.google.dev/gemini-api/docs/changelog",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "interactions-overview | Gemini API",
+      "url": "https://ai.google.dev/gemini-api/docs/interactions-overview",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -86,7 +92,8 @@
       "model": "gemma-4-31b-it",
       "base_url": "https://generativelanguage.googleapis.com",
       "endpoints": {
-        "generate": "POST /v1beta/models/{model}:generateContent"
+        "generate": "POST /v1beta/models/{model}:generateContent",
+        "interactions": "POST /v1beta/interactions"
       },
       "reasoning_param": "generationConfig.thinkingConfig.thinkingLevel"
     }

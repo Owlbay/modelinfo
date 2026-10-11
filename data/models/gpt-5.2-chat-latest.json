@@ -1,7 +1,7 @@
 {
   "id": "gpt-5.2-chat-latest",
   "object": "model",
-  "created": null,
+  "created": 1765411200,
   "owned_by": "openai",
   "name": "GPT-5.2 Chat",
   "api": {
@@ -12,7 +12,7 @@
   },
   "limits": {
     "context": 128000,
-    "input": 272000,
+    "input": null,
     "output": 16384
   },
   "modalities": {
@@ -43,7 +43,7 @@
   ],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2025-12-11",
     "knowledge_cutoff": "2025-08-31",
     "description": "GPT-5.2 model used in ChatGPT",
     "docs": "https://developers.openai.com/api/docs/models/gpt-5.2-chat-latest",
@@ -64,6 +64,16 @@
     {
       "title": "Deprecations | OpenAI API",
       "url": "https://developers.openai.com/api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "gpt-5.2-chat-latest Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.2-chat-latest.md",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release / pricing documentation",
+      "url": "https://developers.openai.com/api/docs/changelog",
       "retrieved_at": "2026-10-11"
     }
   ],

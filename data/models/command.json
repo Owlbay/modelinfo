@@ -26,7 +26,14 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 1,
+    "output": 2,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "retired",
@@ -46,6 +53,11 @@
     {
       "title": "存档：Command | Cohere Docs（原网址 https://docs.cohere.com/docs/command-beta）",
       "url": "https://web.archive.org/web/20250801231254/https://docs.cohere.com/docs/command-beta",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release / pricing documentation",
+      "url": "https://cohere.com/pricing",
       "retrieved_at": "2026-10-11"
     }
   ],

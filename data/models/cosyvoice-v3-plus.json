@@ -64,14 +64,21 @@
       "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
       "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio API Reference — cosyvoice-client-events",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/cosyvoice-client-events",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "alibaba",
       "model": "cosyvoice-v3-plus",
-      "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
-      "endpoints": {},
+      "base_url": "wss://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
+      "endpoints": {
+        "audio": "WS /api-ws/v1/inference"
+      },
       "reasoning_param": null
     }
   ]

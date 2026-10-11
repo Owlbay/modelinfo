@@ -7,7 +7,8 @@
   "api": {
     "types": [
       "generate",
-      "batch"
+      "batch",
+      "interactions"
     ]
   },
   "limits": {
@@ -99,6 +100,11 @@
       "title": "Gemini 3.8 Flash - Model Card — Google DeepMind",
       "url": "https://deepmind.google/models/model-cards/gemini-3-8-flash/",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "interactions-overview | Gemini API",
+      "url": "https://ai.google.dev/gemini-api/docs/interactions-overview",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -108,7 +114,8 @@
       "base_url": "https://generativelanguage.googleapis.com",
       "endpoints": {
         "generate": "POST /v1beta/models/{model}:generateContent",
-        "batch": "POST /v1beta/models/{model}:batchGenerateContent"
+        "batch": "POST /v1beta/models/{model}:batchGenerateContent",
+        "interactions": "POST /v1beta/interactions"
       },
       "reasoning_param": "generationConfig.thinkingConfig.thinkingLevel"
     }

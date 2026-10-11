@@ -76,14 +76,21 @@
       "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
       "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio API Reference — omni-realtime-interaction-process",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/omni-realtime-interaction-process",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "alibaba",
       "model": "qwen3.5-omni-flash-realtime",
-      "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
-      "endpoints": {},
+      "base_url": "wss://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
+      "endpoints": {
+        "realtime": "WS /api-ws/v1/realtime?model=qwen3.5-omni-flash-realtime"
+      },
       "reasoning_param": null
     }
   ]

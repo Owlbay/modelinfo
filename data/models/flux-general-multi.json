@@ -6,7 +6,8 @@
   "name": "Flux General (Multilingual)",
   "api": {
     "types": [
-      "audio"
+      "audio",
+      "realtime"
     ]
   },
   "limits": {
@@ -70,8 +71,11 @@
     {
       "id": "deepgram",
       "model": "flux-general-multi",
-      "base_url": "https://api.deepgram.com",
-      "endpoints": {},
+      "base_url": "wss://api.deepgram.com",
+      "endpoints": {
+        "audio": "WS /v2/listen",
+        "realtime": "WS /v2/listen"
+      },
       "reasoning_param": null
     }
   ]

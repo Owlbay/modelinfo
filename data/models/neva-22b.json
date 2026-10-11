@@ -12,7 +12,7 @@
   "limits": {
     "context": null,
     "input": null,
-    "output": null
+    "output": 1024
   },
   "modalities": {
     "input": [
@@ -50,14 +50,21 @@
       "title": "nvidia / neva-22b | NVIDIA NIM API Reference",
       "url": "https://docs.api.nvidia.com/nim/reference/nvidia-neva-22b",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "NVIDIA neva-22b inference API",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-neva-22b-infer",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "nvidia",
       "model": "nvidia/neva-22b",
-      "base_url": "https://integrate.api.nvidia.com",
-      "endpoints": {},
+      "base_url": "https://ai.api.nvidia.com",
+      "endpoints": {
+        "chat": "POST /v1/vlm/nvidia/neva-22b"
+      },
       "reasoning_param": null
     }
   ]

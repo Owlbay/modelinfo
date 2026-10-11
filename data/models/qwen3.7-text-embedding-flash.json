@@ -59,6 +59,11 @@
       "title": "模型调用计费 | 大模型服务平台百炼",
       "url": "https://help.aliyun.com/zh/model-studio/model-pricing",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio API Reference — text-embedding-synchronous-api",
+      "url": "https://help.aliyun.com/zh/model-studio/text-embedding-synchronous-api",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -66,7 +71,9 @@
       "id": "alibaba",
       "model": "qwen3.7-text-embedding-flash",
       "base_url": "https://{WorkspaceId}.cn-beijing.maas.aliyuncs.com",
-      "endpoints": {},
+      "endpoints": {
+        "embeddings": "POST /compatible-mode/v1/embeddings"
+      },
       "reasoning_param": null
     }
   ]

@@ -1,7 +1,7 @@
 {
   "id": "qianfan-dynamic-8k",
   "object": "model",
-  "created": null,
+  "created": 1723680000,
   "owned_by": "baidu",
   "name": "Qianfan-Dynamic-8k",
   "api": {
@@ -30,7 +30,7 @@
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2024-08-15",
     "knowledge_cutoff": null,
     "description": "Qianfan-Dynamic-8k, retired. Official retirement date: 2025-05-30.",
     "docs": "https://cloud.baidu.com/doc/qianfan/s/zmh4stou3",

@@ -68,6 +68,11 @@
       "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
       "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Create a response | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen-api-via-openai-responses",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -76,7 +81,8 @@
       "model": "qwen3.5-ocr",
       "base_url": "https://{WorkspaceId}.cn-beijing.maas.aliyuncs.com",
       "endpoints": {
-        "chat": "POST /compatible-mode/v1/chat/completions"
+        "chat": "POST /compatible-mode/v1/chat/completions",
+        "responses": "POST /compatible-mode/v1/responses"
       },
       "reasoning_param": null
     }

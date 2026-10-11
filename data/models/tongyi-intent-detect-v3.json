@@ -12,7 +12,7 @@
   "limits": {
     "context": 8192,
     "input": 8192,
-    "output": 4096
+    "output": 1024
   },
   "modalities": {
     "input": [
@@ -64,6 +64,16 @@
       "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
       "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio API Reference — intent-detect-capability",
+      "url": "https://help.aliyun.com/zh/model-studio/intent-detect-capability",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "OpenAI compatible Chat | Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen-api-via-openai-chat-completions",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -71,7 +81,9 @@
       "id": "alibaba",
       "model": "tongyi-intent-detect-v3",
       "base_url": "https://{WorkspaceId}.cn-beijing.maas.aliyuncs.com",
-      "endpoints": {},
+      "endpoints": {
+        "chat": "POST /compatible-mode/v1/chat/completions"
+      },
       "reasoning_param": null
     }
   ]

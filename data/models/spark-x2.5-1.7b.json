@@ -59,7 +59,22 @@
       "title": "讯飞星火大模型API | 科大讯飞",
       "url": "https://xinghuo.xfyun.cn/sparkapi",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Spark-X2.5 API接口文档",
+      "url": "https://www.xfyun.cn/doc/spark/Spark-X2.5.html",
+      "retrieved_at": "2026-10-11"
     }
   ],
-  "providers": []
+  "providers": [
+    {
+      "id": "iflytek",
+      "model": "spark-x2.5-1.7b",
+      "base_url": "https://maas-api.cn-huabei-1.xf-yun.com",
+      "endpoints": {
+        "chat": "POST /v2/chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
 }

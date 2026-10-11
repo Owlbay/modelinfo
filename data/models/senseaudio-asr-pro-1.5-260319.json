@@ -59,14 +59,21 @@
       "title": "语音识别介绍 | SenseAudio 文档",
       "url": "https://docs.senseaudio.cn/guides/asr/overview",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SenseAudio API: asr/transcriptions",
+      "url": "https://docs.senseaudio.cn/api-reference/endpoint/asr/transcriptions.md",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "senseaudio",
       "model": "senseaudio-asr-pro-1.5-260319",
-      "base_url": "https://api.senseaudio.cn/v1",
-      "endpoints": {},
+      "base_url": "https://api.senseaudio.cn",
+      "endpoints": {
+        "audio": "POST /v1/audio/transcriptions"
+      },
       "reasoning_param": null
     }
   ]

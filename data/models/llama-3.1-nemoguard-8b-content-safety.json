@@ -6,7 +6,8 @@
   "name": "Llama 3.1 NemoGuard 8B ContentSafety",
   "api": {
     "types": [
-      "moderation"
+      "moderation",
+      "chat"
     ]
   },
   "limits": {
@@ -49,6 +50,11 @@
       "title": "nvidia / llama-3.1-nemoguard-8b-content-safety | NVIDIA NIM API Reference",
       "url": "https://docs.api.nvidia.com/nim/reference/nvidia-llama-3_1-nemoguard-8b-content-safety",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "NVIDIA llama-3.1-nemoguard-8b-content-safety inference API",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-llama-3_1-nemoguard-8b-content-safety-infer",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -56,7 +62,10 @@
       "id": "nvidia",
       "model": "nvidia/llama-3.1-nemoguard-8b-content-safety",
       "base_url": "https://integrate.api.nvidia.com",
-      "endpoints": {},
+      "endpoints": {
+        "moderation": "POST /v1/chat/completions",
+        "chat": "POST /v1/chat/completions"
+      },
       "reasoning_param": null
     }
   ]

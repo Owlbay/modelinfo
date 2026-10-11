@@ -1,7 +1,7 @@
 {
   "id": "universal-streaming-english",
   "object": "model",
-  "created": null,
+  "created": 1748822400,
   "owned_by": "assemblyai",
   "name": "Universal-Streaming English",
   "api": {
@@ -37,7 +37,7 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-06-02",
     "knowledge_cutoff": null,
     "description": "AssemblyAI English streaming speech-to-text model balancing speed and cost.",
     "docs": "https://www.assemblyai.com/docs/streaming/select-the-speech-model",
@@ -58,6 +58,11 @@
     {
       "title": "Pricing | AssemblyAI",
       "url": "https://www.assemblyai.com/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official release announcement",
+      "url": "https://www.assemblyai.com/blog/introducing-universal-streaming",
       "retrieved_at": "2026-10-11"
     }
   ],

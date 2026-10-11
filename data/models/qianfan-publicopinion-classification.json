@@ -1,7 +1,7 @@
 {
   "id": "qianfan-publicopinion-classification",
   "object": "model",
-  "created": null,
+  "created": 1749081600,
   "owned_by": "baidu",
   "name": "Qianfan-PublicOpinion-Classification",
   "api": {
@@ -31,7 +31,7 @@
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2025-06-05",
     "knowledge_cutoff": null,
     "description": "Qianfan-PublicOpinion-Classification, retired. Official retirement date: 2025-10-21.",
     "docs": "https://cloud.baidu.com/doc/qianfan/s/zmh4stou3",

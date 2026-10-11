@@ -1,7 +1,7 @@
 {
   "id": "qwen-tts",
   "object": "model",
-  "created": null,
+  "created": 1745107200,
   "owned_by": "alibaba",
   "name": "Qwen-TTS",
   "api": {
@@ -26,11 +26,18 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 0.23,
+    "output": 1.434,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2025-04-20",
     "knowledge_cutoff": null,
     "description": null,
     "docs": "https://www.alibabacloud.com/en/notice/model_studio_notice_on_the_postponed_retirement_of_selected_legacy_models_7d0",
@@ -50,6 +57,16 @@
     {
       "title": "存档：Non-real-time speech synthesis | Alibaba Cloud Model Studio（原网址 https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide）",
       "url": "https://web.archive.org/web/20260525113228/https://www.alibabacloud.com/help/en/model-studio/non-realtime-tts-user-guide",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "存档：Alibaba Cloud model list and pricing（https://www.alibabacloud.com/help/en/model-studio/models）",
+      "url": "https://web.archive.org/web/20250908201053/https://www.alibabacloud.com/help/en/model-studio/models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio model lifecycle and release dates",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
       "retrieved_at": "2026-10-11"
     }
   ],

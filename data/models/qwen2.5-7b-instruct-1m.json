@@ -1,7 +1,7 @@
 {
   "id": "qwen2.5-7b-instruct-1m",
   "object": "model",
-  "created": null,
+  "created": 1737936000,
   "owned_by": "alibaba",
   "name": "Qwen2.5-7B-Instruct-1M",
   "api": {
@@ -37,7 +37,7 @@
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2025-01-27",
     "knowledge_cutoff": null,
     "description": null,
     "docs": "https://www.alibabacloud.com/en/notice/model_studio_notice_on_the_decommissioning_of_selected_historical_snapshot_models_730",
@@ -53,6 +53,11 @@
     {
       "title": "存档：Models | Alibaba Cloud Model Studio（原网址 https://www.alibabacloud.com/help/en/model-studio/models）",
       "url": "https://web.archive.org/web/20250908201053/https://www.alibabacloud.com/help/en/model-studio/models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Qwen official qwen2.5-1m release announcement",
+      "url": "https://qwenlm.github.io/blog/qwen2.5-1m/",
       "retrieved_at": "2026-10-11"
     }
   ],

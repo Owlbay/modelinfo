@@ -6,6 +6,7 @@
   "name": "MiMo-V2.5-ASR",
   "api": {
     "types": [
+      "chat",
       "audio"
     ]
   },
@@ -41,21 +42,21 @@
     "status": "active",
     "release_date": "2026-06-02",
     "knowledge_cutoff": null,
-    "description": "Xiaomi bilingual Chinese and English speech recognition with several Chinese dialects.",
+    "description": "中英双语 + 多方言语音识别，无需语言标签，自动识别语码混用中的各语言内容。",
     "docs": "https://mimo.mi.com/models/zh-CN/mimo-v2.5-asr",
     "verified_at": "2026-10-11"
   },
   "aliases": [],
   "translations": {
-    "zh": {
-      "description": "小米中英双语语音识别模型，支持多种中文方言。"
+    "en": {
+      "description": "Chinese-English bilingual and multi-dialect speech recognition, automatically recognizing languages in code-switched speech without language labels."
     }
   },
   "sources": [
     {
       "title": "mimo-v2.5-asr | Xiaomi MiMo",
       "url": "https://mimo.mi.com/models/zh-CN/mimo-v2.5-asr",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "按量计费 | Xiaomi MiMo",
@@ -74,7 +75,7 @@
       "model": "mimo-v2.5-asr",
       "base_url": "https://api.xiaomimimo.com/v1",
       "endpoints": {
-        "messages": "POST /chat/completions"
+        "chat": "POST /chat/completions"
       },
       "reasoning_param": null
     }

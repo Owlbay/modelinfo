@@ -1,7 +1,7 @@
 {
   "id": "ernie-4.5-turbo-latest",
   "object": "model",
-  "created": null,
+  "created": 1756339200,
   "owned_by": "baidu",
   "name": "ERNIE-4.5-Turbo-Latest",
   "api": {
@@ -30,7 +30,7 @@
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2025-08-28",
     "knowledge_cutoff": null,
     "description": "ERNIE-4.5-Turbo-Latest, retired. Official retirement date: 2026-02-26.",
     "docs": "https://cloud.baidu.com/doc/qianfan/s/zmh4stou3",

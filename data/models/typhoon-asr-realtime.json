@@ -52,6 +52,11 @@
       "title": "Models | Typhoon Docs",
       "url": "https://docs.opentyphoon.ai/en/models/",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "OpenAI Python SDK audio transcriptions transport",
+      "url": "https://github.com/openai/openai-python/blob/main/src/openai/resources/audio/transcriptions.py",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -59,7 +64,9 @@
       "id": "typhoon",
       "model": "typhoon-asr-realtime",
       "base_url": "https://api.opentyphoon.ai/v1",
-      "endpoints": {},
+      "endpoints": {
+        "audio": "POST /audio/transcriptions"
+      },
       "reasoning_param": null
     }
   ]

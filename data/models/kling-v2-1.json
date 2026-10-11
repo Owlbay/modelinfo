@@ -65,6 +65,11 @@
       "title": "Kling API Pricing - Image",
       "url": "https://kling.ai/document-api/pricing/base/image",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Kling Image API",
+      "url": "https://kling.ai/document-api/api/image/2-1/image-generation.md",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -72,7 +77,9 @@
       "id": "kling",
       "model": "kling-v2-1",
       "base_url": "https://api-singapore.klingai.com",
-      "endpoints": {},
+      "endpoints": {
+        "images": "POST /v1/images/generations"
+      },
       "reasoning_param": null
     }
   ]

@@ -26,7 +26,14 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "minute",
+    "input": 0.0043,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
@@ -58,6 +65,11 @@
     {
       "title": "Introducing Nova-2 | Deepgram",
       "url": "https://deepgram.com/learn/nova-2-speech-to-text-api",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model pricing evidence",
+      "url": "https://deepgram.com/learn/model-comparison-when-to-use-nova-2-vs-nova-3-for-devs",
       "retrieved_at": "2026-10-11"
     }
   ],

@@ -6,7 +6,8 @@
   "name": "Mistral OCR 3",
   "api": {
     "types": [
-      "ocr"
+      "ocr",
+      "batch"
     ]
   },
   "limits": {
@@ -67,6 +68,16 @@
       "title": "Models overview | Mistral Docs",
       "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "API Reference | Mistral Docs",
+      "url": "https://docs.mistral.ai/api/endpoint/ocr",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Batch | Mistral Docs",
+      "url": "https://docs.mistral.ai/api/endpoint/batch",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -74,7 +85,10 @@
       "id": "mistral",
       "model": "mistral-ocr-2512",
       "base_url": "https://api.mistral.ai",
-      "endpoints": {},
+      "endpoints": {
+        "ocr": "POST /v1/ocr",
+        "batch": "POST /v1/batch/jobs"
+      },
       "reasoning_param": null
     }
   ]

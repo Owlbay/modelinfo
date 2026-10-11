@@ -59,14 +59,21 @@
       "title": "音乐生成介绍 | SenseAudio 文档",
       "url": "https://docs.senseaudio.cn/guides/music/overview",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SenseAudio API: music/song-create-v2",
+      "url": "https://docs.senseaudio.cn/api-reference/endpoint/music/song-create-v2.md",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "senseaudio",
       "model": "senseaudio-music-2.0-260626",
-      "base_url": "https://api.senseaudio.cn/v1",
-      "endpoints": {},
+      "base_url": "https://api.senseaudio.cn",
+      "endpoints": {
+        "audio": "POST /v2/music/song/create"
+      },
       "reasoning_param": null
     }
   ]

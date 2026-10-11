@@ -26,7 +26,14 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 0.1,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "retired",
@@ -44,8 +51,13 @@
       "retrieved_at": "2026-10-11"
     },
     {
-      "title": "存档：Cohere's Embed Models | Cohere Docs（原网址 https://docs.cohere.com/docs/cohere-embed）",
+      "title": "存档：官方模型发布/价格文档（原网址 https://docs.cohere.com/docs/cohere-embed）",
       "url": "https://web.archive.org/web/20240909123544/https://docs.cohere.com/docs/cohere-embed",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "存档：官方模型发布/价格文档（原网址 https://cohere.com/pricing）",
+      "url": "https://web.archive.org/web/20240222210743/https://cohere.com/pricing",
       "retrieved_at": "2026-10-11"
     }
   ],

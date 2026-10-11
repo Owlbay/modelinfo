@@ -1,7 +1,7 @@
 {
   "id": "kimi-thinking-preview",
   "object": "model",
-  "created": null,
+  "created": 1746489600,
   "owned_by": "moonshot",
   "name": "Kimi Thinking Preview",
   "api": {
@@ -23,14 +23,16 @@
     ]
   },
   "reasoning": {
-    "supported": null,
+    "supported": true,
     "efforts": []
   },
   "pricing": null,
-  "features": [],
+  "features": [
+    "streaming"
+  ],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2025-05-06",
     "knowledge_cutoff": null,
     "description": "Kimi thinking preview model listed in the official deprecated models. Officially discontinued on 2025-11-11.",
     "docs": "https://platform.kimi.ai/docs/models",
@@ -51,6 +53,11 @@
     {
       "title": "Model List | Kimi API Platform（存档，原网址 https://platform.kimi.ai/docs/models）",
       "url": "https://web.archive.org/web/20260421085752/https://platform.kimi.ai/docs/models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Kimi 长思考模型 API 正式发布",
+      "url": "https://platform.kimi.com/blog/posts/kimi-thinking",
       "retrieved_at": "2026-10-11"
     }
   ],

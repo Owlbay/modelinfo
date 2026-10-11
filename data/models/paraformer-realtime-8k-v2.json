@@ -59,14 +59,21 @@
       "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
       "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio API Reference — real-time-speech-recognition-user-guide",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/real-time-speech-recognition-user-guide",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "alibaba",
       "model": "paraformer-realtime-8k-v2",
-      "base_url": "https://{WorkspaceId}.cn-beijing.maas.aliyuncs.com",
-      "endpoints": {},
+      "base_url": "wss://{WorkspaceId}.cn-beijing.maas.aliyuncs.com",
+      "endpoints": {
+        "realtime": "WS /api-ws/v1/inference"
+      },
       "reasoning_param": null
     }
   ]

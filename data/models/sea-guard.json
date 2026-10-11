@@ -1,7 +1,7 @@
 {
   "id": "sea-guard",
   "object": "model",
-  "created": null,
+  "created": 1760659200,
   "owned_by": "aisingapore",
   "name": "SEA-Guard",
   "api": {
@@ -30,7 +30,7 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-10-17",
     "knowledge_cutoff": null,
     "description": "Safety model for Southeast Asian languages returning a binary safe / unsafe classification; no system prompts or multi-turn conversations.",
     "docs": "https://docs.sea-lion.ai/guides/inferencing/api",
@@ -53,6 +53,11 @@
     {
       "title": "SEA-GUARD | SEA-LION Docs",
       "url": "https://docs.sea-lion.ai/models/sea-guard/qwennllama-sea-guard",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Introducing SEA-Guard: A Specialized Safety Model for AI in Southeast Asia (original API model)",
+      "url": "https://sea-lion.ai/blog/sea-guard-safety-model/",
       "retrieved_at": "2026-10-11"
     }
   ],

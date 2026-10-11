@@ -64,15 +64,20 @@
       "title": "Changelog | Sarvam Docs",
       "url": "https://docs.sarvam.ai/changelog",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official API reference",
+      "url": "https://docs.sarvam.ai/api/integration/pipecat-production-guide",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "sarvam",
       "model": "saaras:v3-realtime",
-      "base_url": "https://api.sarvam.ai",
+      "base_url": "wss://api.sarvam.ai",
       "endpoints": {
-        "realtime": "GET /speech-to-text-realtime/ws"
+        "realtime": "WS /speech-to-text-realtime/ws"
       },
       "reasoning_param": null
     }

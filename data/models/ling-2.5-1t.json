@@ -1,7 +1,7 @@
 {
   "id": "ling-2.5-1t",
   "object": "model",
-  "created": null,
+  "created": 1771200000,
   "owned_by": "ant",
   "name": "Ling-2.5-1T",
   "api": {
@@ -30,7 +30,7 @@
   "features": [],
   "info": {
     "status": "deprecated",
-    "release_date": null,
+    "release_date": "2026-02-16",
     "knowledge_cutoff": null,
     "description": "Ling-2.5-1T, scheduled for retirement. The official deprecation page lists the planned retirement date as 2026-09-30 00:00 (UTC+8) and still shows it under upcoming deprecation.",
     "docs": "https://developer.ant-ling.com/en/docs/models/deprecation/",
@@ -51,6 +51,11 @@
     {
       "title": "存档 OpenAI Compatible API | Ant Ling API Docs（原网址 https://developer.ant-ling.com/en/docs/api-reference/openai/）",
       "url": "https://web.archive.org/web/20260704184654/https://developer.ant-ling.com/en/docs/api-reference/openai/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "百灵官方博客：Ling-2.5-1T 发布",
+      "url": "https://developer.ant-ling.com/zh-CN/blogs",
       "retrieved_at": "2026-10-11"
     }
   ],

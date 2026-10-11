@@ -26,7 +26,14 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 0.2,
+    "output": 0.4,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "retired",
@@ -48,6 +55,11 @@
     {
       "title": "存档：Changelog | AI21 Docs（原网址 https://docs.ai21.com/changelog）",
       "url": "https://web.archive.org/web/20250911211703/https://docs.ai21.com/changelog",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "存档：AI21 Pricing（原网址 https://www.ai21.com/pricing/）",
+      "url": "https://web.archive.org/web/20250812020925/https://www.ai21.com/pricing/",
       "retrieved_at": "2026-10-11"
     }
   ],

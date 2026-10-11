@@ -59,6 +59,11 @@
       "title": "Pricing | Speechmatics",
       "url": "https://www.speechmatics.com/pricing",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official API reference",
+      "url": "https://docs.speechmatics.com/api-ref/batch/create-a-new-job",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -66,7 +71,9 @@
       "id": "speechmatics",
       "model": "oak-1",
       "base_url": "https://eu1.asr.api.speechmatics.com",
-      "endpoints": {},
+      "endpoints": {
+        "audio": "POST /v2/jobs"
+      },
       "reasoning_param": null
     }
   ]

@@ -1,7 +1,7 @@
 {
   "id": "text-embedding-ada-002",
   "object": "model",
-  "created": null,
+  "created": 1671062400,
   "owned_by": "openai",
   "name": "text-embedding-ada-002",
   "api": {
@@ -40,7 +40,7 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2022-12-15",
     "knowledge_cutoff": null,
     "description": "Older embedding model.",
     "docs": "https://developers.openai.com/api/docs/models/text-embedding-ada-002",
@@ -76,6 +76,11 @@
     {
       "title": "Vector embeddings | OpenAI API",
       "url": "https://developers.openai.com/api/docs/guides/embeddings",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release / pricing documentation",
+      "url": "https://openai.com/index/new-and-improved-embedding-model/",
       "retrieved_at": "2026-10-11"
     }
   ],

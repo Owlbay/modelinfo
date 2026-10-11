@@ -7,7 +7,8 @@
   "api": {
     "types": [
       "chat",
-      "messages"
+      "messages",
+      "responses"
     ]
   },
   "limits": {
@@ -73,6 +74,16 @@
       "title": "消息 (Messages) | SenseAudio 文档",
       "url": "https://docs.senseaudio.cn/api-reference/endpoint/llm/messages",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SenseAudio responses API",
+      "url": "https://docs.senseaudio.cn/api-reference/endpoint/llm/responses.md",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SenseAudio messages API",
+      "url": "https://docs.senseaudio.cn/api-reference/endpoint/llm/messages.md",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -82,7 +93,8 @@
       "base_url": "https://api.senseaudio.cn",
       "endpoints": {
         "chat": "POST /v1/chat/completions",
-        "messages": "POST /v1/messages"
+        "messages": "POST /v1/messages",
+        "responses": "POST /v1/responses"
       },
       "reasoning_param": null
     }

@@ -61,6 +61,11 @@
       "title": "Pricing | Sarvam Docs",
       "url": "https://docs.sarvam.ai/api/getting-started/pricing",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official API reference",
+      "url": "https://docs.sarvam.ai/api-reference/text/translate-text",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -68,7 +73,9 @@
       "id": "sarvam",
       "model": "mayura:v1",
       "base_url": "https://api.sarvam.ai",
-      "endpoints": {},
+      "endpoints": {
+        "completions": "POST /translate"
+      },
       "reasoning_param": null
     }
   ]

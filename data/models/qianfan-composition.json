@@ -1,7 +1,7 @@
 {
   "id": "qianfan-composition",
   "object": "model",
-  "created": null,
+  "created": 1747267200,
   "owned_by": "baidu",
   "name": "Qianfan-Composition",
   "api": {
@@ -31,7 +31,7 @@
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2025-05-15",
     "knowledge_cutoff": null,
     "description": "Qianfan-Composition, retired. Official retirement date: 2026-06-30.",
     "docs": "https://cloud.baidu.com/doc/qianfan/s/zmh4stou3",

@@ -61,14 +61,21 @@
       "title": "语音合成介绍 | SenseAudio 文档",
       "url": "https://docs.senseaudio.cn/guides/tts/overview",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SenseAudio API: tts/synthesize",
+      "url": "https://docs.senseaudio.cn/api-reference/endpoint/tts/synthesize.md",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "senseaudio",
       "model": "sensenova-tts-2.0",
-      "base_url": "https://api.senseaudio.cn/v1",
-      "endpoints": {},
+      "base_url": "https://api.senseaudio.cn",
+      "endpoints": {
+        "audio": "POST /v1/t2a_v2"
+      },
       "reasoning_param": null
     }
   ]

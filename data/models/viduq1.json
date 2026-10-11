@@ -55,14 +55,27 @@
       "title": "Text to Video | Vidu API",
       "url": "https://platform.vidu.com/docs/text-to-video",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Vidu API: video-models/vidu-q1/text-to-video",
+      "url": "https://platform.vidu.com/docs/api-reference/video-models/vidu-q1/text-to-video",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Vidu Image Generation API",
+      "url": "https://platform.vidu.com/docs/api-reference/image-generation",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "shengshu",
       "model": "viduq1",
-      "base_url": "https://api.vidu.com/ent/v2",
-      "endpoints": {},
+      "base_url": "https://api.vidu.com",
+      "endpoints": {
+        "video": "POST /ent/v2/text2video",
+        "images": "POST /ent/v2/reference2image"
+      },
       "reasoning_param": null
     }
   ]

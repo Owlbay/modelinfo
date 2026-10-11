@@ -1,7 +1,7 @@
 {
   "id": "kimi-k2.5",
   "object": "model",
-  "created": null,
+  "created": 1769472000,
   "owned_by": "moonshot",
   "name": "Kimi K2.5",
   "api": {
@@ -17,7 +17,8 @@
   "modalities": {
     "input": [
       "text",
-      "image"
+      "image",
+      "video"
     ],
     "output": [
       "text"
@@ -35,7 +36,7 @@
   ],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2026-01-27",
     "knowledge_cutoff": null,
     "description": "Multimodal model with native visual and text input, thinking and non-thinking modes, dialogue and agent tasks. Officially discontinued on 2026-08-31.",
     "docs": "https://platform.kimi.ai/docs/models",
@@ -61,6 +62,16 @@
     {
       "title": "Model Inference Pricing Explanation | Kimi API Platform（存档，原网址 https://platform.kimi.ai/docs/pricing/chat）",
       "url": "https://web.archive.org/web/20260327200226/https://platform.kimi.ai/docs/pricing/chat",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Kimi Research Blog",
+      "url": "https://www.kimi.com/en/blog/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Kimi K2.5: Visual Agentic Intelligence",
+      "url": "https://www.kimi.com/en/blog/kimi-k2-5",
       "retrieved_at": "2026-10-11"
     }
   ],

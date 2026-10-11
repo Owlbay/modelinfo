@@ -74,7 +74,9 @@
       "id": "alibaba",
       "model": "qwen-deep-research",
       "base_url": "https://{WorkspaceId}.cn-beijing.maas.aliyuncs.com",
-      "endpoints": {},
+      "endpoints": {
+        "chat": "POST /api/v1/services/aigc/text-generation/generation"
+      },
       "reasoning_param": null
     }
   ]

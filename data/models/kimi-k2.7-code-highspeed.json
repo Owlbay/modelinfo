@@ -38,7 +38,9 @@
   },
   "features": [
     "tools",
-    "caching"
+    "caching",
+    "streaming",
+    "structured_output"
   ],
   "info": {
     "status": "active",
@@ -46,7 +48,7 @@
     "knowledge_cutoff": null,
     "description": "High-speed variant of Kimi K2.7 Code, about 180 tokens/s output.",
     "docs": "https://platform.kimi.ai/docs/guide/kimi-k2-7-code-quickstart",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "translations": {
@@ -58,17 +60,32 @@
     {
       "title": "Model List | Kimi API Platform",
       "url": "https://platform.kimi.ai/docs/models",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Chat Model Pricing | Kimi API Platform",
       "url": "https://platform.kimi.ai/docs/pricing/chat",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Kimi K2.7 Code Quickstart | Kimi API Platform",
       "url": "https://platform.kimi.ai/docs/guide/kimi-k2-7-code-quickstart",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Chat Completions API | Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/api/chat",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model Parameter Reference | Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/api/models-overview",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Structured Output | Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/guide/response_format",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

@@ -67,6 +67,11 @@
       "title": "Pricing | Upstage",
       "url": "https://upstage.ai/pricing",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official API reference",
+      "url": "https://console.upstage.ai/api/parse/document-ocr",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -74,7 +79,9 @@
       "id": "upstage",
       "model": "ocr",
       "base_url": "https://api.upstage.ai/v1",
-      "endpoints": {},
+      "endpoints": {
+        "ocr": "POST /document-digitization"
+      },
       "reasoning_param": null
     }
   ]

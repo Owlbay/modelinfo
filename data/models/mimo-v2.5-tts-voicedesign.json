@@ -6,6 +6,7 @@
   "name": "MiMo-V2.5-TTS-VoiceDesign",
   "api": {
     "types": [
+      "chat",
       "audio"
     ]
   },
@@ -34,14 +35,14 @@
     "status": "active",
     "release_date": "2026-04-23",
     "knowledge_cutoff": null,
-    "description": "Xiaomi text-to-speech that designs a new voice from a natural-language description.",
+    "description": "无需参考音频，一句话描述即可生成全新音色。",
     "docs": "https://mimo.mi.com/models/zh-CN/mimo-v2.5-tts-voicedesign",
     "verified_at": "2026-10-11"
   },
   "aliases": [],
   "translations": {
-    "zh": {
-      "description": "小米文字转语音模型，可根据自然语言描述设计全新的声音。"
+    "en": {
+      "description": "Generate a new voice from a single-sentence description, without reference audio."
     }
   },
   "sources": [
@@ -67,7 +68,7 @@
       "model": "mimo-v2.5-tts-voicedesign",
       "base_url": "https://api.xiaomimimo.com/v1",
       "endpoints": {
-        "messages": "POST /chat/completions"
+        "chat": "POST /chat/completions"
       },
       "reasoning_param": null
     }

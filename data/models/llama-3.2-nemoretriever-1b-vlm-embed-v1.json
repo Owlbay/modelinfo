@@ -11,7 +11,7 @@
   },
   "limits": {
     "context": 8192,
-    "input": null,
+    "input": 4096,
     "output": null
   },
   "modalities": {
@@ -50,6 +50,11 @@
       "title": "nvidia / llama-3.2-nemoretriever-1b-vlm-embed-v1 | NVIDIA NIM API Reference",
       "url": "https://docs.api.nvidia.com/nim/reference/nvidia-llama-3_2-nemoretriever-1b-vlm-embed-v1",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "NVIDIA llama-3.2-nemoretriever-1b-vlm-embed-v1 inference API",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-llama-3_2-nemoretriever-1b-vlm-embed-v1-infer",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -57,7 +62,9 @@
       "id": "nvidia",
       "model": "nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1",
       "base_url": "https://integrate.api.nvidia.com",
-      "endpoints": {},
+      "endpoints": {
+        "embeddings": "POST /v1/embeddings"
+      },
       "reasoning_param": null
     }
   ]

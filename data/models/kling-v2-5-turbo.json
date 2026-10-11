@@ -65,6 +65,11 @@
       "title": "Kling API Pricing - Video",
       "url": "https://kling.ai/document-api/pricing/base/video",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Kling Video API",
+      "url": "https://kling.ai/document-api/api/video/2-5-turbo/text-to-video.md",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -72,7 +77,9 @@
       "id": "kling",
       "model": "kling-v2-5-turbo",
       "base_url": "https://api-singapore.klingai.com",
-      "endpoints": {},
+      "endpoints": {
+        "video": "POST /text-to-video/kling-2.5-turbo"
+      },
       "reasoning_param": null
     }
   ]

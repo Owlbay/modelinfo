@@ -1,7 +1,7 @@
 {
   "id": "ernie-functions-8k",
   "object": "model",
-  "created": null,
+  "created": 1714003200,
   "owned_by": "baidu",
   "name": "ERNIE-Functions-8K",
   "api": {
@@ -30,7 +30,7 @@
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2024-04-25",
     "knowledge_cutoff": null,
     "description": "ERNIE-Functions-8K, retired. Official retirement date: 2026-04-23.",
     "docs": "https://cloud.baidu.com/doc/qianfan/s/zmh4stou3",

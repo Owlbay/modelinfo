@@ -6,7 +6,7 @@
   "name": "Antigravity Preview 09-2026",
   "api": {
     "types": [
-      "responses"
+      "interactions"
     ]
   },
   "limits": {
@@ -76,6 +76,11 @@
       "title": "Release notes | Gemini API",
       "url": "https://ai.google.dev/gemini-api/docs/changelog",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "interactions-overview | Gemini API",
+      "url": "https://ai.google.dev/gemini-api/docs/interactions-overview",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -84,7 +89,7 @@
       "model": "antigravity-preview-09-2026",
       "base_url": "https://generativelanguage.googleapis.com",
       "endpoints": {
-        "responses": "POST /v1beta/interactions"
+        "interactions": "POST /v1beta/interactions"
       },
       "reasoning_param": null
     }

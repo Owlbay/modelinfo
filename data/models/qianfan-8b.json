@@ -1,7 +1,7 @@
 {
   "id": "qianfan-8b",
   "object": "model",
-  "created": null,
+  "created": 1745452800,
   "owned_by": "baidu",
   "name": "Qianfan-8B",
   "api": {
@@ -30,7 +30,7 @@
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2025-04-24",
     "knowledge_cutoff": null,
     "description": "Qianfan-8B, retired. Official retirement date: 2026-01-20.",
     "docs": "https://cloud.baidu.com/doc/qianfan/s/zmh4stou3",

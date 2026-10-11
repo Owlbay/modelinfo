@@ -29,7 +29,14 @@
     "supported": false,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 0.3,
+    "output": 30,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [
     "batch"
   ],

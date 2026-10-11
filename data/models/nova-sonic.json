@@ -1,7 +1,7 @@
 {
   "id": "nova-sonic",
   "object": "model",
-  "created": null,
+  "created": 1744070400,
   "owned_by": "amazon",
   "name": "Amazon Nova Sonic",
   "api": {
@@ -30,7 +30,7 @@
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2025-04-08",
     "knowledge_cutoff": null,
     "description": null,
     "docs": "https://docs.aws.amazon.com/nova/latest/userguide/speech.html",
@@ -48,6 +48,11 @@
     {
       "title": "Using the Amazon Nova Sonic Speech-to-Speech model - Amazon Nova User Guide (Version 1)",
       "url": "https://docs.aws.amazon.com/nova/latest/userguide/speech.html",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release / pricing documentation",
+      "url": "https://aws.amazon.com/blogs/aws/introducing-amazon-nova-sonic-human-like-voice-conversations-for-generative-ai-applications/",
       "retrieved_at": "2026-10-11"
     }
   ],

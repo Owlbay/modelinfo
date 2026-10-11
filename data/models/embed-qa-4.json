@@ -29,7 +29,7 @@
   "pricing": null,
   "features": [],
   "info": {
-    "status": "active",
+    "status": "deprecated",
     "release_date": null,
     "knowledge_cutoff": null,
     "description": "Embedding model optimized for text question-answering retrieval.",
@@ -48,6 +48,11 @@
     {
       "title": "nvidia / embed-qa-4 | NVIDIA NIM API Reference",
       "url": "https://docs.api.nvidia.com/nim/reference/nvidia-embed-qa-4",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "NVIDIA embed-qa-4 deprecated endpoint",
+      "url": "https://build.nvidia.com/nvidia/embed-qa-4",
       "retrieved_at": "2026-10-11"
     }
   ],

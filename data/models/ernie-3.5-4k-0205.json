@@ -1,7 +1,7 @@
 {
   "id": "ernie-3.5-4k-0205",
   "object": "model",
-  "created": null,
+  "created": 1707091200,
   "owned_by": "baidu",
   "name": "ERNIE-3.5-4K-0205",
   "api": {
@@ -30,7 +30,7 @@
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2024-02-05",
     "knowledge_cutoff": null,
     "description": "ERNIE-3.5-4K-0205, retired. Official retirement date: 2024-05-30.",
     "docs": "https://cloud.baidu.com/doc/qianfan/s/zmh4stou3",

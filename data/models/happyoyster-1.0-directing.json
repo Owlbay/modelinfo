@@ -63,6 +63,11 @@
       "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
       "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio API Reference — happyoyster-directing-create-world-api-reference",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/happyoyster-directing-create-world-api-reference",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -70,7 +75,9 @@
       "id": "alibaba",
       "model": "happyoyster-1.0-directing",
       "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
-      "endpoints": {},
+      "endpoints": {
+        "video": "POST /api/v2/apps/happyoyster-1.0-directing/openapi/v1/worlds"
+      },
       "reasoning_param": null
     }
   ]

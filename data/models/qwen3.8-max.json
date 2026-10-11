@@ -86,7 +86,7 @@
     {
       "title": "Create a response | Alibaba Cloud Model Studio",
       "url": "https://www.alibabacloud.com/help/en/model-studio/qwen-api-via-openai-responses",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Use deep thinking models via API | Alibaba Cloud Model Studio",
@@ -114,7 +114,10 @@
         "messages": "POST /apps/anthropic/v1/messages",
         "responses": "POST /compatible-mode/v1/responses"
       },
-      "reasoning_param": "enable_thinking"
+      "reasoning_param": "enable_thinking",
+      "reasoning_params": {
+        "responses": "reasoning.effort"
+      }
     }
   ]
 }

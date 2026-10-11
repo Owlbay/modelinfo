@@ -1,7 +1,7 @@
 {
   "id": "c4ai-aya-expanse-8b",
   "object": "model",
-  "created": null,
+  "created": 1729728000,
   "owned_by": "cohere",
   "name": "Aya Expanse 8B",
   "api": {
@@ -26,11 +26,18 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 0.5,
+    "output": 1.5,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2024-10-24",
     "knowledge_cutoff": null,
     "description": null,
     "docs": "https://docs.cohere.com/docs/deprecations",
@@ -46,6 +53,16 @@
     {
       "title": "存档：Aya Expanse | Cohere Docs（原网址 https://docs.cohere.com/docs/aya-expanse）",
       "url": "https://web.archive.org/web/20250915155943/https://docs.cohere.com/docs/aya-expanse",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release / pricing documentation",
+      "url": "https://cohere.com/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "存档：Aya Expanse 官方发布公告（原网址 https://cohere.com/blog/aya-expanse-connecting-our-world）",
+      "url": "https://web.archive.org/web/20241101215912/https://cohere.com/blog/aya-expanse-connecting-our-world",
       "retrieved_at": "2026-10-11"
     }
   ],

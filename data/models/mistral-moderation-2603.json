@@ -6,7 +6,8 @@
   "name": "Mistral Moderation 2",
   "api": {
     "types": [
-      "moderation"
+      "moderation",
+      "batch"
     ]
   },
   "limits": {
@@ -36,7 +37,7 @@
     "knowledge_cutoff": null,
     "description": "Moderation model with a 128k context window and jailbreak detection, strong on multilingual and multi-turn conversations.",
     "docs": "https://docs.mistral.ai/models/mistral-moderation-26-03",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "translations": {
@@ -53,7 +54,7 @@
     {
       "title": "API pricing | Mistral Docs",
       "url": "https://docs.mistral.ai/inference/pricing",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Models overview | Mistral Docs",
@@ -64,6 +65,16 @@
       "title": "Mistral-Large-3-675B-Instruct-2512 (256k context, 262144) | Hugging Face",
       "url": "https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "API Reference | Mistral Docs",
+      "url": "https://docs.mistral.ai/api/endpoint/classifiers",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Batch | Mistral Docs",
+      "url": "https://docs.mistral.ai/api/endpoint/batch",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -71,7 +82,10 @@
       "id": "mistral",
       "model": "mistral-moderation-2603",
       "base_url": "https://api.mistral.ai",
-      "endpoints": {},
+      "endpoints": {
+        "moderation": "POST /v1/moderations",
+        "batch": "POST /v1/batch/jobs"
+      },
       "reasoning_param": null
     }
   ]

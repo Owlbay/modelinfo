@@ -1,7 +1,7 @@
 {
   "id": "qianfan-lightning-128b-a19b",
   "object": "model",
-  "created": null,
+  "created": 1758585600,
   "owned_by": "baidu",
   "name": "Qianfan-Lightning-128B-A19B",
   "api": {
@@ -30,7 +30,7 @@
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2025-09-23",
     "knowledge_cutoff": null,
     "description": "Qianfan-Lightning-128B-A19B, retired. Official retirement date: 2026-02-27.",
     "docs": "https://cloud.baidu.com/doc/qianfan/s/zmh4stou3",

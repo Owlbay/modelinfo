@@ -59,6 +59,11 @@
       "title": "模型调用计费 | 大模型服务平台百炼",
       "url": "https://help.aliyun.com/zh/model-studio/model-pricing",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio API Reference — text-rerank-api",
+      "url": "https://help.aliyun.com/zh/model-studio/text-rerank-api",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -66,7 +71,9 @@
       "id": "alibaba",
       "model": "qwen3.7-text-rerank",
       "base_url": "https://{WorkspaceId}.cn-beijing.maas.aliyuncs.com",
-      "endpoints": {},
+      "endpoints": {
+        "rerank": "POST /api/v1/services/rerank/text-rerank/text-rerank"
+      },
       "reasoning_param": null
     }
   ]

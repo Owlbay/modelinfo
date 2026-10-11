@@ -79,6 +79,11 @@
       "title": "Grok Imagine API | xAI",
       "url": "https://x.ai/news/grok-imagine-api",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Videos | xAI REST API",
+      "url": "https://docs.x.ai/developers/rest-api-reference/inference/videos",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -86,7 +91,9 @@
       "id": "xai",
       "model": "grok-imagine-video",
       "base_url": "https://api.x.ai",
-      "endpoints": {},
+      "endpoints": {
+        "video": "POST /v1/videos/generations"
+      },
       "reasoning_param": null
     }
   ]

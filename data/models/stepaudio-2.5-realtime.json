@@ -1,7 +1,7 @@
 {
   "id": "stepaudio-2.5-realtime",
   "object": "model",
-  "created": null,
+  "created": 1778198400,
   "owned_by": "stepfun",
   "name": "StepAudio 2.5 Realtime",
   "api": {
@@ -39,7 +39,7 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-05-08",
     "knowledge_cutoff": null,
     "description": "End-to-end speech-to-speech model served over a WebSocket Realtime API, replying with streaming audio and a text transcript.",
     "docs": "https://platform.stepfun.ai/docs/en/guides/models/stepaudio-2.5-realtime",
@@ -71,15 +71,20 @@
       "title": "Bidirectional Realtime Voice | StepFun API reference",
       "url": "https://platform.stepfun.ai/docs/en/api-reference/realtime/chat",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "StepFun 官方模型发布新闻",
+      "url": "https://www.stepfun.com/news",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "stepfun",
       "model": "stepaudio-2.5-realtime",
-      "base_url": "https://api.stepfun.ai/v1",
+      "base_url": "wss://api.stepfun.ai/v1",
       "endpoints": {
-        "realtime": "GET /realtime"
+        "realtime": "WS /realtime"
       },
       "reasoning_param": null
     }

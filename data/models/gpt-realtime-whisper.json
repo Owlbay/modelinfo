@@ -41,7 +41,7 @@
   "info": {
     "status": "active",
     "release_date": "2026-05-07",
-    "knowledge_cutoff": null,
+    "knowledge_cutoff": "2024-09-30",
     "description": "Streaming speech-to-text model for realtime transcription.",
     "docs": "https://developers.openai.com/api/docs/models/gpt-realtime-whisper",
     "verified_at": "2026-10-11"
@@ -71,6 +71,11 @@
     {
       "title": "Changelog | OpenAI API",
       "url": "https://developers.openai.com/api/docs/changelog",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "gpt-realtime-whisper Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-realtime-whisper.md",
       "retrieved_at": "2026-10-11"
     }
   ],

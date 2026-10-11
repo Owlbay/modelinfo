@@ -29,7 +29,7 @@
   "pricing": {
     "currency": "USD",
     "unit": "second",
-    "input": 0.00009,
+    "input": 9e-05,
     "output": null,
     "cache_read": null,
     "cache_write": null
@@ -64,14 +64,21 @@
       "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
       "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio API Reference — real-time-speech-recognition-user-guide",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/real-time-speech-recognition-user-guide",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "alibaba",
       "model": "qwen-audio-3.0-asr-flash-streaming",
-      "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
-      "endpoints": {},
+      "base_url": "wss://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
+      "endpoints": {
+        "realtime": "WS /api-ws/v1/inference"
+      },
       "reasoning_param": null
     }
   ]

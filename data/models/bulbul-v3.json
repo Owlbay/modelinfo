@@ -1,7 +1,7 @@
 {
   "id": "bulbul-v3",
   "object": "model",
-  "created": null,
+  "created": 1770249600,
   "owned_by": "sarvam",
   "name": "Bulbul v3",
   "api": {
@@ -37,7 +37,7 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-02-05",
     "knowledge_cutoff": null,
     "description": "Text-to-speech model with natural voices for 10 Indian languages and English, up to 2,500 characters per request.",
     "docs": "https://docs.sarvam.ai/api/getting-started/models/bulbul",
@@ -60,6 +60,11 @@
     {
       "title": "Pricing | Sarvam Docs",
       "url": "https://docs.sarvam.ai/api/getting-started/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official release announcement",
+      "url": "https://www.sarvam.ai/blogs/bulbul-v3",
       "retrieved_at": "2026-10-11"
     }
   ],

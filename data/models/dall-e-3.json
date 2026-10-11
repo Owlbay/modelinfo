@@ -1,7 +1,7 @@
 {
   "id": "dall-e-3",
   "object": "model",
-  "created": null,
+  "created": 1699228800,
   "owned_by": "openai",
   "name": "DALL·E 3",
   "api": {
@@ -26,11 +26,18 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "image",
+    "input": null,
+    "output": 0.04,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2023-11-06",
     "knowledge_cutoff": null,
     "description": "Deprecated image generation model",
     "docs": "https://developers.openai.com/api/docs/models/dall-e-3",
@@ -51,6 +58,16 @@
     {
       "title": "Deprecations | OpenAI API",
       "url": "https://developers.openai.com/api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release / pricing documentation",
+      "url": "https://developers.openai.com/api/docs/changelog",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "存档：官方模型发布/价格文档（原网址 https://openai.com/pricing）",
+      "url": "https://web.archive.org/web/20240301001148/https://openai.com/pricing",
       "retrieved_at": "2026-10-11"
     }
   ],

@@ -69,6 +69,11 @@
       "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
       "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio API Reference — qwen-tts",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen-tts",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -76,7 +81,9 @@
       "id": "alibaba",
       "model": "qwen-audio-3.0-tts-flash",
       "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
-      "endpoints": {},
+      "endpoints": {
+        "audio": "POST /api/v1/services/audio/tts/SpeechSynthesizer"
+      },
       "reasoning_param": null
     }
   ]

@@ -1,7 +1,7 @@
 {
   "id": "qwen-coder-turbo",
   "object": "model",
-  "created": null,
+  "created": 1726704000,
   "owned_by": "alibaba",
   "name": "Qwen-Coder-Turbo",
   "api": {
@@ -37,7 +37,7 @@
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2024-09-19",
     "knowledge_cutoff": null,
     "description": null,
     "docs": "https://www.alibabacloud.com/en/notice/model_studio_notice_on_the_postponed_retirement_of_selected_legacy_models_7d0",
@@ -57,6 +57,11 @@
     {
       "title": "存档：Models | Alibaba Cloud Model Studio（原网址 https://www.alibabacloud.com/help/en/model-studio/models）",
       "url": "https://web.archive.org/web/20250908201053/https://www.alibabacloud.com/help/en/model-studio/models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio model lifecycle and release dates",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
       "retrieved_at": "2026-10-11"
     }
   ],

@@ -1,7 +1,7 @@
 {
   "id": "saaras-v3",
   "object": "model",
-  "created": null,
+  "created": 1770681600,
   "owned_by": "sarvam",
   "name": "Saaras v3",
   "api": {
@@ -37,7 +37,7 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-02-10",
     "knowledge_cutoff": null,
     "description": "Speech-to-text model for 22 Indian languages plus Indian English with transcribe, translate, verbatim, translit and codemix modes.",
     "docs": "https://docs.sarvam.ai/api/getting-started/models/saaras",
@@ -60,6 +60,11 @@
     {
       "title": "Pricing | Sarvam Docs",
       "url": "https://docs.sarvam.ai/api/getting-started/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official release announcement",
+      "url": "https://www.sarvam.ai/blogs",
       "retrieved_at": "2026-10-11"
     }
   ],

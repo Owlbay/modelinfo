@@ -47,14 +47,21 @@
       "title": "Model Map | Vidu API",
       "url": "https://platform.vidu.com/docs/overview/model-map",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Vidu API: video-models/vidu-q1/image-to-video",
+      "url": "https://platform.vidu.com/docs/api-reference/video-models/vidu-q1/image-to-video",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "shengshu",
       "model": "viduq1-classic",
-      "base_url": "https://api.vidu.com/ent/v2",
-      "endpoints": {},
+      "base_url": "https://api.vidu.com",
+      "endpoints": {
+        "video": "POST /ent/v2/img2video"
+      },
       "reasoning_param": null
     }
   ]

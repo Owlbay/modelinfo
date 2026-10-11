@@ -1,7 +1,7 @@
 {
   "id": "music_v1",
   "object": "model",
-  "created": null,
+  "created": 1755475200,
   "owned_by": "elevenlabs",
   "name": "Eleven Music v1",
   "api": {
@@ -26,11 +26,18 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "minute",
+    "input": null,
+    "output": 0.15,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-08-18",
     "knowledge_cutoff": null,
     "description": "Studio-grade music generation from text prompts (legacy; outclassed by v2 and v2.5).",
     "docs": "https://elevenlabs.io/docs/overview/models",
@@ -56,6 +63,16 @@
     {
       "title": "Compose music | ElevenLabs API Reference",
       "url": "https://elevenlabs.io/docs/api-reference/music/compose",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "ElevenAPI per-product pricing FAQ: Eleven Music $0.15/minute",
+      "url": "https://elevenlabs.io/pricing/api",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Eleven Music, now available in the API",
+      "url": "https://elevenlabs.io/blog/eleven-music-now-available-in-the-api",
       "retrieved_at": "2026-10-11"
     }
   ],

@@ -26,7 +26,14 @@
     "supported": false,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "image",
+    "input": null,
+    "output": 0.02,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "retired",
@@ -46,6 +53,11 @@
     {
       "title": "存档：Imagen | Gemini API（原网址 https://ai.google.dev/gemini-api/docs/imagen）",
       "url": "https://web.archive.org/web/20251001122053/https://ai.google.dev/gemini-api/docs/imagen",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official Google Developers announcement with API pricing",
+      "url": "https://developers.googleblog.com/en/announcing-imagen-4-fast-and-imagen-4-family-generally-available-in-the-gemini-api/",
       "retrieved_at": "2026-10-11"
     }
   ],

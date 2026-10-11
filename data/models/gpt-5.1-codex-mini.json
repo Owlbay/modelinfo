@@ -1,7 +1,7 @@
 {
   "id": "gpt-5.1-codex-mini",
   "object": "model",
-  "created": null,
+  "created": 1762992000,
   "owned_by": "openai",
   "name": "GPT-5.1-Codex Mini",
   "api": {
@@ -43,7 +43,7 @@
   ],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2025-11-13",
     "knowledge_cutoff": "2024-09-30",
     "description": "Smaller, more cost-effective, less-capable version of GPT-5.1-Codex",
     "docs": "https://developers.openai.com/api/docs/models/gpt-5.1-codex-mini",
@@ -64,6 +64,11 @@
     {
       "title": "Deprecations | OpenAI API",
       "url": "https://developers.openai.com/api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release / pricing documentation",
+      "url": "https://developers.openai.com/api/docs/changelog",
       "retrieved_at": "2026-10-11"
     }
   ],

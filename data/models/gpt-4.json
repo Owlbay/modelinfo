@@ -1,7 +1,7 @@
 {
   "id": "gpt-4",
   "object": "model",
-  "created": null,
+  "created": 1678752000,
   "owned_by": "openai",
   "name": "GPT-4",
   "api": {
@@ -42,7 +42,7 @@
   ],
   "info": {
     "status": "deprecated",
-    "release_date": null,
+    "release_date": "2023-03-14",
     "knowledge_cutoff": "2023-12-01",
     "description": "An older high-intelligence GPT model.",
     "docs": "https://developers.openai.com/api/docs/models/gpt-4",
@@ -76,6 +76,11 @@
     {
       "title": "Deprecations | OpenAI API",
       "url": "https://developers.openai.com/api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release / pricing documentation",
+      "url": "https://openai.com/index/gpt-4-research/",
       "retrieved_at": "2026-10-11"
     }
   ],

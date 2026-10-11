@@ -1,7 +1,7 @@
 {
   "id": "grok-4-fast-non-reasoning",
   "object": "model",
-  "created": null,
+  "created": 1758240000,
   "owned_by": "xai",
   "name": "Grok 4 Fast (Non-Reasoning)",
   "api": {
@@ -42,7 +42,7 @@
   ],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2025-09-19",
     "knowledge_cutoff": null,
     "description": null,
     "docs": "https://docs.x.ai/developers/migration/may-15-retirement",
@@ -60,6 +60,11 @@
     {
       "title": "存档：xAI Docs 模型页 grok-4-fast-non-reasoning（原网址 https://docs.x.ai/docs/models/grok-4-fast-non-reasoning）",
       "url": "https://web.archive.org/web/20251118014300/https://docs.x.ai/docs/models/grok-4-fast-non-reasoning",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release / pricing documentation",
+      "url": "https://x.ai/news/grok-4-fast",
       "retrieved_at": "2026-10-11"
     }
   ],

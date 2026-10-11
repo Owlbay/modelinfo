@@ -1,7 +1,7 @@
 {
   "id": "kimi-latest",
   "object": "model",
-  "created": null,
+  "created": 1739750400,
   "owned_by": "moonshot",
   "name": "Kimi Latest",
   "api": {
@@ -10,13 +10,14 @@
     ]
   },
   "limits": {
-    "context": null,
+    "context": 131072,
     "input": null,
     "output": null
   },
   "modalities": {
     "input": [
-      "text"
+      "text",
+      "image"
     ],
     "output": [
       "text"
@@ -27,10 +28,14 @@
     "efforts": []
   },
   "pricing": null,
-  "features": [],
+  "features": [
+    "tools",
+    "structured_output",
+    "caching"
+  ],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2025-02-17",
     "knowledge_cutoff": null,
     "description": "Kimi latest-model alias listed in the official deprecated models. Officially discontinued on 2026-01-28.",
     "docs": "https://platform.kimi.ai/docs/models",
@@ -51,6 +56,11 @@
     {
       "title": "Model List | Kimi API Platform（存档，原网址 https://platform.kimi.ai/docs/models）",
       "url": "https://web.archive.org/web/20260421085752/https://platform.kimi.ai/docs/models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "为什么要推出 Kimi Latest 模型？",
+      "url": "https://platform.kimi.com/blog/posts/kimi-latest",
       "retrieved_at": "2026-10-11"
     }
   ],

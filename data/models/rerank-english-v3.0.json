@@ -26,7 +26,14 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "request",
+    "input": 0.002,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
@@ -66,6 +73,11 @@
     {
       "title": "Advanced Retrieval Launch release (Rerank 3) | Cohere Release Notes",
       "url": "https://docs.cohere.com/changelog/advanced-retrieval-launch",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "存档：官方模型发布/价格文档（原网址 https://cohere.com/pricing）",
+      "url": "https://web.archive.org/web/20240830235218/https://cohere.com/pricing",
       "retrieved_at": "2026-10-11"
     }
   ],

@@ -1,7 +1,7 @@
 {
   "id": "recraftv3",
   "object": "model",
-  "created": null,
+  "created": 1730246400,
   "owned_by": "recraft",
   "name": "Recraft V3",
   "api": {
@@ -38,7 +38,7 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2024-10-30",
     "knowledge_cutoff": null,
     "description": "Previous-generation Recraft model known for photorealism and text rendering; supports inpainting, outpainting and background operations.",
     "docs": "https://www.recraft.ai/docs/api-reference/models/recraft-v3",
@@ -64,6 +64,11 @@
     {
       "title": "Pricing | Recraft API Docs",
       "url": "https://www.recraft.ai/docs/api-reference/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official release announcement",
+      "url": "https://www.recraft.ai/blog/recraft-introduces-a-revolutionary-ai-model-that-thinks-in-design-language",
       "retrieved_at": "2026-10-11"
     }
   ],

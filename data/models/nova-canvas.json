@@ -27,7 +27,14 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "image",
+    "input": null,
+    "output": 0.04,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "retired",
@@ -49,6 +56,11 @@
     {
       "title": "Amazon Bedrock model card: Nova Canvas",
       "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-canvas.html",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release / pricing documentation",
+      "url": "https://aws.amazon.com/cn/campaigns/nc202501/",
       "retrieved_at": "2026-10-11"
     }
   ],

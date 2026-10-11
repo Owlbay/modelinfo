@@ -1,7 +1,7 @@
 {
   "id": "ernie-lite-pro-128k",
   "object": "model",
-  "created": null,
+  "created": 1725580800,
   "owned_by": "baidu",
   "name": "ERNIE-Lite-Pro-128K",
   "api": {
@@ -30,7 +30,7 @@
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2024-09-06",
     "knowledge_cutoff": null,
     "description": "ERNIE-Lite-Pro-128K, retired. Official retirement date: 2026-06-30.",
     "docs": "https://cloud.baidu.com/doc/qianfan/s/zmh4stou3",

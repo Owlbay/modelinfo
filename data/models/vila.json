@@ -12,7 +12,7 @@
   "limits": {
     "context": null,
     "input": null,
-    "output": null
+    "output": 2048
   },
   "modalities": {
     "input": [
@@ -51,14 +51,21 @@
       "title": "nvidia / vila | NVIDIA NIM API Reference",
       "url": "https://docs.api.nvidia.com/nim/reference/nvidia-vila",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "NVIDIA vila inference API",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-vila-infer",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "nvidia",
       "model": "nvidia/vila",
-      "base_url": "https://integrate.api.nvidia.com",
-      "endpoints": {},
+      "base_url": "https://ai.api.nvidia.com",
+      "endpoints": {
+        "chat": "POST /v1/vlm/nvidia/vila"
+      },
       "reasoning_param": null
     }
   ]

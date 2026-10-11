@@ -1,7 +1,7 @@
 {
   "id": "scribe_v2",
   "object": "model",
-  "created": null,
+  "created": 1767916800,
   "owned_by": "elevenlabs",
   "name": "Scribe v2",
   "api": {
@@ -37,7 +37,7 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-01-09",
     "knowledge_cutoff": null,
     "description": "Batch speech-to-text with word-level timestamps, speaker diarization and keyterm prompting.",
     "docs": "https://elevenlabs.io/docs/overview/models",
@@ -63,6 +63,11 @@
     {
       "title": "Create transcript | ElevenLabs API Reference",
       "url": "https://elevenlabs.io/docs/api-reference/speech-to-text/convert",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official release announcement",
+      "url": "https://elevenlabs.io/blog/introducing-scribe-v2",
       "retrieved_at": "2026-10-11"
     }
   ],

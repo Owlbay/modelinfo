@@ -6,7 +6,8 @@
   "name": "Qwen3-ASR-Flash",
   "api": {
     "types": [
-      "audio"
+      "audio",
+      "chat"
     ]
   },
   "limits": {
@@ -29,7 +30,7 @@
   "pricing": {
     "currency": "USD",
     "unit": "second",
-    "input": 0.000035,
+    "input": 3.5e-05,
     "output": null,
     "cache_read": null,
     "cache_write": null
@@ -69,6 +70,11 @@
       "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
       "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio API Reference — qwen-asr-api-reference",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -76,7 +82,10 @@
       "id": "alibaba",
       "model": "qwen3-asr-flash",
       "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
-      "endpoints": {},
+      "endpoints": {
+        "audio": "POST /api/v1/services/aigc/multimodal-generation/generation",
+        "chat": "POST /compatible-mode/v1/chat/completions"
+      },
       "reasoning_param": null
     }
   ]

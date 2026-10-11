@@ -26,7 +26,14 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "CNY",
+    "unit": "1M_tokens",
+    "input": 0.8,
+    "output": 2,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "retired",
@@ -58,6 +65,11 @@
     {
       "title": "存档 对话 | 腾讯混元大模型（原网址 https://cloud.tencent.com/document/product/1729/105701）",
       "url": "https://web.archive.org/web/20250805/https://cloud.tencent.com/document/product/1729/105701",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "存档：腾讯混元生文计费概述（https://cloud.tencent.com/document/product/1729/97731）",
+      "url": "https://web.archive.org/web/20250805135915/https://cloud.tencent.com/document/product/1729/97731",
       "retrieved_at": "2026-10-11"
     }
   ],

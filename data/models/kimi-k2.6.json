@@ -7,7 +7,8 @@
   "api": {
     "types": [
       "chat",
-      "messages"
+      "messages",
+      "batch"
     ]
   },
   "limits": {
@@ -39,7 +40,10 @@
   },
   "features": [
     "tools",
-    "caching"
+    "caching",
+    "streaming",
+    "structured_output",
+    "batch"
   ],
   "info": {
     "status": "active",
@@ -59,17 +63,17 @@
     {
       "title": "Model List | Kimi API Platform",
       "url": "https://platform.kimi.ai/docs/models",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Chat Model Pricing | Kimi API Platform",
       "url": "https://platform.kimi.ai/docs/pricing/chat",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Kimi K2.6 Quickstart | Kimi API Platform",
       "url": "https://platform.kimi.ai/docs/guide/kimi-k2-6-quickstart",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Kimi K2.6 | Kimi Blog",
@@ -85,6 +89,31 @@
       "title": "Use Kimi in Claude Code | Kimi API Platform",
       "url": "https://platform.kimi.ai/docs/guide/claude-code-kimi",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Chat Completions API | Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/api/chat",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model Parameter Reference | Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/api/models-overview",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Structured Output | Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/guide/response_format",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Using Batch API for Bulk Processing | Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/guide/use-batch-api",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Create Batch | Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/api/batch-create",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -94,7 +123,8 @@
       "base_url": "https://api.moonshot.ai",
       "endpoints": {
         "chat": "POST /v1/chat/completions",
-        "messages": "POST /anthropic/v1/messages"
+        "messages": "POST /anthropic/v1/messages",
+        "batch": "POST /v1/batches"
       },
       "reasoning_param": "thinking.type"
     }

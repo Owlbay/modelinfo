@@ -27,7 +27,14 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 0.4,
+    "output": 2,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [
     "tools",
     "structured_output",
@@ -64,6 +71,11 @@
     {
       "title": "Model lifecycle policy | Mistral Docs",
       "url": "https://docs.mistral.ai/models/model-lifecycle",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "存档：Mistral API pricing（原网址 https://mistral.ai/pricing/api/）",
+      "url": "https://web.archive.org/web/20260701172032/https://mistral.ai/pricing/api/",
       "retrieved_at": "2026-10-11"
     }
   ],

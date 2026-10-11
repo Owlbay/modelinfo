@@ -6,6 +6,7 @@
   "name": "MiMo-V2.5-TTS",
   "api": {
     "types": [
+      "chat",
       "audio"
     ]
   },
@@ -34,21 +35,21 @@
     "status": "active",
     "release_date": "2026-04-23",
     "knowledge_cutoff": null,
-    "description": "Xiaomi text-to-speech with a voice library and style-instruction following.",
+    "description": "精品音色语音合成，风格指令精准遵循。",
     "docs": "https://mimo.mi.com/models/zh-CN/mimo-v2.5-tts",
     "verified_at": "2026-10-11"
   },
   "aliases": [],
   "translations": {
-    "zh": {
-      "description": "小米文字转语音模型，提供音色库并支持遵循风格指令。"
+    "en": {
+      "description": "Speech synthesis with premium voices and precise adherence to style instructions."
     }
   },
   "sources": [
     {
       "title": "mimo-v2.5-tts | Xiaomi MiMo",
       "url": "https://mimo.mi.com/models/zh-CN/mimo-v2.5-tts",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "按量计费 | Xiaomi MiMo",
@@ -67,7 +68,7 @@
       "model": "mimo-v2.5-tts",
       "base_url": "https://api.xiaomimimo.com/v1",
       "endpoints": {
-        "messages": "POST /chat/completions"
+        "chat": "POST /chat/completions"
       },
       "reasoning_param": null
     }

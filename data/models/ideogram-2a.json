@@ -26,7 +26,14 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "image",
+    "input": null,
+    "output": 0.025,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
@@ -61,6 +68,11 @@
     {
       "title": "API Pricing | Ideogram",
       "url": "https://ideogram.ai/api-pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Ideogram API pricing (dynamic table, lowest text-to-image tier)",
+      "url": "https://ideogram.ai/pricing/?pricing_tab=api",
       "retrieved_at": "2026-10-11"
     }
   ],

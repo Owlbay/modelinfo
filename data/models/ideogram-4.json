@@ -1,7 +1,7 @@
 {
   "id": "ideogram-4",
   "object": "model",
-  "created": null,
+  "created": 1780444800,
   "owned_by": "ideogram",
   "name": "Ideogram 4.0",
   "api": {
@@ -37,7 +37,7 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-06-03",
     "knowledge_cutoff": null,
     "description": "Ideogram image generation from natural-language or structured JSON prompts, with selectable rendering speed.",
     "docs": "https://developer.ideogram.ai/api-reference/images/generate/ideogram-4",
@@ -73,6 +73,11 @@
     {
       "title": "Ideogram 4.0",
       "url": "https://ideogram.ai/models/4.0/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release announcement",
+      "url": "https://ideogram.ai/news/ideogram-4.0/",
       "retrieved_at": "2026-10-11"
     }
   ],

@@ -1,7 +1,7 @@
 {
   "id": "o3-deep-research",
   "object": "model",
-  "created": null,
+  "created": 1750723200,
   "owned_by": "openai",
   "name": "o3-deep-research",
   "api": {
@@ -43,7 +43,7 @@
   ],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2025-06-24",
     "knowledge_cutoff": "2024-06-01",
     "description": "Our most powerful deep research model",
     "docs": "https://developers.openai.com/api/docs/models/o3-deep-research",
@@ -66,6 +66,11 @@
     {
       "title": "Deprecations | OpenAI API",
       "url": "https://developers.openai.com/api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release / pricing documentation",
+      "url": "https://developers.openai.com/api/docs/changelog",
       "retrieved_at": "2026-10-11"
     }
   ],

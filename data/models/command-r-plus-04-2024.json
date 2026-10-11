@@ -26,7 +26,14 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 3,
+    "output": 15,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [
     "tools"
   ],
@@ -55,6 +62,11 @@
     {
       "title": "Introducing Command R+: A Scalable LLM Built for Business | Cohere Blog",
       "url": "https://cohere.com/blog/command-r-plus-microsoft-azure",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release / pricing documentation",
+      "url": "https://cohere.com/pricing",
       "retrieved_at": "2026-10-11"
     }
   ],

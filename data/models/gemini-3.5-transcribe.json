@@ -6,7 +6,8 @@
   "name": "Gemini 3.5 Transcribe",
   "api": {
     "types": [
-      "audio"
+      "audio",
+      "interactions"
     ]
   },
   "limits": {
@@ -79,6 +80,11 @@
       "title": "Gemini 3.5 Audio - Model Card — Google DeepMind",
       "url": "https://deepmind.google/models/model-cards/gemini-3-5-audio/",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Audio transcription | Gemini API",
+      "url": "https://ai.google.dev/gemini-api/docs/transcribe",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -86,7 +92,9 @@
       "id": "google",
       "model": "gemini-3.5-transcribe",
       "base_url": "https://generativelanguage.googleapis.com",
-      "endpoints": {},
+      "endpoints": {
+        "interactions": "POST /v1beta/interactions"
+      },
       "reasoning_param": null
     }
   ]

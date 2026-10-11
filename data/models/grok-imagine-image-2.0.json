@@ -68,6 +68,11 @@
       "title": "Pricing | xAI Docs",
       "url": "https://docs.x.ai/developers/pricing",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Images | xAI REST API",
+      "url": "https://docs.x.ai/developers/rest-api-reference/inference/images",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -75,7 +80,9 @@
       "id": "xai",
       "model": "grok-imagine-image-2.0",
       "base_url": "https://api.x.ai",
-      "endpoints": {},
+      "endpoints": {
+        "images": "POST /v1/images/generations"
+      },
       "reasoning_param": null
     }
   ]

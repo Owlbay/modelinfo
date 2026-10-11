@@ -30,7 +30,14 @@
     "supported": true,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 2,
+    "output": 12,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [
     "tools",
     "structured_output",
@@ -55,6 +62,11 @@
     {
       "title": "存档：Models | Gemini API（原网址 https://ai.google.dev/gemini-api/docs/models）",
       "url": "https://web.archive.org/web/20260101/https://ai.google.dev/gemini-api/docs/models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Gemini 3 for developers: preview API pricing",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-3-developers/",
       "retrieved_at": "2026-10-11"
     }
   ],

@@ -1,7 +1,7 @@
 {
   "id": "gpt-3.5-turbo-0613",
   "object": "model",
-  "created": null,
+  "created": 1686614400,
   "owned_by": "openai",
   "name": "gpt-3.5-turbo-0613",
   "api": {
@@ -37,7 +37,7 @@
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2023-06-13",
     "knowledge_cutoff": null,
     "description": null,
     "docs": null,
@@ -48,6 +48,11 @@
     {
       "title": "Deprecations | OpenAI API",
       "url": "https://developers.openai.com/api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release / pricing documentation",
+      "url": "https://openai.com/index/function-calling-and-other-api-updates/",
       "retrieved_at": "2026-10-11"
     }
   ],

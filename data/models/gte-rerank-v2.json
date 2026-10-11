@@ -64,6 +64,11 @@
       "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
       "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio API Reference — text-rerank-api",
+      "url": "https://help.aliyun.com/zh/model-studio/text-rerank-api",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -71,7 +76,9 @@
       "id": "alibaba",
       "model": "gte-rerank-v2",
       "base_url": "https://{WorkspaceId}.cn-beijing.maas.aliyuncs.com",
-      "endpoints": {},
+      "endpoints": {
+        "rerank": "POST /api/v1/services/rerank/text-rerank/text-rerank"
+      },
       "reasoning_param": null
     }
   ]

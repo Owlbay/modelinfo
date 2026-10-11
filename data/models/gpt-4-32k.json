@@ -1,7 +1,7 @@
 {
   "id": "gpt-4-32k",
   "object": "model",
-  "created": null,
+  "created": 1678752000,
   "owned_by": "openai",
   "name": "gpt-4-32k",
   "api": {
@@ -37,7 +37,7 @@
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2023-03-14",
     "knowledge_cutoff": null,
     "description": null,
     "docs": null,
@@ -51,6 +51,11 @@
     {
       "title": "Deprecations | OpenAI API",
       "url": "https://developers.openai.com/api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release / pricing documentation",
+      "url": "https://openai.com/index/gpt-4-research/",
       "retrieved_at": "2026-10-11"
     }
   ],

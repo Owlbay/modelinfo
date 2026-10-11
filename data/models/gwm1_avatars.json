@@ -53,6 +53,11 @@
       "title": "Pricing | Runway API",
       "url": "https://docs.dev.runwayml.com/guides/pricing/",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official API reference",
+      "url": "https://docs.dev.runwayml.com/api/",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -60,7 +65,9 @@
       "id": "runway",
       "model": "gwm1_avatars",
       "base_url": "https://api.dev.runwayml.com/v1",
-      "endpoints": {},
+      "endpoints": {
+        "video": "POST /avatar_videos"
+      },
       "reasoning_param": null
     }
   ]

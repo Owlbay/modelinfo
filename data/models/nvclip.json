@@ -50,6 +50,11 @@
       "title": "nvidia / nvclip | NVIDIA NIM API Reference",
       "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nvclip",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "NVIDIA nvclip inference API",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nvclip-infer",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -57,7 +62,9 @@
       "id": "nvidia",
       "model": "nvidia/nvclip",
       "base_url": "https://integrate.api.nvidia.com",
-      "endpoints": {},
+      "endpoints": {
+        "embeddings": "POST /v1/embeddings"
+      },
       "reasoning_param": null
     }
   ]

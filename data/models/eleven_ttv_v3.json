@@ -1,7 +1,7 @@
 {
   "id": "eleven_ttv_v3",
   "object": "model",
-  "created": null,
+  "created": 1750809600,
   "owned_by": "elevenlabs",
   "name": "Eleven Text to Voice v3",
   "api": {
@@ -30,7 +30,7 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-06-25",
     "knowledge_cutoff": null,
     "description": "Expressive, human-like voice design model.",
     "docs": "https://elevenlabs.io/docs/overview/models",
@@ -51,6 +51,11 @@
     {
       "title": "Design a voice | ElevenLabs API Reference",
       "url": "https://elevenlabs.io/docs/api-reference/text-to-voice/design",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official release announcement",
+      "url": "https://elevenlabs.io/blog/voice-design-v3",
       "retrieved_at": "2026-10-11"
     }
   ],

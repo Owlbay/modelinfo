@@ -1,7 +1,7 @@
 {
   "id": "gpt-3.5-turbo-0301",
   "object": "model",
-  "created": null,
+  "created": 1677628800,
   "owned_by": "openai",
   "name": "gpt-3.5-turbo-0301",
   "api": {
@@ -37,7 +37,7 @@
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2023-03-01",
     "knowledge_cutoff": null,
     "description": null,
     "docs": null,
@@ -48,6 +48,11 @@
     {
       "title": "Deprecations | OpenAI API",
       "url": "https://developers.openai.com/api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "存档：官方模型发布/价格文档（原网址 https://openai.com/blog/introducing-chatgpt-and-whisper-apis）",
+      "url": "https://web.archive.org/web/20230302000653/https://openai.com/blog/introducing-chatgpt-and-whisper-apis",
       "retrieved_at": "2026-10-11"
     }
   ],

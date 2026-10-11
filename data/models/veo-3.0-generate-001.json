@@ -27,7 +27,14 @@
     "supported": false,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "second",
+    "input": null,
+    "output": 0.4,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "retired",
@@ -37,9 +44,7 @@
     "docs": "https://ai.google.dev/gemini-api/docs/deprecations",
     "verified_at": "2026-10-11"
   },
-  "aliases": [
-    "veo-3.0-generate-preview"
-  ],
+  "aliases": [],
   "sources": [
     {
       "title": "Deprecations | Gemini API",
@@ -49,6 +54,11 @@
     {
       "title": "存档：Video generation | Gemini API（原网址 https://ai.google.dev/gemini-api/docs/video）",
       "url": "https://web.archive.org/web/20251005134018/https://ai.google.dev/gemini-api/docs/video",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official Google Developers announcement with API pricing",
+      "url": "https://developers.googleblog.com/en/veo-3-and-veo-3-fast-new-pricing-new-configurations-and-better-resolution/",
       "retrieved_at": "2026-10-11"
     }
   ],

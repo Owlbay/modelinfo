@@ -26,7 +26,14 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_characters",
+    "input": 0.5,
+    "output": 0.5,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "retired",
@@ -51,6 +58,11 @@
     {
       "title": "存档：PaLM API deprecation（原网址 https://ai.google.dev/palm_docs/deprecation）",
       "url": "https://web.archive.org/web/20260305113615/https://ai.google.dev/palm_docs/deprecation",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model pricing evidence",
+      "url": "https://docs.cloud.google.com/vertex-ai/docs/release-notes",
       "retrieved_at": "2026-10-11"
     }
   ],

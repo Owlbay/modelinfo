@@ -1,7 +1,7 @@
 {
   "id": "sora-2",
   "object": "model",
-  "created": null,
+  "created": 1759708800,
   "owned_by": "openai",
   "name": "Sora 2",
   "api": {
@@ -39,7 +39,7 @@
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2025-10-06",
     "knowledge_cutoff": null,
     "description": "Flagship video generation with synced audio",
     "docs": "https://developers.openai.com/api/docs/models/sora-2",
@@ -63,6 +63,11 @@
     {
       "title": "Deprecations | OpenAI API",
       "url": "https://developers.openai.com/api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release / pricing documentation",
+      "url": "https://developers.openai.com/api/docs/changelog",
       "retrieved_at": "2026-10-11"
     }
   ],

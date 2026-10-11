@@ -69,6 +69,16 @@
       "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
       "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio API Reference — image-model",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/image-model",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio API Reference — text-to-image-v2-api-reference",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/text-to-image-v2-api-reference",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -76,7 +86,9 @@
       "id": "alibaba",
       "model": "wan2.2-t2i-plus",
       "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
-      "endpoints": {},
+      "endpoints": {
+        "images": "POST /api/v1/services/aigc/text2image/image-synthesis"
+      },
       "reasoning_param": null
     }
   ]

@@ -1,7 +1,7 @@
 {
   "id": "embedding-001",
   "object": "model",
-  "created": null,
+  "created": 1712620800,
   "owned_by": "google",
   "name": "Embedding 001",
   "api": {
@@ -30,7 +30,7 @@
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2024-04-09",
     "knowledge_cutoff": null,
     "description": null,
     "docs": "https://ai.google.dev/gemini-api/docs/deprecations",

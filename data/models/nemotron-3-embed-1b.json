@@ -54,6 +54,11 @@
       "title": "nvidia / nemotron-3-embed-1b | NVIDIA NIM API Reference",
       "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-3-embed-1b",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "NVIDIA nemotron-3-embed-1b inference API",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-3-embed-1b-infer",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -61,7 +66,9 @@
       "id": "nvidia",
       "model": "nvidia/nemotron-3-embed-1b",
       "base_url": "https://integrate.api.nvidia.com",
-      "endpoints": {},
+      "endpoints": {
+        "embeddings": "POST /v1/embeddings"
+      },
       "reasoning_param": null
     }
   ]

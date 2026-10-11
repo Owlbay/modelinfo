@@ -12,7 +12,7 @@
   },
   "limits": {
     "context": 128000,
-    "input": 272000,
+    "input": null,
     "output": 16384
   },
   "modalities": {
@@ -64,6 +64,11 @@
     {
       "title": "Deprecations | OpenAI API",
       "url": "https://developers.openai.com/api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "gpt-5-chat-latest Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-5-chat-latest.md",
       "retrieved_at": "2026-10-11"
     }
   ],

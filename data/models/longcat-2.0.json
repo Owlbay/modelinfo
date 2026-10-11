@@ -27,7 +27,14 @@
     "supported": true,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 0.75,
+    "output": 2.95,
+    "cache_read": 0.015,
+    "cache_write": null
+  },
   "features": [
     "tools",
     "streaming"
@@ -72,6 +79,11 @@
     {
       "title": "Anthropic Messages | LongCat API Docs",
       "url": "https://longcat.chat/platform/docs/api/messages",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release and pricing",
+      "url": "https://longcat.chat/platform/docs/Pricing/LongCat-2.0.html",
       "retrieved_at": "2026-10-11"
     }
   ],

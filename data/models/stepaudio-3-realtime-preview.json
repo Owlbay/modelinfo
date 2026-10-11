@@ -72,9 +72,9 @@
     {
       "id": "stepfun",
       "model": "stepaudio-3-realtime-preview",
-      "base_url": "https://api.stepfun.ai/v1",
+      "base_url": "wss://api.stepfun.ai/v1",
       "endpoints": {
-        "realtime": "GET /realtime"
+        "realtime": "WS /realtime"
       },
       "reasoning_param": null
     }

@@ -1,7 +1,7 @@
 {
   "id": "c4ai-aya-vision-8b",
   "object": "model",
-  "created": null,
+  "created": 1741046400,
   "owned_by": "cohere",
   "name": "Aya Vision 8B",
   "api": {
@@ -31,7 +31,7 @@
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2025-03-04",
     "knowledge_cutoff": null,
     "description": null,
     "docs": "https://docs.cohere.com/docs/deprecations",
@@ -45,8 +45,13 @@
       "retrieved_at": "2026-10-11"
     },
     {
-      "title": "存档：Aya Vision | Cohere Docs（原网址 https://docs.cohere.com/docs/aya-vision）",
+      "title": "存档：官方模型发布/价格文档（原网址 https://docs.cohere.com/docs/aya-vision）",
       "url": "https://web.archive.org/web/20250409184044/https://docs.cohere.com/docs/aya-vision",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "存档：官方模型发布/价格文档（原网址 https://cohere.com/blog/aya-vision）",
+      "url": "https://web.archive.org/web/20250311231544/https://cohere.com/blog/aya-vision",
       "retrieved_at": "2026-10-11"
     }
   ],

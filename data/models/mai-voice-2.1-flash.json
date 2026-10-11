@@ -1,7 +1,7 @@
 {
   "id": "mai-voice-2.1-flash",
   "object": "model",
-  "created": null,
+  "created": 1790812800,
   "owned_by": "microsoft",
   "name": "MAI-Voice-2.1-Flash",
   "api": {
@@ -26,11 +26,18 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_characters",
+    "input": 15,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "preview",
-    "release_date": null,
+    "release_date": "2026-10-01",
     "knowledge_cutoff": null,
     "description": "Low-latency expressive text-to-speech model across 23 languages for real-time voice agents, used via Azure Speech SSML.",
     "docs": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-voices",
@@ -53,6 +60,16 @@
     {
       "title": "Azure Speech pricing",
       "url": "https://azure.microsoft.com/pricing/details/speech/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release / pricing documentation",
+      "url": "https://microsoft.ai/models/mai-voice-2-1/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release / pricing documentation",
+      "url": "https://microsoft.ai/news/our-first-streaming-transcription-model/",
       "retrieved_at": "2026-10-11"
     }
   ],

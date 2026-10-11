@@ -70,9 +70,9 @@
     {
       "id": "stepfun",
       "model": "stepaudio-2.5-asr-stream",
-      "base_url": "https://api.stepfun.ai/v1",
+      "base_url": "wss://api.stepfun.ai/v1",
       "endpoints": {
-        "audio": "GET /realtime/asr/stream"
+        "audio": "WS /realtime/asr/stream"
       },
       "reasoning_param": null
     }

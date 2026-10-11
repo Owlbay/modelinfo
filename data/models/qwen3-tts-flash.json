@@ -1,7 +1,7 @@
 {
   "id": "qwen3-tts-flash",
   "object": "model",
-  "created": null,
+  "created": 1764201600,
   "owned_by": "alibaba",
   "name": "Qwen3-TTS-Flash",
   "api": {
@@ -37,7 +37,7 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-11-27",
     "knowledge_cutoff": null,
     "description": "Offline text-to-speech with 17 voices, multilingual and dialect output.",
     "docs": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
@@ -69,6 +69,11 @@
       "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
       "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio API Reference — qwen-tts-api",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-api",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -76,7 +81,9 @@
       "id": "alibaba",
       "model": "qwen3-tts-flash",
       "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
-      "endpoints": {},
+      "endpoints": {
+        "audio": "POST /api/v1/services/aigc/multimodal-generation/generation"
+      },
       "reasoning_param": null
     }
   ]

@@ -1,7 +1,7 @@
 {
   "id": "moonshot-v1-8k",
   "object": "model",
-  "created": null,
+  "created": 1706659200,
   "owned_by": "moonshot",
   "name": "Moonshot V1 8K",
   "api": {
@@ -30,7 +30,7 @@
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2024-01-31",
     "knowledge_cutoff": null,
     "description": "Moonshot V1 generation model; the series differs only in maximum context length (input plus output). Officially discontinued on 2026-08-31.",
     "docs": "https://platform.kimi.ai/docs/models",
@@ -56,6 +56,11 @@
     {
       "title": "Model Inference Pricing Explanation | Kimi API Platform（存档，原网址 https://platform.kimi.ai/docs/pricing/chat）",
       "url": "https://web.archive.org/web/20260327200226/https://platform.kimi.ai/docs/pricing/chat",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "为什么要推出 Kimi Latest 模型？",
+      "url": "https://platform.kimi.com/blog/posts/kimi-latest",
       "retrieved_at": "2026-10-11"
     }
   ],

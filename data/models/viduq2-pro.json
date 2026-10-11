@@ -52,14 +52,21 @@
       "title": "Vidu API Update Notice",
       "url": "https://platform.vidu.com/docs/api-reference/updates",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Vidu API: video-models/vidu-q2/image-to-video",
+      "url": "https://platform.vidu.com/docs/api-reference/video-models/vidu-q2/image-to-video",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "shengshu",
       "model": "viduq2-pro",
-      "base_url": "https://api.vidu.com/ent/v2",
-      "endpoints": {},
+      "base_url": "https://api.vidu.com",
+      "endpoints": {
+        "video": "POST /ent/v2/img2video"
+      },
       "reasoning_param": null
     }
   ]

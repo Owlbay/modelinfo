@@ -59,14 +59,21 @@
       "title": "人声分离介绍 | SenseAudio 文档",
       "url": "https://docs.senseaudio.cn/guides/voice-isolation/overview",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SenseAudio API: voice-isolation/sync",
+      "url": "https://docs.senseaudio.cn/api-reference/endpoint/voice-isolation/sync.md",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "senseaudio",
       "model": "senseaudio-voice-isolation-1.0-260319",
-      "base_url": "https://api.senseaudio.cn/v1",
-      "endpoints": {},
+      "base_url": "https://api.senseaudio.cn",
+      "endpoints": {
+        "audio": "POST /v1/isolation/sync"
+      },
       "reasoning_param": null
     }
   ]

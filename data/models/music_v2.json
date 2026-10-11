@@ -1,7 +1,7 @@
 {
   "id": "music_v2",
   "object": "model",
-  "created": null,
+  "created": 1781481600,
   "owned_by": "elevenlabs",
   "name": "Eleven Music v2",
   "api": {
@@ -26,11 +26,18 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "minute",
+    "input": null,
+    "output": 0.15,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-06-15",
     "knowledge_cutoff": null,
     "description": "Studio-grade music generation with instrumental-only output and section-level editing.",
     "docs": "https://elevenlabs.io/docs/overview/models",
@@ -56,6 +63,16 @@
     {
       "title": "Compose music | ElevenLabs API Reference",
       "url": "https://elevenlabs.io/docs/api-reference/music/compose",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "ElevenAPI per-product pricing FAQ: Eleven Music $0.15/minute",
+      "url": "https://elevenlabs.io/pricing/api",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release announcement",
+      "url": "https://elevenlabs.io/docs/changelog/2026/6/15",
       "retrieved_at": "2026-10-11"
     }
   ],

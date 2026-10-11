@@ -1,7 +1,7 @@
 {
   "id": "qianfan-ocr-fast",
   "object": "model",
-  "created": null,
+  "created": 1770681600,
   "owned_by": "baidu",
   "name": "Qianfan-OCR-Fast",
   "api": {
@@ -31,7 +31,7 @@
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2026-02-10",
     "knowledge_cutoff": null,
     "description": "Qianfan-OCR-Fast, retired. Official retirement date: 2026-06-30.",
     "docs": "https://cloud.baidu.com/doc/qianfan/s/zmh4stou3",

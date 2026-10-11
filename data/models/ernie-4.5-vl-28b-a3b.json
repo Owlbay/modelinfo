@@ -1,7 +1,7 @@
 {
   "id": "ernie-4.5-vl-28b-a3b",
   "object": "model",
-  "created": null,
+  "created": 1751155200,
   "owned_by": "baidu",
   "name": "ERNIE-4.5-VL-28B-A3B",
   "api": {
@@ -31,7 +31,7 @@
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2025-06-29",
     "knowledge_cutoff": null,
     "description": "ERNIE-4.5-VL-28B-A3B, retired. Official retirement date: 2026-04-23.",
     "docs": "https://cloud.baidu.com/doc/qianfan/s/zmh4stou3",

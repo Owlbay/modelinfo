@@ -1,7 +1,7 @@
 {
   "id": "ring-1t",
   "object": "model",
-  "created": null,
+  "created": 1760400000,
   "owned_by": "ant",
   "name": "Ring-1T",
   "api": {
@@ -30,7 +30,7 @@
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2025-10-14",
     "knowledge_cutoff": null,
     "description": "Ring-1T, retired. Official shutdown: 2026-06-15 00:00 (UTC+8).",
     "docs": "https://developer.ant-ling.com/en/docs/models/deprecation/",
@@ -51,6 +51,11 @@
     {
       "title": "Ring-1T | Hugging Face（inclusionAI 官方）",
       "url": "https://huggingface.co/inclusionAI/Ring-1T",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release history",
+      "url": "https://developer.ant-ling.com/en/docs/getting-started/changelog/",
       "retrieved_at": "2026-10-11"
     }
   ],

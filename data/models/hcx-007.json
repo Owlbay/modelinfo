@@ -31,7 +31,14 @@
       "high"
     ]
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "KRW",
+    "unit": "1M_tokens",
+    "input": 1250,
+    "output": 5000,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [
     "tools",
     "structured_output",
@@ -67,6 +74,11 @@
     {
       "title": "추론(Thinking) | NAVER Cloud API",
       "url": "https://api.ncloud-docs.com/docs/clovastudio-chatcompletionsv3-thinking",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "CLOVA Studio inference pricing — KRW per 1,000 tokens (excluding VAT)",
+      "url": "https://www.ncloud.com/product/aiService/clovaStudio#pricing",
       "retrieved_at": "2026-10-11"
     }
   ],

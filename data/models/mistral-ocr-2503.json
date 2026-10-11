@@ -27,7 +27,14 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "page",
+    "input": 0.001,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "retired",
@@ -57,6 +64,11 @@
     {
       "title": "Model lifecycle policy | Mistral Docs",
       "url": "https://docs.mistral.ai/models/model-lifecycle",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release / pricing documentation",
+      "url": "https://mistral.ai/news/mistral-ocr",
       "retrieved_at": "2026-10-11"
     }
   ],

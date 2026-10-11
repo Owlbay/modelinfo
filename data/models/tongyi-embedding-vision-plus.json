@@ -66,6 +66,11 @@
       "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
       "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio API Reference — multimodal-embedding-api-reference",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/multimodal-embedding-api-reference",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -73,7 +78,9 @@
       "id": "alibaba",
       "model": "tongyi-embedding-vision-plus",
       "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
-      "endpoints": {},
+      "endpoints": {
+        "embeddings": "POST /api/v1/services/embeddings/multimodal-embedding/multimodal-embedding"
+      },
       "reasoning_param": null
     }
   ]

@@ -26,7 +26,14 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "hour",
+    "input": 0.36,
+    "output": null,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "preview",
@@ -53,6 +60,11 @@
     {
       "title": "Introducing MAI-Transcribe-1.5 | Microsoft AI",
       "url": "https://microsoft.ai/news/mai-transcribe-1-5more-accurate-context-aware-and-built-for-production/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release / pricing documentation",
+      "url": "https://microsoft.ai/models/mai-transcribe-2/",
       "retrieved_at": "2026-10-11"
     }
   ],

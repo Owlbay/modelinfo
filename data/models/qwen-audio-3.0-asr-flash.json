@@ -1,7 +1,7 @@
 {
   "id": "qwen-audio-3.0-asr-flash",
   "object": "model",
-  "created": null,
+  "created": 1785369600,
   "owned_by": "alibaba",
   "name": "Qwen-Audio-3.0-ASR-Flash",
   "api": {
@@ -29,7 +29,7 @@
   "pricing": {
     "currency": "USD",
     "unit": "second",
-    "input": 0.000035,
+    "input": 3.5e-05,
     "output": null,
     "cache_read": null,
     "cache_write": null
@@ -37,7 +37,7 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-07-30",
     "knowledge_cutoff": null,
     "description": "Speech recognition covering seven Chinese dialect systems and 30 languages.",
     "docs": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
@@ -64,6 +64,16 @@
       "title": "Model Studio model pricing | Alibaba Cloud",
       "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio API Reference — fun-asr-flash-recorded-speech-recognition-http-api",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/fun-asr-flash-recorded-speech-recognition-http-api",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio model lifecycle and release dates",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -71,7 +81,9 @@
       "id": "alibaba",
       "model": "qwen-audio-3.0-asr-flash",
       "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
-      "endpoints": {},
+      "endpoints": {
+        "audio": "POST /api/v1/services/aigc/multimodal-generation/generation"
+      },
       "reasoning_param": null
     }
   ]

@@ -1,7 +1,7 @@
 {
   "id": "step-5-preview",
   "object": "model",
-  "created": null,
+  "created": 1789862400,
   "owned_by": "stepfun",
   "name": "Step 5 Preview",
   "api": {
@@ -49,7 +49,7 @@
   ],
   "info": {
     "status": "preview",
-    "release_date": null,
+    "release_date": "2026-09-20",
     "knowledge_cutoff": null,
     "description": "Flagship multimodal reasoning model for agentic work with a 1M-token context.",
     "docs": "https://platform.stepfun.ai/docs/en/guides/models/step-5-preview",
@@ -85,6 +85,11 @@
     {
       "title": "Messages API | StepFun Documentation",
       "url": "https://platform.stepfun.ai/docs/en/api-reference/chat/messages-create",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "StepFun 官方模型发布新闻",
+      "url": "https://www.stepfun.com/news",
       "retrieved_at": "2026-10-11"
     }
   ],

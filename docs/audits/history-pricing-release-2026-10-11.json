@@ -1,0 +1,4796 @@
+{
+  "audit_date": "2026-10-11",
+  "scope": "上一轮之后的重点历史复查与models.dev线索比对；未声称穷尽全部历史资料。",
+  "summary": {
+    "changed_models": 46,
+    "new_prices": 43,
+    "new_dates": 3,
+    "remaining_prices": 377,
+    "remaining_dates": 326
+  },
+  "models_dev_candidates": "models-dev-candidates-2026-10-11.json",
+  "changes": [
+    {
+      "id": "c4ai-aya-expanse-8b",
+      "vendor": "cohere",
+      "changes": {
+        "release_date": {
+          "before": null,
+          "after": "2024-10-24"
+        }
+      },
+      "sources": [
+        {
+          "title": "Deprecations | Cohere Docs",
+          "url": "https://docs.cohere.com/docs/deprecations",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：Aya Expanse | Cohere Docs（原网址 https://docs.cohere.com/docs/aya-expanse）",
+          "url": "https://web.archive.org/web/20250915155943/https://docs.cohere.com/docs/aya-expanse",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Official model release / pricing documentation",
+          "url": "https://cohere.com/pricing",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：Aya Expanse 官方发布公告（原网址 https://cohere.com/blog/aya-expanse-connecting-our-world）",
+          "url": "https://web.archive.org/web/20241101215912/https://cohere.com/blog/aya-expanse-connecting-our-world",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "c4ai-aya-vision-8b",
+      "vendor": "cohere",
+      "changes": {
+        "release_date": {
+          "before": null,
+          "after": "2025-03-04"
+        }
+      },
+      "sources": [
+        {
+          "title": "Deprecations | Cohere Docs",
+          "url": "https://docs.cohere.com/docs/deprecations",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：官方模型发布/价格文档（原网址 https://docs.cohere.com/docs/aya-vision）",
+          "url": "https://web.archive.org/web/20250409184044/https://docs.cohere.com/docs/aya-vision",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：官方模型发布/价格文档（原网址 https://cohere.com/blog/aya-vision）",
+          "url": "https://web.archive.org/web/20250311231544/https://cohere.com/blog/aya-vision",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "claude-1.3",
+      "vendor": "anthropic",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "USD",
+            "unit": "1M_tokens",
+            "input": 11.02,
+            "output": 32.68,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "Model deprecations | Claude Platform Docs",
+          "url": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：官方模型发布/价格文档（原网址 https://www-files.anthropic.com/production/images/model_pricing_july2023.pdf）",
+          "url": "https://web.archive.org/web/20230913124029/https://www-files.anthropic.com/production/images/model_pricing_july2023.pdf",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Claude 2 announcement: same API price as Claude 1.3",
+          "url": "https://www.anthropic.com/news/claude-2",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "codestral-2405",
+      "vendor": "mistral",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "USD",
+            "unit": "1M_tokens",
+            "input": 0.2,
+            "output": 0.6,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "Codestral | Mistral Docs",
+          "url": "https://docs.mistral.ai/models/codestral-24-05",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Models overview（含 Deprecation 与 Retirement 日期表） | Mistral Docs",
+          "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Model lifecycle policy | Mistral Docs",
+          "url": "https://docs.mistral.ai/models/model-lifecycle",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Official model release / pricing documentation",
+          "url": "https://mistral.ai/news/september-24-release/",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "codestral-2501",
+      "vendor": "mistral",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "USD",
+            "unit": "1M_tokens",
+            "input": 0.3,
+            "output": 0.9,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "Codestral | Mistral Docs",
+          "url": "https://docs.mistral.ai/models/codestral-25-01",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Models overview（含 Deprecation 与 Retirement 日期表） | Mistral Docs",
+          "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Model lifecycle policy | Mistral Docs",
+          "url": "https://docs.mistral.ai/models/model-lifecycle",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：官方模型价格页（原网址 https://mistral.ai/pricing）",
+          "url": "https://web.archive.org/web/20250731223344/https://mistral.ai/pricing",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "doubao-1-5-lite-32k",
+      "vendor": "bytedance",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "CNY",
+            "unit": "1M_tokens",
+            "input": 0.3,
+            "output": 0.6,
+            "cache_read": 0.06,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "模型下线公告 | 火山方舟",
+          "url": "https://www.volcengine.com/docs/82379/1350667",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档 模型列表 | 火山方舟 82379/1330310（原网址 https://www.volcengine.com/api/doc/getDocDetail?LibraryID=82379&DocumentID=1330310&type=online）",
+          "url": "https://web.archive.org/web/20250311071301/https://www.volcengine.com/api/doc/getDocDetail?LibraryID=82379&DocumentID=1330310&type=online",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：火山方舟模型价格（标准在线推理最低长度档）",
+          "url": "https://web.archive.org/web/20251219073649/https://www.volcengine.com/docs/82379/1544106",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "doubao-1-5-pro-32k",
+      "vendor": "bytedance",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "CNY",
+            "unit": "1M_tokens",
+            "input": 0.8,
+            "output": 2,
+            "cache_read": 0.16,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "模型下线公告 | 火山方舟",
+          "url": "https://www.volcengine.com/docs/82379/1350667",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档 模型列表 | 火山方舟 82379/1330310（原网址 https://www.volcengine.com/api/doc/getDocDetail?LibraryID=82379&DocumentID=1330310&type=online）",
+          "url": "https://web.archive.org/web/20250311071301/https://www.volcengine.com/api/doc/getDocDetail?LibraryID=82379&DocumentID=1330310&type=online",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：火山方舟模型价格（标准在线推理最低长度档）",
+          "url": "https://web.archive.org/web/20251219073649/https://www.volcengine.com/docs/82379/1544106",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "doubao-1-5-thinking-pro",
+      "vendor": "bytedance",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "CNY",
+            "unit": "1M_tokens",
+            "input": 4,
+            "output": 16,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "模型下线公告 | 火山方舟",
+          "url": "https://www.volcengine.com/docs/82379/1350667",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档 模型列表 | 火山方舟（原网址 https://www.volcengine.com/docs/82379/1330310）",
+          "url": "https://web.archive.org/web/20250604074021/https://www.volcengine.com/docs/82379/1330310",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：火山方舟模型价格（标准在线推理最低长度档）",
+          "url": "https://web.archive.org/web/20251219073649/https://www.volcengine.com/docs/82379/1544106",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "doubao-1-5-thinking-vision-pro",
+      "vendor": "bytedance",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "CNY",
+            "unit": "1M_tokens",
+            "input": 3,
+            "output": 9,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "模型下线公告 2025 | 火山方舟",
+          "url": "https://www.volcengine.com/docs/82379/2172669",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "模型下线公告 | 火山方舟",
+          "url": "https://www.volcengine.com/docs/82379/1350667",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档 模型列表 | 火山方舟（原网址 https://www.volcengine.com/docs/82379/1330310）",
+          "url": "https://web.archive.org/web/20250604074021/https://www.volcengine.com/docs/82379/1330310",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：火山方舟模型价格（标准在线推理最低长度档）",
+          "url": "https://web.archive.org/web/20251219073649/https://www.volcengine.com/docs/82379/1544106",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "doubao-1-5-ui-tars",
+      "vendor": "bytedance",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "CNY",
+            "unit": "1M_tokens",
+            "input": 3.5,
+            "output": 12,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "模型下线公告 2025 | 火山方舟",
+          "url": "https://www.volcengine.com/docs/82379/2172669",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "模型下线公告 | 火山方舟",
+          "url": "https://www.volcengine.com/docs/82379/1350667",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档 模型列表 | 火山方舟（原网址 https://www.volcengine.com/docs/82379/1330310）",
+          "url": "https://web.archive.org/web/20250604074021/https://www.volcengine.com/docs/82379/1330310",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：火山方舟模型价格（标准在线推理最低长度档）",
+          "url": "https://web.archive.org/web/20251219073649/https://www.volcengine.com/docs/82379/1544106",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "doubao-1-5-vision-lite",
+      "vendor": "bytedance",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "CNY",
+            "unit": "1M_tokens",
+            "input": 1.5,
+            "output": 4.5,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "模型下线公告 | 火山方舟",
+          "url": "https://www.volcengine.com/docs/82379/1350667",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档 模型列表 | 火山方舟（原网址 https://www.volcengine.com/docs/82379/1330310）",
+          "url": "https://web.archive.org/web/20250604074021/https://www.volcengine.com/docs/82379/1330310",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：火山方舟模型价格（标准在线推理最低长度档）",
+          "url": "https://web.archive.org/web/20251219073649/https://www.volcengine.com/docs/82379/1544106",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "doubao-1-5-vision-pro",
+      "vendor": "bytedance",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "CNY",
+            "unit": "1M_tokens",
+            "input": 3,
+            "output": 9,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "模型下线公告 | 火山方舟",
+          "url": "https://www.volcengine.com/docs/82379/1350667",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档 模型列表 | 火山方舟（原网址 https://www.volcengine.com/docs/82379/1330310）",
+          "url": "https://web.archive.org/web/20250604074021/https://www.volcengine.com/docs/82379/1330310",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：火山方舟模型价格（标准在线推理最低长度档）",
+          "url": "https://web.archive.org/web/20251219073649/https://www.volcengine.com/docs/82379/1544106",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "doubao-lite-32k",
+      "vendor": "bytedance",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "CNY",
+            "unit": "1M_tokens",
+            "input": 0.3,
+            "output": 0.6,
+            "cache_read": 0.06,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "模型下线公告 2024 | 火山方舟",
+          "url": "https://www.volcengine.com/docs/82379/2172670",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "模型下线公告 2025 | 火山方舟",
+          "url": "https://www.volcengine.com/docs/82379/2172669",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档 模型列表 | 火山方舟 82379/1330310（原网址 https://www.volcengine.com/api/doc/getDocDetail?LibraryID=82379&DocumentID=1330310&type=online）",
+          "url": "https://web.archive.org/web/20250311071301/https://www.volcengine.com/api/doc/getDocDetail?LibraryID=82379&DocumentID=1330310&type=online",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：火山方舟模型价格（标准在线推理最低长度档）",
+          "url": "https://web.archive.org/web/20251219073649/https://www.volcengine.com/docs/82379/1544106",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "doubao-seed-1-6",
+      "vendor": "bytedance",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "CNY",
+            "unit": "1M_tokens",
+            "input": 0.8,
+            "output": 2,
+            "cache_read": 0.16,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "模型下线公告 | 火山方舟",
+          "url": "https://www.volcengine.com/docs/82379/1350667",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档 模型列表 | 火山方舟（原网址 https://www.volcengine.com/docs/82379/1330310）",
+          "url": "https://web.archive.org/web/20251124053616/https://www.volcengine.com/docs/82379/1330310",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：火山方舟模型价格（标准在线推理最低长度档）",
+          "url": "https://web.archive.org/web/20251219073649/https://www.volcengine.com/docs/82379/1544106",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "doubao-seed-1-6-flash",
+      "vendor": "bytedance",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "CNY",
+            "unit": "1M_tokens",
+            "input": 0.15,
+            "output": 1.5,
+            "cache_read": 0.03,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "模型下线公告 | 火山方舟",
+          "url": "https://www.volcengine.com/docs/82379/1350667",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档 模型列表 | 火山方舟（原网址 https://www.volcengine.com/docs/82379/1330310）",
+          "url": "https://web.archive.org/web/20251124053616/https://www.volcengine.com/docs/82379/1330310",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：火山方舟模型价格（标准在线推理最低长度档）",
+          "url": "https://web.archive.org/web/20251219073649/https://www.volcengine.com/docs/82379/1544106",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "doubao-seed-1-6-lite",
+      "vendor": "bytedance",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "CNY",
+            "unit": "1M_tokens",
+            "input": 0.3,
+            "output": 0.6,
+            "cache_read": 0.06,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "模型下线公告 | 火山方舟",
+          "url": "https://www.volcengine.com/docs/82379/1350667",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档 模型列表 | 火山方舟（原网址 https://www.volcengine.com/docs/82379/1330310）",
+          "url": "https://web.archive.org/web/20251124053616/https://www.volcengine.com/docs/82379/1330310",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：火山方舟模型价格（标准在线推理最低长度档）",
+          "url": "https://web.archive.org/web/20251219073649/https://www.volcengine.com/docs/82379/1544106",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "doubao-seed-1-6-thinking",
+      "vendor": "bytedance",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "CNY",
+            "unit": "1M_tokens",
+            "input": 0.8,
+            "output": 8,
+            "cache_read": 0.16,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "模型下线公告 | 火山方舟",
+          "url": "https://www.volcengine.com/docs/82379/1350667",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档 模型列表 | 火山方舟（原网址 https://www.volcengine.com/docs/82379/1330310）",
+          "url": "https://web.archive.org/web/20251124053616/https://www.volcengine.com/docs/82379/1330310",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：火山方舟模型价格（标准在线推理最低长度档）",
+          "url": "https://web.archive.org/web/20251219073649/https://www.volcengine.com/docs/82379/1544106",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "doubao-seed-1-6-vision",
+      "vendor": "bytedance",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "CNY",
+            "unit": "1M_tokens",
+            "input": 0.8,
+            "output": 8,
+            "cache_read": 0.16,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "模型下线公告 | 火山方舟",
+          "url": "https://www.volcengine.com/docs/82379/1350667",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档 模型列表 | 火山方舟（原网址 https://www.volcengine.com/docs/82379/1330310）",
+          "url": "https://web.archive.org/web/20251124053616/https://www.volcengine.com/docs/82379/1330310",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：火山方舟模型价格（标准在线推理最低长度档）",
+          "url": "https://web.archive.org/web/20251219073649/https://www.volcengine.com/docs/82379/1544106",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "doubao-seedance-1-0-lite",
+      "vendor": "bytedance",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "CNY",
+            "unit": "1M_tokens",
+            "input": null,
+            "output": 10,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "模型下线公告 | 火山方舟",
+          "url": "https://www.volcengine.com/docs/82379/1350667",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档 模型列表 | 火山方舟（原网址 https://www.volcengine.com/docs/82379/1330310）",
+          "url": "https://web.archive.org/web/20250604074021/https://www.volcengine.com/docs/82379/1330310",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：火山方舟模型价格（标准在线推理）",
+          "url": "https://web.archive.org/web/20251219073649/https://www.volcengine.com/docs/82379/1544106",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "doubao-seededit-3-0-i2i",
+      "vendor": "bytedance",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "CNY",
+            "unit": "image",
+            "input": null,
+            "output": 0.3,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "模型下线公告 | 火山方舟",
+          "url": "https://www.volcengine.com/docs/82379/1350667",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档 模型列表 | 火山方舟（原网址 https://www.volcengine.com/docs/82379/1330310）",
+          "url": "https://web.archive.org/web/20251124053616/https://www.volcengine.com/docs/82379/1330310",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：火山方舟模型价格（标准在线推理）",
+          "url": "https://web.archive.org/web/20251219073649/https://www.volcengine.com/docs/82379/1544106",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "doubao-seedream-3-0-t2i",
+      "vendor": "bytedance",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "CNY",
+            "unit": "image",
+            "input": null,
+            "output": 0.259,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "模型下线公告 | 火山方舟",
+          "url": "https://www.volcengine.com/docs/82379/1350667",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档 模型列表 | 火山方舟（原网址 https://www.volcengine.com/docs/82379/1330310）",
+          "url": "https://web.archive.org/web/20250604074021/https://www.volcengine.com/docs/82379/1330310",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：火山方舟模型价格（标准在线推理）",
+          "url": "https://web.archive.org/web/20251219073649/https://www.volcengine.com/docs/82379/1544106",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "ernie-3.5-8k",
+      "vendor": "baidu",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "CNY",
+            "unit": "1M_tokens",
+            "input": 0.8,
+            "output": 2,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "模型版本升级及退役机制 | 百度千帆",
+          "url": "https://cloud.baidu.com/doc/qianfan/s/zmh4stou3",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "模型更新记录 | 百度千帆",
+          "url": "https://cloud.baidu.com/doc/qianfan/s/Kmh4stnjp",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "百度千帆：ERNIE 系列历史刊例价调整公告",
+          "url": "https://ai.baidu.com/ai-doc/WENXINWORKSHOP/3m1jdtoz1",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "ernie-4.0-8k",
+      "vendor": "baidu",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "CNY",
+            "unit": "1M_tokens",
+            "input": 4,
+            "output": 16,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "模型版本升级及退役机制 | 百度千帆",
+          "url": "https://cloud.baidu.com/doc/qianfan/s/zmh4stou3",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "模型更新记录 | 百度千帆",
+          "url": "https://cloud.baidu.com/doc/qianfan/s/Kmh4stnjp",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "百度千帆：ERNIE 系列历史刊例价调整公告",
+          "url": "https://ai.baidu.com/ai-doc/WENXINWORKSHOP/Hm88dcygk",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "ernie-4.0-turbo-128k",
+      "vendor": "baidu",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "CNY",
+            "unit": "1M_tokens",
+            "input": 3,
+            "output": 9,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "模型版本升级及退役机制 | 百度千帆",
+          "url": "https://cloud.baidu.com/doc/qianfan/s/zmh4stou3",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "模型更新记录 | 百度千帆",
+          "url": "https://cloud.baidu.com/doc/qianfan/s/Kmh4stnjp",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "百度千帆：ERNIE 系列历史刊例价调整公告",
+          "url": "https://ai.baidu.com/ai-doc/WENXINWORKSHOP/Hm88dcygk",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "ernie-4.0-turbo-8k",
+      "vendor": "baidu",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "CNY",
+            "unit": "1M_tokens",
+            "input": 3,
+            "output": 9,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "模型版本升级及退役机制 | 百度千帆",
+          "url": "https://cloud.baidu.com/doc/qianfan/s/zmh4stou3",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "模型更新记录 | 百度千帆",
+          "url": "https://cloud.baidu.com/doc/qianfan/s/Kmh4stnjp",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "百度千帆：ERNIE 系列历史刊例价调整公告",
+          "url": "https://ai.baidu.com/ai-doc/WENXINWORKSHOP/Hm88dcygk",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "ernie-lite-8k",
+      "vendor": "baidu",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "CNY",
+            "unit": "1M_tokens",
+            "input": 0,
+            "output": 0,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "模型版本升级及退役机制 | 百度千帆",
+          "url": "https://cloud.baidu.com/doc/qianfan/s/zmh4stou3",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "模型更新记录 | 百度千帆",
+          "url": "https://cloud.baidu.com/doc/qianfan/s/Kmh4stnjp",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "百度千帆：ERNIE 系列历史刊例价调整公告",
+          "url": "https://ai.baidu.com/ai-doc/WENXINWORKSHOP/wlwg8f1i3",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "ernie-speed-128k",
+      "vendor": "baidu",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "CNY",
+            "unit": "1M_tokens",
+            "input": 0,
+            "output": 0,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "模型版本升级及退役机制 | 百度千帆",
+          "url": "https://cloud.baidu.com/doc/qianfan/s/zmh4stou3",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "模型更新记录 | 百度千帆",
+          "url": "https://cloud.baidu.com/doc/qianfan/s/Kmh4stnjp",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "百度千帆：ERNIE 系列历史刊例价调整公告",
+          "url": "https://ai.baidu.com/ai-doc/WENXINWORKSHOP/wlwg8f1i3",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "ernie-speed-8k",
+      "vendor": "baidu",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "CNY",
+            "unit": "1M_tokens",
+            "input": 0,
+            "output": 0,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "模型版本升级及退役机制 | 百度千帆",
+          "url": "https://cloud.baidu.com/doc/qianfan/s/zmh4stou3",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "模型更新记录 | 百度千帆",
+          "url": "https://cloud.baidu.com/doc/qianfan/s/Kmh4stnjp",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "百度千帆：ERNIE 系列历史刊例价调整公告",
+          "url": "https://ai.baidu.com/ai-doc/WENXINWORKSHOP/wlwg8f1i3",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "ernie-speed-pro-128k",
+      "vendor": "baidu",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "CNY",
+            "unit": "1M_tokens",
+            "input": 0.3,
+            "output": 0.6,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "模型版本升级及退役机制 | 百度千帆",
+          "url": "https://cloud.baidu.com/doc/qianfan/s/zmh4stou3",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "模型更新记录 | 百度千帆",
+          "url": "https://cloud.baidu.com/doc/qianfan/s/Kmh4stnjp",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "百度千帆：ERNIE 系列历史刊例价调整公告",
+          "url": "https://ai.baidu.com/ai-doc/WENXINWORKSHOP/3m1jdtoz1",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "ernie-tiny-8k",
+      "vendor": "baidu",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "CNY",
+            "unit": "1M_tokens",
+            "input": 0,
+            "output": 0,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "模型版本升级及退役机制 | 百度千帆",
+          "url": "https://cloud.baidu.com/doc/qianfan/s/zmh4stou3",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "模型更新记录 | 百度千帆",
+          "url": "https://cloud.baidu.com/doc/qianfan/s/Kmh4stnjp",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "百度千帆：ERNIE 系列历史刊例价调整公告",
+          "url": "https://ai.baidu.com/ai-doc/WENXINWORKSHOP/wlwg8f1i3",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "gemini-2.5-flash-lite-preview-09-2025",
+      "vendor": "google",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "USD",
+            "unit": "1M_tokens",
+            "input": 0.1,
+            "output": 0.4,
+            "cache_read": 0.025,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "Deprecations | Gemini API",
+          "url": "https://ai.google.dev/gemini-api/docs/deprecations",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：Models | Gemini API（原网址 https://ai.google.dev/gemini-api/docs/models）",
+          "url": "https://web.archive.org/web/20260101/https://ai.google.dev/gemini-api/docs/models",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "changelog | Gemini API",
+          "url": "https://ai.google.dev/gemini-api/docs/changelog",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Archived official Gemini API pricing (standard tier, text input; lowest applicable tier)",
+          "url": "https://web.archive.org/web/20251002162244/https://ai.google.dev/gemini-api/docs/pricing",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "gemini-2.5-flash-preview-05-20",
+      "vendor": "google",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "USD",
+            "unit": "1M_tokens",
+            "input": 0.15,
+            "output": 0.6,
+            "cache_read": 0.0375,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "Deprecations | Gemini API",
+          "url": "https://ai.google.dev/gemini-api/docs/deprecations",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：Models | Gemini API（原网址 https://ai.google.dev/gemini-api/docs/models）",
+          "url": "https://web.archive.org/web/20250601/https://ai.google.dev/gemini-api/docs/models",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "changelog | Gemini API",
+          "url": "https://ai.google.dev/gemini-api/docs/changelog",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Archived official Gemini API pricing (standard tier, text input; lowest applicable tier)",
+          "url": "https://web.archive.org/web/20250525063254/https://ai.google.dev/gemini-api/docs/pricing",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "gemini-2.5-pro-preview-05-06",
+      "vendor": "google",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "USD",
+            "unit": "1M_tokens",
+            "input": 1.25,
+            "output": 10,
+            "cache_read": 0.31,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "Deprecations | Gemini API",
+          "url": "https://ai.google.dev/gemini-api/docs/deprecations",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：Models | Gemini API（原网址 https://ai.google.dev/gemini-api/docs/models）",
+          "url": "https://web.archive.org/web/20250601/https://ai.google.dev/gemini-api/docs/models",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "changelog | Gemini API",
+          "url": "https://ai.google.dev/gemini-api/docs/changelog",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Archived official Gemini API pricing (standard tier, text input; lowest applicable tier)",
+          "url": "https://web.archive.org/web/20250525063254/https://ai.google.dev/gemini-api/docs/pricing",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-pro-image-preview",
+      "vendor": "google",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "USD",
+            "unit": "1M_tokens",
+            "input": 2,
+            "output": 120,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "Deprecations | Gemini API",
+          "url": "https://ai.google.dev/gemini-api/docs/deprecations",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：Models | Gemini API（原网址 https://ai.google.dev/gemini-api/docs/models）",
+          "url": "https://web.archive.org/web/20260101/https://ai.google.dev/gemini-api/docs/models",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Gemini API pricing — archived March 1, 2026 (standard image output)",
+          "url": "https://web.archive.org/web/20260301172429/https://ai.google.dev/gemini-api/docs/pricing",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.1-flash-image-preview",
+      "vendor": "google",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "USD",
+            "unit": "1M_tokens",
+            "input": 0.25,
+            "output": 60,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "deprecations | Gemini API",
+          "url": "https://ai.google.dev/gemini-api/docs/deprecations",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "changelog | Gemini API",
+          "url": "https://ai.google.dev/gemini-api/docs/changelog",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Generating content | Gemini API",
+          "url": "https://ai.google.dev/api/generate-content",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Gemini API pricing — archived March 1, 2026 (standard image output)",
+          "url": "https://web.archive.org/web/20260301172429/https://ai.google.dev/gemini-api/docs/pricing",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.5-flash",
+      "vendor": "google",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "USD",
+            "unit": "1M_tokens",
+            "input": 1.5,
+            "output": 9,
+            "cache_read": 0.15,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "Gemini 3.5 Flash | Gemini API",
+          "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash",
+          "retrieved_at": "2026-10-10"
+        },
+        {
+          "title": "Models | Gemini API",
+          "url": "https://ai.google.dev/gemini-api/docs/models",
+          "retrieved_at": "2026-10-10"
+        },
+        {
+          "title": "Pricing | Gemini API",
+          "url": "https://ai.google.dev/gemini-api/docs/pricing",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Deprecations | Gemini API",
+          "url": "https://ai.google.dev/gemini-api/docs/deprecations",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Generating content | Gemini API",
+          "url": "https://ai.google.dev/api/generate-content",
+          "retrieved_at": "2026-10-10"
+        },
+        {
+          "title": "Batch API | Gemini API",
+          "url": "https://ai.google.dev/gemini-api/docs/batch-api",
+          "retrieved_at": "2026-10-10"
+        },
+        {
+          "title": "Release notes | Gemini API",
+          "url": "https://ai.google.dev/gemini-api/docs/changelog",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Archived official Gemini API pricing (standard tier, text input; lowest applicable tier)",
+          "url": "https://web.archive.org/web/20260802003957/https://ai.google.dev/gemini-api/docs/pricing",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "gemini-robotics-er-1.5-preview",
+      "vendor": "google",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "USD",
+            "unit": "1M_tokens",
+            "input": 0.3,
+            "output": 2.5,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "deprecations | Gemini API",
+          "url": "https://ai.google.dev/gemini-api/docs/deprecations",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "changelog | Gemini API",
+          "url": "https://ai.google.dev/gemini-api/docs/changelog",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "models/gemini-robotics-er-1.5-preview | Gemini API",
+          "url": "https://ai.google.dev/gemini-api/docs/models/gemini-robotics-er-1.5-preview",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Generating content | Gemini API",
+          "url": "https://ai.google.dev/api/generate-content",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Archived official Gemini API pricing (standard tier, text input; lowest applicable tier)",
+          "url": "https://web.archive.org/web/20251002162244/https://ai.google.dev/gemini-api/docs/pricing",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "gemini-robotics-er-1.6-preview",
+      "vendor": "google",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "USD",
+            "unit": "1M_tokens",
+            "input": 1,
+            "output": 5,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "deprecations | Gemini API",
+          "url": "https://ai.google.dev/gemini-api/docs/deprecations",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "changelog | Gemini API",
+          "url": "https://ai.google.dev/gemini-api/docs/changelog",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "models/gemini-robotics-er-1.6-preview | Gemini API",
+          "url": "https://ai.google.dev/gemini-api/docs/models/gemini-robotics-er-1.6-preview",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Generating content | Gemini API",
+          "url": "https://ai.google.dev/api/generate-content",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "batch-api | Gemini API",
+          "url": "https://ai.google.dev/gemini-api/docs/batch-api",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Archived official Gemini API pricing (standard tier, text input; lowest applicable tier)",
+          "url": "https://web.archive.org/web/20260802003957/https://ai.google.dev/gemini-api/docs/pricing",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "imagen-4.0-generate-001",
+      "vendor": "google",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "USD",
+            "unit": "image",
+            "input": null,
+            "output": 0.04,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "Deprecations | Gemini API",
+          "url": "https://ai.google.dev/gemini-api/docs/deprecations",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：Imagen | Gemini API（原网址 https://ai.google.dev/gemini-api/docs/imagen）",
+          "url": "https://web.archive.org/web/20251001122053/https://ai.google.dev/gemini-api/docs/imagen",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Archived official Gemini API pricing (standard tier, text input; lowest applicable tier)",
+          "url": "https://web.archive.org/web/20260802003957/https://ai.google.dev/gemini-api/docs/pricing",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "imagen-4.0-ultra-generate-001",
+      "vendor": "google",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "USD",
+            "unit": "image",
+            "input": null,
+            "output": 0.06,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "Deprecations | Gemini API",
+          "url": "https://ai.google.dev/gemini-api/docs/deprecations",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：Imagen | Gemini API（原网址 https://ai.google.dev/gemini-api/docs/imagen）",
+          "url": "https://web.archive.org/web/20251001122053/https://ai.google.dev/gemini-api/docs/imagen",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Archived official Gemini API pricing (standard tier, text input; lowest applicable tier)",
+          "url": "https://web.archive.org/web/20260802003957/https://ai.google.dev/gemini-api/docs/pricing",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "magistral-medium-2507",
+      "vendor": "mistral",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "USD",
+            "unit": "1M_tokens",
+            "input": 2,
+            "output": 5,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "Magistral Medium 1.1 | Mistral Docs",
+          "url": "https://docs.mistral.ai/models/magistral-medium-1-1-25-07",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Models overview（含 Deprecation 与 Retirement 日期表） | Mistral Docs",
+          "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Model lifecycle policy | Mistral Docs",
+          "url": "https://docs.mistral.ai/models/model-lifecycle",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：官方模型价格页（原网址 https://mistral.ai/pricing）",
+          "url": "https://web.archive.org/web/20250731223344/https://mistral.ai/pricing",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "magistral-small-2507",
+      "vendor": "mistral",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "USD",
+            "unit": "1M_tokens",
+            "input": 0.5,
+            "output": 1.5,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "Magistral Small 1.1 | Mistral Docs",
+          "url": "https://docs.mistral.ai/models/magistral-small-1-1-25-07",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Models overview（含 Deprecation 与 Retirement 日期表） | Mistral Docs",
+          "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Model lifecycle policy | Mistral Docs",
+          "url": "https://docs.mistral.ai/models/model-lifecycle",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：官方模型价格页（原网址 https://mistral.ai/pricing）",
+          "url": "https://web.archive.org/web/20250731223344/https://mistral.ai/pricing",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "mistral-large-2407",
+      "vendor": "mistral",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "USD",
+            "unit": "1M_tokens",
+            "input": 2,
+            "output": 6,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "Mistral Large 2.0 | Mistral Docs",
+          "url": "https://docs.mistral.ai/models/mistral-large-2-0-24-07",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Models overview（含 Deprecation 与 Retirement 日期表） | Mistral Docs",
+          "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Model lifecycle policy | Mistral Docs",
+          "url": "https://docs.mistral.ai/models/model-lifecycle",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Official model release / pricing documentation",
+          "url": "https://mistral.ai/news/september-24-release/",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "mistral-ocr-2505",
+      "vendor": "mistral",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "USD",
+            "unit": "page",
+            "input": 0.001,
+            "output": null,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "OCR 2 | Mistral Docs",
+          "url": "https://docs.mistral.ai/models/ocr-2-25-05",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Models overview（含 Deprecation 与 Retirement 日期表） | Mistral Docs",
+          "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Model lifecycle policy | Mistral Docs",
+          "url": "https://docs.mistral.ai/models/model-lifecycle",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "存档：官方模型价格页（原网址 https://mistral.ai/pricing）",
+          "url": "https://web.archive.org/web/20250731223344/https://mistral.ai/pricing",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "mistral-small-2409",
+      "vendor": "mistral",
+      "changes": {
+        "pricing": {
+          "before": null,
+          "after": {
+            "currency": "USD",
+            "unit": "1M_tokens",
+            "input": 0.2,
+            "output": 0.6,
+            "cache_read": null,
+            "cache_write": null
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "Mistral Small 2.0 | Mistral Docs",
+          "url": "https://docs.mistral.ai/models/mistral-small-2-0-24-09",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Models overview（含 Deprecation 与 Retirement 日期表） | Mistral Docs",
+          "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Model lifecycle policy | Mistral Docs",
+          "url": "https://docs.mistral.ai/models/model-lifecycle",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Official model release / pricing documentation",
+          "url": "https://mistral.ai/news/september-24-release/",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "id": "music_v1",
+      "vendor": "elevenlabs",
+      "changes": {
+        "release_date": {
+          "before": null,
+          "after": "2025-08-18"
+        }
+      },
+      "sources": [
+        {
+          "title": "Models | ElevenLabs Documentation",
+          "url": "https://elevenlabs.io/docs/overview/models",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "API pricing | ElevenLabs",
+          "url": "https://elevenlabs.io/pricing/api",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Compose music | ElevenLabs API Reference",
+          "url": "https://elevenlabs.io/docs/api-reference/music/compose",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "ElevenAPI per-product pricing FAQ: Eleven Music $0.15/minute",
+          "url": "https://elevenlabs.io/pricing/api",
+          "retrieved_at": "2026-10-11"
+        },
+        {
+          "title": "Eleven Music, now available in the API",
+          "url": "https://elevenlabs.io/blog/eleven-music-now-available-in-the-api",
+          "retrieved_at": "2026-10-11"
+        }
+      ]
+    }
+  ],
+  "research": {
+    "root": [
+      {
+        "id": "ling-1t",
+        "reason": "浏览器可读旧官方语雀定价：2.0系列4/16元、2.5系列4/8元每百万计算单元；未找到计算单元等同token的明确说明，按项目规则不跨单位推算。models.dev旧1T美元价格未直接采用。",
+        "urls": [
+          "https://alipaytbox.yuque.com/sxs0ba/ling/pricing",
+          "https://alipaytbox.yuque.com/sxs0ba/ling/api_chat",
+          "https://models.dev/api.json"
+        ]
+      },
+      {
+        "id": "ring-1t",
+        "reason": "浏览器可读旧官方语雀定价：2.0系列4/16元、2.5系列4/8元每百万计算单元；未找到计算单元等同token的明确说明，按项目规则不跨单位推算。models.dev旧1T美元价格未直接采用。",
+        "urls": [
+          "https://alipaytbox.yuque.com/sxs0ba/ling/pricing",
+          "https://alipaytbox.yuque.com/sxs0ba/ling/api_chat",
+          "https://models.dev/api.json"
+        ]
+      },
+      {
+        "id": "ling-2.5-1t",
+        "reason": "浏览器可读旧官方语雀定价：2.0系列4/16元、2.5系列4/8元每百万计算单元；未找到计算单元等同token的明确说明，按项目规则不跨单位推算。models.dev旧1T美元价格未直接采用。",
+        "urls": [
+          "https://alipaytbox.yuque.com/sxs0ba/ling/pricing",
+          "https://alipaytbox.yuque.com/sxs0ba/ling/api_chat",
+          "https://models.dev/api.json"
+        ]
+      },
+      {
+        "id": "ring-2.5-1t",
+        "reason": "浏览器可读旧官方语雀定价：2.0系列4/16元、2.5系列4/8元每百万计算单元；未找到计算单元等同token的明确说明，按项目规则不跨单位推算。models.dev旧1T美元价格未直接采用。",
+        "urls": [
+          "https://alipaytbox.yuque.com/sxs0ba/ling/pricing",
+          "https://alipaytbox.yuque.com/sxs0ba/ling/api_chat",
+          "https://models.dev/api.json"
+        ]
+      },
+      {
+        "id": "minimax-m2.1",
+        "reason": "models.dev给出2025-12-23；官方新闻为12月23日而官方模型更新日志为12月22日，保留日期冲突，不由第三方值裁决。",
+        "urls": [
+          "https://www.minimax.io/news/minimax-m21",
+          "https://platform.minimax.io/docs/release-notes/models",
+          "https://models.dev/api.json"
+        ]
+      },
+      {
+        "id": "ling-3.1-flash",
+        "reason": "models.dev网关记录发布日期与官方当前仅精确到月份的信息不足以互证；零价对应官方两周促销，不是标准价。",
+        "urls": [
+          "https://developer.ant-ling.com/en/docs/models/price",
+          "https://models.dev/api.json"
+        ]
+      },
+      {
+        "id": "longcat-2.5-preview",
+        "reason": "models.dev命中第三方nano-gpt价；官方当前为促销期价格，不能替代第一方标准价。",
+        "urls": [
+          "https://longcat.chat/platform/docs/",
+          "https://models.dev/api.json"
+        ]
+      },
+      {
+        "id": "deepseek-chat",
+        "reason": "models.dev第三方记录2025-12-01对应后续模型版本，不能当作长期漂移别名的初始发布日期。",
+        "urls": [
+          "https://api-docs.deepseek.com/updates",
+          "https://models.dev/api.json"
+        ]
+      },
+      {
+        "id": "mimo-v2-tts",
+        "reason": "models.dev匹配到Token Plan套餐条目零价，不能作独立按量API标准价；官方混合模态/单位计价仍不能用当前单单位字段完整表达。",
+        "urls": [
+          "https://platform.xiaomimimo.com/#/docs",
+          "https://models.dev/api.json"
+        ]
+      },
+      {
+        "id": "mimo-v2.5-tts",
+        "reason": "models.dev匹配到Token Plan套餐条目零价，不能作独立按量API标准价；官方混合模态/单位计价仍不能用当前单单位字段完整表达。",
+        "urls": [
+          "https://platform.xiaomimimo.com/#/docs",
+          "https://models.dev/api.json"
+        ]
+      },
+      {
+        "id": "mimo-v2.5-tts-voiceclone",
+        "reason": "models.dev匹配到Token Plan套餐条目零价，不能作独立按量API标准价；官方混合模态/单位计价仍不能用当前单单位字段完整表达。",
+        "urls": [
+          "https://platform.xiaomimimo.com/#/docs",
+          "https://models.dev/api.json"
+        ]
+      },
+      {
+        "id": "mimo-v2.5-tts-voicedesign",
+        "reason": "models.dev匹配到Token Plan套餐条目零价，不能作独立按量API标准价；官方混合模态/单位计价仍不能用当前单单位字段完整表达。",
+        "urls": [
+          "https://platform.xiaomimimo.com/#/docs",
+          "https://models.dev/api.json"
+        ]
+      }
+    ],
+    "google": {
+      "counts": {
+        "new_prices": 10,
+        "new_dates": 1,
+        "unresolved_models": 131
+      },
+      "method": "models.dev was candidate discovery only; all applied numbers confirmed against first-party archived pricing. Existing exact-model search ledger: /tmp/modelquay-google-exact-searches.json. This history pass focused Google archival prices and ElevenLabs/Recraft/Ideogram/Runway announcement dates; other vendors retain previous exact-domain search evidence, not claimed individually re-searched this pass.",
+      "archive_evidence": [
+        {
+          "url": "https://web.archive.org/web/20250525063254/https://ai.google.dev/gemini-api/docs/pricing",
+          "local_text": "/tmp/google-archive-20250525.txt"
+        },
+        {
+          "url": "https://web.archive.org/web/20251002162244/https://ai.google.dev/gemini-api/docs/pricing",
+          "local_text": "/tmp/google-archive-20251001.txt"
+        },
+        {
+          "url": "https://web.archive.org/web/20260802003957/https://ai.google.dev/gemini-api/docs/pricing",
+          "local_text": "/tmp/google-archive-20260801.txt"
+        },
+        {
+          "url": "https://web.archive.org/web/20260301172429/https://ai.google.dev/gemini-api/docs/pricing",
+          "local_text": "/tmp/google-archive-20260301.txt"
+        },
+        {
+          "url": "https://web.archive.org/web/20250702034346/https://ai.google.dev/gemini-api/docs/pricing",
+          "local_text": "/tmp/google-archive-20250702.txt"
+        }
+      ],
+      "rejected_candidates": [
+        {
+          "id": "gemini-1.0-pro",
+          "evidence": "https://web.archive.org/web/20240229225321/https://ai.google.dev/pricing",
+          "reason": "Paid character prices were labeled Coming soon; not treated as an available API tariff."
+        },
+        {
+          "id": "gemini-3.1-flash-image-preview",
+          "reason": "models.dev input .5 differs from archived preview .25; used official archived preview .25, not stable successor .5."
+        }
+      ],
+      "unresolved": [
+        {
+          "id": "ideogram-4-5",
+          "vendor": "ideogram",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://developer.ideogram.ai/api-reference/images/generate/ideogram-4-5",
+            "https://developer.ideogram.ai/v2/llms.txt",
+            "https://developer.ideogram.ai/ideogram-api/api-setup",
+            "https://ideogram.ai/api-pricing",
+            "https://ideogram.ai/pricing/?pricing_tab=api",
+            "https://ideogram.ai/pricing/"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"ideogram-4-5\" pricing release launch date",
+          "search_domains": [
+            "ideogram.ai"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "gwm1_avatars",
+          "vendor": "runway",
+          "missing": [
+            "pricing",
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。 searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://docs.dev.runwayml.com/guides/models/",
+            "https://docs.dev.runwayml.com/guides/pricing/",
+            "https://docs.dev.runwayml.com/api/"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"gwm1_avatars\" pricing release launch date",
+          "search_domains": [
+            "runwayml.com"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "nova-3-medical",
+          "vendor": "deepgram",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。",
+          "urls": [
+            "https://developers.deepgram.com/docs/models-languages-overview",
+            "https://deepgram.com/pricing",
+            "https://deepgram.com/changelog/introducing-nova-3-medical"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"nova-3-medical\" pricing release launch date",
+          "search_domains": [
+            "deepgram.com"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "gemini-3.8-live-extended-thinking",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "mixed_modalities: 官方实时/全模态音频模型按模态分别计费，不能只摘取文本价格。",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-live-extended-thinking",
+            "https://ai.google.dev/gemini-api/docs/models",
+            "https://ai.google.dev/gemini-api/docs/pricing",
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://ai.google.dev/gemini-api/docs/live",
+            "https://ai.google.dev/api/live"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "gemini-2.5-pro-exp-03-25",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://ai.google.dev/gemini-api/docs/changelog",
+            "https://ai.google.dev/api/generate-content",
+            "https://ai.google.dev/gemini-api/docs/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"gemini-2.5-pro-exp-03-25\" pricing release launch date",
+          "search_domains": [
+            "ai.google.dev",
+            "developers.googleblog.com",
+            "blog.google",
+            "cloud.google.com"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "gemini-2.0-flash-live-001",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "mixed_modalities: 官方实时/全模态音频模型按模态分别计费，不能只摘取文本价格。",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://web.archive.org/web/20250601/https://ai.google.dev/gemini-api/docs/models",
+            "https://ai.google.dev/api/live",
+            "https://ai.google.dev/gemini-api/docs/pricing"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "eleven_ttv_v3",
+          "vendor": "elevenlabs",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "credit_rules: Voice Design文档仅明确按preview文本credits计费，未给该型号独立货币标准价；未从TTS价格推算。",
+          "urls": [
+            "https://elevenlabs.io/docs/overview/models",
+            "https://elevenlabs.io/docs/api-reference/text-to-voice/design",
+            "https://elevenlabs.io/blog/voice-design-v3",
+            "https://elevenlabs.io/pricing/api"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "viduq3-mix",
+          "vendor": "shengshu",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "credit_rules: 已读取完整官方价格表，按credits计费（每credit人民币0.03125），且部分Q2有首秒/后续秒阶梯；未把积分规则推算成模型货币单价。",
+          "urls": [
+            "https://platform.vidu.com/docs/overview/model-map",
+            "https://platform.vidu.com/docs/text-to-video",
+            "https://platform.vidu.com/docs/api-reference/updates",
+            "https://platform.vidu.com/docs/api-reference/video-models/vidu-q3/reference-to-video",
+            "https://platform.vidu.com/docs/overview/pricing"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "viduq3-turbo",
+          "vendor": "shengshu",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "credit_rules: 已读取完整官方价格表，按credits计费（每credit人民币0.03125），且部分Q2有首秒/后续秒阶梯；未把积分规则推算成模型货币单价。",
+          "urls": [
+            "https://platform.vidu.com/docs/overview/model-map",
+            "https://platform.vidu.com/docs/text-to-video",
+            "https://platform.vidu.com/docs/api-reference/updates",
+            "https://platform.vidu.com/docs/api-reference/video-models/vidu-q3/text-to-video",
+            "https://platform.vidu.com/docs/overview/pricing"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "lucid-origin",
+          "vendor": "leonardo",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。",
+          "urls": [
+            "https://docs.leonardo.ai/docs/lucid-origin",
+            "https://docs.leonardo.ai/llms.txt",
+            "https://leonardo.ai/news/lucid-origin-ai-image-model"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"lucid-origin\" pricing release launch date",
+          "search_domains": [
+            "leonardo.ai"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "marengo2.7",
+          "vendor": "twelvelabs",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "mixed_units: 官方视频、文本、索引与存储分项计费，或模态价格不同，现有单一 pricing 无法完整表达。",
+          "urls": [
+            "https://docs.twelvelabs.io/docs/get-started/release-notes",
+            "https://www.twelvelabs.io/blog/introducing-marengo-2-7",
+            "https://www.twelvelabs.io/pricing"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "viduq3-ad",
+          "vendor": "shengshu",
+          "missing": [
+            "pricing",
+            "release_date"
+          ],
+          "reason": "credit_rules: 已读取完整官方价格表，按credits计费（每credit人民币0.03125），且部分Q2有首秒/后续秒阶梯；未把积分规则推算成模型货币单价。 searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://platform.vidu.com/docs/overview/model-map",
+            "https://platform.vidu.com/docs/text-to-video",
+            "https://platform.vidu.com/docs/api-reference/video-models/vidu-q3/reference-to-video",
+            "https://platform.vidu.com/docs/overview/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"viduq3-ad\" pricing release launch date",
+          "search_domains": [
+            "vidu.com"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "gemini-2.0-flash-thinking-exp",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://ai.google.dev/gemini-api/docs/changelog",
+            "https://ai.google.dev/api/generate-content",
+            "https://ai.google.dev/gemini-api/docs/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"gemini-2.0-flash-thinking-exp\" pricing release launch date",
+          "search_domains": [
+            "ai.google.dev",
+            "developers.googleblog.com",
+            "blog.google",
+            "cloud.google.com"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "ink-2",
+          "vendor": "cartesia",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "credit_plan: 官方按 credits 及订阅套餐计费，未确认该模型对应的独立货币标准单价，未从套餐折算。",
+          "urls": [
+            "https://docs.cartesia.ai/build-with-cartesia/stt-models",
+            "https://docs.cartesia.ai/pricing"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "recraftv4_1_pro",
+          "vendor": "recraft",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://www.recraft.ai/docs/api-reference/models/recraft-v4-1",
+            "https://www.recraft.ai/docs/api-reference/models",
+            "https://www.recraft.ai/docs/api-reference/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"recraftv4_1_pro\" pricing release launch date",
+          "search_domains": [
+            "recraft.ai"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "v5.6",
+          "vendor": "pixverse",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "unresolved_public_pricing: 已检查对应官方文档/价格入口，未取得可核实该型号的完整货币标准价；涉及动态页面、积分/套餐或多配置，不做换算猜测。",
+          "urls": [
+            "https://docs.platform.pixverse.ai/text-to-video-generation-13016634e0",
+            "https://docs.platform.pixverse.ai/model-overview-2140345m0",
+            "https://docs.platform.pixverse.ai/changelogs-906383m0"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "kling-v3",
+          "vendor": "kuaishou",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "mixed_units: 同一模型ID服务视频及图像；官方分别$0.084/秒及$0.028/张，单一pricing不能同时表达。",
+          "urls": [
+            "https://kling.ai/document-api/guides/capability-map/video",
+            "https://kling.ai/document-api/guides/capability-map/image",
+            "https://kling.ai/document-api/updates/api",
+            "https://kling.ai/document-api/pricing/base/video",
+            "https://kling.ai/document-api/pricing/base/image",
+            "https://kling.ai/document-api/api/video/3-0-omni/text-to-video.md",
+            "https://kling.ai/document-api/api/image/3-0-omni/image-generation.md"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "nova-2-medical",
+          "vendor": "deepgram",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://developers.deepgram.com/docs/models-languages-overview",
+            "https://deepgram.com/pricing",
+            "https://offers.deepgram.com/hubfs/2412-Guide-Medical-Transcription-Deepgram.pdf?hsLang=en"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"nova-2-medical\" pricing release launch date",
+          "search_domains": [
+            "deepgram.com"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "nova-2-phonecall",
+          "vendor": "deepgram",
+          "missing": [
+            "pricing",
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。 searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://developers.deepgram.com/docs/models-languages-overview",
+            "https://deepgram.com/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"nova-2-phonecall\" pricing release launch date",
+          "search_domains": [
+            "deepgram.com"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "sd3.5-flash",
+          "vendor": "stability",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://platform.stability.ai/docs/api-reference",
+            "https://platform.stability.ai/pricing",
+            "https://platform.stability.ai/docs/release-notes"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"sd3.5-flash\" pricing release launch date",
+          "search_domains": [
+            "stability.ai"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "ltx-2-pro",
+          "vendor": "lightricks",
+          "missing": [
+            "pricing",
+            "release_date"
+          ],
+          "reason": "historical_not_found: 当前官方价格页只列 LTX-2.3/2.5，旧 LTX-2 型号未取得可核实价目，不套用新型号。 searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://docs.ltx.io/api-changelog",
+            "https://ltx.io/model/api/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"ltx-2-pro\" pricing release launch date",
+          "search_domains": [
+            "ltx.io"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "viduq3-pro",
+          "vendor": "shengshu",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "credit_rules: 已读取完整官方价格表，按credits计费（每credit人民币0.03125），且部分Q2有首秒/后续秒阶梯；未把积分规则推算成模型货币单价。",
+          "urls": [
+            "https://platform.vidu.com/docs/overview/model-map",
+            "https://platform.vidu.com/docs/text-to-video",
+            "https://platform.vidu.com/docs/api-reference/updates",
+            "https://platform.vidu.com/docs/api-reference/video-models/vidu-q3/text-to-video",
+            "https://platform.vidu.com/docs/overview/pricing"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "viduq2-pro",
+          "vendor": "shengshu",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "credit_rules: 已读取完整官方价格表，按credits计费（每credit人民币0.03125），且部分Q2有首秒/后续秒阶梯；未把积分规则推算成模型货币单价。",
+          "urls": [
+            "https://platform.vidu.com/docs/overview/model-map",
+            "https://platform.vidu.com/docs/api-reference/updates",
+            "https://platform.vidu.com/docs/api-reference/video-models/vidu-q2/image-to-video",
+            "https://platform.vidu.com/docs/overview/pricing"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "lucid-realism",
+          "vendor": "leonardo",
+          "missing": [
+            "pricing",
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。 searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://docs.leonardo.ai/docs/lucid-realism",
+            "https://docs.leonardo.ai/llms.txt"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"lucid-realism\" pricing release launch date",
+          "search_domains": [
+            "leonardo.ai"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "recraftv4_1_utility_vector",
+          "vendor": "recraft",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://www.recraft.ai/docs/api-reference/models/recraft-v4-1",
+            "https://www.recraft.ai/docs/api-reference/models",
+            "https://www.recraft.ai/docs/api-reference/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"recraftv4_1_utility_vector\" pricing release launch date",
+          "search_domains": [
+            "recraft.ai"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "text-bison",
+          "vendor": "google",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://web.archive.org/web/20251112105521/https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
+            "https://web.archive.org/web/20241114220602/https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/text",
+            "https://web.archive.org/web/20260305113615/https://ai.google.dev/palm_docs/deprecation",
+            "https://docs.cloud.google.com/vertex-ai/docs/release-notes",
+            "https://ai.google.dev/gemini-api/docs/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"text-bison\" pricing release launch date",
+          "search_domains": [
+            "ai.google.dev",
+            "developers.googleblog.com",
+            "blog.google",
+            "cloud.google.com"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "sonic-3.6",
+          "vendor": "cartesia",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "credit_plan: 官方按 credits 及订阅套餐计费，未确认该模型对应的独立货币标准单价，未从套餐折算。",
+          "urls": [
+            "https://docs.cartesia.ai/build-with-cartesia/tts-models/latest",
+            "https://docs.cartesia.ai/pricing"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "nova-3-pharma",
+          "vendor": "deepgram",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。",
+          "urls": [
+            "https://developers.deepgram.com/docs/models-languages-overview",
+            "https://deepgram.com/pricing",
+            "https://developers.deepgram.com/changelog"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"nova-3-pharma\" pricing release launch date",
+          "search_domains": [
+            "deepgram.com"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "pegasus1.2",
+          "vendor": "twelvelabs",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "mixed_units: 官方视频、文本、索引与存储分项计费，或模态价格不同，现有单一 pricing 无法完整表达。",
+          "urls": [
+            "https://docs.twelvelabs.io/docs/get-started/release-notes",
+            "https://www.twelvelabs.io/blog/introducing-pegasus-1-2",
+            "https://www.twelvelabs.io/pricing"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "gemini-2.0-pro-exp",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://ai.google.dev/gemini-api/docs/changelog",
+            "https://ai.google.dev/api/generate-content",
+            "https://ai.google.dev/gemini-api/docs/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"gemini-2.0-pro-exp\" pricing release launch date",
+          "search_domains": [
+            "ai.google.dev",
+            "developers.googleblog.com",
+            "blog.google",
+            "cloud.google.com"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "oak-1",
+          "vendor": "speechmatics",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://docs.speechmatics.com/speech-to-text/models",
+            "https://www.speechmatics.com/pricing",
+            "https://docs.speechmatics.com/api-ref/batch/create-a-new-job"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"oak-1\" pricing release launch date",
+          "search_domains": [
+            "speechmatics.com"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "gemini-omni-flash-preview",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "mixed_modalities: 官方实时/全模态音频模型按模态分别计费，不能只摘取文本价格。",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://ai.google.dev/gemini-api/docs/changelog",
+            "https://ai.google.dev/gemini-api/docs/interactions",
+            "https://ai.google.dev/gemini-api/docs/pricing"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "sarvam-m",
+          "vendor": "sarvam",
+          "missing": [
+            "pricing",
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。 searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。 date_conflict: 官方changelog/2025/5/1称已发布，官方研究博客2025-05-23称发布，API首发时间尚有冲突。",
+          "urls": [
+            "https://docs.sarvam.ai/api/getting-started/models/sarvam-m",
+            "https://docs.sarvam.ai/api-reference-docs/getting-started/models",
+            "https://docs.sarvam.ai/api/getting-started/pricing",
+            "https://docs.sarvam.ai/changelog/2025/5/1",
+            "https://www.sarvam.ai/blogs/sarvam-m"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"sarvam-m\" pricing release launch date",
+          "search_domains": [
+            "sarvam.ai"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "ink-whisper",
+          "vendor": "cartesia",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "credit_plan: 官方按 credits 及订阅套餐计费，未确认该模型对应的独立货币标准单价，未从套餐折算。",
+          "urls": [
+            "https://docs.cartesia.ai/build-with-cartesia/stt/older-models",
+            "https://docs.cartesia.ai/pricing"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "uni-1-max",
+          "vendor": "luma",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://docs.agents.lumalabs.ai/guides/model",
+            "https://docs.agents.lumalabs.ai/guides/images/generation",
+            "https://docs.agents.lumalabs.ai/guides/pricing",
+            "https://docs.agents.lumalabs.ai/"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"uni-1-max\" pricing release launch date",
+          "search_domains": [
+            "lumalabs.ai"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "antigravity-preview-09-2026",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "underlying_model_pricing: 已逐ID官方搜索；官方按底层Gemini推理tokens及工具用量计费，未给Agent ID固定单价。",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/models/antigravity-preview-09-2026",
+            "https://ai.google.dev/gemini-api/docs/antigravity-agent",
+            "https://ai.google.dev/gemini-api/docs/models",
+            "https://ai.google.dev/gemini-api/docs/pricing",
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://ai.google.dev/gemini-api/docs/changelog",
+            "https://ai.google.dev/gemini-api/docs/interactions-overview",
+            "https://ai.google.dev/gemini-api/docs/deep-research"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"antigravity-preview-09-2026\" pricing release launch date",
+          "search_domains": [
+            "ai.google.dev",
+            "developers.googleblog.com",
+            "blog.google",
+            "cloud.google.com"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "viduq2",
+          "vendor": "shengshu",
+          "missing": [
+            "pricing",
+            "release_date"
+          ],
+          "reason": "credit_rules: 已读取完整官方价格表，按credits计费（每credit人民币0.03125），且部分Q2有首秒/后续秒阶梯；未把积分规则推算成模型货币单价。 searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://platform.vidu.com/docs/overview/model-map",
+            "https://platform.vidu.com/docs/text-to-video",
+            "https://platform.vidu.com/docs/api-reference/video-models/vidu-q2/text-to-video",
+            "https://platform.vidu.com/docs/api-reference/image-generation",
+            "https://platform.vidu.com/docs/overview/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"viduq2\" pricing release launch date",
+          "search_domains": [
+            "vidu.com"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "sonic-3",
+          "vendor": "cartesia",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "credit_plan: 官方按 credits 及订阅套餐计费，未确认该模型对应的独立货币标准单价，未从套餐折算。",
+          "urls": [
+            "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models",
+            "https://docs.cartesia.ai/pricing"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "nova-2-conversationalai",
+          "vendor": "deepgram",
+          "missing": [
+            "pricing",
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。 searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://developers.deepgram.com/docs/models-languages-overview",
+            "https://deepgram.com/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"nova-2-conversationalai\" pricing release launch date",
+          "search_domains": [
+            "deepgram.com"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "gemini-2.5-flash-image-preview",
+          "vendor": "google",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "date_conflict: 已逐ID官方搜索，官方模型生命周期页所列日期与2025-08-26发布公告不一致，尚未解析冲突。",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://ai.google.dev/gemini-api/docs/changelog",
+            "https://ai.google.dev/api/generate-content",
+            "https://developers.googleblog.com/en/introducing-gemini-2-5-flash-image/",
+            "https://ai.google.dev/gemini-api/docs/pricing",
+            "https://developers.googleblog.com/en/introducing-gemini-2-5-flash-image/"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"gemini-2.5-flash-image-preview\" pricing release launch date",
+          "search_domains": [
+            "ai.google.dev",
+            "developers.googleblog.com",
+            "blog.google",
+            "cloud.google.com"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "kling-video-v1-5",
+          "vendor": "kuaishou",
+          "missing": [
+            "pricing",
+            "release_date"
+          ],
+          "reason": "historical_not_found: 已读取官方动态视频/图像价目，现表仅列新型号，未列该旧型号数字价；不套用新版价格。 searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://kling.ai/document-api/api/video/1-5/image-to-video",
+            "https://kling.ai/document-api/",
+            "https://web.archive.org/web/20260911/https://s15-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-ChrHtRIN.js",
+            "https://kling.ai/document-api/updates/api",
+            "https://kling.ai/document-api/pricing/base/video",
+            "https://kling.ai/document-api/pricing/base/image"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"kling-video-v1-5\" pricing release launch date",
+          "search_domains": [
+            "kling.ai",
+            "klingai.com"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "gemma-4-26b-a4b-it",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "free_service: 官方实验/研究服务免费档未提供独立标准货币计费单位；不把免费额度记为标准零价。",
+          "urls": [
+            "https://ai.google.dev/gemma/docs/core/gemma_on_gemini_api",
+            "https://ai.google.dev/gemma/docs/core/model_card_4",
+            "https://ai.google.dev/gemini-api/docs/models",
+            "https://ai.google.dev/gemini-api/docs/pricing",
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://ai.google.dev/gemini-api/docs/changelog",
+            "https://ai.google.dev/gemini-api/docs/interactions-overview"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "gen3a_turbo",
+          "vendor": "runway",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://docs.dev.runwayml.com/api-details/api_changelog/",
+            "https://web.archive.org/web/20250715224622/https://docs.dev.runwayml.com/guides/models/",
+            "https://web.archive.org/web/20260420145731/https://docs.dev.runwayml.com/guides/pricing/",
+            "https://docs.dev.runwayml.com/guides/pricing/"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"gen3a_turbo\" pricing release launch date",
+          "search_domains": [
+            "runwayml.com"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "nova-2-video",
+          "vendor": "deepgram",
+          "missing": [
+            "pricing",
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。 searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://developers.deepgram.com/docs/models-languages-overview",
+            "https://deepgram.com/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"nova-2-video\"",
+          "search_domains": [
+            "deepgram.com"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "ltx-2-fast",
+          "vendor": "lightricks",
+          "missing": [
+            "pricing",
+            "release_date"
+          ],
+          "reason": "historical_not_found: 当前官方价格页只列 LTX-2.3/2.5，旧 LTX-2 型号未取得可核实价目，不套用新型号。 searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://docs.ltx.io/api-changelog",
+            "https://ltx.io/model/api/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"ltx-2-fast\"",
+          "search_domains": [
+            "ltx.io"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "marengo3.5",
+          "vendor": "twelvelabs",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "mixed_units: 官方视频、文本、索引与存储分项计费，或模态价格不同，现有单一 pricing 无法完整表达。",
+          "urls": [
+            "https://docs.twelvelabs.io/v1.3/docs/concepts/models/marengo/marengo-3-5",
+            "https://docs.twelvelabs.io/v1.3/docs/concepts/models/marengo",
+            "https://docs.twelvelabs.io/v1.3/docs/guides/create-embeddings/query",
+            "https://docs.twelvelabs.io/v1.3/docs/get-started/release-notes",
+            "https://docs.twelvelabs.io/v1.3/api-reference/create-embeddings-v2/create-embeddings",
+            "https://www.twelvelabs.io/pricing"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "sonic-turbo",
+          "vendor": "cartesia",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "credit_plan: 官方按 credits 及订阅套餐计费，未确认该模型对应的独立货币标准单价，未从套餐折算。",
+          "urls": [
+            "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models",
+            "https://docs.cartesia.ai/pricing"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "uni-1",
+          "vendor": "luma",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://docs.agents.lumalabs.ai/guides/model",
+            "https://docs.agents.lumalabs.ai/guides/images/generation",
+            "https://docs.agents.lumalabs.ai/guides/pricing",
+            "https://docs.agents.lumalabs.ai/"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"uni-1\"",
+          "search_domains": [
+            "lumalabs.ai"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "recraftv3_vector",
+          "vendor": "recraft",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://www.recraft.ai/docs/api-reference/models/recraft-v3",
+            "https://www.recraft.ai/docs/api-reference/models",
+            "https://www.recraft.ai/docs/api-reference/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"recraftv3_vector\"",
+          "search_domains": [
+            "recraft.ai"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "vidu2.0",
+          "vendor": "shengshu",
+          "missing": [
+            "pricing",
+            "release_date"
+          ],
+          "reason": "credit_rules: 已读取完整官方价格表，按credits计费（每credit人民币0.03125），且部分Q2有首秒/后续秒阶梯；未把积分规则推算成模型货币单价。 searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://platform.vidu.com/docs/overview/model-map",
+            "https://platform.vidu.com/docs/overview/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"vidu2.0\"",
+          "search_domains": [
+            "vidu.com"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "gemini-3.5-live-translate-preview",
+          "vendor": "google",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/models/gemini-3.5-live-translate-preview",
+            "https://ai.google.dev/gemini-api/docs/models",
+            "https://ai.google.dev/gemini-api/docs/pricing",
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://ai.google.dev/gemini-api/docs/live",
+            "https://deepmind.google/models/model-cards/gemini-3-5-audio/",
+            "https://ai.google.dev/api/live"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"gemini-3.5-live-translate-preview\"",
+          "search_domains": [
+            "ai.google.dev",
+            "developers.googleblog.com",
+            "blog.google",
+            "cloud.google.com"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "ideogram-2a",
+          "vendor": "ideogram",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://developer.ideogram.ai/api-reference/images/generate/ideogram-2a",
+            "https://developer.ideogram.ai/v2/llms.txt",
+            "https://developer.ideogram.ai/ideogram-api/api-setup",
+            "https://ideogram.ai/api-pricing",
+            "https://ideogram.ai/pricing/?pricing_tab=api",
+            "https://ideogram.ai/pricing/"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"ideogram-2a\"",
+          "search_domains": [
+            "ideogram.ai"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "text-embedding-004",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "official_free_only: May/July 2025 archived pricing explicitly lists free input and no paid tier; no independent paid standard tariff.",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://web.archive.org/web/20250303104029/https://ai.google.dev/gemini-api/docs/models/gemini",
+            "https://web.archive.org/web/20250228153339/https://ai.google.dev/gemini-api/docs/pricing",
+            "https://ai.google.dev/gemini-api/docs/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"text-embedding-004\"",
+          "search_domains": [
+            "ai.google.dev",
+            "developers.googleblog.com",
+            "blog.google",
+            "cloud.google.com"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "v6",
+          "vendor": "pixverse",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "unresolved_public_pricing: 已检查对应官方文档/价格入口，未取得可核实该型号的完整货币标准价；涉及动态页面、积分/套餐或多配置，不做换算猜测。",
+          "urls": [
+            "https://docs.platform.pixverse.ai/v6-2056814m0",
+            "https://docs.platform.pixverse.ai/model-overview-2140345m0",
+            "https://docs.platform.pixverse.ai/capability-matrix-2144288m0",
+            "https://docs.platform.pixverse.ai/text-to-video-generation-13016634e0",
+            "https://docs.platform.pixverse.ai/changelogs-906383m0"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "pegasus1.5",
+          "vendor": "twelvelabs",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "mixed_units: 官方视频、文本、索引与存储分项计费，或模态价格不同，现有单一 pricing 无法完整表达。",
+          "urls": [
+            "https://docs.twelvelabs.io/v1.3/docs/concepts/models/pegasus/pegasus-1-5",
+            "https://docs.twelvelabs.io/v1.3/docs/concepts/models/pegasus",
+            "https://docs.twelvelabs.io/v1.3/api-reference/analyze-videos/analyze",
+            "https://docs.twelvelabs.io/v1.3/docs/get-started/release-notes",
+            "https://www.twelvelabs.io/pricing"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "deep-research-max-preview-04-2026",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "underlying_model_pricing: 已逐ID官方搜索；官方按底层Gemini推理tokens及工具用量计费，未给Agent ID固定单价。",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/models/deep-research-max-preview-04-2026",
+            "https://ai.google.dev/gemini-api/docs/deep-research",
+            "https://ai.google.dev/gemini-api/docs/models",
+            "https://ai.google.dev/gemini-api/docs/pricing",
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://ai.google.dev/gemini-api/docs/changelog",
+            "https://ai.google.dev/gemini-api/docs/interactions-overview",
+            "https://ai.google.dev/gemini-api/docs/deep-research"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"deep-research-max-preview-04-2026\"",
+          "search_domains": [
+            "ai.google.dev",
+            "developers.googleblog.com",
+            "blog.google",
+            "cloud.google.com"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "eleven_multilingual_ttv_v2",
+          "vendor": "elevenlabs",
+          "missing": [
+            "pricing",
+            "release_date"
+          ],
+          "reason": "credit_rules: Voice Design文档仅明确按preview文本credits计费，未给该型号独立货币标准价；未从TTS价格推算。 searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://elevenlabs.io/docs/overview/models",
+            "https://elevenlabs.io/docs/api-reference/text-to-voice/design",
+            "https://elevenlabs.io/pricing/api"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"eleven_multilingual_ttv_v2\"",
+          "search_domains": [
+            "elevenlabs.io"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "deep-research-pro-preview-12-2025",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "underlying_model_pricing: 已逐ID官方搜索；官方按底层Gemini推理tokens及工具用量计费，未给Agent ID固定单价。",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://ai.google.dev/gemini-api/docs/changelog",
+            "https://ai.google.dev/gemini-api/docs/models/deep-research-pro-preview-12-2025",
+            "https://ai.google.dev/gemini-api/docs/interactions",
+            "https://ai.google.dev/gemini-api/docs/pricing",
+            "https://ai.google.dev/gemini-api/docs/deep-research"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"deep-research-pro-preview-12-2025\"",
+          "search_domains": [
+            "ai.google.dev",
+            "developers.googleblog.com",
+            "blog.google",
+            "cloud.google.com"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "kling-image-v1",
+          "vendor": "kuaishou",
+          "missing": [
+            "pricing",
+            "release_date"
+          ],
+          "reason": "historical_not_found: 已读取官方动态视频/图像价目，现表仅列新型号，未列该旧型号数字价；不套用新版价格。 searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://kling.ai/document-api/api/image/1-0/image-generation",
+            "https://kling.ai/document-api/",
+            "https://web.archive.org/web/20260911/https://s15-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-BHBanj_x.js",
+            "https://kling.ai/document-api/updates/api",
+            "https://kling.ai/document-api/pricing/base/video",
+            "https://kling.ai/document-api/pricing/base/image"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"kling-image-v1\"",
+          "search_domains": [
+            "kling.ai",
+            "klingai.com"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "embedding-gecko-001",
+          "vendor": "google",
+          "missing": [
+            "pricing",
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。 searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://ai.google.dev/gemini-api/docs/changelog",
+            "https://ai.google.dev/gemini-api/docs/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"embedding-gecko-001\"",
+          "search_domains": [
+            "ai.google.dev",
+            "developers.googleblog.com",
+            "blog.google",
+            "cloud.google.com"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "antigravity-preview-05-2026",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "underlying_model_pricing: 已逐ID官方搜索；官方按底层Gemini推理tokens及工具用量计费，未给Agent ID固定单价。",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://ai.google.dev/gemini-api/docs/changelog",
+            "https://ai.google.dev/gemini-api/docs/models/antigravity-preview-05-2026",
+            "https://ai.google.dev/gemini-api/docs/interactions",
+            "https://ai.google.dev/gemini-api/docs/pricing",
+            "https://ai.google.dev/gemini-api/docs/deep-research"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"antigravity-preview-05-2026\"",
+          "search_domains": [
+            "ai.google.dev",
+            "developers.googleblog.com",
+            "blog.google",
+            "cloud.google.com"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "embedding-001",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://web.archive.org/web/20250601/https://ai.google.dev/gemini-api/docs/models",
+            "https://ai.google.dev/gemini-api/docs/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"embedding-001\"",
+          "search_domains": [
+            "ai.google.dev",
+            "developers.googleblog.com",
+            "blog.google",
+            "cloud.google.com"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "recraftv4_styles_vector",
+          "vendor": "recraft",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://www.recraft.ai/docs/api-reference/models/recraft-v4-styles",
+            "https://www.recraft.ai/docs/api-reference/models",
+            "https://www.recraft.ai/docs/api-reference/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"recraftv4_styles_vector\"",
+          "search_domains": [
+            "recraft.ai"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "kling-video-v2-1-master",
+          "vendor": "kuaishou",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "historical_not_found: 已读取官方动态视频/图像价目，现表仅列新型号，未列该旧型号数字价；不套用新版价格。",
+          "urls": [
+            "https://kling.ai/document-api/api/video/2-1-master/text-to-video",
+            "https://kling.ai/document-api/",
+            "https://web.archive.org/web/20260911/https://s15-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-BpfAqied.js",
+            "https://kling.ai/document-api/updates/api",
+            "https://kling.ai/document-api/pricing/base/video",
+            "https://kling.ai/document-api/pricing/base/image"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "nova-2-atc",
+          "vendor": "deepgram",
+          "missing": [
+            "pricing",
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。 searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://developers.deepgram.com/docs/models-languages-overview",
+            "https://deepgram.com/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"nova-2-atc\"",
+          "search_domains": [
+            "deepgram.com"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "mayura-v1",
+          "vendor": "sarvam",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://docs.sarvam.ai/api/getting-started/models/mayura",
+            "https://docs.sarvam.ai/api/getting-started/pricing",
+            "https://docs.sarvam.ai/api-reference/text/translate-text"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"mayura-v1\"",
+          "search_domains": [
+            "sarvam.ai"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "lyria-realtime-exp",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "free_service: 官方实验/研究服务免费档未提供独立标准货币计费单位；不把免费额度记为标准零价。",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/models/lyria-realtime-exp",
+            "https://ai.google.dev/gemini-api/docs/realtime-music-generation",
+            "https://ai.google.dev/gemini-api/docs/models",
+            "https://ai.google.dev/gemini-api/docs/pricing",
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://ai.google.dev/gemini-api/docs/changelog",
+            "https://ai.google.dev/api/live_music"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "sonic",
+          "vendor": "cartesia",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "credit_plan: 官方按 credits 及订阅套餐计费，未确认该模型对应的独立货币标准单价，未从套餐折算。",
+          "urls": [
+            "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models",
+            "https://docs.cartesia.ai/pricing"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "kling-video-v2-1",
+          "vendor": "kuaishou",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "historical_not_found: 已读取官方动态视频/图像价目，现表仅列新型号，未列该旧型号数字价；不套用新版价格。",
+          "urls": [
+            "https://kling.ai/document-api/api/video/2-1/image-to-video",
+            "https://kling.ai/document-api/",
+            "https://web.archive.org/web/20260911/https://s15-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-BtKFmEat.js",
+            "https://kling.ai/document-api/updates/api",
+            "https://kling.ai/document-api/pricing/base/video",
+            "https://kling.ai/document-api/pricing/base/image"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "recraftv4_styles_pro_vector",
+          "vendor": "recraft",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://www.recraft.ai/docs/api-reference/models/recraft-v4-styles",
+            "https://www.recraft.ai/docs/api-reference/models",
+            "https://www.recraft.ai/docs/api-reference/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"recraftv4_styles_pro_vector\"",
+          "search_domains": [
+            "recraft.ai"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "gemini-3.1-flash-live-preview",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "mixed_modalities: 官方实时/全模态音频模型按模态分别计费，不能只摘取文本价格。",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-live-preview",
+            "https://ai.google.dev/gemini-api/docs/models",
+            "https://ai.google.dev/gemini-api/docs/pricing",
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://ai.google.dev/gemini-api/docs/live",
+            "https://ai.google.dev/api/live"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "gen4_turbo",
+          "vendor": "runway",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://docs.dev.runwayml.com/guides/models/",
+            "https://docs.dev.runwayml.com/guides/pricing/",
+            "https://docs.dev.runwayml.com/api-details/api_changelog/",
+            "https://docs.dev.runwayml.com/api/"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"gen4_turbo\"",
+          "search_domains": [
+            "runwayml.com"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "recraftv4_1_pro_vector",
+          "vendor": "recraft",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://www.recraft.ai/docs/api-reference/models/recraft-v4-1",
+            "https://www.recraft.ai/docs/api-reference/models",
+            "https://www.recraft.ai/docs/api-reference/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"recraftv4_1_pro_vector\"",
+          "search_domains": [
+            "recraft.ai"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "gemini-live-2.5-flash-preview",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "mixed_modalities: 官方实时/全模态音频模型按模态分别计费，不能只摘取文本价格。",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://ai.google.dev/gemini-api/docs/changelog",
+            "https://ai.google.dev/api/live",
+            "https://ai.google.dev/gemini-api/docs/pricing"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "nova-2-drivethru",
+          "vendor": "deepgram",
+          "missing": [
+            "pricing",
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。 searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://developers.deepgram.com/docs/models-languages-overview",
+            "https://deepgram.com/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"nova-2-drivethru\"",
+          "search_domains": [
+            "deepgram.com"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "gemini-2.0-flash-exp-image-generation",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://ai.google.dev/gemini-api/docs/changelog",
+            "https://ai.google.dev/api/generate-content",
+            "https://ai.google.dev/gemini-api/docs/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"gemini-2.0-flash-exp-image-generation\"",
+          "search_domains": [
+            "ai.google.dev",
+            "developers.googleblog.com",
+            "blog.google",
+            "cloud.google.com"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "sonic-2",
+          "vendor": "cartesia",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "credit_plan: 官方按 credits 及订阅套餐计费，未确认该模型对应的独立货币标准单价，未从套餐折算。",
+          "urls": [
+            "https://docs.cartesia.ai/build-with-cartesia/tts-models/older-models",
+            "https://docs.cartesia.ai/pricing"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "gemini-2.5-flash-preview-native-audio-dialog",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "mixed_modalities: 官方实时/全模态音频模型按模态分别计费，不能只摘取文本价格。",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://ai.google.dev/gemini-api/docs/changelog",
+            "https://ai.google.dev/api/live",
+            "https://ai.google.dev/gemini-api/docs/pricing"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "viduq1-classic",
+          "vendor": "shengshu",
+          "missing": [
+            "pricing",
+            "release_date"
+          ],
+          "reason": "credit_rules: 已读取完整官方价格表，按credits计费（每credit人民币0.03125），且部分Q2有首秒/后续秒阶梯；未把积分规则推算成模型货币单价。 searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://platform.vidu.com/docs/overview/model-map",
+            "https://platform.vidu.com/docs/api-reference/video-models/vidu-q1/image-to-video",
+            "https://platform.vidu.com/docs/overview/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"viduq1-classic\"",
+          "search_domains": [
+            "vidu.com"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "eleven_text_to_sound_v2",
+          "vendor": "elevenlabs",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://elevenlabs.io/docs/overview/models",
+            "https://elevenlabs.io/pricing/api",
+            "https://elevenlabs.io/docs/api-reference/text-to-sound-effects/convert"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"eleven_text_to_sound_v2\"",
+          "search_domains": [
+            "elevenlabs.io"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "gemini-2.5-flash-native-audio-preview-12-2025",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "mixed_modalities: 官方实时/全模态音频模型按模态分别计费，不能只摘取文本价格。",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash-native-audio-preview-12-2025",
+            "https://ai.google.dev/gemini-api/docs/models",
+            "https://ai.google.dev/gemini-api/docs/pricing",
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://ai.google.dev/gemini-api/docs/live",
+            "https://ai.google.dev/api/live"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "gemma-4-31b-it",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "free_service: 官方实验/研究服务免费档未提供独立标准货币计费单位；不把免费额度记为标准零价。",
+          "urls": [
+            "https://ai.google.dev/gemma/docs/core/gemma_on_gemini_api",
+            "https://ai.google.dev/gemma/docs/core/model_card_4",
+            "https://ai.google.dev/gemini-api/docs/models",
+            "https://ai.google.dev/gemini-api/docs/pricing",
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://ai.google.dev/gemini-api/docs/changelog",
+            "https://ai.google.dev/gemini-api/docs/interactions-overview"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "viduq4-preview",
+          "vendor": "shengshu",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "credit_rules: 已读取完整官方价格表，按credits计费（每credit人民币0.03125），且部分Q2有首秒/后续秒阶梯；未把积分规则推算成模型货币单价。",
+          "urls": [
+            "https://platform.vidu.com/docs/overview/model-map",
+            "https://platform.vidu.com/docs/api-reference/updates",
+            "https://platform.vidu.com/docs/api-reference/video-models/vidu-q4-preview/image-to-video",
+            "https://platform.vidu.com/docs/overview/pricing"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "gemini-embedding-2-preview",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://ai.google.dev/gemini-api/docs/changelog",
+            "https://ai.google.dev/api/embeddings",
+            "https://ai.google.dev/gemini-api/docs/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"gemini-embedding-2-preview\"",
+          "search_domains": [
+            "ai.google.dev",
+            "developers.googleblog.com",
+            "blog.google",
+            "cloud.google.com"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "nova-2-meeting",
+          "vendor": "deepgram",
+          "missing": [
+            "pricing",
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。 searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://developers.deepgram.com/docs/models-languages-overview",
+            "https://deepgram.com/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"nova-2-meeting\"",
+          "search_domains": [
+            "deepgram.com"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "gemini-embedding-exp-03-07",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "free_service: 官方实验/研究服务免费档未提供独立标准货币计费单位；不把免费额度记为标准零价。",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://web.archive.org/web/20250601/https://ai.google.dev/gemini-api/docs/models",
+            "https://ai.google.dev/gemini-api/docs/changelog",
+            "https://ai.google.dev/gemini-api/docs/pricing"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "gemini-2.0-flash-exp",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://ai.google.dev/gemini-api/docs/changelog",
+            "https://ai.google.dev/api/generate-content",
+            "https://ai.google.dev/gemini-api/docs/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"gemini-2.0-flash-exp\"",
+          "search_domains": [
+            "ai.google.dev",
+            "developers.googleblog.com",
+            "blog.google",
+            "cloud.google.com"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "kling-image-v2",
+          "vendor": "kuaishou",
+          "missing": [
+            "pricing",
+            "release_date"
+          ],
+          "reason": "historical_not_found: 已读取官方动态视频/图像价目，现表仅列新型号，未列该旧型号数字价；不套用新版价格。 searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://kling.ai/document-api/api/image/2-0/image-generation",
+            "https://kling.ai/document-api/",
+            "https://web.archive.org/web/20260911/https://s15-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-BQSr5f8U.js",
+            "https://kling.ai/document-api/updates/api",
+            "https://kling.ai/document-api/pricing/base/video",
+            "https://kling.ai/document-api/pricing/base/image"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"kling-image-v2\"",
+          "search_domains": [
+            "kling.ai",
+            "klingai.com"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "saaras-v3-realtime",
+          "vendor": "sarvam",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。",
+          "urls": [
+            "https://docs.sarvam.ai/api/getting-started/models/saaras",
+            "https://docs.sarvam.ai/api/getting-started/pricing",
+            "https://docs.sarvam.ai/api/api-guides-tutorials/speech-to-text/realtime-streaming",
+            "https://docs.sarvam.ai/changelog",
+            "https://docs.sarvam.ai/api/integration/pipecat-production-guide"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"saaras-v3-realtime\"",
+          "search_domains": [
+            "sarvam.ai"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "gemini-1.0-pro",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。",
+          "urls": [
+            "https://web.archive.org/web/20251112105521/https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
+            "https://web.archive.org/web/20240731194240/https://ai.google.dev/gemini-api/docs/models/gemini",
+            "https://ai.google.dev/gemini-api/docs/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"gemini-1.0-pro\"",
+          "search_domains": [
+            "ai.google.dev",
+            "developers.googleblog.com",
+            "blog.google",
+            "cloud.google.com"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "gemini-2.0-flash-preview-image-generation",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://web.archive.org/web/20250601/https://ai.google.dev/gemini-api/docs/models",
+            "https://ai.google.dev/gemini-api/docs/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"gemini-2.0-flash-preview-image-generation\"",
+          "search_domains": [
+            "ai.google.dev",
+            "developers.googleblog.com",
+            "blog.google",
+            "cloud.google.com"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "recraftv4_1_utility_pro",
+          "vendor": "recraft",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://www.recraft.ai/docs/api-reference/models/recraft-v4-1",
+            "https://www.recraft.ai/docs/api-reference/models",
+            "https://www.recraft.ai/docs/api-reference/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"recraftv4_1_utility_pro\"",
+          "search_domains": [
+            "recraft.ai"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "bulbul-v4-flash",
+          "vendor": "sarvam",
+          "missing": [
+            "pricing",
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。 searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://docs.sarvam.ai/api/getting-started/models/bulbul",
+            "https://docs.sarvam.ai/api/getting-started/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"bulbul-v4-flash\"",
+          "search_domains": [
+            "sarvam.ai"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "eleven_english_sts_v2",
+          "vendor": "elevenlabs",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://elevenlabs.io/docs/overview/models",
+            "https://elevenlabs.io/pricing/api",
+            "https://elevenlabs.io/docs/api-reference/speech-to-speech/convert"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"eleven_english_sts_v2\"",
+          "search_domains": [
+            "elevenlabs.io"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "v5",
+          "vendor": "pixverse",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "unresolved_public_pricing: 已检查对应官方文档/价格入口，未取得可核实该型号的完整货币标准价；涉及动态页面、积分/套餐或多配置，不做换算猜测。",
+          "urls": [
+            "https://docs.platform.pixverse.ai/text-to-video-generation-13016634e0",
+            "https://docs.platform.pixverse.ai/model-overview-2140345m0",
+            "https://docs.platform.pixverse.ai/changelogs-906383m0"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "pegasus1.6",
+          "vendor": "twelvelabs",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "mixed_units: 官方视频、文本、索引与存储分项计费，或模态价格不同，现有单一 pricing 无法完整表达。",
+          "urls": [
+            "https://docs.twelvelabs.io/v1.3/docs/concepts/models/pegasus/pegasus-1-6",
+            "https://docs.twelvelabs.io/v1.3/docs/concepts/models/pegasus",
+            "https://docs.twelvelabs.io/v1.3/api-reference/analyze-videos/analyze",
+            "https://docs.twelvelabs.io/v1.3/docs/get-started/release-notes",
+            "https://www.twelvelabs.io/pricing"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "viduq2-turbo",
+          "vendor": "shengshu",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "credit_rules: 已读取完整官方价格表，按credits计费（每credit人民币0.03125），且部分Q2有首秒/后续秒阶梯；未把积分规则推算成模型货币单价。",
+          "urls": [
+            "https://platform.vidu.com/docs/overview/model-map",
+            "https://platform.vidu.com/docs/api-reference/updates",
+            "https://platform.vidu.com/docs/api-reference/video-models/vidu-q2/image-to-video",
+            "https://platform.vidu.com/docs/overview/pricing"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "enhanced",
+          "vendor": "speechmatics",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://docs.speechmatics.com/speech-to-text/models",
+            "https://www.speechmatics.com/pricing",
+            "https://docs.speechmatics.com/api-ref/batch/create-a-new-job",
+            "https://docs.speechmatics.com/get-started/authentication"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"enhanced\"",
+          "search_domains": [
+            "speechmatics.com"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "kling-video-v1-6",
+          "vendor": "kuaishou",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "historical_not_found: 已读取官方动态视频/图像价目，现表仅列新型号，未列该旧型号数字价；不套用新版价格。",
+          "urls": [
+            "https://kling.ai/document-api/api/video/1-6/text-to-video",
+            "https://kling.ai/document-api/",
+            "https://web.archive.org/web/20260911/https://s15-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-D0hsPufw.js",
+            "https://kling.ai/document-api/updates/api",
+            "https://kling.ai/document-api/pricing/base/video",
+            "https://kling.ai/document-api/pricing/base/image"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "nova-2-finance",
+          "vendor": "deepgram",
+          "missing": [
+            "pricing",
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。 searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://developers.deepgram.com/docs/models-languages-overview",
+            "https://deepgram.com/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"nova-2-finance\"",
+          "search_domains": [
+            "deepgram.com"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "nova-2-automotive",
+          "vendor": "deepgram",
+          "missing": [
+            "pricing",
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。 searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://developers.deepgram.com/docs/models-languages-overview",
+            "https://deepgram.com/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"nova-2-automotive\"",
+          "search_domains": [
+            "deepgram.com"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "flux-pro-1.0-expand",
+          "vendor": "black-forest-labs",
+          "missing": [
+            "pricing",
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。 searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://docs.bfl.ml/flux_1_fill",
+            "https://docs.bfl.ml/quick_start/pricing",
+            "https://api.bfl.ai/openapi.json"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"flux-pro-1.0-expand\"",
+          "search_domains": [
+            "bfl.ai",
+            "bfl.ml"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "recraftv4_1_utility_pro_vector",
+          "vendor": "recraft",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://www.recraft.ai/docs/api-reference/models/recraft-v4-1",
+            "https://www.recraft.ai/docs/api-reference/models",
+            "https://www.recraft.ai/docs/api-reference/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"recraftv4_1_utility_pro_vector\"",
+          "search_domains": [
+            "recraft.ai"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "veo-3.0-fast-generate-preview",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://ai.google.dev/gemini-api/docs/changelog",
+            "https://ai.google.dev/gemini-api/docs/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"veo-3.0-fast-generate-preview\"",
+          "search_domains": [
+            "ai.google.dev",
+            "developers.googleblog.com",
+            "blog.google",
+            "cloud.google.com"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "pegasus1.1",
+          "vendor": "twelvelabs",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "mixed_units: 官方视频、文本、索引与存储分项计费，或模态价格不同，现有单一 pricing 无法完整表达。",
+          "urls": [
+            "https://docs.twelvelabs.io/docs/get-started/release-notes",
+            "https://www.twelvelabs.io/pricing"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "kling-v3-omni",
+          "vendor": "kuaishou",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "mixed_units: 同一模型ID服务视频及图像；官方分别$0.084/秒及$0.028/张，单一pricing不能同时表达。",
+          "urls": [
+            "https://kling.ai/document-api/guides/capability-map/video",
+            "https://kling.ai/document-api/guides/capability-map/image",
+            "https://kling.ai/document-api/updates/api",
+            "https://kling.ai/document-api/pricing/base/video",
+            "https://kling.ai/document-api/pricing/base/image",
+            "https://kling.ai/document-api/api/video/3-0-omni/video-omni.md",
+            "https://kling.ai/document-api/api/image/o1/image-generation.md"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "deep-research-preview-04-2026",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "underlying_model_pricing: 已逐ID官方搜索；官方按底层Gemini推理tokens及工具用量计费，未给Agent ID固定单价。",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/models/deep-research-preview-04-2026",
+            "https://ai.google.dev/gemini-api/docs/deep-research",
+            "https://ai.google.dev/gemini-api/docs/models",
+            "https://ai.google.dev/gemini-api/docs/pricing",
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://ai.google.dev/gemini-api/docs/changelog",
+            "https://ai.google.dev/gemini-api/docs/interactions-overview",
+            "https://ai.google.dev/gemini-api/docs/deep-research"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"deep-research-preview-04-2026\"",
+          "search_domains": [
+            "ai.google.dev",
+            "developers.googleblog.com",
+            "blog.google",
+            "cloud.google.com"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "gemini-3.8-live",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "mixed_modalities: 官方实时/全模态音频模型按模态分别计费，不能只摘取文本价格。",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-live",
+            "https://ai.google.dev/gemini-api/docs/models",
+            "https://ai.google.dev/gemini-api/docs/pricing",
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://ai.google.dev/gemini-api/docs/live",
+            "https://ai.google.dev/api/live"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "sarvam-translate-v1",
+          "vendor": "sarvam",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://docs.sarvam.ai/api/getting-started/models/sarvam-translate",
+            "https://docs.sarvam.ai/api/getting-started/pricing",
+            "https://docs.sarvam.ai/api-reference/text/translate-text"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"sarvam-translate-v1\"",
+          "search_domains": [
+            "sarvam.ai"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "gemini-3.7-flash",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash",
+            "https://ai.google.dev/gemini-api/docs/models",
+            "https://ai.google.dev/gemini-api/docs/pricing",
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://ai.google.dev/api/generate-content",
+            "https://ai.google.dev/gemini-api/docs/batch-api",
+            "https://deepmind.google/models/model-cards/gemini-3-7-flash/"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"gemini-3.7-flash\"",
+          "search_domains": [
+            "ai.google.dev",
+            "developers.googleblog.com",
+            "blog.google",
+            "cloud.google.com"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "sarvam-105b",
+          "vendor": "sarvam",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://docs.sarvam.ai/api/getting-started/models/sarvam-105b",
+            "https://docs.sarvam.ai/api/getting-started/pricing",
+            "https://huggingface.co/sarvamai/sarvam-105b/blob/main/config.json"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"sarvam-105b\"",
+          "search_domains": [
+            "sarvam.ai"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "standard",
+          "vendor": "speechmatics",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://docs.speechmatics.com/speech-to-text/models",
+            "https://www.speechmatics.com/pricing",
+            "https://docs.speechmatics.com/api-ref/batch/create-a-new-job",
+            "https://docs.speechmatics.com/get-started/authentication"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"standard\"",
+          "search_domains": [
+            "speechmatics.com"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "viduq1",
+          "vendor": "shengshu",
+          "missing": [
+            "pricing",
+            "release_date"
+          ],
+          "reason": "credit_rules: 已读取完整官方价格表，按credits计费（每credit人民币0.03125），且部分Q2有首秒/后续秒阶梯；未把积分规则推算成模型货币单价。 searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://platform.vidu.com/docs/overview/model-map",
+            "https://platform.vidu.com/docs/text-to-video",
+            "https://platform.vidu.com/docs/api-reference/video-models/vidu-q1/text-to-video",
+            "https://platform.vidu.com/docs/api-reference/image-generation",
+            "https://platform.vidu.com/docs/overview/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"viduq1\"",
+          "search_domains": [
+            "vidu.com"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "chat-bison",
+          "vendor": "google",
+          "missing": [
+            "pricing",
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。 searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://web.archive.org/web/20251112105521/https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
+            "https://web.archive.org/web/20250210065349/https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/text-chat",
+            "https://web.archive.org/web/20260305113615/https://ai.google.dev/palm_docs/deprecation",
+            "https://ai.google.dev/gemini-api/docs/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"chat-bison\"",
+          "search_domains": [
+            "ai.google.dev",
+            "developers.googleblog.com",
+            "blog.google",
+            "cloud.google.com"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "v5.5",
+          "vendor": "pixverse",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "unresolved_public_pricing: 已检查对应官方文档/价格入口，未取得可核实该型号的完整货币标准价；涉及动态页面、积分/套餐或多配置，不做换算猜测。",
+          "urls": [
+            "https://docs.platform.pixverse.ai/text-to-video-generation-13016634e0",
+            "https://docs.platform.pixverse.ai/model-overview-2140345m0",
+            "https://docs.platform.pixverse.ai/changelogs-906383m0"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "nova-2-voicemail",
+          "vendor": "deepgram",
+          "missing": [
+            "pricing",
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。 searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://developers.deepgram.com/docs/models-languages-overview",
+            "https://deepgram.com/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"nova-2-voicemail\"",
+          "search_domains": [
+            "deepgram.com"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "c1",
+          "vendor": "pixverse",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "unresolved_public_pricing: 已检查对应官方文档/价格入口，未取得可核实该型号的完整货币标准价；涉及动态页面、积分/套餐或多配置，不做换算猜测。",
+          "urls": [
+            "https://docs.platform.pixverse.ai/model-overview-2140345m0",
+            "https://docs.platform.pixverse.ai/capability-matrix-2144288m0",
+            "https://docs.platform.pixverse.ai/text-to-video-generation-13016634e0",
+            "https://docs.platform.pixverse.ai/changelogs-906383m0"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "kling-video-v2-master",
+          "vendor": "kuaishou",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "historical_not_found: 已读取官方动态视频/图像价目，现表仅列新型号，未列该旧型号数字价；不套用新版价格。",
+          "urls": [
+            "https://kling.ai/document-api/api/video/2-0-master/text-to-video",
+            "https://kling.ai/document-api/",
+            "https://web.archive.org/web/20260911/https://s15-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-BrQJ09bI.js",
+            "https://kling.ai/document-api/updates/api",
+            "https://kling.ai/document-api/pricing/base/video",
+            "https://kling.ai/document-api/pricing/base/image"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "viduq3-drama",
+          "vendor": "shengshu",
+          "missing": [
+            "pricing",
+            "release_date"
+          ],
+          "reason": "credit_rules: 已读取完整官方价格表，按credits计费（每credit人民币0.03125），且部分Q2有首秒/后续秒阶梯；未把积分规则推算成模型货币单价。 searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://platform.vidu.com/docs/overview/model-map",
+            "https://platform.vidu.com/docs/text-to-video",
+            "https://platform.vidu.com/docs/api-reference/video-models/vidu-q3/reference-to-video",
+            "https://platform.vidu.com/docs/overview/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"viduq3-drama\"",
+          "search_domains": [
+            "vidu.com"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "sarvam-105b-conversations",
+          "vendor": "sarvam",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://docs.sarvam.ai/api/getting-started/models/sarvam-105b",
+            "https://docs.sarvam.ai/api/getting-started/pricing",
+            "https://huggingface.co/sarvamai/sarvam-105b/blob/main/config.json"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"sarvam-105b-conversations\"",
+          "search_domains": [
+            "sarvam.ai"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "recraftv2",
+          "vendor": "recraft",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://www.recraft.ai/docs/api-reference/models/recraft-v2",
+            "https://www.recraft.ai/docs/api-reference/models",
+            "https://www.recraft.ai/docs/api-reference/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"recraftv2\"",
+          "search_domains": [
+            "recraft.ai"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "flux-general-multi",
+          "vendor": "deepgram",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://developers.deepgram.com/docs/models-languages-overview",
+            "https://developers.deepgram.com/docs/flux/quickstart",
+            "https://deepgram.com/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"flux-general-multi\"",
+          "search_domains": [
+            "deepgram.com"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "recraftv2_vector",
+          "vendor": "recraft",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://www.recraft.ai/docs/api-reference/models/recraft-v2",
+            "https://www.recraft.ai/docs/api-reference/models",
+            "https://www.recraft.ai/docs/api-reference/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"recraftv2_vector\"",
+          "search_domains": [
+            "recraft.ai"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "kling-image-v1-5",
+          "vendor": "kuaishou",
+          "missing": [
+            "pricing",
+            "release_date"
+          ],
+          "reason": "historical_not_found: 已读取官方动态视频/图像价目，现表仅列新型号，未列该旧型号数字价；不套用新版价格。 searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://kling.ai/document-api/api/image/1-5/image-generation",
+            "https://kling.ai/document-api/",
+            "https://web.archive.org/web/20260911/https://s15-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-DFEKW_bh.js",
+            "https://kling.ai/document-api/updates/api",
+            "https://kling.ai/document-api/pricing/base/video",
+            "https://kling.ai/document-api/pricing/base/image"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"kling-image-v1-5\"",
+          "search_domains": [
+            "kling.ai",
+            "klingai.com"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "gemini-2.5-flash-exp-native-audio-thinking-dialog",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "mixed_modalities: 官方实时/全模态音频模型按模态分别计费，不能只摘取文本价格。",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://ai.google.dev/gemini-api/docs/changelog",
+            "https://ai.google.dev/api/live",
+            "https://ai.google.dev/gemini-api/docs/pricing"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "kling-video-v1",
+          "vendor": "kuaishou",
+          "missing": [
+            "pricing",
+            "release_date"
+          ],
+          "reason": "historical_not_found: 已读取官方动态视频/图像价目，现表仅列新型号，未列该旧型号数字价；不套用新版价格。 searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://kling.ai/document-api/api/video/1-0/text-to-video",
+            "https://kling.ai/document-api/",
+            "https://web.archive.org/web/20260911/https://s15-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-fXepNJLf.js",
+            "https://kling.ai/document-api/updates/api",
+            "https://kling.ai/document-api/pricing/base/video",
+            "https://kling.ai/document-api/pricing/base/image"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"kling-video-v1\"",
+          "search_domains": [
+            "kling.ai",
+            "klingai.com"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "marengo3.0",
+          "vendor": "twelvelabs",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "mixed_units: 官方视频、文本、索引与存储分项计费，或模态价格不同，现有单一 pricing 无法完整表达。",
+          "urls": [
+            "https://docs.twelvelabs.io/v1.3/docs/concepts/models/marengo/marengo-3-0",
+            "https://docs.twelvelabs.io/v1.3/docs/concepts/models/marengo",
+            "https://docs.twelvelabs.io/v1.3/docs/get-started/migration-guides/marengo-3-0-to-3-5",
+            "https://docs.twelvelabs.io/v1.3/docs/get-started/release-notes",
+            "https://docs.twelvelabs.io/v1.3/api-reference/create-embeddings-v2/create-embeddings",
+            "https://www.twelvelabs.io/pricing"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "veo-3.0-generate-preview",
+          "vendor": "google",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，并检查当前文档/价格资料；结果未确认可适用该型号的标准数字价，保留空值。",
+          "urls": [
+            "https://ai.google.dev/gemini-api/docs/deprecations",
+            "https://ai.google.dev/gemini-api/docs/changelog",
+            "https://ai.google.dev/gemini-api/docs/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"veo-3.0-generate-preview\"",
+          "search_domains": [
+            "ai.google.dev",
+            "developers.googleblog.com",
+            "blog.google",
+            "cloud.google.com"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "eleven_multilingual_sts_v2",
+          "vendor": "elevenlabs",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://elevenlabs.io/docs/overview/models",
+            "https://elevenlabs.io/pricing/api",
+            "https://elevenlabs.io/docs/api-reference/speech-to-speech/convert"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"eleven_multilingual_sts_v2\"",
+          "search_domains": [
+            "elevenlabs.io"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        },
+        {
+          "id": "kling-image-v2-new",
+          "vendor": "kuaishou",
+          "missing": [
+            "pricing"
+          ],
+          "reason": "historical_not_found: 已读取官方动态视频/图像价目，现表仅列新型号，未列该旧型号数字价；不套用新版价格。",
+          "urls": [
+            "https://kling.ai/document-api/api/image/2-0-new/image-generation",
+            "https://kling.ai/document-api/",
+            "https://web.archive.org/web/20260911/https://s15-kling.klingai.com/kos/s101/nlav112918/api-doc/assets/api-BcEg09Hw.js",
+            "https://kling.ai/document-api/updates/api",
+            "https://kling.ai/document-api/pricing/base/video",
+            "https://kling.ai/document-api/pricing/base/image"
+          ],
+          "history_pass_status": "not_individually_researched_this_pass"
+        },
+        {
+          "id": "recraftv4_styles_pro",
+          "vendor": "recraft",
+          "missing": [
+            "release_date"
+          ],
+          "reason": "searched_unconfirmed: 已按此模型ID限定官方域名精确搜索，未确认明确绑定此型号的完整首发年月日；不从ID或页面更新时间推算。",
+          "urls": [
+            "https://www.recraft.ai/docs/api-reference/models/recraft-v4-styles",
+            "https://www.recraft.ai/docs/api-reference/models",
+            "https://www.recraft.ai/docs/api-reference/pricing"
+          ],
+          "search_status": "searched_exact_official_domains",
+          "search_query": "\"recraftv4_styles_pro\"",
+          "search_domains": [
+            "recraft.ai"
+          ],
+          "history_pass_status": "historical_search_no_confirmed_additional_value"
+        }
+      ]
+    },
+    "openai": {
+      "checked_at": "2026-10-11",
+      "scope_owners": [
+        "ai21",
+        "amazon",
+        "anthropic",
+        "cohere",
+        "ibm",
+        "meta",
+        "microsoft",
+        "mistral",
+        "nvidia",
+        "openai",
+        "perplexity",
+        "xai"
+      ],
+      "summary": {
+        "changed_models": 10,
+        "filled_pricing": 8,
+        "filled_release_dates": 2,
+        "remaining_counts": {
+          "pricing": 91,
+          "release_date": 61
+        },
+        "coverage_note": "本轮为重点历史复查，未声称所有剩余型号再次穷尽。上轮逐ID查询记录单独保留。"
+      },
+      "queries": [
+        {
+          "interface": "web.run",
+          "query": "site.mistral.ai \"Codestral\" \"$0.2\" \"$0.6\"",
+          "result_url": "https://mistral.ai/news/september-24-release/",
+          "result": "官方历史降价表，明确 Small v24.09、Codestral 与 Large 2 价格；补 3 项。"
+        },
+        {
+          "interface": "search_service_web_run",
+          "query": "\"claude-1.3\" \"price\" site:anthropic.com",
+          "result_url": "https://www.anthropic.com/news/claude-2",
+          "result": "Claude 2 公告明确与 Claude 1.3 同价；与官方 2023 价格 PDF 配对。"
+        },
+        {
+          "interface": "search_service_web_run",
+          "query": "\"mistral-medium-2312\" \"pricing\" site:docs.mistral.ai",
+          "result_url": "https://docs.mistral.ai/resources/changelogs",
+          "result": "仅返回历史端点改名，未出现可核实价格。"
+        },
+        {
+          "interface": "search_service_web_run",
+          "query": "\"text-davinci-003\" \"November\" site:openai.com",
+          "result": "主要返回社区帖，无足够官方发布日证据。"
+        },
+        {
+          "interface": "search_service_web_run",
+          "query": "\"gpt-audio\" \"August 28\" site:openai.com",
+          "result": "未取得可精确关联 gpt-audio 首发的官方正文。"
+        },
+        {
+          "interface": "search_service_web_run",
+          "query": "Mistral Medium 3.1 August 12 2025 price",
+          "domains": [
+            "mistral.ai"
+          ],
+          "result": "模型卡确认日期但未找到型号明确的价格表；存档 generic latest 表不单独定价至 2508。"
+        },
+        {
+          "interface": "search_service_web_run",
+          "query": "Grok 4.3 April 17 2026 launch",
+          "domains": [
+            "x.ai",
+            "docs.x.ai"
+          ],
+          "result": "models.dev 为日期线索，未取得对应官方发布公告，未采用。"
+        },
+        {
+          "interface": "search_service_web_run",
+          "query": "Cohere Command A Reasoning pricing 2.5 10",
+          "domains": [
+            "cohere.com",
+            "docs.cohere.com"
+          ],
+          "result": "官方 $2.5/$10 表针对 command-a-03-2025，Reasoning/Translate/Vision 变体为受限试用/专属部署，不套用家族价格。"
+        },
+        {
+          "interface": "search_service_web_run",
+          "query": "Cohere Aya Expanse October 23 2024 API",
+          "domains": [
+            "cohere.com",
+            "docs.cohere.com"
+          ],
+          "result_url": "https://cohere.com/blog/aya-expanse-connecting-our-world",
+          "result": "官方公告与实际存档确认 Oct 24, 2024，正文说明 8B 与 32B 今日在 Cohere API platform 可用，补 8B 日期。"
+        },
+        {
+          "interface": "search_service_web_run",
+          "query": "Azure Foundry Microsoft MAI Image pricing",
+          "domains": [
+            "azure.microsoft.com"
+          ],
+          "result_url": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/microsoft/",
+          "result": "浏览器渲染后显示真实数值；MAI Image 2.6 与 2.6 Flash 未列出。"
+        }
+      ],
+      "browser_and_pdf_checks": [
+        {
+          "url": "https://mistral.ai/pricing/",
+          "method": "Chrome rendered accessibility tree",
+          "result": "当前页面为 Vibe 套餐页，未将订阅价用于模型 API。"
+        },
+        {
+          "url": "https://cohere.com/blog/aya-vision",
+          "method": "Chrome rendered accessibility tree",
+          "result": "显示 Mar 04, 2025，但当前正文缺失；改查实际官方存档，确认 8B/32B 在 Cohere platform 可用。"
+        },
+        {
+          "url": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/microsoft/",
+          "method": "Chrome rendered accessibility tree",
+          "region": "Central US",
+          "currency": "USD",
+          "result": "动态价格成功加载：MAI Image 2.5 文本输入5、输出47；Flash1.75/19.50；Pro5/106，均每百万token。2.6与2.6Flash未列出，不能套用。"
+        },
+        {
+          "url": "https://web.archive.org/web/20230913124029/https://www-files.anthropic.com/production/images/model_pricing_july2023.pdf",
+          "method": "Downloaded official archive PDF, rendered page 1 and extracted with pypdf",
+          "result": "Prompt $11.02/million tokens、Completion $32.68/million tokens，PDF脚注明确 Claude 1 与 Claude 2 同价；没有将字符单位误当token。",
+          "render": "/tmp/modelquay-history-openai/anthropic-price-2023.png"
+        }
+      ],
+      "archive_fetches": [
+        {
+          "name": "mistral-price-2024",
+          "requested_url": "https://web.archive.org/web/20241001000000id_/https://mistral.ai/technology/#pricing",
+          "url": "https://web.archive.org/web/20241006123931id_/https://mistral.ai/technology/",
+          "length": 40626
+        },
+        {
+          "name": "anthropic-price-2023",
+          "requested_url": "https://web.archive.org/web/20230801000000id_/https://www.anthropic.com/pricing",
+          "error": "'utf-8' codec can't decode byte 0xe2 in position 10: invalid continuation byte"
+        },
+        {
+          "name": "aya-vision",
+          "requested_url": "https://web.archive.org/web/20250310000000id_/https://cohere.com/blog/aya-vision",
+          "url": "https://web.archive.org/web/20250311231544id_/https://cohere.com/blog/aya-vision",
+          "length": 262996
+        },
+        {
+          "name": "cohere-rerank",
+          "requested_url": "https://web.archive.org/web/20230510000000id_/https://cohere.com/blog/rerank",
+          "url": "https://web.archive.org/web/20240729112834id_/https://cohere.com/blog/rerank",
+          "length": 96628
+        },
+        {
+          "name": "mistral-price-sep2025",
+          "requested_url": "https://web.archive.org/web/20250915000000id_/https://mistral.ai/pricing",
+          "url": "https://web.archive.org/web/20250920150858id_/https://mistral.ai/pricing",
+          "length": 379626
+        },
+        {
+          "name": "aya-expanse",
+          "requested_url": "https://web.archive.org/web/20241101000000id_/https://cohere.com/blog/aya-expanse-connecting-our-world",
+          "url": "https://web.archive.org/web/20241101215912id_/https://cohere.com/blog/aya-expanse-connecting-our-world",
+          "length": 92571
+        }
+      ],
+      "models_dev_comparison": [
+        {
+          "id": "tiny-aya-earth",
+          "owned_by": "cohere",
+          "reference_release_date": "2026-02-17",
+          "reference_cost": null,
+          "authority": "第三方线索，未直接写入主数据"
+        },
+        {
+          "id": "sonar-deep-research",
+          "owned_by": "perplexity",
+          "reference_release_date": "2025-02-01",
+          "reference_cost": {
+            "input": 2,
+            "output": 8,
+            "reasoning": 3
+          },
+          "authority": "第三方线索，未直接写入主数据"
+        },
+        {
+          "id": "tiny-aya-water",
+          "owned_by": "cohere",
+          "reference_release_date": "2026-02-17",
+          "reference_cost": null,
+          "authority": "第三方线索，未直接写入主数据"
+        },
+        {
+          "id": "command-a-reasoning-08-2025",
+          "owned_by": "cohere",
+          "reference_release_date": "2025-08-21",
+          "reference_cost": {
+            "input": 2.5,
+            "output": 10
+          },
+          "authority": "第三方线索，未直接写入主数据"
+        },
+        {
+          "id": "north-mini-code-1-0",
+          "owned_by": "cohere",
+          "reference_release_date": "2026-06-09",
+          "reference_cost": {
+            "input": 0,
+            "output": 0
+          },
+          "authority": "第三方线索，未直接写入主数据"
+        },
+        {
+          "id": "tiny-aya-fire",
+          "owned_by": "cohere",
+          "reference_release_date": "2026-02-17",
+          "reference_cost": null,
+          "authority": "第三方线索，未直接写入主数据"
+        },
+        {
+          "id": "tiny-aya-global",
+          "owned_by": "cohere",
+          "reference_release_date": "2026-02-17",
+          "reference_cost": null,
+          "authority": "第三方线索，未直接写入主数据"
+        },
+        {
+          "id": "grok-imagine-image",
+          "owned_by": "xai",
+          "reference_release_date": "2026-01-28",
+          "reference_cost": null,
+          "authority": "第三方线索，未直接写入主数据"
+        },
+        {
+          "id": "c4ai-aya-vision-32b",
+          "owned_by": "cohere",
+          "reference_release_date": "2025-03-04",
+          "reference_cost": null,
+          "authority": "第三方线索，未直接写入主数据"
+        },
+        {
+          "id": "devstral-small-2505",
+          "owned_by": "mistral",
+          "reference_release_date": "2025-05-07",
+          "reference_cost": {
+            "input": 0.1,
+            "output": 0.3
+          },
+          "authority": "第三方线索，未直接写入主数据"
+        },
+        {
+          "id": "muse-spark-1.2-contributor",
+          "owned_by": "meta",
+          "reference_release_date": "2026-08-05",
+          "reference_cost": {
+            "input": 0.1,
+            "output": 0.2,
+            "cache_read": 0.002
+          },
+          "authority": "第三方线索，未直接写入主数据"
+        },
+        {
+          "id": "gpt-realtime-2.1",
+          "owned_by": "openai",
+          "reference_release_date": "2026-07-06",
+          "reference_cost": {
+            "input": 4,
+            "output": 24,
+            "cache_read": 0.4,
+            "input_audio": 32,
+            "output_audio": 64
+          },
+          "authority": "第三方线索，未直接写入主数据"
+        },
+        {
+          "id": "mistral-medium-2508",
+          "owned_by": "mistral",
+          "reference_release_date": "2025-08-12",
+          "reference_cost": {
+            "input": 0.4,
+            "output": 2
+          },
+          "authority": "第三方线索，未直接写入主数据"
+        },
+        {
+          "id": "grok-4.3",
+          "owned_by": "xai",
+          "reference_release_date": "2026-04-17",
+          "reference_cost": {
+            "input": 1.25,
+            "output": 2.5,
+            "cache_read": 0.2,
+            "tiers": [
+              {
+                "input": 2.5,
+                "output": 5,
+                "cache_read": 0.4,
+                "tier": {
+                  "type": "context",
+                  "size": 200000
+                }
+              }
+            ],
+            "context_over_200k": {
+              "input": 2.5,
+              "output": 5,
+              "cache_read": 0.4
+            }
+          },
+          "authority": "第三方线索，未直接写入主数据"
+        },
+        {
+          "id": "muse-spark-1.3-contributor",
+          "owned_by": "meta",
+          "reference_release_date": "2026-09-02",
+          "reference_cost": {
+            "input": 0.1,
+            "output": 0.2,
+            "cache_read": 0.002
+          },
+          "authority": "第三方线索，未直接写入主数据"
+        },
+        {
+          "id": "command-a-translate-08-2025",
+          "owned_by": "cohere",
+          "reference_release_date": "2025-08-28",
+          "reference_cost": {
+            "input": 2.5,
+            "output": 10
+          },
+          "authority": "第三方线索，未直接写入主数据"
+        },
+        {
+          "id": "grok-imagine-video-1.5-lite",
+          "owned_by": "xai",
+          "reference_release_date": "2026-10-01",
+          "reference_cost": null,
+          "authority": "第三方线索，未直接写入主数据"
+        },
+        {
+          "id": "grok-imagine-image-quality",
+          "owned_by": "xai",
+          "reference_release_date": "2026-04-03",
+          "reference_cost": null,
+          "authority": "第三方线索，未直接写入主数据"
+        },
+        {
+          "id": "sonar-reasoning-pro",
+          "owned_by": "perplexity",
+          "reference_release_date": "2024-01-01",
+          "reference_cost": {
+            "input": 2,
+            "output": 8
+          },
+          "authority": "第三方线索，未直接写入主数据"
+        },
+        {
+          "id": "command-a-vision-07-2025",
+          "owned_by": "cohere",
+          "reference_release_date": "2025-07-31",
+          "reference_cost": {
+            "input": 2.5,
+            "output": 10
+          },
+          "authority": "第三方线索，未直接写入主数据"
+        }
+      ],
+      "unresolved_in_this_pass": [
+        {
+          "ids": [
+            "claude-1.0",
+            "claude-1.1",
+            "claude-1.2",
+            "claude-instant-1.0",
+            "claude-instant-1.1"
+          ],
+          "reason": "2023 PDF 使用家族名称；未对这些旧版本取得逐型号关联证据，未套用 Claude 1.3/Instant 现价。",
+          "urls": [
+            "https://web.archive.org/web/20230913124029/https://www-files.anthropic.com/production/images/model_pricing_july2023.pdf"
+          ]
+        },
+        {
+          "ids": [
+            "rerank-english-v2.0",
+            "rerank-multilingual-v2.0"
+          ],
+          "reason": "Rerank 公告日期 May 1, 2023；实际存档为2024，正文出现v2示例但可能后改，不把端点家族首发日视作v2首发。",
+          "urls": [
+            "https://web.archive.org/web/20240729112834/https://cohere.com/blog/rerank"
+          ]
+        },
+        {
+          "ids": [
+            "mistral-medium-2508"
+          ],
+          "reason": "models.dev提供0.4/2线索，Sep2025官方价格存档显示Mistral Medium 3/latest同值，未完成精确2508别名关联，保留null。",
+          "urls": [
+            "https://web.archive.org/web/20250920150858/https://mistral.ai/pricing",
+            "https://docs.mistral.ai/models/mistral-medium-3-1-25-08"
+          ]
+        },
+        {
+          "ids": [
+            "command-a-reasoning-08-2025",
+            "command-a-translate-08-2025",
+            "command-a-vision-07-2025"
+          ],
+          "reason": "models.dev价格与原版Command A相同，但官方变体文档说明试用及专属部署；没有将原版价格填入变体。",
+          "urls": [
+            "https://docs.cohere.com/docs/command-a-reasoning",
+            "https://docs.cohere.com/docs/command-a-translate",
+            "https://docs.cohere.com/v2/docs/rate-limits"
+          ]
+        },
+        {
+          "ids": [
+            "mai-image-2.6",
+            "mai-image-2.6-flash"
+          ],
+          "reason": "浏览器已成功渲染价格，不再归为$-占位符；实际表只列到2.5系列，2.6缺行。",
+          "urls": [
+            "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/microsoft/"
+          ]
+        },
+        {
+          "ids": [
+            "gpt-audio",
+            "text-davinci-003",
+            "mistral-medium-2312",
+            "grok-4.3"
+          ],
+          "reason": "本轮新搜索未取得足够对应官方历史证据；保留原值，查询见queries。",
+          "urls": []
+        }
+      ]
+    },
+    "kimi": {
+      "changed_count": 25,
+      "evidence": [
+        {
+          "url": "https://docs.volcengine.com/docs/ark/model-pricing?lang=zh",
+          "method": "Chrome rendered page",
+          "finding": "Current pricing table no longer lists older models."
+        },
+        {
+          "url": "https://www.volcengine.com/docs/84458/1585097?lang=zh&redirect=1",
+          "method": "Chrome navigation",
+          "finding": "Redirects to Coze model-cost; not used as direct API pricing."
+        },
+        {
+          "url": "https://web.archive.org/web/20251219073649/https://www.volcengine.com/docs/82379/1544106",
+          "method": "CDX exact timestamp; archived official document Content and MDContent",
+          "finding": "13 old-model prices from standard online inference table, lowest published length tier. Storage-per-hour is not cache_write."
+        },
+        {
+          "url": "https://web.archive.org/cdx/search/cdx?url=www.volcengine.com/docs/82379/1099320&output=json&filter=statuscode:200&filter=mimetype:text/html&collapse=timestamp:6",
+          "method": "CDX HTTP",
+          "finding": "Internet Archive temporarily offline response; older 4k/128k prices remain unconfirmed."
+        }
+      ],
+      "limitations": "Other unmapped variants and mixed modal tariffs remain null. Archive early pricing CDX was temporarily offline."
+    }
+  }
+}

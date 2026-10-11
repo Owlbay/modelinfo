@@ -1,7 +1,7 @@
 {
   "id": "universal-3-6-pro",
   "object": "model",
-  "created": null,
+  "created": 1790640000,
   "owned_by": "assemblyai",
   "name": "Universal-3.6 Pro Streaming",
   "api": {
@@ -37,7 +37,7 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-09-29",
     "knowledge_cutoff": null,
     "description": "AssemblyAI flagship streaming speech-to-text model for voice agents with 32 languages, native code-switching, prompting and conversational context.",
     "docs": "https://www.assemblyai.com/docs/streaming/select-the-speech-model",
@@ -58,6 +58,11 @@
     {
       "title": "Pricing | AssemblyAI",
       "url": "https://www.assemblyai.com/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release announcement",
+      "url": "https://www.assemblyai.com/blog/universal-3-6-pro-realtime",
       "retrieved_at": "2026-10-11"
     }
   ],

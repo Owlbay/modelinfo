@@ -65,6 +65,11 @@
       "title": "Runway API Changelog",
       "url": "https://docs.dev.runwayml.com/api-details/api_changelog/",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official API reference",
+      "url": "https://docs.dev.runwayml.com/api/",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -72,7 +77,9 @@
       "id": "runway",
       "model": "gen4.5",
       "base_url": "https://api.dev.runwayml.com/v1",
-      "endpoints": {},
+      "endpoints": {
+        "video": "POST /image_to_video"
+      },
       "reasoning_param": null
     }
   ]

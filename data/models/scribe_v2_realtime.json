@@ -1,7 +1,7 @@
 {
   "id": "scribe_v2_realtime",
   "object": "model",
-  "created": null,
+  "created": 1762819200,
   "owned_by": "elevenlabs",
   "name": "Scribe v2 Realtime",
   "api": {
@@ -40,7 +40,7 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2025-11-11",
     "knowledge_cutoff": null,
     "description": "Real-time speech-to-text with about 150ms latency to partial transcripts.",
     "docs": "https://elevenlabs.io/docs/overview/models",
@@ -67,14 +67,27 @@
       "title": "Create transcript | ElevenLabs API Reference",
       "url": "https://elevenlabs.io/docs/api-reference/speech-to-text/convert",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official API reference",
+      "url": "https://elevenlabs.io/docs/api-reference/speech-to-text/v-1-speech-to-text-realtime",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official release announcement",
+      "url": "https://elevenlabs.io/blog/introducing-scribe-v2-realtime",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "elevenlabs",
       "model": "scribe_v2_realtime",
-      "base_url": "https://api.elevenlabs.io",
-      "endpoints": {},
+      "base_url": "wss://api.elevenlabs.io",
+      "endpoints": {
+        "audio": "WS /v1/speech-to-text/realtime",
+        "realtime": "WS /v1/speech-to-text/realtime"
+      },
       "reasoning_param": null
     }
   ]

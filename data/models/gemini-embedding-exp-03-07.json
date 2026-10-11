@@ -1,7 +1,7 @@
 {
   "id": "gemini-embedding-exp-03-07",
   "object": "model",
-  "created": null,
+  "created": 1741305600,
   "owned_by": "google",
   "name": "Gemini Embedding Experimental 03-07",
   "api": {
@@ -30,13 +30,15 @@
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2025-03-07",
     "knowledge_cutoff": null,
     "description": "Gemini embedding achieves a SOTA performance across many key dimensions including code, multi-lingual, and retrieval.",
     "docs": "https://ai.google.dev/gemini-api/docs/deprecations",
     "verified_at": "2026-10-11"
   },
-  "aliases": [],
+  "aliases": [
+    "gemini-embedding-exp"
+  ],
   "translations": {
     "zh": {
       "description": "Gemini 向量模型在代码、多语言和检索等多个关键维度上达到 SOTA 表现。"
@@ -51,6 +53,11 @@
     {
       "title": "存档：Models | Gemini API（原网址 https://ai.google.dev/gemini-api/docs/models）",
       "url": "https://web.archive.org/web/20250601/https://ai.google.dev/gemini-api/docs/models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "changelog | Gemini API",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog",
       "retrieved_at": "2026-10-11"
     }
   ],

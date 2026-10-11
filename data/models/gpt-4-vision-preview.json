@@ -1,7 +1,7 @@
 {
   "id": "gpt-4-vision-preview",
   "object": "model",
-  "created": null,
+  "created": 1699228800,
   "owned_by": "openai",
   "name": "gpt-4-vision-preview",
   "api": {
@@ -38,7 +38,7 @@
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2023-11-06",
     "knowledge_cutoff": null,
     "description": null,
     "docs": null,
@@ -49,6 +49,11 @@
     {
       "title": "Deprecations | OpenAI API",
       "url": "https://developers.openai.com/api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release / pricing documentation",
+      "url": "https://developers.openai.com/api/docs/changelog",
       "retrieved_at": "2026-10-11"
     }
   ],

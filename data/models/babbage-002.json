@@ -1,7 +1,7 @@
 {
   "id": "babbage-002",
   "object": "model",
-  "created": null,
+  "created": 1692662400,
   "owned_by": "openai",
   "name": "babbage-002",
   "api": {
@@ -37,7 +37,7 @@
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2023-08-22",
     "knowledge_cutoff": "2021-09-01",
     "description": "Replacement for the GPT-3 ada and babbage base models",
     "docs": "https://developers.openai.com/api/docs/models/babbage-002",
@@ -58,6 +58,11 @@
     {
       "title": "Deprecations | OpenAI API",
       "url": "https://developers.openai.com/api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release / pricing documentation",
+      "url": "https://openai.com/index/gpt-3-5-turbo-fine-tuning-and-api-updates/",
       "retrieved_at": "2026-10-11"
     }
   ],

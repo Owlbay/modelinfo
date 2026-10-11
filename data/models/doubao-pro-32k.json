@@ -26,7 +26,14 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "CNY",
+    "unit": "1M_tokens",
+    "input": 0.8,
+    "output": 2,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "retired",
@@ -61,6 +68,11 @@
     {
       "title": "存档 模型列表 | 火山方舟 82379/1330310（原网址 https://www.volcengine.com/api/doc/getDocDetail?LibraryID=82379&DocumentID=1330310&type=online）",
       "url": "https://web.archive.org/web/20250311071301/https://www.volcengine.com/api/doc/getDocDetail?LibraryID=82379&DocumentID=1330310&type=online",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "实时对话式 AI 计费示例：Doubao-pro-32k 后付费刊例价",
+      "url": "https://www.volcengine.com/docs/6440/1392584",
       "retrieved_at": "2026-10-11"
     }
   ],

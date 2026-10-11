@@ -1,7 +1,7 @@
 {
   "id": "kimi-k2-0711-preview",
   "object": "model",
-  "created": null,
+  "created": 1752192000,
   "owned_by": "moonshot",
   "name": "Kimi K2 0711 Preview",
   "api": {
@@ -34,7 +34,7 @@
   ],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2025-07-11",
     "knowledge_cutoff": null,
     "description": "Kimi K2 MoE foundation model with 1T total and 32B activated parameters, strong in code and agent tasks. Officially discontinued on 2026-05-25.",
     "docs": "https://platform.kimi.ai/docs/models",
@@ -60,6 +60,11 @@
     {
       "title": "Model Inference Pricing Explanation | Kimi API Platform（存档，原网址 https://platform.kimi.ai/docs/pricing/chat）",
       "url": "https://web.archive.org/web/20260327200226/https://platform.kimi.ai/docs/pricing/chat",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Kimi K2 模型更新，带来更强的代码能力、更快的 API",
+      "url": "https://platform.kimi.com/blog/posts/kimi-k2-0905",
       "retrieved_at": "2026-10-11"
     }
   ],

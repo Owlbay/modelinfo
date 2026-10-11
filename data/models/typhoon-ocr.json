@@ -53,6 +53,16 @@
       "title": "Models | Typhoon Docs",
       "url": "https://docs.opentyphoon.ai/en/models/",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Typhoon OCR official client implementation",
+      "url": "https://github.com/scb-10x/typhoon-ocr/blob/master/packages/typhoon_ocr/typhoon_ocr/ocr_utils.py",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "OpenAI Python SDK chat completions transport",
+      "url": "https://github.com/openai/openai-python/blob/main/src/openai/resources/chat/completions/completions.py",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -60,7 +70,9 @@
       "id": "typhoon",
       "model": "typhoon-ocr",
       "base_url": "https://api.opentyphoon.ai/v1",
-      "endpoints": {},
+      "endpoints": {
+        "ocr": "POST /chat/completions"
+      },
       "reasoning_param": null
     }
   ]

@@ -1,7 +1,7 @@
 {
   "id": "kat-coder-pro-v2.5",
   "object": "model",
-  "created": null,
+  "created": 1783382400,
   "owned_by": "kuaishou",
   "name": "KAT-Coder-Pro V2.5",
   "api": {
@@ -23,7 +23,7 @@
     ]
   },
   "reasoning": {
-    "supported": null,
+    "supported": true,
     "efforts": []
   },
   "pricing": {
@@ -34,13 +34,15 @@
     "cache_read": 1,
     "cache_write": null
   },
-  "features": [],
+  "features": [
+    "tools"
+  ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-07-07",
     "knowledge_cutoff": null,
     "description": "KwaiKAT coding model served on the StreamLake Wanqing platform, compatible with OpenAI and Claude protocols.",
-    "docs": "https://www.streamlake.com/document/WANQING/me6ymdjrqv8lp4iq0o9",
+    "docs": "https://streamlake.com/document/WANQING/mdrax1ixkgpgh1ms1na",
     "verified_at": "2026-10-11"
   },
   "aliases": [],
@@ -58,6 +60,16 @@
     {
       "title": "大模型服务与开发平台（价格表）- StreamLake",
       "url": "https://www.streamlake.com/product/wanqing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "万擎模型列表",
+      "url": "https://streamlake.com/document/WANQING/mdrax1ixkgpgh1ms1na",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "万擎模型发布公告",
+      "url": "https://streamlake.com/document/WANQING/mdptas54hptu5uvllco",
       "retrieved_at": "2026-10-11"
     }
   ],

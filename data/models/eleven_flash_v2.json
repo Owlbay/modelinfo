@@ -1,7 +1,7 @@
 {
   "id": "eleven_flash_v2",
   "object": "model",
-  "created": null,
+  "created": 1734480000,
   "owned_by": "elevenlabs",
   "name": "Eleven Flash v2",
   "api": {
@@ -37,7 +37,7 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2024-12-18",
     "knowledge_cutoff": null,
     "description": "Fast English-only speech synthesis model for real-time use.",
     "docs": "https://elevenlabs.io/docs/overview/models",
@@ -63,6 +63,11 @@
     {
       "title": "Create speech | ElevenLabs API Reference",
       "url": "https://elevenlabs.io/docs/api-reference/text-to-speech/convert",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official release announcement",
+      "url": "https://elevenlabs.io/blog/meet-flash",
       "retrieved_at": "2026-10-11"
     }
   ],

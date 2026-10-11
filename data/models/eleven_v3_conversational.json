@@ -1,7 +1,7 @@
 {
   "id": "eleven_v3_conversational",
   "object": "model",
-  "created": null,
+  "created": 1770681600,
   "owned_by": "elevenlabs",
   "name": "Eleven v3 Conversational",
   "api": {
@@ -40,7 +40,7 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-02-10",
     "knowledge_cutoff": null,
     "description": "Expressive real-time speech synthesis.",
     "docs": "https://elevenlabs.io/docs/overview/models",
@@ -66,6 +66,11 @@
     {
       "title": "Create speech | ElevenLabs API Reference",
       "url": "https://elevenlabs.io/docs/api-reference/text-to-speech/convert",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official release announcement",
+      "url": "https://elevenlabs.io/blog/introducing-expressive-mode",
       "retrieved_at": "2026-10-11"
     }
   ],

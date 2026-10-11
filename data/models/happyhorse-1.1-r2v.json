@@ -70,6 +70,11 @@
       "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
       "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio API Reference — happyhorse-reference-to-video-api-reference",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/happyhorse-reference-to-video-api-reference",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -77,7 +82,9 @@
       "id": "alibaba",
       "model": "happyhorse-1.1-r2v",
       "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
-      "endpoints": {},
+      "endpoints": {
+        "video": "POST /api/v1/services/aigc/video-generation/video-synthesis"
+      },
       "reasoning_param": null
     }
   ]

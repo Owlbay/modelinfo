@@ -1,7 +1,7 @@
 {
   "id": "mimo-v2-pro",
   "object": "model",
-  "created": null,
+  "created": 1773792000,
   "owned_by": "xiaomi",
   "name": "MiMo-V2-Pro",
   "api": {
@@ -26,11 +26,18 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 1,
+    "output": 3,
+    "cache_read": 0.2,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2026-03-18",
     "knowledge_cutoff": null,
     "description": "MiMo-V2-Pro, retired. Official shutdown: 2026-06-30 00:00 (UTC+8); requests to the old model name then return errors.",
     "docs": "https://mimo.mi.com/docs/zh-CN/updates/deprecate",
@@ -51,6 +58,16 @@
     {
       "title": "存档 模型列表 | Xiaomi MiMo（原网址 https://mimo.mi.com/docs/zh-CN/quick-start/summary/model）",
       "url": "https://web.archive.org/web/20260613102030/https://mimo.mi.com/docs/zh-CN/quick-start/summary/model",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release and pricing",
+      "url": "https://mimo.mi.com/docs/zh-CN/updates/model",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "MiMo-V2-Pro launch — standard pricing up to 256K (cache write temporarily free excluded)",
+      "url": "https://mimo.xiaomi.com/mimo-v2-pro",
       "retrieved_at": "2026-10-11"
     }
   ],

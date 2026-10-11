@@ -29,7 +29,7 @@
   "pricing": {
     "currency": "CNY",
     "unit": "second",
-    "input": 0.00008,
+    "input": 8e-05,
     "output": null,
     "cache_read": null,
     "cache_write": null
@@ -59,6 +59,11 @@
       "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
       "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio API Reference — paraformer-recorded-speech-recognition-restful-api",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/paraformer-recorded-speech-recognition-restful-api",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -66,7 +71,9 @@
       "id": "alibaba",
       "model": "paraformer-v2",
       "base_url": "https://{WorkspaceId}.cn-beijing.maas.aliyuncs.com",
-      "endpoints": {},
+      "endpoints": {
+        "audio": "POST /api/v1/services/audio/asr/transcription"
+      },
       "reasoning_param": null
     }
   ]

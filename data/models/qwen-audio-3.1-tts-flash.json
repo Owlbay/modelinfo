@@ -66,7 +66,9 @@
       "id": "alibaba",
       "model": "qwen-audio-3.1-tts-flash",
       "base_url": "https://{WorkspaceId}.cn-beijing.maas.aliyuncs.com",
-      "endpoints": {},
+      "endpoints": {
+        "audio": "POST /api/v1/services/audio/tts/SpeechSynthesizer"
+      },
       "reasoning_param": null
     }
   ]

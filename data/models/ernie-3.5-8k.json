@@ -26,7 +26,14 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "CNY",
+    "unit": "1M_tokens",
+    "input": 0.8,
+    "output": 2,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [],
   "info": {
     "status": "retired",
@@ -53,6 +60,11 @@
     {
       "title": "模型更新记录 | 百度千帆",
       "url": "https://cloud.baidu.com/doc/qianfan/s/Kmh4stnjp",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "百度千帆：ERNIE 系列历史刊例价调整公告",
+      "url": "https://ai.baidu.com/ai-doc/WENXINWORKSHOP/3m1jdtoz1",
       "retrieved_at": "2026-10-11"
     }
   ],

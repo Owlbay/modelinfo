@@ -59,14 +59,21 @@
       "title": "模型定价 | 腾讯云 TokenHub",
       "url": "https://cloud.tencent.com/document/product/1823/130055",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "TokenHub 官方调用指南",
+      "url": "https://cloud.tencent.com/document/product/1823/135791",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
     {
       "id": "tencent",
       "model": "hy-asr-3.0-preview",
-      "base_url": "https://tokenhub.tencentmaas.com/v1",
-      "endpoints": {},
+      "base_url": "https://tokenhub.tencentmaas.com",
+      "endpoints": {
+        "audio": "POST /v1/wand/asrproxy/sync_transcribe"
+      },
       "reasoning_param": null
     }
   ]

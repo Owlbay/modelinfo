@@ -1,7 +1,7 @@
 {
   "id": "codex-mini-latest",
   "object": "model",
-  "created": null,
+  "created": 1747267200,
   "owned_by": "openai",
   "name": "codex-mini-latest",
   "api": {
@@ -43,7 +43,7 @@
   ],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2025-05-15",
     "knowledge_cutoff": "2024-06-01",
     "description": "Fast reasoning model optimized for the Codex CLI",
     "docs": "https://developers.openai.com/api/docs/models/codex-mini-latest",
@@ -64,6 +64,11 @@
     {
       "title": "Deprecations | OpenAI API",
       "url": "https://developers.openai.com/api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official model release / pricing documentation",
+      "url": "https://developers.openai.com/api/docs/changelog",
       "retrieved_at": "2026-10-11"
     }
   ],

@@ -1,0 +1,4012 @@
+{
+  "date": "2026-10-11",
+  "source": "https://models.dev/api.json",
+  "interpretation": [
+    "第三方目录仅作为线索，未直接写入官方模型数据。",
+    "精确匹配目录ID、别名或provider模型名；跨厂商同名可能误匹配，需要人工确认。",
+    "转售平台价格、美元换算价和试用免费价不能代替第一方标准价；仅到月份的日期不能补作具体日。"
+  ],
+  "matched_models": 103,
+  "models": [
+    {
+      "id": "c4ai-aya-vision-32b",
+      "vendor": "cohere",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "cohere",
+          "model": "c4ai-aya-vision-32b",
+          "release_date": "2025-03-04",
+          "cost": null,
+          "provider_doc": "https://docs.cohere.com/docs/models"
+        }
+      ]
+    },
+    {
+      "id": "codestral-2501",
+      "vendor": "mistral",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "azure",
+          "model": "codestral-2501",
+          "release_date": "2025-01-01",
+          "cost": {
+            "input": 0.3,
+            "output": 0.9
+          },
+          "provider_doc": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models"
+        },
+        {
+          "provider": "azure-cognitive-services",
+          "model": "codestral-2501",
+          "release_date": "2025-01-01",
+          "cost": {
+            "input": 0.3,
+            "output": 0.9
+          },
+          "provider_doc": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models"
+        }
+      ]
+    },
+    {
+      "id": "command-a-reasoning-08-2025",
+      "vendor": "cohere",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "nano-gpt",
+          "model": "command-a-reasoning-08-2025",
+          "release_date": "2025-08-21",
+          "cost": {
+            "input": 2.5,
+            "output": 10,
+            "cache_read": 1.25
+          },
+          "provider_doc": "https://docs.nano-gpt.com"
+        },
+        {
+          "provider": "cohere",
+          "model": "command-a-reasoning-08-2025",
+          "release_date": "2025-08-21",
+          "cost": {
+            "input": 2.5,
+            "output": 10
+          },
+          "provider_doc": "https://docs.cohere.com/docs/models"
+        }
+      ]
+    },
+    {
+      "id": "command-a-translate-08-2025",
+      "vendor": "cohere",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "cohere",
+          "model": "command-a-translate-08-2025",
+          "release_date": "2025-08-28",
+          "cost": {
+            "input": 2.5,
+            "output": 10
+          },
+          "provider_doc": "https://docs.cohere.com/docs/models"
+        }
+      ]
+    },
+    {
+      "id": "command-a-vision-07-2025",
+      "vendor": "cohere",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "cohere",
+          "model": "command-a-vision-07-2025",
+          "release_date": "2025-07-31",
+          "cost": {
+            "input": 2.5,
+            "output": 10
+          },
+          "provider_doc": "https://docs.cohere.com/docs/models"
+        }
+      ]
+    },
+    {
+      "id": "deep-research-max-preview-04-2026",
+      "vendor": "google",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "google",
+          "model": "deep-research-max-preview-04-2026",
+          "release_date": "2026-04-21",
+          "cost": {
+            "input": 2,
+            "output": 12,
+            "cache_read": 0.2,
+            "tiers": [
+              {
+                "input": 4,
+                "output": 18,
+                "cache_read": 0.4,
+                "tier": {
+                  "type": "context",
+                  "size": 200000
+                }
+              }
+            ],
+            "context_over_200k": {
+              "input": 4,
+              "output": 18,
+              "cache_read": 0.4
+            }
+          },
+          "provider_doc": "https://ai.google.dev/gemini-api/docs/models"
+        }
+      ]
+    },
+    {
+      "id": "deep-research-preview-04-2026",
+      "vendor": "google",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "google",
+          "model": "deep-research-preview-04-2026",
+          "release_date": "2026-04-21",
+          "cost": {
+            "input": 2,
+            "output": 12,
+            "cache_read": 0.2,
+            "tiers": [
+              {
+                "input": 4,
+                "output": 18,
+                "cache_read": 0.4,
+                "tier": {
+                  "type": "context",
+                  "size": 200000
+                }
+              }
+            ],
+            "context_over_200k": {
+              "input": 4,
+              "output": 18,
+              "cache_read": 0.4
+            }
+          },
+          "provider_doc": "https://ai.google.dev/gemini-api/docs/models"
+        }
+      ]
+    },
+    {
+      "id": "deepseek-chat",
+      "vendor": "deepseek",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "nano-gpt",
+          "model": "deepseek-chat",
+          "release_date": "2025-12-01",
+          "cost": {
+            "input": 0.1,
+            "output": 0.425,
+            "cache_read": 0.05
+          },
+          "provider_doc": "https://docs.nano-gpt.com"
+        }
+      ]
+    },
+    {
+      "id": "devstral-small-2505",
+      "vendor": "mistral",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "mistral",
+          "model": "devstral-small-2505",
+          "release_date": "2025-05-07",
+          "cost": {
+            "input": 0.1,
+            "output": 0.3
+          },
+          "provider_doc": "https://docs.mistral.ai/getting-started/models/"
+        }
+      ]
+    },
+    {
+      "id": "doubao-seed-1-6",
+      "vendor": "bytedance",
+      "missing_at_start": [
+        "pricing",
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "volcengine",
+          "model": "doubao-seed-1-6-251015",
+          "release_date": "2025-10-15",
+          "cost": {
+            "input": 0.11875,
+            "output": 1.18747,
+            "cache_read": 0.02375,
+            "tiers": [
+              {
+                "input": 0.17812,
+                "output": 2.37494,
+                "cache_read": 0.02375,
+                "tier": {
+                  "type": "context",
+                  "size": 32000
+                }
+              },
+              {
+                "input": 0.35624,
+                "output": 3.56241,
+                "cache_read": 0.02375,
+                "tier": {
+                  "type": "context",
+                  "size": 128000
+                }
+              }
+            ]
+          },
+          "provider_doc": "https://www.volcengine.com/docs/82379/1330310"
+        }
+      ]
+    },
+    {
+      "id": "doubao-seed-1-6-flash",
+      "vendor": "bytedance",
+      "missing_at_start": [
+        "pricing",
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "volcengine",
+          "model": "doubao-seed-1-6-flash-250828",
+          "release_date": "2025-08-28",
+          "cost": {
+            "input": 0.02227,
+            "output": 0.22265,
+            "cache_read": 0.00445,
+            "tiers": [
+              {
+                "input": 0.04453,
+                "output": 0.4453,
+                "cache_read": 0.00445,
+                "tier": {
+                  "type": "context",
+                  "size": 32000
+                }
+              },
+              {
+                "input": 0.08906,
+                "output": 0.8906,
+                "cache_read": 0.00445,
+                "tier": {
+                  "type": "context",
+                  "size": 128000
+                }
+              }
+            ]
+          },
+          "provider_doc": "https://www.volcengine.com/docs/82379/1330310"
+        }
+      ]
+    },
+    {
+      "id": "doubao-seed-1-6-thinking",
+      "vendor": "bytedance",
+      "missing_at_start": [
+        "pricing",
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "302ai",
+          "model": "doubao-seed-1-6-thinking-250715",
+          "release_date": "2025-07-15",
+          "cost": {
+            "input": 0.121,
+            "output": 1.21
+          },
+          "provider_doc": "https://doc.302.ai"
+        }
+      ]
+    },
+    {
+      "id": "doubao-seed-1-6-vision",
+      "vendor": "bytedance",
+      "missing_at_start": [
+        "pricing",
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "302ai",
+          "model": "doubao-seed-1-6-vision-250815",
+          "release_date": "2025-09-30",
+          "cost": {
+            "input": 0.114,
+            "output": 1.143
+          },
+          "provider_doc": "https://doc.302.ai"
+        },
+        {
+          "provider": "volcengine",
+          "model": "doubao-seed-1-6-vision-250815",
+          "release_date": "2025-08-15",
+          "cost": {
+            "input": 0.11875,
+            "output": 1.18747,
+            "cache_read": 0.02375,
+            "tiers": [
+              {
+                "input": 0.17812,
+                "output": 2.37494,
+                "cache_read": 0.02375,
+                "tier": {
+                  "type": "context",
+                  "size": 32000
+                }
+              },
+              {
+                "input": 0.35624,
+                "output": 3.56241,
+                "cache_read": 0.02375,
+                "tier": {
+                  "type": "context",
+                  "size": 128000
+                }
+              }
+            ]
+          },
+          "provider_doc": "https://www.volcengine.com/docs/82379/1330310"
+        }
+      ]
+    },
+    {
+      "id": "doubao-seed-character",
+      "vendor": "bytedance",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "volcengine",
+          "model": "doubao-seed-character-260628",
+          "release_date": "2026-06-23",
+          "cost": {
+            "input": 0.11875,
+            "output": 0.29687,
+            "cache_read": 0.02375,
+            "tiers": [
+              {
+                "input": 0.17812,
+                "output": 0.8906,
+                "cache_read": 0.02375,
+                "tier": {
+                  "type": "context",
+                  "size": 32000
+                }
+              }
+            ]
+          },
+          "provider_doc": "https://www.volcengine.com/docs/82379/1330310"
+        }
+      ]
+    },
+    {
+      "id": "doubao-seed-evolving",
+      "vendor": "bytedance",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "volcengine",
+          "model": "doubao-seed-evolving",
+          "release_date": "2026-06-23",
+          "cost": {
+            "input": 0.8906,
+            "output": 4.45301,
+            "cache_read": 0.17812
+          },
+          "provider_doc": "https://www.volcengine.com/docs/82379/1330310"
+        },
+        {
+          "provider": "volcengine-coding-plan",
+          "model": "doubao-seed-evolving",
+          "release_date": "2026-06-23",
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cache_read": 0
+          },
+          "provider_doc": "https://www.volcengine.com/docs/82379/1928261"
+        }
+      ]
+    },
+    {
+      "id": "ernie-4.5-21b-a3b-thinking",
+      "vendor": "baidu",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "helicone",
+          "model": "ernie-4.5-21b-a3b-thinking",
+          "release_date": "2025-03-16",
+          "cost": {
+            "input": 0.07,
+            "output": 0.28
+          },
+          "provider_doc": "https://helicone.ai/models"
+        }
+      ]
+    },
+    {
+      "id": "gemini-2.0-pro-exp",
+      "vendor": "google",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "nano-gpt",
+          "model": "gemini-2.0-pro-exp-02-05",
+          "release_date": "2025-02-05",
+          "cost": {
+            "input": 1.989,
+            "output": 7.956,
+            "cache_read": 0.49725
+          },
+          "provider_doc": "https://docs.nano-gpt.com"
+        }
+      ]
+    },
+    {
+      "id": "gemini-2.5-flash-lite-preview-09-2025",
+      "vendor": "google",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "nano-gpt",
+          "model": "gemini-2.5-flash-lite-preview-06-17",
+          "release_date": "2025-06-17",
+          "cost": {
+            "input": 0.15,
+            "output": 0.6,
+            "cache_read": 0.015
+          },
+          "provider_doc": "https://docs.nano-gpt.com"
+        },
+        {
+          "provider": "nano-gpt",
+          "model": "gemini-2.5-flash-lite-preview-09-2025",
+          "release_date": "2025-09-25",
+          "cost": {
+            "input": 0.1,
+            "output": 0.4,
+            "cache_read": 0.01
+          },
+          "provider_doc": "https://docs.nano-gpt.com"
+        },
+        {
+          "provider": "302ai",
+          "model": "gemini-2.5-flash-lite-preview-09-2025",
+          "release_date": "2025-09-26",
+          "cost": {
+            "input": 0.1,
+            "output": 0.4
+          },
+          "provider_doc": "https://doc.302.ai"
+        },
+        {
+          "provider": "jiekou",
+          "model": "gemini-2.5-flash-lite-preview-06-17",
+          "release_date": "2026-01",
+          "cost": {
+            "input": 0.09,
+            "output": 0.36
+          },
+          "provider_doc": "https://docs.jiekou.ai/docs/support/quickstart?utm_source=github_models.dev"
+        },
+        {
+          "provider": "jiekou",
+          "model": "gemini-2.5-flash-lite-preview-09-2025",
+          "release_date": "2026-01",
+          "cost": {
+            "input": 0.09,
+            "output": 0.36
+          },
+          "provider_doc": "https://docs.jiekou.ai/docs/support/quickstart?utm_source=github_models.dev"
+        }
+      ]
+    },
+    {
+      "id": "gemini-2.5-flash-preview-05-20",
+      "vendor": "google",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "nano-gpt",
+          "model": "gemini-2.5-flash-preview-09-2025",
+          "release_date": "2025-09-25",
+          "cost": {
+            "input": 0.3,
+            "output": 2.5,
+            "cache_read": 0.03
+          },
+          "provider_doc": "https://docs.nano-gpt.com"
+        },
+        {
+          "provider": "nano-gpt",
+          "model": "gemini-2.5-flash-preview-05-20",
+          "release_date": "2025-05-20",
+          "cost": {
+            "input": 0.15,
+            "output": 0.6,
+            "cache_read": 0.015
+          },
+          "provider_doc": "https://docs.nano-gpt.com"
+        },
+        {
+          "provider": "nano-gpt",
+          "model": "gemini-2.5-flash-preview-04-17",
+          "release_date": "2025-04-17",
+          "cost": {
+            "input": 0.15,
+            "output": 0.6,
+            "cache_read": 0.015
+          },
+          "provider_doc": "https://docs.nano-gpt.com"
+        },
+        {
+          "provider": "302ai",
+          "model": "gemini-2.5-flash-preview-09-2025",
+          "release_date": "2025-09-26",
+          "cost": {
+            "input": 0.3,
+            "output": 2.5
+          },
+          "provider_doc": "https://doc.302.ai"
+        },
+        {
+          "provider": "jiekou",
+          "model": "gemini-2.5-flash-preview-05-20",
+          "release_date": "2026-01",
+          "cost": {
+            "input": 0.135,
+            "output": 3.15
+          },
+          "provider_doc": "https://docs.jiekou.ai/docs/support/quickstart?utm_source=github_models.dev"
+        }
+      ]
+    },
+    {
+      "id": "gemini-2.5-pro-exp-03-25",
+      "vendor": "google",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "nano-gpt",
+          "model": "gemini-2.5-pro-exp-03-25",
+          "release_date": "2025-03-25",
+          "cost": {
+            "input": 2.5,
+            "output": 10,
+            "cache_read": 0.25
+          },
+          "provider_doc": "https://docs.nano-gpt.com"
+        }
+      ]
+    },
+    {
+      "id": "gemini-2.5-pro-preview-05-06",
+      "vendor": "google",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "nano-gpt",
+          "model": "gemini-2.5-pro-preview-03-25",
+          "release_date": "2025-03-25",
+          "cost": {
+            "input": 2.5,
+            "output": 10,
+            "cache_read": 0.25
+          },
+          "provider_doc": "https://docs.nano-gpt.com"
+        },
+        {
+          "provider": "nano-gpt",
+          "model": "gemini-2.5-pro-preview-05-06",
+          "release_date": "2025-05-06",
+          "cost": {
+            "input": 2.5,
+            "output": 10,
+            "cache_read": 0.25
+          },
+          "provider_doc": "https://docs.nano-gpt.com"
+        },
+        {
+          "provider": "nano-gpt",
+          "model": "gemini-2.5-pro-preview-06-05",
+          "release_date": "2025-06-05",
+          "cost": {
+            "input": 2.5,
+            "output": 10,
+            "cache_read": 0.25
+          },
+          "provider_doc": "https://docs.nano-gpt.com"
+        },
+        {
+          "provider": "jiekou",
+          "model": "gemini-2.5-pro-preview-06-05",
+          "release_date": "2026-01",
+          "cost": {
+            "input": 1.125,
+            "output": 9
+          },
+          "provider_doc": "https://docs.jiekou.ai/docs/support/quickstart?utm_source=github_models.dev"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-pro-image-preview",
+      "vendor": "google",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "nano-gpt",
+          "model": "gemini-3-pro-image-preview",
+          "release_date": "2025-11-20",
+          "cost": {
+            "input": 2,
+            "output": 12,
+            "cache_read": 0.2
+          },
+          "provider_doc": "https://docs.nano-gpt.com"
+        },
+        {
+          "provider": "abacus",
+          "model": "gemini-3-pro-image-preview",
+          "release_date": "2025-11-20",
+          "cost": {
+            "input": 2,
+            "output": 12,
+            "cache_read": 0.2
+          },
+          "provider_doc": "https://abacus.ai/help/api"
+        },
+        {
+          "provider": "302ai",
+          "model": "gemini-3-pro-image-preview",
+          "release_date": "2025-11-20",
+          "cost": {
+            "input": 2,
+            "output": 120
+          },
+          "provider_doc": "https://doc.302.ai"
+        },
+        {
+          "provider": "google",
+          "model": "gemini-3-pro-image-preview",
+          "release_date": "2025-11-20",
+          "cost": {
+            "input": 2,
+            "output": 120
+          },
+          "provider_doc": "https://ai.google.dev/gemini-api/docs/models"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.1-flash-image-preview",
+      "vendor": "google",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "abacus",
+          "model": "gemini-3.1-flash-image-preview",
+          "release_date": "2026-02-26",
+          "cost": {
+            "input": 0.5,
+            "output": 3
+          },
+          "provider_doc": "https://abacus.ai/help/api"
+        },
+        {
+          "provider": "302ai",
+          "model": "gemini-3.1-flash-image-preview",
+          "release_date": "2026-02-27",
+          "cost": {
+            "input": 0.5,
+            "output": 60
+          },
+          "provider_doc": "https://doc.302.ai"
+        },
+        {
+          "provider": "google",
+          "model": "gemini-3.1-flash-image-preview",
+          "release_date": "2026-02-26",
+          "cost": {
+            "input": 0.5,
+            "output": 60
+          },
+          "provider_doc": "https://ai.google.dev/gemini-api/docs/models"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.1-flash-live-preview",
+      "vendor": "google",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "google",
+          "model": "gemini-3.1-flash-live-preview",
+          "release_date": "2026-03-26",
+          "cost": {
+            "input": 0.75,
+            "output": 4.5,
+            "input_audio": 3,
+            "output_audio": 12
+          },
+          "provider_doc": "https://ai.google.dev/gemini-api/docs/models"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.5-flash",
+      "vendor": "google",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "abacus",
+          "model": "gemini-3.5-flash",
+          "release_date": "2026-05-19",
+          "cost": {
+            "input": 1.5,
+            "output": 9,
+            "cache_read": 0.15
+          },
+          "provider_doc": "https://abacus.ai/help/api"
+        },
+        {
+          "provider": "302ai",
+          "model": "gemini-3.5-flash",
+          "release_date": "2026-05-19",
+          "cost": {
+            "input": 1.5,
+            "output": 9
+          },
+          "provider_doc": "https://doc.302.ai"
+        },
+        {
+          "provider": "unorouter",
+          "model": "gemini-3.5-flash",
+          "release_date": "2026-05-19",
+          "cost": {
+            "input": 0.1857,
+            "output": 1.1142
+          },
+          "provider_doc": "https://unorouter.com/models"
+        },
+        {
+          "provider": "xpersona",
+          "model": "gemini-3.5-flash",
+          "release_date": "2026-05-19",
+          "cost": {
+            "input": 1.55,
+            "output": 12.2,
+            "reasoning": 12.2,
+            "cache_read": 0.155
+          },
+          "provider_doc": "https://www.xpersona.co/docs"
+        },
+        {
+          "provider": "google",
+          "model": "gemini-flash-latest",
+          "release_date": "2026-08-13",
+          "cost": {
+            "input": 0.75,
+            "output": 3.75,
+            "cache_read": 0.075,
+            "input_audio": 0.75
+          },
+          "provider_doc": "https://ai.google.dev/gemini-api/docs/models"
+        },
+        {
+          "provider": "google",
+          "model": "gemini-3.5-flash",
+          "release_date": "2026-05-19",
+          "cost": {
+            "input": 1.5,
+            "output": 9,
+            "cache_read": 0.15,
+            "input_audio": 1.5
+          },
+          "provider_doc": "https://ai.google.dev/gemini-api/docs/models"
+        },
+        {
+          "provider": "aihubmix",
+          "model": "gemini-3.5-flash",
+          "release_date": "2026-05-19",
+          "cost": {
+            "input": 1.5,
+            "output": 9,
+            "cache_read": 1.5
+          },
+          "provider_doc": "https://docs.aihubmix.com"
+        },
+        {
+          "provider": "opper",
+          "model": "gemini-3.5-flash",
+          "release_date": "2026-05-19",
+          "cost": {
+            "input": 1.5,
+            "output": 9,
+            "cache_read": 0.15
+          },
+          "provider_doc": "https://opper.ai/models"
+        },
+        {
+          "provider": "pioneer",
+          "model": "gemini-3.5-flash",
+          "release_date": "2026-05-19",
+          "cost": {
+            "input": 1.5,
+            "output": 9,
+            "cache_read": 0.15,
+            "cache_write": 0.083333
+          },
+          "provider_doc": "https://agent.pioneer.ai/llms.txt"
+        },
+        {
+          "provider": "github-copilot",
+          "model": "gemini-3.5-flash",
+          "release_date": "2026-05-19",
+          "cost": {
+            "input": 1.5,
+            "output": 9,
+            "cache_read": 0.15,
+            "input_audio": 1.5
+          },
+          "provider_doc": "https://docs.github.com/en/copilot"
+        },
+        {
+          "provider": "opencode",
+          "model": "gemini-3.5-flash",
+          "release_date": "2026-05-19",
+          "cost": {
+            "input": 1.5,
+            "output": 9,
+            "cache_read": 0.15,
+            "input_audio": 1.5
+          },
+          "provider_doc": "https://opencode.ai/docs/zen"
+        },
+        {
+          "provider": "requesty",
+          "model": "gemini-3.5-flash",
+          "release_date": "2026-05-19",
+          "cost": {
+            "input": 1.5,
+            "output": 9,
+            "cache_read": 0.15,
+            "cache_write": 1.583
+          },
+          "provider_doc": "https://requesty.ai/solution/llm-routing/models"
+        },
+        {
+          "provider": "llmgateway",
+          "model": "gemini-3.5-flash",
+          "release_date": "2026-05-19",
+          "cost": {
+            "input": 1.5,
+            "output": 9,
+            "cache_read": 0.15,
+            "cache_write": 0.08333
+          },
+          "provider_doc": "https://llmgateway.io/docs"
+        },
+        {
+          "provider": "sap-ai-core",
+          "model": "gemini-3.5-flash",
+          "release_date": "2026-05-19",
+          "cost": {
+            "input": 1.5,
+            "output": 9,
+            "cache_read": 0.15,
+            "input_audio": 1.5
+          },
+          "provider_doc": "https://help.sap.com/docs/sap-ai-core"
+        },
+        {
+          "provider": "google-vertex",
+          "model": "gemini-3.5-flash",
+          "release_date": "2026-05-19",
+          "cost": {
+            "input": 1.5,
+            "output": 9,
+            "cache_read": 0.15,
+            "input_audio": 1.5
+          },
+          "provider_doc": "https://cloud.google.com/vertex-ai/generative-ai/docs/models"
+        },
+        {
+          "provider": "cortecs",
+          "model": "gemini-3.5-flash",
+          "release_date": "2026-05-19",
+          "cost": {
+            "input": 1.649,
+            "output": 9.899,
+            "cache_read": 0.165,
+            "cache_write": 1
+          },
+          "provider_doc": "https://api.cortecs.ai/v1/models"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.5-live-translate-preview",
+      "vendor": "google",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "google",
+          "model": "gemini-3.5-live-translate-preview",
+          "release_date": "2026-06-09",
+          "cost": {
+            "input": 3.5,
+            "output": 21,
+            "input_audio": 3.5,
+            "output_audio": 21
+          },
+          "provider_doc": "https://ai.google.dev/gemini-api/docs/models"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.7-flash",
+      "vendor": "google",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "abacus",
+          "model": "gemini-3.7-flash",
+          "release_date": "2026-08-13",
+          "cost": {
+            "input": 0.75,
+            "output": 3.75,
+            "cache_read": 0.075
+          },
+          "provider_doc": "https://abacus.ai/help/api"
+        },
+        {
+          "provider": "302ai",
+          "model": "gemini-3.7-flash",
+          "release_date": "2026-08-13",
+          "cost": {
+            "input": 0.75,
+            "output": 3.75
+          },
+          "provider_doc": "https://doc.302.ai"
+        },
+        {
+          "provider": "google",
+          "model": "gemini-3.7-flash",
+          "release_date": "2026-08-13",
+          "cost": {
+            "input": 0.75,
+            "output": 3.75,
+            "cache_read": 0.075,
+            "input_audio": 0.75
+          },
+          "provider_doc": "https://ai.google.dev/gemini-api/docs/models"
+        },
+        {
+          "provider": "aihubmix",
+          "model": "gemini-3.7-flash",
+          "release_date": "2026-08-13",
+          "cost": {
+            "input": 0.75,
+            "output": 3.75,
+            "cache_read": 0.075
+          },
+          "provider_doc": "https://docs.aihubmix.com"
+        },
+        {
+          "provider": "opper",
+          "model": "gemini-3.7-flash",
+          "release_date": "2026-08-13",
+          "cost": {
+            "input": 0.75,
+            "output": 3.75,
+            "cache_read": 0.075
+          },
+          "provider_doc": "https://opper.ai/models"
+        },
+        {
+          "provider": "github-copilot",
+          "model": "gemini-3.7-flash",
+          "release_date": "2026-08-13",
+          "cost": {
+            "input": 0.75,
+            "output": 3.75,
+            "cache_read": 0.075
+          },
+          "provider_doc": "https://docs.github.com/en/copilot"
+        },
+        {
+          "provider": "opencode",
+          "model": "gemini-3.7-flash",
+          "release_date": "2026-08-13",
+          "cost": {
+            "input": 1.5,
+            "output": 7.5,
+            "cache_read": 0.15,
+            "input_audio": 1.5
+          },
+          "provider_doc": "https://opencode.ai/docs/zen"
+        },
+        {
+          "provider": "requesty",
+          "model": "gemini-3.7-flash",
+          "release_date": "2026-08-13",
+          "cost": {
+            "input": 0.75,
+            "output": 3.75,
+            "cache_read": 0.075
+          },
+          "provider_doc": "https://requesty.ai/solution/llm-routing/models"
+        },
+        {
+          "provider": "llmgateway",
+          "model": "gemini-3.7-flash",
+          "release_date": "2026-08-13",
+          "cost": {
+            "input": 0.75,
+            "output": 3.75,
+            "cache_read": 0.075,
+            "cache_write": 0.08333
+          },
+          "provider_doc": "https://llmgateway.io/docs"
+        },
+        {
+          "provider": "vivgrid",
+          "model": "gemini-3.7-flash",
+          "release_date": "2026-08-13",
+          "cost": {
+            "input": 0.75,
+            "output": 3.75,
+            "cache_read": 0.075
+          },
+          "provider_doc": "https://docs.vivgrid.com/models"
+        },
+        {
+          "provider": "google-vertex",
+          "model": "gemini-3.7-flash",
+          "release_date": "2026-08-13",
+          "cost": {
+            "input": 0.75,
+            "output": 3.75,
+            "cache_read": 0.075,
+            "input_audio": 0.75
+          },
+          "provider_doc": "https://cloud.google.com/vertex-ai/generative-ai/docs/models"
+        },
+        {
+          "provider": "cortecs",
+          "model": "gemini-3.7-flash",
+          "release_date": "2026-08-13",
+          "cost": {
+            "input": 0.75,
+            "output": 3.75,
+            "cache_read": 0.075,
+            "cache_write": 0.038
+          },
+          "provider_doc": "https://api.cortecs.ai/v1/models"
+        }
+      ]
+    },
+    {
+      "id": "gemini-omni-flash-preview",
+      "vendor": "google",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "google",
+          "model": "gemini-omni-flash-preview",
+          "release_date": "2026-06-30",
+          "cost": {
+            "input": 1.5,
+            "output": 17.5
+          },
+          "provider_doc": "https://ai.google.dev/gemini-api/docs/models"
+        }
+      ]
+    },
+    {
+      "id": "gemma-4-26b-a4b-it",
+      "vendor": "google",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "google",
+          "model": "gemma-4-26b-a4b-it",
+          "release_date": "2026-04-02",
+          "cost": null,
+          "provider_doc": "https://ai.google.dev/gemini-api/docs/models"
+        },
+        {
+          "provider": "scaleway",
+          "model": "gemma-4-26b-a4b-it",
+          "release_date": "2026-04-01",
+          "cost": {
+            "input": 0.25,
+            "output": 0.5
+          },
+          "provider_doc": "https://www.scaleway.com/en/docs/generative-apis/"
+        },
+        {
+          "provider": "hyper",
+          "model": "gemma-4-26b-a4b-it",
+          "release_date": "2026-04-30",
+          "cost": {
+            "input": 0.098,
+            "output": 0.334,
+            "cache_read": 0.049
+          },
+          "provider_doc": "https://hyper.charm.land"
+        },
+        {
+          "provider": "requesty",
+          "model": "gemma-4-26b-a4b-it",
+          "release_date": "2026-04-02",
+          "cost": {
+            "input": 0.07,
+            "output": 0.34,
+            "cache_read": 0.07
+          },
+          "provider_doc": "https://requesty.ai/solution/llm-routing/models"
+        },
+        {
+          "provider": "llmgateway",
+          "model": "gemma-4-26b-a4b-it",
+          "release_date": "2026-04-02",
+          "cost": {
+            "input": 0.07,
+            "output": 0.34
+          },
+          "provider_doc": "https://llmgateway.io/docs"
+        },
+        {
+          "provider": "cortecs",
+          "model": "gemma-4-26b-a4b-it",
+          "release_date": "2026-04-02",
+          "cost": {
+            "input": 0.111,
+            "output": 0.557
+          },
+          "provider_doc": "https://api.cortecs.ai/v1/models"
+        }
+      ]
+    },
+    {
+      "id": "gemma-4-31b-it",
+      "vendor": "google",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "crof",
+          "model": "gemma-4-31b-it",
+          "release_date": "2026-04-02",
+          "cost": {
+            "input": 0.1,
+            "output": 0.3,
+            "cache_read": 0.02
+          },
+          "provider_doc": "https://crof.ai/docs"
+        },
+        {
+          "provider": "google",
+          "model": "gemma-4-31b-it",
+          "release_date": "2026-04-02",
+          "cost": null,
+          "provider_doc": "https://ai.google.dev/gemini-api/docs/models"
+        },
+        {
+          "provider": "opper",
+          "model": "gemma-4-31b-it",
+          "release_date": "2026-04-02",
+          "cost": {
+            "input": 0.46488,
+            "output": 2.44062
+          },
+          "provider_doc": "https://opper.ai/models"
+        },
+        {
+          "provider": "kenari",
+          "model": "gemma-4-31b-it",
+          "release_date": "2026-04-02",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://kenari.id/docs"
+        },
+        {
+          "provider": "requesty",
+          "model": "gemma-4-31b-it",
+          "release_date": "2026-04-02",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://requesty.ai/solution/llm-routing/models"
+        },
+        {
+          "provider": "llmgateway",
+          "model": "gemma-4-31b-it",
+          "release_date": "2026-04-02",
+          "cost": {
+            "input": 0.1,
+            "output": 0.25,
+            "cache_read": 0.01
+          },
+          "provider_doc": "https://llmgateway.io/docs"
+        },
+        {
+          "provider": "cortecs",
+          "model": "gemma-4-31b-it",
+          "release_date": "2026-04-02",
+          "cost": {
+            "input": 0.223,
+            "output": 0.39
+          },
+          "provider_doc": "https://api.cortecs.ai/v1/models"
+        },
+        {
+          "provider": "digitalocean",
+          "model": "gemma-4-31B-it",
+          "release_date": "2026-04-22",
+          "cost": {
+            "input": 0.18,
+            "output": 0.5,
+            "cache_read": 0.036
+          },
+          "provider_doc": "https://docs.digitalocean.com/products/gradient-ai-platform/details/models/"
+        }
+      ]
+    },
+    {
+      "id": "glm-4-32b-0414-128k",
+      "vendor": "zhipu",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "llmgateway",
+          "model": "glm-4-32b-0414-128k",
+          "release_date": "2025-04-14",
+          "cost": {
+            "input": 0.1,
+            "output": 0.1
+          },
+          "provider_doc": "https://llmgateway.io/docs"
+        }
+      ]
+    },
+    {
+      "id": "glm-4-long",
+      "vendor": "zhipu",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "nano-gpt",
+          "model": "glm-4-long",
+          "release_date": "2024-01-01",
+          "cost": {
+            "input": 0.2006,
+            "output": 0.2006,
+            "cache_read": 0.1003
+          },
+          "provider_doc": "https://docs.nano-gpt.com"
+        }
+      ]
+    },
+    {
+      "id": "glm-4.1v-thinking-flash",
+      "vendor": "zhipu",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "nano-gpt",
+          "model": "glm-4.1v-thinking-flash",
+          "release_date": "2025-07-09",
+          "cost": {
+            "input": 0.3,
+            "output": 0.3,
+            "cache_read": 0.15
+          },
+          "provider_doc": "https://docs.nano-gpt.com"
+        }
+      ]
+    },
+    {
+      "id": "glm-4.1v-thinking-flashx",
+      "vendor": "zhipu",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "nano-gpt",
+          "model": "glm-4.1v-thinking-flashx",
+          "release_date": "2025-07-09",
+          "cost": {
+            "input": 0.3,
+            "output": 0.3,
+            "cache_read": 0.15
+          },
+          "provider_doc": "https://docs.nano-gpt.com"
+        }
+      ]
+    },
+    {
+      "id": "glm-4.5-airx",
+      "vendor": "zhipu",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "llmgateway",
+          "model": "glm-4.5-airx",
+          "release_date": "2025-07-28",
+          "cost": {
+            "input": 1.1,
+            "output": 4.5,
+            "cache_read": 0.22
+          },
+          "provider_doc": "https://llmgateway.io/docs"
+        }
+      ]
+    },
+    {
+      "id": "glm-4.5-flash",
+      "vendor": "zhipu",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "zai",
+          "model": "glm-4.5-flash",
+          "release_date": "2025-07-28",
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cache_read": 0,
+            "cache_write": 0
+          },
+          "provider_doc": "https://docs.z.ai/guides/overview/pricing"
+        },
+        {
+          "provider": "zhipuai",
+          "model": "glm-4.5-flash",
+          "release_date": "2025-07-28",
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cache_read": 0,
+            "cache_write": 0
+          },
+          "provider_doc": "https://docs.z.ai/guides/overview/pricing"
+        }
+      ]
+    },
+    {
+      "id": "glm-4.5-x",
+      "vendor": "zhipu",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "llmgateway",
+          "model": "glm-4.5-x",
+          "release_date": "2025-07-28",
+          "cost": {
+            "input": 2.2,
+            "output": 8.9,
+            "cache_read": 0.45
+          },
+          "provider_doc": "https://llmgateway.io/docs"
+        }
+      ]
+    },
+    {
+      "id": "glm-4.6v-flashx",
+      "vendor": "zhipu",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "llmgateway",
+          "model": "glm-4.6v-flashx",
+          "release_date": "2025-12-08",
+          "cost": {
+            "input": 0.04,
+            "output": 0.4,
+            "cache_read": 0.004
+          },
+          "provider_doc": "https://llmgateway.io/docs"
+        }
+      ]
+    },
+    {
+      "id": "glm-4.7-flashx",
+      "vendor": "zhipu",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "zai",
+          "model": "glm-4.7-flashx",
+          "release_date": "2026-01-19",
+          "cost": {
+            "input": 0.07,
+            "output": 0.4,
+            "cache_read": 0.01,
+            "cache_write": 0
+          },
+          "provider_doc": "https://docs.z.ai/guides/overview/pricing"
+        },
+        {
+          "provider": "zhipuai",
+          "model": "glm-4.7-flashx",
+          "release_date": "2026-01-19",
+          "cost": {
+            "input": 0.07,
+            "output": 0.4,
+            "cache_read": 0.01,
+            "cache_write": 0
+          },
+          "provider_doc": "https://docs.z.ai/guides/overview/pricing"
+        },
+        {
+          "provider": "llmgateway",
+          "model": "glm-4.7-flashx",
+          "release_date": "2026-01-19",
+          "cost": {
+            "input": 0.07,
+            "output": 0.4,
+            "cache_read": 0.01,
+            "cache_write": 0
+          },
+          "provider_doc": "https://llmgateway.io/docs"
+        }
+      ]
+    },
+    {
+      "id": "glm-5.3-flashx",
+      "vendor": "zhipu",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "zai",
+          "model": "glm-5.3-flashx",
+          "release_date": "2026-09-18",
+          "cost": {
+            "input": 0.37,
+            "output": 1.25,
+            "cache_read": 0.075,
+            "cache_write": 0
+          },
+          "provider_doc": "https://docs.z.ai/guides/overview/pricing"
+        },
+        {
+          "provider": "zhipuai",
+          "model": "glm-5.3-flashx",
+          "release_date": "2026-09-18",
+          "cost": {
+            "input": 0.37,
+            "output": 1.25,
+            "cache_read": 0.075,
+            "cache_write": 0
+          },
+          "provider_doc": "https://docs.z.ai/guides/overview/pricing"
+        }
+      ]
+    },
+    {
+      "id": "gpt-3.5-turbo-instruct",
+      "vendor": "openai",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "azure",
+          "model": "gpt-3.5-turbo-instruct",
+          "release_date": "2023-09-21",
+          "cost": {
+            "input": 1.5,
+            "output": 2
+          },
+          "provider_doc": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models"
+        },
+        {
+          "provider": "azure-cognitive-services",
+          "model": "gpt-3.5-turbo-instruct",
+          "release_date": "2023-09-21",
+          "cost": {
+            "input": 1.5,
+            "output": 2
+          },
+          "provider_doc": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-chat-latest",
+      "vendor": "openai",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "jiekou",
+          "model": "gpt-5-chat-latest",
+          "release_date": "2026-01",
+          "cost": {
+            "input": 1.125,
+            "output": 9
+          },
+          "provider_doc": "https://docs.jiekou.ai/docs/support/quickstart?utm_source=github_models.dev"
+        },
+        {
+          "provider": "helicone",
+          "model": "gpt-5-chat-latest",
+          "release_date": "2024-09-30",
+          "cost": {
+            "input": 1.25,
+            "output": 10,
+            "cache_read": 0.12500000000000003
+          },
+          "provider_doc": "https://helicone.ai/models"
+        }
+      ]
+    },
+    {
+      "id": "gpt-realtime-2.1",
+      "vendor": "openai",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "openai",
+          "model": "gpt-realtime-2.1",
+          "release_date": "2026-07-06",
+          "cost": {
+            "input": 4,
+            "output": 24,
+            "cache_read": 0.4,
+            "input_audio": 32,
+            "output_audio": 64
+          },
+          "provider_doc": "https://platform.openai.com/docs/models"
+        }
+      ]
+    },
+    {
+      "id": "grok-4.3",
+      "vendor": "xai",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "abacus",
+          "model": "grok-4.3",
+          "release_date": "2026-04-17",
+          "cost": {
+            "input": 1.25,
+            "output": 2.5,
+            "cache_read": 0.2
+          },
+          "provider_doc": "https://abacus.ai/help/api"
+        },
+        {
+          "provider": "302ai",
+          "model": "grok-4.3",
+          "release_date": "2026-04-17",
+          "cost": {
+            "input": 1.25,
+            "output": 2.5
+          },
+          "provider_doc": "https://doc.302.ai"
+        },
+        {
+          "provider": "auriko",
+          "model": "grok-4.3",
+          "release_date": "2026-04-17",
+          "cost": {
+            "input": 1.25,
+            "output": 2.5,
+            "cache_read": 0.2,
+            "tiers": [
+              {
+                "input": 2.5,
+                "output": 5,
+                "cache_read": 0.4,
+                "tier": {
+                  "type": "context",
+                  "size": 200000
+                }
+              }
+            ],
+            "context_over_200k": {
+              "input": 2.5,
+              "output": 5,
+              "cache_read": 0.4
+            }
+          },
+          "provider_doc": "https://docs.auriko.ai"
+        },
+        {
+          "provider": "xai",
+          "model": "grok-4.3",
+          "release_date": "2026-04-17",
+          "cost": {
+            "input": 1.25,
+            "output": 2.5,
+            "cache_read": 0.2,
+            "tiers": [
+              {
+                "input": 2.5,
+                "output": 5,
+                "cache_read": 0.4,
+                "tier": {
+                  "type": "context",
+                  "size": 200000
+                }
+              }
+            ],
+            "context_over_200k": {
+              "input": 2.5,
+              "output": 5,
+              "cache_read": 0.4
+            }
+          },
+          "provider_doc": "https://docs.x.ai/docs/models"
+        },
+        {
+          "provider": "aihubmix",
+          "model": "grok-4.3",
+          "release_date": "2026-05-01",
+          "cost": {
+            "input": 1.25,
+            "output": 2.5,
+            "cache_read": 0.2,
+            "tiers": [
+              {
+                "input": 2.5,
+                "output": 5,
+                "cache_read": 0.4,
+                "tier": {
+                  "type": "context",
+                  "size": 200000
+                }
+              }
+            ],
+            "context_over_200k": {
+              "input": 2.5,
+              "output": 5,
+              "cache_read": 0.4
+            }
+          },
+          "provider_doc": "https://docs.aihubmix.com"
+        },
+        {
+          "provider": "opper",
+          "model": "grok-4.3",
+          "release_date": "2026-04-17",
+          "cost": {
+            "input": 1.25,
+            "output": 2.5,
+            "cache_read": 0.2
+          },
+          "provider_doc": "https://opper.ai/models"
+        },
+        {
+          "provider": "requesty",
+          "model": "grok-4.3",
+          "release_date": "2026-04-17",
+          "cost": {
+            "input": 1.25,
+            "output": 2.5,
+            "cache_read": 0.2,
+            "cache_write": 1.25,
+            "tiers": [
+              {
+                "input": 2.5,
+                "output": 5,
+                "cache_read": 0.4,
+                "cache_write": 2.5,
+                "tier": {
+                  "type": "context",
+                  "size": 200000
+                }
+              }
+            ],
+            "context_over_200k": {
+              "input": 2.5,
+              "output": 5,
+              "cache_read": 0.4,
+              "cache_write": 2.5
+            }
+          },
+          "provider_doc": "https://requesty.ai/solution/llm-routing/models"
+        },
+        {
+          "provider": "daoxe",
+          "model": "grok-4.3",
+          "release_date": "2026-04-17",
+          "cost": {
+            "input": 1.25,
+            "output": 2.5,
+            "cache_read": 0.2
+          },
+          "provider_doc": "https://daoxe.com/pricing"
+        }
+      ]
+    },
+    {
+      "id": "grok-imagine-image",
+      "vendor": "xai",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "xai",
+          "model": "grok-imagine-image",
+          "release_date": "2026-01-28",
+          "cost": null,
+          "provider_doc": "https://docs.x.ai/docs/models"
+        }
+      ]
+    },
+    {
+      "id": "grok-imagine-image-quality",
+      "vendor": "xai",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "xai",
+          "model": "grok-imagine-image-quality",
+          "release_date": "2026-04-03",
+          "cost": null,
+          "provider_doc": "https://docs.x.ai/docs/models"
+        }
+      ]
+    },
+    {
+      "id": "grok-imagine-video-1.5-lite",
+      "vendor": "xai",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "xai",
+          "model": "grok-imagine-video-1.5-lite",
+          "release_date": "2026-10-01",
+          "cost": null,
+          "provider_doc": "https://docs.x.ai/docs/models"
+        }
+      ]
+    },
+    {
+      "id": "hunyuan-2.0-instruct",
+      "vendor": "tencent",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "tencent-coding-plan",
+          "model": "hunyuan-2.0-instruct",
+          "release_date": "2026-03-08",
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cache_read": 0,
+            "cache_write": 0
+          },
+          "provider_doc": "https://cloud.tencent.com/document/product/1772/128947"
+        }
+      ]
+    },
+    {
+      "id": "hunyuan-2.0-thinking",
+      "vendor": "tencent",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "tencent-coding-plan",
+          "model": "hunyuan-2.0-thinking",
+          "release_date": "2026-03-08",
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cache_read": 0,
+            "cache_write": 0
+          },
+          "provider_doc": "https://cloud.tencent.com/document/product/1772/128947"
+        }
+      ]
+    },
+    {
+      "id": "hy-mt2-plus",
+      "vendor": "tencent",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "llmgateway",
+          "model": "hy-mt2-plus",
+          "release_date": "2026-05-21",
+          "cost": {
+            "input": 0.074,
+            "output": 0.295
+          },
+          "provider_doc": "https://llmgateway.io/docs"
+        }
+      ]
+    },
+    {
+      "id": "kimi-k2-0905-preview",
+      "vendor": "moonshot",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "302ai",
+          "model": "kimi-k2-0905-preview",
+          "release_date": "2025-09-05",
+          "cost": {
+            "input": 0.632,
+            "output": 2.53
+          },
+          "provider_doc": "https://doc.302.ai"
+        }
+      ]
+    },
+    {
+      "id": "kimi-k2-thinking",
+      "vendor": "moonshot",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "302ai",
+          "model": "kimi-k2-thinking",
+          "release_date": "2025-09-05",
+          "cost": {
+            "input": 0.575,
+            "output": 2.3
+          },
+          "provider_doc": "https://doc.302.ai"
+        },
+        {
+          "provider": "hyper",
+          "model": "kimi-k2-thinking",
+          "release_date": "2026-09-02",
+          "cost": {
+            "input": 0.6,
+            "output": 2.5,
+            "cache_read": 0.3
+          },
+          "provider_doc": "https://hyper.charm.land"
+        },
+        {
+          "provider": "opencode",
+          "model": "kimi-k2-thinking",
+          "release_date": "2025-09-05",
+          "cost": {
+            "input": 0.4,
+            "output": 2.5,
+            "cache_read": 0.4
+          },
+          "provider_doc": "https://opencode.ai/docs/zen"
+        },
+        {
+          "provider": "llmgateway",
+          "model": "kimi-k2-thinking",
+          "release_date": "2025-11-06",
+          "cost": {
+            "input": 0.6,
+            "output": 2.5,
+            "cache_read": 0.06
+          },
+          "provider_doc": "https://llmgateway.io/docs"
+        },
+        {
+          "provider": "helicone",
+          "model": "kimi-k2-thinking",
+          "release_date": "2025-11-06",
+          "cost": {
+            "input": 0.48,
+            "output": 2
+          },
+          "provider_doc": "https://helicone.ai/models"
+        },
+        {
+          "provider": "alibaba-cn",
+          "model": "kimi-k2-thinking",
+          "release_date": "2025-11-06",
+          "cost": {
+            "input": 0.574,
+            "output": 2.294
+          },
+          "provider_doc": "https://www.alibabacloud.com/help/en/model-studio/models"
+        }
+      ]
+    },
+    {
+      "id": "kimi-k2-turbo-preview",
+      "vendor": "moonshot",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "abacus",
+          "model": "kimi-k2-turbo-preview",
+          "release_date": "2025-07-08",
+          "cost": {
+            "input": 0.15,
+            "output": 8
+          },
+          "provider_doc": "https://abacus.ai/help/api"
+        }
+      ]
+    },
+    {
+      "id": "kimi-k2.5",
+      "vendor": "moonshot",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "alibaba-token-plan",
+          "model": "kimi-k2.5",
+          "release_date": "2026-01",
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cache_read": 0,
+            "cache_write": 0
+          },
+          "provider_doc": "https://www.alibabacloud.com/help/en/model-studio/token-plan-overview"
+        },
+        {
+          "provider": "alibaba-coding-plan",
+          "model": "kimi-k2.5",
+          "release_date": "2026-01-27",
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cache_read": 0,
+            "cache_write": 0
+          },
+          "provider_doc": "https://www.alibabacloud.com/help/en/model-studio/coding-plan"
+        },
+        {
+          "provider": "alibaba-token-plan-cn",
+          "model": "kimi-k2.5",
+          "release_date": "2026-01",
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cache_read": 0,
+            "cache_write": 0
+          },
+          "provider_doc": "https://www.alibabacloud.com/help/zh/model-studio/token-plan-overview"
+        },
+        {
+          "provider": "melious",
+          "model": "kimi-k2.5",
+          "release_date": "2026-01",
+          "cost": {
+            "input": 0.5796,
+            "output": 2.95596,
+            "cache_read": 0.139104
+          },
+          "provider_doc": "https://melious.ai/docs/reference/models"
+        },
+        {
+          "provider": "abacus",
+          "model": "kimi-k2.5",
+          "release_date": "2026-01",
+          "cost": {
+            "input": 0.6,
+            "output": 3
+          },
+          "provider_doc": "https://abacus.ai/help/api"
+        },
+        {
+          "provider": "302ai",
+          "model": "kimi-k2.5",
+          "release_date": "2026-01",
+          "cost": {
+            "input": 0.66,
+            "output": 3.3
+          },
+          "provider_doc": "https://doc.302.ai"
+        },
+        {
+          "provider": "azure",
+          "model": "kimi-k2.5",
+          "release_date": "2026-02-06",
+          "cost": {
+            "input": 0.6,
+            "output": 3
+          },
+          "provider_doc": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models"
+        },
+        {
+          "provider": "azure-cognitive-services",
+          "model": "kimi-k2.5",
+          "release_date": "2026-01",
+          "cost": {
+            "input": 0.6,
+            "output": 3
+          },
+          "provider_doc": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models"
+        },
+        {
+          "provider": "auriko",
+          "model": "kimi-k2.5",
+          "release_date": "2026-01",
+          "cost": {
+            "input": 0.5,
+            "output": 2.8
+          },
+          "provider_doc": "https://docs.auriko.ai"
+        },
+        {
+          "provider": "frogbot",
+          "model": "kimi-k2.5",
+          "release_date": "1970-01-01",
+          "cost": {
+            "input": 0.6,
+            "output": 3,
+            "cache_read": 0.1
+          },
+          "provider_doc": "https://docs.frogbot.ai"
+        },
+        {
+          "provider": "ollama-cloud",
+          "model": "kimi-k2.5",
+          "release_date": "2026-01-27",
+          "cost": null,
+          "provider_doc": "https://docs.ollama.com/cloud"
+        },
+        {
+          "provider": "jalapeno",
+          "model": "Kimi-K2.5",
+          "release_date": "2026-01",
+          "cost": {
+            "input": 0.6,
+            "output": 3
+          },
+          "provider_doc": "https://www.jalapeno-cloud.ai/docs/"
+        },
+        {
+          "provider": "scnet-token-plan",
+          "model": "Kimi-K2.5",
+          "release_date": "2026-01",
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cache_read": 0
+          },
+          "provider_doc": "https://www.scnet.cn/ac/openapi/doc/2.0/moduleapi/plans/token-plan.html"
+        },
+        {
+          "provider": "aihubmix",
+          "model": "kimi-k2.5",
+          "release_date": "2026-01",
+          "cost": {
+            "input": 0.6,
+            "output": 3,
+            "cache_read": 0.1
+          },
+          "provider_doc": "https://docs.aihubmix.com"
+        },
+        {
+          "provider": "tencent-coding-plan",
+          "model": "kimi-k2.5",
+          "release_date": "2026-01-27",
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cache_read": 0,
+            "cache_write": 0
+          },
+          "provider_doc": "https://cloud.tencent.com/document/product/1772/128947"
+        },
+        {
+          "provider": "opencode",
+          "model": "kimi-k2.5",
+          "release_date": "2026-01-27",
+          "cost": {
+            "input": 0.6,
+            "output": 3,
+            "cache_read": 0.08
+          },
+          "provider_doc": "https://opencode.ai/docs/zen"
+        },
+        {
+          "provider": "llmgateway",
+          "model": "kimi-k2.5",
+          "release_date": "2026-01",
+          "cost": {
+            "input": 0.405,
+            "output": 1.98,
+            "cache_read": 0.225
+          },
+          "provider_doc": "https://llmgateway.io/docs"
+        },
+        {
+          "provider": "daoxe",
+          "model": "kimi-k2.5",
+          "release_date": "2026-01",
+          "cost": {
+            "input": 0.6,
+            "output": 3,
+            "cache_read": 0.1
+          },
+          "provider_doc": "https://daoxe.com/pricing"
+        },
+        {
+          "provider": "alibaba-coding-plan-cn",
+          "model": "kimi-k2.5",
+          "release_date": "2026-01-27",
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cache_read": 0,
+            "cache_write": 0
+          },
+          "provider_doc": "https://help.aliyun.com/zh/model-studio/coding-plan"
+        },
+        {
+          "provider": "digitalocean",
+          "model": "kimi-k2.5",
+          "release_date": "2026-01",
+          "cost": {
+            "input": 0.5,
+            "output": 2.7,
+            "cache_read": 0.203
+          },
+          "provider_doc": "https://docs.digitalocean.com/products/gradient-ai-platform/details/models/"
+        },
+        {
+          "provider": "alibaba-cn",
+          "model": "kimi-k2.5",
+          "release_date": "2026-01-27",
+          "cost": {
+            "input": 0.574,
+            "output": 2.411
+          },
+          "provider_doc": "https://www.alibabacloud.com/help/en/model-studio/models"
+        }
+      ]
+    },
+    {
+      "id": "kimi-k2.7-code-highspeed",
+      "vendor": "moonshot",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "moonshotai-cn",
+          "model": "kimi-k2.7-code-highspeed",
+          "release_date": "2026-06-12",
+          "cost": {
+            "input": 1.9,
+            "output": 8,
+            "cache_read": 0.38
+          },
+          "provider_doc": "https://platform.moonshot.cn/docs/api/chat"
+        },
+        {
+          "provider": "moonshotai",
+          "model": "kimi-k2.7-code-highspeed",
+          "release_date": "2026-06-12",
+          "cost": {
+            "input": 1.9,
+            "output": 8,
+            "cache_read": 0.38
+          },
+          "provider_doc": "https://platform.moonshot.ai/docs/api/chat"
+        },
+        {
+          "provider": "aihubmix",
+          "model": "kimi-k2.7-code-highspeed",
+          "release_date": "2026-06-12",
+          "cost": {
+            "input": 1.9,
+            "output": 7.999,
+            "cache_read": 0.32167
+          },
+          "provider_doc": "https://docs.aihubmix.com"
+        },
+        {
+          "provider": "llmgateway",
+          "model": "kimi-k2.7-code-highspeed",
+          "release_date": "2026-06-12",
+          "cost": {
+            "input": 1.9,
+            "output": 8,
+            "cache_read": 0.38
+          },
+          "provider_doc": "https://llmgateway.io/docs"
+        }
+      ]
+    },
+    {
+      "id": "kimi-latest",
+      "vendor": "moonshot",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "privatemode-ai",
+          "model": "kimi-latest",
+          "release_date": "2026-04-21",
+          "cost": {
+            "input": 1.791,
+            "output": 8.9436,
+            "cache_read": 0.1733
+          },
+          "provider_doc": "https://docs.privatemode.ai/api/overview"
+        }
+      ]
+    },
+    {
+      "id": "ling-1t",
+      "vendor": "ant",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "bailing",
+          "model": "Ling-1T",
+          "release_date": "2025-10",
+          "cost": {
+            "input": 0.57,
+            "output": 2.29
+          },
+          "provider_doc": "https://alipaytbox.yuque.com/sxs0ba/ling/intro"
+        }
+      ]
+    },
+    {
+      "id": "ling-3.1-flash",
+      "vendor": "ant",
+      "missing_at_start": [
+        "pricing",
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "llmgateway",
+          "model": "ling-3.1-flash",
+          "release_date": "2026-09-29",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://llmgateway.io/docs"
+        }
+      ]
+    },
+    {
+      "id": "llama-3.1-nemotron-safety-guard-8b-v3",
+      "vendor": "nvidia",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "nvidia",
+          "model": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
+          "release_date": "2025-10-28",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://docs.api.nvidia.com/nim/"
+        }
+      ]
+    },
+    {
+      "id": "llama-3.1-nemotron-ultra-253b-v1",
+      "vendor": "nvidia",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "nvidia",
+          "model": "nvidia/llama-3.1-nemotron-ultra-253b-v1",
+          "release_date": "2025-04-07",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://docs.api.nvidia.com/nim/"
+        }
+      ]
+    },
+    {
+      "id": "llama-nemotron-embed-vl-1b-v2",
+      "vendor": "nvidia",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "nvidia",
+          "model": "nvidia/llama-nemotron-embed-vl-1b-v2",
+          "release_date": "2026-02-10",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://docs.api.nvidia.com/nim/"
+        }
+      ]
+    },
+    {
+      "id": "llama-nemotron-rerank-vl-1b-v2",
+      "vendor": "nvidia",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "nvidia",
+          "model": "nvidia/llama-nemotron-rerank-vl-1b-v2",
+          "release_date": "2026-03-31",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://docs.api.nvidia.com/nim/"
+        }
+      ]
+    },
+    {
+      "id": "longcat-2.5-preview",
+      "vendor": "meituan",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "nano-gpt",
+          "model": "longcat-2.5-preview",
+          "release_date": "2026-09-25",
+          "cost": {
+            "input": 0.75,
+            "output": 2.95,
+            "cache_read": 0.015
+          },
+          "provider_doc": "https://docs.nano-gpt.com"
+        }
+      ]
+    },
+    {
+      "id": "mimo-v2-tts",
+      "vendor": "xiaomi",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "xiaomi-token-plan-cn",
+          "model": "mimo-v2-tts",
+          "release_date": "2026-03-18",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://platform.xiaomimimo.com/#/docs"
+        },
+        {
+          "provider": "xiaomi-token-plan-ams",
+          "model": "mimo-v2-tts",
+          "release_date": "2026-03-18",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://platform.xiaomimimo.com/#/docs"
+        },
+        {
+          "provider": "xiaomi-token-plan-sgp",
+          "model": "mimo-v2-tts",
+          "release_date": "2026-03-18",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://platform.xiaomimimo.com/#/docs"
+        }
+      ]
+    },
+    {
+      "id": "mimo-v2.5-tts",
+      "vendor": "xiaomi",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "xiaomi-token-plan-cn",
+          "model": "mimo-v2.5-tts",
+          "release_date": "2026-04-22",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://platform.xiaomimimo.com/#/docs"
+        },
+        {
+          "provider": "xiaomi-token-plan-ams",
+          "model": "mimo-v2.5-tts",
+          "release_date": "2026-04-22",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://platform.xiaomimimo.com/#/docs"
+        },
+        {
+          "provider": "xiaomi-token-plan-sgp",
+          "model": "mimo-v2.5-tts",
+          "release_date": "2026-04-22",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://platform.xiaomimimo.com/#/docs"
+        }
+      ]
+    },
+    {
+      "id": "mimo-v2.5-tts-voiceclone",
+      "vendor": "xiaomi",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "xiaomi-token-plan-cn",
+          "model": "mimo-v2.5-tts-voiceclone",
+          "release_date": "2026-04-22",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://platform.xiaomimimo.com/#/docs"
+        },
+        {
+          "provider": "xiaomi-token-plan-ams",
+          "model": "mimo-v2.5-tts-voiceclone",
+          "release_date": "2026-04-22",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://platform.xiaomimimo.com/#/docs"
+        },
+        {
+          "provider": "xiaomi-token-plan-sgp",
+          "model": "mimo-v2.5-tts-voiceclone",
+          "release_date": "2026-04-22",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://platform.xiaomimimo.com/#/docs"
+        }
+      ]
+    },
+    {
+      "id": "mimo-v2.5-tts-voicedesign",
+      "vendor": "xiaomi",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "xiaomi-token-plan-cn",
+          "model": "mimo-v2.5-tts-voicedesign",
+          "release_date": "2026-04-22",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://platform.xiaomimimo.com/#/docs"
+        },
+        {
+          "provider": "xiaomi-token-plan-ams",
+          "model": "mimo-v2.5-tts-voicedesign",
+          "release_date": "2026-04-22",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://platform.xiaomimimo.com/#/docs"
+        },
+        {
+          "provider": "xiaomi-token-plan-sgp",
+          "model": "mimo-v2.5-tts-voicedesign",
+          "release_date": "2026-04-22",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://platform.xiaomimimo.com/#/docs"
+        }
+      ]
+    },
+    {
+      "id": "minimax-m2.1",
+      "vendor": "minimax",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "minimax-coding-plan",
+          "model": "MiniMax-M2.1",
+          "release_date": "2025-12-23",
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cache_read": 0,
+            "cache_write": 0
+          },
+          "provider_doc": "https://platform.minimax.io/docs/token-plan/intro"
+        },
+        {
+          "provider": "minimax-cn-coding-plan",
+          "model": "MiniMax-M2.1",
+          "release_date": "2025-12-23",
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cache_read": 0,
+            "cache_write": 0
+          },
+          "provider_doc": "https://platform.minimaxi.com/docs/token-plan/intro"
+        },
+        {
+          "provider": "302ai",
+          "model": "MiniMax-M2.1",
+          "release_date": "2025-12-23",
+          "cost": {
+            "input": 0.3,
+            "output": 1.2
+          },
+          "provider_doc": "https://doc.302.ai"
+        },
+        {
+          "provider": "moark",
+          "model": "MiniMax-M2.1",
+          "release_date": "2025-12-23",
+          "cost": {
+            "input": 0.29,
+            "output": 1.2
+          },
+          "provider_doc": "https://moark.com/docs/openapi/v1#tag/%E6%96%87%E6%9C%AC%E7%94%9F%E6%88%90"
+        },
+        {
+          "provider": "minimax-cn",
+          "model": "MiniMax-M2.1",
+          "release_date": "2025-12-23",
+          "cost": {
+            "input": 0.3,
+            "output": 1.2,
+            "cache_read": 0.03,
+            "cache_write": 0.375
+          },
+          "provider_doc": "https://platform.minimaxi.com/docs/guides/quickstart"
+        },
+        {
+          "provider": "minimax",
+          "model": "MiniMax-M2.1",
+          "release_date": "2025-12-23",
+          "cost": {
+            "input": 0.3,
+            "output": 1.2,
+            "cache_read": 0.03,
+            "cache_write": 0.375
+          },
+          "provider_doc": "https://platform.minimax.io/docs/guides/quickstart"
+        },
+        {
+          "provider": "opencode",
+          "model": "minimax-m2.1",
+          "release_date": "2025-12-23",
+          "cost": {
+            "input": 0.3,
+            "output": 1.2,
+            "cache_read": 0.1
+          },
+          "provider_doc": "https://opencode.ai/docs/zen"
+        },
+        {
+          "provider": "llmgateway",
+          "model": "minimax-m2.1",
+          "release_date": "2025-12-23",
+          "cost": {
+            "input": 0.27,
+            "output": 1.1
+          },
+          "provider_doc": "https://llmgateway.io/docs"
+        },
+        {
+          "provider": "cortecs",
+          "model": "minimax-m2.1",
+          "release_date": "2025-12-23",
+          "cost": {
+            "input": 0.359,
+            "output": 1.435
+          },
+          "provider_doc": "https://api.cortecs.ai/v1/models"
+        }
+      ]
+    },
+    {
+      "id": "mistral-large-2402",
+      "vendor": "mistral",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "cortecs",
+          "model": "mistral-large-2402",
+          "release_date": "2025-05-26",
+          "cost": {
+            "input": 4.284,
+            "output": 12.952
+          },
+          "provider_doc": "https://api.cortecs.ai/v1/models"
+        }
+      ]
+    },
+    {
+      "id": "mistral-medium-2508",
+      "vendor": "mistral",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "mistral",
+          "model": "mistral-medium-2508",
+          "release_date": "2025-08-12",
+          "cost": {
+            "input": 0.4,
+            "output": 2
+          },
+          "provider_doc": "https://docs.mistral.ai/getting-started/models/"
+        }
+      ]
+    },
+    {
+      "id": "muse-spark-1.2-contributor",
+      "vendor": "meta",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "meta",
+          "model": "muse-spark-1.2-contributor",
+          "release_date": "2026-08-05",
+          "cost": {
+            "input": 0.1,
+            "output": 0.2,
+            "cache_read": 0.002
+          },
+          "provider_doc": "https://dev.meta.ai/docs"
+        },
+        {
+          "provider": "opencode-go",
+          "model": "muse-spark-1.2-contributor",
+          "release_date": "2026-08-05",
+          "cost": {
+            "input": 0.1,
+            "output": 0.2,
+            "cache_read": 0.002
+          },
+          "provider_doc": "https://opencode.ai/docs/go"
+        },
+        {
+          "provider": "llmgateway",
+          "model": "muse-spark-1.2-contributor",
+          "release_date": "2026-08-06",
+          "cost": {
+            "input": 0.1,
+            "output": 0.2,
+            "cache_read": 0.002
+          },
+          "provider_doc": "https://llmgateway.io/docs"
+        }
+      ]
+    },
+    {
+      "id": "muse-spark-1.3-contributor",
+      "vendor": "meta",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "bothub",
+          "model": "muse-spark-1.3-contributor",
+          "release_date": "2026-09-02",
+          "cost": {
+            "input": 0.1,
+            "output": 0.2
+          },
+          "provider_doc": "https://bothub.ru/models"
+        },
+        {
+          "provider": "meta",
+          "model": "muse-spark-1.3-contributor",
+          "release_date": "2026-09-02",
+          "cost": {
+            "input": 0.1,
+            "output": 0.2,
+            "cache_read": 0.002
+          },
+          "provider_doc": "https://dev.meta.ai/docs"
+        },
+        {
+          "provider": "opencode-go",
+          "model": "muse-spark-1.3-contributor",
+          "release_date": "2026-09-02",
+          "cost": {
+            "input": 0.1,
+            "output": 0.2,
+            "cache_read": 0.002
+          },
+          "provider_doc": "https://opencode.ai/docs/go"
+        },
+        {
+          "provider": "llmgateway",
+          "model": "muse-spark-1.3-contributor",
+          "release_date": "2026-09-02",
+          "cost": {
+            "input": 0.1,
+            "output": 0.2,
+            "cache_read": 0.002
+          },
+          "provider_doc": "https://llmgateway.io/docs"
+        }
+      ]
+    },
+    {
+      "id": "nemotron-3-nano-omni-30b-a3b-reasoning",
+      "vendor": "nvidia",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "deepinfra",
+          "model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning",
+          "release_date": "2026-04-28",
+          "cost": {
+            "input": 0.2,
+            "output": 0.8
+          },
+          "provider_doc": "https://deepinfra.com/models"
+        },
+        {
+          "provider": "vultr",
+          "model": "nemotron-3-nano-omni-30b-a3b-reasoning",
+          "release_date": "2026-04-28",
+          "cost": {
+            "input": 0.1,
+            "output": 0.25
+          },
+          "provider_doc": "https://api.vultrinference.com/"
+        },
+        {
+          "provider": "nvidia",
+          "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+          "release_date": "2026-04-28",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://docs.api.nvidia.com/nim/"
+        },
+        {
+          "provider": "requesty",
+          "model": "nemotron-3-nano-omni-30b-a3b-reasoning",
+          "release_date": "2026-04-28",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://requesty.ai/solution/llm-routing/models"
+        }
+      ]
+    },
+    {
+      "id": "nemotron-3-super-120b-a12b",
+      "vendor": "nvidia",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "perplexity-agent",
+          "model": "nvidia/nemotron-3-super-120b-a12b",
+          "release_date": "2026-03-11",
+          "cost": {
+            "input": 0.25,
+            "output": 2.5
+          },
+          "provider_doc": "https://docs.perplexity.ai/docs/agent-api/models"
+        },
+        {
+          "provider": "nano-gpt",
+          "model": "nvidia/nemotron-3-super-120b-a12b",
+          "release_date": "2026-03-01",
+          "cost": {
+            "input": 0.05,
+            "output": 0.25,
+            "cache_read": 0.025
+          },
+          "provider_doc": "https://docs.nano-gpt.com"
+        },
+        {
+          "provider": "kilo",
+          "model": "nvidia/nemotron-3-super-120b-a12b",
+          "release_date": "2026-03-11",
+          "cost": {
+            "input": 0.08,
+            "output": 0.45
+          },
+          "provider_doc": "https://kilo.ai"
+        },
+        {
+          "provider": "openrouter",
+          "model": "nvidia/nemotron-3-super-120b-a12b",
+          "release_date": "2026-03-11",
+          "cost": {
+            "input": 0.08,
+            "output": 0.45
+          },
+          "provider_doc": "https://openrouter.ai/models"
+        },
+        {
+          "provider": "nebius",
+          "model": "nvidia/nemotron-3-super-120b-a12b",
+          "release_date": "2026-03-11",
+          "cost": {
+            "input": 0.3,
+            "output": 0.9
+          },
+          "provider_doc": "https://docs.tokenfactory.nebius.com/"
+        },
+        {
+          "provider": "vercel",
+          "model": "nvidia/nemotron-3-super-120b-a12b",
+          "release_date": "2026-03-11",
+          "cost": {
+            "input": 0.15,
+            "output": 0.65
+          },
+          "provider_doc": "https://github.com/vercel/ai/tree/5eb85cc45a259553501f535b8ac79a77d0e79223/packages/gateway"
+        },
+        {
+          "provider": "nvidia",
+          "model": "nvidia/nemotron-3-super-120b-a12b",
+          "release_date": "2026-03-11",
+          "cost": {
+            "input": 0.2,
+            "output": 0.8
+          },
+          "provider_doc": "https://docs.api.nvidia.com/nim/"
+        },
+        {
+          "provider": "kenari",
+          "model": "nemotron-3-super-120b-a12b",
+          "release_date": "2026-03-11",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://kenari.id/docs"
+        },
+        {
+          "provider": "requesty",
+          "model": "nemotron-3-super-120b-a12b",
+          "release_date": "2026-03-11",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://requesty.ai/solution/llm-routing/models"
+        }
+      ]
+    },
+    {
+      "id": "nemotron-3-ultra-550b-a55b",
+      "vendor": "nvidia",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "nano-gpt",
+          "model": "nvidia/nemotron-3-ultra-550b-a55b",
+          "release_date": "2026-06-04",
+          "cost": {
+            "input": 0.5,
+            "output": 2.5,
+            "cache_read": 0.25
+          },
+          "provider_doc": "https://docs.nano-gpt.com"
+        },
+        {
+          "provider": "kilo",
+          "model": "nvidia/nemotron-3-ultra-550b-a55b",
+          "release_date": "2026-06-04",
+          "cost": {
+            "input": 0.5,
+            "output": 2.2,
+            "cache_read": 0.1
+          },
+          "provider_doc": "https://kilo.ai"
+        },
+        {
+          "provider": "openrouter",
+          "model": "nvidia/nemotron-3-ultra-550b-a55b",
+          "release_date": "2026-06-04",
+          "cost": {
+            "input": 0.6,
+            "output": 2.4,
+            "cache_read": 0.12
+          },
+          "provider_doc": "https://openrouter.ai/models"
+        },
+        {
+          "provider": "nebius",
+          "model": "nvidia/Nemotron-3-Ultra-550b-a55b",
+          "release_date": "2026-06-04",
+          "cost": {
+            "input": 1,
+            "output": 3,
+            "cache_read": 1
+          },
+          "provider_doc": "https://docs.tokenfactory.nebius.com/"
+        },
+        {
+          "provider": "vercel",
+          "model": "nvidia/nemotron-3-ultra-550b-a55b",
+          "release_date": "2026-06-04",
+          "cost": {
+            "input": 0.6,
+            "output": 2.4,
+            "cache_read": 0.12
+          },
+          "provider_doc": "https://github.com/vercel/ai/tree/5eb85cc45a259553501f535b8ac79a77d0e79223/packages/gateway"
+        },
+        {
+          "provider": "nvidia",
+          "model": "nvidia/nemotron-3-ultra-550b-a55b",
+          "release_date": "2026-06-04",
+          "cost": {
+            "input": 0.5,
+            "output": 2.5,
+            "cache_read": 0.15
+          },
+          "provider_doc": "https://docs.api.nvidia.com/nim/"
+        },
+        {
+          "provider": "kenari",
+          "model": "nemotron-3-ultra-550b-a55b",
+          "release_date": "2026-06-04",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://kenari.id/docs"
+        },
+        {
+          "provider": "requesty",
+          "model": "nemotron-3-ultra-550b-a55b",
+          "release_date": "2026-06-04",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://requesty.ai/solution/llm-routing/models"
+        },
+        {
+          "provider": "togetherai",
+          "model": "nvidia/nemotron-3-ultra-550b-a55b",
+          "release_date": "2026-06-04",
+          "cost": {
+            "input": 0.6,
+            "output": 3.6,
+            "cache_read": 0.2
+          },
+          "provider_doc": "https://docs.together.ai/docs/serverless-models"
+        }
+      ]
+    },
+    {
+      "id": "nemotron-3.5-content-safety",
+      "vendor": "nvidia",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "nano-gpt",
+          "model": "nvidia/nemotron-3.5-content-safety",
+          "release_date": "2026-06-04",
+          "cost": {
+            "input": 0.05,
+            "output": 0.15,
+            "cache_read": 0.025
+          },
+          "provider_doc": "https://docs.nano-gpt.com"
+        },
+        {
+          "provider": "kilo",
+          "model": "nvidia/nemotron-3.5-content-safety",
+          "release_date": "2026-06-04",
+          "cost": {
+            "input": 0.2,
+            "output": 0.2
+          },
+          "provider_doc": "https://kilo.ai"
+        },
+        {
+          "provider": "openrouter",
+          "model": "nvidia/nemotron-3.5-content-safety",
+          "release_date": "2026-06-04",
+          "cost": {
+            "input": 0.2,
+            "output": 0.2
+          },
+          "provider_doc": "https://openrouter.ai/models"
+        },
+        {
+          "provider": "vultr",
+          "model": "nemotron-3.5-content-safety",
+          "release_date": "2026-06-04",
+          "cost": {
+            "input": 0.05,
+            "output": 0.15
+          },
+          "provider_doc": "https://api.vultrinference.com/"
+        },
+        {
+          "provider": "nvidia",
+          "model": "nvidia/nemotron-3.5-content-safety",
+          "release_date": "2026-06-04",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://docs.api.nvidia.com/nim/"
+        },
+        {
+          "provider": "requesty",
+          "model": "nemotron-3.5-content-safety",
+          "release_date": "2026-06-04",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://requesty.ai/solution/llm-routing/models"
+        }
+      ]
+    },
+    {
+      "id": "nemotron-3.5-lightning-30b-a3b",
+      "vendor": "nvidia",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "merge-gateway",
+          "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+          "release_date": "2026-08-11",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://docs.merge.dev/merge-gateway"
+        },
+        {
+          "provider": "nvidia",
+          "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+          "release_date": "2026-08-11",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://docs.api.nvidia.com/nim/"
+        },
+        {
+          "provider": "requesty",
+          "model": "nemotron-3.5-lightning-30b-a3b",
+          "release_date": "2026-08-11",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://requesty.ai/solution/llm-routing/models"
+        }
+      ]
+    },
+    {
+      "id": "north-mini-code-1-0",
+      "vendor": "cohere",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "cohere",
+          "model": "north-mini-code-1-0",
+          "release_date": "2026-06-09",
+          "cost": {
+            "input": 0,
+            "output": 0
+          },
+          "provider_doc": "https://docs.cohere.com/docs/models"
+        }
+      ]
+    },
+    {
+      "id": "qwen-long",
+      "vendor": "alibaba",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "alibaba-cn",
+          "model": "qwen-long",
+          "release_date": "2025-01-25",
+          "cost": {
+            "input": 0.072,
+            "output": 0.287
+          },
+          "provider_doc": "https://www.alibabacloud.com/help/en/model-studio/models"
+        }
+      ]
+    },
+    {
+      "id": "qwen-max",
+      "vendor": "alibaba",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "alibaba",
+          "model": "qwen-max",
+          "release_date": "2024-04-03",
+          "cost": {
+            "input": 1.6,
+            "output": 6.4
+          },
+          "provider_doc": "https://www.alibabacloud.com/help/en/model-studio/models"
+        },
+        {
+          "provider": "qiniu-ai",
+          "model": "qwen-max-2025-01-25",
+          "release_date": "2025-08-05",
+          "cost": null,
+          "provider_doc": "https://developer.qiniu.com/aitokenapi"
+        },
+        {
+          "provider": "llmgateway",
+          "model": "qwen-max",
+          "release_date": "2024-04-03",
+          "cost": {
+            "input": 1.6,
+            "output": 6.4
+          },
+          "provider_doc": "https://llmgateway.io/docs"
+        },
+        {
+          "provider": "alibaba-cn",
+          "model": "qwen-max",
+          "release_date": "2024-04-03",
+          "cost": {
+            "input": 0.345,
+            "output": 1.377
+          },
+          "provider_doc": "https://www.alibabacloud.com/help/en/model-studio/models"
+        }
+      ]
+    },
+    {
+      "id": "qwen-omni-turbo",
+      "vendor": "alibaba",
+      "missing_at_start": [
+        "pricing",
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "alibaba",
+          "model": "qwen-omni-turbo",
+          "release_date": "2025-01-19",
+          "cost": {
+            "input": 0.07,
+            "output": 0.27,
+            "input_audio": 4.44,
+            "output_audio": 8.89
+          },
+          "provider_doc": "https://www.alibabacloud.com/help/en/model-studio/models"
+        },
+        {
+          "provider": "alibaba-cn",
+          "model": "qwen-omni-turbo",
+          "release_date": "2025-01-19",
+          "cost": {
+            "input": 0.058,
+            "output": 0.23,
+            "input_audio": 3.584,
+            "output_audio": 7.168
+          },
+          "provider_doc": "https://www.alibabacloud.com/help/en/model-studio/models"
+        }
+      ]
+    },
+    {
+      "id": "qwen-omni-turbo-realtime",
+      "vendor": "alibaba",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "alibaba",
+          "model": "qwen-omni-turbo-realtime",
+          "release_date": "2025-05-08",
+          "cost": {
+            "input": 0.27,
+            "output": 1.07,
+            "input_audio": 4.44,
+            "output_audio": 8.89
+          },
+          "provider_doc": "https://www.alibabacloud.com/help/en/model-studio/models"
+        },
+        {
+          "provider": "alibaba-cn",
+          "model": "qwen-omni-turbo-realtime",
+          "release_date": "2025-05-08",
+          "cost": {
+            "input": 0.23,
+            "output": 0.918,
+            "input_audio": 3.584,
+            "output_audio": 7.168
+          },
+          "provider_doc": "https://www.alibabacloud.com/help/en/model-studio/models"
+        }
+      ]
+    },
+    {
+      "id": "qwen-plus",
+      "vendor": "alibaba",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "alibaba",
+          "model": "qwen-plus",
+          "release_date": "2024-01-25",
+          "cost": {
+            "input": 0.4,
+            "output": 1.2,
+            "reasoning": 4
+          },
+          "provider_doc": "https://www.alibabacloud.com/help/en/model-studio/models"
+        },
+        {
+          "provider": "llmgateway",
+          "model": "qwen-plus",
+          "release_date": "2024-01-25",
+          "cost": {
+            "input": 0.4,
+            "output": 1.2,
+            "reasoning": 4,
+            "cache_read": 0.08,
+            "cache_write": 0.5
+          },
+          "provider_doc": "https://llmgateway.io/docs"
+        },
+        {
+          "provider": "llmgateway",
+          "model": "qwen-plus-latest",
+          "release_date": "2025-01-25",
+          "cost": {
+            "input": 0.4,
+            "output": 1.2,
+            "cache_read": 0.08,
+            "cache_write": 0.5
+          },
+          "provider_doc": "https://llmgateway.io/docs"
+        },
+        {
+          "provider": "alibaba-cn",
+          "model": "qwen-plus",
+          "release_date": "2024-01-25",
+          "cost": {
+            "input": 0.115,
+            "output": 0.287,
+            "reasoning": 1.147,
+            "cache_read": 0.012,
+            "cache_write": 0.144
+          },
+          "provider_doc": "https://www.alibabacloud.com/help/en/model-studio/models"
+        }
+      ]
+    },
+    {
+      "id": "qwen-turbo",
+      "vendor": "alibaba",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "alibaba",
+          "model": "qwen-turbo",
+          "release_date": "2024-11-01",
+          "cost": {
+            "input": 0.05,
+            "output": 0.2,
+            "reasoning": 0.5
+          },
+          "provider_doc": "https://www.alibabacloud.com/help/en/model-studio/models"
+        },
+        {
+          "provider": "qiniu-ai",
+          "model": "qwen-turbo",
+          "release_date": "2025-08-05",
+          "cost": null,
+          "provider_doc": "https://developer.qiniu.com/aitokenapi"
+        },
+        {
+          "provider": "alibaba-cn",
+          "model": "qwen-turbo",
+          "release_date": "2024-11-01",
+          "cost": {
+            "input": 0.044,
+            "output": 0.087,
+            "reasoning": 0.431
+          },
+          "provider_doc": "https://www.alibabacloud.com/help/en/model-studio/models"
+        }
+      ]
+    },
+    {
+      "id": "qwen-vl-max",
+      "vendor": "alibaba",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "alibaba",
+          "model": "qwen-vl-max",
+          "release_date": "2024-04-08",
+          "cost": {
+            "input": 0.8,
+            "output": 3.2
+          },
+          "provider_doc": "https://www.alibabacloud.com/help/en/model-studio/models"
+        },
+        {
+          "provider": "alibaba-cn",
+          "model": "qwen-vl-max",
+          "release_date": "2024-04-08",
+          "cost": {
+            "input": 0.23,
+            "output": 0.574
+          },
+          "provider_doc": "https://www.alibabacloud.com/help/en/model-studio/models"
+        }
+      ]
+    },
+    {
+      "id": "qwen-vl-ocr",
+      "vendor": "alibaba",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "alibaba",
+          "model": "qwen-vl-ocr",
+          "release_date": "2024-10-28",
+          "cost": {
+            "input": 0.07,
+            "output": 0.16
+          },
+          "provider_doc": "https://www.alibabacloud.com/help/en/model-studio/models"
+        },
+        {
+          "provider": "alibaba-cn",
+          "model": "qwen-vl-ocr",
+          "release_date": "2024-10-28",
+          "cost": {
+            "input": 0.043,
+            "output": 0.072
+          },
+          "provider_doc": "https://www.alibabacloud.com/help/en/model-studio/models"
+        }
+      ]
+    },
+    {
+      "id": "qwen-vl-plus",
+      "vendor": "alibaba",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "alibaba",
+          "model": "qwen-vl-plus",
+          "release_date": "2024-01-25",
+          "cost": {
+            "input": 0.21,
+            "output": 0.63
+          },
+          "provider_doc": "https://www.alibabacloud.com/help/en/model-studio/models"
+        },
+        {
+          "provider": "alibaba-cn",
+          "model": "qwen-vl-plus",
+          "release_date": "2024-01-25",
+          "cost": {
+            "input": 0.115,
+            "output": 0.287
+          },
+          "provider_doc": "https://www.alibabacloud.com/help/en/model-studio/models"
+        }
+      ]
+    },
+    {
+      "id": "qwen3-omni-flash",
+      "vendor": "alibaba",
+      "missing_at_start": [
+        "pricing",
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "alibaba",
+          "model": "qwen3-omni-flash",
+          "release_date": "2025-09-15",
+          "cost": {
+            "input": 0.43,
+            "output": 1.66,
+            "input_audio": 3.81,
+            "output_audio": 15.11
+          },
+          "provider_doc": "https://www.alibabacloud.com/help/en/model-studio/models"
+        },
+        {
+          "provider": "alibaba-cn",
+          "model": "qwen3-omni-flash",
+          "release_date": "2025-09-15",
+          "cost": {
+            "input": 0.058,
+            "output": 0.23,
+            "input_audio": 3.584,
+            "output_audio": 7.168
+          },
+          "provider_doc": "https://www.alibabacloud.com/help/en/model-studio/models"
+        }
+      ]
+    },
+    {
+      "id": "qwen3-omni-flash-realtime",
+      "vendor": "alibaba",
+      "missing_at_start": [
+        "pricing",
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "alibaba",
+          "model": "qwen3-omni-flash-realtime",
+          "release_date": "2025-09-15",
+          "cost": {
+            "input": 0.52,
+            "output": 1.99,
+            "input_audio": 4.57,
+            "output_audio": 18.13
+          },
+          "provider_doc": "https://www.alibabacloud.com/help/en/model-studio/models"
+        },
+        {
+          "provider": "alibaba-cn",
+          "model": "qwen3-omni-flash-realtime",
+          "release_date": "2025-09-15",
+          "cost": {
+            "input": 0.23,
+            "output": 0.918,
+            "input_audio": 3.584,
+            "output_audio": 7.168
+          },
+          "provider_doc": "https://www.alibabacloud.com/help/en/model-studio/models"
+        }
+      ]
+    },
+    {
+      "id": "ring-1t",
+      "vendor": "ant",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "bailing",
+          "model": "Ring-1T",
+          "release_date": "2025-10",
+          "cost": {
+            "input": 0.57,
+            "output": 2.29
+          },
+          "provider_doc": "https://alipaytbox.yuque.com/sxs0ba/ling/intro"
+        }
+      ]
+    },
+    {
+      "id": "sarvam-105b",
+      "vendor": "sarvam",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "nano-gpt",
+          "model": "sarvam-105b",
+          "release_date": "2025-09-01",
+          "cost": {
+            "input": 0.054,
+            "output": 0.2124,
+            "cache_read": 0.0336
+          },
+          "provider_doc": "https://docs.nano-gpt.com"
+        },
+        {
+          "provider": "sarvam",
+          "model": "sarvam-105b",
+          "release_date": "2026-02-18",
+          "cost": null,
+          "provider_doc": "https://docs.sarvam.ai/api-reference-docs/getting-started/models"
+        }
+      ]
+    },
+    {
+      "id": "sonar-deep-research",
+      "vendor": "perplexity",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "perplexity",
+          "model": "sonar-deep-research",
+          "release_date": "2025-02-01",
+          "cost": {
+            "input": 2,
+            "output": 8,
+            "reasoning": 3
+          },
+          "provider_doc": "https://docs.perplexity.ai"
+        },
+        {
+          "provider": "sap-ai-core",
+          "model": "sonar-deep-research",
+          "release_date": "2025-02-01",
+          "cost": {
+            "input": 2,
+            "output": 8,
+            "reasoning": 3
+          },
+          "provider_doc": "https://help.sap.com/docs/sap-ai-core"
+        },
+        {
+          "provider": "helicone",
+          "model": "sonar-deep-research",
+          "release_date": "2025-01-27",
+          "cost": {
+            "input": 2,
+            "output": 8
+          },
+          "provider_doc": "https://helicone.ai/models"
+        }
+      ]
+    },
+    {
+      "id": "sonar-reasoning",
+      "vendor": "perplexity",
+      "missing_at_start": [
+        "pricing",
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "helicone",
+          "model": "sonar-reasoning",
+          "release_date": "2025-01-27",
+          "cost": {
+            "input": 1,
+            "output": 5
+          },
+          "provider_doc": "https://helicone.ai/models"
+        }
+      ]
+    },
+    {
+      "id": "sonar-reasoning-pro",
+      "vendor": "perplexity",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "perplexity",
+          "model": "sonar-reasoning-pro",
+          "release_date": "2024-01-01",
+          "cost": {
+            "input": 2,
+            "output": 8
+          },
+          "provider_doc": "https://docs.perplexity.ai"
+        },
+        {
+          "provider": "opper",
+          "model": "sonar-reasoning-pro",
+          "release_date": "2024-01-01",
+          "cost": {
+            "input": 2,
+            "output": 8
+          },
+          "provider_doc": "https://opper.ai/models"
+        },
+        {
+          "provider": "helicone",
+          "model": "sonar-reasoning-pro",
+          "release_date": "2025-01-27",
+          "cost": {
+            "input": 2,
+            "output": 8
+          },
+          "provider_doc": "https://helicone.ai/models"
+        }
+      ]
+    },
+    {
+      "id": "step-1-32k",
+      "vendor": "stepfun",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "stepfun-ai",
+          "model": "step-1-32k",
+          "release_date": "2025-01-01",
+          "cost": {
+            "input": 2.05,
+            "output": 9.59,
+            "cache_read": 0.41
+          },
+          "provider_doc": "https://platform.stepfun.ai/docs/en/overview/concept"
+        },
+        {
+          "provider": "stepfun",
+          "model": "step-1-32k",
+          "release_date": "2025-01-01",
+          "cost": {
+            "input": 2.05,
+            "output": 9.59,
+            "cache_read": 0.41
+          },
+          "provider_doc": "https://platform.stepfun.com/docs/zh/overview/concept"
+        }
+      ]
+    },
+    {
+      "id": "step-2-16k",
+      "vendor": "stepfun",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "stepfun-ai",
+          "model": "step-2-16k",
+          "release_date": "2025-01-01",
+          "cost": {
+            "input": 5.21,
+            "output": 16.44,
+            "cache_read": 1.04
+          },
+          "provider_doc": "https://platform.stepfun.ai/docs/en/overview/concept"
+        },
+        {
+          "provider": "stepfun",
+          "model": "step-2-16k",
+          "release_date": "2025-01-01",
+          "cost": {
+            "input": 5.21,
+            "output": 16.44,
+            "cache_read": 1.04
+          },
+          "provider_doc": "https://platform.stepfun.com/docs/zh/overview/concept"
+        }
+      ]
+    },
+    {
+      "id": "step-3.5-flash-2603",
+      "vendor": "stepfun",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "stepfun-ai-step-plan",
+          "model": "step-3.5-flash-2603",
+          "release_date": "2026-04-02",
+          "cost": null,
+          "provider_doc": "https://platform.stepfun.ai/docs/en/step-plan/integrations/reasoning-api"
+        },
+        {
+          "provider": "stepfun-step-plan",
+          "model": "step-3.5-flash-2603",
+          "release_date": "2026-04-02",
+          "cost": null,
+          "provider_doc": "https://platform.stepfun.com/docs/zh/step-plan/integrations/reasoning-api"
+        },
+        {
+          "provider": "stepfun-ai",
+          "model": "step-3.5-flash-2603",
+          "release_date": "2026-04-02",
+          "cost": {
+            "input": 0.1,
+            "output": 0.3,
+            "cache_read": 0.02
+          },
+          "provider_doc": "https://platform.stepfun.ai/docs/en/overview/concept"
+        },
+        {
+          "provider": "stepfun",
+          "model": "step-3.5-flash-2603",
+          "release_date": "2026-04-02",
+          "cost": {
+            "input": 0.1,
+            "output": 0.3,
+            "cache_read": 0.02
+          },
+          "provider_doc": "https://platform.stepfun.com/docs/zh/overview/concept"
+        }
+      ]
+    },
+    {
+      "id": "step-tts-2",
+      "vendor": "stepfun",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "stepfun-ai",
+          "model": "step-tts-2",
+          "release_date": "2026-03-01",
+          "cost": null,
+          "provider_doc": "https://platform.stepfun.ai/docs/en/overview/concept"
+        },
+        {
+          "provider": "stepfun",
+          "model": "step-tts-2",
+          "release_date": "2026-03-01",
+          "cost": null,
+          "provider_doc": "https://platform.stepfun.com/docs/zh/overview/concept"
+        }
+      ]
+    },
+    {
+      "id": "stepaudio-2.5-tts",
+      "vendor": "stepfun",
+      "missing_at_start": [
+        "release_date"
+      ],
+      "candidates": [
+        {
+          "provider": "stepfun-ai",
+          "model": "stepaudio-2.5-tts",
+          "release_date": "2026-04-16",
+          "cost": null,
+          "provider_doc": "https://platform.stepfun.ai/docs/en/overview/concept"
+        },
+        {
+          "provider": "stepfun",
+          "model": "stepaudio-2.5-tts",
+          "release_date": "2026-04-16",
+          "cost": null,
+          "provider_doc": "https://platform.stepfun.com/docs/zh/overview/concept"
+        }
+      ]
+    },
+    {
+      "id": "tiny-aya-earth",
+      "vendor": "cohere",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "cohere",
+          "model": "tiny-aya-earth",
+          "release_date": "2026-02-17",
+          "cost": null,
+          "provider_doc": "https://docs.cohere.com/docs/models"
+        }
+      ]
+    },
+    {
+      "id": "tiny-aya-fire",
+      "vendor": "cohere",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "cohere",
+          "model": "tiny-aya-fire",
+          "release_date": "2026-02-17",
+          "cost": null,
+          "provider_doc": "https://docs.cohere.com/docs/models"
+        }
+      ]
+    },
+    {
+      "id": "tiny-aya-global",
+      "vendor": "cohere",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "cohere",
+          "model": "tiny-aya-global",
+          "release_date": "2026-02-17",
+          "cost": null,
+          "provider_doc": "https://docs.cohere.com/docs/models"
+        }
+      ]
+    },
+    {
+      "id": "tiny-aya-water",
+      "vendor": "cohere",
+      "missing_at_start": [
+        "pricing"
+      ],
+      "candidates": [
+        {
+          "provider": "cohere",
+          "model": "tiny-aya-water",
+          "release_date": "2026-02-17",
+          "cost": null,
+          "provider_doc": "https://docs.cohere.com/docs/models"
+        }
+      ]
+    }
+  ]
+}

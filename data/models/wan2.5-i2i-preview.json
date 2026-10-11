@@ -60,6 +60,11 @@
       "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
       "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio API Reference — wan-image-edit",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/wan-image-edit",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -67,7 +72,9 @@
       "id": "alibaba",
       "model": "wan2.5-i2i-preview",
       "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
-      "endpoints": {},
+      "endpoints": {
+        "images": "POST /api/v1/services/aigc/image2image/image-synthesis"
+      },
       "reasoning_param": null
     }
   ]

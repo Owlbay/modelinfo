@@ -1,7 +1,7 @@
 {
   "id": "gen4_aleph",
   "object": "model",
-  "created": null,
+  "created": 1754006400,
   "owned_by": "runway",
   "name": "Gen-4 Aleph",
   "api": {
@@ -39,7 +39,7 @@
   "features": [],
   "info": {
     "status": "retired",
-    "release_date": null,
+    "release_date": "2025-08-01",
     "knowledge_cutoff": null,
     "description": "Runway video-to-video editing model; no longer available on Runway Dev since 2026-07-30.",
     "docs": "https://docs.dev.runwayml.com/api-details/api_changelog/",
@@ -65,6 +65,11 @@
     {
       "title": "存档：Pricing | Runway API（原网址 https://docs.dev.runwayml.com/guides/pricing/）",
       "url": "https://web.archive.org/web/20260420145731/https://docs.dev.runwayml.com/guides/pricing/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Official release announcement",
+      "url": "https://docs.dev.runwayml.com/api-details/api_changelog/",
       "retrieved_at": "2026-10-11"
     }
   ],

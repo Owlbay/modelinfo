@@ -6,7 +6,8 @@
   "name": "Jina Embeddings v5 Text Nano",
   "api": {
     "types": [
-      "embeddings"
+      "embeddings",
+      "batch"
     ]
   },
   "limits": {
@@ -34,7 +35,9 @@
     "cache_read": null,
     "cache_write": null
   },
-  "features": [],
+  "features": [
+    "batch"
+  ],
   "info": {
     "status": "active",
     "release_date": "2026-02-18",
@@ -69,6 +72,11 @@
       "title": "Models | Jina AI API",
       "url": "https://api.jina.ai/v1/models",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Jina Search Foundation API - OpenAPI",
+      "url": "https://api.jina.ai/openapi.json",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
@@ -77,7 +85,8 @@
       "model": "jina-embeddings-v5-text-nano",
       "base_url": "https://api.jina.ai",
       "endpoints": {
-        "embeddings": "POST /v1/embeddings"
+        "embeddings": "POST /v1/embeddings",
+        "batch": "POST /v1/batch/embeddings"
       },
       "reasoning_param": null
     }

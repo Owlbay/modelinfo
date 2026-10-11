@@ -1,7 +1,7 @@
 {
   "id": "intern-s2-preview-397b",
   "object": "model",
-  "created": null,
+  "created": 1784246400,
   "owned_by": "shlab",
   "name": "Intern-S2 Preview 397B",
   "api": {
@@ -34,7 +34,7 @@
   ],
   "info": {
     "status": "deprecated",
-    "release_date": null,
+    "release_date": "2026-07-17",
     "knowledge_cutoff": null,
     "description": "Shanghai AI Lab 397B multimodal preview model; goes offline 2026-10-31, replaced by intern-s2.",
     "docs": "https://internlm.intern-ai.org.cn/doc/docs/%E6%A8%A1%E5%9E%8B%E5%88%97%E8%A1%A8/",
@@ -60,6 +60,11 @@
     {
       "title": "Hugging Face internlm/Intern-S2 config.json (official org)",
       "url": "https://huggingface.co/internlm/Intern-S2/blob/main/config.json",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "WAIC 2026 科学前沿论坛发布 Intern-S2-Preview-397B",
+      "url": "https://www.shlab.org.cn/news/5444278",
       "retrieved_at": "2026-10-11"
     }
   ],
