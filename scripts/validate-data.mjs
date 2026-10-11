@@ -84,5 +84,27 @@ for (const file of files) {
     console.error(`✗ ${path.basename(file)}\n  - ${errs.join('\n  - ')}`);
   }
 }
-console.log(`${files.length - bad}/${files.length} 通过`);
+// 全库唯一：模型 ID 与别名共用一个命名空间（别名不能等于其他模型的 ID，也不能同时出现在两个文件里）。
+// 只校验部分文件时也对照全部文件，避免新文件与已有别名冲突。
+const names = new Map();
+const clash = [];
+for (const f of fs.readdirSync(DIR).filter((x) => x.endsWith('.json'))) {
+  let m;
+  try {
+    m = JSON.parse(fs.readFileSync(path.join(DIR, f), 'utf8'));
+  } catch {
+    continue;
+  }
+  for (const [n, kind] of [[m.id, 'id'], ...(Array.isArray(m.aliases) ? m.aliases.map((a) => [a, '别名']) : [])]) {
+    const prev = names.get(n);
+    if (prev && prev.file !== f) clash.push(`${n}：${prev.file}（${prev.kind}）与 ${f}（${kind}）`);
+    else if (prev && kind === '别名' && prev.kind === '别名') clash.push(`${n}：${f} 内重复别名`);
+    else if (!prev) names.set(n, { file: f, kind });
+  }
+}
+if (clash.length) {
+  bad++;
+  console.error(`✗ ID / 别名重复\n  - ${clash.join('\n  - ')}`);
+}
+console.log(`${files.length - (bad - (clash.length ? 1 : 0))}/${files.length} 通过${clash.length ? '，ID / 别名有重复' : ''}`);
 process.exit(bad ? 1 : 0);

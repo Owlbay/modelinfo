@@ -44,9 +44,7 @@
     "docs": null,
     "verified_at": "2026-10-11"
   },
-  "aliases": [
-    "gpt-4-1106-vision-preview"
-  ],
+  "aliases": [],
   "sources": [
     {
       "title": "Deprecations | OpenAI API",

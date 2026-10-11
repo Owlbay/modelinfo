@@ -8,6 +8,17 @@ export async function getModels(): Promise<Model[]> {
   const list = (await getCollection('models')).map((e) => e.data);
   const unknown = [...new Set(list.map((m) => m.owned_by).filter((o) => !VENDORS.has(o)))];
   if (unknown.length) throw new Error(`data/vendors 缺少模型厂商：${unknown.join(', ')}`);
+  // 模型 ID 与别名全库唯一（共用一个命名空间）
+  const owner = new Map<string, string>();
+  const clash: string[] = [];
+  for (const m of list) {
+    for (const n of new Set([m.id, ...m.aliases])) {
+      const prev = owner.get(n);
+      if (prev && prev !== m.id) clash.push(`${n}（${prev} / ${m.id}）`);
+      else owner.set(n, m.id);
+    }
+  }
+  if (clash.length) throw new Error(`模型 ID / 别名重复：${clash.join('，')}`);
   return list.sort(
     (a, b) =>
       (b.created ?? -1) - (a.created ?? -1) ||
