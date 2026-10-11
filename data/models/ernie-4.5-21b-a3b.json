@@ -39,6 +39,11 @@
   "aliases": [
     "ERNIE-4.5-21B-A3B"
   ],
+  "translations": {
+    "zh": {
+      "description": "ERNIE-4.5-21B-A3B，已下线。官方下线日期：2026-04-23。"
+    }
+  },
   "sources": [
     {
       "title": "模型版本升级及退役机制 | 百度千帆",

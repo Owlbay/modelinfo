@@ -55,6 +55,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Gemini 2.5 系列中性价比最高的模型，能力均衡全面。"
+    }
+  },
   "sources": [
     {
       "title": "Gemini 2.5 Flash | Gemini API",

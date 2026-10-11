@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "CosyVoice v3.5 Flash 语音合成模型，支持克隆音色和设计音色。"
+    }
+  },
   "sources": [
     {
       "title": "CosyVoice 语音合成 | 大模型服务平台百炼",

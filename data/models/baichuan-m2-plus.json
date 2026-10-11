@@ -49,6 +49,11 @@
   "aliases": [
     "Baichuan-M2-Plus"
   ],
+  "translations": {
+    "zh": {
+      "description": "百川医疗对话模型，支持循证依据和医疗文件对话。"
+    }
+  },
   "sources": [
     {
       "title": "医疗大模型对话 | 百川智能开放平台",

@@ -55,6 +55,11 @@
     "gemini-1.5-pro-002",
     "gemini-1.5-pro-latest"
   ],
+  "translations": {
+    "zh": {
+      "description": "Gemini 1.5 Pro 是一款中等规模的多模态模型，针对各类推理任务优化。"
+    }
+  },
   "sources": [
     {
       "title": "存档：Model versions and lifecycle | Generative AI on Vertex AI（原网址 https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions）",

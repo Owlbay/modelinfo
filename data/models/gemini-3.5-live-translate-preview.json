@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "低延迟音频到音频模型，用于口语对话的实时翻译。"
+    }
+  },
   "sources": [
     {
       "title": "Gemini 3.5 Live Translate Preview | Gemini API",

@@ -55,6 +55,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "低成本、低延迟的多模态模型，适用于子智能体任务和文档解析等高吞吐工作负载。"
+    }
+  },
   "sources": [
     {
       "title": "Gemini 3.5 Flash-Lite | Gemini API",

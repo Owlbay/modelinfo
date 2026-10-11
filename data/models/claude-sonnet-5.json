@@ -59,6 +59,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Anthropic 模型，兼具快速响应和高智能。"
+    }
+  },
   "sources": [
     {
       "title": "Claude Sonnet 5 | Claude Platform Docs",

@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Runway 的动作捕捉模型。"
+    }
+  },
   "sources": [
     {
       "title": "Available AI Models | Runway API",

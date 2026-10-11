@@ -47,6 +47,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Cohere 性能最强的模型，适用于企业智能体、工具使用、RAG 和多语言任务，且计算开销低。"
+    }
+  },
   "sources": [
     {
       "title": "Command A | Cohere Docs",

@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "稳定、逼真且富有情感表现力的语音；长文本生成最为稳定。"
+    }
+  },
   "sources": [
     {
       "title": "Models | ElevenLabs Documentation",

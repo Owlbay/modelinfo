@@ -40,6 +40,11 @@
     "doubao-lite-4k-character-240515",
     "doubao-lite-4k-character-240828"
   ],
+  "translations": {
+    "zh": {
+      "description": "Doubao-lite-4k-character，已下线。官方停服（EOS）日期：doubao-lite-4k-character-240515 2025-04-15；doubao-lite-4k-character-240828 2025-08-28."
+    }
+  },
   "sources": [
     {
       "title": "模型下线公告 2024 | 火山方舟",

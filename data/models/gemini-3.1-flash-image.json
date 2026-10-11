@@ -51,6 +51,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "速度优化的图像生成与对话式编辑模型，适用于大规模使用。"
+    }
+  },
   "sources": [
     {
       "title": "Nano Banana 2 | Gemini API",

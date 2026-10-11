@@ -50,6 +50,11 @@
   "aliases": [
     "gemini-embedding-2-preview"
   ],
+  "translations": {
+    "zh": {
+      "description": "多模态向量模型，将文本、图像、视频、音频和 PDF 映射到同一向量空间。"
+    }
+  },
   "sources": [
     {
       "title": "Gemini Embedding 2 | Gemini API",

@@ -39,6 +39,11 @@
   "aliases": [
     "bulbul:v4-flash"
   ],
+  "translations": {
+    "zh": {
+      "description": "最新的文本转语音模型，提供 200 多种人设音色，API 约定与 Bulbul v3 相同。"
+    }
+  },
   "sources": [
     {
       "title": "Bulbul | Sarvam Docs",

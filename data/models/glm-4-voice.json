@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "首个端到端语音模型，可理解和生成中英文语音，用于实时对话。"
+    }
+  },
   "sources": [
     {
       "title": "GLM-4-Voice | 智谱 AI 开放文档",

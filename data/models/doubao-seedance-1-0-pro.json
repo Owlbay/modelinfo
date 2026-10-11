@@ -47,6 +47,11 @@
   "aliases": [
     "doubao-seedance-1-0-pro-250528"
   ],
+  "translations": {
+    "zh": {
+      "description": "文本、首帧及首尾帧视频生成（计划下线）。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 火山方舟",

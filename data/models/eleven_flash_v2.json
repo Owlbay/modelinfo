@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "快速的仅英语语音合成模型，适用于实时场景。"
+    }
+  },
   "sources": [
     {
       "title": "Models | ElevenLabs Documentation",

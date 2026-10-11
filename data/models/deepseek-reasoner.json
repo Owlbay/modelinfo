@@ -48,6 +48,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "DeepSeek 旗舰模型思考模式的旧版 API 名称（最近一次定价快照时为 DeepSeek-V3.2）。已宣布于 2026-07-24 停用。"
+    }
+  },
   "sources": [
     {
       "title": "Change Log | DeepSeek API Docs",

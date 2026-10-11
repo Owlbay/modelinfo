@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Speechmatics 精度最高的单语言音频语音转文字模型，支持批量和实时转写。"
+    }
+  },
   "sources": [
     {
       "title": "Models | Speechmatics Docs",

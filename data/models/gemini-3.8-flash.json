@@ -59,6 +59,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "最智能的 Flash 模型，适用于长周期编程、智能体和企业工作流。"
+    }
+  },
   "sources": [
     {
       "title": "Gemini 3.8 Flash | Gemini API",

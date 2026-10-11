@@ -55,6 +55,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "思考模型，适用于代码、数学和 STEM 领域的复杂推理，以及分析大型数据集和文档。"
+    }
+  },
   "sources": [
     {
       "title": "Gemini 2.5 Pro | Gemini API",

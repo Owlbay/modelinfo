@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "多语言遵循指令重排模型，先按相关性、再按时效性、文档类型或来源等自定义指令对文档排序。"
+    }
+  },
   "sources": [
     {
       "title": "Rerank | Contextual AI Docs",

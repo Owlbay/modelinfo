@@ -52,6 +52,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "上一代原生多模态推理模型；请求会路由至 Gemini 3.8 Flash。"
+    }
+  },
   "sources": [
     {
       "title": "Gemini 3.7 Flash | Gemini API",

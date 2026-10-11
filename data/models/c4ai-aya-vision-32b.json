@@ -38,6 +38,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "32B 多模态模型，用于语言、文本和图像任务，覆盖 23 种语言。"
+    }
+  },
   "sources": [
     {
       "title": "Aya Vision 32B | Cohere Docs",

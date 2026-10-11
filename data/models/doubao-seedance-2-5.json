@@ -48,6 +48,11 @@
   "aliases": [
     "doubao-seedance-2-5-260628"
   ],
+  "translations": {
+    "zh": {
+      "description": "视频生成，支持全模态参考、视频编辑与延长，最长 30 秒。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 火山方舟",

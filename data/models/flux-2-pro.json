@@ -38,6 +38,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "生产级 FLUX.2 图像生成与编辑，支持多参考输入，输出最高 4MP。"
+    }
+  },
   "sources": [
     {
       "title": "FLUX.2 Overview | Black Forest Labs Docs",

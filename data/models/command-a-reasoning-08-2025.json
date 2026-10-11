@@ -40,6 +40,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Cohere 首个推理模型，适用于 23 种语言的精细问题求解和智能体任务。"
+    }
+  },
   "sources": [
     {
       "title": "Command A Reasoning | Cohere Docs",

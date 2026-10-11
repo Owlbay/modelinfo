@@ -44,6 +44,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "32B GLM-4 文本模型，128K 上下文。"
+    }
+  },
   "sources": [
     {
       "title": "Pricing | Z.AI Developer Document",

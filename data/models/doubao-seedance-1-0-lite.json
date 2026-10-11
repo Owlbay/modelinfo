@@ -41,6 +41,11 @@
     "doubao-seedance-1-0-lite-i2v-250428",
     "doubao-seedance-1-0-lite-t2v-250428"
   ],
+  "translations": {
+    "zh": {
+      "description": "Doubao-Seedance-1.0-lite，已下线。官方停服（EOS）日期：doubao-seedance-1-0-lite-i2v-250428 2026-05-11；doubao-seedance-1-0-lite-t2v-250428 2026-05-11."
+    }
+  },
   "sources": [
     {
       "title": "模型下线公告 | 火山方舟",

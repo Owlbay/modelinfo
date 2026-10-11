@@ -46,6 +46,11 @@
   "aliases": [
     "Baichuan2-Turbo-192k"
   ],
+  "translations": {
+    "zh": {
+      "description": "Baichuan2-Turbo 长上下文模型（192k）。已于 2024-08-16 下线；调用会路由至 Baichuan3-Turbo-128k。"
+    }
+  },
   "sources": [
     {
       "title": "价格说明 | 百川智能开放平台",

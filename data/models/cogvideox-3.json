@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "视频生成模型，支持首尾帧，每个视频定价 $0.2。"
+    }
+  },
   "sources": [
     {
       "title": "CogVideoX-3 | Z.AI Developer Document",

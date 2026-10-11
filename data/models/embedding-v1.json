@@ -44,6 +44,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "百度文本向量模型，输出 384 维向量。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 百度千帆",

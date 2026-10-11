@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "多语言音色设计模型。"
+    }
+  },
   "sources": [
     {
       "title": "Models | ElevenLabs Documentation",

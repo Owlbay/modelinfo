@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "文本向量模型，适用于语义搜索、文档检索和推荐。"
+    }
+  },
   "sources": [
     {
       "title": "Gemini Embedding | Gemini API",

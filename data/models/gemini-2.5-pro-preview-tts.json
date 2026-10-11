@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "高保真文本转语音模型，适用于播客和有声书。"
+    }
+  },
   "sources": [
     {
       "title": "Gemini 2.5 Pro TTS | Gemini API",

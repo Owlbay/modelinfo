@@ -40,6 +40,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "百度 ERNIE X1.1 深度思考模型；已于 2026-09-29 下线。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 百度千帆",

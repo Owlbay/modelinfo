@@ -43,6 +43,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "具备原生音频的实时语音与视频智能体模型。"
+    }
+  },
   "sources": [
     {
       "title": "Gemini 2.5 Flash Live | Gemini API",

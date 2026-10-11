@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "免费图像生成模型，支持多种分辨率。"
+    }
+  },
   "sources": [
     {
       "title": "CogView-3-Flash | 智谱 AI 开放文档",

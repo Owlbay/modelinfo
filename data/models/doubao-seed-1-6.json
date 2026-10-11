@@ -42,6 +42,11 @@
     "doubao-seed-1-6-250615",
     "doubao-seed-1-6-251015"
   ],
+  "translations": {
+    "zh": {
+      "description": "Doubao-Seed-1.6，已下线。官方停服（EOS）日期：doubao-seed-1-6-250615 2026-09-21；doubao-seed-1-6-251015 2026-09-21."
+    }
+  },
   "sources": [
     {
       "title": "模型下线公告 | 火山方舟",

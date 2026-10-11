@@ -38,6 +38,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "embed-multilingual-v3.0 的更小、更快版本。多语言。"
+    }
+  },
   "sources": [
     {
       "title": "Embed Multilingual Light v3.0 | Cohere Docs",

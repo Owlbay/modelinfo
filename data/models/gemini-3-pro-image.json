@@ -49,6 +49,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "推理驱动的模型，用于专业图像生成与编辑，文字渲染准确。"
+    }
+  },
   "sources": [
     {
       "title": "Nano Banana Pro | Gemini API",

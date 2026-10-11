@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "文本驱动的局部重绘，编辑图像中被遮罩的区域。"
+    }
+  },
   "sources": [
     {
       "title": "FLUX.1 Fill [pro] | Black Forest Labs Docs",

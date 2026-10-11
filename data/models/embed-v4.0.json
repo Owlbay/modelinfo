@@ -38,6 +38,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "文本和图像向量模型，同时支持分类。"
+    }
+  },
   "sources": [
     {
       "title": "Embed v4.0 | Cohere Docs",

@@ -38,6 +38,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "多语言向量与分类模型。"
+    }
+  },
   "sources": [
     {
       "title": "Embed Multilingual v3.0 | Cohere Docs",

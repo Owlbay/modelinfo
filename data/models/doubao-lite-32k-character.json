@@ -40,6 +40,11 @@
     "doubao-lite-32k-character-241015",
     "doubao-lite-32k-character-250228"
   ],
+  "translations": {
+    "zh": {
+      "description": "Doubao-lite-32k-character，已下线。官方停服（EOS）日期：doubao-lite-32k-character-241015 2025-08-28；doubao-lite-32k-character-250228 2026-03-24."
+    }
+  },
   "sources": [
     {
       "title": "模型下线公告 2025 | 火山方舟",

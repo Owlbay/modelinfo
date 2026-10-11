@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Gemini 向量模型在代码、多语言和检索等多个关键维度上达到 SOTA 表现。"
+    }
+  },
   "sources": [
     {
       "title": "Deprecations | Gemini API",

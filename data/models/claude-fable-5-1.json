@@ -59,6 +59,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "适用于高要求的推理和长周期智能体工作。"
+    }
+  },
   "sources": [
     {
       "title": "Claude Fable 5.1 | Claude Platform Docs",

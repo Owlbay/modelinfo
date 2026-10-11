@@ -42,6 +42,11 @@
     "doubao-pro-32k-functioncall-241028",
     "doubao-pro-32k-functioncall-preview"
   ],
+  "translations": {
+    "zh": {
+      "description": "Doubao-pro-32k-functioncall，已下线。官方停服（EOS）日期：doubao-pro-32k-functioncall-240515 2025-05-28；doubao-pro-32k-functioncall-240815 2025-05-28；doubao-pro-32k-functioncall-241028 2025-08-28；doubao-pro-32k-functioncall-preview 2025-08-28."
+    }
+  },
   "sources": [
     {
       "title": "模型下线公告 2025 | 火山方舟",

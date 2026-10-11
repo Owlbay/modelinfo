@@ -47,6 +47,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Command R+ 的 2024 年 8 月更新版，针对对话交互、复杂 RAG 和多步工具使用优化。"
+    }
+  },
   "sources": [
     {
       "title": "Command R+ | Cohere Docs",

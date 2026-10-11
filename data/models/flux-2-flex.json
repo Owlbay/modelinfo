@@ -38,6 +38,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "FLUX.2 模型，适用于排版、文字渲染和精细细节，步数和引导系数可调。"
+    }
+  },
   "sources": [
     {
       "title": "FLUX.2 Overview | Black Forest Labs Docs",

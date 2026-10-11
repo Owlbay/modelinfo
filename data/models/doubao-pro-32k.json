@@ -42,6 +42,11 @@
     "doubao-pro-32k-240828",
     "doubao-pro-32k-241215"
   ],
+  "translations": {
+    "zh": {
+      "description": "Doubao-pro-32k，已下线。官方停服（EOS）日期：doubao-pro-32k-240515 2025-04-15；doubao-pro-32k-240615 2025-05-28；doubao-pro-32k-240828 2025-08-28；doubao-pro-32k-241215 2025-11-27."
+    }
+  },
   "sources": [
     {
       "title": "模型下线公告 2024 | 火山方舟",

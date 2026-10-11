@@ -47,6 +47,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "千帆平台上的百度 ERNIE 5.1 文本生成模型。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 百度千帆",

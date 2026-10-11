@@ -52,6 +52,11 @@
     "aura-2-livia-it",
     "aura-2-fujin-ja"
   ],
+  "translations": {
+    "zh": {
+      "description": "Deepgram Aura-2 文本转语音模型系列；每个音色都是形如 aura-2-{voice}-{language} 的模型 ID。"
+    }
+  },
   "sources": [
     {
       "title": "Text to Speech Models | Deepgram Docs",

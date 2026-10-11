@@ -46,6 +46,11 @@
   "aliases": [
     "doubao-seed3d-2-0-260328"
   ],
+  "translations": {
+    "zh": {
+      "description": "图生 3D 模型，生成带 PBR 材质的带纹理 3D 文件（glb、obj、usd、usdz）；异步任务 API。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 火山方舟",

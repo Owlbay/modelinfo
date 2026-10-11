@@ -55,6 +55,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "高性价比的多模态模型，适用于大规模、轻量、低延迟的任务。"
+    }
+  },
   "sources": [
     {
       "title": "Gemini 2.5 Flash-Lite | Gemini API",

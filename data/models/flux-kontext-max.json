@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "更高档的 FLUX.1 Kontext 模型，用于文生图和上下文感知的图像编辑。"
+    }
+  },
   "sources": [
     {
       "title": "FLUX.1 Kontext Introduction | Black Forest Labs Docs",

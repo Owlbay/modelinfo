@@ -38,6 +38,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "电影级视频生成模型，适用于基于参考的生成和动作场景：文生视频、图生视频、首尾帧及参考生视频，支持 1-15 秒片段、最高 1080p，可选音频。"
+    }
+  },
   "sources": [
     {
       "title": "Model Overview | PixVerse Platform Docs",

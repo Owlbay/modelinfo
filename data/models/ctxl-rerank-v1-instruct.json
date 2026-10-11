@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Contextual AI 首个遵循指令的重排模型；先按相关性排序，再按自定义指令排序。"
+    }
+  },
   "sources": [
     {
       "title": "Rerank | Contextual AI Docs",

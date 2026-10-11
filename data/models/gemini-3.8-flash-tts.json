@@ -47,6 +47,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "旗舰级富有表现力的文本转语音模型，具备录音棚级音色保真度。"
+    }
+  },
   "sources": [
     {
       "title": "Gemini 3.8 Flash TTS | Gemini API",

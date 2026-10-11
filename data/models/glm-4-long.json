@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "专为超长文本和记忆类任务设计的语言模型，支持 1M token 输入。"
+    }
+  },
   "sources": [
     {
       "title": "GLM-4-Long | 智谱 AI 开放文档",

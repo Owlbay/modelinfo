@@ -55,6 +55,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "面向智能体工作负载的模型，代码生成和空间推理能力强，速度快、成本低。"
+    }
+  },
   "sources": [
     {
       "title": "Gemini 3.6 Flash | Gemini API",

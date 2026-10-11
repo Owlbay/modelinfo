@@ -49,6 +49,11 @@
     "doubao-seedream-5-0-lite-260128",
     "doubao-seedream-5-0-lite"
   ],
+  "translations": {
+    "zh": {
+      "description": "图像生成，支持文生图、图生图和组图输出（计划下线）。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 火山方舟",

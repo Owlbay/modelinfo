@@ -64,6 +64,11 @@
     "doubao-seed-2-1-pro-260915",
     "doubao-seed-2-1-pro-260628"
   ],
+  "translations": {
+    "zh": {
+      "description": "Doubao Seed 2.1 旗舰模型，支持深度思考、多模态理解和工具使用。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 火山方舟",

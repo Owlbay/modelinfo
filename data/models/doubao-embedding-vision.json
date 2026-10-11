@@ -49,6 +49,11 @@
     "doubao-embedding-vision-251215",
     "doubao-embedding-vision-250615"
   ],
+  "translations": {
+    "zh": {
+      "description": "多模态向量模型，支持文本、图像和视频输入，最高 2048 维。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 火山方舟",

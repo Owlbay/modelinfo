@@ -40,6 +40,11 @@
     "doubao-pro-4k-character-240515",
     "doubao-pro-4k-character-240728"
   ],
+  "translations": {
+    "zh": {
+      "description": "Doubao-pro-4k-character，已下线。官方停服（EOS）日期：doubao-pro-4k-character-240515 2025-04-15；doubao-pro-4k-character-240728 2025-05-28."
+    }
+  },
   "sources": [
     {
       "title": "模型下线公告 2024 | 火山方舟",

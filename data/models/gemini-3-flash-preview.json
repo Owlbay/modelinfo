@@ -55,6 +55,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "前沿级多模态与智能体模型，成本低。"
+    }
+  },
   "sources": [
     {
       "title": "Gemini 3 Flash Preview | Gemini API",

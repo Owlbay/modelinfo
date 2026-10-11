@@ -47,6 +47,11 @@
   "aliases": [
     "doubao-seedream-5-0-pro-260628"
   ],
+  "translations": {
+    "zh": {
+      "description": "图像创作模型，支持可控编辑和图层分解。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 火山方舟",

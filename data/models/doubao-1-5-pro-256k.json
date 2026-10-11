@@ -39,6 +39,11 @@
   "aliases": [
     "doubao-1-5-pro-256k-250115"
   ],
+  "translations": {
+    "zh": {
+      "description": "Doubao-1.5-pro-256k，已下线。官方停服（EOS）日期：doubao-1-5-pro-256k-250115 为 2025-11-27。"
+    }
+  },
   "sources": [
     {
       "title": "模型下线公告 2025 | 火山方舟",

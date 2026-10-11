@@ -58,6 +58,11 @@
     "deepseek-v4-flash",
     "deepseek-v4-flash-vision-exp"
   ],
+  "translations": {
+    "zh": {
+      "description": "DeepSeek-V4.1-Flash，新架构系列中最小的模型，具备原生多模态视觉理解能力。"
+    }
+  },
   "sources": [
     {
       "title": "Models & Pricing | DeepSeek API Docs",

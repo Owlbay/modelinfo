@@ -42,6 +42,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "我们前沿的代码语言模型。Codestral 擅长低延迟、高频率任务，如中间填充（FIM）、代码纠错和测试生成。"
+    }
+  },
   "sources": [
     {
       "title": "Codestral | Mistral Docs",

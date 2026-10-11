@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "FLUX 3 图像生成与编辑，使用同一端点，支持边界框布局控制、最多十张参考图，输出最高 4K。"
+    }
+  },
   "sources": [
     {
       "title": "FLUX 3 Image | Black Forest Labs Docs",

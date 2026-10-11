@@ -48,6 +48,11 @@
   "aliases": [
     "doubao-seedance-2-0-260128"
   ],
+  "translations": {
+    "zh": {
+      "description": "视频生成，支持全模态参考、视频编辑与延长，最高 4k。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 火山方舟",

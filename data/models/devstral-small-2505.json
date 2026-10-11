@@ -42,6 +42,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "24B 开源文本模型，擅长使用工具探索代码库、编辑多个文件，并驱动软件工程智能体。"
+    }
+  },
   "sources": [
     {
       "title": "Devstral Small 1.0 | Mistral Docs",

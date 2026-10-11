@@ -38,6 +38,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "embed-english-v3.0 的更小、更快版本。仅支持英语。"
+    }
+  },
   "sources": [
     {
       "title": "Embed English Light v3.0 | Cohere Docs",

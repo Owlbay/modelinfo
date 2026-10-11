@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "情感最丰富、质量最高的语音合成模型，在长文本上具备出色的声音克隆和说话人保持能力。"
+    }
+  },
   "sources": [
     {
       "title": "Models | ElevenLabs Documentation",

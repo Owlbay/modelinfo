@@ -47,6 +47,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Eleven v4 的实时版本，在实时模型中表达最具表现力。"
+    }
+  },
   "sources": [
     {
       "title": "Models | ElevenLabs Documentation",

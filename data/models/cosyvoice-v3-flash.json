@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "CosyVoice v3 Flash 语音合成模型，按输入字符计费。"
+    }
+  },
   "sources": [
     {
       "title": "CosyVoice speech synthesis | Alibaba Cloud Model Studio",

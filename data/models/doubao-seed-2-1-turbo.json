@@ -63,6 +63,11 @@
   "aliases": [
     "doubao-seed-2-1-turbo-260628"
   ],
+  "translations": {
+    "zh": {
+      "description": "Doubao Seed 2.1 高速模型，支持深度思考和多模态理解。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 火山方舟",

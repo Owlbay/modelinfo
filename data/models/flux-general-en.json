@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Deepgram Flux 语音转文字模型，面向带轮次检测的语音智能体，英语。"
+    }
+  },
   "sources": [
     {
       "title": "Models & Languages Overview | Deepgram Docs",

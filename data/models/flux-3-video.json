@@ -46,6 +46,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "FLUX 3 视频生成，带同步音频，输入可为文本、关键帧图像或参考片段。"
+    }
+  },
   "sources": [
     {
       "title": "FLUX 3 Video | Black Forest Labs Docs",

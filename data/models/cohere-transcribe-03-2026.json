@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "开源模型，用于高精度多语言语音转写（文件最大 25MB）。"
+    }
+  },
   "sources": [
     {
       "title": "Cohere Transcribe | Cohere Docs",

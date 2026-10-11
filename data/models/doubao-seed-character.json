@@ -63,6 +63,11 @@
   "aliases": [
     "doubao-seed-character-260628"
   ],
+  "translations": {
+    "zh": {
+      "description": "Doubao Seed 角色扮演与角色对话模型，支持深度思考。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 火山方舟",

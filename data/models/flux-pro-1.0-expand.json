@@ -38,6 +38,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "在图像任意一侧添加像素以扩展图像，同时保持上下文。"
+    }
+  },
   "sources": [
     {
       "title": "FLUX.1 Fill [pro] | Black Forest Labs Docs",

@@ -38,6 +38,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "质量最高的 FLUX.2 模型，支持 grounding 搜索、多参考编辑，提示词遵循能力强。"
+    }
+  },
   "sources": [
     {
       "title": "FLUX.2 Overview | Black Forest Labs Docs",

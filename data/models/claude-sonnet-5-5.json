@@ -59,6 +59,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "速度与智能的最佳组合。"
+    }
+  },
   "sources": [
     {
       "title": "Claude Sonnet 5.5 | Claude Platform Docs",

@@ -38,6 +38,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "亚秒级 FLUX.2 图像生成与编辑，权重开放，兼顾质量与速度。"
+    }
+  },
   "sources": [
     {
       "title": "FLUX.2 Overview | Black Forest Labs Docs",

@@ -41,6 +41,11 @@
   "aliases": [
     "doubao-seed-code-preview-251028"
   ],
+  "translations": {
+    "zh": {
+      "description": "Doubao-Seed-Code-preview，已下线。官方停服（EOS）日期：doubao-seed-code-preview-251028 2026-09-21."
+    }
+  },
   "sources": [
     {
       "title": "模型下线公告 | 火山方舟",

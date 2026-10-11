@@ -51,6 +51,11 @@
   "aliases": [
     "computer-use-preview-2025-03-11"
   ],
+  "translations": {
+    "zh": {
+      "description": "用于 computer use 工具的专用模型。"
+    }
+  },
   "sources": [
     {
       "title": "computer-use-preview Model | OpenAI API",

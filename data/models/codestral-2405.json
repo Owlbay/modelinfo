@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "我们首个前沿的代码与 FIM 语言模型，以 MNPL 许可证发布。"
+    }
+  },
   "sources": [
     {
       "title": "Codestral | Mistral Docs",

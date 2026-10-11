@@ -63,6 +63,11 @@
   "aliases": [
     "doubao-seed-2-1-lite-260915"
   ],
+  "translations": {
+    "zh": {
+      "description": "Doubao Seed 2.1 轻量模型，具备 1M token 上下文和音频理解能力。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 火山方舟",

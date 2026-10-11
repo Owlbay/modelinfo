@@ -41,6 +41,11 @@
     "doubao-lite-32k-240628",
     "doubao-lite-32k-240828"
   ],
+  "translations": {
+    "zh": {
+      "description": "Doubao-lite-32k，已下线。官方停服（EOS）日期：doubao-lite-32k-240428 2025-04-15；doubao-lite-32k-240428 2025-05-28；doubao-lite-32k-240628 2025-05-28；doubao-lite-32k-240828 2025-11-27."
+    }
+  },
   "sources": [
     {
       "title": "模型下线公告 2024 | 火山方舟",

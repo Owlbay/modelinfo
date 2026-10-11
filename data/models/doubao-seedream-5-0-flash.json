@@ -47,6 +47,11 @@
   "aliases": [
     "doubao-seedream-5-0-flash-260915"
   ],
+  "translations": {
+    "zh": {
+      "description": "快速的图像创作与编辑模型。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 火山方舟",

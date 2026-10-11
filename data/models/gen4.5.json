@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Runway 最先进的文生视频和图生视频模型。"
+    }
+  },
   "sources": [
     {
       "title": "Available AI Models | Runway API",

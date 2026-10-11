@@ -47,6 +47,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "ERNIE 5.0 思考模型的实验版本，默认速率限制较低。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 百度千帆",

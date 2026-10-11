@@ -49,6 +49,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "指向 ChatGPT 此前使用的图像快照。"
+    }
+  },
   "sources": [
     {
       "title": "chatgpt-image-latest Model | OpenAI API",

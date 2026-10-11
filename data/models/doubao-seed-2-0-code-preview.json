@@ -62,6 +62,11 @@
   "aliases": [
     "doubao-seed-2-0-code-preview-260215"
   ],
+  "translations": {
+    "zh": {
+      "description": "Doubao Seed 2.0 编程预览模型（计划下线）。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 火山方舟",

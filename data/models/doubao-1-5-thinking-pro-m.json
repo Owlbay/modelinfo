@@ -41,6 +41,11 @@
     "doubao-1.5-thinking-pro-m-250415",
     "doubao-1-5-thinking-pro-m-250428"
   ],
+  "translations": {
+    "zh": {
+      "description": "Doubao-1.5-thinking-pro-m，已下线。官方停服（EOS）日期：doubao-1.5-thinking-pro-m-250415 2025-08-28；doubao-1-5-thinking-pro-m-250428 2026-03-31."
+    }
+  },
   "sources": [
     {
       "title": "模型下线公告 2025 | 火山方舟",

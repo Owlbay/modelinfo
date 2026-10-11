@@ -41,6 +41,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "通用托管智能体，在 Google 托管的 Linux 沙箱中规划任务、运行代码、管理文件并搜索网页（Interactions API）。"
+    }
+  },
   "sources": [
     {
       "title": "Antigravity preview 09-2026 | Gemini API",

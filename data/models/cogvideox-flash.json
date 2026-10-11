@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "免费视频生成模型，支持文生视频和图生视频。"
+    }
+  },
   "sources": [
     {
       "title": "CogVideoX-Flash | 智谱 AI 开放文档",

@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "embed-v5.0-pro 的更快、更轻量版本，支持文本和图像。"
+    }
+  },
   "sources": [
     {
       "title": "Embed v5.0 Fast | Cohere Docs",

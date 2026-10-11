@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "多语言变声器（语音转语音）。"
+    }
+  },
   "sources": [
     {
       "title": "Models | ElevenLabs Documentation",

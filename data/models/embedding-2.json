@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "第二代文本向量模型，输出 1024 维向量。"
+    }
+  },
   "sources": [
     {
       "title": "Embedding-2 | 智谱 AI 开放文档",

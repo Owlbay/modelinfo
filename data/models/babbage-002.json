@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "GPT-3 ada 和 babbage 基础模型的替代品。"
+    }
+  },
   "sources": [
     {
       "title": "babbage-002 Model | OpenAI API",

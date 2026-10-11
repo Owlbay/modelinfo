@@ -43,6 +43,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Google 开放的 Gemma 4 模型，通过 Gemini API 提供，256K 上下文，支持思考和函数调用（仅限免费层）。"
+    }
+  },
   "sources": [
     {
       "title": "Gemma on the Gemini API | Google AI for Developers",

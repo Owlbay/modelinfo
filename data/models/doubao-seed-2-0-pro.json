@@ -63,6 +63,11 @@
   "aliases": [
     "doubao-seed-2-0-pro-260215"
   ],
+  "translations": {
+    "zh": {
+      "description": "Doubao Seed 2.0 旗舰模型，支持深度思考和多模态理解（计划下线）。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 火山方舟",

@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "上一代模型，结合文生图与上下文感知的图像编辑。"
+    }
+  },
   "sources": [
     {
       "title": "FLUX.1 Kontext Introduction | Black Forest Labs Docs",

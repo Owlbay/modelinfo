@@ -49,6 +49,11 @@
   "aliases": [
     "codestral-embed"
   ],
+  "translations": {
+    "zh": {
+      "description": "语义向量模型，用于提取代码的表示。"
+    }
+  },
   "sources": [
     {
       "title": "Codestral Embed | Mistral Docs",

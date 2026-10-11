@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Deep Research 变体，面向长时间运行、对准确性要求高的调查，追求最大程度的全面性（Interactions API）。"
+    }
+  },
   "sources": [
     {
       "title": "Deep Research Max preview 04-2026 | Gemini API",

@@ -39,6 +39,11 @@
   "aliases": [
     "ERNIE-3.5-8K-1222"
   ],
+  "translations": {
+    "zh": {
+      "description": "ERNIE-3.5-8K-1222，已下线。官方下线日期：2024-05-30。"
+    }
+  },
   "sources": [
     {
       "title": "模型版本升级及退役机制 | 百度千帆",

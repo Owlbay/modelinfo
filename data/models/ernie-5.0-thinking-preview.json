@@ -48,6 +48,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "ERNIE 5.0 的预览版本，默认开启深度思考。计划于 2026-10-29 下线（官方下线通知）。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 百度千帆",

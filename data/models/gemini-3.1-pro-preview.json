@@ -57,6 +57,11 @@
   "aliases": [
     "gemini-3.1-pro-preview-customtools"
   ],
+  "translations": {
+    "zh": {
+      "description": "Pro 模型，思考能力和 token 效率得到提升，适用于高级推理和智能体编程。"
+    }
+  },
   "sources": [
     {
       "title": "Gemini 3.1 Pro Preview | Gemini API",

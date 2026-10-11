@@ -45,6 +45,11 @@
     "devstral-latest",
     "devstral-medium-latest"
   ],
+  "translations": {
+    "zh": {
+      "description": "我们的前沿代码智能体模型，用于解决软件工程任务；擅长使用工具探索代码库、编辑多个文件，并驱动软件工程智能体。"
+    }
+  },
   "sources": [
     {
       "title": "Devstral 2 | Mistral Docs",

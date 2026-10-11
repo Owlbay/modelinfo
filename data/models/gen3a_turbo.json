@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Runway 图生视频模型；自 2026-07-30 起在 Runway Dev 上不再提供。"
+    }
+  },
   "sources": [
     {
       "title": "Runway API Changelog",

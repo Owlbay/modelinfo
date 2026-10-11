@@ -49,6 +49,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "更轻量的 MoE GLM-4.5 变体，总参数 106B，激活参数 12B。"
+    }
+  },
   "sources": [
     {
       "title": "GLM-4.5 | Z.AI Developer Document",

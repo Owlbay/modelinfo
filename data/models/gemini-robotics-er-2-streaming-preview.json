@@ -50,6 +50,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "面向机器人的视觉语言模型，针对使用 Live API 的实时文本流式输出优化。"
+    }
+  },
   "sources": [
     {
       "title": "Gemini Robotics-ER 2 Streaming Preview | Gemini API",

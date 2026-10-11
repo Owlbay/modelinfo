@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "可控、低延迟的文本转语音模型。"
+    }
+  },
   "sources": [
     {
       "title": "Gemini 2.5 Flash TTS | Gemini API",

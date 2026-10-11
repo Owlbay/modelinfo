@@ -46,6 +46,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Runway 的旗舰上下文视频编辑模型，支持关键帧引导控制。"
+    }
+  },
   "sources": [
     {
       "title": "Available AI Models | Runway API",

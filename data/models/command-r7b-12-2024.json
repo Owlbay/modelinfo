@@ -47,6 +47,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "小型快速模型，适用于 RAG、工具使用、智能体和多步推理。"
+    }
+  },
   "sources": [
     {
       "title": "Command R7B | Cohere Docs",

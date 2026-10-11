@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "已弃用的图像生成模型。"
+    }
+  },
   "sources": [
     {
       "title": "DALL·E 2 Model | OpenAI API",

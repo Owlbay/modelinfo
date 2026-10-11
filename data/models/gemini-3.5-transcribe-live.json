@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "用于 Live API 的低延迟流式语音转文字模型。"
+    }
+  },
   "sources": [
     {
       "title": "Gemini 3.5 Transcribe Live | Gemini API",

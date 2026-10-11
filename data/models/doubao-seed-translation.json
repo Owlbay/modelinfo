@@ -50,6 +50,11 @@
   "aliases": [
     "doubao-seed-translation-250915"
   ],
+  "translations": {
+    "zh": {
+      "description": "针对翻译增强的 Doubao Seed 模型。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 火山方舟",

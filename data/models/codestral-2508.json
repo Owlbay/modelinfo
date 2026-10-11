@@ -52,6 +52,11 @@
   "aliases": [
     "codestral-latest"
   ],
+  "translations": {
+    "zh": {
+      "description": "用于代码补全的语言模型，擅长低延迟、高频率任务，如中间填充和代码生成。"
+    }
+  },
   "sources": [
     {
       "title": "Codestral | Mistral Docs",

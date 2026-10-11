@@ -39,6 +39,11 @@
   "aliases": [
     "doubao-seed3d-1-0-250928"
   ],
+  "translations": {
+    "zh": {
+      "description": "Doubao-Seed3D-1.0，已下线。官方停服（EOS）日期：doubao-seed3d-1-0-250928 2026-03-24."
+    }
+  },
   "sources": [
     {
       "title": "模型下线公告 | 火山方舟",

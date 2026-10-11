@@ -47,6 +47,11 @@
   "aliases": [
     "document-parse-260930"
   ],
+  "translations": {
+    "zh": {
+      "description": "将复杂文档转换为 AI 可读的 HTML 和 Markdown；按页计价。"
+    }
+  },
   "sources": [
     {
       "title": "Document Parse | Upstage Docs",

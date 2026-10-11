@@ -47,6 +47,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "快速、低成本的文本转语音模型，适用于大规模生产。"
+    }
+  },
   "sources": [
     {
       "title": "Gemini 3.8 Flash-Lite TTS | Gemini API",

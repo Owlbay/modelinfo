@@ -48,6 +48,11 @@
     "document-classify-260304",
     "document-classify-260114"
   ],
+  "translations": {
+    "zh": {
+      "description": "将文档按用户定义的类别进行语义分类；按页计价。"
+    }
+  },
   "sources": [
     {
       "title": "Document Classify | Upstage Docs",

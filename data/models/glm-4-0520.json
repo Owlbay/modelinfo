@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "GLM-4 语言模型 0520 快照。根据官方模型概览，已于 2025-12-30 弃用。"
+    }
+  },
   "sources": [
     {
       "title": "模型概览 | 智谱AI开放文档（存档，原网址 https://docs.bigmodel.cn/cn/guide/start/model-overview）",

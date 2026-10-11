@@ -42,6 +42,11 @@
   "aliases": [
     "4.0Ultra"
   ],
+  "translations": {
+    "zh": {
+      "description": "讯飞星火旗舰非思考语言模型，支持函数调用和联网搜索。"
+    }
+  },
   "sources": [
     {
       "title": "星火认知大模型 HTTP 接口文档 | 讯飞星火",

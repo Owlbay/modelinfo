@@ -46,6 +46,11 @@
   "aliases": [
     "cogview-4-250304"
   ],
+  "translations": {
+    "zh": {
+      "description": "中英双语文生图模型，每张图像定价 $0.01。"
+    }
+  },
   "sources": [
     {
       "title": "CogView-4 | Z.AI Developer Document",

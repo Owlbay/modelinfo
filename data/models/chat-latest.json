@@ -51,6 +51,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "指向 ChatGPT 当前使用的最新 Instant 模型。"
+    }
+  },
   "sources": [
     {
       "title": "chat-latest Model | OpenAI API",

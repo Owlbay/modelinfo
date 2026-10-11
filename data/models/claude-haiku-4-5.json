@@ -55,6 +55,11 @@
   "aliases": [
     "claude-haiku-4-5-20251001"
   ],
+  "translations": {
+    "zh": {
+      "description": "Anthropic 的快速模型，智能水平接近前沿。"
+    }
+  },
   "sources": [
     {
       "title": "Claude Haiku 4.5 | Claude Platform Docs",

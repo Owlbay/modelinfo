@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "能力最强的文本和图像向量模型。"
+    }
+  },
   "sources": [
     {
       "title": "Embed v5.0 Pro | Cohere Docs",

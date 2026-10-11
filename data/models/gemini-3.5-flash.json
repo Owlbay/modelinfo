@@ -50,6 +50,11 @@
   "aliases": [
     "gemini-flash-latest"
   ],
+  "translations": {
+    "zh": {
+      "description": "已弃用的上一代 Flash 模型；请求会路由至 Gemini 3.6 Flash。"
+    }
+  },
   "sources": [
     {
       "title": "Gemini 3.5 Flash | Gemini API",

@@ -48,6 +48,11 @@
   "aliases": [
     "doubao-seedance-2-0-fast-260128"
   ],
+  "translations": {
+    "zh": {
+      "description": "更快的 Seedance 2.0 视频生成，支持 480p 和 720p。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 火山方舟",

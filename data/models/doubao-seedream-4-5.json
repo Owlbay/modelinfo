@@ -47,6 +47,11 @@
   "aliases": [
     "doubao-seedream-4-5-251128"
   ],
+  "translations": {
+    "zh": {
+      "description": "图像生成，支持文生图、图生图和组图输出（计划下线）。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 火山方舟",

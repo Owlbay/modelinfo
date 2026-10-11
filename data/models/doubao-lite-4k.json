@@ -39,6 +39,11 @@
   "aliases": [
     "doubao-lite-4k-240328"
   ],
+  "translations": {
+    "zh": {
+      "description": "Doubao-lite-4k，已下线。官方停服（EOS）日期：doubao-lite-4k-240328 2025-04-15."
+    }
+  },
   "sources": [
     {
       "title": "模型下线公告 2024 | 火山方舟",

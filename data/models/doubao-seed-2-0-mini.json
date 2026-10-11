@@ -64,6 +64,11 @@
     "doubao-seed-2-0-mini-260428",
     "doubao-seed-2-0-mini-260215"
   ],
+  "translations": {
+    "zh": {
+      "description": "Doubao Seed 2.0 小型模型，支持深度思考和多模态理解。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 火山方舟",

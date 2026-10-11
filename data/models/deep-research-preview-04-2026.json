@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "智能体研究员，可自主进行多步调查并生成带引用的报告（Interactions API）。"
+    }
+  },
   "sources": [
     {
       "title": "Deep Research preview 04-2026 | Gemini API",

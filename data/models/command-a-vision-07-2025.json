@@ -38,6 +38,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "图像处理模型，适用于图表、表格、示意图、OCR、文档问答和目标检测。"
+    }
+  },
   "sources": [
     {
       "title": "Command A Vision | Cohere Docs",

@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "第三代文本向量模型，输出维度可在 256 到 2048 之间自定义。"
+    }
+  },
   "sources": [
     {
       "title": "Embedding-3 | 智谱 AI 开放文档",

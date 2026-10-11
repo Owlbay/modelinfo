@@ -60,6 +60,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "快速迭代的 Seed 编程与智能体模型。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 火山方舟",

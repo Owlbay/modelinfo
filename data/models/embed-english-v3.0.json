@@ -38,6 +38,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "仅支持英语的向量与分类模型。"
+    }
+  },
   "sources": [
     {
       "title": "Embed English v3.0 | Cohere Docs",

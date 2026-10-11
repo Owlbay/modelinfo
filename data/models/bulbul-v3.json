@@ -46,6 +46,11 @@
   "aliases": [
     "bulbul:v3"
   ],
+  "translations": {
+    "zh": {
+      "description": "文本转语音模型，提供适用于 10 种印度语言和英语的自然音色，每次请求最多 2,500 个字符。"
+    }
+  },
   "sources": [
     {
       "title": "Bulbul | Sarvam Docs",

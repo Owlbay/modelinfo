@@ -54,6 +54,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "低延迟、低成本的图像生成与编辑模型，适用于大规模交互场景。"
+    }
+  },
   "sources": [
     {
       "title": "Nano Banana 2 Lite | Gemini API",

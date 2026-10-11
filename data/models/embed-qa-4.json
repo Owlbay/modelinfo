@@ -39,6 +39,11 @@
   "aliases": [
     "nvidia/embed-qa-4"
   ],
+  "translations": {
+    "zh": {
+      "description": "针对文本问答检索优化的向量模型。"
+    }
+  },
   "sources": [
     {
       "title": "nvidia / embed-qa-4 | NVIDIA NIM API Reference",

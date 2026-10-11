@@ -50,6 +50,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "针对 Codex CLI 优化的快速推理模型。"
+    }
+  },
   "sources": [
     {
       "title": "codex-mini-latest Model | OpenAI API",

@@ -48,6 +48,11 @@
   "aliases": [
     "doubao-seedance-2-0-mini-260615"
   ],
+  "translations": {
+    "zh": {
+      "description": "小型 Seedance 2.0 视频生成，支持 480p 和 720p。"
+    }
+  },
   "sources": [
     {
       "title": "模型列表 | 火山方舟",

@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "32B 多语言模型，覆盖 23 种语言。"
+    }
+  },
   "sources": [
     {
       "title": "Aya Expanse 32B | Cohere Docs",

@@ -47,6 +47,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "旧版预览文本转语音模型，支持可引导的提示词和富有表现力的音频标签。"
+    }
+  },
   "sources": [
     {
       "title": "Gemini 3.1 Flash TTS Preview | Gemini API",

@@ -51,6 +51,11 @@
   "aliases": [
     "gemini-2.0-flash-lite-001"
   ],
+  "translations": {
+    "zh": {
+      "description": "针对成本效率和低延迟优化的 Gemini 2.0 Flash 模型。"
+    }
+  },
   "sources": [
     {
       "title": "Deprecations | Gemini API",

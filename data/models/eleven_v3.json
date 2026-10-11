@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "富有表现力、接近真人的语音，具有戏剧化的演绎。"
+    }
+  },
   "sources": [
     {
       "title": "Models | ElevenLabs Documentation",

@@ -48,6 +48,11 @@
   "aliases": [
     "gemini-omni-flash-preview"
   ],
+  "translations": {
+    "zh": {
+      "description": "高性能模型，用于快速的对话式视频生成与编辑。"
+    }
+  },
   "sources": [
     {
       "title": "Gemini Omni Flash | Gemini API",

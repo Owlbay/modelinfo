@@ -52,6 +52,11 @@
   "aliases": [
     "gemini-2.0-flash-001"
   ],
+  "translations": {
+    "zh": {
+      "description": "新一代功能、速度和多模态生成，适用于各类任务。"
+    }
+  },
   "sources": [
     {
       "title": "Deprecations | Gemini API",
