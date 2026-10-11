@@ -1,0 +1,70 @@
+---
+/** 全站页脚：品牌与站内次要入口（关于、GitHub）。首页底边用虚线，呼应字墙栅格。 */
+import { ABOUT_HREF, REPO_URL, type PageId } from '../lib/nav';
+import { dict, localePath, type Lang } from '../i18n';
+import Icon from './Icon.astro';
+
+interface Props {
+  lang: Lang;
+  page: PageId;
+}
+const { lang, page } = Astro.props;
+const t = dict(lang).footer;
+---
+
+<footer class:list={['sitefoot', { 'sitefoot--over': page === 'home' }]} aria-label={t.aria}>
+  <div class="container sitefoot__inner">
+    <span class="sitefoot__brand">ModelInfo</span>
+    <nav class="sitefoot__links" aria-label={t.aria}>
+      <a href={localePath(lang, ABOUT_HREF)} aria-current={page === 'about' ? 'page' : undefined}>{t.about}</a>
+      <a href={REPO_URL} target="_blank" rel="noopener">
+        <span>{t.github}</span><Icon name="arrow-up-right" size={12} />
+      </a>
+    </nav>
+  </div>
+</footer>
+
+<style>
+  .sitefoot {
+    position: relative;
+    z-index: 10;
+    background: var(--bg);
+    border-top: 1px solid var(--line-soft);
+  }
+  .sitefoot--over {
+    border-top-style: dashed;
+    border-top-color: var(--line);
+  }
+  .sitefoot__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--sp-2) var(--sp-5);
+    min-height: var(--nav-h);
+  }
+  .sitefoot__brand {
+    font: 400 var(--fs-body-sm) / var(--lh-body-sm) var(--font-sans);
+    color: var(--ink-3);
+  }
+  .sitefoot__links {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-5);
+  }
+  .sitefoot__links a {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-1);
+    min-height: var(--control-h);
+    font: 400 var(--fs-body-sm) / var(--lh-body-sm) var(--font-sans);
+    color: var(--ink-2);
+    text-decoration: none;
+    transition: color var(--dur-1) var(--ease-out);
+  }
+  .sitefoot__links a:hover,
+  .sitefoot__links a[aria-current='page'] { color: var(--ink); }
+  @media (max-width: 640px) {
+    .sitefoot__inner { min-height: var(--bar-h); }
+  }
+</style>

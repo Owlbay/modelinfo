@@ -1,0 +1,95 @@
+---
+/** 关于：项目简介、联系邮箱、开源与反馈。只从页脚进入。 */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TopNav from '../components/TopNav.astro';
+import PageHeader from '../components/PageHeader.astro';
+import SectionFrame from '../components/SectionFrame.astro';
+import Icon from '../components/Icon.astro';
+import { CONTACTS, FEEDBACK_URL, REPO_URL } from '../lib/nav';
+import { dict, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const a = dict(lang).about;
+---
+
+<BaseLayout lang={lang} page="about" title={a.title} description={a.intro}>
+  <TopNav lang={lang} page="about" />
+  <main id="main" class="page about">
+    <PageHeader title={a.title} intro={a.intro} />
+
+    <SectionFrame id="project" title={a.project}>
+      <div class="about__prose">{a.body.map((p) => <p>{p}</p>)}</div>
+    </SectionFrame>
+
+    <SectionFrame id="contact" title={a.contact}>
+      <div class="about__contacts" role="table" aria-label={a.contact}>
+        <div class="list-row about__row about__head" role="row">
+          <span role="columnheader">{a.cols.email}</span>
+          <span role="columnheader">{a.cols.purpose}</span>
+        </div>
+        {
+          CONTACTS.map((c) => (
+            <div class="list-row about__row" role="row">
+              <span role="cell"><a class="about__mail" href={`mailto:${c.email}`}>{c.email}</a></span>
+              <span role="cell" class="about__purpose">{a.contacts[c.id]}</span>
+            </div>
+          ))
+        }
+      </div>
+    </SectionFrame>
+
+    <SectionFrame id="source" title={a.source}>
+      <p class="about__lead">{a.sourceBody}</p>
+      <div class="about__actions">
+        <a class="btn-ghost" href={REPO_URL} target="_blank" rel="noopener">
+          <span>{a.repo}</span><Icon name="arrow-up-right" size={12} />
+        </a>
+        <a class="btn-ghost" href={FEEDBACK_URL} target="_blank" rel="noopener">
+          <span>{a.feedback}</span><Icon name="arrow-up-right" size={12} />
+        </a>
+      </div>
+    </SectionFrame>
+  </main>
+</BaseLayout>
+
+<style>
+  .about { padding-bottom: var(--sp-8); }
+  .about__prose {
+    display: grid;
+    gap: var(--sp-4);
+    max-width: 72ch;
+    color: var(--ink-2);
+  }
+  .about__row {
+    grid-template-columns: 30ch minmax(0, 1fr);
+    column-gap: var(--sp-5);
+  }
+  .about__head { color: var(--ink-3); }
+  @media (hover: hover) {
+    .about__head:hover { background: none; }
+  }
+  .about__mail {
+    color: var(--ink);
+    text-decoration: underline;
+    text-decoration-color: var(--line-strong);
+    text-underline-offset: 0.2em;
+  }
+  .about__mail:hover { text-decoration-color: currentColor; }
+  .about__purpose {
+    font: 400 var(--fs-body-sm) / var(--lh-body-sm) var(--font-sans);
+    color: var(--ink-2);
+  }
+  .about__lead { max-width: 72ch; margin-bottom: var(--sp-4); color: var(--ink-2); }
+  .about__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-3);
+  }
+  .about__actions a { gap: var(--sp-1); }
+  @media (max-width: 640px) {
+    .about__row { grid-template-columns: minmax(0, 1fr) auto; }
+  }
+</style>

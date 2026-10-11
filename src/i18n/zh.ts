@@ -268,6 +268,27 @@ export const zh = {
     count: '模型数',
     error: '请求失败',
   },
+  footer: {
+    aria: '页脚',
+    about: '关于',
+    github: 'GitHub',
+  },
+  about: {
+    title: '关于',
+    intro: 'ModelInfo 是一份开源的 AI 模型目录，也是一个 OpenAI 兼容的只读模型接口。',
+    project: '项目',
+    body: [
+      'ModelInfo 收录各模型厂商官方发布的 AI 模型，统一整理上下文、输入输出、思考等级与价格，页面与 /v1/models 接口来自同一份数据。',
+      '每个数值都来自官方文档并经人工核验；官方未给出的写 null，不推算。站点为纯静态文件，没有账号、配额或鉴权。',
+    ],
+    contact: '联系',
+    cols: { email: '邮箱', purpose: '用途' },
+    contacts: { business: '咨询合作', support: '技术支持' },
+    source: '开源',
+    sourceBody: '源代码与数据托管在 GitHub。发现数据错误或有功能建议，欢迎提交 Issue。',
+    repo: 'GitHub 仓库',
+    feedback: '提交反馈',
+  },
   notFound: {
     title: '页面不存在',
     intro: '这个地址没有内容。可以回到主页搜索模型，或浏览全部模型。',

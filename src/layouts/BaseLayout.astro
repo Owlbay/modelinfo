@@ -6,6 +6,7 @@ import '../styles/base.css';
 import '../styles/utilities.css';
 import '../styles/motion.css';
 import type { PageId } from '../lib/nav';
+import SiteFooter from '../components/SiteFooter.astro';
 import { basePath, DEFAULT_LANG, dict, locale, localePath, LOCALES, type Lang } from '../i18n';
 
 interface Props {
@@ -62,6 +63,7 @@ const canonical = new URL(Astro.url.pathname, site).href;
   <body class={`page-${page}`}>
     <a class="skip-link" href="#main">{t.skip}</a>
     <slot />
+    <SiteFooter lang={lang} page={page} />
     <script>
       import { initTheme } from '../scripts/theme';
       import { installShortcuts } from '../scripts/shortcuts';

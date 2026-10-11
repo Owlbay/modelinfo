@@ -270,6 +270,27 @@ export const en: Dict = {
     count: 'Models',
     error: 'Request failed',
   },
+  footer: {
+    aria: 'Footer',
+    about: 'About',
+    github: 'GitHub',
+  },
+  about: {
+    title: 'About',
+    intro: 'ModelInfo is an open-source catalog of AI models and a read-only, OpenAI-compatible models endpoint.',
+    project: 'Project',
+    body: [
+      'ModelInfo collects AI models published by their vendors and normalizes context, modalities, reasoning levels and pricing. The pages and the /v1/models endpoint are built from the same data.',
+      'Every value comes from official documentation and is checked by hand; anything not published is null, never guessed. The site is static files only: no accounts, quotas or auth.',
+    ],
+    contact: 'Contact',
+    cols: { email: 'Email', purpose: 'Purpose' },
+    contacts: { business: 'Partnerships', support: 'Technical support' },
+    source: 'Open source',
+    sourceBody: 'Source code and data live on GitHub. Found a data error or have a feature idea? Open an issue.',
+    repo: 'GitHub repository',
+    feedback: 'Send feedback',
+  },
   notFound: {
     title: 'Page not found',
     intro: 'Nothing lives at this address. Search from the home page or browse all models.',
