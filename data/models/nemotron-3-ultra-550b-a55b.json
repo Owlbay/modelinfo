@@ -12,7 +12,7 @@
   "limits": {
     "context": 1048576,
     "input": null,
-    "output": null
+    "output": 32768
   },
   "modalities": {
     "input": [
@@ -50,6 +50,11 @@
     {
       "title": "nvidia / nemotron-3-ultra-550b-a55b | NVIDIA NIM API Reference",
       "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-3-ultra-550b-a55b",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Create chat completion (nvidia/nemotron-3-ultra-550b-a55b) | NVIDIA NIM API Reference",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-3-ultra-550b-a55b-infer",
       "retrieved_at": "2026-10-11"
     }
   ],

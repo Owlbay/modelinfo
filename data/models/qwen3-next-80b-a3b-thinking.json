@@ -10,9 +10,9 @@
     ]
   },
   "limits": {
-    "context": null,
-    "input": null,
-    "output": null
+    "context": 131072,
+    "input": 126976,
+    "output": 32768
   },
   "modalities": {
     "input": [
@@ -60,6 +60,11 @@
     {
       "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
       "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "qwen3-next-80b-a3b-thinking | Alibaba Cloud Model Studio",
+      "url": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-next-80b-a3b-thinking",
       "retrieved_at": "2026-10-11"
     }
   ],

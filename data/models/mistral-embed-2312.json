@@ -44,14 +44,16 @@
     "knowledge_cutoff": null,
     "description": "Semantic text embedding model.",
     "docs": "https://docs.mistral.ai/models/mistral-embed-23-12",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
-  "aliases": [],
+  "aliases": [
+    "mistral-embed"
+  ],
   "sources": [
     {
       "title": "Mistral Embed | Mistral Docs",
       "url": "https://docs.mistral.ai/models/mistral-embed-23-12",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "API pricing | Mistral Docs",

@@ -51,16 +51,17 @@
     "knowledge_cutoff": null,
     "description": "Frontier-class multimodal model optimized for agentic and coding use cases.",
     "docs": "https://docs.mistral.ai/models/mistral-medium-3-5-26-04",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [
+    "mistral-medium-3",
     "mistral-medium-latest"
   ],
   "sources": [
     {
       "title": "Mistral Medium 3.5 | Mistral Docs",
       "url": "https://docs.mistral.ai/models/mistral-medium-3-5-26-04",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "API pricing | Mistral Docs",

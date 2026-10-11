@@ -1,7 +1,7 @@
 {
   "id": "minimax-m2.5-highspeed",
   "object": "model",
-  "created": null,
+  "created": 1770854400,
   "owned_by": "minimax",
   "name": "MiniMax-M2.5-highspeed",
   "api": {
@@ -13,7 +13,7 @@
   "limits": {
     "context": 204800,
     "input": null,
-    "output": null
+    "output": 204800
   },
   "modalities": {
     "input": [
@@ -42,7 +42,7 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-02-12",
     "knowledge_cutoff": null,
     "description": "Same performance as M2.5 with faster inference.",
     "docs": "https://platform.minimax.io/docs/guides/models-intro",
@@ -75,11 +75,21 @@
     {
       "title": "Model release notes | MiniMax API Docs",
       "url": "https://platform.minimax.io/docs/release-notes/models",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Messages API | MiniMax API Docs",
       "url": "https://platform.minimax.io/docs/api-reference/text-chat-anthropic",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Chat Completions API (max_completion_tokens) | MiniMax API Docs",
+      "url": "https://platform.minimax.io/docs/api-reference/text-chat-openai",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "MiniMax M2.5: Built for Real-World Productivity | MiniMax News",
+      "url": "https://www.minimax.io/news/minimax-m25",
       "retrieved_at": "2026-10-11"
     }
   ],

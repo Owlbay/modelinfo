@@ -1,7 +1,7 @@
 {
   "id": "mimo-v2.6-pro",
   "object": "model",
-  "created": null,
+  "created": 1790035200,
   "owned_by": "xiaomi",
   "name": "MiMo-V2.6-Pro",
   "api": {
@@ -48,7 +48,7 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-09-22",
     "knowledge_cutoff": null,
     "description": "Xiaomi's most capable omni-modal flagship for professional, long-running, complex workflows.",
     "docs": "https://mimo.mi.com/models/zh-CN/mimo-v2.6-pro",
@@ -89,6 +89,11 @@
     {
       "title": "Anthropic Messages API Compatibility | Xiaomi MiMo",
       "url": "https://mimo.mi.com/docs/en-US/api/chat/anthropic-api",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "模型发布 | Xiaomi MiMo",
+      "url": "https://mimo.mi.com/docs/zh-CN/updates/model",
       "retrieved_at": "2026-10-11"
     }
   ],

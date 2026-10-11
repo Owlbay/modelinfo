@@ -12,7 +12,7 @@
   "limits": {
     "context": 1048576,
     "input": null,
-    "output": null
+    "output": 32768
   },
   "modalities": {
     "input": [
@@ -51,6 +51,11 @@
     {
       "title": "nvidia / nemotron-3.5-lightning-30b-a3b | NVIDIA NIM API Reference",
       "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-3-5-lightning-30b-a3b",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Create chat completion (nvidia/nemotron-3.5-lightning-30b-a3b) | NVIDIA NIM API Reference",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-3-5-lightning-30b-a3b-infer",
       "retrieved_at": "2026-10-11"
     }
   ],

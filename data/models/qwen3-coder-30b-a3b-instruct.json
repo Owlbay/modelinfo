@@ -1,0 +1,75 @@
+{
+  "id": "qwen3-coder-30b-a3b-instruct",
+  "object": "model",
+  "created": 1753920000,
+  "owned_by": "alibaba",
+  "name": "Qwen3-Coder-30B-A3B-Instruct",
+  "api": {
+    "types": [
+      "chat"
+    ]
+  },
+  "limits": {
+    "context": 262144,
+    "input": 204800,
+    "output": 65536
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": false,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 0.45,
+    "output": 2.25,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [],
+  "info": {
+    "status": "active",
+    "release_date": "2025-07-31",
+    "knowledge_cutoff": null,
+    "description": "Open-weight Qwen3 coding model inheriting the coding agent ability of Qwen3-Coder-480B-A35B-Instruct.",
+    "docs": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-coder-30b-a3b-instruct",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "qwen3-coder-30b-a3b-instruct | Alibaba Cloud Model Studio",
+      "url": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-coder-30b-a3b-instruct",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model Studio model pricing | Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "alibaba",
+      "model": "qwen3-coder-30b-a3b-instruct",
+      "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
+      "endpoints": {
+        "chat": "POST /compatible-mode/v1/chat/completions"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

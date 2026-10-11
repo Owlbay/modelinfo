@@ -34,8 +34,8 @@
     "unit": "1M_tokens",
     "input": 0.25,
     "output": 1.5,
-    "cache_read": null,
-    "cache_write": null
+    "cache_read": 0.025,
+    "cache_write": 0.3125
   },
   "features": [
     "tools",
@@ -58,7 +58,7 @@
     {
       "title": "qwen3.6-flash | Alibaba Cloud Model Studio",
       "url": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-6-flash",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Text generation models | Alibaba Cloud Model Studio",

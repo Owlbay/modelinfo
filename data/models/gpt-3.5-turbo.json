@@ -1,0 +1,88 @@
+{
+  "id": "gpt-3.5-turbo",
+  "object": "model",
+  "created": null,
+  "owned_by": "openai",
+  "name": "GPT-3.5 Turbo",
+  "api": {
+    "types": [
+      "chat",
+      "responses",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": 16385,
+    "input": null,
+    "output": 4096
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 0.5,
+    "output": 1.5,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [
+    "batch"
+  ],
+  "info": {
+    "status": "deprecated",
+    "release_date": null,
+    "knowledge_cutoff": "2021-09-01",
+    "description": "Legacy GPT model for cheaper chat and non-chat tasks.",
+    "docs": "https://developers.openai.com/api/docs/models/gpt-3.5-turbo",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "gpt-3.5-turbo-0125"
+  ],
+  "sources": [
+    {
+      "title": "GPT-3.5 Turbo Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-3.5-turbo",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Deprecations | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "openai",
+      "model": "gpt-3.5-turbo",
+      "base_url": "https://api.openai.com",
+      "endpoints": {
+        "chat": "POST /v1/chat/completions",
+        "responses": "POST /v1/responses",
+        "batch": "POST /v1/batches"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

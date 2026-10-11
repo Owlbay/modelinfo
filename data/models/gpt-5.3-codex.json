@@ -1,0 +1,96 @@
+{
+  "id": "gpt-5.3-codex",
+  "object": "model",
+  "created": 1771891200,
+  "owned_by": "openai",
+  "name": "GPT-5.3-Codex",
+  "api": {
+    "types": [
+      "responses"
+    ]
+  },
+  "limits": {
+    "context": 400000,
+    "input": 272000,
+    "output": 128000
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh"
+    ]
+  },
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 1.75,
+    "output": 14,
+    "cache_read": 0.175,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "streaming",
+    "caching"
+  ],
+  "info": {
+    "status": "deprecated",
+    "release_date": "2026-02-24",
+    "knowledge_cutoff": "2025-08-31",
+    "description": "Agentic coding model optimized for Codex or similar environments.",
+    "docs": "https://developers.openai.com/api/docs/models/gpt-5.3-codex",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "GPT-5.3-Codex Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.3-codex",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Deprecations | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Changelog | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/changelog",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "openai",
+      "model": "gpt-5.3-codex",
+      "base_url": "https://api.openai.com",
+      "endpoints": {
+        "responses": "POST /v1/responses"
+      },
+      "reasoning_param": "reasoning.effort"
+    }
+  ]
+}

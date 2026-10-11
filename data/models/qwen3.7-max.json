@@ -32,8 +32,8 @@
     "unit": "1M_tokens",
     "input": 2.5,
     "output": 7.5,
-    "cache_read": null,
-    "cache_write": null
+    "cache_read": 0.25,
+    "cache_write": 3.125
   },
   "features": [
     "tools",
@@ -56,7 +56,7 @@
     {
       "title": "qwen3.7-max | Alibaba Cloud Model Studio",
       "url": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-7-max",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Text generation models | Alibaba Cloud Model Studio",

@@ -1,7 +1,7 @@
 {
   "id": "glm-4.7-flash",
   "object": "model",
-  "created": 1766361600,
+  "created": 1768780800,
   "owned_by": "zhipu",
   "name": "GLM-4.7-Flash",
   "api": {
@@ -42,11 +42,11 @@
   ],
   "info": {
     "status": "active",
-    "release_date": "2025-12-22",
+    "release_date": "2026-01-19",
     "knowledge_cutoff": null,
     "description": "Lightweight and completely free GLM-4.7 series model.",
     "docs": "https://docs.z.ai/guides/llm/glm-4.7",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -74,6 +74,16 @@
       "title": "GLM-4.6 config.json (max_position_embeddings 202752) | Hugging Face",
       "url": "https://huggingface.co/zai-org/GLM-4.6/blob/main/config.json",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "新品发布 | 智谱AI开放文档",
+      "url": "https://docs.bigmodel.cn/cn/update/new-releases",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "GLM-4.7-Flash | 智谱AI开放文档",
+      "url": "https://docs.bigmodel.cn/cn/guide/models/free/glm-4.7-flash",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

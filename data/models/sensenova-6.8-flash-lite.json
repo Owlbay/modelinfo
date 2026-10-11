@@ -24,7 +24,7 @@
     ]
   },
   "reasoning": {
-    "supported": null,
+    "supported": true,
     "efforts": []
   },
   "pricing": {
@@ -72,6 +72,11 @@
     {
       "title": "SenseNova6.8 | OpenSenseNova",
       "url": "https://github.com/OpenSenseNova/SenseNova6.8",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SenseNova 6.8 Flash Lite Preview API guide | OpenSenseNova (GitHub)",
+      "url": "https://github.com/OpenSenseNova/SenseNova6.8/blob/main/API.md",
       "retrieved_at": "2026-10-11"
     }
   ],

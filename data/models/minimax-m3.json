@@ -13,7 +13,7 @@
   "limits": {
     "context": 1000000,
     "input": null,
-    "output": null
+    "output": 524288
   },
   "modalities": {
     "input": [
@@ -82,6 +82,11 @@
     {
       "title": "Messages API | MiniMax API Docs",
       "url": "https://platform.minimax.io/docs/api-reference/text-chat-anthropic",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Chat Completions API (max_completion_tokens) | MiniMax API Docs",
+      "url": "https://platform.minimax.io/docs/api-reference/text-chat-openai",
       "retrieved_at": "2026-10-11"
     }
   ],

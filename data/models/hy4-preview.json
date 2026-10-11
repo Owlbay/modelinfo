@@ -1,7 +1,7 @@
 {
   "id": "hy4-preview",
   "object": "model",
-  "created": null,
+  "created": 1787875200,
   "owned_by": "tencent",
   "name": "Hy4 Preview",
   "api": {
@@ -43,7 +43,7 @@
   ],
   "info": {
     "status": "preview",
-    "release_date": null,
+    "release_date": "2026-08-28",
     "knowledge_cutoff": null,
     "description": "Tencent Hy4 preview model with 1M context and deep thinking, served on TokenHub.",
     "docs": "https://cloud.tencent.com/document/product/1823/132252",
@@ -69,6 +69,11 @@
     {
       "title": "语言模型调用概览 | 腾讯云 TokenHub",
       "url": "https://cloud.tencent.com/document/product/1823/130079",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "腾讯发布并开源Hy4 preview | Tencent",
+      "url": "https://www.tencent.com/zh-cn/tencent-releases-and-open-sources-tencent-hy4-preview/",
       "retrieved_at": "2026-10-11"
     }
   ],

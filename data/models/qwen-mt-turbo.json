@@ -10,9 +10,9 @@
     ]
   },
   "limits": {
-    "context": null,
+    "context": 16384,
     "input": 8192,
-    "output": null
+    "output": 8192
   },
   "modalities": {
     "input": [
@@ -60,6 +60,11 @@
     {
       "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
       "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "qwen-mt-turbo | Alibaba Cloud Model Studio",
+      "url": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen-mt-turbo",
       "retrieved_at": "2026-10-11"
     }
   ],

@@ -41,7 +41,7 @@
   "info": {
     "status": "active",
     "release_date": "2026-01-08",
-    "knowledge_cutoff": null,
+    "knowledge_cutoff": "2024-08-22",
     "description": "AI21's efficient Jamba model (52B parameters, 12B active) balancing efficiency and steerability for core enterprise workflows.",
     "docs": "https://docs.ai21.com/docs/jamba-foundation-models",
     "verified_at": "2026-10-11"
@@ -54,7 +54,7 @@
     {
       "title": "Jamba | AI21 Documentation",
       "url": "https://docs.ai21.com/docs/jamba-foundation-models",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Chat request | AI21 API Reference",

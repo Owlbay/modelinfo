@@ -1,7 +1,7 @@
 {
   "id": "mimo-v2.5",
   "object": "model",
-  "created": null,
+  "created": 1776902400,
   "owned_by": "xiaomi",
   "name": "MiMo-V2.5",
   "api": {
@@ -30,7 +30,14 @@
     "supported": true,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "CNY",
+    "unit": "1M_tokens",
+    "input": 1,
+    "output": 2,
+    "cache_read": 0.02,
+    "cache_write": null
+  },
   "features": [
     "tools",
     "structured_output",
@@ -39,7 +46,7 @@
   ],
   "info": {
     "status": "deprecated",
-    "release_date": null,
+    "release_date": "2026-04-23",
     "knowledge_cutoff": null,
     "description": "Native omni-modal Xiaomi model for long-context and multimodal agent scenarios; retires 2026-10-21.",
     "docs": "https://mimo.mi.com/models/zh-CN/mimo-v2.5",
@@ -55,7 +62,7 @@
     {
       "title": "按量计费 | Xiaomi MiMo",
       "url": "https://mimo.mi.com/docs/zh-CN/price/pay-as-you-go",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Chat completions (OpenAI-compatible) | Xiaomi MiMo API Docs",
@@ -75,6 +82,16 @@
     {
       "title": "Anthropic Messages API Compatibility | Xiaomi MiMo",
       "url": "https://mimo.mi.com/docs/en-US/api/chat/anthropic-api",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "模型发布 | Xiaomi MiMo",
+      "url": "https://mimo.mi.com/docs/zh-CN/updates/model",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "模型下线 | Xiaomi MiMo",
+      "url": "https://mimo.mi.com/docs/zh-CN/updates/deprecate",
       "retrieved_at": "2026-10-11"
     }
   ],

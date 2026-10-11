@@ -17,7 +17,8 @@
   },
   "modalities": {
     "input": [
-      "text"
+      "text",
+      "image"
     ],
     "output": [
       "text"
@@ -50,7 +51,7 @@
     "knowledge_cutoff": null,
     "description": "Hybrid model unifying instruct, reasoning, and coding capabilities in a single model.",
     "docs": "https://docs.mistral.ai/models/mistral-small-4-0-26-03",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [
     "mistral-small-latest"
@@ -59,7 +60,7 @@
     {
       "title": "Mistral Small 4 | Mistral Docs",
       "url": "https://docs.mistral.ai/models/mistral-small-4-0-26-03",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "API pricing | Mistral Docs",
@@ -69,7 +70,7 @@
     {
       "title": "Models overview | Mistral Docs",
       "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Reasoning | Mistral Docs",

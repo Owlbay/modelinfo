@@ -12,7 +12,7 @@
   "limits": {
     "context": 131072,
     "input": null,
-    "output": null
+    "output": 16384
   },
   "modalities": {
     "input": [
@@ -43,6 +43,11 @@
     {
       "title": "nvidia / llama-3.1-nemotron-ultra-253b-v1 | NVIDIA NIM API Reference",
       "url": "https://docs.api.nvidia.com/nim/reference/nvidia-llama-3_1-nemotron-ultra-253b-v1",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Create chat completion (nvidia/llama-3.1-nemotron-ultra-253b-v1) | NVIDIA NIM API Reference",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-llama-3_1-nemotron-ultra-253b-v1-infer",
       "retrieved_at": "2026-10-11"
     }
   ],

@@ -1,68 +1,59 @@
 {
-  "id": "qwen2.5-omni-7b",
+  "id": "qwen3-coder-480b-a35b-instruct",
   "object": "model",
-  "created": 1742947200,
+  "created": 1753228800,
   "owned_by": "alibaba",
-  "name": "Qwen2.5-Omni-7B",
+  "name": "Qwen3-Coder-480B-A35B-Instruct",
   "api": {
     "types": [
       "chat"
     ]
   },
   "limits": {
-    "context": 32768,
-    "input": 30720,
-    "output": 2048
+    "context": 262144,
+    "input": 204800,
+    "output": 65536
   },
   "modalities": {
     "input": [
-      "text",
-      "image",
-      "audio",
-      "video"
+      "text"
     ],
     "output": [
-      "text",
-      "audio"
+      "text"
     ]
   },
   "reasoning": {
     "supported": false,
     "efforts": []
   },
-  "pricing": null,
-  "features": [
-    "streaming"
-  ],
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 1.5,
+    "output": 7.5,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [],
   "info": {
     "status": "active",
-    "release_date": "2025-03-26",
+    "release_date": "2025-07-23",
     "knowledge_cutoff": null,
-    "description": "Open-weight Qwen2.5 omni-modal model; no longer updated.",
-    "docs": "https://www.alibabacloud.com/help/en/model-studio/omni",
+    "description": "Open-weight Qwen3 coding model with strong coding agent ability, served on Model Studio.",
+    "docs": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-coder-480b-a35b-instruct",
     "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
     {
-      "title": "Omni models | Alibaba Cloud Model Studio",
-      "url": "https://www.alibabacloud.com/help/en/model-studio/omni",
-      "retrieved_at": "2026-10-10"
+      "title": "qwen3-coder-480b-a35b-instruct | Alibaba Cloud Model Studio",
+      "url": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-coder-480b-a35b-instruct",
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Model Studio model pricing | Alibaba Cloud",
       "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "retrieved_at": "2026-10-11"
-    },
-    {
-      "title": "Rate limits | Alibaba Cloud Model Studio",
-      "url": "https://www.alibabacloud.com/help/en/model-studio/rate-limit",
-      "retrieved_at": "2026-10-10"
-    },
-    {
-      "title": "Model Studio model pricing | Alibaba Cloud",
-      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
-      "retrieved_at": "2026-10-10"
     },
     {
       "title": "Model lifecycle and updates | Alibaba Cloud Model Studio",
@@ -73,7 +64,7 @@
   "providers": [
     {
       "id": "alibaba",
-      "model": "qwen2.5-omni-7b",
+      "model": "qwen3-coder-480b-a35b-instruct",
       "base_url": "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com",
       "endpoints": {
         "chat": "POST /compatible-mode/v1/chat/completions"

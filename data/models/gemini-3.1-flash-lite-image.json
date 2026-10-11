@@ -48,7 +48,7 @@
   "info": {
     "status": "active",
     "release_date": "2026-06-30",
-    "knowledge_cutoff": null,
+    "knowledge_cutoff": "2025-01",
     "description": "Low-latency, low-cost image generation and editing model for high-volume interactive use.",
     "docs": "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite-image",
     "verified_at": "2026-10-11"
@@ -79,6 +79,11 @@
       "title": "Generating content | Gemini API",
       "url": "https://ai.google.dev/api/generate-content",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Gemini 3.1 Flash-Lite Image - Model Card — Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/gemini-3-1-flash-lite-image/",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

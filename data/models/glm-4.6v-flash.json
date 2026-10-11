@@ -12,7 +12,7 @@
   "limits": {
     "context": 131072,
     "input": null,
-    "output": null
+    "output": 32768
   },
   "modalities": {
     "input": [
@@ -26,7 +26,7 @@
     ]
   },
   "reasoning": {
-    "supported": null,
+    "supported": true,
     "efforts": []
   },
   "pricing": {
@@ -46,7 +46,7 @@
     "knowledge_cutoff": null,
     "description": "Lightweight and completely free GLM-4.6V series model.",
     "docs": "https://docs.z.ai/guides/vlm/glm-4.6v",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -74,6 +74,16 @@
       "title": "GLM-4.6 config.json (max_position_embeddings 202752) | Hugging Face",
       "url": "https://huggingface.co/zai-org/GLM-4.6/blob/main/config.json",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "模型概览 | 智谱AI开放文档",
+      "url": "https://docs.bigmodel.cn/cn/guide/start/model-overview",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "GLM-4.6V-Flash | 智谱AI开放文档",
+      "url": "https://docs.bigmodel.cn/cn/guide/models/free/glm-4.6v-flash",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

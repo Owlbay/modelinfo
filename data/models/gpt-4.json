@@ -1,0 +1,90 @@
+{
+  "id": "gpt-4",
+  "object": "model",
+  "created": null,
+  "owned_by": "openai",
+  "name": "GPT-4",
+  "api": {
+    "types": [
+      "chat",
+      "responses",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": 8192,
+    "input": null,
+    "output": 8192
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 30,
+    "output": 60,
+    "cache_read": null,
+    "cache_write": null
+  },
+  "features": [
+    "streaming",
+    "batch"
+  ],
+  "info": {
+    "status": "deprecated",
+    "release_date": null,
+    "knowledge_cutoff": "2023-12-01",
+    "description": "An older high-intelligence GPT model.",
+    "docs": "https://developers.openai.com/api/docs/models/gpt-4",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "gpt-4-0613",
+    "gpt-4-0314"
+  ],
+  "sources": [
+    {
+      "title": "GPT-4 Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-4",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Deprecations | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "openai",
+      "model": "gpt-4",
+      "base_url": "https://api.openai.com",
+      "endpoints": {
+        "chat": "POST /v1/chat/completions",
+        "responses": "POST /v1/responses",
+        "batch": "POST /v1/batches"
+      },
+      "reasoning_param": null
+    }
+  ]
+}

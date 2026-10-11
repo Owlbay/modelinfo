@@ -27,7 +27,14 @@
     "supported": true,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 2.5,
+    "output": 10,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [
     "tools",
     "structured_output"
@@ -38,14 +45,14 @@
     "knowledge_cutoff": "2025-04",
     "description": "Mixture-of-Experts model combining vision, agentic, reasoning, and translation capabilities.",
     "docs": "https://docs.cohere.com/docs/command-a-plus",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
     {
       "title": "Command A+ | Cohere Docs",
       "url": "https://docs.cohere.com/docs/command-a-plus",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Cohere Model Overview",
@@ -56,6 +63,11 @@
       "title": "How does Cohere pricing work?",
       "url": "https://docs.cohere.com/docs/how-does-cohere-pricing-work",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Pricing | Cohere",
+      "url": "https://cohere.com/pricing",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

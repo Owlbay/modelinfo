@@ -41,10 +41,10 @@
   "info": {
     "status": "active",
     "release_date": "2025-07-03",
-    "knowledge_cutoff": null,
+    "knowledge_cutoff": "2024-08-22",
     "description": "AI21's most powerful Jamba model (398B parameters, 94B active) with a 256K context window.",
     "docs": "https://docs.ai21.com/docs/jamba-foundation-models",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [
     "jamba-large",
@@ -54,7 +54,7 @@
     {
       "title": "Jamba | AI21 Documentation",
       "url": "https://docs.ai21.com/docs/jamba-foundation-models",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Chat request | AI21 API Reference",

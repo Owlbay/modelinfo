@@ -12,7 +12,7 @@
   },
   "limits": {
     "context": null,
-    "input": null,
+    "input": 8192,
     "output": null
   },
   "modalities": {
@@ -41,32 +41,37 @@
   "info": {
     "status": "active",
     "release_date": "2024-01-25",
-    "knowledge_cutoff": null,
+    "knowledge_cutoff": "2021-09",
     "description": "Most capable embedding model for both English and non-English tasks.",
     "docs": "https://developers.openai.com/api/docs/models/text-embedding-3-large",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
     {
       "title": "text-embedding-3-large Model | OpenAI API",
       "url": "https://developers.openai.com/api/docs/models/text-embedding-3-large",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Pricing | OpenAI API",
       "url": "https://developers.openai.com/api/docs/pricing",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Models | OpenAI API",
       "url": "https://developers.openai.com/api/docs/models/all",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
     },
     {
       "title": "Changelog | OpenAI API",
       "url": "https://developers.openai.com/api/docs/changelog",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Vector embeddings | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/guides/embeddings",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

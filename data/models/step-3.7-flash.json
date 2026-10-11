@@ -1,7 +1,7 @@
 {
   "id": "step-3.7-flash",
   "object": "model",
-  "created": null,
+  "created": 1780012800,
   "owned_by": "stepfun",
   "name": "Step 3.7 Flash",
   "api": {
@@ -48,7 +48,7 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-05-29",
     "knowledge_cutoff": null,
     "description": "Sparse MoE multimodal reasoning model (198B total, 11B active) with image and video understanding.",
     "docs": "https://platform.stepfun.ai/docs/en/guides/models/step-3.7-flash",
@@ -79,6 +79,11 @@
     {
       "title": "Messages API | StepFun Documentation",
       "url": "https://platform.stepfun.ai/docs/en/api-reference/chat/messages-create",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Step 3.7 Flash | StepFun Blog",
+      "url": "https://static.stepfun.com/blog/step-3.7-flash/",
       "retrieved_at": "2026-10-11"
     }
   ],

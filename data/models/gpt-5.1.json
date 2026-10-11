@@ -1,0 +1,103 @@
+{
+  "id": "gpt-5.1",
+  "object": "model",
+  "created": 1762992000,
+  "owned_by": "openai",
+  "name": "GPT-5.1",
+  "api": {
+    "types": [
+      "chat",
+      "responses",
+      "batch"
+    ]
+  },
+  "limits": {
+    "context": 400000,
+    "input": null,
+    "output": 128000
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": [
+      "none",
+      "low",
+      "medium",
+      "high"
+    ]
+  },
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 1.25,
+    "output": 10,
+    "cache_read": 0.125,
+    "cache_write": null
+  },
+  "features": [
+    "tools",
+    "structured_output",
+    "streaming",
+    "caching",
+    "batch"
+  ],
+  "info": {
+    "status": "deprecated",
+    "release_date": "2025-11-13",
+    "knowledge_cutoff": "2024-09-30",
+    "description": "The best model for coding and agentic tasks with configurable reasoning effort.",
+    "docs": "https://developers.openai.com/api/docs/models/gpt-5.1",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "gpt-5.1-2025-11-13"
+  ],
+  "sources": [
+    {
+      "title": "GPT-5.1 Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.1",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Pricing | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/pricing",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Deprecations | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/deprecations",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Changelog | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/changelog",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "openai",
+      "model": "gpt-5.1",
+      "base_url": "https://api.openai.com",
+      "endpoints": {
+        "chat": "POST /v1/chat/completions",
+        "responses": "POST /v1/responses",
+        "batch": "POST /v1/batches"
+      },
+      "reasoning_param": "reasoning.effort"
+    }
+  ]
+}

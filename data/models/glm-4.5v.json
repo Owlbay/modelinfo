@@ -10,7 +10,7 @@
     ]
   },
   "limits": {
-    "context": null,
+    "context": 65536,
     "input": null,
     "output": 16384
   },
@@ -76,6 +76,11 @@
     {
       "title": "最新动态 | 智谱 AI 开放文档",
       "url": "https://docs.bigmodel.cn/cn/update/new-releases",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "GLM-4.5V | 智谱AI开放文档",
+      "url": "https://docs.bigmodel.cn/cn/guide/models/vlm/glm-4.5v",
       "retrieved_at": "2026-10-11"
     }
   ],

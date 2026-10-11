@@ -1,7 +1,7 @@
 {
   "id": "solar-pro3",
   "object": "model",
-  "created": null,
+  "created": 1774224000,
   "owned_by": "upstage",
   "name": "Solar Pro 3",
   "api": {
@@ -49,7 +49,7 @@
   ],
   "info": {
     "status": "deprecated",
-    "release_date": null,
+    "release_date": "2026-03-23",
     "knowledge_cutoff": "2025-07",
     "description": "Mixture-of-experts Solar model (102B total parameters); fully deprecated on 2026-10-30 (KST), migrate to Solar Pro 4.",
     "docs": "https://console.upstage.ai/docs/models/solar-pro-3",

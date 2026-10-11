@@ -10,9 +10,9 @@
     ]
   },
   "limits": {
-    "context": null,
+    "context": 131072,
     "input": null,
-    "output": null
+    "output": 98304
   },
   "modalities": {
     "input": [
@@ -46,7 +46,7 @@
     "knowledge_cutoff": null,
     "description": "Free GLM-4.5 variant suited to reasoning, coding and agents.",
     "docs": "https://docs.z.ai/guides/llm/glm-4.5",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -64,6 +64,16 @@
       "title": "Release Notes | Z.AI Developer Document",
       "url": "https://docs.z.ai/release-notes/new-released",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "模型概览 | 智谱AI开放文档",
+      "url": "https://docs.bigmodel.cn/cn/guide/start/model-overview",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "GLM-4.5-Flash | 智谱AI开放文档",
+      "url": "https://docs.bigmodel.cn/cn/guide/models/free/glm-4.5-flash",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [

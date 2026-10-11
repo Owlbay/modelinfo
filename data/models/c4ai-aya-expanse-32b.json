@@ -1,7 +1,7 @@
 {
   "id": "c4ai-aya-expanse-32b",
   "object": "model",
-  "created": null,
+  "created": 1729728000,
   "owned_by": "cohere",
   "name": "Aya Expanse 32B",
   "api": {
@@ -37,11 +37,11 @@
   "features": [],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2024-10-24",
     "knowledge_cutoff": null,
     "description": "32B multilingual model covering 23 languages.",
     "docs": "https://docs.cohere.com/docs/aya-expanse",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-11"
   },
   "aliases": [],
   "sources": [
@@ -59,6 +59,11 @@
       "title": "How does Cohere pricing work?",
       "url": "https://docs.cohere.com/docs/how-does-cohere-pricing-work",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "Aya Expanse: Connecting Our World | Cohere Blog",
+      "url": "https://cohere.com/blog/aya-expanse-connecting-our-world",
+      "retrieved_at": "2026-10-11"
     }
   ],
   "providers": [
