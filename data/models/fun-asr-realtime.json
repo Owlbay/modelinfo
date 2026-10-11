@@ -29,7 +29,7 @@
   "pricing": {
     "currency": "USD",
     "unit": "second",
-    "input": 9e-05,
+    "input": 0.00009,
     "output": null,
     "cache_read": null,
     "cache_write": null

@@ -29,7 +29,7 @@
   "pricing": {
     "currency": "CNY",
     "unit": "second",
-    "input": 8e-05,
+    "input": 0.00008,
     "output": null,
     "cache_read": null,
     "cache_write": null
