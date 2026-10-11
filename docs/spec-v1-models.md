@@ -80,7 +80,7 @@ info         ⑥ 源信息
 | `reasoning.efforts` | string[] | 思考等级；空数组表示无等级档位（开关或 Token 预算控制）或未声明 |
 | `pricing` | object \| null | 见第 6 节：币种、计价单位与价格；无公开报价为 `null` |
 | `features` | string[] | 已确认支持：`tools`、`structured_output`、`streaming`、`caching`、`batch`；未列出即不支持或未确认 |
-| `info.status` | string | `preview`、`active`、`deprecated` |
+| `info.status` | string | `preview`（预览）、`active`（可用）、`deprecated`（厂商已宣布下线，仍可调用）、`retired`（已下线，不可调用；保留记录，不删除）。只需要可调用模型时，按此字段过滤掉 `retired` |
 | `info.release_date` | string \| null | `YYYY-MM-DD`，与 `created` 一致 |
 | `info.knowledge_cutoff` | string \| null | 训练知识截止时间 |
 | `info.description` | string \| null | 官方简介 |

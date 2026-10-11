@@ -50,7 +50,7 @@ const models = defineCollection({
       features: z.array(feature),
       info: z
         .object({
-          status: z.enum(['preview', 'active', 'deprecated']),
+          status: z.enum(['preview', 'active', 'deprecated', 'retired']),
           release_date: date.nullable(),
           knowledge_cutoff: z.string().nullable(),
           description: z.string().nullable(),

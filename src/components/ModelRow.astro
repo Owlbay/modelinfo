@@ -26,6 +26,7 @@ const cache = p && (p.cache_read !== null || p.cache_write !== null) ? `${format
 <a class="list-row mrow" href={localePath(lang, `/models/${m.id}/`)} data-model data-owner={m.owned_by} data-kind={modelKind(m)} data-hay={[m.id, m.name, m.owned_by, ownerName(m.owned_by), ...m.aliases].join(' ').toLowerCase()}>
   <span class="mrow__main">
     <span class="mrow__name">{m.name}</span>
+    {m.info.status === 'retired' && <span class="mrow__tag">{d.model.status.retired}</span>}
     <span class="mrow__id">{m.id}</span>
   </span>
   <span class="mrow__owner"><VendorLogo id={m.owned_by} size={14} /><span>{ownerName(m.owned_by)}</span></span>
@@ -70,6 +71,15 @@ const cache = p && (p.cache_read !== null || p.cache_write !== null) ? `${format
     white-space: nowrap;
     font: 400 var(--fs-body-lg) / var(--lh-body-lg) var(--font-sans);
     color: var(--ink);
+  }
+  /* 已下线标记：不删除记录，只在名称后标注 */
+  .mrow__tag {
+    flex: none;
+    padding: 0 var(--sp-1);
+    border: 1px solid var(--line-strong);
+    font-size: var(--fs-mono-sm);
+    line-height: var(--lh-mono-sm);
+    color: var(--ink-3);
   }
   .mrow__id {
     min-width: 0;

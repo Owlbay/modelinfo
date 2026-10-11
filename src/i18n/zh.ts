@@ -114,7 +114,7 @@ export const zh = {
     yes: '支持',
     no: '不支持',
     unknown: '未确认',
-    status: { preview: '预览', active: '可用', deprecated: '已弃用' },
+    status: { preview: '预览', active: '可用', deprecated: '即将下线', retired: '已下线' },
     call: '调用方式',
     providers: (n: number) => `${n} 个 Provider`,
     json: 'JSON',

@@ -59,7 +59,7 @@ for (const file of files) {
   if (!Array.isArray(m.features) || m.features.some((f) => !FEAT.includes(f))) e(`features 取值 ${FEAT.join('|')}`);
   const i = m.info ?? {};
   if (Object.keys(i).join() !== 'status,release_date,knowledge_cutoff,description,docs,verified_at') e('info 字段与顺序为 status,release_date,knowledge_cutoff,description,docs,verified_at');
-  if (!['preview', 'active', 'deprecated'].includes(i.status)) e('info.status 为 preview|active|deprecated');
+  if (!['preview', 'active', 'deprecated', 'retired'].includes(i.status)) e('info.status 为 preview|active|deprecated|retired');
   if (!(i.release_date === null || DATE.test(i.release_date))) e('info.release_date 为 YYYY-MM-DD 或 null');
   if (!(i.verified_at === null || DATE.test(i.verified_at))) e('info.verified_at 为 YYYY-MM-DD 或 null');
   if (!(i.docs === null || /^https?:\/\//.test(i.docs))) e('info.docs 为 URL 或 null');

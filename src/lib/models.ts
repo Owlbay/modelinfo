@@ -76,13 +76,14 @@ export function modelKind(m: Model): Kind {
   return 'chat';
 }
 
-/** 某模型厂商最新的 n 个可用对话模型（只输出文本、非弃用、按百万 Token 计价），供比较页推荐组合；models 需已按发布顺序排序 */
+/** 某模型厂商最新的 n 个可用对话模型（只输出文本、非弃用或下线、按百万 Token 计价），供比较页推荐组合；models 需已按发布顺序排序 */
 export function latestChat(models: Model[], owner: string, n = 1): Model[] {
   return models
     .filter(
       (m) =>
         m.owned_by === owner &&
         m.info.status !== 'deprecated' &&
+        m.info.status !== 'retired' &&
         m.modalities.output.every((o) => o === 'text') &&
         m.pricing?.unit === '1M_tokens',
     )

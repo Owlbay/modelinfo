@@ -116,7 +116,7 @@ export const en: Dict = {
     yes: 'Yes',
     no: 'No',
     unknown: 'Unconfirmed',
-    status: { preview: 'Preview', active: 'Active', deprecated: 'Deprecated' },
+    status: { preview: 'Preview', active: 'Active', deprecated: 'Deprecated', retired: 'Retired' },
     call: 'How to call',
     providers: (n: number) => `${n} provider${n === 1 ? '' : 's'}`,
     json: 'JSON',
