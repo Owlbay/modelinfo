@@ -9,7 +9,7 @@ import { LOCALES } from './i18n';
 
 const date = z.string().regex(/^\d{4}-\d{2}-\d{2}$/);
 const apiType = z.enum([
-  'chat', 'messages', 'responses', 'completions', 'generate', 'batch', 'realtime',
+  'chat', 'messages', 'responses', 'interactions', 'completions', 'generate', 'batch', 'realtime',
   'embeddings', 'images', 'video', 'audio', '3d', 'rerank', 'ocr', 'moderation',
 ]);
 const modality = z.enum(['text', 'image', 'audio', 'video', 'document', 'embedding', 'score', '3d']);
@@ -17,7 +17,13 @@ const feature = z.enum(['tools', 'structured_output', 'streaming', 'caching', 'b
 const tokens = z.number().int().positive().nullable();
 const price = z.number().nonnegative().nullable();
 
-const limits = z.object({ context: tokens, input: tokens, output: tokens }).strict();
+const limits = z.object({ context: tokens, input: tokens, output: tokens }).strict().superRefine((v, ctx) => {
+  for (const key of ['input', 'output'] as const) {
+    if (v.context !== null && v[key] !== null && v[key] > v.context) {
+      ctx.addIssue({ code: 'custom', path: [key], message: `${key} 不能大于 context；官方来源冲突时保留可确认值，其余写 null` });
+    }
+  }
+});
 const modalities = z.object({ input: z.array(modality).min(1), output: z.array(modality).min(1) }).strict();
 /** 计价单位：Token 模型为 1M_tokens；媒体类按字符、张、秒、分钟、小时、次、页计费 */
 const priceUnit = z.enum(['1M_tokens', '1M_characters', 'image', 'second', 'minute', 'hour', 'request', 'page']);
@@ -71,9 +77,10 @@ const models = defineCollection({
           .object({
             id: z.string(),
             model: z.string(),
-            base_url: z.string().startsWith('https://'),
-            endpoints: z.partialRecord(apiType, z.string().regex(/^(GET|POST) \//)),
+            base_url: z.string().regex(/^(https|wss):\/\//),
+            endpoints: z.partialRecord(apiType, z.string().regex(/^(GET|POST|WS) \//)),
             reasoning_param: z.string().nullable(),
+            reasoning_params: z.partialRecord(apiType, z.string().min(1).nullable()).optional(),
             reasoning_efforts: z.array(z.string()).optional(),
             limits: limits.optional(),
             modalities: modalities.optional(),
@@ -85,6 +92,22 @@ const models = defineCollection({
     })
     .strict()
     .superRefine((m, ctx) => {
+      for (const [index, p] of m.providers.entries()) {
+        for (const [type, endpoint] of Object.entries(p.endpoints)) {
+          if (endpoint.startsWith('WS ') !== p.base_url.startsWith('wss://')) {
+            ctx.addIssue({ code: 'custom', path: ['providers', index, 'endpoints', type], message: 'WS 端点使用 wss://；HTTP 端点使用 https://，不同协议拆分 provider' });
+          }
+          if (!m.api.types.includes(type as z.infer<typeof apiType>)) {
+            ctx.addIssue({ code: 'custom', path: ['providers', index, 'endpoints', type], message: 'provider 接口必须包含在 api.types 中' });
+          }
+          if (type === 'messages' && /\/chat\/completions\b/.test(endpoint)) {
+            ctx.addIssue({ code: 'custom', path: ['providers', index, 'endpoints', type], message: 'Chat Completions 不能标为 messages' });
+          }
+        }
+        for (const type of Object.keys(p.reasoning_params ?? {})) {
+          if (!(type in p.endpoints)) ctx.addIssue({ code: 'custom', path: ['providers', index, 'reasoning_params', type], message: '思考参数必须对应已登记端点' });
+        }
+      }
       if (m.created !== null && m.info.release_date !== new Date(m.created * 1000).toISOString().slice(0, 10)) {
         ctx.addIssue({ code: 'custom', path: ['info', 'release_date'], message: 'release_date 必须与 created 一致' });
       }

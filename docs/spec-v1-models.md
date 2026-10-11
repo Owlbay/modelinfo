@@ -71,7 +71,7 @@ info         ⑥ 源信息
 | `created` | integer \| null | 发布时间，Unix 秒 |
 | `owned_by` | string | 模型厂商，不是转售商或聚合网关 |
 | `name` | string | 展示名称 |
-| `api.types` | string[] | 接口类型：`chat`、`messages`、`responses`、`generate`、`batch`、`realtime`、`completions`、`embeddings`、`images`、`video`、`audio`、`3d`、`rerank`、`ocr`、`moderation` |
+| `api.types` | string[] | 接口类型：`chat`、`messages`、`responses`、`interactions`、`generate`、`batch`、`realtime`、`completions`、`embeddings`、`images`、`video`、`audio`、`3d`、`rerank`、`ocr`、`moderation` |
 | `limits.context` | integer \| null | 输入与输出合计的上下文上限（Token） |
 | `limits.input` | integer \| null | 官方单独声明的最大输入 |
 | `limits.output` | integer \| null | 最大输出 |
@@ -87,7 +87,7 @@ info         ⑥ 源信息
 | `info.docs` | string \| null | 官方文档地址 |
 | `info.verified_at` | string \| null | 最近人工核验日期 `YYYY-MM-DD` |
 
-`chat` 指对话接口：OpenAI Chat Completions 格式（`/chat/completions`），厂商自有的对话格式（如 Cohere `/v2/chat`、Amazon Converse）也归此类，具体路径见 `providers[].endpoints`；`messages` 只指 Anthropic Messages 格式（`/v1/messages`），厂商官方提供 Anthropic 兼容端点时才标注；`generate` 指 Google `generateContent`。
+`chat` 指对话接口：OpenAI Chat Completions 格式（`/chat/completions`），厂商自有的对话格式（如 Cohere `/v2/chat`、Amazon Converse）也归此类，具体路径见 `providers[].endpoints`；`messages` 只指 Anthropic Messages 格式（`/v1/messages`），厂商官方提供 Anthropic 兼容端点时才标注；`generate` 指 Google `generateContent`；`responses` 指 OpenAI Responses 协议，`interactions` 指 Google Interactions 协议，两者不可混用。
 
 ## 6. 价格
 
@@ -125,6 +125,12 @@ info         ⑥ 源信息
 | `aliases` | 官方别名或快照 ID，用于搜索 |
 | `translations` | 可选。介绍类文本的译文：`{ "<语言代码>": { "description": "…" } }`，语言代码取 `src/i18n` 的 `LOCALES`。只翻译 `info.description` 官方原文，页面按界面语言显示，缺省显示原文；`/v1/models` 始终返回原文 |
 | `sources` | 官方来源 `{ title, url, retrieved_at }`，至少一条 HTTPS |
-| `providers` | 调用方式：`id`、`model`、`base_url`、`endpoints`、`reasoning_param`，以及与标准字段不同时的覆盖值（`limits`、`modalities`、`features`、`pricing`、`reasoning_efforts`） |
+| `providers` | 调用方式：`id`、`model`、`base_url`、`endpoints`、`reasoning_param`，可选的按接口区分参数映射 `reasoning_params`（如 `{ "chat": "reasoning_effort", "responses": "reasoning.effort" }`），以及与标准字段不同时的覆盖值（`limits`、`modalities`、`features`、`pricing`、`reasoning_efforts`） |
 
 校验规则在 `src/content.config.ts`，构建时执行，不合规即失败。
+
+`providers[].base_url` 支持 `https://` 和 `wss://`；`endpoints` 的值为 `GET /path`、`POST /path` 或 `WS /path`。`WS` 只与 `wss://` 配对；HTTP 只与 `https://` 配对。不同协议地址拆分为不同 provider。公开接口仍不包含 providers。
+
+`reasoning_param` 保留原有含义；多协议参数不同时，以 `reasoning_params[接口类型]` 为准，未确认的接口参数写 `null`。该映射只用于维护，不进入公开接口。
+
+一致性校验：输入和输出的独立上限均不得超过已知总上下文；不要求两者最大值相加小于上下文（通常不能同时取最大值）。provider 端点类型必须在 `api.types` 中声明，思考参数映射必须对应已登记端点。官方来源自相矛盾时保留可确认值，冲突值写 `null`，不推算替代值。

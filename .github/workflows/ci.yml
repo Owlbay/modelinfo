@@ -28,4 +28,5 @@ jobs:
       - name: 数据校验 / Validate data
         run: node scripts/validate-data.mjs
       - run: pnpm check
+      - run: pnpm test
       - run: pnpm build

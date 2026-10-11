@@ -14,7 +14,7 @@ const KEYS = ['id', 'object', 'created', 'owned_by', 'name', 'api', 'limits', 'm
 // translations 可省略；语言代码与 src/i18n/index.ts 的 LOCALES 一致
 const OPTIONAL = new Set(['translations']);
 const LANGS = ['zh', 'en'];
-const API = ['chat', 'messages', 'responses', 'completions', 'generate', 'batch', 'realtime', 'embeddings', 'images', 'video', 'audio', '3d', 'rerank', 'ocr', 'moderation'];
+const API = ['chat', 'messages', 'responses', 'interactions', 'completions', 'generate', 'batch', 'realtime', 'embeddings', 'images', 'video', 'audio', '3d', 'rerank', 'ocr', 'moderation'];
 const MOD = ['text', 'image', 'audio', 'video', 'document', 'embedding', 'score', '3d'];
 const FEAT = ['tools', 'structured_output', 'streaming', 'caching', 'batch'];
 const DATE = /^\d{4}-\d{2}-\d{2}$/;
@@ -52,6 +52,12 @@ for (const file of files) {
   if (!Array.isArray(m.api?.types) || !m.api.types.length || m.api.types.some((t) => !API.includes(t)) || Object.keys(m.api).join() !== 'types') e(`api 只含 types，取值 ${API.join('|')}`);
   const tok = (v) => v === null || (Number.isInteger(v) && v > 0);
   if (!m.limits || Object.keys(m.limits).join() !== 'context,input,output' || !['context', 'input', 'output'].every((k) => tok(m.limits[k]))) e('limits 为 {context,input,output}，正整数或 null');
+  const checkLimitRelations = (limits, where) => {
+    for (const key of ['input', 'output']) {
+      if (limits?.context != null && limits[key] != null && limits[key] > limits.context) e(`${where}.${key} 不能大于 context；来源冲突时写 null`);
+    }
+  };
+  checkLimitRelations(m.limits, 'limits');
   if (!m.modalities || Object.keys(m.modalities).join() !== 'input,output' || !['input', 'output'].every((k) => Array.isArray(m.modalities[k]) && m.modalities[k].length && m.modalities[k].every((x) => MOD.includes(x)))) e(`modalities 为 {input,output}，取值 ${MOD.join('|')}`);
   if (!m.reasoning || Object.keys(m.reasoning).join() !== 'supported,efforts' || !(m.reasoning.supported === null || typeof m.reasoning.supported === 'boolean') || !Array.isArray(m.reasoning.efforts)) e('reasoning 为 {supported: bool|null, efforts: string[]}');
   const price = (v) => v === null || (typeof v === 'number' && v >= 0);
@@ -83,13 +89,23 @@ for (const file of files) {
   if (!Array.isArray(m.sources) || !m.sources.length || m.sources.some((s) => Object.keys(s).join() !== 'title,url,retrieved_at' || !s.url.startsWith('https://') || !DATE.test(s.retrieved_at))) e('sources 至少一条 {title,url(https),retrieved_at}');
   if (!Array.isArray(m.providers)) e('providers 为数组');
   for (const [n, p] of (m.providers ?? []).entries()) {
-    const allowed = ['id', 'model', 'base_url', 'endpoints', 'reasoning_param', 'reasoning_efforts', 'limits', 'modalities', 'features', 'pricing'];
+    const allowed = ['id', 'model', 'base_url', 'endpoints', 'reasoning_param', 'reasoning_params', 'reasoning_efforts', 'limits', 'modalities', 'features', 'pricing'];
     const extra = Object.keys(p).filter((k) => !allowed.includes(k));
     if (extra.length) e(`providers[${n}] 多余字段 ${extra.join(',')}`);
-    if (!p.id || !p.model || !String(p.base_url).startsWith('https://')) e(`providers[${n}] 需要 id、model、https base_url`);
+    if (!p.id || !p.model || !/^(https|wss):\/\//.test(String(p.base_url))) e(`providers[${n}] 需要 id、model、https 或 wss base_url`);
     for (const [k, v] of Object.entries(p.endpoints ?? {})) {
-      if (!API.includes(k) || !/^(GET|POST) \//.test(v)) e(`providers[${n}].endpoints.${k} 格式为 "POST /path"`);
+      if (!API.includes(k) || !/^(GET|POST|WS) \//.test(v)) e(`providers[${n}].endpoints.${k} 格式为 "GET|POST|WS /path"`);
+      if (String(v).startsWith('WS ') !== String(p.base_url).startsWith('wss://')) e(`providers[${n}].endpoints.${k}：WS 使用 wss://，HTTP 使用 https://`);
+      if (!m.api?.types?.includes(k)) e(`providers[${n}].endpoints.${k} 未包含在 api.types 中`);
+      if (k === 'messages' && /\/chat\/completions\b/.test(v)) e(`providers[${n}].endpoints.messages：Chat Completions 不能标为 messages`);
     }
+    if ('reasoning_params' in p) {
+      if (!p.reasoning_params || typeof p.reasoning_params !== 'object' || Array.isArray(p.reasoning_params)) e(`providers[${n}].reasoning_params 必须为对象`);
+      else for (const [type, param] of Object.entries(p.reasoning_params)) {
+        if (!API.includes(type) || !(type in (p.endpoints ?? {})) || !(param === null || (typeof param === 'string' && param.length))) e(`providers[${n}].reasoning_params.${type} 必须对应已登记端点，值为非空字符串或 null`);
+      }
+    }
+    checkLimitRelations(p.limits, `providers[${n}].limits`);
     if (!('reasoning_param' in p)) e(`providers[${n}] 需要 reasoning_param（可为 null）`);
     if ('pricing' in p) checkPricing(p.pricing, `providers[${n}].pricing`);
   }
