@@ -53,7 +53,9 @@ const fields: Array<[string, string, string]> = [
   ['info.verified_at', 'string | null', f.verified],
 ];
 
-const curl = `curl ${url}`;
+const curl = `curl -sS ${url} \\
+  -H "Accept: application/json"`;
+const curlJq = `curl -sS ${url} | jq -r '.data[] | [.id, .owned_by] | @tsv'`;
 const python = `from openai import OpenAI
 
 ${d.sdkComment}
@@ -85,6 +87,7 @@ console.log(cheapest.id, cheapest.pricing);`;
 
     <SectionFrame id="endpoint" title={d.toc.endpoint} source="OpenAI compatible" stamp="JSON">
       <Endpoint lang={lang} method="GET" url={url} />
+      <div class="docs__request"><CodeBlock lang={lang} label="curl" code={curl} /></div>
       <ul class="docs__list" role="list">{d.endpointNotes.map((n) => <li>{n}</li>)}</ul>
     </SectionFrame>
 
@@ -122,7 +125,7 @@ console.log(cheapest.id, cheapest.pricing);`;
 
     <SectionFrame id="usage" title={d.toc.usage}>
       <div class="docs__code">
-        <CodeBlock lang={lang} label="curl" code={curl} />
+        <CodeBlock lang={lang} label="curl · jq" code={curlJq} />
         <CodeBlock lang={lang} label="Python · OpenAI SDK" code={python} />
         <CodeBlock lang={lang} label="JavaScript" code={js} />
       </div>
@@ -171,6 +174,7 @@ console.log(cheapest.id, cheapest.pricing);`;
     color: var(--ink-2);
   }
   #data .docs__list { margin-top: 0; }
+  .docs__request { margin-top: var(--sp-4); }
   .docs__lead { margin-bottom: var(--sp-4); color: var(--ink-2); }
 
   .docs__groups { margin-bottom: var(--sp-5); }
