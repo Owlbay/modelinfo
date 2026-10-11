@@ -1,0 +1,61 @@
+{
+  "id": "mimo-v2-pro",
+  "object": "model",
+  "created": null,
+  "owned_by": "xiaomi",
+  "name": "MiMo-V2-Pro",
+  "api": {
+    "types": [
+      "chat"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "retired",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "MiMo-V2-Pro, retired. Official shutdown: 2026-06-30 00:00 (UTC+8); requests to the old model name then return errors.",
+    "docs": "https://mimo.mi.com/docs/zh-CN/updates/deprecate",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "模型下线 | Xiaomi MiMo",
+      "url": "https://mimo.mi.com/docs/zh-CN/updates/deprecate",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "存档 模型列表 | Xiaomi MiMo（原网址 https://mimo.mi.com/docs/zh-CN/quick-start/summary/model）",
+      "url": "https://web.archive.org/web/20260613102030/https://mimo.mi.com/docs/zh-CN/quick-start/summary/model",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "xiaomi",
+      "model": "mimo-v2-pro",
+      "base_url": "https://api.xiaomimimo.com",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

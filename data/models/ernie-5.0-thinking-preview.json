@@ -40,10 +40,10 @@
     "streaming"
   ],
   "info": {
-    "status": "preview",
+    "status": "deprecated",
     "release_date": "2025-11-13",
     "knowledge_cutoff": null,
-    "description": "Preview version of ERNIE 5.0 with deep thinking enabled by default.",
+    "description": "Preview version of ERNIE 5.0 with deep thinking enabled by default. Scheduled to be retired on 2026-10-29 (official retirement notice).",
     "docs": "https://cloud.baidu.com/doc/qianfan/s/rmh4stp0j",
     "verified_at": "2026-10-11"
   },
@@ -77,6 +77,11 @@
     {
       "title": "Anthropic Claude API 兼容 | 百度千帆",
       "url": "https://cloud.baidu.com/doc/qianfan-docs/s/6mh3e6gjp",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "模型版本升级及退役机制 | 百度千帆",
+      "url": "https://cloud.baidu.com/doc/qianfan/s/zmh4stou3",
       "retrieved_at": "2026-10-11"
     }
   ],

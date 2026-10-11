@@ -1,0 +1,61 @@
+{
+  "id": "ling-2.5-1t",
+  "object": "model",
+  "created": null,
+  "owned_by": "ant",
+  "name": "Ling-2.5-1T",
+  "api": {
+    "types": [
+      "chat"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "deprecated",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Ling-2.5-1T, scheduled for retirement. The official deprecation page lists the planned retirement date as 2026-09-30 00:00 (UTC+8) and still shows it under upcoming deprecation.",
+    "docs": "https://developer.ant-ling.com/en/docs/models/deprecation/",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Deprecation | Ant Ling API Docs",
+      "url": "https://developer.ant-ling.com/en/docs/models/deprecation/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "存档 OpenAI Compatible API | Ant Ling API Docs（原网址 https://developer.ant-ling.com/en/docs/api-reference/openai/）",
+      "url": "https://web.archive.org/web/20260704184654/https://developer.ant-ling.com/en/docs/api-reference/openai/",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "ant",
+      "model": "Ling-2.5-1T",
+      "base_url": "https://api.ant-ling.com",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

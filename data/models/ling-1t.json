@@ -1,0 +1,61 @@
+{
+  "id": "ling-1t",
+  "object": "model",
+  "created": null,
+  "owned_by": "ant",
+  "name": "Ling-1T",
+  "api": {
+    "types": [
+      "chat"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "retired",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Ling-1T, retired. Official shutdown: 2026-06-15 00:00 (UTC+8).",
+    "docs": "https://developer.ant-ling.com/en/docs/models/deprecation/",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [],
+  "sources": [
+    {
+      "title": "Deprecation | Ant Ling API Docs",
+      "url": "https://developer.ant-ling.com/en/docs/models/deprecation/",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Ling-1T | Hugging Face（inclusionAI 官方）",
+      "url": "https://huggingface.co/inclusionAI/Ling-1T",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "ant",
+      "model": "Ling-1T",
+      "base_url": "https://api.ant-ling.com",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}

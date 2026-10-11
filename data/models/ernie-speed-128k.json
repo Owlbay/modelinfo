@@ -1,0 +1,63 @@
+{
+  "id": "ernie-speed-128k",
+  "object": "model",
+  "created": null,
+  "owned_by": "baidu",
+  "name": "ERNIE-Speed-128K",
+  "api": {
+    "types": [
+      "chat"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "reasoning": {
+    "supported": null,
+    "efforts": []
+  },
+  "pricing": null,
+  "features": [],
+  "info": {
+    "status": "retired",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "ERNIE-Speed-128K, retired. Official retirement date: 2026-01-27.",
+    "docs": "https://cloud.baidu.com/doc/qianfan/s/zmh4stou3",
+    "verified_at": "2026-10-11"
+  },
+  "aliases": [
+    "ERNIE-Speed-128K"
+  ],
+  "sources": [
+    {
+      "title": "模型版本升级及退役机制 | 百度千帆",
+      "url": "https://cloud.baidu.com/doc/qianfan/s/zmh4stou3",
+      "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "模型更新记录 | 百度千帆",
+      "url": "https://cloud.baidu.com/doc/qianfan/s/Kmh4stnjp",
+      "retrieved_at": "2026-10-11"
+    }
+  ],
+  "providers": [
+    {
+      "id": "baidu",
+      "model": "ernie-speed-128k",
+      "base_url": "https://qianfan.baidubce.com",
+      "endpoints": {},
+      "reasoning_param": null
+    }
+  ]
+}
