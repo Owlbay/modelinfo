@@ -1,6 +1,6 @@
 name: ci
 
-# 检查与构建：推送与 PR 都会运行。发布由 Cloudflare Workers Builds 在 main 更新后自动完成。
+# 检查与构建：推送与 PR 都会运行。发布见 release.yml（推送 v* 标签）。
 on:
   push:
     branches: [main]
