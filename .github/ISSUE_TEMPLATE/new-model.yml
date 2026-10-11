@@ -6,8 +6,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        只收录模型厂商自家官方 API 上可调用的模型；已退役、仅开源权重或仅限审批机构的模型不收录。
-        Only models callable on the vendor's own official API are listed. Retired, open-weight-only or approval-only models are out of scope.
+        收录模型厂商自家官方 API 上可调用或曾经可调用（已下线）的模型；仅开源权重或仅限审批机构的模型不收录。
+        Models callable (or formerly callable, now retired) on the vendor's own official API are listed. Open-weight-only or approval-only models are out of scope.
   - type: input
     id: vendor
     attributes:
