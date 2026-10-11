@@ -50,6 +50,11 @@
   "aliases": [
     "qwen-max-2025-01-25"
   ],
+  "translations": {
+    "zh": {
+      "description": "大型多语言 Qwen 模型，在代码、逻辑和多语言能力方面有所提升。"
+    }
+  },
   "sources": [
     {
       "title": "Text generation models | Alibaba Cloud Model Studio",

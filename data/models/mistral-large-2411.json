@@ -42,6 +42,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "我们的顶级大模型，适用于高复杂度任务，最新版本发布于 2024 年 11 月。"
+    }
+  },
   "sources": [
     {
       "title": "Mistral Large 2.1 | Mistral Docs",

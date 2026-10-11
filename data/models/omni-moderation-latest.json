@@ -50,6 +50,11 @@
   "aliases": [
     "omni-moderation-2024-09-26"
   ],
+  "translations": {
+    "zh": {
+      "description": "免费的内容审核模型，可检测文本和图像中的有害内容。"
+    }
+  },
   "sources": [
     {
       "title": "omni-moderation-latest Model | OpenAI API",

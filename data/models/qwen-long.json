@@ -49,6 +49,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "长上下文模型，可处理以文件形式上传的大型文档，上下文窗口为 10,000,000 token。"
+    }
+  },
   "sources": [
     {
       "title": "Qwen-Long | 大模型服务平台百炼",

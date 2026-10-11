@@ -51,6 +51,11 @@
   "aliases": [
     "MiniMax-M2.7-highspeed"
   ],
+  "translations": {
+    "zh": {
+      "description": "性能与 M2.7 相同，推理更快、延迟更低。"
+    }
+  },
   "sources": [
     {
       "title": "Models | MiniMax API Docs",

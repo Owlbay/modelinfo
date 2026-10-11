@@ -49,6 +49,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "华为 openPangu 2.0 高效 MoE 模型，支持 512K 上下文、深度思考、函数调用和前缀续写（仅限 cn-southwest-2）。"
+    }
+  },
   "sources": [
     {
       "title": "OpenAI兼容接口 | 华为云 MaaS",

@@ -50,6 +50,11 @@
   "aliases": [
     "qwen3-coder-flash-2025-07-28"
   ],
+  "translations": {
+    "zh": {
+      "description": "继承 Coder-Plus 智能体能力的编程模型，针对仓库级理解进行了优化。"
+    }
+  },
   "sources": [
     {
       "title": "Text generation models | Alibaba Cloud Model Studio",

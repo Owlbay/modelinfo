@@ -46,6 +46,11 @@
   "aliases": [
     "nova-3-general"
   ],
+  "translations": {
+    "zh": {
+      "description": "Deepgram 通用语音转文字模型，支持多语言语码转换。"
+    }
+  },
   "sources": [
     {
       "title": "Models & Languages Overview | Deepgram Docs",

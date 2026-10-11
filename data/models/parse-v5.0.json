@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "视觉语言模型，可将表单和 PDF 等企业文档转换为结构化的 Markdown、表格和边界框。"
+    }
+  },
   "sources": [
     {
       "title": "Parse (Details and Application) | Cohere Docs",

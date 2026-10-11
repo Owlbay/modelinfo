@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Speechmatics 多语言语音转文字模型，针对环境记录员（ambient scribe）和听写等医疗音频调优，仅支持批量处理。"
+    }
+  },
   "sources": [
     {
       "title": "Models | Speechmatics Docs",

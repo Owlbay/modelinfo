@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Nomic 文本向量模型，默认维度为 768，支持 Matryoshka 可变输出维度。"
+    }
+  },
   "sources": [
     {
       "title": "Text Embedding | Nomic Atlas Docs",

@@ -50,6 +50,11 @@
   "aliases": [
     "amazon.nova-2-multimodal-embeddings-v1:0"
   ],
+  "translations": {
+    "zh": {
+      "description": "Amazon 的向量模型，可将文本、图像和视频转换为向量表示，用于搜索和检索场景。"
+    }
+  },
   "sources": [
     {
       "title": "Amazon Bedrock model card: Amazon Nova Multimodal Embeddings",

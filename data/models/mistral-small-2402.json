@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "注重效率的企业级小型模型。"
+    }
+  },
   "sources": [
     {
       "title": "Mistral Small 1.0 | Mistral Docs",

@@ -47,6 +47,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "百度千帆 OCR 模型，可将文档图像转换为结构化 Markdown，支持可选的思考模式。"
+    }
+  },
   "sources": [
     {
       "title": "Qianfan-OCR | 百度千帆",

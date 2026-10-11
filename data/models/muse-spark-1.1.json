@@ -60,6 +60,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "最初的 Muse Spark 版本，用于智能体和编程工作，具备长上下文推理能力。"
+    }
+  },
   "sources": [
     {
       "title": "Models | Meta Model API",

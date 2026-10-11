@@ -51,6 +51,11 @@
   "aliases": [
     "MiniMax-M2.5"
   ],
+  "translations": {
+    "zh": {
+      "description": "旧版模型，针对代码生成和重构进行了优化。"
+    }
+  },
   "sources": [
     {
       "title": "Models | MiniMax API Docs",

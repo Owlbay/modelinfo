@@ -51,6 +51,11 @@
   "aliases": [
     "qwen-flash-2025-07-28"
   ],
+  "translations": {
+    "zh": {
+      "description": "Qwen3 Flash，结合思考与非思考模式并支持动态切换。"
+    }
+  },
   "sources": [
     {
       "title": "Text generation models | Alibaba Cloud Model Studio",

@@ -50,6 +50,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "小米万亿参数旗舰基础模型，面向长时间运行的智能体和编程任务；将于 2026-10-21 下线。"
+    }
+  },
   "sources": [
     {
       "title": "mimo-v2.5-pro | Xiaomi MiMo",

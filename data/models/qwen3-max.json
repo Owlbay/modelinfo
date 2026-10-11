@@ -52,6 +52,11 @@
     "qwen3-max-2025-09-23",
     "qwen3-max-preview"
   ],
+  "translations": {
+    "zh": {
+      "description": "Qwen3 旗舰模型，针对智能体编程和工具使用进行了升级。"
+    }
+  },
   "sources": [
     {
       "title": "Text generation models | Alibaba Cloud Model Studio",

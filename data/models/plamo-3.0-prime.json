@@ -51,6 +51,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Preferred Networks 旗舰日语大语言模型，支持推理，上下文窗口为 256K。"
+    }
+  },
   "sources": [
     {
       "title": "API Reference | PLaMo",

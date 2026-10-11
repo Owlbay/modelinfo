@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "文生视频和图生视频模型，指令遵循和物理表现出色。"
+    }
+  },
   "sources": [
     {
       "title": "Models | MiniMax API Docs",

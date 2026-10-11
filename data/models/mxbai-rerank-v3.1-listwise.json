@@ -39,6 +39,11 @@
   "aliases": [
     "mixedbread-ai/mxbai-rerank-v3.1-listwise"
   ],
+  "translations": {
+    "zh": {
+      "description": "列表式重排模型，一次读取整个候选集并遵循自然语言指令；是 Mixedbread Search 的默认重排模型。"
+    }
+  },
   "sources": [
     {
       "title": "mxbai-rerank-v3.1-listwise | Mixedbread Blog",

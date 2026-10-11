@@ -39,6 +39,11 @@
   "aliases": [
     "MAI-Voice-2.1-Flash"
   ],
+  "translations": {
+    "zh": {
+      "description": "低延迟、富有表现力的文字转语音模型，支持 23 种语言，面向实时语音智能体，通过 Azure Speech SSML 使用。"
+    }
+  },
   "sources": [
     {
       "title": "MAI-Voice-2.1 and MAI-Voice-2.1-Flash | Microsoft Learn",

@@ -50,6 +50,11 @@
   "aliases": [
     "o1-preview-2024-09-12"
   ],
+  "translations": {
+    "zh": {
+      "description": "我们首个 o 系列推理模型的预览版。"
+    }
+  },
   "sources": [
     {
       "title": "o1 Preview Model | OpenAI API",

@@ -46,6 +46,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "代码编辑模型，支持自动补全（FIM）和下一处编辑建议。"
+    }
+  },
   "sources": [
     {
       "title": "Models | Inception Docs",

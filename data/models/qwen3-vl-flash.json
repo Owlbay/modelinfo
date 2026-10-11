@@ -53,6 +53,11 @@
     "qwen3-vl-flash-2026-01-22",
     "qwen3-vl-flash-2025-10-15"
   ],
+  "translations": {
+    "zh": {
+      "description": "小型视觉语言模型，支持思考与非思考模式以及 2D/3D 定位。"
+    }
+  },
   "sources": [
     {
       "title": "Vision models | Alibaba Cloud Model Studio",

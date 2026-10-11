@@ -52,6 +52,11 @@
     "qwen-turbo-latest",
     "qwen-turbo-2024-11-01"
   ],
+  "translations": {
+    "zh": {
+      "description": "Qwen3 Turbo，结合思考与非思考模式；不再更新，推荐使用 Qwen-Flash。"
+    }
+  },
   "sources": [
     {
       "title": "Text generation models | Alibaba Cloud Model Studio",

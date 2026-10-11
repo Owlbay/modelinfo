@@ -42,6 +42,11 @@
   "aliases": [
     "aisingapore/Qwen-SEA-LION-v4.5-27B-IT"
   ],
+  "translations": {
+    "zh": {
+      "description": "针对东南亚语言微调的指令模型，由 Qwen3.5-397B-A17B 蒸馏而来，带有视觉编码器。"
+    }
+  },
   "sources": [
     {
       "title": "Inferencing API | SEA-LION Docs",

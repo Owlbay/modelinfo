@@ -43,6 +43,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "我们的前沿级多模态模型，发布于 2025 年 8 月，改进了语气和性能。"
+    }
+  },
   "sources": [
     {
       "title": "Mistral Medium 3.1 | Mistral Docs",

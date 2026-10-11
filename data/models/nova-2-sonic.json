@@ -50,6 +50,11 @@
   "aliases": [
     "amazon.nova-2-sonic-v1:0"
   ],
+  "translations": {
+    "zh": {
+      "description": "Amazon 的语音到语音基础模型，用于构建自然的实时语音对话应用。"
+    }
+  },
   "sources": [
     {
       "title": "Amazon Bedrock model card: Nova 2 Sonic",

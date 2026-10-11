@@ -53,6 +53,11 @@
   "aliases": [
     "ministral-3b-latest"
   ],
+  "translations": {
+    "zh": {
+      "description": "Ministral 3 中最小、最高效的模型，具备语言和视觉能力，专为边缘部署设计。"
+    }
+  },
   "sources": [
     {
       "title": "Ministral 3 3B | Mistral Docs",

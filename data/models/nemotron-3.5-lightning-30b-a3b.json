@@ -42,6 +42,11 @@
   "aliases": [
     "nvidia/nemotron-3.5-lightning-30b-a3b"
   ],
+  "translations": {
+    "zh": {
+      "description": "速度最快的 30B A3B MoE 模型，在专业智能体任务的领域准确率方面领先。"
+    }
+  },
   "sources": [
     {
       "title": "nemotron-3.5-lightning-30b-a3b Model Card | NVIDIA NIM",

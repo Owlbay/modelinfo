@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "我们首个开放 MoE 模型，达到 SOTA，可与规模为其 2 至 3 倍的模型竞争。"
+    }
+  },
   "sources": [
     {
       "title": "Mixtral 8x7B | Mistral Docs",

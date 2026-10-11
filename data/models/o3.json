@@ -55,6 +55,11 @@
   "aliases": [
     "o3-2025-04-16"
   ],
+  "translations": {
+    "zh": {
+      "description": "用于复杂任务的推理模型，已被 GPT-5 取代。"
+    }
+  },
   "sources": [
     {
       "title": "o3 Model | OpenAI API",

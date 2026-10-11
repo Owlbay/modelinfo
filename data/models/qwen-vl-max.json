@@ -54,6 +54,11 @@
     "qwen-vl-max-latest",
     "qwen-vl-max-2025-04-08"
   ],
+  "translations": {
+    "zh": {
+      "description": "视觉语言模型，视觉推理能力较 Qwen-VL-Plus 进一步增强。"
+    }
+  },
   "sources": [
     {
       "title": "Vision models | Alibaba Cloud Model Studio",

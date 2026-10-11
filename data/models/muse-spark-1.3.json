@@ -61,6 +61,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Meta 最新的 Muse Spark 版本，针对智能体工作流（多步骤工具、浏览器和长周期任务）调优，编程能力有所提升。"
+    }
+  },
   "sources": [
     {
       "title": "Models | Meta Model API",

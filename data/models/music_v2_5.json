@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "最先进的 Eleven 音乐模型；可根据文本提示、作曲方案和先前生成的歌曲进行生成。"
+    }
+  },
   "sources": [
     {
       "title": "Models | ElevenLabs Documentation",

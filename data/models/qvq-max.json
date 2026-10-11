@@ -51,6 +51,11 @@
     "qvq-max-2025-03-25",
     "qvq-max-latest"
   ],
+  "translations": {
+    "zh": {
+      "description": "输出思维链的视觉推理模型，擅长数学、编程和视觉分析。"
+    }
+  },
   "sources": [
     {
       "title": "Vision models | Alibaba Cloud Model Studio",

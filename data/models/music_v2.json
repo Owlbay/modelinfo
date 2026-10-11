@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "录音室级音乐生成，仅输出器乐，支持段落级编辑。"
+    }
+  },
   "sources": [
     {
       "title": "Models | ElevenLabs Documentation",

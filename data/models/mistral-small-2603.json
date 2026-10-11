@@ -56,6 +56,11 @@
   "aliases": [
     "mistral-small-latest"
   ],
+  "translations": {
+    "zh": {
+      "description": "在单一模型中统一指令、推理和编程能力的混合模型。"
+    }
+  },
   "sources": [
     {
       "title": "Mistral Small 4 | Mistral Docs",

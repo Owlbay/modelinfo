@@ -41,6 +41,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "生成式视频转文本模型；可分析视频或图像，支持第一人称视频理解，改进了实体识别和片段内事件。"
+    }
+  },
   "sources": [
     {
       "title": "Pegasus 1.6 | TwelveLabs",

@@ -40,6 +40,11 @@
   "aliases": [
     "nvidia/nemotron-3.5-content-safety"
   ],
+  "translations": {
+    "zh": {
+      "description": "用于检测不安全和有害内容的多语言、多模态模型。"
+    }
+  },
   "sources": [
     {
       "title": "nemotron-3.5-content-safety Model Card | NVIDIA NIM",

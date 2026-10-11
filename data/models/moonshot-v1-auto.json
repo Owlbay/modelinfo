@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "官方已弃用模型列表中的 Moonshot V1 变体。官方已于 2026-08-31 停用。"
+    }
+  },
   "sources": [
     {
       "title": "Model List | Kimi API Platform",

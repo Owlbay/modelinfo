@@ -39,6 +39,11 @@
   "aliases": [
     "mistral-saba-latest"
   ],
+  "translations": {
+    "zh": {
+      "description": "基于中东和南亚精心整理的数据集训练的微调 Small 模型。"
+    }
+  },
   "sources": [
     {
       "title": "Mistral Saba | Mistral Docs",

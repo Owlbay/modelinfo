@@ -41,6 +41,11 @@
   "aliases": [
     "nvidia/nemotron-3-ultra-550b-a55b"
   ],
+  "translations": {
+    "zh": {
+      "description": "开放、高效的 Mamba-Transformer 混合 MoE 模型，支持 1M 上下文，在智能体推理、编程、规划和工具调用方面表现出色。"
+    }
+  },
   "sources": [
     {
       "title": "nemotron-3-ultra-550b-a55b Model Card | NVIDIA NIM",

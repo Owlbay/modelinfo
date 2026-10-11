@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Perplexity 上下文向量模型，1024 维，用于共享上下文的文档分块。"
+    }
+  },
   "sources": [
     {
       "title": "Embeddings API | Perplexity Docs",

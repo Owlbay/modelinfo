@@ -53,6 +53,11 @@
     "amazon.nova-micro-v1:0",
     "us.amazon.nova-micro-v1:0"
   ],
+  "translations": {
+    "zh": {
+      "description": "Amazon 速度最快的纯文本模型，针对摘要、翻译和分类等任务的速度与低成本进行了优化。"
+    }
+  },
   "sources": [
     {
       "title": "Amazon Bedrock model card: Amazon Nova Micro",

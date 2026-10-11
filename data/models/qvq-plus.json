@@ -41,6 +41,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Plus 档视觉推理模型，适用于数学、编程和视觉分析。"
+    }
+  },
   "sources": [
     {
       "title": "Vision models | Alibaba Cloud Model Studio",

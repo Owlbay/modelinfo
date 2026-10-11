@@ -49,6 +49,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "通用模型，具备 1M token 上下文窗口和自适应推理；计划于 2026-12-14 弃用。"
+    }
+  },
   "sources": [
     {
       "title": "Choose a model | Writer AI Studio",

@@ -38,6 +38,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Moonshot V1 视觉模型，可理解图像内容并输出文本。官方已于 2026-08-31 停用。"
+    }
+  },
   "sources": [
     {
       "title": "Model List | Kimi API Platform",

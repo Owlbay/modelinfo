@@ -40,6 +40,11 @@
   "aliases": [
     "nvidia/nemotron-parse-2.0"
   ],
+  "translations": {
+    "zh": {
+      "description": "擅长从图像中提取文本和元数据的视觉语言模型。"
+    }
+  },
   "sources": [
     {
       "title": "nemotron-parse-2.0 Model Card | NVIDIA NIM",

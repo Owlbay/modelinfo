@@ -38,6 +38,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "用于长视频理解的视频语言模型；已于 2026-08-18 从平台移除。"
+    }
+  },
   "sources": [
     {
       "title": "Release notes | TwelveLabs Docs",

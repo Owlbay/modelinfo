@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Deepgram Nova-2 语音转文字模型，针对医疗音频（英语）调优。"
+    }
+  },
   "sources": [
     {
       "title": "Models & Languages Overview | Deepgram Docs",

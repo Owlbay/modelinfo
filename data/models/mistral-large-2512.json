@@ -53,6 +53,11 @@
   "aliases": [
     "mistral-large-latest"
   ],
+  "translations": {
+    "zh": {
+      "description": "最先进的开放权重通用多模态模型，采用细粒度混合专家（Mixture-of-Experts）架构。"
+    }
+  },
   "sources": [
     {
       "title": "Mistral Large 3 | Mistral Docs",

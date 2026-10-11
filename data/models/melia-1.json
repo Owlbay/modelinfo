@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Speechmatics 多语言语音转文字模型，可处理说话人在对话中途切换语言的情况，仅支持批量处理。"
+    }
+  },
   "sources": [
     {
       "title": "Models | Speechmatics Docs",

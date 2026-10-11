@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "我们首个、规模较大的 SOTA 模型，适用于企业场景，具备强大的对话能力。"
+    }
+  },
   "sources": [
     {
       "title": "Mistral Large 1.0 | Mistral Docs",

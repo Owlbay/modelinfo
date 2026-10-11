@@ -51,6 +51,11 @@
   "aliases": [
     "MiniMax-M2.1"
   ],
+  "translations": {
+    "zh": {
+      "description": "旧版 230B 参数模型（10B 激活），用于代码生成和增强推理。"
+    }
+  },
   "sources": [
     {
       "title": "Models | MiniMax API Docs",

@@ -43,6 +43,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "我们上一代小型模型的更新版本，发布于 2025 年 6 月。"
+    }
+  },
   "sources": [
     {
       "title": "Mistral Small 3.2 | Mistral Docs",

@@ -60,6 +60,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Muse Spark 1.2 的折扣 Contributor 层级，允许使用提示词和补全内容进行训练。"
+    }
+  },
   "sources": [
     {
       "title": "Models | Meta Model API",

@@ -52,6 +52,11 @@
   "aliases": [
     "o4-mini-deep-research-2025-06-26"
   ],
+  "translations": {
+    "zh": {
+      "description": "更快、更实惠的深度研究模型。"
+    }
+  },
   "sources": [
     {
       "title": "o4-mini-deep-research Model | OpenAI API",

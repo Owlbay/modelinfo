@@ -40,6 +40,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "我们的内容审核服务，可帮助用户检测有害文本内容。"
+    }
+  },
   "sources": [
     {
       "title": "Mistral Moderation | Mistral Docs",

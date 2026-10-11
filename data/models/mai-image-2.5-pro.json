@@ -40,6 +40,11 @@
   "aliases": [
     "MAI-Image-2.5-Pro"
   ],
+  "translations": {
+    "zh": {
+      "description": "MAI-Image-2.5 系列中质量最高的模型，支持文生图和图像编辑（图生图）。"
+    }
+  },
   "sources": [
     {
       "title": "Deploy and use MAI image models in Microsoft Foundry | Microsoft Learn",

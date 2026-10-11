@@ -39,6 +39,11 @@
   "aliases": [
     "MAI-Transcribe-1.5"
   ],
+  "translations": {
+    "zh": {
+      "description": "Microsoft AI 语音转文字模型，是 MAI-Transcribe-2 的前代模型，通过 Azure Speech 增强模式使用。"
+    }
+  },
   "sources": [
     {
       "title": "MAI-Transcribe-2 | Microsoft Learn",

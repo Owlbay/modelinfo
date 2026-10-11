@@ -39,6 +39,11 @@
   "aliases": [
     "nvidia/nemotron-3-embed-1b"
   ],
+  "translations": {
+    "zh": {
+      "description": "1B 向量模型，适用于语义搜索、检索和 RAG 应用。"
+    }
+  },
   "sources": [
     {
       "title": "nemotron-3-embed-1b Model Card | NVIDIA NIM",

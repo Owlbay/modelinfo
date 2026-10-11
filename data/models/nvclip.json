@@ -40,6 +40,11 @@
   "aliases": [
     "nvidia/nvclip"
   ],
+  "translations": {
+    "zh": {
+      "description": "面向图像和文本的多模态向量模型，是 CLIP 的 NVIDIA 商用版本。"
+    }
+  },
   "sources": [
     {
       "title": "nvidia / nvclip | NVIDIA NIM API Reference",

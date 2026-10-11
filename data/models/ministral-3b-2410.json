@@ -42,6 +42,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "全球最佳的边缘模型。"
+    }
+  },
   "sources": [
     {
       "title": "Ministral 3B | Mistral Docs",

@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "采用 mamba 2 架构的专用编程模型，以开放许可证提供，用于研究目的。"
+    }
+  },
   "sources": [
     {
       "title": "Codestral Mamba 7B | Mistral Docs",

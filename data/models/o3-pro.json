@@ -52,6 +52,11 @@
   "aliases": [
     "o3-pro-2025-06-10"
   ],
+  "translations": {
+    "zh": {
+      "description": "o3 的版本，使用更多算力以给出更好的回答。"
+    }
+  },
   "sources": [
     {
       "title": "o3-pro Model | OpenAI API",

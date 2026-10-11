@@ -41,6 +41,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "用于视频理解的向量模型；可从视频、音频、图像、文本和文档生成 128、256 或 512 维向量。"
+    }
+  },
   "sources": [
     {
       "title": "Marengo 3.5 | TwelveLabs",

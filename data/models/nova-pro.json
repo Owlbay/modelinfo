@@ -56,6 +56,11 @@
     "amazon.nova-pro-v1:0",
     "us.amazon.nova-pro-v1:0"
   ],
+  "translations": {
+    "zh": {
+      "description": "Amazon 均衡的多模态模型，在准确率、速度和成本上表现出色，适用于涵盖文本、图像和视频的各类任务。"
+    }
+  },
   "sources": [
     {
       "title": "Amazon Bedrock model card: Amazon Nova Pro",

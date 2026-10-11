@@ -50,6 +50,11 @@
     "qwen3-coder-plus-2025-09-23",
     "qwen3-coder-plus-2025-07-22"
   ],
+  "translations": {
+    "zh": {
+      "description": "编程智能体模型，支持工具调用和环境交互。"
+    }
+  },
   "sources": [
     {
       "title": "Text generation models | Alibaba Cloud Model Studio",

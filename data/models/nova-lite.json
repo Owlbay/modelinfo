@@ -56,6 +56,11 @@
     "amazon.nova-lite-v1:0",
     "us.amazon.nova-lite-v1:0"
   ],
+  "translations": {
+    "zh": {
+      "description": "Amazon 低成本多模态模型，可处理文本、图像和视频输入，适用于文档分析和视觉问答等任务。"
+    }
+  },
   "sources": [
     {
       "title": "Amazon Bedrock model card: Amazon Nova Lite",

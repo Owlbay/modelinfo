@@ -59,6 +59,11 @@
     "us.amazon.nova-2-lite-v1:0",
     "global.amazon.nova-2-lite-v1:0"
   ],
+  "translations": {
+    "zh": {
+      "description": "Amazon 高性价比多模态模型，适用于简单自动化、文档处理以及涵盖文本、图像和视频的客户支持。"
+    }
+  },
   "sources": [
     {
       "title": "Amazon Bedrock model card: Nova 2 Lite",

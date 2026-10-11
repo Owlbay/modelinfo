@@ -40,6 +40,11 @@
   "aliases": [
     "MAI-Image-2.6"
   ],
+  "translations": {
+    "zh": {
+      "description": "Microsoft AI 文生图和图像编辑（图生图）模型，在文字渲染、人像和 3D 图像方面更强。"
+    }
+  },
   "sources": [
     {
       "title": "Deploy and use MAI image models in Microsoft Foundry | Microsoft Learn",

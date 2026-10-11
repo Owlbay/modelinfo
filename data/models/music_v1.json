@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "根据文本提示生成录音室级音乐（旧版；已被 v2 和 v2.5 超越）。"
+    }
+  },
   "sources": [
     {
       "title": "Models | ElevenLabs Documentation",

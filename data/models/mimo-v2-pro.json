@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "MiMo-V2-Pro，已下线。官方停服时间：2026-06-30 00:00（UTC+8）；此后请求旧模型名称将返回错误。"
+    }
+  },
   "sources": [
     {
       "title": "模型下线 | Xiaomi MiMo",

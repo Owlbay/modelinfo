@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "千帆上的 PP-StructureV3 文档结构识别，支持版面、表格、公式和印章识别。"
+    }
+  },
   "sources": [
     {
       "title": "PP-StructureV3 API | 百度千帆",

@@ -46,6 +46,11 @@
   "aliases": [
     "mayura:v1"
   ],
+  "translations": {
+    "zh": {
+      "description": "英语与 10 种印度语言之间的文本翻译模型，支持多种翻译风格，每次请求最多 1,000 个字符。"
+    }
+  },
   "sources": [
     {
       "title": "Mayura | Sarvam Docs",

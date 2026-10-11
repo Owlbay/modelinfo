@@ -53,6 +53,11 @@
   "aliases": [
     "ministral-14b-latest"
   ],
+  "translations": {
+    "zh": {
+      "description": "Ministral 3 系列中最大的模型，针对本地部署优化，具备文本和视觉能力。"
+    }
+  },
   "sources": [
     {
       "title": "Ministral 3 14B | Mistral Docs",

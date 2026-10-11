@@ -53,6 +53,11 @@
   "aliases": [
     "MiniMax-M3"
   ],
+  "translations": {
+    "zh": {
+      "description": "多模态前沿编程模型，上下文窗口为 1M tokens。"
+    }
+  },
   "sources": [
     {
       "title": "Models | MiniMax API Docs",

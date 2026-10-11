@@ -47,6 +47,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Meta 的语音转文字模型，可转写实时音频流或受支持的音频文件。"
+    }
+  },
   "sources": [
     {
       "title": "Models | Meta Model API",

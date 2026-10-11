@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Qwen 3.0 系列图像生成与编辑模型，兼顾质量与速度。"
+    }
+  },
   "sources": [
     {
       "title": "Qwen-Image API reference | Alibaba Cloud Model Studio",

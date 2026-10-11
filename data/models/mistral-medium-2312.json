@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "我们首个企业级 SOTA 模型。"
+    }
+  },
   "sources": [
     {
       "title": "Mistral Medium 1.0 | Mistral Docs",

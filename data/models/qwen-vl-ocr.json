@@ -50,6 +50,11 @@
     "qwen-vl-ocr-latest",
     "qwen-vl-ocr-2025-11-20"
   ],
+  "translations": {
+    "zh": {
+      "description": "Qwen3-VL 架构模型，用于从扫描件、表格和收据中提取文本和结构化数据。"
+    }
+  },
   "sources": [
     {
       "title": "Vision models | Alibaba Cloud Model Studio",

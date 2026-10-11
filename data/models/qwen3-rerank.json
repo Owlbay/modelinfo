@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "文本排序模型，按与查询的相关性对候选文档排序，支持 100 多种语言。"
+    }
+  },
   "sources": [
     {
       "title": "qwen3-rerank | Alibaba Cloud Model Studio",

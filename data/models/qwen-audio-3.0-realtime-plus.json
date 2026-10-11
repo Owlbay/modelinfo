@@ -41,6 +41,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "实时语音对话模型，通过 Realtime API（WebSocket）访问。"
+    }
+  },
   "sources": [
     {
       "title": "Omni models | Alibaba Cloud Model Studio",

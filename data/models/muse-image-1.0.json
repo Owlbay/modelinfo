@@ -46,6 +46,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Meta 的图像模型，可根据文本提示和参考图像生成并编辑图像。"
+    }
+  },
   "sources": [
     {
       "title": "Models | Meta Model API",

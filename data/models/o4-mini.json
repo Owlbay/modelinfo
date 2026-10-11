@@ -55,6 +55,11 @@
   "aliases": [
     "o4-mini-2025-04-16"
   ],
+  "translations": {
+    "zh": {
+      "description": "快速、高性价比的推理模型，已被 GPT-5 Mini 取代。"
+    }
+  },
   "sources": [
     {
       "title": "o4-mini Model | OpenAI API",

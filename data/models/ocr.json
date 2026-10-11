@@ -47,6 +47,11 @@
   "aliases": [
     "ocr-260930"
   ],
+  "translations": {
+    "zh": {
+      "description": "扫描或拍摄文档的文字识别，包括倾斜、低质量和多语言文件；按页计价。"
+    }
+  },
   "sources": [
     {
       "title": "Document OCR | Upstage Docs",

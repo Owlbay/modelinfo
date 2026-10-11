@@ -39,6 +39,11 @@
   "aliases": [
     "Qianfan-8B"
   ],
+  "translations": {
+    "zh": {
+      "description": "Qianfan-8B，已下线。官方下线日期：2026-01-20。"
+    }
+  },
   "sources": [
     {
       "title": "模型版本升级及退役机制 | 百度千帆",

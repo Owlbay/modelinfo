@@ -51,6 +51,11 @@
   "aliases": [
     "MiniMax-M2.7"
   ],
+  "translations": {
+    "zh": {
+      "description": "擅长真实世界工程、专业办公任务和富有角色感的交互。"
+    }
+  },
   "sources": [
     {
       "title": "Models | MiniMax API Docs",

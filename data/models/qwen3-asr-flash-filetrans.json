@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "面向长音频文件的离线语音识别，按输入音频时长计费。"
+    }
+  },
   "sources": [
     {
       "title": "Qwen speech recognition | Alibaba Cloud Model Studio",

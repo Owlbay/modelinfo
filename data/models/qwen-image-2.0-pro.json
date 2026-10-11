@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Qwen Pro 系列图像生成与编辑模型，文字渲染、真实质感和语义遵循更强。"
+    }
+  },
   "sources": [
     {
       "title": "Qwen-Image API reference | Alibaba Cloud Model Studio",

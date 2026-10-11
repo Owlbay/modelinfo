@@ -39,6 +39,11 @@
   "aliases": [
     "MAI-Transcribe-2"
   ],
+  "translations": {
+    "zh": {
+      "description": "Microsoft AI 语音转文字模型，支持 60 种语言，具备说话人分离、词级时间戳、关键词偏置和语码转换功能。"
+    }
+  },
   "sources": [
     {
       "title": "MAI-Transcribe-2 | Microsoft Learn",

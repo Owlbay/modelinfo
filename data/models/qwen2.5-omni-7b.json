@@ -43,6 +43,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "开放权重的 Qwen2.5 全模态模型；不再更新。"
+    }
+  },
   "sources": [
     {
       "title": "Omni models | Alibaba Cloud Model Studio",

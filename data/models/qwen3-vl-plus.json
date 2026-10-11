@@ -54,6 +54,11 @@
     "qwen3-vl-plus-2025-12-19",
     "qwen3-vl-plus-2025-09-23"
   ],
+  "translations": {
+    "zh": {
+      "description": "视觉语言模型，支持思考与非思考模式，并支持超长视频。"
+    }
+  },
   "sources": [
     {
       "title": "Vision models | Alibaba Cloud Model Studio",

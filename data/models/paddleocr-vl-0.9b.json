@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "千帆上的 PaddleOCR-VL 文档解析模型，支持版面分析以及公式、表格和图表识别。"
+    }
+  },
   "sources": [
     {
       "title": "PaddleOCR-VL API | 百度千帆",

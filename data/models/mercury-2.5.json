@@ -53,6 +53,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "最新的推理扩散模型，适用于快速对话、智能体和结构化工作流。"
+    }
+  },
   "sources": [
     {
       "title": "Models | Inception Docs",

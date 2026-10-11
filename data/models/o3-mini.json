@@ -53,6 +53,11 @@
   "aliases": [
     "o3-mini-2025-01-31"
   ],
+  "translations": {
+    "zh": {
+      "description": "o3 的小型推理替代模型。"
+    }
+  },
   "sources": [
     {
       "title": "o3-mini Model | OpenAI API",

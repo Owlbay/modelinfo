@@ -54,6 +54,11 @@
   "aliases": [
     "o1-2024-12-17"
   ],
+  "translations": {
+    "zh": {
+      "description": "上一代完整的 o 系列推理模型。"
+    }
+  },
   "sources": [
     {
       "title": "o1 Model | OpenAI API",

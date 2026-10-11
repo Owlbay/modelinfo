@@ -48,6 +48,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "面向 WRITER Agent 和长周期企业工作流的智能体模型。"
+    }
+  },
   "sources": [
     {
       "title": "Choose a model | Writer AI Studio",

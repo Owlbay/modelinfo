@@ -51,6 +51,11 @@
   "aliases": [
     "MiniMax-M2.1-highspeed"
   ],
+  "translations": {
+    "zh": {
+      "description": "性能与 M2.1 相同，推理更快。"
+    }
+  },
   "sources": [
     {
       "title": "Models | MiniMax API Docs",

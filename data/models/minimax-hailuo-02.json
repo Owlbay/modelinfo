@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "文生视频和图生视频模型，输出最高 1080p。"
+    }
+  },
   "sources": [
     {
       "title": "Models | MiniMax API Docs",

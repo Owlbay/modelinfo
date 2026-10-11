@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "采用 MRL 许可证的开放权重强大模型，可与规模大得多的 SOTA 模型竞争。"
+    }
+  },
   "sources": [
     {
       "title": "Mistral Large 2.0 | Mistral Docs",

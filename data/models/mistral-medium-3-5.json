@@ -57,6 +57,11 @@
     "mistral-medium-3",
     "mistral-medium-latest"
   ],
+  "translations": {
+    "zh": {
+      "description": "前沿级多模态模型，针对智能体和编程场景优化。"
+    }
+  },
   "sources": [
     {
       "title": "Mistral Medium 3.5 | Mistral Docs",

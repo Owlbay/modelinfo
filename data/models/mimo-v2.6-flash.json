@@ -55,6 +55,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "高效的小米推理模型，在能力、低成本和规模之间取得平衡，适用于大批量工作负载。"
+    }
+  },
   "sources": [
     {
       "title": "mimo-v2.6-flash | Xiaomi MiMo",

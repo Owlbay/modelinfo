@@ -42,6 +42,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "双工端到端语音对话模型，支持函数调用、联网搜索和声音克隆。"
+    }
+  },
   "sources": [
     {
       "title": "Omni models | Alibaba Cloud Model Studio",

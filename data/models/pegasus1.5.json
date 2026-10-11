@@ -41,6 +41,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "生成式视频转文本模型；分析视频以生成摘要、详细描述和结构化回复。"
+    }
+  },
   "sources": [
     {
       "title": "Pegasus 1.5 | TwelveLabs",

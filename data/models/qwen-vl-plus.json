@@ -54,6 +54,11 @@
     "qwen-vl-plus-2025-05-07",
     "qwen-vl-plus-2025-01-25"
   ],
+  "translations": {
+    "zh": {
+      "description": "视觉语言模型，改进了细节和文字识别，支持超过一百万像素的图像。"
+    }
+  },
   "sources": [
     {
       "title": "Vision models | Alibaba Cloud Model Studio",

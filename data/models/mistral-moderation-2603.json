@@ -39,6 +39,11 @@
     "verified_at": "2026-10-10"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "内容审核模型，上下文窗口为 128k，具备越狱检测能力，在多语言和多轮对话中表现出色。"
+    }
+  },
   "sources": [
     {
       "title": "Mistral Moderation 2 | Mistral Docs",

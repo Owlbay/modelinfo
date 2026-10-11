@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "开放权重的 Qwen3 编程模型，编程智能体能力强，在 Model Studio 上提供服务。"
+    }
+  },
   "sources": [
     {
       "title": "qwen3-coder-480b-a35b-instruct | Alibaba Cloud Model Studio",

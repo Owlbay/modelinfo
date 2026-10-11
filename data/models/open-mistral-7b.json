@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "我们首个开放模型的小幅更新版本。"
+    }
+  },
   "sources": [
     {
       "title": "Mistral 7B | Mistral Docs",

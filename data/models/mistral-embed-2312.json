@@ -49,6 +49,11 @@
   "aliases": [
     "mistral-embed"
   ],
+  "translations": {
+    "zh": {
+      "description": "语义文本向量模型。"
+    }
+  },
   "sources": [
     {
       "title": "Mistral Embed | Mistral Docs",

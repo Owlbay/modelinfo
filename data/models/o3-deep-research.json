@@ -52,6 +52,11 @@
   "aliases": [
     "o3-deep-research-2025-06-26"
   ],
+  "translations": {
+    "zh": {
+      "description": "我们最强大的深度研究模型。"
+    }
+  },
   "sources": [
     {
       "title": "o3-deep-research Model | OpenAI API",

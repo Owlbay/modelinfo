@@ -46,6 +46,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "文档信息提取、标注、分类、审核和摘要模型。"
+    }
+  },
   "sources": [
     {
       "title": "qwen-doc-turbo | 大模型服务平台百炼",

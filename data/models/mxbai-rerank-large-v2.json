@@ -39,6 +39,11 @@
   "aliases": [
     "mixedbread-ai/mxbai-rerank-large-v2"
   ],
+  "translations": {
+    "zh": {
+      "description": "逐点式重排模型（1.5B 参数），针对 100 多种语言的准确率进行了调优。"
+    }
+  },
   "sources": [
     {
       "title": "mxbai-rerank-v2 | Mixedbread Blog",

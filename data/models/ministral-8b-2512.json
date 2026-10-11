@@ -53,6 +53,11 @@
   "aliases": [
     "ministral-8b-latest"
   ],
+  "translations": {
+    "zh": {
+      "description": "强大且高效的 Ministral 3 模型，具备文本和视觉能力，专为边缘部署打造。"
+    }
+  },
   "sources": [
     {
       "title": "Ministral 3 8B | Mistral Docs",

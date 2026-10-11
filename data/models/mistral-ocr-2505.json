@@ -41,6 +41,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "为我们的 Document AI 体系提供支持的 OCR 服务，可让用户提取图文交错的内容。"
+    }
+  },
   "sources": [
     {
       "title": "OCR 2 | Mistral Docs",

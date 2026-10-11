@@ -53,6 +53,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "上一代推理扩散模型，用于对话补全。"
+    }
+  },
   "sources": [
     {
       "title": "Models | Inception Docs",

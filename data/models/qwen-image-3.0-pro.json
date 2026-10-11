@@ -45,6 +45,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "高端图像生成模型，支持长提示词、密集版式和清晰可读的小字。"
+    }
+  },
   "sources": [
     {
       "title": "qwen-image-3.0-pro | Alibaba Cloud Model Studio",

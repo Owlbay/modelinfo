@@ -53,6 +53,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "小米原生全模态模型，面向长上下文和多模态智能体场景；将于 2026-10-21 下线。"
+    }
+  },
   "sources": [
     {
       "title": "mimo-v2.5 | Xiaomi MiMo",

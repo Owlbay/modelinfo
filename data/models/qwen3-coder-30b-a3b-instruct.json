@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "开放权重的 Qwen3 编程模型，继承了 Qwen3-Coder-480B-A35B-Instruct 的编程智能体能力。"
+    }
+  },
   "sources": [
     {
       "title": "qwen3-coder-30b-a3b-instruct | Alibaba Cloud Model Studio",

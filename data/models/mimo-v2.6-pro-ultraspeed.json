@@ -53,6 +53,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "具备 MiMo-V2.6-Pro 的性能，输出速度最高快 20 倍，适用于实时、对延迟敏感的工作负载。"
+    }
+  },
   "sources": [
     {
       "title": "mimo-v2.6-pro-ultraspeed | Xiaomi MiMo",

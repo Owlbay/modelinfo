@@ -40,6 +40,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "小米文字转语音模型，可根据几秒钟的参考音频克隆目标声音，支持风格指令和跨语言克隆。"
+    }
+  },
   "sources": [
     {
       "title": "mimo-v2.5-tts-voiceclone | Xiaomi MiMo",

@@ -40,6 +40,11 @@
   "aliases": [
     "MuseSteamer-2.1-Turbo-I2V"
   ],
+  "translations": {
+    "zh": {
+      "description": "MuseSteamer-2.1-Turbo-I2V，已下线。官方下线日期：2026-02-06。"
+    }
+  },
   "sources": [
     {
       "title": "模型版本升级及退役机制 | 百度千帆",

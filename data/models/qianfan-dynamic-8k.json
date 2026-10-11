@@ -39,6 +39,11 @@
   "aliases": [
     "Qianfan-Dynamic-8k"
   ],
+  "translations": {
+    "zh": {
+      "description": "Qianfan-Dynamic-8k，已下线。官方下线日期：2025-05-30。"
+    }
+  },
   "sources": [
     {
       "title": "模型版本升级及退役机制 | 百度千帆",

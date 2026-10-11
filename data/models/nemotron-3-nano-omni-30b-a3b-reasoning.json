@@ -44,6 +44,11 @@
   "aliases": [
     "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning"
   ],
+  "translations": {
+    "zh": {
+      "description": "全模态推理模型，可理解图像、视频、语音和文本。"
+    }
+  },
   "sources": [
     {
       "title": "nemotron-3-nano-omni-30b-a3b-reasoning Model Card | NVIDIA NIM",

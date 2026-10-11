@@ -47,6 +47,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "深度研究模型，会澄清问题、制定计划、多轮联网搜索并撰写研究报告。"
+    }
+  },
   "sources": [
     {
       "title": "Qwen-Deep-Research | 大模型服务平台百炼",

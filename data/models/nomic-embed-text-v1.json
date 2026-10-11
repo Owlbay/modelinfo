@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Nomic 文本向量模型，维度为 768。"
+    }
+  },
   "sources": [
     {
       "title": "Text Embedding | Nomic Atlas Docs",

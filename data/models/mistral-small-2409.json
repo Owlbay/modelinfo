@@ -42,6 +42,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "我们高效小型模型的更新版本，采用 MRL 许可证的开放权重。"
+    }
+  },
   "sources": [
     {
       "title": "Mistral Small 2.0 | Mistral Docs",

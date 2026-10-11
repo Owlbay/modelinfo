@@ -38,6 +38,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "music-cover 的免费版，用于根据参考音频生成翻唱版本，速率限制为 3 RPM。根据官方通知，服务自 2026-08-20 起停止。"
+    }
+  },
   "sources": [
     {
       "title": "Music Generation | MiniMax API Docs",

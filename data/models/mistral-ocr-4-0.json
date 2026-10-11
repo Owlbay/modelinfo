@@ -41,6 +41,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "我们最新的 OCR 服务，为 Document AI 体系提供支持，原生支持段落级边界框提取和结构块标签。"
+    }
+  },
   "sources": [
     {
       "title": "OCR 4.0 | Mistral Docs",

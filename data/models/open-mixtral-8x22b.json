@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "大型开放 MoE 模型，可与规模大得多的稠密模型竞争。"
+    }
+  },
   "sources": [
     {
       "title": "Mixtral 8x22B | Mistral Docs",

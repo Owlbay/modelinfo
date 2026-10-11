@@ -38,6 +38,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "视频语言模型；已于 2025-02-25 停用。"
+    }
+  },
   "sources": [
     {
       "title": "Release notes | TwelveLabs Docs",

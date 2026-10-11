@@ -46,6 +46,11 @@
     "qwen-omni-turbo-latest",
     "qwen-omni-turbo-2025-03-26"
   ],
+  "translations": {
+    "zh": {
+      "description": "流式输出文本和语音的全模态模型；仅支持中英文，不再更新。"
+    }
+  },
   "sources": [
     {
       "title": "Omni models | Alibaba Cloud Model Studio",

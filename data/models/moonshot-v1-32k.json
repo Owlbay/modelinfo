@@ -37,6 +37,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "Moonshot V1 生成模型；该系列仅在最大上下文长度（输入加输出）上有所不同。官方已于 2026-08-31 停用。"
+    }
+  },
   "sources": [
     {
       "title": "Model List | Kimi API Platform",

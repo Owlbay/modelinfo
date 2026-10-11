@@ -43,6 +43,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "小型模型类别的新标杆，具备图像理解能力，发布于 2025 年 3 月。"
+    }
+  },
   "sources": [
     {
       "title": "Mistral Small 3.1 | Mistral Docs",

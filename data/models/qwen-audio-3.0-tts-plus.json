@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "高性能语音合成模型，适用于有声书、配音和高端语音服务。"
+    }
+  },
   "sources": [
     {
       "title": "qwen-audio-3.0-tts-plus | Alibaba Cloud Model Studio",

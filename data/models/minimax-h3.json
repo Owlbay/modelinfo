@@ -49,6 +49,11 @@
   "aliases": [
     "MiniMax-H3"
   ],
+  "translations": {
+    "zh": {
+      "description": "开放的通用多模态视频模型，支持文生视频、图生视频、首尾帧和参考生成，分辨率为 768P 或 2K。"
+    }
+  },
   "sources": [
     {
       "title": "Models | MiniMax API Docs",

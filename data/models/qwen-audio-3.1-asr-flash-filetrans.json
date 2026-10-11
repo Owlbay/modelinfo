@@ -44,6 +44,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "面向会议和通话等长音频的离线语音识别模型，支持说话人分离和方言。"
+    }
+  },
   "sources": [
     {
       "title": "qwen-audio-3.1-asr-flash-filetrans | Alibaba Cloud Model Studio",

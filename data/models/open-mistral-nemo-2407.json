@@ -44,6 +44,11 @@
   "aliases": [
     "open-mistral-nemo"
   ],
+  "translations": {
+    "zh": {
+      "description": "我们最好的多语言开源模型，发布于 2024 年 7 月。"
+    }
+  },
   "sources": [
     {
       "title": "Mistral Nemo 12B | Mistral Docs",

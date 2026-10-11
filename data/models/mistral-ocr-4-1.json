@@ -49,6 +49,11 @@
   "aliases": [
     "mistral-ocr-latest"
   ],
+  "translations": {
+    "zh": {
+      "description": "为 Mistral Document AI 体系提供支持的 OCR 服务，支持段落级边界框、块标签和置信度分数。"
+    }
+  },
   "sources": [
     {
       "title": "Mistral OCR 4.1 | Mistral Docs",

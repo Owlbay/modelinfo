@@ -46,6 +46,11 @@
     "qwen-omni-turbo-realtime-latest",
     "qwen-omni-turbo-realtime-2025-05-08"
   ],
+  "translations": {
+    "zh": {
+      "description": "旧版实时全模态模型，支持文本和音频；不再更新。"
+    }
+  },
   "sources": [
     {
       "title": "Omni models | Alibaba Cloud Model Studio",

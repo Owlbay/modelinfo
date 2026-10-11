@@ -46,6 +46,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "小米中英双语语音识别模型，支持多种中文方言。"
+    }
+  },
   "sources": [
     {
       "title": "mimo-v2.5-asr | Xiaomi MiMo",

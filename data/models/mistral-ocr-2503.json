@@ -38,6 +38,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "我们首个针对 OCR 优化的模型。"
+    }
+  },
   "sources": [
     {
       "title": "OCR | Mistral Docs",

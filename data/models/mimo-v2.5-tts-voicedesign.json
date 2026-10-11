@@ -39,6 +39,11 @@
     "verified_at": "2026-10-11"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "小米文字转语音模型，可根据自然语言描述设计全新的声音。"
+    }
+  },
   "sources": [
     {
       "title": "mimo-v2.5-tts-voicedesign | Xiaomi MiMo",
