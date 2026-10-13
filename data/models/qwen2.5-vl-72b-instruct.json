@@ -69,7 +69,7 @@
       "retrieved_at": "2026-10-11"
     },
     {
-      "title": "Text generation models（Qwen2.5-VL Thinking mode Unsupported）| Alibaba Cloud Model Studio",
+      "title": "Text generation models（qwen2.5-vl-72b-instruct：Thinking、Function Calling、Structured output 均为 Unsupported）| Alibaba Cloud Model Studio",
       "url": "https://www.alibabacloud.com/help/en/model-studio/text-generation-model",
       "retrieved_at": "2026-10-13"
     },

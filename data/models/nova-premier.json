@@ -43,7 +43,7 @@
     "status": "active",
     "release_date": null,
     "knowledge_cutoff": null,
-    "description": "Amazon's most capable multimodal model for complex tasks. It comprehends text, images, video, documents, and code.",
+    "description": "Amazon's most capable multimodal model for complex tasks. It comprehends text, images, video, documents, and code. The category table lists US East (N. Virginia) and AWS GovCloud (US-West); the specifications table lists US East (N. Virginia), with cross-region inference to additional commercial regions.",
     "docs": "https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html",
     "verified_at": "2026-10-13"
   },
@@ -53,7 +53,7 @@
   ],
   "translations": {
     "zh": {
-      "description": "Amazon 面向复杂任务的最强大多模态模型，可理解文本、图像、视频、文档和代码。"
+      "description": "Amazon 面向复杂任务的最强大多模态模型，可理解文本、图像、视频、文档和代码。分类表列出美国东部（弗吉尼亚北部）与 AWS GovCloud（美国西部）；规格表列出美国东部（弗吉尼亚北部），并可通过跨区域推理访问其他商业区域。"
     }
   },
   "sources": [

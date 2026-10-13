@@ -32,8 +32,7 @@
     "supported": true,
     "efforts": [
       "high",
-      "xhigh",
-      "max"
+      "xhigh"
     ]
   },
   "pricing": null,
@@ -46,7 +45,7 @@
     "status": "active",
     "release_date": null,
     "knowledge_cutoff": "2026-08-28",
-    "description": "Fugu Ultra coordinates a deeper pool of expert agents to maximize answer quality on hard, high-stakes problems.",
+    "description": "Fugu Ultra coordinates a deeper pool of expert agents to maximize answer quality on hard, high-stakes problems. v2.0 accepts reasoning efforts high and xhigh; max is accepted as an alias of xhigh. The Responses API defaults to xhigh for fugu-ultra.",
     "docs": "https://console.sakana.ai/models",
     "verified_at": "2026-10-13"
   },
@@ -55,12 +54,12 @@
   ],
   "translations": {
     "zh": {
-      "description": "Fugu Ultra 协调更深的专家模型池，在高风险难题上尽量提高回答质量。"
+      "description": "Fugu Ultra 协调更深的专家模型池，在高风险难题上尽量提高回答质量。v2.0 的思考档位是 high 与 xhigh；max 作为 xhigh 的别名被接受。Responses API 对 fugu-ultra 的默认档位是 xhigh。"
     }
   },
   "sources": [
     {
-      "title": "Models | Sakana AI Console",
+      "title": "Models | Sakana AI Console（fugu-ultra 默认 v2.0；Responses 默认 effort 为 xhigh，max 与 xhigh 同义）",
       "url": "https://console.sakana.ai/models",
       "retrieved_at": "2026-10-13"
     },

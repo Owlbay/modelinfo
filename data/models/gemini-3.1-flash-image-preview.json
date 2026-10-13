@@ -22,7 +22,8 @@
   "modalities": {
     "input": [
       "text",
-      "image"
+      "image",
+      "document"
     ],
     "output": [
       "text",
@@ -47,7 +48,7 @@
   "info": {
     "status": "retired",
     "release_date": "2026-02-26",
-    "knowledge_cutoff": null,
+    "knowledge_cutoff": "2025-01",
     "description": null,
     "docs": "https://ai.google.dev/gemini-api/docs/deprecations",
     "verified_at": "2026-10-13"
@@ -75,7 +76,7 @@
       "retrieved_at": "2026-10-11"
     },
     {
-      "title": "Gemini 3.1 Flash Image Preview model card — archived May 21, 2026",
+      "title": "Gemini 3.1 Flash Image Preview model card — archived May 21, 2026（知识截止 2025-01，输入含 PDF）",
       "url": "https://web.archive.org/web/20260521181054/https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-image-preview",
       "retrieved_at": "2026-10-13"
     },
