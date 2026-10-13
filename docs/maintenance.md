@@ -49,6 +49,17 @@
 - 译文只翻译原文，不增删信息、不加评价；专有名词、模型名、产品名、单位保持原样。原文是哪种语言，就不为该语言写译文。
 - 原文更新时同步更新或删除译文；`info.description` 为 `null` 时不写译文。
 
+## 官方来源检查
+
+`node scripts/check-official.mjs [文件...]` 在 `validate-data.mjs` 之外再检查四件事，不改数据：
+
+1. **官方域名**：除标题含 `api.sdk only` 的 SDK 来源和 `models.dev` 外，至少一条 `sources` 的主机名属于该厂商。允许的主机来自 `data/vendors/<id>.json` 的官网，以及脚本里的文档站补充表（如 `ai.google.dev`、`docs.mistral.ai`）。`web.archive.org` 只在被存档的原地址属于这些主机时算数。
+2. **日期**：`sources[].retrieved_at` 必须是真实的 `YYYY-MM-DD`；`info.verified_at` 同样，或为 `null`。二者都不能晚于运行当天。早于 `--max-age` 天（默认 180）只警告；加上 `--strict` 时警告也失败。
+3. **数值范围**：价格不为负，币种为三个大写字母，单位属于接口规范中的计价单位，`limits.input` 与 `limits.output` 不超过 `limits.context`。
+4. **必填字段**：公开字段和维护字段 `aliases`、`sources`、`providers` 必须存在。字段顺序和枚举仍由 `validate-data.mjs` 把关。
+
+`node scripts/check-official.mjs --cross [--report 路径]` 会下载 models.dev、OpenRouter 和 LiteLLM，按模型 ID 或别名精确匹配后写出差异。它只提示 1000/1024、折扣价和图像/文本计价口径可能不同，不自动改 JSON。网络失败时退出码为 2。
+
 ## 批量采集
 
 大批量补录时按模型厂商拆分并行处理，每组只写自己模型厂商的文件，用 `scripts/validate-data.mjs` 自检，最后统一运行 `pnpm check && pnpm build`，并人工抽查各组标注的推断值与空缺项。

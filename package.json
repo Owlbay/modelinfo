@@ -8,6 +8,7 @@
     "build": "astro build",
     "preview": "astro build && wrangler dev",
     "check": "astro check && node scripts/check-design.mjs",
+    "check:official": "node scripts/check-official.mjs",
     "deploy": "astro build && wrangler deploy"
   },
   "packageManager": "pnpm@11.19.0",

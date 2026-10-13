@@ -24,6 +24,7 @@ ModelInfo 的模型数据全部在 `data/models/*.json`，一个模型一个文�
    ```bash
    pnpm install
    node scripts/validate-data.mjs data/models/<id>.json
+   node scripts/check-official.mjs data/models/<id>.json
    pnpm check && pnpm build
    ```
 5. 提交 PR 并按模板填写来源与检查项。CI 会运行完整校验与构建，合并到 `main` 后自动部署。
@@ -56,6 +57,7 @@ All model data lives in `data/models/*.json`, one file per model. Issues and pul
    ```bash
    pnpm install
    node scripts/validate-data.mjs data/models/<id>.json
+   node scripts/check-official.mjs data/models/<id>.json
    pnpm check && pnpm build
    ```
 5. Open the PR and fill in sources and the checklist. CI runs full validation and a build; merges to `main` deploy automatically.

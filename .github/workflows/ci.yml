@@ -27,6 +27,8 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - name: 数据校验 / Validate data
         run: node scripts/validate-data.mjs
+      - name: 官方来源与范围 / Official sources
+        run: node scripts/check-official.mjs
       - run: pnpm check
       - run: pnpm test
       - run: pnpm build
