@@ -7,6 +7,11 @@
   "api": {
     "types": [
       "chat"
+    ],
+    "sdk": [
+      "@ai-sdk/openai",
+      "@ai-sdk/openai-compatible",
+      "openai"
     ]
   },
   "limits": {
@@ -61,6 +66,21 @@
       "title": "Intern-S1 发布 | 上海人工智能实验室",
       "url": "https://www.shlab.org.cn/news/5444185",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai-compatible (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

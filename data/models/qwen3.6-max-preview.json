@@ -7,6 +7,13 @@
   "api": {
     "types": [
       "chat"
+    ],
+    "sdk": [
+      "@ai-sdk/alibaba",
+      "@ai-sdk/openai",
+      "@ai-sdk/openai-compatible",
+      "dashscope-sdk-official",
+      "openai"
     ]
   },
   "limits": {
@@ -73,6 +80,31 @@
       "title": "[Model Studio] Notice on the Postponed Retirement of Selected Legacy Models | Alibaba Cloud",
       "url": "https://www.alibabacloud.com/en/notice/model_studio_notice_on_the_postponed_retirement_of_selected_legacy_models_7d0",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @ai-sdk/alibaba (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/alibaba",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai-compatible (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — dashscope-sdk-official (api.sdk only)",
+      "url": "https://github.com/dashscope/dashscope-sdk-nodejs",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

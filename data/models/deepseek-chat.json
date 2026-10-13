@@ -7,6 +7,12 @@
   "api": {
     "types": [
       "chat"
+    ],
+    "sdk": [
+      "@ai-sdk/deepseek",
+      "@ai-sdk/openai",
+      "@ai-sdk/openai-compatible",
+      "openai"
     ]
   },
   "limits": {
@@ -68,6 +74,26 @@
       "title": "Models & Pricing | DeepSeek API Docs（存档，原网址 https://api-docs.deepseek.com/quick_start/pricing）",
       "url": "https://web.archive.org/web/20260319171942/https://api-docs.deepseek.com/quick_start/pricing/",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @ai-sdk/deepseek (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/deepseek",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai-compatible (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

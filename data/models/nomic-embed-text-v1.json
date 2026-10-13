@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "embeddings"
+    ],
+    "sdk": [
+      "@nomic-ai/atlas"
     ]
   },
   "limits": {
@@ -57,6 +60,11 @@
       "title": "Introducing Nomic Embed: A Truly Open Embedding Model - Nomic",
       "url": "https://www.nomic.ai/news/nomic-embed-text-v1",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @nomic-ai/atlas (api.sdk only)",
+      "url": "https://github.com/nomic-ai/ts-nomic",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

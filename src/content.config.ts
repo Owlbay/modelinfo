@@ -49,7 +49,7 @@ const models = defineCollection({
       created: z.number().int().positive().nullable(),
       owned_by: z.string().regex(/^[a-z0-9-]+$/),
       name: z.string().min(1),
-      api: z.object({ types: z.array(apiType).min(1) }).strict(),
+      api: z.object({ types: z.array(apiType).min(1), sdk: z.array(z.string().regex(/^(?:@[a-z0-9._-]+\/)?[a-z0-9._-]+(?:\/[a-z0-9._-]+)*$/)).refine((values) => new Set(values).size === values.length, 'SDK 不能重复') }).strict(),
       limits,
       modalities,
       reasoning: z.object({ supported: z.boolean().nullable(), efforts: z.array(z.string()) }).strict(),

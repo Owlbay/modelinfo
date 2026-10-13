@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "video"
+    ],
+    "sdk": [
+      "@ai-sdk/minimax"
     ]
   },
   "limits": {
@@ -70,6 +73,11 @@
       "title": "Video generation (text to video) | MiniMax API Docs",
       "url": "https://platform.minimax.io/docs/api-reference/video-generation-t2v",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @ai-sdk/minimax (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/minimax",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

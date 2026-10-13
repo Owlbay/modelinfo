@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "realtime"
+    ],
+    "sdk": [
+      "@ai-sdk/xai"
     ]
   },
   "limits": {
@@ -68,6 +71,11 @@
       "title": "Introducing Grok Voice Think Fast 2.0",
       "url": "https://x.ai/news/grok-voice-think-fast-2",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @ai-sdk/xai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/xai",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

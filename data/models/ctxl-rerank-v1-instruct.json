@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "rerank"
+    ],
+    "sdk": [
+      "contextual-client"
     ]
   },
   "limits": {
@@ -52,6 +55,11 @@
       "title": "2025 Release Updates | Contextual AI Docs",
       "url": "https://docs.contextual.ai/release-notes/2025",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — contextual-client (api.sdk only)",
+      "url": "https://github.com/ContextualAI/contextual-client-node",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

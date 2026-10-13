@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "generate"
+    ],
+    "sdk": [
+      "twelvelabs-js"
     ]
   },
   "limits": {
@@ -53,6 +56,11 @@
       "title": "Pegasus 1.2: An Industry-Grade Video Language Model | Twelve Labs",
       "url": "https://www.twelvelabs.io/blog/introducing-pegasus-1-2",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — twelvelabs-js (api.sdk only)",
+      "url": "https://github.com/twelvelabs-io/twelvelabs-js",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

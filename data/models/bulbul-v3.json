@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "audio"
+    ],
+    "sdk": [
+      "sarvamai"
     ]
   },
   "limits": {
@@ -66,6 +69,11 @@
       "title": "Official release announcement",
       "url": "https://www.sarvam.ai/blogs/bulbul-v3",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — sarvamai (api.sdk only)",
+      "url": "https://docs.sarvam.ai/api/getting-started/sdks",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

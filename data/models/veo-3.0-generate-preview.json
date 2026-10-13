@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "video"
+    ],
+    "sdk": [
+      "@google/genai"
     ]
   },
   "limits": {
@@ -49,6 +52,11 @@
       "title": "changelog | Gemini API",
       "url": "https://ai.google.dev/gemini-api/docs/changelog",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @google/genai (api.sdk only)",
+      "url": "https://github.com/googleapis/js-genai",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

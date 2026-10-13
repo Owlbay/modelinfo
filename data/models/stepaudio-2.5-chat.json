@@ -7,6 +7,11 @@
   "api": {
     "types": [
       "chat"
+    ],
+    "sdk": [
+      "@ai-sdk/openai",
+      "@ai-sdk/openai-compatible",
+      "openai"
     ]
   },
   "limits": {
@@ -70,6 +75,21 @@
       "title": "StepAudio 2.5 Chat | StepFun Documentation",
       "url": "https://platform.stepfun.ai/docs/en/guides/models/stepaudio-2.5-chat",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai-compatible (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

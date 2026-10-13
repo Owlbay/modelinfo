@@ -7,6 +7,10 @@
   "api": {
     "types": [
       "audio"
+    ],
+    "sdk": [
+      "@ai-sdk/elevenlabs",
+      "@elevenlabs/elevenlabs-js"
     ]
   },
   "limits": {
@@ -74,6 +78,16 @@
       "title": "ElevenAPI per-product pricing FAQ: Eleven Music $0.15/minute",
       "url": "https://elevenlabs.io/pricing/api",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @elevenlabs/elevenlabs-js (api.sdk only)",
+      "url": "https://github.com/elevenlabs/elevenlabs-js",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/elevenlabs (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/elevenlabs",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

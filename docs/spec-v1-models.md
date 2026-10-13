@@ -43,7 +43,7 @@ info         ⑥ 源信息
       "created": 1784851200,
       "owned_by": "anthropic",
       "name": "Claude Opus 5",
-      "api": { "types": ["messages", "batch"] },
+      "api": { "types": ["messages", "batch"], "sdk": ["@ai-sdk/anthropic", "@anthropic-ai/sdk"] },
       "limits": { "context": 1000000, "input": 1000000, "output": 128000 },
       "modalities": { "input": ["text", "image", "document"], "output": ["text"] },
       "reasoning": { "supported": true, "efforts": ["low", "medium", "high", "xhigh", "max"] },
@@ -72,6 +72,7 @@ info         ⑥ 源信息
 | `owned_by` | string | 模型厂商，不是转售商或聚合网关 |
 | `name` | string | 展示名称 |
 | `api.types` | string[] | 接口类型：`chat`、`messages`、`responses`、`interactions`、`generate`、`batch`、`realtime`、`completions`、`embeddings`、`images`、`video`、`audio`、`3d`、`rerank`、`ocr`、`moderation` |
+| `api.sdk` | string[] | SDK npm 包名数组（可含导出子路径），去重；可包含 AI SDK 适配器、厂商 SDK 和已核验的直接调用 SDK，如 `["@ai-sdk/anthropic", "@anthropic-ai/sdk"]`。至少支持一种模型接口；未知为 `[]`。调用时按协议选择 SDK 的方法并配置厂商地址、认证及参数；已下线型号只作历史接口参考 |
 | `limits.context` | integer \| null | 输入与输出合计的上下文上限（Token） |
 | `limits.input` | integer \| null | 官方单独声明的最大输入 |
 | `limits.output` | integer \| null | 最大输出 |
@@ -124,7 +125,7 @@ info         ⑥ 源信息
 |---|---|
 | `aliases` | 官方别名或快照 ID，用于搜索 |
 | `translations` | 可选。介绍类文本的译文：`{ "<语言代码>": { "description": "…" } }`，语言代码取 `src/i18n` 的 `LOCALES`。只翻译 `info.description` 官方原文，页面按界面语言显示，缺省显示原文；`/v1/models` 始终返回原文 |
-| `sources` | 官方来源 `{ title, url, retrieved_at }`，至少一条 HTTPS |
+| `sources` | 官方来源（`api.sdk` 可使用 models.dev、SDK 作者文档与源码作为 SDK 支持来源） `{ title, url, retrieved_at }`，至少一条 HTTPS |
 | `providers` | 调用方式：`id`、`model`、`base_url`、`endpoints`、`reasoning_param`，可选的按接口区分参数映射 `reasoning_params`（如 `{ "chat": "reasoning_effort", "responses": "reasoning.effort" }`），以及与标准字段不同时的覆盖值（`limits`、`modalities`、`features`、`pricing`、`reasoning_efforts`） |
 
 校验规则在 `src/content.config.ts`，构建时执行，不合规即失败。

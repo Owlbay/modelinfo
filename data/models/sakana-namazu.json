@@ -7,6 +7,11 @@
   "api": {
     "types": [
       "chat"
+    ],
+    "sdk": [
+      "@ai-sdk/openai",
+      "@ai-sdk/openai-compatible",
+      "openai"
     ]
   },
   "limits": {
@@ -75,6 +80,26 @@
       "title": "Sakana Namazu API 提供開始 | Sakana AI",
       "url": "https://sakana.ai/namazu-api/",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "models.dev — SDK npm mapping (api.sdk only)",
+      "url": "https://models.dev/api.json",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai-compatible (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

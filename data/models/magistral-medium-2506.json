@@ -8,6 +8,13 @@
     "types": [
       "chat",
       "batch"
+    ],
+    "sdk": [
+      "@ai-sdk/mistral",
+      "@ai-sdk/openai",
+      "@ai-sdk/openai-compatible",
+      "@mistralai/mistralai",
+      "openai"
     ]
   },
   "limits": {
@@ -61,6 +68,31 @@
       "title": "Model lifecycle policy | Mistral Docs",
       "url": "https://docs.mistral.ai/models/model-lifecycle",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @mistralai/mistralai (api.sdk only)",
+      "url": "https://github.com/mistralai/client-ts",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/mistral (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/mistral",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai-compatible (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

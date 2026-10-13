@@ -7,6 +7,11 @@
   "api": {
     "types": [
       "embeddings"
+    ],
+    "sdk": [
+      "@ai-sdk/openai",
+      "@ai-sdk/openai-compatible",
+      "openai"
     ]
   },
   "limits": {
@@ -74,6 +79,21 @@
       "title": "核心参数（各模型 max_tokens，128K 输出为 131072）| 智谱 AI 开放文档",
       "url": "https://docs.bigmodel.cn/cn/guide/start/concept-param",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai-compatible (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

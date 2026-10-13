@@ -8,6 +8,9 @@
     "types": [
       "video",
       "images"
+    ],
+    "sdk": [
+      "@ai-sdk/klingai"
     ]
   },
   "limits": {
@@ -81,6 +84,11 @@
       "title": "Kling Image API",
       "url": "https://kling.ai/document-api/api/image/o1/image-generation.md",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @ai-sdk/klingai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/klingai",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

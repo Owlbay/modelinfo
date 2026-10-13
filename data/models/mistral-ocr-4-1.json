@@ -8,6 +8,9 @@
     "types": [
       "ocr",
       "batch"
+    ],
+    "sdk": [
+      "@mistralai/mistralai"
     ]
   },
   "limits": {
@@ -80,6 +83,11 @@
       "title": "Batch | Mistral Docs",
       "url": "https://docs.mistral.ai/api/endpoint/batch",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @mistralai/mistralai (api.sdk only)",
+      "url": "https://github.com/mistralai/client-ts",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

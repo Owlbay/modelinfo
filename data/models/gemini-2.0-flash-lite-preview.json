@@ -7,6 +7,10 @@
   "api": {
     "types": [
       "generate"
+    ],
+    "sdk": [
+      "@ai-sdk/google",
+      "@google/genai"
     ]
   },
   "limits": {
@@ -66,6 +70,16 @@
       "title": "Official historical Gemini API standard pricing",
       "url": "https://developers.googleblog.com/gemini-2-family-expands/",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @google/genai (api.sdk only)",
+      "url": "https://github.com/googleapis/js-genai",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/google (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/google",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

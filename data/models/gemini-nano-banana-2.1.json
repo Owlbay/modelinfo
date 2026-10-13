@@ -8,6 +8,10 @@
     "types": [
       "images",
       "batch"
+    ],
+    "sdk": [
+      "@ai-sdk/google",
+      "@google/genai"
     ]
   },
   "limits": {
@@ -85,6 +89,16 @@
       "title": "Generating content | Gemini API",
       "url": "https://ai.google.dev/api/generate-content",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "SDK support — @google/genai (api.sdk only)",
+      "url": "https://github.com/googleapis/js-genai",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/google (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/google",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

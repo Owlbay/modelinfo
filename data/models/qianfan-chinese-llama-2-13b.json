@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "chat"
+    ],
+    "sdk": [
+      "@baiducloud/qianfan"
     ]
   },
   "limits": {
@@ -54,6 +57,11 @@
       "title": "存档 API列表 | ModelBuilder（原网址 https://cloud.baidu.com/doc/WENXINWORKSHOP/s/Nlks5zkzu）",
       "url": "https://web.archive.org/web/20250612164358/https://cloud.baidu.com/doc/WENXINWORKSHOP/s/Nlks5zkzu",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @baiducloud/qianfan (api.sdk only)",
+      "url": "https://github.com/baidubce/bce-qianfan-sdk/tree/main/javascript",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

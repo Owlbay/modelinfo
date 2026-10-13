@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "video"
+    ],
+    "sdk": [
+      "@runwayml/sdk"
     ]
   },
   "limits": {
@@ -58,6 +61,11 @@
       "title": "Official API reference",
       "url": "https://docs.dev.runwayml.com/api/",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @runwayml/sdk (api.sdk only)",
+      "url": "https://github.com/runwayml/sdk-node",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

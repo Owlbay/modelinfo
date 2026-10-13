@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "images"
+    ],
+    "sdk": [
+      "@ai-sdk/black-forest-labs"
     ]
   },
   "limits": {
@@ -70,6 +73,11 @@
       "title": "FLUX API OpenAPI specification",
       "url": "https://api.bfl.ai/openapi.json",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @ai-sdk/black-forest-labs (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/black-forest-labs",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

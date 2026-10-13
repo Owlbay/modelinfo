@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "images"
+    ],
+    "sdk": [
+      "luma-agents"
     ]
   },
   "limits": {
@@ -70,6 +73,11 @@
       "title": "Quickstart | Luma Agents API Docs",
       "url": "https://docs.agents.lumalabs.ai/",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — luma-agents (api.sdk only)",
+      "url": "https://github.com/lumalabs/luma-agents-typescript",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "video"
+    ],
+    "sdk": [
+      "@aws-sdk/client-bedrock-runtime"
     ]
   },
   "limits": {
@@ -62,6 +65,11 @@
       "title": "Official model release / pricing documentation",
       "url": "https://aws.amazon.com/cn/campaigns/nc202501/",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @aws-sdk/client-bedrock-runtime (api.sdk only)",
+      "url": "https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/bedrock-runtime/",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

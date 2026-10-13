@@ -7,6 +7,10 @@
   "api": {
     "types": [
       "chat"
+    ],
+    "sdk": [
+      "@ai-sdk/cohere",
+      "cohere-ai"
     ]
   },
   "limits": {
@@ -62,6 +66,21 @@
       "title": "Cohere Labs Launches Tiny Aya, Making Multilingual AI Accessible | Cohere Blog",
       "url": "https://cohere.com/blog/cohere-labs-tiny-aya",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "models.dev — SDK npm mapping (api.sdk only)",
+      "url": "https://models.dev/api.json",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — cohere-ai (api.sdk only)",
+      "url": "https://github.com/cohere-ai/cohere-typescript",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/cohere (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/cohere",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

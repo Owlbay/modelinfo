@@ -7,7 +7,8 @@
   "api": {
     "types": [
       "ocr"
-    ]
+    ],
+    "sdk": []
   },
   "limits": {
     "context": null,

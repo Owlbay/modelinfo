@@ -7,6 +7,10 @@
   "api": {
     "types": [
       "video"
+    ],
+    "sdk": [
+      "@ai-sdk/alibaba",
+      "dashscope-sdk-official"
     ]
   },
   "limits": {
@@ -70,6 +74,16 @@
       "title": "Alibaba Cloud Model Studio API Reference — happyhorse-reference-to-video-api-reference",
       "url": "https://docs.modelstudio.console.alibabacloud.com/zh/model-studio/happyhorse-reference-to-video-api-reference",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @ai-sdk/alibaba (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/alibaba",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — dashscope-sdk-official (api.sdk only)",
+      "url": "https://github.com/dashscope/dashscope-sdk-nodejs",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

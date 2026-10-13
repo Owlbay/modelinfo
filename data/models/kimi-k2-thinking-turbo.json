@@ -7,6 +7,12 @@
   "api": {
     "types": [
       "chat"
+    ],
+    "sdk": [
+      "@ai-sdk/moonshotai",
+      "@ai-sdk/openai",
+      "@ai-sdk/openai-compatible",
+      "openai"
     ]
   },
   "limits": {
@@ -61,6 +67,26 @@
       "title": "Model Inference Pricing Explanation | Kimi API Platform（存档，原网址 https://platform.kimi.ai/docs/pricing/chat）",
       "url": "https://web.archive.org/web/20260327200226/https://platform.kimi.ai/docs/pricing/chat",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @ai-sdk/moonshotai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/moonshotai",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai-compatible (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

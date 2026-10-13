@@ -8,6 +8,11 @@
     "types": [
       "chat",
       "responses"
+    ],
+    "sdk": [
+      "@ai-sdk/openai",
+      "@ai-sdk/openai-compatible",
+      "openai"
     ]
   },
   "limits": {
@@ -83,6 +88,36 @@
       "title": "深度思考 | 火山方舟",
       "url": "https://www.volcengine.com/docs/82379/1449737",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai-compatible (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://docs.volcengine.com/docs/ark/compatible-with-openai-sdk?lang=en",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai-compatible (api.sdk only)",
+      "url": "https://docs.volcengine.com/docs/ark/compatible-with-openai-sdk?lang=en",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://docs.volcengine.com/docs/ark/compatible-with-openai-sdk?lang=en",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

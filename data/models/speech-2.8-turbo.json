@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "audio"
+    ],
+    "sdk": [
+      "minimax-speech-ts"
     ]
   },
   "limits": {
@@ -69,6 +72,11 @@
       "title": "Speech synthesis (T2A HTTP) | MiniMax API Docs",
       "url": "https://platform.minimax.io/docs/api-reference/speech-t2a-http",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — minimax-speech-ts (api.sdk only)",
+      "url": "https://github.com/williamchong/minimax-speech-ts",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "embeddings"
+    ],
+    "sdk": [
+      "twelvelabs-js"
     ]
   },
   "limits": {
@@ -70,6 +73,11 @@
       "title": "Official API reference",
       "url": "https://docs.twelvelabs.io/v1.3/api-reference/create-embeddings-v2/create-embeddings",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — twelvelabs-js (api.sdk only)",
+      "url": "https://github.com/twelvelabs-io/twelvelabs-js",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

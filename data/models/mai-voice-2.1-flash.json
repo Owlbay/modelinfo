@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "audio"
+    ],
+    "sdk": [
+      "microsoft-cognitiveservices-speech-sdk"
     ]
   },
   "limits": {
@@ -71,6 +74,11 @@
       "title": "Official model release / pricing documentation",
       "url": "https://microsoft.ai/news/our-first-streaming-transcription-model/",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — microsoft-cognitiveservices-speech-sdk (api.sdk only)",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-voices",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

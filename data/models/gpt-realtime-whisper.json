@@ -7,6 +7,10 @@
   "api": {
     "types": [
       "realtime"
+    ],
+    "sdk": [
+      "@ai-sdk/openai",
+      "openai"
     ]
   },
   "limits": {
@@ -77,6 +81,16 @@
       "title": "gpt-realtime-whisper Model | OpenAI API",
       "url": "https://developers.openai.com/api/docs/models/gpt-realtime-whisper.md",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

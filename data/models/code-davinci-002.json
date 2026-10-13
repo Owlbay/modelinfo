@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "completions"
+    ],
+    "sdk": [
+      "openai"
     ]
   },
   "limits": {
@@ -42,6 +45,11 @@
       "title": "Deprecations | OpenAI API",
       "url": "https://developers.openai.com/api/docs/deprecations",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

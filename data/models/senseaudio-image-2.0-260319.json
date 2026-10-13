@@ -7,7 +7,8 @@
   "api": {
     "types": [
       "images"
-    ]
+    ],
+    "sdk": []
   },
   "limits": {
     "context": null,

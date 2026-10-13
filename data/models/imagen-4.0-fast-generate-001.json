@@ -7,6 +7,10 @@
   "api": {
     "types": [
       "images"
+    ],
+    "sdk": [
+      "@ai-sdk/google",
+      "@google/genai"
     ]
   },
   "limits": {
@@ -59,6 +63,16 @@
       "title": "Official Google Developers announcement with API pricing",
       "url": "https://developers.googleblog.com/en/announcing-imagen-4-fast-and-imagen-4-family-generally-available-in-the-gemini-api/",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @google/genai (api.sdk only)",
+      "url": "https://github.com/googleapis/js-genai",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/google (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/google",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

@@ -7,6 +7,10 @@
   "api": {
     "types": [
       "embeddings"
+    ],
+    "sdk": [
+      "@ai-sdk/cohere",
+      "cohere-ai"
     ]
   },
   "limits": {
@@ -75,6 +79,16 @@
       "title": "Official model release / pricing documentation",
       "url": "https://cohere.com/blog/introducing-embed-v3",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — cohere-ai (api.sdk only)",
+      "url": "https://github.com/cohere-ai/cohere-typescript",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/cohere (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/cohere",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

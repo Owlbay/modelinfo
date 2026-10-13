@@ -8,6 +8,10 @@
     "types": [
       "audio",
       "realtime"
+    ],
+    "sdk": [
+      "@ai-sdk/deepgram",
+      "@deepgram/sdk"
     ]
   },
   "limits": {
@@ -65,6 +69,16 @@
       "title": "Pricing | Deepgram",
       "url": "https://deepgram.com/pricing",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @deepgram/sdk (api.sdk only)",
+      "url": "https://github.com/deepgram/deepgram-js-sdk",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/deepgram (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/deepgram",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "realtime"
+    ],
+    "sdk": [
+      "@speechmatics/real-time-client"
     ]
   },
   "limits": {
@@ -69,6 +72,11 @@
       "title": "Introducing Agent STT: built for the words that cost you the call | Speechmatics",
       "url": "https://www.speechmatics.com/company/articles-and-news/meet-agent-stt-powered-by-linden-1-fast-accurate-speech-recognition",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @speechmatics/real-time-client (api.sdk only)",
+      "url": "https://github.com/speechmatics/speechmatics-js-sdk",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

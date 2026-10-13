@@ -7,6 +7,10 @@
   "api": {
     "types": [
       "audio"
+    ],
+    "sdk": [
+      "@ai-sdk/elevenlabs",
+      "@elevenlabs/elevenlabs-js"
     ]
   },
   "limits": {
@@ -52,6 +56,16 @@
       "title": "Design a voice | ElevenLabs API Reference",
       "url": "https://elevenlabs.io/docs/api-reference/text-to-voice/design",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @elevenlabs/elevenlabs-js (api.sdk only)",
+      "url": "https://github.com/elevenlabs/elevenlabs-js",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/elevenlabs (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/elevenlabs",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

@@ -30,7 +30,7 @@ export async function getModels(): Promise<Model[]> {
 /** /v1/models 的单条记录：只保留标准字段，顺序固定 */
 export function toPublic(m: Model) {
   const { id, object, created, owned_by, name, api, limits, modalities, reasoning, pricing, features, info } = m;
-  return { id, object, created, owned_by, name, api, limits, modalities, reasoning, pricing, features, info };
+  return { id, object, created, owned_by, name, api: { types: api.types, sdk: api.sdk }, limits, modalities, reasoning, pricing, features, info };
 }
 
 /** 格式化函数定义在 format.ts（不依赖构建期数据，客户端脚本也能引用），服务端从这里取用 */

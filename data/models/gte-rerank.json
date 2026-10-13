@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "rerank"
+    ],
+    "sdk": [
+      "dashscope-sdk-official"
     ]
   },
   "limits": {
@@ -47,6 +50,11 @@
       "title": "存档：文本排序模型 API 详情 | 阿里云百炼（原网址 https://help.aliyun.com/zh/model-studio/developer-reference/text-rerank-api）",
       "url": "https://web.archive.org/web/20250211063206/https://help.aliyun.com/zh/model-studio/developer-reference/text-rerank-api",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — dashscope-sdk-official (api.sdk only)",
+      "url": "https://github.com/dashscope/dashscope-sdk-nodejs",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

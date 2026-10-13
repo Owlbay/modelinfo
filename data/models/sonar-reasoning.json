@@ -7,6 +7,12 @@
   "api": {
     "types": [
       "chat"
+    ],
+    "sdk": [
+      "@ai-sdk/openai",
+      "@ai-sdk/openai-compatible",
+      "@ai-sdk/perplexity",
+      "openai"
     ]
   },
   "limits": {
@@ -47,6 +53,41 @@
       "title": "存档：Model Cards | Perplexity Docs（原网址 https://docs.perplexity.ai/guides/model-cards）",
       "url": "https://web.archive.org/web/20250405124746/https://docs.perplexity.ai/guides/model-cards",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @ai-sdk/perplexity (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/perplexity",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://docs.perplexity.ai/docs/sonar/quickstart",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai-compatible (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai-compatible (api.sdk only)",
+      "url": "https://docs.perplexity.ai/docs/sonar/quickstart",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://docs.perplexity.ai/docs/sonar/quickstart",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

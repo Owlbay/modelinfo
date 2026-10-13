@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "video"
+    ],
+    "sdk": [
+      "@google/genai"
     ]
   },
   "limits": {
@@ -75,6 +78,11 @@
       "title": "Video generation | Gemini API",
       "url": "https://ai.google.dev/gemini-api/docs/video",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "SDK support — @google/genai (api.sdk only)",
+      "url": "https://github.com/googleapis/js-genai",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

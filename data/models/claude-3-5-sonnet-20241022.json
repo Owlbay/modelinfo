@@ -8,6 +8,9 @@
     "types": [
       "messages",
       "batch"
+    ],
+    "sdk": [
+      "@anthropic-ai/sdk"
     ]
   },
   "limits": {
@@ -70,6 +73,11 @@
       "title": "Introducing computer use, a new Claude 3.5 Sonnet, and Claude 3.5 Haiku | Anthropic News",
       "url": "https://www.anthropic.com/news/3-5-models-and-computer-use",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @anthropic-ai/sdk (api.sdk only)",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

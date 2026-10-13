@@ -8,6 +8,9 @@
     "types": [
       "messages",
       "batch"
+    ],
+    "sdk": [
+      "@anthropic-ai/sdk"
     ]
   },
   "limits": {
@@ -65,6 +68,11 @@
       "title": "存档：Pricing（原网址 https://docs.anthropic.com/en/docs/about-claude/pricing）",
       "url": "https://web.archive.org/web/20250512021553/https://docs.anthropic.com/en/docs/about-claude/pricing",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @anthropic-ai/sdk (api.sdk only)",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

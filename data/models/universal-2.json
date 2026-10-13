@@ -7,6 +7,10 @@
   "api": {
     "types": [
       "audio"
+    ],
+    "sdk": [
+      "@ai-sdk/assemblyai",
+      "assemblyai"
     ]
   },
   "limits": {
@@ -69,6 +73,16 @@
       "title": "Official release announcement",
       "url": "https://www.assemblyai.com/research/universal-2",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — assemblyai (api.sdk only)",
+      "url": "https://github.com/AssemblyAI/assemblyai-node-sdk",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/assemblyai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/assemblyai",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

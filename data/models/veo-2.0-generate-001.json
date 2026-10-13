@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "video"
+    ],
+    "sdk": [
+      "@google/genai"
     ]
   },
   "limits": {
@@ -60,6 +63,11 @@
       "title": "Official Google Developers announcement with API pricing",
       "url": "https://developers.googleblog.com/en/gemini-2-5-flash-pro-live-api-veo-2-gemini-api/",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @google/genai (api.sdk only)",
+      "url": "https://github.com/googleapis/js-genai",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

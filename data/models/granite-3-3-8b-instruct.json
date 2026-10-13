@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "chat"
+    ],
+    "sdk": [
+      "@ibm-cloud/watsonx-ai"
     ]
   },
   "limits": {
@@ -66,6 +69,11 @@
       "title": "Official model release / pricing documentation",
       "url": "https://www.ibm.com/watsonx/developer/get-started/models/",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @ibm-cloud/watsonx-ai (api.sdk only)",
+      "url": "https://github.com/IBM/watsonx-ai-node-sdk",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

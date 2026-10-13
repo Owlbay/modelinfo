@@ -80,3 +80,15 @@ test('rejects a WebSocket method on an HTTPS provider', () => {
   assert.equal(result.status, 1);
   assert.match(result.stderr, /WS 使用 wss/);
 });
+
+test('SDK accepts multiple packages and empty arrays, rejects duplicates and malformed values', () => {
+  for (const sdk of [[], ['@ai-sdk/openai', 'openai'], ['@ai-sdk/google-vertex/anthropic']]) {
+    const result = validate((m) => { m.api.sdk = sdk; });
+    assert.equal(result.status, 0, result.stderr);
+  }
+  for (const sdk of [undefined, null, '@ai-sdk/openai', [''], ['npm install openai'], ['@ai-sdk/openai', '@ai-sdk/openai'], ['https://example.com']]) {
+    const result = validate((m) => { m.api.sdk = sdk; });
+    assert.equal(result.status, 1);
+    assert.match(result.stderr, /api.sdk/);
+  }
+});

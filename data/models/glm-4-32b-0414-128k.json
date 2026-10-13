@@ -7,6 +7,12 @@
   "api": {
     "types": [
       "chat"
+    ],
+    "sdk": [
+      "@ai-sdk/openai",
+      "@ai-sdk/openai-compatible",
+      "@ai-sdk/zai",
+      "openai"
     ]
   },
   "limits": {
@@ -79,6 +85,26 @@
       "title": "GLM-4-32B-0414-128K | Z.ai",
       "url": "https://docs.z.ai/guides/llm/glm-4-32b-0414-128k",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "SDK support — @ai-sdk/zai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/zai",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai-compatible (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

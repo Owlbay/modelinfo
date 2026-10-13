@@ -9,6 +9,13 @@
       "chat",
       "responses",
       "messages"
+    ],
+    "sdk": [
+      "@ai-sdk/anthropic",
+      "@ai-sdk/openai",
+      "@ai-sdk/openai-compatible",
+      "@anthropic-ai/sdk",
+      "openai"
     ]
   },
   "limits": {
@@ -64,6 +71,31 @@
       "title": "星辰 MaaS 产品使用说明",
       "url": "https://www.xfyun.cn/doc/spark/%E4%BA%A7%E5%93%81%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.html",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai-compatible (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @anthropic-ai/sdk (api.sdk only)",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/anthropic (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/anthropic",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

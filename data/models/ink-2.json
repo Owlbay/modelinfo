@@ -8,6 +8,10 @@
     "types": [
       "audio",
       "realtime"
+    ],
+    "sdk": [
+      "@ai-sdk/cartesia",
+      "@cartesia/cartesia-js"
     ]
   },
   "limits": {
@@ -48,6 +52,16 @@
       "title": "Ink 2 | Cartesia Docs",
       "url": "https://docs.cartesia.ai/build-with-cartesia/stt-models",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @ai-sdk/cartesia (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/cartesia",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @cartesia/cartesia-js (api.sdk only)",
+      "url": "https://github.com/cartesia-ai/cartesia-js",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

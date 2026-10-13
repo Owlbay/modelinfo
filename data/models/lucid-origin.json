@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "images"
+    ],
+    "sdk": [
+      "@leonardo-ai/sdk"
     ]
   },
   "limits": {
@@ -58,6 +61,11 @@
       "title": "Introducing Lucid Origin (Leonardo.Ai news)",
       "url": "https://leonardo.ai/news/lucid-origin-ai-image-model",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @leonardo-ai/sdk (api.sdk only)",
+      "url": "https://github.com/Leonardo-Interactive/leonardo-ts-sdk",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

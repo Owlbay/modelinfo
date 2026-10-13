@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "realtime"
+    ],
+    "sdk": [
+      "dashscope-sdk-official"
     ]
   },
   "limits": {
@@ -55,6 +58,11 @@
       "title": "Alibaba Cloud Model Studio model lifecycle and release dates",
       "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — dashscope-sdk-official (api.sdk only)",
+      "url": "https://github.com/dashscope/dashscope-sdk-nodejs",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

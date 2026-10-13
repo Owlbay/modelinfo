@@ -1,0 +1,8372 @@
+{
+  "source": "https://models.dev/api.json",
+  "retrieved_at": "2026-10-13",
+  "sha256": "53b0f8141a15c31a5a966bb95e37a35e49fe6c4345a60662daf25c1c6e94f832",
+  "total": 1299,
+  "matched": 229,
+  "multiple": 0,
+  "records": [
+    {
+      "id": "4.0ultra",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "act_two",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ada",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "aleph2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "antigravity-preview-05-2026",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "antigravity-preview-09-2026",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "aura-2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "autoglm-phone",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "babbage-002",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "babbage",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "baichuan-m2-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "baichuan-m3-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "baichuan2-turbo-192k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "bulbul-v3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "bulbul-v4-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "c1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "c4ai-aya-expanse-32b",
+      "sdk": [
+        "@ai-sdk/cohere"
+      ],
+      "matches": [
+        {
+          "provider": "cohere",
+          "model": "c4ai-aya-expanse-32b",
+          "sdk": "@ai-sdk/cohere"
+        }
+      ]
+    },
+    {
+      "id": "c4ai-aya-expanse-8b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "c4ai-aya-vision-32b",
+      "sdk": [
+        "@ai-sdk/cohere"
+      ],
+      "matches": [
+        {
+          "provider": "cohere",
+          "model": "c4ai-aya-vision-32b",
+          "sdk": "@ai-sdk/cohere"
+        }
+      ]
+    },
+    {
+      "id": "c4ai-aya-vision-8b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "chat-bison",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "chat-latest",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "chatgpt-4o-latest",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "chatgpt-image-latest",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "chatgpt-image-latest",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "claude-1.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "claude-1.1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "claude-1.2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "claude-1.3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "claude-2.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "claude-2.1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "claude-3-5-haiku",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "claude-3-5-sonnet-20240620",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "claude-3-5-sonnet-20241022",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "claude-3-7-sonnet",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "claude-3-haiku",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "claude-3-opus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "claude-3-sonnet",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "claude-fable-5-1",
+      "sdk": [
+        "@ai-sdk/anthropic"
+      ],
+      "matches": [
+        {
+          "provider": "anthropic",
+          "model": "claude-fable-5-1",
+          "sdk": "@ai-sdk/anthropic"
+        }
+      ]
+    },
+    {
+      "id": "claude-fable-5",
+      "sdk": [
+        "@ai-sdk/anthropic"
+      ],
+      "matches": [
+        {
+          "provider": "anthropic",
+          "model": "claude-fable-5",
+          "sdk": "@ai-sdk/anthropic"
+        }
+      ]
+    },
+    {
+      "id": "claude-haiku-4-5",
+      "sdk": [
+        "@ai-sdk/anthropic"
+      ],
+      "matches": [
+        {
+          "provider": "anthropic",
+          "model": "claude-haiku-4-5",
+          "sdk": "@ai-sdk/anthropic"
+        }
+      ]
+    },
+    {
+      "id": "claude-haiku-5-5",
+      "sdk": [
+        "@ai-sdk/anthropic"
+      ],
+      "matches": [
+        {
+          "provider": "anthropic",
+          "model": "claude-haiku-5-5",
+          "sdk": "@ai-sdk/anthropic"
+        }
+      ]
+    },
+    {
+      "id": "claude-instant-1.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "claude-instant-1.1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "claude-instant-1.2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "claude-opus-4-1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "claude-opus-4-5",
+      "sdk": [
+        "@ai-sdk/anthropic"
+      ],
+      "matches": [
+        {
+          "provider": "anthropic",
+          "model": "claude-opus-4-5",
+          "sdk": "@ai-sdk/anthropic"
+        }
+      ]
+    },
+    {
+      "id": "claude-opus-4-6",
+      "sdk": [
+        "@ai-sdk/anthropic"
+      ],
+      "matches": [
+        {
+          "provider": "anthropic",
+          "model": "claude-opus-4-6",
+          "sdk": "@ai-sdk/anthropic"
+        }
+      ]
+    },
+    {
+      "id": "claude-opus-4-7",
+      "sdk": [
+        "@ai-sdk/anthropic"
+      ],
+      "matches": [
+        {
+          "provider": "anthropic",
+          "model": "claude-opus-4-7",
+          "sdk": "@ai-sdk/anthropic"
+        }
+      ]
+    },
+    {
+      "id": "claude-opus-4-8",
+      "sdk": [
+        "@ai-sdk/anthropic"
+      ],
+      "matches": [
+        {
+          "provider": "anthropic",
+          "model": "claude-opus-4-8",
+          "sdk": "@ai-sdk/anthropic"
+        }
+      ]
+    },
+    {
+      "id": "claude-opus-4",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "claude-opus-5-5",
+      "sdk": [
+        "@ai-sdk/anthropic"
+      ],
+      "matches": [
+        {
+          "provider": "anthropic",
+          "model": "claude-opus-5-5",
+          "sdk": "@ai-sdk/anthropic"
+        }
+      ]
+    },
+    {
+      "id": "claude-opus-5",
+      "sdk": [
+        "@ai-sdk/anthropic"
+      ],
+      "matches": [
+        {
+          "provider": "anthropic",
+          "model": "claude-opus-5",
+          "sdk": "@ai-sdk/anthropic"
+        }
+      ]
+    },
+    {
+      "id": "claude-sonnet-4-5",
+      "sdk": [
+        "@ai-sdk/anthropic"
+      ],
+      "matches": [
+        {
+          "provider": "anthropic",
+          "model": "claude-sonnet-4-5",
+          "sdk": "@ai-sdk/anthropic"
+        }
+      ]
+    },
+    {
+      "id": "claude-sonnet-4-6",
+      "sdk": [
+        "@ai-sdk/anthropic"
+      ],
+      "matches": [
+        {
+          "provider": "anthropic",
+          "model": "claude-sonnet-4-6",
+          "sdk": "@ai-sdk/anthropic"
+        }
+      ]
+    },
+    {
+      "id": "claude-sonnet-4",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "claude-sonnet-5-5",
+      "sdk": [
+        "@ai-sdk/anthropic"
+      ],
+      "matches": [
+        {
+          "provider": "anthropic",
+          "model": "claude-sonnet-5-5",
+          "sdk": "@ai-sdk/anthropic"
+        }
+      ]
+    },
+    {
+      "id": "claude-sonnet-5",
+      "sdk": [
+        "@ai-sdk/anthropic"
+      ],
+      "matches": [
+        {
+          "provider": "anthropic",
+          "model": "claude-sonnet-5",
+          "sdk": "@ai-sdk/anthropic"
+        }
+      ]
+    },
+    {
+      "id": "code-davinci-002",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "codestral-2405",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "codestral-2501",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "codestral-2508",
+      "sdk": [
+        "@ai-sdk/mistral"
+      ],
+      "matches": [
+        {
+          "provider": "mistral",
+          "model": "codestral-2508",
+          "sdk": "@ai-sdk/mistral"
+        }
+      ]
+    },
+    {
+      "id": "codestral-embed-2505",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "codex-mini-latest",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "cogvideox-3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "cogvideox-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "cogview-3-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "cogview-4",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "cohere-transcribe-03-2026",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "cohere-transcribe-arabic-07-2026",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "command-a-03-2025",
+      "sdk": [
+        "@ai-sdk/cohere"
+      ],
+      "matches": [
+        {
+          "provider": "cohere",
+          "model": "command-a-03-2025",
+          "sdk": "@ai-sdk/cohere"
+        }
+      ]
+    },
+    {
+      "id": "command-a-plus-05-2026",
+      "sdk": [
+        "@ai-sdk/cohere"
+      ],
+      "matches": [
+        {
+          "provider": "cohere",
+          "model": "command-a-plus-05-2026",
+          "sdk": "@ai-sdk/cohere"
+        }
+      ]
+    },
+    {
+      "id": "command-a-reasoning-08-2025",
+      "sdk": [
+        "@ai-sdk/cohere"
+      ],
+      "matches": [
+        {
+          "provider": "cohere",
+          "model": "command-a-reasoning-08-2025",
+          "sdk": "@ai-sdk/cohere"
+        }
+      ]
+    },
+    {
+      "id": "command-a-translate-08-2025",
+      "sdk": [
+        "@ai-sdk/cohere"
+      ],
+      "matches": [
+        {
+          "provider": "cohere",
+          "model": "command-a-translate-08-2025",
+          "sdk": "@ai-sdk/cohere"
+        }
+      ]
+    },
+    {
+      "id": "command-a-vision-07-2025",
+      "sdk": [
+        "@ai-sdk/cohere"
+      ],
+      "matches": [
+        {
+          "provider": "cohere",
+          "model": "command-a-vision-07-2025",
+          "sdk": "@ai-sdk/cohere"
+        }
+      ]
+    },
+    {
+      "id": "command-light",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "command-r-03-2024",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "command-r-08-2024",
+      "sdk": [
+        "@ai-sdk/cohere"
+      ],
+      "matches": [
+        {
+          "provider": "cohere",
+          "model": "command-r-08-2024",
+          "sdk": "@ai-sdk/cohere"
+        }
+      ]
+    },
+    {
+      "id": "command-r-plus-04-2024",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "command-r-plus-08-2024",
+      "sdk": [
+        "@ai-sdk/cohere"
+      ],
+      "matches": [
+        {
+          "provider": "cohere",
+          "model": "command-r-plus-08-2024",
+          "sdk": "@ai-sdk/cohere"
+        }
+      ]
+    },
+    {
+      "id": "command-r7b-12-2024",
+      "sdk": [
+        "@ai-sdk/cohere"
+      ],
+      "matches": [
+        {
+          "provider": "cohere",
+          "model": "command-r7b-12-2024",
+          "sdk": "@ai-sdk/cohere"
+        }
+      ]
+    },
+    {
+      "id": "command",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "computer-use-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "cosyvoice-v2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "cosyvoice-v3-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "cosyvoice-v3-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "cosyvoice-v3.5-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "cosyvoice-v3.5-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ctxl-rerank-v1-instruct",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ctxl-rerank-v2-instruct-multilingual-mini",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ctxl-rerank-v2-instruct-multilingual",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "curie",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "dall-e-2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "dall-e-3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "davinci-002",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "davinci",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "deep-research-max-preview-04-2026",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "deep-research-max-preview-04-2026",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "deep-research-preview-04-2026",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "deep-research-preview-04-2026",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "deep-research-pro-preview-12-2025",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "deepseek-chat",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "deepseek-flash",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "deepseek-reasoner",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "deepseek-v4-pro",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "deepseek",
+          "model": "deepseek-v4-pro",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "devstral-2512",
+      "sdk": [
+        "@ai-sdk/mistral"
+      ],
+      "matches": [
+        {
+          "provider": "mistral",
+          "model": "devstral-2512",
+          "sdk": "@ai-sdk/mistral"
+        }
+      ]
+    },
+    {
+      "id": "devstral-medium-2507",
+      "sdk": [
+        "@ai-sdk/mistral"
+      ],
+      "matches": [
+        {
+          "provider": "mistral",
+          "model": "devstral-medium-2507",
+          "sdk": "@ai-sdk/mistral"
+        }
+      ]
+    },
+    {
+      "id": "devstral-small-2505",
+      "sdk": [
+        "@ai-sdk/mistral"
+      ],
+      "matches": [
+        {
+          "provider": "mistral",
+          "model": "devstral-small-2505",
+          "sdk": "@ai-sdk/mistral"
+        }
+      ]
+    },
+    {
+      "id": "devstral-small-2507",
+      "sdk": [
+        "@ai-sdk/mistral"
+      ],
+      "matches": [
+        {
+          "provider": "mistral",
+          "model": "devstral-small-2507",
+          "sdk": "@ai-sdk/mistral"
+        }
+      ]
+    },
+    {
+      "id": "document-classify",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "document-parse",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-1-5-lite-32k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-1-5-pro-256k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-1-5-pro-32k-character",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-1-5-pro-32k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-1-5-thinking-pro-m",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-1-5-thinking-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-1-5-thinking-vision-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-1-5-ui-tars",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-1-5-vision-lite",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-1-5-vision-pro-32k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-1-5-vision-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-embedding-vision",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-lite-128k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-lite-32k-character",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-lite-32k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-lite-4k-character",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-lite-4k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-pro-128k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-pro-256k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-pro-32k-browsing",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-pro-32k-character",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-pro-32k-functioncall",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-pro-32k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-pro-4k-browsing",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-pro-4k-character",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-pro-4k-functioncall",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-pro-4k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-seaweed",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-seed-1-6-flash",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "volcengine",
+          "model": "doubao-seed-1-6-flash-250828",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "doubao-seed-1-6-lite",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-seed-1-6-thinking",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-seed-1-6-vision",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "volcengine",
+          "model": "doubao-seed-1-6-vision-250815",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "doubao-seed-1-6",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "volcengine",
+          "model": "doubao-seed-1-6-251015",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "doubao-seed-2-0-code-preview",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "volcengine",
+          "model": "doubao-seed-2-0-code-preview-260215",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "doubao-seed-2-0-lite",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "volcengine",
+          "model": "doubao-seed-2-0-lite-260428",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "doubao-seed-2-0-mini",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "volcengine",
+          "model": "doubao-seed-2-0-mini-260428",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "doubao-seed-2-0-pro",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "volcengine",
+          "model": "doubao-seed-2-0-pro-260215",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "doubao-seed-2-1-lite",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-seed-2-1-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-seed-2-1-turbo",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "volcengine",
+          "model": "doubao-seed-2-1-turbo-260628",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "doubao-seed-character",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "volcengine",
+          "model": "doubao-seed-character-260628",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "doubao-seed-code-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-seed-evolving",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "volcengine",
+          "model": "doubao-seed-evolving",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "doubao-seed-translation",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-seed3d-1-0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-seed3d-2-0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-seedance-1-0-lite",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-seedance-1-0-pro-fast",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-seedance-1-0-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-seedance-1-5-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-seedance-2-0-fast",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-seedance-2-0-mini",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-seedance-2-0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-seedance-2-5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-seededit-3-0-i2i",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-seedream-3-0-t2i",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-seedream-4-0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-seedream-4-5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-seedream-5-0-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-seedream-5-0-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-seedream-5-0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-vision-lite-32k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "doubao-vision-pro-32k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "eleven_english_sts_v2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "eleven_flash_v2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "eleven_flash_v2_5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "eleven_multilingual_sts_v2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "eleven_multilingual_ttv_v2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "eleven_multilingual_v2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "eleven_text_to_sound_v2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "eleven_ttv_v3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "eleven_v3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "eleven_v3_conversational",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "eleven_v4",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "eleven_v4_turbo",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "embed-english-light-v2.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "embed-english-light-v3.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "embed-english-v2.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "embed-english-v3.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "embed-multilingual-light-v3.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "embed-multilingual-v2.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "embed-multilingual-v3.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "embed-qa-4",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "embed-v4.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "embed-v5.0-fast",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "embed-v5.0-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "embedding-001",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "embedding-2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "embedding-3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "embedding-gecko-001",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "embedding-v1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "enhanced",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-3.5-4k-0205",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-3.5-8k-0613",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-3.5-8k-0701",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-3.5-8k-1222",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-3.5-8k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-4.0-8k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-4.0-turbo-128k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-4.0-turbo-8k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-4.5-0.3b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-4.5-21b-a3b-thinking",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-4.5-21b-a3b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-4.5-8k-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-4.5-turbo-128k-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-4.5-turbo-128k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-4.5-turbo-20260402",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-4.5-turbo-32k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-4.5-turbo-latest",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-4.5-turbo-vl-32k-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-4.5-turbo-vl-32k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-4.5-turbo-vl-latest",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-4.5-turbo-vl-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-4.5-turbo-vl",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-4.5-vl-28b-a3b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-5.0-thinking-exp",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-5.0-thinking-latest",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-5.0-thinking-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-5.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-5.1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-character-8k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-character-fiction-8k-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-character-fiction-8k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-functions-8k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-image-turbo",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-lite-8k-0922",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-lite-8k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-lite-pro-128k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-novel-8k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-speed-128k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-speed-8k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-speed-pro-128k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-tiny-8k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-x1-turbo-32k-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-x1-turbo-32k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-x1-turbo-latest",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-x1.1-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ernie-x1.1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "flux-2-flex",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "flux-2-klein-4b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "flux-2-klein-9b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "flux-2-max",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "flux-2-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "flux-3-image",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "flux-3-video",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "flux-general-en",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "flux-general-multi",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "flux-kontext-max",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "flux-kontext-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "flux-pro-1.0-expand",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "flux-pro-1.0-fill",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "flux-pro-1.1-ultra",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "flux-pro-1.1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "fun-asr-flash-8k-realtime",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "fun-asr-mtl",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "fun-asr-realtime",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "fun-asr",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-1.0-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-1.5-flash-8b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-1.5-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-1.5-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-2.0-flash-exp-image-generation",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-2.0-flash-exp",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-2.0-flash-lite-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-2.0-flash-lite",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-2.0-flash-live-001",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-2.0-flash-preview-image-generation",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-2.0-flash-thinking-exp",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-2.0-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-2.0-pro-exp",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-2.5-computer-use-preview-10-2025",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "gemini-2.5-computer-use-preview-10-2025",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "gemini-2.5-flash-exp-native-audio-thinking-dialog",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-2.5-flash-image-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-2.5-flash-image",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "gemini-2.5-flash-image",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "gemini-2.5-flash-lite-preview-09-2025",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-2.5-flash-lite",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "gemini-2.5-flash-lite",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "gemini-2.5-flash-native-audio-preview-12-2025",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-2.5-flash-preview-05-20",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-2.5-flash-preview-native-audio-dialog",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-2.5-flash-preview-tts",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "gemini-2.5-flash-preview-tts",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "gemini-2.5-flash",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "gemini-2.5-flash",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "gemini-2.5-pro-exp-03-25",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-2.5-pro-preview-05-06",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-2.5-pro-preview-tts",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "gemini-2.5-pro-preview-tts",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "gemini-2.5-pro",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "gemini-2.5-pro",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-flash-preview",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "gemini-3-flash-preview",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-pro-image-preview",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "gemini-3-pro-image-preview",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-pro-image",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "gemini-3-pro-image",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-pro-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-3.1-flash-image-preview",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "gemini-3.1-flash-image-preview",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.1-flash-image",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "gemini-3.1-flash-image",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.1-flash-lite-image",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "gemini-3.1-flash-lite-image",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.1-flash-lite-preview",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "gemini-3.1-flash-lite-preview",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.1-flash-lite",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "gemini-3.1-flash-lite",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.1-flash-live-preview",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "gemini-3.1-flash-live-preview",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.1-flash-tts-preview",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "gemini-3.1-flash-tts-preview",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.1-pro-preview",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "gemini-3.1-pro-preview",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.5-flash-lite",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "gemini-3.5-flash-lite",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.5-flash",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "gemini-3.5-flash",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.5-live-translate-preview",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "gemini-3.5-live-translate-preview",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.5-transcribe-live",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-3.5-transcribe",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-3.6-flash",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "gemini-3.6-flash",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.7-flash",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "gemini-3.7-flash",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.8-flash-lite-tts",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-3.8-flash-tts",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-3.8-flash",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "gemini-3.8-flash",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.8-live-extended-thinking",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-3.8-live",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-embedding-001",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "gemini-embedding-001",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "gemini-embedding-2-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-embedding-2",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "gemini-embedding-2",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "gemini-embedding-exp-03-07",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-live-2.5-flash-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-nano-banana-2.1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-omni-1.1-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-omni-flash-preview",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "gemini-omni-flash-preview",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "gemini-robotics-er-1.5-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-robotics-er-1.6-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-robotics-er-2-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemini-robotics-er-2-streaming-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gemma-4-26b-a4b-it",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "gemma-4-26b-a4b-it",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "gemma-4-31b-it",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "gemma-4-31b-it",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "gen3a_turbo",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gen4.5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gen4_aleph",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gen4_image",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gen4_image_turbo",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gen4_turbo",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "generalv3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "glm-4-0520",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "glm-4-32b-0414-128k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "glm-4-flash-250414",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "glm-4-flashx-250414",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "glm-4-long",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "glm-4-voice",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "glm-4.1v-thinking-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "glm-4.1v-thinking-flashx",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "glm-4.5-air",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "zai",
+          "model": "glm-4.5-air",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "glm-4.5-airx",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "glm-4.5-flash",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "zai",
+          "model": "glm-4.5-flash",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "glm-4.5-x",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "glm-4.5",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "zai",
+          "model": "glm-4.5",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "glm-4.5v",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "zai",
+          "model": "glm-4.5v",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "glm-4.6",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "zai",
+          "model": "glm-4.6",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "glm-4.6v-flash",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "zai",
+          "model": "glm-4.6v-flash",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "glm-4.6v-flashx",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "glm-4.6v",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "zai",
+          "model": "glm-4.6v",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "glm-4.7-flash",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "zai",
+          "model": "glm-4.7-flash",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "glm-4.7-flashx",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "zai",
+          "model": "glm-4.7-flashx",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "glm-4.7",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "zai",
+          "model": "glm-4.7",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "glm-4v-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "glm-5-turbo",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "glm-5.1",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "zai",
+          "model": "glm-5.1",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "glm-5.2",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "zai",
+          "model": "glm-5.2",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "glm-5.3-flash",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "zai",
+          "model": "glm-5.3-flash",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "glm-5.3-flashx",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "zai",
+          "model": "glm-5.3-flashx",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "glm-5.3",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "zai",
+          "model": "glm-5.3",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "glm-5",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "zai",
+          "model": "glm-5",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "glm-5v-turbo",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "zhipuai",
+          "model": "glm-5v-turbo",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "glm-asr-2512",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "glm-image",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "glm-ocr",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "glm-realtime",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "glm-tts-clone",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "glm-tts",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "glm-z1-air",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "glm-z1-airx",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "glm-z1-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "glm-z1-flashx",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-3.5-turbo-0301",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-3.5-turbo-0613",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-3.5-turbo-1106",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-3.5-turbo-16k-0613",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-3.5-turbo-instruct",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-3.5-turbo",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-3.5-turbo",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-4-32k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-4-turbo-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-4-turbo",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-4-turbo",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-4-vision-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-4.1-mini",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-4.1-mini",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-4.1-nano",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-4.1-nano",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-4.1",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-4.1",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-4.5-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-4",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-4",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-4o-audio-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-4o-mini-audio-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-4o-mini-realtime-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-4o-mini-search-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-4o-mini-transcribe",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-4o-mini-tts",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-4o-mini",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-4o-mini",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-4o-realtime-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-4o-search-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-4o-transcribe-diarize",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-4o-transcribe",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-4o",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-4o",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-chat-latest",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-5-codex",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-5-mini",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-5-mini",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-nano",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-5-nano",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-pro",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-5-pro",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5.1-chat-latest",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-5.1-codex-max",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-5.1-codex-mini",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-5.1-codex",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-5.1",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-5.1",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5.2-chat-latest",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-5.2-chat-latest",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5.2-codex",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-5.2-pro",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-5.2-pro",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5.2",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-5.2",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5.3-chat-latest",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-5.3-chat-latest",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5.3-codex",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-5.3-codex",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5.4-mini",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-5.4-mini",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5.4-nano",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-5.4-nano",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5.4-pro",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-5.4-pro",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5.4",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-5.4",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5.5-pro",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-5.5-pro",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5.5",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-5.5",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5.6-cyber",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-5.6-luna",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-5.6-luna",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5.6-sol",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-5.6-sol",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5.6-terra",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-5.6-terra",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-5",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-astra",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-6-astra",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-luna",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-6-luna",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-sol",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-6-sol",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6.1-sol",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-6.1-sol",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-audio-1.5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-audio-mini",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-audio",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-image-1-mini",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-image-1-mini",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-image-1.5",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-image-1.5",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-image-1",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-image-1",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-image-2.5-flare",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-image-2.5-sunburst",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-image-2",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-image-2",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-live-1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-live-transcribe",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-realtime-1.5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-realtime-2.1-mini",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-realtime-2.1",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "gpt-realtime-2.1",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "gpt-realtime-2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-realtime-mini",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-realtime-translate",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-realtime-whisper",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-realtime",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gpt-transcribe",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "granite-13b-instruct-v2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "granite-3-2-8b-instruct",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "granite-3-3-8b-instruct",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "granite-3-8b-instruct",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "granite-4-h-small",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "granite-8b-code-instruct",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "granite-embedding-107m-multilingual",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "granite-embedding-278m-multilingual",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "granite-guardian-3-8b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "grok-3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "grok-4-0709",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "grok-4-1-fast-non-reasoning",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "grok-4-1-fast-reasoning",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "grok-4-fast-non-reasoning",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "grok-4-fast-reasoning",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "grok-4.20-0309-non-reasoning",
+      "sdk": [
+        "@ai-sdk/xai"
+      ],
+      "matches": [
+        {
+          "provider": "xai",
+          "model": "grok-4.20-0309-non-reasoning",
+          "sdk": "@ai-sdk/xai"
+        }
+      ]
+    },
+    {
+      "id": "grok-4.20-0309-reasoning",
+      "sdk": [
+        "@ai-sdk/xai"
+      ],
+      "matches": [
+        {
+          "provider": "xai",
+          "model": "grok-4.20-0309-reasoning",
+          "sdk": "@ai-sdk/xai"
+        }
+      ]
+    },
+    {
+      "id": "grok-4.20-multi-agent-0309",
+      "sdk": [
+        "@ai-sdk/xai"
+      ],
+      "matches": [
+        {
+          "provider": "xai",
+          "model": "grok-4.20-multi-agent-0309",
+          "sdk": "@ai-sdk/xai"
+        }
+      ]
+    },
+    {
+      "id": "grok-4.3",
+      "sdk": [
+        "@ai-sdk/xai"
+      ],
+      "matches": [
+        {
+          "provider": "xai",
+          "model": "grok-4.3",
+          "sdk": "@ai-sdk/xai"
+        }
+      ]
+    },
+    {
+      "id": "grok-4.5",
+      "sdk": [
+        "@ai-sdk/xai"
+      ],
+      "matches": [
+        {
+          "provider": "xai",
+          "model": "grok-4.5",
+          "sdk": "@ai-sdk/xai"
+        }
+      ]
+    },
+    {
+      "id": "grok-4.6",
+      "sdk": [
+        "@ai-sdk/xai"
+      ],
+      "matches": [
+        {
+          "provider": "xai",
+          "model": "grok-4.6",
+          "sdk": "@ai-sdk/xai"
+        }
+      ]
+    },
+    {
+      "id": "grok-4.7",
+      "sdk": [
+        "@ai-sdk/xai"
+      ],
+      "matches": [
+        {
+          "provider": "xai",
+          "model": "grok-4.7",
+          "sdk": "@ai-sdk/xai"
+        }
+      ]
+    },
+    {
+      "id": "grok-build-0.1",
+      "sdk": [
+        "@ai-sdk/xai"
+      ],
+      "matches": [
+        {
+          "provider": "xai",
+          "model": "grok-build-0.1",
+          "sdk": "@ai-sdk/xai"
+        }
+      ]
+    },
+    {
+      "id": "grok-imagine-image-2.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "grok-imagine-image-quality",
+      "sdk": [
+        "@ai-sdk/xai"
+      ],
+      "matches": [
+        {
+          "provider": "xai",
+          "model": "grok-imagine-image-quality",
+          "sdk": "@ai-sdk/xai"
+        }
+      ]
+    },
+    {
+      "id": "grok-imagine-image",
+      "sdk": [
+        "@ai-sdk/xai"
+      ],
+      "matches": [
+        {
+          "provider": "xai",
+          "model": "grok-imagine-image",
+          "sdk": "@ai-sdk/xai"
+        }
+      ]
+    },
+    {
+      "id": "grok-imagine-video-1.5-lite",
+      "sdk": [
+        "@ai-sdk/xai"
+      ],
+      "matches": [
+        {
+          "provider": "xai",
+          "model": "grok-imagine-video-1.5-lite",
+          "sdk": "@ai-sdk/xai"
+        }
+      ]
+    },
+    {
+      "id": "grok-imagine-video-1.5",
+      "sdk": [
+        "@ai-sdk/xai"
+      ],
+      "matches": [
+        {
+          "provider": "xai",
+          "model": "grok-imagine-video-1.5",
+          "sdk": "@ai-sdk/xai"
+        }
+      ]
+    },
+    {
+      "id": "grok-imagine-video",
+      "sdk": [
+        "@ai-sdk/xai"
+      ],
+      "matches": [
+        {
+          "provider": "xai",
+          "model": "grok-imagine-video",
+          "sdk": "@ai-sdk/xai"
+        }
+      ]
+    },
+    {
+      "id": "grok-voice-think-fast-2.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "grok-voice-transcribe-1.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "grok-voice-transcribe-2.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gte-rerank-v2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gte-rerank",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "gwm1_avatars",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "happyhorse-1.0-i2v",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "happyhorse-1.0-r2v",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "happyhorse-1.0-t2v",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "happyhorse-1.0-video-edit",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "happyhorse-1.1-i2v",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "happyhorse-1.1-r2v",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "happyhorse-1.1-t2v",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "happyoyster-1.0-acting",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "happyoyster-1.0-adventure",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "happyoyster-1.0-directing",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hcx-005",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hcx-007",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hcx-dash-002",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hunyuan-2.0-instruct",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hunyuan-2.0-thinking",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hunyuan-a13b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hunyuan-code",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hunyuan-embedding",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hunyuan-large-longcontext",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hunyuan-large-role",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hunyuan-large",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hunyuan-lite",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hunyuan-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hunyuan-role-latest",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hunyuan-role",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hunyuan-standard-256k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hunyuan-standard-32k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hunyuan-t1-vision-20250916",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hunyuan-t1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hunyuan-translation-lite",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hunyuan-translation",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hunyuan-turbo",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hunyuan-turbos-longtext-128k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hunyuan-turbos-vision-video-20250728",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hunyuan-turbos",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hunyuan-vision-1.5-instruct",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hy-asr-3.0-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hy-image-v3.5-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hy-image-v3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hy-mt2-lite",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hy-mt2-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hy-mt2-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hy-role",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hy-video-v1.5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hy-vision-2.0-instruct",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "hy3",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "tencent-tokenhub",
+          "model": "hy3",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "hy4-preview",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "tencent-tokenhub",
+          "model": "hy4-preview",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "ideogram-2a",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ideogram-3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ideogram-4-5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ideogram-4",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "image-01",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "imagen-3.0-generate-002",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "imagen-4.0-fast-generate-001",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "imagen-4.0-generate-001",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "imagen-4.0-generate-preview-06-06",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "imagen-4.0-ultra-generate-001",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "imagen-4.0-ultra-generate-preview-06-06",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "information-extract",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ink-2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ink-whisper",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "intern-s1-mini",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "intern-s1-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "intern-s1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "intern-s2-preview-35b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "intern-s2-preview-397b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "intern-s2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "internvl3.5-241b-a28b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ising-calibration-1.5-31b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "jamba-large-1.5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "jamba-large-1.6",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "jamba-large-1.7",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "ai21",
+          "model": "jamba-large",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "jamba-mini-1.5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "jamba-mini-1.6",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "jamba-mini-1.7",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "jamba-mini-2",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "ai21",
+          "model": "jamba-mini",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "jina-clip-v2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "jina-code-embeddings-0.5b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "jina-code-embeddings-1.5b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "jina-colbert-v2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "jina-embeddings-v3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "jina-embeddings-v4",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "jina-embeddings-v5-omni-nano",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "jina-embeddings-v5-omni-small",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "jina-embeddings-v5-text-nano",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "jina-embeddings-v5-text-small",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "jina-ocr-v1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "jina-reranker-m0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "jina-reranker-v2-base-multilingual",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "jina-reranker-v3.5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "jina-reranker-v3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "kat-coder-pro-v2.5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "kimi-k2-0711-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "kimi-k2-0905-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "kimi-k2-thinking-turbo",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "kimi-k2-thinking",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "kimi-k2-turbo-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "kimi-k2.5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "kimi-k2.6",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "moonshotai",
+          "model": "kimi-k2.6",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "kimi-k2.7-code-highspeed",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "moonshotai",
+          "model": "kimi-k2.7-code-highspeed",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "kimi-k2.7-code",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "moonshotai",
+          "model": "kimi-k2.7-code",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "kimi-k3",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "moonshotai",
+          "model": "kimi-k3",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "kimi-latest",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "kimi-thinking-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "kling-3.0-turbo",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "kling-image-o1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "kling-image-v1-5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "kling-image-v1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "kling-image-v2-new",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "kling-image-v2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "kling-v2-1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "kling-v2-5-turbo",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "kling-v2-6",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "kling-v3-omni",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "kling-v3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "kling-video-o1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "kling-video-v1-5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "kling-video-v1-6",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "kling-video-v1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "kling-video-v2-1-master",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "kling-video-v2-1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "kling-video-v2-master",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "labs-devstral-small-2512",
+      "sdk": [
+        "@ai-sdk/mistral"
+      ],
+      "matches": [
+        {
+          "provider": "mistral",
+          "model": "labs-devstral-small-2512",
+          "sdk": "@ai-sdk/mistral"
+        }
+      ]
+    },
+    {
+      "id": "labs-leanstral-1-5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "labs-leanstral-2603",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "labs-mistral-small-creative",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "linden-1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ling-1t",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ling-2.5-1t",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ling-2.6-1t",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ling-2.6-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ling-3.0-flash-vl",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ling-3.0-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ling-3.1-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "lite",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "llama-3-sonar-large-32k-chat",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "llama-3-sonar-large-32k-online",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "llama-3-sonar-small-32k-chat",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "llama-3-sonar-small-32k-online",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "llama-3.1-nemoguard-8b-content-safety",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "llama-3.1-nemoguard-8b-topic-control",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "llama-3.1-nemotron-safety-guard-8b-v3",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "nvidia",
+          "model": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "llama-3.1-nemotron-ultra-253b-v1",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "nvidia",
+          "model": "nvidia/llama-3.1-nemotron-ultra-253b-v1",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "llama-3.1-sonar-huge-128k-online",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "llama-3.1-sonar-large-128k-online",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "llama-3.1-sonar-small-128k-online",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "llama-3.2-nemoretriever-1b-vlm-embed-v1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "llama-3.2-nv-embedqa-1b-v1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "llama-nemotron-embed-vl-1b-v2",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "nvidia",
+          "model": "nvidia/llama-nemotron-embed-vl-1b-v2",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "llama-nemotron-rerank-vl-1b-v2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "llama-sea-lion-v3.5-70b-r",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "longcat-2.0",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "longcat",
+          "model": "LongCat-2.0",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "longcat-2.5-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "longcat-flash-chat",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "longcat-flash-lite",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "longcat-flash-omni-2603",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "longcat-flash-thinking-2601",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "longcat-flash-thinking",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ltx-2-3-fast",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ltx-2-3-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ltx-2-5-fast",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ltx-2-5-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ltx-2-fast",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ltx-2-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "lucid-origin",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "lucid-realism",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "lyria-3-clip-preview",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "lyria-3-clip-preview",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "lyria-3-pro-preview",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "lyria-3-pro-preview",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "lyria-3.5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "lyria-realtime-exp",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "magistral-medium-2506",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "magistral-medium-2507",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "magistral-medium-2509",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "magistral-small-2506",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "magistral-small-2507",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "magistral-small-2509",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mai-image-2.5-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mai-image-2.5-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mai-image-2.5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mai-image-2.6-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mai-image-2.6",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mai-transcribe-1.5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mai-transcribe-2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mai-voice-2.1-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mai-voice-2.1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "marengo2.7",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "marengo3.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "marengo3.5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mayura-v1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "melia-1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mercury-2.5",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "inception",
+          "model": "mercury-2.5",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "mercury-2",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "inception",
+          "model": "mercury-2",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "mercury-edit-2",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "inception",
+          "model": "mercury-edit-2",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "mimo-v2-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mimo-v2-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mimo-v2-tts",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mimo-v2.5-asr",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mimo-v2.5-pro",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "xiaomi",
+          "model": "mimo-v2.5-pro",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "mimo-v2.5-tts-voiceclone",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mimo-v2.5-tts-voicedesign",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mimo-v2.5-tts",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mimo-v2.5",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "xiaomi",
+          "model": "mimo-v2.5",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "mimo-v2.6-flash",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "xiaomi",
+          "model": "mimo-v2.6-flash",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "mimo-v2.6-pro-ultraspeed",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "xiaomi",
+          "model": "mimo-v2.6-pro-ultraspeed",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "mimo-v2.6-pro",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "xiaomi",
+          "model": "mimo-v2.6-pro",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "minimax-h3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "minimax-hailuo-02",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "minimax-hailuo-2.3-fast",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "minimax-hailuo-2.3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "minimax-m2.1-highspeed",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "minimax-m2.1",
+      "sdk": [
+        "@ai-sdk/anthropic"
+      ],
+      "matches": [
+        {
+          "provider": "minimax-coding-plan",
+          "model": "MiniMax-M2.1",
+          "sdk": "@ai-sdk/anthropic"
+        },
+        {
+          "provider": "minimax",
+          "model": "MiniMax-M2.1",
+          "sdk": "@ai-sdk/anthropic"
+        }
+      ]
+    },
+    {
+      "id": "minimax-m2.5-highspeed",
+      "sdk": [
+        "@ai-sdk/anthropic"
+      ],
+      "matches": [
+        {
+          "provider": "minimax-coding-plan",
+          "model": "MiniMax-M2.5-highspeed",
+          "sdk": "@ai-sdk/anthropic"
+        },
+        {
+          "provider": "minimax",
+          "model": "MiniMax-M2.5-highspeed",
+          "sdk": "@ai-sdk/anthropic"
+        }
+      ]
+    },
+    {
+      "id": "minimax-m2.5",
+      "sdk": [
+        "@ai-sdk/anthropic"
+      ],
+      "matches": [
+        {
+          "provider": "minimax-coding-plan",
+          "model": "MiniMax-M2.5",
+          "sdk": "@ai-sdk/anthropic"
+        },
+        {
+          "provider": "minimax",
+          "model": "MiniMax-M2.5",
+          "sdk": "@ai-sdk/anthropic"
+        }
+      ]
+    },
+    {
+      "id": "minimax-m2.7-highspeed",
+      "sdk": [
+        "@ai-sdk/anthropic"
+      ],
+      "matches": [
+        {
+          "provider": "minimax-coding-plan",
+          "model": "MiniMax-M2.7-highspeed",
+          "sdk": "@ai-sdk/anthropic"
+        },
+        {
+          "provider": "minimax",
+          "model": "MiniMax-M2.7-highspeed",
+          "sdk": "@ai-sdk/anthropic"
+        }
+      ]
+    },
+    {
+      "id": "minimax-m2.7",
+      "sdk": [
+        "@ai-sdk/anthropic"
+      ],
+      "matches": [
+        {
+          "provider": "minimax-coding-plan",
+          "model": "MiniMax-M2.7",
+          "sdk": "@ai-sdk/anthropic"
+        },
+        {
+          "provider": "minimax",
+          "model": "MiniMax-M2.7",
+          "sdk": "@ai-sdk/anthropic"
+        }
+      ]
+    },
+    {
+      "id": "minimax-m2",
+      "sdk": [
+        "@ai-sdk/anthropic"
+      ],
+      "matches": [
+        {
+          "provider": "minimax-coding-plan",
+          "model": "MiniMax-M2",
+          "sdk": "@ai-sdk/anthropic"
+        },
+        {
+          "provider": "minimax",
+          "model": "MiniMax-M2",
+          "sdk": "@ai-sdk/anthropic"
+        }
+      ]
+    },
+    {
+      "id": "minimax-m3",
+      "sdk": [
+        "@ai-sdk/anthropic"
+      ],
+      "matches": [
+        {
+          "provider": "minimax-coding-plan",
+          "model": "MiniMax-M3",
+          "sdk": "@ai-sdk/anthropic"
+        },
+        {
+          "provider": "minimax",
+          "model": "MiniMax-M3",
+          "sdk": "@ai-sdk/anthropic"
+        }
+      ]
+    },
+    {
+      "id": "ministral-14b-2512",
+      "sdk": [
+        "@ai-sdk/mistral"
+      ],
+      "matches": [
+        {
+          "provider": "mistral",
+          "model": "ministral-14b-2512",
+          "sdk": "@ai-sdk/mistral"
+        }
+      ]
+    },
+    {
+      "id": "ministral-3b-2410",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ministral-3b-2512",
+      "sdk": [
+        "@ai-sdk/mistral"
+      ],
+      "matches": [
+        {
+          "provider": "mistral",
+          "model": "ministral-3b-2512",
+          "sdk": "@ai-sdk/mistral"
+        }
+      ]
+    },
+    {
+      "id": "ministral-8b-2410",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ministral-8b-2512",
+      "sdk": [
+        "@ai-sdk/mistral"
+      ],
+      "matches": [
+        {
+          "provider": "mistral",
+          "model": "ministral-8b-2512",
+          "sdk": "@ai-sdk/mistral"
+        }
+      ]
+    },
+    {
+      "id": "mistral-embed-2312",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mistral-large-2402",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mistral-large-2407",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mistral-large-2411",
+      "sdk": [
+        "@ai-sdk/mistral"
+      ],
+      "matches": [
+        {
+          "provider": "mistral",
+          "model": "mistral-large-2411",
+          "sdk": "@ai-sdk/mistral"
+        }
+      ]
+    },
+    {
+      "id": "mistral-large-2512",
+      "sdk": [
+        "@ai-sdk/mistral"
+      ],
+      "matches": [
+        {
+          "provider": "mistral",
+          "model": "mistral-large-2512",
+          "sdk": "@ai-sdk/mistral"
+        }
+      ]
+    },
+    {
+      "id": "mistral-large-4",
+      "sdk": [
+        "@ai-sdk/mistral"
+      ],
+      "matches": [
+        {
+          "provider": "mistral",
+          "model": "mistral-large-4",
+          "sdk": "@ai-sdk/mistral"
+        }
+      ]
+    },
+    {
+      "id": "mistral-medium-2312",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mistral-medium-2505",
+      "sdk": [
+        "@ai-sdk/mistral"
+      ],
+      "matches": [
+        {
+          "provider": "mistral",
+          "model": "mistral-medium-2505",
+          "sdk": "@ai-sdk/mistral"
+        }
+      ]
+    },
+    {
+      "id": "mistral-medium-2508",
+      "sdk": [
+        "@ai-sdk/mistral"
+      ],
+      "matches": [
+        {
+          "provider": "mistral",
+          "model": "mistral-medium-2508",
+          "sdk": "@ai-sdk/mistral"
+        }
+      ]
+    },
+    {
+      "id": "mistral-medium-3-5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mistral-moderation-2411",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mistral-moderation-2603",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mistral-ocr-2503",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mistral-ocr-2505",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mistral-ocr-2512",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mistral-ocr-4-0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mistral-ocr-4-1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mistral-saba-2502",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mistral-small-2402",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mistral-small-2409",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mistral-small-2501",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mistral-small-2503",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mistral-small-2506",
+      "sdk": [
+        "@ai-sdk/mistral"
+      ],
+      "matches": [
+        {
+          "provider": "mistral",
+          "model": "mistral-small-2506",
+          "sdk": "@ai-sdk/mistral"
+        }
+      ]
+    },
+    {
+      "id": "mistral-small-2603",
+      "sdk": [
+        "@ai-sdk/mistral"
+      ],
+      "matches": [
+        {
+          "provider": "mistral",
+          "model": "mistral-small-2603",
+          "sdk": "@ai-sdk/mistral"
+        }
+      ]
+    },
+    {
+      "id": "moonshot-v1-128k-vision-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "moonshot-v1-128k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "moonshot-v1-32k-vision-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "moonshot-v1-32k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "moonshot-v1-8k-vision-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "moonshot-v1-8k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "moonshot-v1-auto",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "muse-image-1.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "muse-spark-1.1",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "meta",
+          "model": "muse-spark-1.1",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "muse-spark-1.2-contributor",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "meta",
+          "model": "muse-spark-1.2-contributor",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "muse-spark-1.2",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "meta",
+          "model": "muse-spark-1.2",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "muse-spark-1.3-contributor",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "meta",
+          "model": "muse-spark-1.3-contributor",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "muse-spark-1.3",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "meta",
+          "model": "muse-spark-1.3",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "muse-voice-transcribe-1.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "musesteamer-2.0-lite-i2v",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "musesteamer-2.0-pro-i2v",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "musesteamer-2.0-turbo-i2v-audio",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "musesteamer-2.0-turbo-i2v",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "musesteamer-2.1-lite-i2v",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "musesteamer-2.1-turbo-i2v",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "musesteamer-air-image",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "music-2.6-free",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "music-3.0-free",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "music-cover-free",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "music_v1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "music_v2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "music_v2_5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mxbai-rerank-large-v2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "mxbai-rerank-v3.1-listwise",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "nemotron-3-embed-1b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "nemotron-3-nano-omni-30b-a3b-reasoning",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "nvidia",
+          "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "nemotron-3-super-120b-a12b",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "nvidia",
+          "model": "nvidia/nemotron-3-super-120b-a12b",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "nemotron-3-ultra-550b-a55b",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "nvidia",
+          "model": "nvidia/nemotron-3-ultra-550b-a55b",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "nemotron-3.5-content-safety",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "nvidia",
+          "model": "nvidia/nemotron-3.5-content-safety",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "nemotron-3.5-lightning-30b-a3b",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "nvidia",
+          "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "nemotron-parse-2.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "nemotron-parse",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "neva-22b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "nomic-embed-text-v1.5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "nomic-embed-text-v1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "north-mini-code-1-0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "north-small-translate-1-0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "nova-2-atc",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "nova-2-automotive",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "nova-2-conversationalai",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "nova-2-drivethru",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "nova-2-finance",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "nova-2-lite",
+      "sdk": [
+        "@ai-sdk/amazon-bedrock"
+      ],
+      "matches": [
+        {
+          "provider": "amazon-bedrock",
+          "model": "amazon.nova-2-lite-v1:0",
+          "sdk": "@ai-sdk/amazon-bedrock"
+        }
+      ]
+    },
+    {
+      "id": "nova-2-medical",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "nova-2-meeting",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "nova-2-phonecall",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "nova-2-sonic",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "nova-2-video",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "nova-2-voicemail",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "nova-2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "nova-3-medical",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "nova-3-pharma",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "nova-3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "nova-canvas",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "nova-lite",
+      "sdk": [
+        "@ai-sdk/amazon-bedrock"
+      ],
+      "matches": [
+        {
+          "provider": "amazon-bedrock",
+          "model": "amazon.nova-lite-v1:0",
+          "sdk": "@ai-sdk/amazon-bedrock"
+        }
+      ]
+    },
+    {
+      "id": "nova-micro",
+      "sdk": [
+        "@ai-sdk/amazon-bedrock"
+      ],
+      "matches": [
+        {
+          "provider": "amazon-bedrock",
+          "model": "amazon.nova-micro-v1:0",
+          "sdk": "@ai-sdk/amazon-bedrock"
+        }
+      ]
+    },
+    {
+      "id": "nova-multimodal-embeddings",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "nova-pro",
+      "sdk": [
+        "@ai-sdk/amazon-bedrock"
+      ],
+      "matches": [
+        {
+          "provider": "amazon-bedrock",
+          "model": "amazon.nova-pro-v1:0",
+          "sdk": "@ai-sdk/amazon-bedrock"
+        }
+      ]
+    },
+    {
+      "id": "nova-reel",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "nova-sonic",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "nvclip",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "o1-mini",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "o1-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "o1-pro",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "o1-pro",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "o1",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "o1",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "o3-deep-research",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "o3-mini",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "o3-mini",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "o3-pro",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "o3-pro",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "o3",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "o3",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "o4-mini-deep-research",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "o4-mini",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "o4-mini",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "oak-1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ocr",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "omni-moderation-latest",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "open-codestral-mamba",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "open-mistral-7b",
+      "sdk": [
+        "@ai-sdk/mistral"
+      ],
+      "matches": [
+        {
+          "provider": "mistral",
+          "model": "open-mistral-7b",
+          "sdk": "@ai-sdk/mistral"
+        }
+      ]
+    },
+    {
+      "id": "open-mistral-nemo-2407",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "open-mixtral-8x22b",
+      "sdk": [
+        "@ai-sdk/mistral"
+      ],
+      "matches": [
+        {
+          "provider": "mistral",
+          "model": "open-mixtral-8x22b",
+          "sdk": "@ai-sdk/mistral"
+        }
+      ]
+    },
+    {
+      "id": "open-mixtral-8x7b",
+      "sdk": [
+        "@ai-sdk/mistral"
+      ],
+      "matches": [
+        {
+          "provider": "mistral",
+          "model": "open-mixtral-8x7b",
+          "sdk": "@ai-sdk/mistral"
+        }
+      ]
+    },
+    {
+      "id": "openpangu-2.0-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "openpangu-2.0-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "paddleocr-vl-0.9b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "palmyra-x4",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "palmyra-x5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "palmyra-x6",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "paraformer-8k-v2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "paraformer-realtime-8k-v2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "paraformer-realtime-v2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "paraformer-v2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "parse-v5.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "pegasus1.1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "pegasus1.2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "pegasus1.5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "pegasus1.6",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "pixtral-12b-2409",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "pixtral-large-2411",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "plamo-3.0-prime",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "pp-structurev3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "pplx-7b-chat",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "pplx-7b-online",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "pplx-embed-context-v1-0.6b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "pplx-embed-context-v1-4b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "pplx-embed-v1-0.6b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "pplx-embed-v1-4b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "pro-128k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qianfan-70b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qianfan-8b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qianfan-agent-intent-32k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qianfan-agent-lite-8k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qianfan-agent-speed-32k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qianfan-agent-speed-8k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qianfan-bloomz-7b-compressed",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qianfan-check-vl",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qianfan-chinese-llama-2-13b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qianfan-chinese-llama-2-70b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qianfan-chinese-llama-2-7b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qianfan-composition",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qianfan-correct",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qianfan-dynamic-8k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qianfan-engcard-vl",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qianfan-lightning-128b-a19b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qianfan-llama-vl-8b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qianfan-multipicocr",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qianfan-ocr-fast",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qianfan-ocr",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qianfan-publicopinion-classification",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qianfan-qi-vl",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qianfan-singlepicocr",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qianfan-sug-8k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qianfan-toytalk",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qianfan-vl-1.5-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qianfan-vl-70b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qianfan-vl-8b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qvq-max",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qvq-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-audio-3.0-asr-flash-filetrans",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-audio-3.0-asr-flash-streaming",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-audio-3.0-asr-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-audio-3.0-realtime-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-audio-3.0-realtime-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-audio-3.0-tts-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-audio-3.0-tts-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-audio-3.1-asr-flash-filetrans",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-audio-3.1-asr-flash-message",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-audio-3.1-asr-flash-streaming",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-audio-3.1-asr-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-audio-3.1-realtime-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-audio-3.1-tts-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-coder-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-coder-turbo",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-deep-research",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-doc-turbo",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-flash-character",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-image-2.0-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-image-2.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-image-2.1-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-image-2.1-turbo",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-image-3.0-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-image-3.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-image-edit-max",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-image-edit-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-image-edit",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-image-max",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-image-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-image",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-long",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-math-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-math-turbo",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-max",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-mt-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-mt-image-2.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-mt-lite",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-mt-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-mt-turbo",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-omni-turbo-realtime",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-omni-turbo",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-plus-character-ja",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-plus-character",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-sea-lion-v4.5-27b-it",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-tts-realtime",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-tts",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-turbo",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-vl-max",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-vl-ocr",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen-vl-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen1.5-110b-chat",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen1.5-14b-chat",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen1.5-32b-chat",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen1.5-72b-chat",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen1.5-7b-chat",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen2-57b-a14b-instruct",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen2-72b-instruct",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen2-7b-instruct",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen2.5-14b-instruct-1m",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen2.5-14b-instruct",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen2.5-32b-instruct",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen2.5-72b-instruct",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen2.5-7b-instruct-1m",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen2.5-7b-instruct",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen2.5-omni-7b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen2.5-vl-32b-instruct",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen2.5-vl-3b-instruct",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen2.5-vl-72b-instruct",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen2.5-vl-7b-instruct",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-0.6b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-1.7b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-14b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-235b-a22b-instruct-2507",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-235b-a22b-thinking-2507",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-235b-a22b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-30b-a3b-instruct-2507",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-30b-a3b-thinking-2507",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-30b-a3b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-32b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-4b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-8b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-asr-flash-filetrans",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-asr-flash-realtime",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-asr-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-coder-30b-a3b-instruct",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-coder-480b-a35b-instruct",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-coder-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-coder-next",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-coder-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-max",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-next-80b-a3b-instruct",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-next-80b-a3b-thinking",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-omni-30b-a3b-captioner",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-omni-flash-realtime",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-omni-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-rerank",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-tts-flash-realtime",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-tts-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-tts-instruct-flash-realtime",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-tts-instruct-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-vl-235b-a22b-instruct",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-vl-235b-a22b-thinking",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-vl-30b-a3b-instruct",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-vl-30b-a3b-thinking",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-vl-32b-instruct",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-vl-32b-thinking",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-vl-8b-instruct",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-vl-8b-thinking",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-vl-embedding",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-vl-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-vl-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3-vl-rerank",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3.5-122b-a10b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3.5-27b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3.5-35b-a3b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3.5-397b-a17b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3.5-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3.5-ocr",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3.5-omni-flash-realtime",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3.5-omni-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3.5-omni-plus-realtime",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3.5-omni-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3.5-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3.6-27b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3.6-35b-a3b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3.6-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3.6-max-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3.6-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3.7-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3.7-max-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3.7-max",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3.7-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3.7-text-embedding-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3.7-text-embedding",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3.7-text-rerank",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3.8-2.4t-a95b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3.8-27b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3.8-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3.8-max",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3.8-omni-flash-realtime",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwen3.8-omni-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "qwq-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "r1-1776",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ray-3.2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "readerlm-v2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "recraftv2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "recraftv2_vector",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "recraftv3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "recraftv3_vector",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "recraftv4",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "recraftv4_1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "recraftv4_1_flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "recraftv4_1_pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "recraftv4_1_pro_vector",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "recraftv4_1_utility",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "recraftv4_1_utility_pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "recraftv4_1_utility_pro_vector",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "recraftv4_1_utility_vector",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "recraftv4_1_vector",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "recraftv4_pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "recraftv4_pro_vector",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "recraftv4_styles",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "recraftv4_styles_pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "recraftv4_styles_pro_vector",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "recraftv4_styles_vector",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "recraftv4_vector",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "reka-edge-2603",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "reka-flash-3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "rerank-2.5-lite",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "rerank-2.5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "rerank-3-lite",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "rerank-3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "rerank-english-v2.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "rerank-english-v3.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "rerank-multilingual-v2.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "rerank-multilingual-v3.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "rerank-v3.5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "rerank-v4.0-fast",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "rerank-v4.0-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "rerank",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ring-1t",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ring-2.5-1t",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "ring-2.6-1t",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "riva-translate-4b-instruct-v2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "saaras-v3-realtime",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "saaras-v3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "saaras-v4",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "sakana-namazu",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "sakana",
+          "model": "sakana-namazu",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "sam-3.1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "sarvam-105b-conversations",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "sarvam-105b",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "sarvam",
+          "model": "sarvam-105b",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "sarvam-m",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "sarvam-translate-v1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "scribe_v2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "scribe_v2_medical",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "scribe_v2_realtime",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "sd3.5-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "sd3.5-large-turbo",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "sd3.5-large",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "sd3.5-medium",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "sea-guard",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "sea-lion-modernbert-embedding-600m",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "senseaudio-a1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "senseaudio-asr-1.5-260319",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "senseaudio-asr-check-1.5-260319",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "senseaudio-asr-deepthink-1.5-260319",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "senseaudio-asr-lite-1.5-260319",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "senseaudio-asr-pro-1.5-260319",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "senseaudio-asr-stream-1.5-260910",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "senseaudio-image-2.0-260319",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "senseaudio-music-2.0-260626",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "senseaudio-realtime-1.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "senseaudio-s2-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "senseaudio-s2-lite",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "senseaudio-s2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "senseaudio-sfx-1.0-260626",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "senseaudio-tts-1.5-260319",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "senseaudio-voice-isolation-1.0-260319",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "senseaudio-voice-isolation-1.5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "sensenova-6.8-flash-lite",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "sensenova",
+          "model": "sensenova-6.8-flash-lite",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "sensenova-livetranslate-1.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "sensenova-tts-2.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "sensenova-u1-fast",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "sensevoice-v1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "slate-125m-english-rtrvr",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "slate-30m-english-rtrvr",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "solar-embedding-2-passage",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "solar-embedding-2-query",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "solar-mini",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "solar-mini4",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "solar-open2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "solar-pro2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "solar-pro3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "solar-pro4",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "sonar-deep-research",
+      "sdk": [
+        "@ai-sdk/perplexity"
+      ],
+      "matches": [
+        {
+          "provider": "perplexity",
+          "model": "sonar-deep-research",
+          "sdk": "@ai-sdk/perplexity"
+        }
+      ]
+    },
+    {
+      "id": "sonar-pro",
+      "sdk": [
+        "@ai-sdk/perplexity"
+      ],
+      "matches": [
+        {
+          "provider": "perplexity",
+          "model": "sonar-pro",
+          "sdk": "@ai-sdk/perplexity"
+        }
+      ]
+    },
+    {
+      "id": "sonar-reasoning-pro",
+      "sdk": [
+        "@ai-sdk/perplexity"
+      ],
+      "matches": [
+        {
+          "provider": "perplexity",
+          "model": "sonar-reasoning-pro",
+          "sdk": "@ai-sdk/perplexity"
+        }
+      ]
+    },
+    {
+      "id": "sonar-reasoning",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "sonar",
+      "sdk": [
+        "@ai-sdk/perplexity"
+      ],
+      "matches": [
+        {
+          "provider": "perplexity",
+          "model": "sonar",
+          "sdk": "@ai-sdk/perplexity"
+        }
+      ]
+    },
+    {
+      "id": "sonic-2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "sonic-3.6",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "sonic-3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "sonic-turbo",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "sonic",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "sora-2-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "sora-2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "spark-x",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "spark-x2.5-1.7b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "spark-x2.5-4b",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "spark-x2.5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "speech-02-hd",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "speech-02-turbo",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "speech-2.6-hd",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "speech-2.6-turbo",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "speech-2.8-hd",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "speech-2.8-turbo",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "stable-audio-2.5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "stable-audio-3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "stable-image-core",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "stable-image-ultra",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "standard",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "step-1-32k",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "stepfun",
+          "model": "step-1-32k",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "step-1-8k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "step-1o-audio",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "step-1o-turbo-vision",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "step-1o-vision-32k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "step-1v-32k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "step-1v-8k",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "step-1x-edit",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "step-1x-medium",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "step-2-16k",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "stepfun",
+          "model": "step-2-16k",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "step-2-mini",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "step-2x-large",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "step-3.5-flash-2603",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "stepfun-ai",
+          "model": "step-3.5-flash-2603",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "step-3.5-flash",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "stepfun-ai",
+          "model": "step-3.5-flash",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "step-3.7-flash",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "stepfun-ai",
+          "model": "step-3.7-flash",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "step-5-preview",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "stepfun-ai",
+          "model": "step-5-preview",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "step-asr-1.1-stream",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "step-asr-1.1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "step-asr",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "step-audio-2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "step-audio-r1.5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "step-image-edit-2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "step-tts-2",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "stepfun-ai",
+          "model": "step-tts-2",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "step-tts-mini",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "stepaudio-2-asr-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "stepaudio-2.5-asr-stream",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "stepaudio-2.5-asr",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "stepfun-ai",
+          "model": "stepaudio-2.5-asr",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "stepaudio-2.5-chat",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "stepaudio-2.5-realtime",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "stepaudio-2.5-tts",
+      "sdk": [
+        "@ai-sdk/openai-compatible"
+      ],
+      "matches": [
+        {
+          "provider": "stepfun-ai",
+          "model": "stepaudio-2.5-tts",
+          "sdk": "@ai-sdk/openai-compatible"
+        }
+      ]
+    },
+    {
+      "id": "stepaudio-3-asr-max",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "stepaudio-3-chat-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "stepaudio-3-gen-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "stepaudio-3-music-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "stepaudio-3-realtime-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "stepaudio-3-tts",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "stt-async-v5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "stt-rt-v5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "syn-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "text-ada-001",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "text-babbage-001",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "text-bison",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "text-curie-001",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "text-davinci-001",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "text-davinci-002",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "text-davinci-003",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "text-embedding-004",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "text-embedding-3-large",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "text-embedding-3-large",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "text-embedding-3-small",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "text-embedding-3-small",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "text-embedding-ada-002",
+      "sdk": [
+        "@ai-sdk/openai"
+      ],
+      "matches": [
+        {
+          "provider": "openai",
+          "model": "text-embedding-ada-002",
+          "sdk": "@ai-sdk/openai"
+        }
+      ]
+    },
+    {
+      "id": "text-embedding-v3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "text-embedding-v4",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "text-moderation-latest",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "tiny-aya-earth",
+      "sdk": [
+        "@ai-sdk/cohere"
+      ],
+      "matches": [
+        {
+          "provider": "cohere",
+          "model": "tiny-aya-earth",
+          "sdk": "@ai-sdk/cohere"
+        }
+      ]
+    },
+    {
+      "id": "tiny-aya-fire",
+      "sdk": [
+        "@ai-sdk/cohere"
+      ],
+      "matches": [
+        {
+          "provider": "cohere",
+          "model": "tiny-aya-fire",
+          "sdk": "@ai-sdk/cohere"
+        }
+      ]
+    },
+    {
+      "id": "tiny-aya-global",
+      "sdk": [
+        "@ai-sdk/cohere"
+      ],
+      "matches": [
+        {
+          "provider": "cohere",
+          "model": "tiny-aya-global",
+          "sdk": "@ai-sdk/cohere"
+        }
+      ]
+    },
+    {
+      "id": "tiny-aya-water",
+      "sdk": [
+        "@ai-sdk/cohere"
+      ],
+      "matches": [
+        {
+          "provider": "cohere",
+          "model": "tiny-aya-water",
+          "sdk": "@ai-sdk/cohere"
+        }
+      ]
+    },
+    {
+      "id": "titan-embed-image-v1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "titan-embed-text-v1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "titan-embed-text-v2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "tongyi-embedding-vision-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "tongyi-embedding-vision-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "tongyi-intent-detect-v3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "tts-1-hd",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "tts-1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "tts-rt-v2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "typhoon-asr-realtime",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "typhoon-ocr",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "typhoon-v2.1-12b-instruct",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "typhoon-v2.5-30b-a3b-instruct",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "uni-1-max",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "uni-1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "universal-2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "universal-3-5-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "universal-3-6-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "universal-streaming-english",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "universal-streaming-multilingual",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "v5.5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "v5.6",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "v5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "v6",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "veo-2.0-generate-001",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "veo-3.0-fast-generate-001",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "veo-3.0-fast-generate-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "veo-3.0-generate-001",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "veo-3.0-generate-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "veo-3.1-fast-generate-preview",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "veo-3.1-fast-generate-preview",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "veo-3.1-generate-preview",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "veo-3.1-generate-preview",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "veo-3.1-lite-generate-preview",
+      "sdk": [
+        "@ai-sdk/google"
+      ],
+      "matches": [
+        {
+          "provider": "google",
+          "model": "veo-3.1-lite-generate-preview",
+          "sdk": "@ai-sdk/google"
+        }
+      ]
+    },
+    {
+      "id": "vidu2.0",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "viduq1-classic",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "viduq1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "viduq2-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "viduq2-turbo",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "viduq2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "viduq3-ad",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "viduq3-drama",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "viduq3-mix",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "viduq3-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "viduq3-turbo",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "viduq4-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "vila",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "voxtral-mini-2507",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "voxtral-mini-2602",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "voxtral-mini-transcribe-realtime-2602",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "voxtral-mini-tts-2603",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "voxtral-small-2507",
+      "sdk": [
+        "@ai-sdk/mistral"
+      ],
+      "matches": [
+        {
+          "provider": "mistral",
+          "model": "voxtral-small-2507",
+          "sdk": "@ai-sdk/mistral"
+        }
+      ]
+    },
+    {
+      "id": "voyage-3-large",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "voyage-3.5-lite",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "voyage-3.5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "voyage-4-large",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "voyage-4-lite",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "voyage-4",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "voyage-code-3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "voyage-code-4",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "voyage-context-3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "voyage-context-4",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "voyage-finance-2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "voyage-law-2",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "voyage-multimodal-3.5",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "voyage-multimodal-3",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.1-kf2v-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.1-t2i-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.1-t2i-turbo",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.1-t2v-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.1-t2v-turbo",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.1-vace-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.2-animate-mix",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.2-animate-move",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.2-i2v-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.2-i2v-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.2-kf2v-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.2-t2i-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.2-t2i-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.2-t2v-plus",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.5-i2i-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.5-i2v-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.5-t2i-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.5-t2v-preview",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.6-i2v-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.6-i2v",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.6-image",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.6-r2v-flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.6-r2v",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.6-t2i",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.6-t2v",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.7-i2v",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.7-image-pro",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.7-image",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.7-r2v",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.7-t2v",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan2.7-videoedit",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan3.0-video-prime",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wan3.0-video",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "wanx2.1-imageedit",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "whisper-1",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "xsparkx2flash",
+      "sdk": [],
+      "matches": []
+    },
+    {
+      "id": "z-image-turbo",
+      "sdk": [],
+      "matches": []
+    }
+  ]
+}

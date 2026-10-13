@@ -7,7 +7,8 @@
   "api": {
     "types": [
       "video"
-    ]
+    ],
+    "sdk": []
   },
   "limits": {
     "context": null,

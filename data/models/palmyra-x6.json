@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "chat"
+    ],
+    "sdk": [
+      "writer-sdk"
     ]
   },
   "limits": {
@@ -73,6 +76,11 @@
       "title": "WRITER Palmyra X6 release - WRITER",
       "url": "https://writer.com/blog/palmyra-x6-major-harness-release/",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — writer-sdk (api.sdk only)",
+      "url": "https://github.com/writer/writer-node",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

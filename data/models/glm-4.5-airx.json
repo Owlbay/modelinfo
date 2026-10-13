@@ -7,6 +7,12 @@
   "api": {
     "types": [
       "chat"
+    ],
+    "sdk": [
+      "@ai-sdk/openai",
+      "@ai-sdk/openai-compatible",
+      "@ai-sdk/zai",
+      "openai"
     ]
   },
   "limits": {
@@ -69,6 +75,26 @@
       "title": "Release Notes | Z.AI Developer Document",
       "url": "https://docs.z.ai/release-notes/new-released",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "SDK support — @ai-sdk/zai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/zai",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai-compatible (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

@@ -8,6 +8,9 @@
     "types": [
       "ocr",
       "batch"
+    ],
+    "sdk": [
+      "@mistralai/mistralai"
     ]
   },
   "limits": {
@@ -73,6 +76,11 @@
       "title": "存档：Mistral API pricing（原网址 https://mistral.ai/pricing/api/）",
       "url": "https://web.archive.org/web/20260701172032/https://mistral.ai/pricing/api/",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @mistralai/mistralai (api.sdk only)",
+      "url": "https://github.com/mistralai/client-ts",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

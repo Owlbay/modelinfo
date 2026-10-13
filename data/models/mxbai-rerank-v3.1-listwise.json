@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "rerank"
+    ],
+    "sdk": [
+      "@mixedbread/sdk"
     ]
   },
   "limits": {
@@ -59,6 +62,11 @@
       "title": "Changelog | Mixedbread Docs",
       "url": "https://www.mixedbread.com/docs/changelog",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @mixedbread/sdk (api.sdk only)",
+      "url": "https://github.com/mixedbread-ai/mixedbread-ts",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

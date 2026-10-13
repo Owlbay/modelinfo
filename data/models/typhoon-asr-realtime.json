@@ -7,6 +7,10 @@
   "api": {
     "types": [
       "audio"
+    ],
+    "sdk": [
+      "@ai-sdk/openai",
+      "openai"
     ]
   },
   "limits": {
@@ -57,6 +61,16 @@
       "title": "OpenAI Python SDK audio transcriptions transport",
       "url": "https://github.com/openai/openai-python/blob/main/src/openai/resources/audio/transcriptions.py",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

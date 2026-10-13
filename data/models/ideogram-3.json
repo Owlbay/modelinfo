@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "images"
+    ],
+    "sdk": [
+      "@image-sdk/sdk"
     ]
   },
   "limits": {
@@ -80,6 +83,11 @@
       "title": "Official model release announcement",
       "url": "https://about.ideogram.ai/3.0",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @image-sdk/sdk (api.sdk only)",
+      "url": "https://github.com/Adarsh-Me/Image-SDK",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

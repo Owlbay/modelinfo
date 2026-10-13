@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "audio"
+    ],
+    "sdk": [
+      "dashscope-sdk-official"
     ]
   },
   "limits": {
@@ -59,6 +62,11 @@
       "title": "模型调用计费 | 大模型服务平台百炼",
       "url": "https://help.aliyun.com/zh/model-studio/model-pricing",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — dashscope-sdk-official (api.sdk only)",
+      "url": "https://github.com/dashscope/dashscope-sdk-nodejs",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

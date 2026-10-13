@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "chat"
+    ],
+    "sdk": [
+      "tencentcloud-sdk-nodejs-hunyuan"
     ]
   },
   "limits": {
@@ -65,6 +68,11 @@
       "title": "腾讯混元大模型产品动态",
       "url": "https://cloud.tencent.com/document/product/1729/97765",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — tencentcloud-sdk-nodejs-hunyuan (api.sdk only)",
+      "url": "https://github.com/TencentCloud/tencentcloud-sdk-nodejs/tree/master/src/services/hunyuan",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": []

@@ -7,6 +7,11 @@
   "api": {
     "types": [
       "chat"
+    ],
+    "sdk": [
+      "@ai-sdk/openai",
+      "@ai-sdk/openai-compatible",
+      "openai"
     ]
   },
   "limits": {
@@ -85,6 +90,26 @@
       "title": "AI21-Jamba2-Mini config.json (max_position_embeddings 262144 for 256K) | Hugging Face",
       "url": "https://huggingface.co/ai21labs/AI21-Jamba2-Mini/blob/main/config.json",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "models.dev — SDK npm mapping (api.sdk only)",
+      "url": "https://models.dev/api.json",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai-compatible (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

@@ -7,6 +7,10 @@
   "api": {
     "types": [
       "completions"
+    ],
+    "sdk": [
+      "@ai-sdk/openai-compatible",
+      "openai"
     ]
   },
   "limits": {
@@ -64,6 +68,16 @@
       "title": "Official model release / pricing documentation",
       "url": "https://openai.com/index/gpt-3-5-turbo-fine-tuning-and-api-updates/",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai-compatible (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

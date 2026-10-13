@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "embeddings"
+    ],
+    "sdk": [
+      "twelvelabs-js"
     ]
   },
   "limits": {
@@ -55,6 +58,11 @@
       "title": "Marengo 2.7: Pioneering Multi-Vector Embeddings for Advanced Video Understanding | Twelve Labs",
       "url": "https://www.twelvelabs.io/blog/introducing-marengo-2-7",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — twelvelabs-js (api.sdk only)",
+      "url": "https://github.com/twelvelabs-io/twelvelabs-js",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

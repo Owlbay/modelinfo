@@ -7,6 +7,10 @@
   "api": {
     "types": [
       "rerank"
+    ],
+    "sdk": [
+      "@ai-sdk/cohere",
+      "cohere-ai"
     ]
   },
   "limits": {
@@ -79,6 +83,16 @@
       "title": "存档：官方模型发布/价格文档（原网址 https://cohere.com/pricing）",
       "url": "https://web.archive.org/web/20240830235218/https://cohere.com/pricing",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — cohere-ai (api.sdk only)",
+      "url": "https://github.com/cohere-ai/cohere-typescript",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/cohere (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/cohere",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

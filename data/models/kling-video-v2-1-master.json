@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "video"
+    ],
+    "sdk": [
+      "@ai-sdk/klingai"
     ]
   },
   "limits": {
@@ -63,6 +66,11 @@
       "title": "更新日志 | 可灵 API 文档",
       "url": "https://kling.ai/document-api/updates/api",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @ai-sdk/klingai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/klingai",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

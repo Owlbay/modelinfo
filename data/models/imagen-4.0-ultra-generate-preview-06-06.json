@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "images"
+    ],
+    "sdk": [
+      "@google/genai"
     ]
   },
   "limits": {
@@ -59,6 +62,11 @@
       "title": "Imagen 4 API paid preview announcement and pricing",
       "url": "https://developers.googleblog.com/en/imagen-4-now-available-in-the-gemini-api-and-google-ai-studio/",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @google/genai (api.sdk only)",
+      "url": "https://github.com/googleapis/js-genai",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

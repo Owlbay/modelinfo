@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "video"
+    ],
+    "sdk": [
+      "@ai-sdk/minimax"
     ]
   },
   "limits": {
@@ -79,6 +82,11 @@
       "title": "Create video generation task | MiniMax API Docs",
       "url": "https://platform.minimax.io/docs/api-reference/video-generation-v2-create",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @ai-sdk/minimax (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/minimax",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

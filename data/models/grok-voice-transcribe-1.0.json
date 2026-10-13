@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "audio"
+    ],
+    "sdk": [
+      "@ai-sdk/xai"
     ]
   },
   "limits": {
@@ -42,6 +45,11 @@
       "title": "Release Notes | xAI Docs",
       "url": "https://docs.x.ai/developers/release-notes",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @ai-sdk/xai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/xai",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

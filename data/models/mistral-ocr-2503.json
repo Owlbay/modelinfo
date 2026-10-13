@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "ocr"
+    ],
+    "sdk": [
+      "@mistralai/mistralai"
     ]
   },
   "limits": {
@@ -70,6 +73,11 @@
       "title": "Official model release / pricing documentation",
       "url": "https://mistral.ai/news/mistral-ocr",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @mistralai/mistralai (api.sdk only)",
+      "url": "https://github.com/mistralai/client-ts",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

@@ -7,6 +7,10 @@
   "api": {
     "types": [
       "audio"
+    ],
+    "sdk": [
+      "@soniox/node",
+      "@soniox/vercel-ai-sdk-provider"
     ]
   },
   "limits": {
@@ -66,6 +70,16 @@
       "title": "Pricing | Soniox",
       "url": "https://soniox.com/pricing",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @soniox/node (api.sdk only)",
+      "url": "https://soniox.com/docs/sdk/node-SDK",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @soniox/vercel-ai-sdk-provider (api.sdk only)",
+      "url": "https://soniox.com/docs/integrations/vercel-ai-sdk",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

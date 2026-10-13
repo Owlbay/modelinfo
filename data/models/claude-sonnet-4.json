@@ -8,6 +8,10 @@
     "types": [
       "messages",
       "batch"
+    ],
+    "sdk": [
+      "@ai-sdk/anthropic",
+      "@anthropic-ai/sdk"
     ]
   },
   "limits": {
@@ -72,6 +76,16 @@
       "title": "Introducing Claude 4 | Anthropic News",
       "url": "https://www.anthropic.com/news/claude-4",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @anthropic-ai/sdk (api.sdk only)",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/anthropic (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/anthropic",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

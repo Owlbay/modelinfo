@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "audio"
+    ],
+    "sdk": [
+      "dashscope-sdk-official"
     ]
   },
   "limits": {
@@ -47,6 +50,11 @@
       "title": "存档：SenseVoice 录音文件识别 RESTful API | 阿里云百炼（原网址 https://help.aliyun.com/zh/model-studio/developer-reference/sensevoice-recorded-speech-recognition-restful-api）",
       "url": "https://web.archive.org/web/20250903084923/https://help.aliyun.com/zh/model-studio/developer-reference/sensevoice-recorded-speech-recognition-restful-api",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — dashscope-sdk-official (api.sdk only)",
+      "url": "https://github.com/dashscope/dashscope-sdk-nodejs",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

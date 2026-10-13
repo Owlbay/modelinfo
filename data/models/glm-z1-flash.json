@@ -7,6 +7,12 @@
   "api": {
     "types": [
       "chat"
+    ],
+    "sdk": [
+      "@ai-sdk/openai",
+      "@ai-sdk/openai-compatible",
+      "@ai-sdk/zai",
+      "openai"
     ]
   },
   "limits": {
@@ -74,6 +80,26 @@
       "title": "模型与产品发布记录 | 智谱AI开放文档（存档，原网址 https://docs.bigmodel.cn/cn/update/new-releases）",
       "url": "https://web.archive.org/web/20260125124217/https://docs.bigmodel.cn/cn/update/new-releases",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @ai-sdk/zai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/zai",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai-compatible (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

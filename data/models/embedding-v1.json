@@ -7,6 +7,12 @@
   "api": {
     "types": [
       "embeddings"
+    ],
+    "sdk": [
+      "@ai-sdk/openai",
+      "@ai-sdk/openai-compatible",
+      "@baiducloud/qianfan",
+      "openai"
     ]
   },
   "limits": {
@@ -64,6 +70,26 @@
       "title": "向量 API 参考 | 百度千帆",
       "url": "https://cloud.baidu.com/doc/qianfan-api/s/Fm7u3ropn",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai-compatible (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @baiducloud/qianfan (api.sdk only)",
+      "url": "https://github.com/baidubce/bce-qianfan-sdk/tree/main/javascript",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

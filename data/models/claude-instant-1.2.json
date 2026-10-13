@@ -8,6 +8,9 @@
     "types": [
       "messages",
       "completions"
+    ],
+    "sdk": [
+      "@anthropic-ai/sdk"
     ]
   },
   "limits": {
@@ -60,6 +63,11 @@
       "title": "Releasing Claude Instant 1.2 | Anthropic News",
       "url": "https://www.anthropic.com/news/releasing-claude-instant-1-2",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @anthropic-ai/sdk (api.sdk only)",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

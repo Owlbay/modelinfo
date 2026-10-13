@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "realtime"
+    ],
+    "sdk": [
+      "dashscope-sdk-official"
     ]
   },
   "limits": {
@@ -29,7 +32,7 @@
   "pricing": {
     "currency": "USD",
     "unit": "second",
-    "input": 9e-05,
+    "input": 0.00009,
     "output": null,
     "cache_read": null,
     "cache_write": null
@@ -69,6 +72,11 @@
       "title": "Alibaba Cloud Model Studio API Reference — real-time-speech-recognition-user-guide",
       "url": "https://www.alibabacloud.com/help/en/model-studio/real-time-speech-recognition-user-guide",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — dashscope-sdk-official (api.sdk only)",
+      "url": "https://github.com/dashscope/dashscope-sdk-nodejs",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

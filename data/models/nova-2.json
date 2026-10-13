@@ -7,6 +7,10 @@
   "api": {
     "types": [
       "audio"
+    ],
+    "sdk": [
+      "@ai-sdk/deepgram",
+      "@deepgram/sdk"
     ]
   },
   "limits": {
@@ -71,6 +75,16 @@
       "title": "Official model pricing evidence",
       "url": "https://deepgram.com/learn/model-comparison-when-to-use-nova-2-vs-nova-3-for-devs",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @deepgram/sdk (api.sdk only)",
+      "url": "https://github.com/deepgram/deepgram-js-sdk",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/deepgram (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/deepgram",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

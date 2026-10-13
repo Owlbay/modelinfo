@@ -7,6 +7,12 @@
   "api": {
     "types": [
       "embeddings"
+    ],
+    "sdk": [
+      "@ai-sdk/openai",
+      "@ai-sdk/openai-compatible",
+      "jina-ai-provider",
+      "openai"
     ]
   },
   "limits": {
@@ -69,6 +75,26 @@
       "title": "Models | Jina AI API",
       "url": "https://api.jina.ai/v1/models",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai-compatible (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — jina-ai-provider (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/community-providers/jina-ai",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

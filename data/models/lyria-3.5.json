@@ -8,6 +8,9 @@
     "types": [
       "audio",
       "interactions"
+    ],
+    "sdk": [
+      "@ai-sdk/google"
     ]
   },
   "limits": {
@@ -77,6 +80,11 @@
       "title": "interactions-overview | Gemini API",
       "url": "https://ai.google.dev/gemini-api/docs/interactions-overview",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @ai-sdk/google (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/google",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

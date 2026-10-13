@@ -7,6 +7,10 @@
   "api": {
     "types": [
       "audio"
+    ],
+    "sdk": [
+      "@ai-sdk/deepgram",
+      "@deepgram/sdk"
     ]
   },
   "limits": {
@@ -64,6 +68,16 @@
       "title": "Official model pricing evidence",
       "url": "https://offers.deepgram.com/hubfs/2412-Guide-Medical-Transcription-Deepgram.pdf?hsLang=en",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @deepgram/sdk (api.sdk only)",
+      "url": "https://github.com/deepgram/deepgram-js-sdk",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/deepgram (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/deepgram",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "video"
+    ],
+    "sdk": [
+      "@ai-sdk/bytedance"
     ]
   },
   "limits": {
@@ -63,6 +66,11 @@
       "title": "模型价格 | 火山方舟",
       "url": "https://www.volcengine.com/docs/82379/1544106",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @ai-sdk/bytedance (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/bytedance",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

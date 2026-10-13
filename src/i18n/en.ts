@@ -98,6 +98,7 @@ export const en: Dict = {
     keyStats: { context: 'Context', output: 'Max output', inputPrice: 'Input price', outputPrice: 'Output price', released: 'Released' },
     fields: {
       types: 'API types',
+      sdk: 'SDK',
       context: 'Context window',
       maxInput: 'Max input',
       maxOutput: 'Max output',
@@ -121,7 +122,7 @@ export const en: Dict = {
     providers: (n: number) => `${n} provider${n === 1 ? '' : 's'}`,
     json: 'JSON',
     standard: 'Standard format',
-    sources: 'Official sources',
+    sources: 'Data sources',
   },
   compare: {
     title: 'Compare models',
@@ -216,7 +217,7 @@ export const en: Dict = {
     toc: { about: 'About', endpoint: 'Endpoint', playground: 'Try it', structure: 'Response', fields: 'Fields', usage: 'Examples', data: 'Data' },
     about: [
       'ModelInfo collects AI models published by their vendors, normalizes context, modalities, reasoning levels and pricing, and serves them through a read-only, OpenAI-compatible endpoint for model pickers, gateways and cost estimators.',
-      'Every value comes from official documentation and is checked by hand; anything not published is null, never guessed. The site is static files only: no accounts, quotas or auth.',
+      'Numeric specifications and prices come from official documentation and are checked by hand. SDK packages are checked against provider and SDK documentation; unknown values are null or empty arrays. The site is static files only: no accounts, quotas or auth.',
     ],
     endpointNotes: [
       'No auth required; CORS enabled (Access-Control-Allow-Origin: *).',
@@ -240,6 +241,7 @@ export const en: Dict = {
       created: 'Release time, Unix seconds',
       owned_by: 'Model vendor, not a reseller or gateway',
       api: 'chat · messages · responses · generate · batch · embeddings, etc.',
+      sdk: 'SDK npm packages (including export subpaths) for documented model API families; includes AI SDK adapters and vendor SDKs. Empty when unverified.',
       context: 'Combined input + output limit (tokens)',
       input: 'Max input, when stated separately',
       output: 'Max output',
@@ -256,7 +258,7 @@ export const en: Dict = {
     sdkComment: '# The OpenAI SDK requests {base_url}/models',
     dataNotes: [
       "Prices are the vendor's own first-party list prices; other regions and resellers may differ. Your provider's bill is authoritative.",
-      'Each model page lists its official sources and verification dates.',
+      'Each model page lists sources and retrieval dates for model parameters and SDKs.',
       'Data lives in data/models in the GitHub repository; corrections are welcome:',
     ],
   },
@@ -281,7 +283,7 @@ export const en: Dict = {
     project: 'Project',
     body: [
       'ModelInfo collects AI models published by their vendors and normalizes context, modalities, reasoning levels and pricing. The pages and the /v1/models endpoint are built from the same data.',
-      'Every value comes from official documentation and is checked by hand; anything not published is null, never guessed. The site is static files only: no accounts, quotas or auth.',
+      'Numeric specifications and prices come from official documentation and are checked by hand. SDK packages are checked against provider and SDK documentation; unknown values are null or empty arrays. The site is static files only: no accounts, quotas or auth.',
     ],
     contact: 'Contact',
     cols: { email: 'Email', purpose: 'Purpose' },

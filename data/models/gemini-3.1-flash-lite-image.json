@@ -8,6 +8,10 @@
     "types": [
       "images",
       "batch"
+    ],
+    "sdk": [
+      "@ai-sdk/google",
+      "@google/genai"
     ]
   },
   "limits": {
@@ -89,6 +93,21 @@
       "title": "Gemini 3.1 Flash-Lite Image - Model Card — Google DeepMind",
       "url": "https://deepmind.google/models/model-cards/gemini-3-1-flash-lite-image/",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "models.dev — SDK npm mapping (api.sdk only)",
+      "url": "https://models.dev/api.json",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @google/genai (api.sdk only)",
+      "url": "https://github.com/googleapis/js-genai",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/google (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/google",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

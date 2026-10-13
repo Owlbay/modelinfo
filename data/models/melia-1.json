@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "audio"
+    ],
+    "sdk": [
+      "@speechmatics/batch-client"
     ]
   },
   "limits": {
@@ -69,6 +72,11 @@
       "title": "Official API reference",
       "url": "https://docs.speechmatics.com/api-ref/batch/create-a-new-job",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @speechmatics/batch-client (api.sdk only)",
+      "url": "https://github.com/speechmatics/speechmatics-js-sdk",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

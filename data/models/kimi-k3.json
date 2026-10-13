@@ -9,6 +9,14 @@
       "chat",
       "messages",
       "responses"
+    ],
+    "sdk": [
+      "@ai-sdk/anthropic",
+      "@ai-sdk/moonshotai",
+      "@ai-sdk/openai",
+      "@ai-sdk/openai-compatible",
+      "@anthropic-ai/sdk",
+      "openai"
     ]
   },
   "limits": {
@@ -117,6 +125,41 @@
       "title": "Responses API | Kimi API Platform",
       "url": "https://platform.kimi.ai/docs/api/responses",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "models.dev — SDK npm mapping (api.sdk only)",
+      "url": "https://models.dev/api.json",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/moonshotai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/moonshotai",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai-compatible (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @anthropic-ai/sdk (api.sdk only)",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/anthropic (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/anthropic",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

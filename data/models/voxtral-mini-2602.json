@@ -7,6 +7,12 @@
   "api": {
     "types": [
       "audio"
+    ],
+    "sdk": [
+      "@ai-sdk/mistral",
+      "@ai-sdk/openai",
+      "@mistralai/mistralai",
+      "openai"
     ]
   },
   "limits": {
@@ -66,6 +72,26 @@
       "title": "Models overview | Mistral Docs",
       "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "SDK support — @mistralai/mistralai (api.sdk only)",
+      "url": "https://github.com/mistralai/client-ts",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/mistral (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/mistral",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

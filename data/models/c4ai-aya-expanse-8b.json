@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "chat"
+    ],
+    "sdk": [
+      "cohere-ai"
     ]
   },
   "limits": {
@@ -64,6 +67,11 @@
       "title": "存档：Aya Expanse 官方发布公告（原网址 https://cohere.com/blog/aya-expanse-connecting-our-world）",
       "url": "https://web.archive.org/web/20241101215912/https://cohere.com/blog/aya-expanse-connecting-our-world",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — cohere-ai (api.sdk only)",
+      "url": "https://github.com/cohere-ai/cohere-typescript",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

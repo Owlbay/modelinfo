@@ -1,0 +1,4011 @@
+{
+  "retrieved_at": "2026-10-13",
+  "scope": "JavaScript/TypeScript npm SDKs, official AI SDK providers and verified direct community SDKs. SDKs support at least one documented API family. Model-level provider mapping, endpoint compatibility and native SDK/API-family mapping are audited separately. Retired models are historical interface references, not currently callable models. SDK package versions in this audit are research snapshots, not required pins. No paid inference requests were made.",
+  "rules": [
+    {
+      "id": "openai",
+      "sdk": "openai",
+      "owners": [
+        "openai"
+      ],
+      "types": [
+        "chat",
+        "responses",
+        "completions",
+        "embeddings",
+        "images",
+        "audio",
+        "video",
+        "moderation",
+        "realtime",
+        "batch"
+      ],
+      "basis": "vendor-sdk",
+      "sources": [
+        {
+          "url": "https://github.com/openai/openai-node",
+          "fetched_url": "https://raw.githubusercontent.com/openai/openai-node/master/README.md",
+          "sha256": "4ed0e79b7b3415fda8a39ac9a3c4491f8dfa3214b2a1b027abf0ac748bf46762",
+          "status": 200,
+          "marker": "openai",
+          "registry": {
+            "name": "openai",
+            "version": "7.32.0",
+            "repository": {
+              "url": "git+https://github.com/openai/openai-node.git",
+              "type": "git"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        }
+      ],
+      "model_protocols": {
+        "ada": [
+          "completions"
+        ],
+        "babbage": [
+          "completions"
+        ],
+        "code-davinci-002": [
+          "completions"
+        ],
+        "curie": [
+          "completions"
+        ],
+        "davinci": [
+          "completions"
+        ],
+        "gpt-3.5-turbo-0301": [
+          "chat"
+        ],
+        "gpt-3.5-turbo-0613": [
+          "chat"
+        ],
+        "gpt-3.5-turbo-1106": [
+          "chat"
+        ],
+        "gpt-4-32k": [
+          "chat"
+        ],
+        "gpt-4-vision-preview": [
+          "chat"
+        ],
+        "text-ada-001": [
+          "completions"
+        ],
+        "text-babbage-001": [
+          "completions"
+        ],
+        "text-curie-001": [
+          "completions"
+        ],
+        "text-davinci-001": [
+          "completions"
+        ],
+        "text-davinci-002": [
+          "completions"
+        ],
+        "text-davinci-003": [
+          "completions"
+        ]
+      },
+      "protocol_basis": "Model API family comes from the model official sources; SDK documentation confirms support for that vendor API family. The SDK takes a model identifier or native request body. This does not populate missing endpoints or establish present availability."
+    },
+    {
+      "id": "@anthropic-ai/sdk",
+      "sdk": "@anthropic-ai/sdk",
+      "owners": [
+        "anthropic"
+      ],
+      "types": [
+        "messages",
+        "completions",
+        "batch"
+      ],
+      "basis": "vendor-sdk",
+      "sources": [
+        {
+          "url": "https://github.com/anthropics/anthropic-sdk-typescript",
+          "fetched_url": "https://raw.githubusercontent.com/anthropics/anthropic-sdk-typescript/main/README.md",
+          "sha256": "fb4a744ec35df16149653ecd31bf54bad715db597df78bb7d385ef39844d88ca",
+          "status": 200,
+          "marker": "@anthropic-ai/sdk",
+          "registry": {
+            "name": "@anthropic-ai/sdk",
+            "version": "0.133.0",
+            "repository": {
+              "url": "git+https://github.com/anthropics/anthropic-sdk-typescript.git",
+              "type": "git"
+            },
+            "status": 200,
+            "license": "MIT"
+          }
+        }
+      ],
+      "model_protocols": {
+        "claude-1.0": [
+          "completions"
+        ],
+        "claude-1.1": [
+          "completions"
+        ],
+        "claude-1.2": [
+          "completions"
+        ],
+        "claude-1.3": [
+          "completions"
+        ],
+        "claude-2.0": [
+          "messages",
+          "completions"
+        ],
+        "claude-2.1": [
+          "messages",
+          "completions"
+        ],
+        "claude-3-5-haiku": [
+          "messages"
+        ],
+        "claude-3-5-sonnet-20240620": [
+          "messages"
+        ],
+        "claude-3-5-sonnet-20241022": [
+          "messages"
+        ],
+        "claude-3-7-sonnet": [
+          "messages"
+        ],
+        "claude-3-haiku": [
+          "messages"
+        ],
+        "claude-3-opus": [
+          "messages"
+        ],
+        "claude-3-sonnet": [
+          "messages"
+        ],
+        "claude-instant-1.0": [
+          "completions"
+        ],
+        "claude-instant-1.1": [
+          "completions"
+        ],
+        "claude-instant-1.2": [
+          "messages",
+          "completions"
+        ],
+        "claude-opus-4-1": [
+          "messages"
+        ],
+        "claude-opus-4": [
+          "messages"
+        ],
+        "claude-sonnet-4": [
+          "messages"
+        ]
+      },
+      "protocol_basis": "Model API family comes from the model official sources; SDK documentation confirms support for that vendor API family. The SDK takes a model identifier or native request body. This does not populate missing endpoints or establish present availability."
+    },
+    {
+      "id": "@google/genai",
+      "sdk": "@google/genai",
+      "owners": [
+        "google"
+      ],
+      "types": [
+        "generate",
+        "interactions",
+        "embeddings",
+        "images",
+        "audio",
+        "video",
+        "realtime",
+        "batch"
+      ],
+      "basis": "vendor-sdk",
+      "sources": [
+        {
+          "url": "https://github.com/googleapis/js-genai",
+          "fetched_url": "https://raw.githubusercontent.com/googleapis/js-genai/main/README.md",
+          "sha256": "dcbe62b458fa3c9286299d53e59604dd244b5a764cb4b4319ab39bfb7e3dc63d",
+          "status": 200,
+          "marker": "@google/genai",
+          "registry": {
+            "name": "@google/genai",
+            "version": "2.28.0",
+            "repository": {
+              "url": "git+https://github.com/googleapis/js-genai.git",
+              "type": "git"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        }
+      ],
+      "model_pattern": "^(?:gemini-|gemma-|imagen-|veo-|embedding-001$|text-embedding-|antigravity-|deep-research-)",
+      "model_protocols": {
+        "imagen-4.0-generate-preview-06-06": [
+          "images"
+        ],
+        "imagen-4.0-ultra-generate-preview-06-06": [
+          "images"
+        ],
+        "veo-3.0-fast-generate-preview": [
+          "video"
+        ],
+        "veo-3.0-generate-preview": [
+          "video"
+        ]
+      },
+      "protocol_basis": "Model API family comes from the model official sources; SDK documentation confirms support for that vendor API family. The SDK takes a model identifier or native request body. This does not populate missing endpoints or establish present availability."
+    },
+    {
+      "id": "cohere-ai",
+      "sdk": "cohere-ai",
+      "owners": [
+        "cohere"
+      ],
+      "types": [
+        "chat",
+        "embeddings",
+        "rerank",
+        "ocr",
+        "audio"
+      ],
+      "basis": "vendor-sdk",
+      "sources": [
+        {
+          "url": "https://github.com/cohere-ai/cohere-typescript",
+          "fetched_url": "https://raw.githubusercontent.com/cohere-ai/cohere-typescript/main/README.md",
+          "sha256": "0ee22c3633f7309170494da3161622cb2f7fb183792195640203f198080fad1c",
+          "status": 200,
+          "marker": "cohere-ai",
+          "registry": {
+            "name": "cohere-ai",
+            "version": "8.1.0",
+            "repository": {
+              "url": "git+https://github.com/cohere-ai/cohere-typescript.git",
+              "type": "git"
+            },
+            "status": 200,
+            "license": null
+          },
+          "api_reference": {
+            "name": "cohere-reference",
+            "url": "https://raw.githubusercontent.com/cohere-ai/cohere-typescript/main/reference.md",
+            "status": 200,
+            "sha256": "5c0e1545bf52e1ae378d5952309c52dd751d79c2c3df57f1af3b547b70a2d091"
+          }
+        }
+      ],
+      "model_protocols": {
+        "c4ai-aya-expanse-8b": [
+          "chat"
+        ],
+        "c4ai-aya-vision-8b": [
+          "chat"
+        ],
+        "command-light": [
+          "chat"
+        ],
+        "command-r-03-2024": [
+          "chat"
+        ],
+        "command-r-plus-04-2024": [
+          "chat"
+        ],
+        "command": [
+          "chat"
+        ],
+        "embed-english-light-v2.0": [
+          "embeddings"
+        ],
+        "embed-english-v2.0": [
+          "embeddings"
+        ],
+        "embed-multilingual-v2.0": [
+          "embeddings"
+        ],
+        "rerank-english-v2.0": [
+          "rerank"
+        ],
+        "rerank-multilingual-v2.0": [
+          "rerank"
+        ]
+      },
+      "protocol_basis": "Model API family comes from the model official sources; SDK documentation confirms support for that vendor API family. The SDK takes a model identifier or native request body. This does not populate missing endpoints or establish present availability."
+    },
+    {
+      "id": "@mistralai/mistralai",
+      "sdk": "@mistralai/mistralai",
+      "owners": [
+        "mistral"
+      ],
+      "types": [
+        "chat",
+        "embeddings",
+        "ocr",
+        "audio",
+        "moderation",
+        "batch"
+      ],
+      "basis": "vendor-sdk",
+      "sources": [
+        {
+          "url": "https://github.com/mistralai/client-ts",
+          "fetched_url": "https://raw.githubusercontent.com/mistralai/client-ts/main/README.md",
+          "sha256": "483c77260d61c535f099fdb1f00a22b6e49aa49a002523b9ee8d9277e7250f91",
+          "status": 200,
+          "marker": "@mistralai/mistralai",
+          "registry": {
+            "name": "@mistralai/mistralai",
+            "version": "2.7.0",
+            "repository": {
+              "url": "git+https://github.com/mistralai/client-ts.git",
+              "type": "git"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        }
+      ],
+      "model_protocols": {
+        "mistral-ocr-2503": [
+          "ocr"
+        ]
+      },
+      "protocol_basis": "Model API family comes from the model official sources; SDK documentation confirms support for that vendor API family. The SDK takes a model identifier or native request body. This does not populate missing endpoints or establish present availability."
+    },
+    {
+      "id": "@deepgram/sdk",
+      "sdk": "@deepgram/sdk",
+      "owners": [
+        "deepgram"
+      ],
+      "types": [
+        "audio",
+        "realtime"
+      ],
+      "basis": "vendor-sdk",
+      "sources": [
+        {
+          "url": "https://github.com/deepgram/deepgram-js-sdk",
+          "fetched_url": "https://raw.githubusercontent.com/deepgram/deepgram-js-sdk/main/README.md",
+          "sha256": "6f4219de5ba6f072f05c42b78c67154ffea71fa8a212fb9a5dfdc4d221fc1c75",
+          "status": 200,
+          "marker": "@deepgram/sdk",
+          "registry": {
+            "name": "@deepgram/sdk",
+            "version": "5.15.0",
+            "repository": {
+              "url": "git+https://github.com/deepgram/deepgram-js-sdk.git",
+              "type": "git"
+            },
+            "status": 200,
+            "license": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "id": "@elevenlabs/elevenlabs-js",
+      "sdk": "@elevenlabs/elevenlabs-js",
+      "owners": [
+        "elevenlabs"
+      ],
+      "types": [
+        "audio",
+        "realtime"
+      ],
+      "basis": "vendor-sdk",
+      "sources": [
+        {
+          "url": "https://github.com/elevenlabs/elevenlabs-js",
+          "fetched_url": "https://raw.githubusercontent.com/elevenlabs/elevenlabs-js/main/README.md",
+          "sha256": "81302a04ef594fc3fb28f7fa44e005233e1fe9aa6c20c6d2adc92a1801765f26",
+          "status": 200,
+          "marker": "@elevenlabs/elevenlabs-js",
+          "registry": {
+            "name": "@elevenlabs/elevenlabs-js",
+            "version": "2.71.0",
+            "repository": {
+              "url": "git+https://github.com/elevenlabs/elevenlabs-js.git",
+              "type": "git"
+            },
+            "status": 200,
+            "license": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "id": "@runwayml/sdk",
+      "sdk": "@runwayml/sdk",
+      "owners": [
+        "runway"
+      ],
+      "types": [
+        "images",
+        "video"
+      ],
+      "basis": "vendor-sdk",
+      "sources": [
+        {
+          "url": "https://github.com/runwayml/sdk-node",
+          "fetched_url": "https://raw.githubusercontent.com/runwayml/sdk-node/main/README.md",
+          "sha256": "2973e84a667cdd9ddc9b0f0c85bc60d99c6ffb151b92e7b687c5e1159c21d582",
+          "status": 200,
+          "marker": "@runwayml/sdk",
+          "registry": {
+            "name": "@runwayml/sdk",
+            "version": "4.21.0",
+            "repository": {
+              "url": "git+https://github.com/runwayml/sdk-node.git",
+              "type": "git"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        }
+      ],
+      "model_protocols": {
+        "gen3a_turbo": [
+          "video"
+        ],
+        "gen4_aleph": [
+          "video"
+        ]
+      },
+      "protocol_basis": "Model API family comes from the model official sources; SDK documentation confirms support for that vendor API family. The SDK takes a model identifier or native request body. This does not populate missing endpoints or establish present availability."
+    },
+    {
+      "id": "assemblyai",
+      "sdk": "assemblyai",
+      "owners": [
+        "assemblyai"
+      ],
+      "types": [
+        "audio",
+        "realtime"
+      ],
+      "basis": "vendor-sdk",
+      "sources": [
+        {
+          "url": "https://github.com/AssemblyAI/assemblyai-node-sdk",
+          "fetched_url": "https://raw.githubusercontent.com/AssemblyAI/assemblyai-node-sdk/main/README.md",
+          "sha256": "b6b69c5009c03a1f110ed9928983606de480888d3bb1a396e57c09383764745b",
+          "status": 200,
+          "marker": "assemblyai",
+          "registry": {
+            "name": "assemblyai",
+            "version": "4.41.5",
+            "repository": {
+              "url": "git+https://github.com/AssemblyAI/assemblyai-node-sdk.git",
+              "type": "git"
+            },
+            "status": 200,
+            "license": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "id": "@soniox/node",
+      "sdk": "@soniox/node",
+      "owners": [
+        "soniox"
+      ],
+      "types": [
+        "audio",
+        "realtime"
+      ],
+      "basis": "vendor-sdk",
+      "sources": [
+        {
+          "url": "https://soniox.com/docs/sdk/node-SDK",
+          "fetched_url": "https://soniox.com/docs/sdk/node-SDK",
+          "sha256": "a2a5ea61882bb86e75e42d4242e23f1d0b015be4cacb453883fb35157ef18373",
+          "status": 200,
+          "marker": "@soniox/node",
+          "registry": {
+            "name": "@soniox/node",
+            "version": "2.4.0",
+            "repository": {
+              "url": "git+https://github.com/soniox/soniox-js.git",
+              "type": "git",
+              "directory": "packages/node"
+            },
+            "status": 200,
+            "license": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sarvamai",
+      "sdk": "sarvamai",
+      "owners": [
+        "sarvam"
+      ],
+      "types": [
+        "chat",
+        "audio",
+        "realtime",
+        "completions"
+      ],
+      "basis": "vendor-sdk",
+      "sources": [
+        {
+          "url": "https://docs.sarvam.ai/api/getting-started/sdks",
+          "fetched_url": "https://docs.sarvam.ai/api/getting-started/sdks",
+          "sha256": "824539976358a3a5cf1f7aad4a9b2f84abf8bba335356732f144f652a573c437",
+          "status": 200,
+          "marker": "sarvamai",
+          "registry": {
+            "name": "sarvamai",
+            "version": "1.1.12",
+            "repository": {
+              "url": "git+https://github.com/sarvamai/sarvam-javascript-sdk.git",
+              "type": "git"
+            },
+            "status": 200,
+            "license": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "contextual-client",
+      "sdk": "contextual-client",
+      "owners": [
+        "contextual-ai"
+      ],
+      "types": [
+        "rerank"
+      ],
+      "basis": "vendor-sdk",
+      "sources": [
+        {
+          "url": "https://github.com/ContextualAI/contextual-client-node",
+          "fetched_url": "https://raw.githubusercontent.com/ContextualAI/contextual-client-node/main/README.md",
+          "sha256": "4d31595214c91ab35534675e4844f2e27296ef09deae873900d85590b4b67e57",
+          "status": 200,
+          "marker": "contextual-client",
+          "registry": {
+            "name": "contextual-client",
+            "version": "0.11.0",
+            "repository": {
+              "url": "https://github.com/ContextualAI/contextual-client-node.git",
+              "type": "git"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "@mixedbread/sdk",
+      "sdk": "@mixedbread/sdk",
+      "owners": [
+        "mixedbread"
+      ],
+      "types": [
+        "rerank"
+      ],
+      "basis": "vendor-sdk",
+      "sources": [
+        {
+          "url": "https://github.com/mixedbread-ai/mixedbread-ts",
+          "fetched_url": "https://raw.githubusercontent.com/mixedbread-ai/mixedbread-ts/main/README.md",
+          "sha256": "49750324e2d49828b3a69a655a1ca37265e58a3e13f55924b81db7bb8c250ac0",
+          "status": 200,
+          "marker": "@mixedbread/sdk",
+          "registry": {
+            "name": "@mixedbread/sdk",
+            "version": "0.78.0",
+            "repository": {
+              "url": "git+https://github.com/mixedbread-ai/mixedbread-ts.git",
+              "type": "git"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "twelvelabs-js",
+      "sdk": "twelvelabs-js",
+      "owners": [
+        "twelvelabs"
+      ],
+      "types": [
+        "embeddings",
+        "generate"
+      ],
+      "basis": "vendor-sdk",
+      "sources": [
+        {
+          "url": "https://github.com/twelvelabs-io/twelvelabs-js",
+          "fetched_url": "https://raw.githubusercontent.com/twelvelabs-io/twelvelabs-js/main/README.md",
+          "sha256": "14ab30a738dada2ecc2f11194661515837bd3e140d00ea8485593290ff3f7717",
+          "status": 200,
+          "marker": "twelvelabs-js",
+          "registry": {
+            "name": "twelvelabs-js",
+            "version": "1.3.6",
+            "repository": {
+              "url": "git+https://github.com/twelvelabs-io/twelvelabs-js.git",
+              "type": "git"
+            },
+            "status": 200,
+            "license": null
+          }
+        }
+      ],
+      "model_protocols": {
+        "marengo2.7": [
+          "embeddings"
+        ],
+        "pegasus1.1": [
+          "generate"
+        ],
+        "pegasus1.2": [
+          "generate"
+        ]
+      },
+      "protocol_basis": "Model API family comes from the model official sources; SDK documentation confirms support for that vendor API family. The SDK takes a model identifier or native request body. This does not populate missing endpoints or establish present availability."
+    },
+    {
+      "id": "@ibm-cloud/watsonx-ai",
+      "sdk": "@ibm-cloud/watsonx-ai",
+      "owners": [
+        "ibm"
+      ],
+      "types": [
+        "chat",
+        "embeddings"
+      ],
+      "basis": "vendor-sdk",
+      "sources": [
+        {
+          "url": "https://github.com/IBM/watsonx-ai-node-sdk",
+          "fetched_url": "https://raw.githubusercontent.com/IBM/watsonx-ai-node-sdk/main/README.md",
+          "sha256": "0f6966ef0b42fda9074b018cae988dd1c890736464c0d22daf6c2ee51c226c24",
+          "status": 200,
+          "marker": "@ibm-cloud/watsonx-ai",
+          "registry": {
+            "name": "@ibm-cloud/watsonx-ai",
+            "version": "1.7.16",
+            "repository": {
+              "url": "git+https://github.com/IBM/watsonx-ai-node-sdk.git",
+              "type": "git"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "@aws-sdk/client-bedrock-runtime",
+      "sdk": "@aws-sdk/client-bedrock-runtime",
+      "owners": [
+        "amazon"
+      ],
+      "types": [
+        "chat",
+        "embeddings",
+        "images",
+        "video",
+        "realtime"
+      ],
+      "basis": "vendor-sdk",
+      "sources": [
+        {
+          "url": "https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/bedrock-runtime/",
+          "fetched_url": "https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/bedrock-runtime/",
+          "sha256": "61f0fe66bb19493cae57451a9a67e4a00c909d03ed8256c229b5fa9a89ffe51e",
+          "status": 200,
+          "marker": "BedrockRuntime",
+          "registry": {
+            "name": "@aws-sdk/client-bedrock-runtime",
+            "version": "3.1150.0",
+            "repository": {
+              "url": "git+https://github.com/aws/aws-sdk-js-v3.git",
+              "type": "git",
+              "directory": "clients/client-bedrock-runtime"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        }
+      ],
+      "model_protocols": {
+        "nova-reel": [
+          "video"
+        ],
+        "nova-sonic": [
+          "realtime"
+        ]
+      },
+      "protocol_basis": "Model API family comes from the model official sources; SDK documentation confirms support for that vendor API family. The SDK takes a model identifier or native request body. This does not populate missing endpoints or establish present availability."
+    },
+    {
+      "id": "@leonardo-ai/sdk",
+      "sdk": "@leonardo-ai/sdk",
+      "owners": [
+        "leonardo"
+      ],
+      "types": [
+        "images"
+      ],
+      "basis": "vendor-sdk",
+      "sources": [
+        {
+          "url": "https://github.com/Leonardo-Interactive/leonardo-ts-sdk",
+          "fetched_url": "https://raw.githubusercontent.com/Leonardo-Interactive/leonardo-ts-sdk/main/README.md",
+          "sha256": "150738c695ea9d2266f84f83c37396e593f0b515d01818ec14aacd4f9b6879de",
+          "status": 200,
+          "marker": "@leonardo-ai/sdk",
+          "registry": {
+            "name": "@leonardo-ai/sdk",
+            "version": "4.21.3",
+            "repository": {
+              "url": "git+https://github.com/Leonardo-Interactive/leonardo-ts-sdk.git",
+              "type": "git",
+              "directory": "."
+            },
+            "status": 200,
+            "license": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "writer-sdk",
+      "sdk": "writer-sdk",
+      "owners": [
+        "writer"
+      ],
+      "types": [
+        "chat"
+      ],
+      "basis": "vendor-sdk",
+      "sources": [
+        {
+          "url": "https://github.com/writer/writer-node",
+          "fetched_url": "https://raw.githubusercontent.com/writer/writer-node/main/README.md",
+          "sha256": "4cf227e23b6434ee322effbab4f64ca0534cea7a08f3d46ce35856c0342504c5",
+          "status": 200,
+          "marker": "writer-sdk",
+          "registry": {
+            "name": "writer-sdk",
+            "version": "3.0.0",
+            "repository": {
+              "url": "https://github.com/writer/writer-node.git",
+              "type": "git"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "voyageai",
+      "sdk": "voyageai",
+      "owners": [
+        "voyage"
+      ],
+      "types": [
+        "embeddings",
+        "rerank"
+      ],
+      "basis": "vendor-sdk",
+      "sources": [
+        {
+          "url": "https://github.com/voyage-ai/typescript-sdk",
+          "fetched_url": "https://raw.githubusercontent.com/voyage-ai/typescript-sdk/main/README.md",
+          "sha256": "7b659fc7e8373b3e71d9e5fee050f5d7336cf4f8f635b4904d3f869997ec8af5",
+          "status": 200,
+          "marker": "voyageai",
+          "registry": {
+            "name": "voyageai",
+            "version": "0.4.0",
+            "repository": {
+              "url": "git+https://github.com/voyage-ai/typescript-sdk.git",
+              "type": "git"
+            },
+            "status": 200,
+            "license": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "id": "@speechmatics/batch-client",
+      "sdk": "@speechmatics/batch-client",
+      "owners": [
+        "speechmatics"
+      ],
+      "types": [
+        "audio"
+      ],
+      "basis": "vendor-sdk",
+      "sources": [
+        {
+          "url": "https://github.com/speechmatics/speechmatics-js-sdk",
+          "fetched_url": "https://raw.githubusercontent.com/speechmatics/speechmatics-js-sdk/main/README.md",
+          "sha256": "75625cccfa4407078d61b148df4e84d9658d3aaafa5f8a9515da5dd7c6eb7429",
+          "status": 200,
+          "marker": "@speechmatics/batch-client",
+          "registry": {
+            "name": "@speechmatics/batch-client",
+            "version": "5.4.2",
+            "repository": {
+              "url": "git+https://github.com/speechmatics/speechmatics-js-sdk.git#main",
+              "type": "git"
+            },
+            "status": 200,
+            "license": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "id": "@speechmatics/real-time-client",
+      "sdk": "@speechmatics/real-time-client",
+      "owners": [
+        "speechmatics"
+      ],
+      "types": [
+        "realtime"
+      ],
+      "basis": "vendor-sdk",
+      "sources": [
+        {
+          "url": "https://github.com/speechmatics/speechmatics-js-sdk",
+          "fetched_url": "https://raw.githubusercontent.com/speechmatics/speechmatics-js-sdk/main/README.md",
+          "sha256": "75625cccfa4407078d61b148df4e84d9658d3aaafa5f8a9515da5dd7c6eb7429",
+          "status": 200,
+          "marker": "@speechmatics/real-time-client",
+          "registry": {
+            "name": "@speechmatics/real-time-client",
+            "version": "8.5.1",
+            "repository": {
+              "url": "git+https://github.com/speechmatics/speechmatics-js-sdk.git#main",
+              "type": "git"
+            },
+            "status": 200,
+            "license": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tencentcloud-sdk-nodejs-hunyuan",
+      "sdk": "tencentcloud-sdk-nodejs-hunyuan",
+      "owners": [
+        "tencent"
+      ],
+      "types": [
+        "chat",
+        "embeddings"
+      ],
+      "basis": "vendor-sdk",
+      "sources": [
+        {
+          "url": "https://github.com/TencentCloud/tencentcloud-sdk-nodejs/tree/master/src/services/hunyuan",
+          "fetched_url": "https://raw.githubusercontent.com/TencentCloud/tencentcloud-sdk-nodejs/master/src/services/hunyuan/v20230901/hunyuan_client.ts",
+          "sha256": "53aecd11c5748c1ee8c640679f78e036af8e450b4ad34ab18c5aa0c06307677d",
+          "status": 200,
+          "marker": "ChatCompletions",
+          "registry": {
+            "name": "tencentcloud-sdk-nodejs-hunyuan",
+            "version": "4.1.318",
+            "repository": {
+              "url": "git+https://github.com/tencentcloud/tencentcloud-sdk-nodejs.git",
+              "type": "git"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        }
+      ],
+      "base_url_pattern": "^https://hunyuan\\.tencentcloudapi\\.com(?:/|$)",
+      "model_protocols": {
+        "hunyuan-2.0-instruct": [
+          "chat"
+        ],
+        "hunyuan-2.0-thinking": [
+          "chat"
+        ],
+        "hunyuan-code": [
+          "chat"
+        ],
+        "hunyuan-large-longcontext": [
+          "chat"
+        ],
+        "hunyuan-large-role": [
+          "chat"
+        ],
+        "hunyuan-large": [
+          "chat"
+        ],
+        "hunyuan-lite": [
+          "chat"
+        ],
+        "hunyuan-pro": [
+          "chat"
+        ],
+        "hunyuan-role": [
+          "chat"
+        ],
+        "hunyuan-standard-256k": [
+          "chat"
+        ],
+        "hunyuan-standard-32k": [
+          "chat"
+        ],
+        "hunyuan-t1": [
+          "chat"
+        ],
+        "hunyuan-turbo": [
+          "chat"
+        ],
+        "hunyuan-turbos-longtext-128k": [
+          "chat"
+        ],
+        "hunyuan-turbos": [
+          "chat"
+        ]
+      },
+      "protocol_basis": "Model API family comes from the model official sources; SDK documentation confirms support for that vendor API family. The SDK takes a model identifier or native request body. This does not populate missing endpoints or establish present availability."
+    },
+    {
+      "id": "microsoft-cognitiveservices-speech-sdk",
+      "sdk": "microsoft-cognitiveservices-speech-sdk",
+      "owners": [
+        "microsoft"
+      ],
+      "types": [
+        "audio"
+      ],
+      "basis": "vendor-sdk",
+      "sources": [
+        {
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-sdk",
+          "fetched_url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-sdk",
+          "sha256": "95669ca9147fd39cd5beafda9892aef1b7719d4d2c5c978d7b4d9f3401eebfdf",
+          "status": 200,
+          "marker": "microsoft-cognitiveservices-speech-sdk",
+          "registry": {
+            "name": "microsoft-cognitiveservices-speech-sdk",
+            "version": "1.52.0",
+            "repository": {
+              "url": "git+https://github.com/Microsoft/cognitive-services-speech-sdk-js.git",
+              "type": "git"
+            },
+            "status": 200,
+            "license": "MIT"
+          },
+          "scope_url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-voices"
+        }
+      ],
+      "model_pattern": "^mai-voice"
+    },
+    {
+      "id": "@ai-sdk/openai",
+      "sdk": "@ai-sdk/openai",
+      "owners": [
+        "openai"
+      ],
+      "types": [
+        "chat",
+        "responses",
+        "embeddings",
+        "images",
+        "audio",
+        "realtime"
+      ],
+      "basis": "official-sdk-provider",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+          "sha256": "5ac12a1d17998d174f94fe0e193067cc3c46699999544ca0444bbe4aafc88876",
+          "status": 200,
+          "marker": "@ai-sdk/openai",
+          "registry": {
+            "name": "@ai-sdk/openai",
+            "version": "4.0.92",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/openai"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          },
+          "sha256_scope": "first 2000000 bytes of HTTP payload"
+        }
+      ]
+    },
+    {
+      "id": "@ai-sdk/anthropic",
+      "sdk": "@ai-sdk/anthropic",
+      "owners": [
+        "anthropic"
+      ],
+      "types": [
+        "messages"
+      ],
+      "basis": "official-sdk-provider",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/anthropic",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/anthropic",
+          "sha256": "e543fa3641f92232e9f913175e7108b4345c43fb7b95947691e632734891809d",
+          "status": 200,
+          "marker": "@ai-sdk/anthropic",
+          "registry": {
+            "name": "@ai-sdk/anthropic",
+            "version": "4.0.79",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/anthropic"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          },
+          "sha256_scope": "first 2000000 bytes of HTTP payload"
+        }
+      ],
+      "model_protocols": {
+        "claude-opus-4-1": [
+          "messages"
+        ],
+        "claude-opus-4": [
+          "messages"
+        ],
+        "claude-sonnet-4": [
+          "messages"
+        ]
+      },
+      "protocol_basis": "Exact model ID or published alias appears in the SDK provider article and its API family is supported."
+    },
+    {
+      "id": "@ai-sdk/google-vertex",
+      "sdk": "@ai-sdk/google-vertex",
+      "owners": [
+        "google"
+      ],
+      "types": [
+        "generate",
+        "embeddings",
+        "images",
+        "video",
+        "audio"
+      ],
+      "basis": "official-sdk-provider",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/google-vertex",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/google-vertex",
+          "sha256": "9c50e622971a62966559213919e2400c1b89bff9d3c2b8347c1399e2b79b7e99",
+          "status": 200,
+          "marker": "@ai-sdk/google-vertex",
+          "registry": {
+            "name": "@ai-sdk/google-vertex",
+            "version": "5.0.110",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/google-vertex"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          },
+          "sha256_scope": "first 2000000 bytes of HTTP payload"
+        }
+      ],
+      "provider_ids": [
+        "vertex-ai"
+      ]
+    },
+    {
+      "id": "@ai-sdk/mistral",
+      "sdk": "@ai-sdk/mistral",
+      "owners": [
+        "mistral"
+      ],
+      "types": [
+        "chat",
+        "embeddings",
+        "audio"
+      ],
+      "basis": "official-sdk-provider",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/mistral",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/mistral",
+          "sha256": "581221fc8c62a8dd92c6043c314661a19b7aa9eed74e4b912ea2087f337fef75",
+          "status": 200,
+          "marker": "@ai-sdk/mistral",
+          "registry": {
+            "name": "@ai-sdk/mistral",
+            "version": "4.0.63",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/mistral"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "@ai-sdk/cohere",
+      "sdk": "@ai-sdk/cohere",
+      "owners": [
+        "cohere"
+      ],
+      "types": [
+        "chat",
+        "embeddings",
+        "rerank"
+      ],
+      "basis": "official-sdk-provider",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/cohere",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/cohere",
+          "sha256": "e8529c789dd64fc824a751ca45366cb9846bbe5c6a0c20b003188bec19c36799",
+          "status": 200,
+          "marker": "@ai-sdk/cohere",
+          "registry": {
+            "name": "@ai-sdk/cohere",
+            "version": "4.0.60",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/cohere"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        }
+      ],
+      "endpoint_patterns": {
+        "chat": "^POST /v2/chat$",
+        "embeddings": "^POST /v[12]/embed$",
+        "rerank": "^POST /v[12]/rerank$"
+      }
+    },
+    {
+      "id": "@ai-sdk/xai",
+      "sdk": "@ai-sdk/xai",
+      "owners": [
+        "xai"
+      ],
+      "types": [
+        "chat",
+        "responses",
+        "images",
+        "video",
+        "audio",
+        "realtime"
+      ],
+      "basis": "official-sdk-provider",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/xai",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/xai",
+          "sha256": "0776a0fabceb0e6f739163818fe3d589657c1746ae883b153827a80cb86012cd",
+          "status": 200,
+          "marker": "@ai-sdk/xai",
+          "registry": {
+            "name": "@ai-sdk/xai",
+            "version": "5.0.21",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/xai"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        }
+      ],
+      "model_protocols": {
+        "grok-imagine-image-quality": [
+          "images"
+        ],
+        "grok-voice-transcribe-1.0": [
+          "audio"
+        ]
+      },
+      "protocol_basis": "Exact model ID or published alias appears in the SDK provider article and its API family is supported."
+    },
+    {
+      "id": "@ai-sdk/deepseek",
+      "sdk": "@ai-sdk/deepseek",
+      "owners": [
+        "deepseek"
+      ],
+      "types": [
+        "chat"
+      ],
+      "basis": "official-sdk-provider",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/deepseek",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/deepseek",
+          "sha256": "07e0eb43c8782969e78897a95137d4854872b490b080eb82ac7fd986ba5d7024",
+          "status": 200,
+          "marker": "@ai-sdk/deepseek",
+          "registry": {
+            "name": "@ai-sdk/deepseek",
+            "version": "3.0.64",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/deepseek"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "@ai-sdk/perplexity",
+      "sdk": "@ai-sdk/perplexity",
+      "owners": [
+        "perplexity"
+      ],
+      "types": [
+        "chat",
+        "embeddings"
+      ],
+      "basis": "official-sdk-provider",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/perplexity",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/perplexity",
+          "sha256": "fda5432a930c66c6afe01a7715c5d05cd2b4052859401c7092b1388c182b0a75",
+          "status": 200,
+          "marker": "@ai-sdk/perplexity",
+          "registry": {
+            "name": "@ai-sdk/perplexity",
+            "version": "5.0.11",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/perplexity"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        }
+      ],
+      "model_protocols": {
+        "sonar-reasoning": [
+          "chat"
+        ]
+      },
+      "protocol_basis": "Exact model ID or published alias appears in the SDK provider article and its API family is supported."
+    },
+    {
+      "id": "@ai-sdk/amazon-bedrock",
+      "sdk": "@ai-sdk/amazon-bedrock",
+      "owners": [
+        "amazon"
+      ],
+      "types": [
+        "chat",
+        "embeddings",
+        "images"
+      ],
+      "basis": "official-sdk-provider",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/amazon-bedrock",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/amazon-bedrock",
+          "sha256": "af7387e8bbfad3f8fa232bef5dae135a5db7e5cbf271c85fc1b0059db100d42c",
+          "status": 200,
+          "marker": "@ai-sdk/amazon-bedrock",
+          "registry": {
+            "name": "@ai-sdk/amazon-bedrock",
+            "version": "5.0.114",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/amazon-bedrock"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          },
+          "sha256_scope": "first 2000000 bytes of HTTP payload"
+        }
+      ]
+    },
+    {
+      "id": "@ai-sdk/deepgram",
+      "sdk": "@ai-sdk/deepgram",
+      "owners": [
+        "deepgram"
+      ],
+      "types": [
+        "audio"
+      ],
+      "basis": "official-sdk-provider",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/deepgram",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/deepgram",
+          "sha256": "6d98512e32ca5d13aef8f88ed1e5f1c49a8134a8179bb7d3324dcbef878a97bf",
+          "status": 200,
+          "marker": "@ai-sdk/deepgram",
+          "registry": {
+            "name": "@ai-sdk/deepgram",
+            "version": "3.1.30",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/deepgram"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "@ai-sdk/elevenlabs",
+      "sdk": "@ai-sdk/elevenlabs",
+      "owners": [
+        "elevenlabs"
+      ],
+      "types": [
+        "audio",
+        "realtime"
+      ],
+      "basis": "official-sdk-provider",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/elevenlabs",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/elevenlabs",
+          "sha256": "f82dd2c9bfe6c082d5d7538a23d79fde9023b6a09b9605dfb12b5d837a8f5a63",
+          "status": 200,
+          "marker": "@ai-sdk/elevenlabs",
+          "registry": {
+            "name": "@ai-sdk/elevenlabs",
+            "version": "3.0.60",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/elevenlabs"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "@ai-sdk/assemblyai",
+      "sdk": "@ai-sdk/assemblyai",
+      "owners": [
+        "assemblyai"
+      ],
+      "types": [
+        "audio"
+      ],
+      "basis": "official-sdk-provider",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/assemblyai",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/assemblyai",
+          "sha256": "c2cdcffdcf5a26e19a657bcda77cd5fb0436656ef088e0b7883bffe355702678",
+          "status": 200,
+          "marker": "@ai-sdk/assemblyai",
+          "registry": {
+            "name": "@ai-sdk/assemblyai",
+            "version": "3.0.59",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/assemblyai"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "@ai-sdk/luma",
+      "sdk": "@ai-sdk/luma",
+      "owners": [
+        "luma"
+      ],
+      "types": [
+        "images"
+      ],
+      "basis": "official-sdk-provider",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/luma",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/luma",
+          "sha256": "4dad9f5767c0b9cb33bcee04a3fdc67cbe2107f40d9560ad5245c7811304da8c",
+          "status": 200,
+          "marker": "@ai-sdk/luma",
+          "registry": {
+            "name": "@ai-sdk/luma",
+            "version": "3.0.60",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/luma"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        }
+      ],
+      "base_url_pattern": "^https://api\\.lumalabs\\.ai(?:/|$)"
+    },
+    {
+      "id": "@ai-sdk/google",
+      "sdk": "@ai-sdk/google",
+      "owners": [
+        "google"
+      ],
+      "types": [
+        "generate",
+        "interactions",
+        "embeddings",
+        "images",
+        "audio",
+        "realtime"
+      ],
+      "basis": "official-sdk-provider",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/google",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/google",
+          "sha256": "78b93620b1d828c94993b20e309e57f9a52408d168e8a97b70e4f80430cff684",
+          "status": 200,
+          "marker": "@ai-sdk/google",
+          "registry": {
+            "name": "@ai-sdk/google",
+            "version": "4.0.94",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/google"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          },
+          "sha256_scope": "first 2000000 bytes of HTTP payload"
+        }
+      ],
+      "provider_ids": [
+        "google"
+      ]
+    },
+    {
+      "id": "@ai-sdk/voyage",
+      "sdk": "@ai-sdk/voyage",
+      "owners": [
+        "voyage"
+      ],
+      "types": [
+        "embeddings",
+        "rerank"
+      ],
+      "basis": "official-sdk-provider",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/voyage",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/voyage",
+          "sha256": "0e673e0f1f35d7189239f7dff741ceead55245492c300f1554bace6efadd1481",
+          "status": 200,
+          "marker": "@ai-sdk/voyage",
+          "registry": {
+            "name": "@ai-sdk/voyage",
+            "version": "2.0.59",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/voyage"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "@ai-sdk/black-forest-labs",
+      "sdk": "@ai-sdk/black-forest-labs",
+      "owners": [
+        "black-forest-labs"
+      ],
+      "types": [
+        "images",
+        "video"
+      ],
+      "basis": "official-sdk-provider",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/black-forest-labs",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/black-forest-labs",
+          "sha256": "9344c9110506076935a379ff038e920a100af19d2f45bec4d8d05ecc763f17ca",
+          "status": 200,
+          "marker": "@ai-sdk/black-forest-labs",
+          "registry": {
+            "name": "@ai-sdk/black-forest-labs",
+            "version": "2.0.60",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/black-forest-labs"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "@ai-sdk/moonshotai",
+      "sdk": "@ai-sdk/moonshotai",
+      "owners": [
+        "moonshot"
+      ],
+      "types": [
+        "chat"
+      ],
+      "basis": "official-sdk-provider",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/moonshotai",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/moonshotai",
+          "sha256": "bb419fbbca62ab93d5e3e29528f6fad81aaf0ed5ac52a2ef9964fae9bc12f0d1",
+          "status": 200,
+          "marker": "@ai-sdk/moonshotai",
+          "registry": {
+            "name": "@ai-sdk/moonshotai",
+            "version": "3.0.68",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/moonshotai"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "@ai-sdk/alibaba",
+      "sdk": "@ai-sdk/alibaba",
+      "owners": [
+        "alibaba"
+      ],
+      "types": [
+        "chat",
+        "embeddings",
+        "video"
+      ],
+      "basis": "official-sdk-provider",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/alibaba",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/alibaba",
+          "sha256": "98effc4744a8eed566abbef7efbc3192f6fa478c36add0a8f91dc28e7b9befe4",
+          "status": 200,
+          "marker": "@ai-sdk/alibaba",
+          "registry": {
+            "name": "@ai-sdk/alibaba",
+            "version": "2.0.66",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/alibaba"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "@ai-sdk/minimax",
+      "sdk": "@ai-sdk/minimax",
+      "owners": [
+        "minimax"
+      ],
+      "types": [
+        "messages",
+        "video"
+      ],
+      "basis": "official-sdk-provider",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/minimax",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/minimax",
+          "sha256": "3405d0c6517d47d00d6cf679332974ecd8dee880a5714e27b24a3e4ce03db678",
+          "status": 200,
+          "marker": "@ai-sdk/minimax",
+          "registry": {
+            "name": "@ai-sdk/minimax",
+            "version": "3.0.56",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/minimax"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "@ai-sdk/bytedance",
+      "sdk": "@ai-sdk/bytedance",
+      "owners": [
+        "bytedance"
+      ],
+      "types": [
+        "images",
+        "video"
+      ],
+      "basis": "official-sdk-provider",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/bytedance",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/bytedance",
+          "sha256": "11273ab0ae7492b40bc9dece4802672f1bde1d99b66918ab4df2d6c896725bc6",
+          "status": 200,
+          "marker": "@ai-sdk/bytedance",
+          "registry": {
+            "name": "@ai-sdk/bytedance",
+            "version": "2.0.62",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/bytedance"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "@ai-sdk/klingai",
+      "sdk": "@ai-sdk/klingai",
+      "owners": [
+        "kuaishou"
+      ],
+      "types": [
+        "video"
+      ],
+      "basis": "official-sdk-provider",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/klingai",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/klingai",
+          "sha256": "8c4d8a7ad15ad7b9fff07e3e4bad8f373251f5459bd6d0f7d96278b9d10e782b",
+          "status": 200,
+          "marker": "@ai-sdk/klingai",
+          "registry": {
+            "name": "@ai-sdk/klingai",
+            "version": "4.0.61",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/klingai"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        }
+      ],
+      "model_protocols": {
+        "kling-video-v1-5": [
+          "video"
+        ],
+        "kling-video-v1-6": [
+          "video"
+        ],
+        "kling-video-v1": [
+          "video"
+        ],
+        "kling-video-v2-1-master": [
+          "video"
+        ],
+        "kling-video-v2-1": [
+          "video"
+        ],
+        "kling-video-v2-master": [
+          "video"
+        ]
+      },
+      "protocol_basis": "Official AI SDK video factory accepts provider model IDs; the official model lifecycle sources establish these historical Kling video model/API identities. This does not restore retired model availability."
+    },
+    {
+      "id": "@ai-sdk/cartesia",
+      "sdk": "@ai-sdk/cartesia",
+      "owners": [
+        "cartesia"
+      ],
+      "types": [
+        "audio",
+        "realtime"
+      ],
+      "basis": "official-sdk-provider",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/cartesia",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/cartesia",
+          "sha256": "3d541507b286307b7758a4a7d6a44e0fef818416535b0489446888817e3c4c02",
+          "status": 200,
+          "marker": "@ai-sdk/cartesia",
+          "registry": {
+            "name": "@ai-sdk/cartesia",
+            "version": "3.0.54",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/cartesia"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "@ai-sdk/zai",
+      "sdk": "@ai-sdk/zai",
+      "owners": [
+        "zhipu"
+      ],
+      "types": [
+        "chat"
+      ],
+      "basis": "official-sdk-provider",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/zai",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/zai",
+          "sha256": "a512163d0c81f555532ae5d74d823824ed99c691c09c9069b1ce0eaf344645a3",
+          "status": 200,
+          "marker": "@ai-sdk/zai",
+          "registry": {
+            "name": "@ai-sdk/zai",
+            "version": "3.0.30",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/zai"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "openai-compatible",
+      "sdk": "openai",
+      "types": [
+        "chat",
+        "responses",
+        "completions",
+        "embeddings",
+        "images",
+        "audio",
+        "ocr",
+        "moderation"
+      ],
+      "endpoint_patterns": {
+        "chat": "^POST /(?:.*\\/)?chat/completions$",
+        "responses": "^POST /(?:.*\\/)?responses$",
+        "completions": "^POST /(?:.*\\/)?completions$",
+        "embeddings": "^POST /(?:.*\\/)?embeddings$",
+        "images": "^POST /(?:.*\\/)?images/(?:generations|edits)$",
+        "audio": "^POST /(?:.*\\/)?audio/(?:speech|transcriptions|translations)$",
+        "ocr": "^POST /(?:.*\\/)?chat/completions$",
+        "moderation": "^POST /(?:.*\\/)?(?:chat/completions|moderations)$"
+      },
+      "basis": "registered-protocol-and-sdk-support",
+      "sources": [
+        {
+          "url": "https://github.com/openai/openai-node",
+          "fetched_url": "https://raw.githubusercontent.com/openai/openai-node/master/README.md",
+          "sha256": "4ed0e79b7b3415fda8a39ac9a3c4491f8dfa3214b2a1b027abf0ac748bf46762",
+          "status": 200,
+          "marker": "openai",
+          "registry": {
+            "name": "openai",
+            "version": "7.32.0",
+            "repository": {
+              "url": "git+https://github.com/openai/openai-node.git",
+              "type": "git"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "@ai-sdk/openai-compatible-compatible",
+      "sdk": "@ai-sdk/openai-compatible",
+      "types": [
+        "chat",
+        "completions",
+        "embeddings",
+        "images",
+        "ocr",
+        "moderation"
+      ],
+      "endpoint_patterns": {
+        "chat": "^POST /(?:.*\\/)?chat/completions$",
+        "completions": "^POST /(?:.*\\/)?completions$",
+        "embeddings": "^POST /(?:.*\\/)?embeddings$",
+        "images": "^POST /(?:.*\\/)?images/(?:generations|edits)$",
+        "ocr": "^POST /(?:.*\\/)?chat/completions$",
+        "moderation": "^POST /(?:.*\\/)?chat/completions$"
+      },
+      "basis": "registered-protocol-and-sdk-support",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+          "fetched_url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+          "sha256": "3f9bf1ba772f4124fda670ac1f37794870e059c2732a48004cd6e252fab82fd2",
+          "status": 200,
+          "marker": "@ai-sdk/openai-compatible",
+          "registry": {
+            "name": "@ai-sdk/openai-compatible",
+            "version": "3.0.68",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/openai-compatible"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "@ai-sdk/openai-compatible",
+      "sdk": "@ai-sdk/openai",
+      "types": [
+        "chat",
+        "responses",
+        "embeddings",
+        "images",
+        "audio",
+        "ocr",
+        "moderation"
+      ],
+      "endpoint_patterns": {
+        "chat": "^POST /(?:.*\\/)?chat/completions$",
+        "responses": "^POST /(?:.*\\/)?responses$",
+        "embeddings": "^POST /(?:.*\\/)?embeddings$",
+        "images": "^POST /(?:.*\\/)?images/(?:generations|edits)$",
+        "audio": "^POST /(?:.*\\/)?audio/(?:speech|transcriptions|translations)$",
+        "ocr": "^POST /(?:.*\\/)?chat/completions$",
+        "moderation": "^POST /(?:.*\\/)?chat/completions$"
+      },
+      "basis": "registered-protocol-and-sdk-support",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+          "sha256": "5ac12a1d17998d174f94fe0e193067cc3c46699999544ca0444bbe4aafc88876",
+          "status": 200,
+          "marker": "@ai-sdk/openai",
+          "registry": {
+            "name": "@ai-sdk/openai",
+            "version": "4.0.92",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/openai"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          },
+          "sha256_scope": "first 2000000 bytes of HTTP payload"
+        }
+      ]
+    },
+    {
+      "id": "@anthropic-ai/sdk-messages-compatible",
+      "sdk": "@anthropic-ai/sdk",
+      "types": [
+        "messages"
+      ],
+      "endpoint_patterns": {
+        "messages": "^POST /(?:.*\\/)?messages$"
+      },
+      "basis": "registered-protocol-and-sdk-support",
+      "sources": [
+        {
+          "url": "https://github.com/anthropics/anthropic-sdk-typescript",
+          "fetched_url": "https://raw.githubusercontent.com/anthropics/anthropic-sdk-typescript/main/README.md",
+          "sha256": "fb4a744ec35df16149653ecd31bf54bad715db597df78bb7d385ef39844d88ca",
+          "status": 200,
+          "marker": "@anthropic-ai/sdk",
+          "registry": {
+            "name": "@anthropic-ai/sdk",
+            "version": "0.133.0",
+            "repository": {
+              "url": "git+https://github.com/anthropics/anthropic-sdk-typescript.git",
+              "type": "git"
+            },
+            "status": 200,
+            "license": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "id": "@ai-sdk/anthropic-messages-compatible",
+      "sdk": "@ai-sdk/anthropic",
+      "types": [
+        "messages"
+      ],
+      "endpoint_patterns": {
+        "messages": "^POST /(?:.*\\/)?messages$"
+      },
+      "basis": "registered-protocol-and-sdk-support",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/anthropic",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/anthropic",
+          "sha256": "e543fa3641f92232e9f913175e7108b4345c43fb7b95947691e632734891809d",
+          "status": 200,
+          "marker": "@ai-sdk/anthropic",
+          "registry": {
+            "name": "@ai-sdk/anthropic",
+            "version": "4.0.79",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/anthropic"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          },
+          "sha256_scope": "first 2000000 bytes of HTTP payload"
+        }
+      ]
+    },
+    {
+      "id": "openai-instruct-completion",
+      "sdk": "@ai-sdk/openai",
+      "owners": [
+        "openai"
+      ],
+      "models": [
+        "gpt-3.5-turbo-instruct"
+      ],
+      "types": [
+        "completions"
+      ],
+      "basis": "documented-model",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+          "sha256": "5ac12a1d17998d174f94fe0e193067cc3c46699999544ca0444bbe4aafc88876",
+          "status": 200,
+          "marker": "@ai-sdk/openai",
+          "registry": {
+            "name": "@ai-sdk/openai",
+            "version": "4.0.92",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/openai"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          },
+          "sha256_scope": "first 2000000 bytes of HTTP payload"
+        }
+      ]
+    },
+    {
+      "id": "luma-agents",
+      "sdk": "luma-agents",
+      "owners": [
+        "luma"
+      ],
+      "types": [
+        "images",
+        "video"
+      ],
+      "basis": "sdk-developer-documentation",
+      "sources": [
+        {
+          "url": "https://github.com/lumalabs/luma-agents-typescript",
+          "fetched_url": "https://raw.githubusercontent.com/lumalabs/luma-agents-typescript/main/README.md",
+          "status": 200,
+          "sha256": "9ab0c06cb034ac2c1aa207e7035f7b4a453260f93dc99957538298863170564e",
+          "marker": "luma-agents",
+          "registry": {
+            "name": "luma-agents",
+            "version": "0.1.2",
+            "repository": {
+              "url": "https://github.com/lumalabs/luma-agents-typescript.git",
+              "type": "git"
+            },
+            "license": "Apache-2.0",
+            "status": 200
+          }
+        }
+      ],
+      "base_url_pattern": "^https://agents\\.lumalabs\\.ai(?:/|$)"
+    },
+    {
+      "id": "jina-ai-provider",
+      "sdk": "jina-ai-provider",
+      "owners": [
+        "jina"
+      ],
+      "types": [
+        "embeddings"
+      ],
+      "basis": "sdk-developer-documentation",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/community-providers/jina-ai",
+          "fetched_url": "https://ai-sdk.dev/providers/community-providers/jina-ai",
+          "status": 200,
+          "sha256": "7421553eb91eec8dc72a8034af8c8a42c8f968701fa19bcbcb1e6319779d27a5",
+          "marker": "jina-ai-provider",
+          "registry": {
+            "name": "jina-ai-provider",
+            "version": "1.0.0",
+            "repository": {
+              "url": "git+https://github.com/patelvivekdev/jina-ai-provider.git",
+              "type": "git"
+            },
+            "license": "MIT",
+            "status": 200
+          }
+        }
+      ]
+    },
+    {
+      "id": "@cartesia/cartesia-js",
+      "sdk": "@cartesia/cartesia-js",
+      "owners": [
+        "cartesia"
+      ],
+      "types": [
+        "audio",
+        "realtime"
+      ],
+      "basis": "sdk-developer-documentation",
+      "sources": [
+        {
+          "url": "https://github.com/cartesia-ai/cartesia-js",
+          "fetched_url": "https://raw.githubusercontent.com/cartesia-ai/cartesia-js/main/README.md",
+          "status": 200,
+          "sha256": "1a2e7ca1d4d3f46e43ff7a28bbdc4cc384a75659bcd78a03684e151a5c65d45f",
+          "marker": "@cartesia/cartesia-js",
+          "registry": {
+            "name": "@cartesia/cartesia-js",
+            "version": "4.2.0",
+            "repository": {
+              "url": "git+https://github.com/cartesia-ai/cartesia-js.git",
+              "type": "git"
+            },
+            "license": "Apache-2.0",
+            "status": 200
+          }
+        }
+      ]
+    },
+    {
+      "id": "@baiducloud/qianfan",
+      "sdk": "@baiducloud/qianfan",
+      "owners": [
+        "baidu"
+      ],
+      "types": [
+        "chat",
+        "embeddings",
+        "completions",
+        "images"
+      ],
+      "basis": "sdk-developer-documentation",
+      "sources": [
+        {
+          "url": "https://github.com/baidubce/bce-qianfan-sdk/tree/main/javascript",
+          "fetched_url": "https://raw.githubusercontent.com/baidubce/bce-qianfan-sdk/main/javascript/README.md",
+          "status": 200,
+          "sha256": "bfa435fcff4792e706ba4570d95acc9ea855c46acc21fed209d680a5db4cc732",
+          "marker": "@baiducloud/qianfan",
+          "registry": {
+            "name": "@baiducloud/qianfan",
+            "version": "0.2.4",
+            "repository": {
+              "url": "git+https://github.com/baidubce/bce-qianfan-sdk.git",
+              "type": "git"
+            },
+            "license": "ISC",
+            "status": 200
+          }
+        }
+      ],
+      "model_protocols": {
+        "ernie-3.5-4k-0205": [
+          "chat"
+        ],
+        "ernie-3.5-8k-0613": [
+          "chat"
+        ],
+        "ernie-3.5-8k-0701": [
+          "chat"
+        ],
+        "ernie-3.5-8k-1222": [
+          "chat"
+        ],
+        "ernie-3.5-8k": [
+          "chat"
+        ],
+        "ernie-4.0-8k": [
+          "chat"
+        ],
+        "ernie-4.0-turbo-128k": [
+          "chat"
+        ],
+        "ernie-4.0-turbo-8k": [
+          "chat"
+        ],
+        "ernie-4.5-0.3b": [
+          "chat"
+        ],
+        "ernie-4.5-21b-a3b-thinking": [
+          "chat"
+        ],
+        "ernie-4.5-21b-a3b": [
+          "chat"
+        ],
+        "ernie-4.5-8k-preview": [
+          "chat"
+        ],
+        "ernie-4.5-turbo-128k-preview": [
+          "chat"
+        ],
+        "ernie-4.5-turbo-latest": [
+          "chat"
+        ],
+        "ernie-4.5-turbo-vl-32k-preview": [
+          "chat"
+        ],
+        "ernie-4.5-turbo-vl-latest": [
+          "chat"
+        ],
+        "ernie-4.5-turbo-vl-preview": [
+          "chat"
+        ],
+        "ernie-4.5-vl-28b-a3b": [
+          "chat"
+        ],
+        "ernie-character-8k": [
+          "chat"
+        ],
+        "ernie-character-fiction-8k-preview": [
+          "chat"
+        ],
+        "ernie-character-fiction-8k": [
+          "chat"
+        ],
+        "ernie-functions-8k": [
+          "chat"
+        ],
+        "ernie-lite-8k-0922": [
+          "chat"
+        ],
+        "ernie-lite-8k": [
+          "chat"
+        ],
+        "ernie-lite-pro-128k": [
+          "chat"
+        ],
+        "ernie-novel-8k": [
+          "chat"
+        ],
+        "ernie-speed-128k": [
+          "chat"
+        ],
+        "ernie-speed-8k": [
+          "chat"
+        ],
+        "ernie-speed-pro-128k": [
+          "chat"
+        ],
+        "ernie-tiny-8k": [
+          "chat"
+        ],
+        "ernie-x1-turbo-32k-preview": [
+          "chat"
+        ],
+        "ernie-x1-turbo-32k": [
+          "chat"
+        ],
+        "ernie-x1-turbo-latest": [
+          "chat"
+        ],
+        "qianfan-70b": [
+          "chat"
+        ],
+        "qianfan-8b": [
+          "chat"
+        ],
+        "qianfan-agent-intent-32k": [
+          "chat"
+        ],
+        "qianfan-agent-lite-8k": [
+          "chat"
+        ],
+        "qianfan-agent-speed-32k": [
+          "chat"
+        ],
+        "qianfan-agent-speed-8k": [
+          "chat"
+        ],
+        "qianfan-bloomz-7b-compressed": [
+          "chat"
+        ],
+        "qianfan-check-vl": [
+          "chat"
+        ],
+        "qianfan-chinese-llama-2-13b": [
+          "chat"
+        ],
+        "qianfan-chinese-llama-2-70b": [
+          "chat"
+        ],
+        "qianfan-chinese-llama-2-7b": [
+          "chat"
+        ],
+        "qianfan-composition": [
+          "chat"
+        ],
+        "qianfan-correct": [
+          "chat"
+        ],
+        "qianfan-dynamic-8k": [
+          "chat"
+        ],
+        "qianfan-engcard-vl": [
+          "chat"
+        ],
+        "qianfan-lightning-128b-a19b": [
+          "chat"
+        ],
+        "qianfan-llama-vl-8b": [
+          "chat"
+        ],
+        "qianfan-multipicocr": [
+          "chat"
+        ],
+        "qianfan-ocr-fast": [
+          "chat"
+        ],
+        "qianfan-publicopinion-classification": [
+          "chat"
+        ],
+        "qianfan-qi-vl": [
+          "chat"
+        ],
+        "qianfan-singlepicocr": [
+          "chat"
+        ],
+        "qianfan-sug-8k": [
+          "chat"
+        ],
+        "qianfan-toytalk": [
+          "chat"
+        ],
+        "qianfan-vl-1.5-flash": [
+          "chat"
+        ],
+        "qianfan-vl-70b": [
+          "chat"
+        ],
+        "qianfan-vl-8b": [
+          "chat"
+        ],
+        "ernie-image-turbo": [
+          "images"
+        ]
+      },
+      "protocol_basis": "Model API family comes from the model official sources; SDK documentation confirms support for that vendor API family. The SDK takes a model identifier or native request body. This does not populate missing endpoints or establish present availability."
+    },
+    {
+      "id": "minimax-speech-ts",
+      "sdk": "minimax-speech-ts",
+      "owners": [
+        "minimax"
+      ],
+      "types": [
+        "audio"
+      ],
+      "basis": "sdk-developer-documentation",
+      "sources": [
+        {
+          "url": "https://github.com/williamchong/minimax-speech-ts",
+          "fetched_url": "https://raw.githubusercontent.com/williamchong/minimax-speech-ts/master/README.md",
+          "status": 200,
+          "sha256": "d666dc0e74a01cc66a6be98804e9d8d103973c6b3cffa4bc11eb77a646e730d1",
+          "marker": "minimax-speech-ts",
+          "registry": {
+            "name": "minimax-speech-ts",
+            "version": "0.4.1",
+            "repository": {
+              "url": "git+https://github.com/williamchong/minimax-speech-ts.git",
+              "type": "git"
+            },
+            "license": "MIT",
+            "status": 200
+          }
+        }
+      ],
+      "model_pattern": "^speech-"
+    },
+    {
+      "id": "@soniox/vercel-ai-sdk-provider",
+      "sdk": "@soniox/vercel-ai-sdk-provider",
+      "owners": [
+        "soniox"
+      ],
+      "types": [
+        "audio",
+        "realtime"
+      ],
+      "basis": "sdk-developer-documentation",
+      "sources": [
+        {
+          "url": "https://soniox.com/docs/integrations/vercel-ai-sdk",
+          "fetched_url": "https://soniox.com/docs/integrations/vercel-ai-sdk",
+          "status": 200,
+          "sha256": "5c7d8217aa22f6aa7eb89ee9518fbbecbfb40213a6d9803032d7259cefc0f578",
+          "marker": "@soniox/vercel-ai-sdk-provider",
+          "registry": {
+            "name": "@soniox/vercel-ai-sdk-provider",
+            "version": "0.1.3",
+            "repository": {
+              "url": "git+https://github.com/soniox/vercel-ai-sdk-provider.git",
+              "type": "git"
+            },
+            "license": "MIT",
+            "status": 200
+          }
+        }
+      ]
+    },
+    {
+      "id": "@google-ai/generativelanguage",
+      "sdk": "@google-ai/generativelanguage",
+      "owners": [
+        "google"
+      ],
+      "types": [
+        "embeddings"
+      ],
+      "basis": "sdk-developer-documentation",
+      "sources": [
+        {
+          "url": "https://github.com/googleapis/google-cloud-node/tree/main/packages/google-ai-generativelanguage",
+          "fetched_url": "https://raw.githubusercontent.com/googleapis/google-cloud-node/main/packages/google-ai-generativelanguage/README.md",
+          "status": 200,
+          "sha256": "fa54d4695137279d8e838fd5b73fb53c4008232c0560fc2f6c973be393565f0d",
+          "marker": "@google-ai/generativelanguage",
+          "registry": {
+            "name": "@google-ai/generativelanguage",
+            "version": "4.2.0",
+            "repository": {
+              "url": "git+https://github.com/googleapis/google-cloud-node.git",
+              "type": "git",
+              "directory": "packages/google-ai-generativelanguage"
+            },
+            "license": "Apache-2.0",
+            "status": 200
+          }
+        }
+      ],
+      "models": [
+        "embedding-gecko-001"
+      ],
+      "model_protocols": {
+        "embedding-gecko-001": [
+          "embeddings"
+        ]
+      },
+      "protocol_basis": "Model API family comes from the model official sources; SDK documentation confirms support for that vendor API family. The SDK takes a model identifier or native request body. This does not populate missing endpoints or establish present availability."
+    },
+    {
+      "id": "@google-cloud/aiplatform",
+      "sdk": "@google-cloud/aiplatform",
+      "owners": [
+        "google"
+      ],
+      "types": [
+        "chat",
+        "completions"
+      ],
+      "basis": "sdk-developer-documentation",
+      "sources": [
+        {
+          "url": "https://github.com/googleapis/google-cloud-node/tree/main/packages/google-cloud-aiplatform",
+          "fetched_url": "https://raw.githubusercontent.com/googleapis/google-cloud-node/main/packages/google-cloud-aiplatform/README.md",
+          "status": 200,
+          "sha256": "7b941e489df60c5b593f1c1fb13da0a972e9e3d8534e819fe69879f117182996",
+          "marker": "@google-cloud/aiplatform",
+          "registry": {
+            "name": "@google-cloud/aiplatform",
+            "version": "7.6.0",
+            "repository": {
+              "url": "git+https://github.com/googleapis/google-cloud-node.git",
+              "type": "git",
+              "directory": "packages/google-cloud-aiplatform"
+            },
+            "license": "Apache-2.0",
+            "status": 200
+          }
+        }
+      ],
+      "models": [
+        "chat-bison",
+        "text-bison"
+      ],
+      "model_protocols": {
+        "chat-bison": [
+          "chat"
+        ],
+        "text-bison": [
+          "completions"
+        ]
+      },
+      "protocol_basis": "Model API family comes from the model official sources; SDK documentation confirms support for that vendor API family. The SDK takes a model identifier or native request body. This does not populate missing endpoints or establish present availability."
+    },
+    {
+      "id": "@nomic-ai/atlas",
+      "sdk": "@nomic-ai/atlas",
+      "owners": [
+        "nomic"
+      ],
+      "types": [
+        "embeddings"
+      ],
+      "basis": "sdk-developer-documentation",
+      "sources": [
+        {
+          "url": "https://github.com/nomic-ai/ts-nomic",
+          "fetched_url": "https://raw.githubusercontent.com/nomic-ai/ts-nomic/main/README.md",
+          "status": 200,
+          "sha256": "30caf28fb46da06e78b12eb884a25fa771f364455e8941132dede310f26364e2",
+          "marker": "@nomic-ai/atlas",
+          "registry": {
+            "name": "@nomic-ai/atlas",
+            "version": "0.12.0",
+            "repository": null,
+            "license": "MIT",
+            "status": 200
+          }
+        }
+      ]
+    },
+    {
+      "id": "dashscope-sdk-official",
+      "sdk": "dashscope-sdk-official",
+      "owners": [
+        "alibaba"
+      ],
+      "types": [
+        "chat",
+        "embeddings",
+        "images",
+        "video",
+        "audio",
+        "realtime",
+        "rerank",
+        "ocr"
+      ],
+      "basis": "sdk-developer-documentation",
+      "sources": [
+        {
+          "url": "https://github.com/dashscope/dashscope-sdk-nodejs",
+          "fetched_url": "https://raw.githubusercontent.com/dashscope/dashscope-sdk-nodejs/main/README.md",
+          "status": 200,
+          "sha256": "6efe69f3cdabd797114bad68e268c488952eebd72f698161cb819598e85dd101",
+          "marker": "dashscope-sdk-official",
+          "registry": {
+            "name": "dashscope-sdk-official",
+            "version": "1.27.0",
+            "repository": {
+              "url": "git+https://github.com/dashscope/dashscope-sdk-nodejs.git",
+              "type": "git"
+            },
+            "license": "Apache-2.0",
+            "status": 200
+          }
+        }
+      ],
+      "model_protocols": {
+        "fun-asr-mtl": [
+          "audio"
+        ],
+        "gte-rerank": [
+          "rerank"
+        ],
+        "qwen-image-edit-max": [
+          "images"
+        ],
+        "qwen-image-edit-plus": [
+          "images"
+        ],
+        "qwen-image-edit": [
+          "images"
+        ],
+        "qwen-image-max": [
+          "images"
+        ],
+        "qwen-image-plus": [
+          "images"
+        ],
+        "qwen-image": [
+          "images"
+        ],
+        "qwen-omni-turbo-realtime": [
+          "realtime"
+        ],
+        "qwen-tts-realtime": [
+          "realtime"
+        ],
+        "qwen-tts": [
+          "audio"
+        ],
+        "qwen3-omni-flash-realtime": [
+          "realtime"
+        ],
+        "qwen3-tts-instruct-flash-realtime": [
+          "realtime"
+        ],
+        "qwen3-tts-instruct-flash": [
+          "audio"
+        ],
+        "sensevoice-v1": [
+          "audio"
+        ]
+      },
+      "protocol_basis": "Model API family comes from the model official sources; SDK documentation confirms support for that vendor API family. The SDK takes a model identifier or native request body. This does not populate missing endpoints or establish present availability."
+    },
+    {
+      "id": "image-sdk-stability",
+      "sdk": "@image-sdk/sdk",
+      "owners": [
+        "stability"
+      ],
+      "types": [
+        "images"
+      ],
+      "basis": "sdk-implementation-and-registered-endpoint",
+      "sources": [
+        {
+          "url": "https://github.com/Adarsh-Me/Image-SDK",
+          "fetched_url": "https://raw.githubusercontent.com/Adarsh-Me/Image-SDK/main/README.md",
+          "status": 200,
+          "sha256": "7a0ec0c969823f6922ed51feabbb72b199e611c50381121ab54ed25c98fc633a",
+          "marker": "@image-sdk/sdk",
+          "registry": {
+            "name": "@image-sdk/sdk",
+            "version": "0.1.0",
+            "repository": null,
+            "license": null,
+            "status": 200
+          },
+          "implementation": {
+            "name": "image-sdk-stability",
+            "url": "https://raw.githubusercontent.com/Adarsh-Me/Image-SDK/main/packages/providers/stability/src/index.ts",
+            "status": 200,
+            "sha256": "49ab86e3d48737bd12ea4b0d2b449b482f9db9069661c06c138f7b85fe6618fd"
+          }
+        }
+      ],
+      "models": [
+        "stable-image-core"
+      ]
+    },
+    {
+      "id": "image-sdk-ideogram",
+      "sdk": "@image-sdk/sdk",
+      "owners": [
+        "ideogram"
+      ],
+      "types": [
+        "images"
+      ],
+      "basis": "sdk-implementation-and-registered-endpoint",
+      "sources": [
+        {
+          "url": "https://github.com/Adarsh-Me/Image-SDK",
+          "fetched_url": "https://raw.githubusercontent.com/Adarsh-Me/Image-SDK/main/README.md",
+          "status": 200,
+          "sha256": "7a0ec0c969823f6922ed51feabbb72b199e611c50381121ab54ed25c98fc633a",
+          "marker": "@image-sdk/sdk",
+          "registry": {
+            "name": "@image-sdk/sdk",
+            "version": "0.1.0",
+            "repository": null,
+            "license": null,
+            "status": 200
+          },
+          "implementation": {
+            "name": "image-sdk-ideogram",
+            "url": "https://raw.githubusercontent.com/Adarsh-Me/Image-SDK/main/packages/providers/ideogram/src/index.ts",
+            "status": 200,
+            "sha256": "3475632795771dd846cade086eb88e867096ccf872b1ac3553471e26c48ef3bf"
+          }
+        }
+      ],
+      "models": [
+        "ideogram-3",
+        "ideogram-4",
+        "ideogram-4-5"
+      ]
+    },
+    {
+      "id": "image-sdk-recraft",
+      "sdk": "@image-sdk/sdk",
+      "owners": [
+        "recraft"
+      ],
+      "types": [
+        "images"
+      ],
+      "basis": "sdk-implementation-and-registered-endpoint",
+      "sources": [
+        {
+          "url": "https://github.com/Adarsh-Me/Image-SDK",
+          "fetched_url": "https://raw.githubusercontent.com/Adarsh-Me/Image-SDK/main/README.md",
+          "status": 200,
+          "sha256": "7a0ec0c969823f6922ed51feabbb72b199e611c50381121ab54ed25c98fc633a",
+          "marker": "@image-sdk/sdk",
+          "registry": {
+            "name": "@image-sdk/sdk",
+            "version": "0.1.0",
+            "repository": null,
+            "license": null,
+            "status": 200
+          },
+          "implementation": {
+            "name": "image-sdk-recraft",
+            "url": "https://raw.githubusercontent.com/Adarsh-Me/Image-SDK/main/packages/providers/recraft/src/index.ts",
+            "status": 200,
+            "sha256": "29977232f6330ab5fdab54bedd7ebae9b803a74090da7d091c224615d233d6c3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "openai-bytedance-documented-chat-protocol",
+      "sdk": "openai",
+      "owners": [
+        "bytedance"
+      ],
+      "types": [
+        "chat"
+      ],
+      "model_protocols": {
+        "doubao-1-5-lite-32k": [
+          "chat"
+        ],
+        "doubao-1-5-pro-256k": [
+          "chat"
+        ],
+        "doubao-1-5-pro-32k-character": [
+          "chat"
+        ],
+        "doubao-1-5-pro-32k": [
+          "chat"
+        ],
+        "doubao-1-5-thinking-pro-m": [
+          "chat"
+        ],
+        "doubao-1-5-thinking-pro": [
+          "chat"
+        ],
+        "doubao-1-5-thinking-vision-pro": [
+          "chat"
+        ],
+        "doubao-1-5-ui-tars": [
+          "chat"
+        ],
+        "doubao-1-5-vision-lite": [
+          "chat"
+        ],
+        "doubao-1-5-vision-pro-32k": [
+          "chat"
+        ],
+        "doubao-1-5-vision-pro": [
+          "chat"
+        ],
+        "doubao-lite-128k": [
+          "chat"
+        ],
+        "doubao-lite-32k-character": [
+          "chat"
+        ],
+        "doubao-lite-32k": [
+          "chat"
+        ],
+        "doubao-lite-4k-character": [
+          "chat"
+        ],
+        "doubao-lite-4k": [
+          "chat"
+        ],
+        "doubao-pro-128k": [
+          "chat"
+        ],
+        "doubao-pro-256k": [
+          "chat"
+        ],
+        "doubao-pro-32k-browsing": [
+          "chat"
+        ],
+        "doubao-pro-32k-character": [
+          "chat"
+        ],
+        "doubao-pro-32k-functioncall": [
+          "chat"
+        ],
+        "doubao-pro-32k": [
+          "chat"
+        ],
+        "doubao-pro-4k-browsing": [
+          "chat"
+        ],
+        "doubao-pro-4k-character": [
+          "chat"
+        ],
+        "doubao-pro-4k-functioncall": [
+          "chat"
+        ],
+        "doubao-pro-4k": [
+          "chat"
+        ],
+        "doubao-seed-1-6-flash": [
+          "chat"
+        ],
+        "doubao-seed-1-6-lite": [
+          "chat"
+        ],
+        "doubao-seed-1-6-thinking": [
+          "chat"
+        ],
+        "doubao-seed-1-6-vision": [
+          "chat"
+        ],
+        "doubao-seed-1-6": [
+          "chat"
+        ],
+        "doubao-seed-code-preview": [
+          "chat"
+        ],
+        "doubao-vision-lite-32k": [
+          "chat"
+        ],
+        "doubao-vision-pro-32k": [
+          "chat"
+        ]
+      },
+      "protocol_basis": "Vendor explicitly documents OpenAI-compatible Chat Completions. These model API types come from their official model sources; SDK supports arbitrary model IDs for the same wire protocol. Retired models remain historical API references.",
+      "basis": "vendor-compatibility-guide-and-sdk-protocol",
+      "sources": [
+        {
+          "url": "https://github.com/openai/openai-node",
+          "fetched_url": "https://raw.githubusercontent.com/openai/openai-node/master/README.md",
+          "sha256": "4ed0e79b7b3415fda8a39ac9a3c4491f8dfa3214b2a1b027abf0ac748bf46762",
+          "status": 200,
+          "marker": "openai",
+          "registry": {
+            "name": "openai",
+            "version": "7.32.0",
+            "repository": {
+              "url": "git+https://github.com/openai/openai-node.git",
+              "type": "git"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        },
+        {
+          "url": "https://docs.volcengine.com/docs/ark/compatible-with-openai-sdk?lang=en",
+          "fetched_url": "https://docs.volcengine.com/docs/ark/compatible-with-openai-sdk?lang=en",
+          "sha256": "9966da8dfb89f100501bf81136b64673944edfdc44c37da797a3f7b10e4c9c52",
+          "status": 200,
+          "marker": "OpenAI-compatible API",
+          "registry": {
+            "name": "openai",
+            "version": "7.32.0",
+            "repository": {
+              "url": "git+https://github.com/openai/openai-node.git",
+              "type": "git"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          },
+          "verification": "Primary vendor compatibility guide read via web page extraction; raw HTML digest is a retrieval trace, not a claim of a live inference test."
+        }
+      ]
+    },
+    {
+      "id": "@ai-sdk/openai-compatible-bytedance-documented-chat-protocol",
+      "sdk": "@ai-sdk/openai-compatible",
+      "owners": [
+        "bytedance"
+      ],
+      "types": [
+        "chat"
+      ],
+      "model_protocols": {
+        "doubao-1-5-lite-32k": [
+          "chat"
+        ],
+        "doubao-1-5-pro-256k": [
+          "chat"
+        ],
+        "doubao-1-5-pro-32k-character": [
+          "chat"
+        ],
+        "doubao-1-5-pro-32k": [
+          "chat"
+        ],
+        "doubao-1-5-thinking-pro-m": [
+          "chat"
+        ],
+        "doubao-1-5-thinking-pro": [
+          "chat"
+        ],
+        "doubao-1-5-thinking-vision-pro": [
+          "chat"
+        ],
+        "doubao-1-5-ui-tars": [
+          "chat"
+        ],
+        "doubao-1-5-vision-lite": [
+          "chat"
+        ],
+        "doubao-1-5-vision-pro-32k": [
+          "chat"
+        ],
+        "doubao-1-5-vision-pro": [
+          "chat"
+        ],
+        "doubao-lite-128k": [
+          "chat"
+        ],
+        "doubao-lite-32k-character": [
+          "chat"
+        ],
+        "doubao-lite-32k": [
+          "chat"
+        ],
+        "doubao-lite-4k-character": [
+          "chat"
+        ],
+        "doubao-lite-4k": [
+          "chat"
+        ],
+        "doubao-pro-128k": [
+          "chat"
+        ],
+        "doubao-pro-256k": [
+          "chat"
+        ],
+        "doubao-pro-32k-browsing": [
+          "chat"
+        ],
+        "doubao-pro-32k-character": [
+          "chat"
+        ],
+        "doubao-pro-32k-functioncall": [
+          "chat"
+        ],
+        "doubao-pro-32k": [
+          "chat"
+        ],
+        "doubao-pro-4k-browsing": [
+          "chat"
+        ],
+        "doubao-pro-4k-character": [
+          "chat"
+        ],
+        "doubao-pro-4k-functioncall": [
+          "chat"
+        ],
+        "doubao-pro-4k": [
+          "chat"
+        ],
+        "doubao-seed-1-6-flash": [
+          "chat"
+        ],
+        "doubao-seed-1-6-lite": [
+          "chat"
+        ],
+        "doubao-seed-1-6-thinking": [
+          "chat"
+        ],
+        "doubao-seed-1-6-vision": [
+          "chat"
+        ],
+        "doubao-seed-1-6": [
+          "chat"
+        ],
+        "doubao-seed-code-preview": [
+          "chat"
+        ],
+        "doubao-vision-lite-32k": [
+          "chat"
+        ],
+        "doubao-vision-pro-32k": [
+          "chat"
+        ]
+      },
+      "protocol_basis": "Vendor explicitly documents OpenAI-compatible Chat Completions. These model API types come from their official model sources; SDK supports arbitrary model IDs for the same wire protocol. Retired models remain historical API references.",
+      "basis": "vendor-compatibility-guide-and-sdk-protocol",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+          "fetched_url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+          "sha256": "3f9bf1ba772f4124fda670ac1f37794870e059c2732a48004cd6e252fab82fd2",
+          "status": 200,
+          "marker": "@ai-sdk/openai-compatible",
+          "registry": {
+            "name": "@ai-sdk/openai-compatible",
+            "version": "3.0.68",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/openai-compatible"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        },
+        {
+          "url": "https://docs.volcengine.com/docs/ark/compatible-with-openai-sdk?lang=en",
+          "fetched_url": "https://docs.volcengine.com/docs/ark/compatible-with-openai-sdk?lang=en",
+          "sha256": "9966da8dfb89f100501bf81136b64673944edfdc44c37da797a3f7b10e4c9c52",
+          "status": 200,
+          "marker": "OpenAI-compatible API",
+          "registry": {
+            "name": "@ai-sdk/openai-compatible",
+            "version": "3.0.68",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/openai-compatible"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          },
+          "verification": "Primary vendor compatibility guide read via web page extraction; raw HTML digest is a retrieval trace, not a claim of a live inference test."
+        }
+      ]
+    },
+    {
+      "id": "@ai-sdk/openai-bytedance-documented-chat-protocol",
+      "sdk": "@ai-sdk/openai",
+      "owners": [
+        "bytedance"
+      ],
+      "types": [
+        "chat"
+      ],
+      "model_protocols": {
+        "doubao-1-5-lite-32k": [
+          "chat"
+        ],
+        "doubao-1-5-pro-256k": [
+          "chat"
+        ],
+        "doubao-1-5-pro-32k-character": [
+          "chat"
+        ],
+        "doubao-1-5-pro-32k": [
+          "chat"
+        ],
+        "doubao-1-5-thinking-pro-m": [
+          "chat"
+        ],
+        "doubao-1-5-thinking-pro": [
+          "chat"
+        ],
+        "doubao-1-5-thinking-vision-pro": [
+          "chat"
+        ],
+        "doubao-1-5-ui-tars": [
+          "chat"
+        ],
+        "doubao-1-5-vision-lite": [
+          "chat"
+        ],
+        "doubao-1-5-vision-pro-32k": [
+          "chat"
+        ],
+        "doubao-1-5-vision-pro": [
+          "chat"
+        ],
+        "doubao-lite-128k": [
+          "chat"
+        ],
+        "doubao-lite-32k-character": [
+          "chat"
+        ],
+        "doubao-lite-32k": [
+          "chat"
+        ],
+        "doubao-lite-4k-character": [
+          "chat"
+        ],
+        "doubao-lite-4k": [
+          "chat"
+        ],
+        "doubao-pro-128k": [
+          "chat"
+        ],
+        "doubao-pro-256k": [
+          "chat"
+        ],
+        "doubao-pro-32k-browsing": [
+          "chat"
+        ],
+        "doubao-pro-32k-character": [
+          "chat"
+        ],
+        "doubao-pro-32k-functioncall": [
+          "chat"
+        ],
+        "doubao-pro-32k": [
+          "chat"
+        ],
+        "doubao-pro-4k-browsing": [
+          "chat"
+        ],
+        "doubao-pro-4k-character": [
+          "chat"
+        ],
+        "doubao-pro-4k-functioncall": [
+          "chat"
+        ],
+        "doubao-pro-4k": [
+          "chat"
+        ],
+        "doubao-seed-1-6-flash": [
+          "chat"
+        ],
+        "doubao-seed-1-6-lite": [
+          "chat"
+        ],
+        "doubao-seed-1-6-thinking": [
+          "chat"
+        ],
+        "doubao-seed-1-6-vision": [
+          "chat"
+        ],
+        "doubao-seed-1-6": [
+          "chat"
+        ],
+        "doubao-seed-code-preview": [
+          "chat"
+        ],
+        "doubao-vision-lite-32k": [
+          "chat"
+        ],
+        "doubao-vision-pro-32k": [
+          "chat"
+        ]
+      },
+      "protocol_basis": "Vendor explicitly documents OpenAI-compatible Chat Completions. These model API types come from their official model sources; SDK supports arbitrary model IDs for the same wire protocol. Retired models remain historical API references.",
+      "basis": "vendor-compatibility-guide-and-sdk-protocol",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+          "sha256": "5ac12a1d17998d174f94fe0e193067cc3c46699999544ca0444bbe4aafc88876",
+          "status": 200,
+          "marker": "@ai-sdk/openai",
+          "registry": {
+            "name": "@ai-sdk/openai",
+            "version": "4.0.92",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/openai"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          },
+          "sha256_scope": "first 2000000 bytes of HTTP payload"
+        },
+        {
+          "url": "https://docs.volcengine.com/docs/ark/compatible-with-openai-sdk?lang=en",
+          "fetched_url": "https://docs.volcengine.com/docs/ark/compatible-with-openai-sdk?lang=en",
+          "sha256": "9966da8dfb89f100501bf81136b64673944edfdc44c37da797a3f7b10e4c9c52",
+          "status": 200,
+          "marker": "OpenAI-compatible API",
+          "registry": {
+            "name": "@ai-sdk/openai",
+            "version": "4.0.92",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/openai"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          },
+          "verification": "Primary vendor compatibility guide read via web page extraction; raw HTML digest is a retrieval trace, not a claim of a live inference test."
+        }
+      ]
+    },
+    {
+      "id": "openai-meituan-documented-chat-protocol",
+      "sdk": "openai",
+      "owners": [
+        "meituan"
+      ],
+      "types": [
+        "chat"
+      ],
+      "model_protocols": {
+        "longcat-flash-chat": [
+          "chat"
+        ],
+        "longcat-flash-lite": [
+          "chat"
+        ],
+        "longcat-flash-omni-2603": [
+          "chat"
+        ],
+        "longcat-flash-thinking-2601": [
+          "chat"
+        ],
+        "longcat-flash-thinking": [
+          "chat"
+        ]
+      },
+      "protocol_basis": "Vendor explicitly documents OpenAI-compatible Chat Completions. These model API types come from their official model sources; SDK supports arbitrary model IDs for the same wire protocol. Retired models remain historical API references.",
+      "basis": "vendor-compatibility-guide-and-sdk-protocol",
+      "sources": [
+        {
+          "url": "https://github.com/openai/openai-node",
+          "fetched_url": "https://raw.githubusercontent.com/openai/openai-node/master/README.md",
+          "sha256": "4ed0e79b7b3415fda8a39ac9a3c4491f8dfa3214b2a1b027abf0ac748bf46762",
+          "status": 200,
+          "marker": "openai",
+          "registry": {
+            "name": "openai",
+            "version": "7.32.0",
+            "repository": {
+              "url": "git+https://github.com/openai/openai-node.git",
+              "type": "git"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        },
+        {
+          "url": "https://longcat.chat/platform/docs/APIDocs.html",
+          "fetched_url": "https://longcat.chat/platform/docs/APIDocs.html",
+          "sha256": "5fff76ad881f31c50b2b08632d26bbef42eb93e0e12621744720ffe58814936d",
+          "status": 200,
+          "marker": "OpenAI-compatible API",
+          "registry": {
+            "name": "openai",
+            "version": "7.32.0",
+            "repository": {
+              "url": "git+https://github.com/openai/openai-node.git",
+              "type": "git"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          },
+          "verification": "Primary vendor compatibility guide read via web page extraction; raw HTML digest is a retrieval trace, not a claim of a live inference test."
+        }
+      ]
+    },
+    {
+      "id": "@ai-sdk/openai-compatible-meituan-documented-chat-protocol",
+      "sdk": "@ai-sdk/openai-compatible",
+      "owners": [
+        "meituan"
+      ],
+      "types": [
+        "chat"
+      ],
+      "model_protocols": {
+        "longcat-flash-chat": [
+          "chat"
+        ],
+        "longcat-flash-lite": [
+          "chat"
+        ],
+        "longcat-flash-omni-2603": [
+          "chat"
+        ],
+        "longcat-flash-thinking-2601": [
+          "chat"
+        ],
+        "longcat-flash-thinking": [
+          "chat"
+        ]
+      },
+      "protocol_basis": "Vendor explicitly documents OpenAI-compatible Chat Completions. These model API types come from their official model sources; SDK supports arbitrary model IDs for the same wire protocol. Retired models remain historical API references.",
+      "basis": "vendor-compatibility-guide-and-sdk-protocol",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+          "fetched_url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+          "sha256": "3f9bf1ba772f4124fda670ac1f37794870e059c2732a48004cd6e252fab82fd2",
+          "status": 200,
+          "marker": "@ai-sdk/openai-compatible",
+          "registry": {
+            "name": "@ai-sdk/openai-compatible",
+            "version": "3.0.68",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/openai-compatible"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        },
+        {
+          "url": "https://longcat.chat/platform/docs/APIDocs.html",
+          "fetched_url": "https://longcat.chat/platform/docs/APIDocs.html",
+          "sha256": "5fff76ad881f31c50b2b08632d26bbef42eb93e0e12621744720ffe58814936d",
+          "status": 200,
+          "marker": "OpenAI-compatible API",
+          "registry": {
+            "name": "@ai-sdk/openai-compatible",
+            "version": "3.0.68",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/openai-compatible"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          },
+          "verification": "Primary vendor compatibility guide read via web page extraction; raw HTML digest is a retrieval trace, not a claim of a live inference test."
+        }
+      ]
+    },
+    {
+      "id": "@ai-sdk/openai-meituan-documented-chat-protocol",
+      "sdk": "@ai-sdk/openai",
+      "owners": [
+        "meituan"
+      ],
+      "types": [
+        "chat"
+      ],
+      "model_protocols": {
+        "longcat-flash-chat": [
+          "chat"
+        ],
+        "longcat-flash-lite": [
+          "chat"
+        ],
+        "longcat-flash-omni-2603": [
+          "chat"
+        ],
+        "longcat-flash-thinking-2601": [
+          "chat"
+        ],
+        "longcat-flash-thinking": [
+          "chat"
+        ]
+      },
+      "protocol_basis": "Vendor explicitly documents OpenAI-compatible Chat Completions. These model API types come from their official model sources; SDK supports arbitrary model IDs for the same wire protocol. Retired models remain historical API references.",
+      "basis": "vendor-compatibility-guide-and-sdk-protocol",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+          "sha256": "5ac12a1d17998d174f94fe0e193067cc3c46699999544ca0444bbe4aafc88876",
+          "status": 200,
+          "marker": "@ai-sdk/openai",
+          "registry": {
+            "name": "@ai-sdk/openai",
+            "version": "4.0.92",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/openai"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          },
+          "sha256_scope": "first 2000000 bytes of HTTP payload"
+        },
+        {
+          "url": "https://longcat.chat/platform/docs/APIDocs.html",
+          "fetched_url": "https://longcat.chat/platform/docs/APIDocs.html",
+          "sha256": "5fff76ad881f31c50b2b08632d26bbef42eb93e0e12621744720ffe58814936d",
+          "status": 200,
+          "marker": "OpenAI-compatible API",
+          "registry": {
+            "name": "@ai-sdk/openai",
+            "version": "4.0.92",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/openai"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          },
+          "verification": "Primary vendor compatibility guide read via web page extraction; raw HTML digest is a retrieval trace, not a claim of a live inference test."
+        }
+      ]
+    },
+    {
+      "id": "openai-ant-documented-chat-protocol",
+      "sdk": "openai",
+      "owners": [
+        "ant"
+      ],
+      "types": [
+        "chat"
+      ],
+      "model_protocols": {
+        "ling-1t": [
+          "chat"
+        ],
+        "ling-2.5-1t": [
+          "chat"
+        ],
+        "ring-1t": [
+          "chat"
+        ],
+        "ring-2.5-1t": [
+          "chat"
+        ]
+      },
+      "protocol_basis": "Vendor explicitly documents OpenAI-compatible Chat Completions. These model API types come from their official model sources; SDK supports arbitrary model IDs for the same wire protocol. Retired models remain historical API references.",
+      "basis": "vendor-compatibility-guide-and-sdk-protocol",
+      "sources": [
+        {
+          "url": "https://github.com/openai/openai-node",
+          "fetched_url": "https://raw.githubusercontent.com/openai/openai-node/master/README.md",
+          "sha256": "4ed0e79b7b3415fda8a39ac9a3c4491f8dfa3214b2a1b027abf0ac748bf46762",
+          "status": 200,
+          "marker": "openai",
+          "registry": {
+            "name": "openai",
+            "version": "7.32.0",
+            "repository": {
+              "url": "git+https://github.com/openai/openai-node.git",
+              "type": "git"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        },
+        {
+          "url": "https://developer.ant-ling.com/en/docs/getting-started/quickstart/",
+          "fetched_url": "https://developer.ant-ling.com/en/docs/getting-started/quickstart/",
+          "sha256": "38c7165ef8760324e012b2a2858d71a3777dd954e42e7361db3655c9a90e390b",
+          "status": 200,
+          "marker": "OpenAI-compatible API",
+          "registry": {
+            "name": "openai",
+            "version": "7.32.0",
+            "repository": {
+              "url": "git+https://github.com/openai/openai-node.git",
+              "type": "git"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          },
+          "verification": "Primary vendor compatibility guide read via web page extraction; raw HTML digest is a retrieval trace, not a claim of a live inference test."
+        }
+      ]
+    },
+    {
+      "id": "@ai-sdk/openai-compatible-ant-documented-chat-protocol",
+      "sdk": "@ai-sdk/openai-compatible",
+      "owners": [
+        "ant"
+      ],
+      "types": [
+        "chat"
+      ],
+      "model_protocols": {
+        "ling-1t": [
+          "chat"
+        ],
+        "ling-2.5-1t": [
+          "chat"
+        ],
+        "ring-1t": [
+          "chat"
+        ],
+        "ring-2.5-1t": [
+          "chat"
+        ]
+      },
+      "protocol_basis": "Vendor explicitly documents OpenAI-compatible Chat Completions. These model API types come from their official model sources; SDK supports arbitrary model IDs for the same wire protocol. Retired models remain historical API references.",
+      "basis": "vendor-compatibility-guide-and-sdk-protocol",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+          "fetched_url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+          "sha256": "3f9bf1ba772f4124fda670ac1f37794870e059c2732a48004cd6e252fab82fd2",
+          "status": 200,
+          "marker": "@ai-sdk/openai-compatible",
+          "registry": {
+            "name": "@ai-sdk/openai-compatible",
+            "version": "3.0.68",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/openai-compatible"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        },
+        {
+          "url": "https://developer.ant-ling.com/en/docs/getting-started/quickstart/",
+          "fetched_url": "https://developer.ant-ling.com/en/docs/getting-started/quickstart/",
+          "sha256": "38c7165ef8760324e012b2a2858d71a3777dd954e42e7361db3655c9a90e390b",
+          "status": 200,
+          "marker": "OpenAI-compatible API",
+          "registry": {
+            "name": "@ai-sdk/openai-compatible",
+            "version": "3.0.68",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/openai-compatible"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          },
+          "verification": "Primary vendor compatibility guide read via web page extraction; raw HTML digest is a retrieval trace, not a claim of a live inference test."
+        }
+      ]
+    },
+    {
+      "id": "@ai-sdk/openai-ant-documented-chat-protocol",
+      "sdk": "@ai-sdk/openai",
+      "owners": [
+        "ant"
+      ],
+      "types": [
+        "chat"
+      ],
+      "model_protocols": {
+        "ling-1t": [
+          "chat"
+        ],
+        "ling-2.5-1t": [
+          "chat"
+        ],
+        "ring-1t": [
+          "chat"
+        ],
+        "ring-2.5-1t": [
+          "chat"
+        ]
+      },
+      "protocol_basis": "Vendor explicitly documents OpenAI-compatible Chat Completions. These model API types come from their official model sources; SDK supports arbitrary model IDs for the same wire protocol. Retired models remain historical API references.",
+      "basis": "vendor-compatibility-guide-and-sdk-protocol",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+          "sha256": "5ac12a1d17998d174f94fe0e193067cc3c46699999544ca0444bbe4aafc88876",
+          "status": 200,
+          "marker": "@ai-sdk/openai",
+          "registry": {
+            "name": "@ai-sdk/openai",
+            "version": "4.0.92",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/openai"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          },
+          "sha256_scope": "first 2000000 bytes of HTTP payload"
+        },
+        {
+          "url": "https://developer.ant-ling.com/en/docs/getting-started/quickstart/",
+          "fetched_url": "https://developer.ant-ling.com/en/docs/getting-started/quickstart/",
+          "sha256": "38c7165ef8760324e012b2a2858d71a3777dd954e42e7361db3655c9a90e390b",
+          "status": 200,
+          "marker": "OpenAI-compatible API",
+          "registry": {
+            "name": "@ai-sdk/openai",
+            "version": "4.0.92",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/openai"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          },
+          "verification": "Primary vendor compatibility guide read via web page extraction; raw HTML digest is a retrieval trace, not a claim of a live inference test."
+        }
+      ]
+    },
+    {
+      "id": "openai-xiaomi-documented-chat-protocol",
+      "sdk": "openai",
+      "owners": [
+        "xiaomi"
+      ],
+      "types": [
+        "chat"
+      ],
+      "model_protocols": {
+        "mimo-v2-flash": [
+          "chat"
+        ],
+        "mimo-v2-pro": [
+          "chat"
+        ]
+      },
+      "protocol_basis": "Vendor explicitly documents OpenAI-compatible Chat Completions. These model API types come from their official model sources; SDK supports arbitrary model IDs for the same wire protocol. Retired models remain historical API references.",
+      "basis": "vendor-compatibility-guide-and-sdk-protocol",
+      "sources": [
+        {
+          "url": "https://github.com/openai/openai-node",
+          "fetched_url": "https://raw.githubusercontent.com/openai/openai-node/master/README.md",
+          "sha256": "4ed0e79b7b3415fda8a39ac9a3c4491f8dfa3214b2a1b027abf0ac748bf46762",
+          "status": 200,
+          "marker": "openai",
+          "registry": {
+            "name": "openai",
+            "version": "7.32.0",
+            "repository": {
+              "url": "git+https://github.com/openai/openai-node.git",
+              "type": "git"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        },
+        {
+          "url": "https://mimo.mi.com/docs/en-US/quick-start/usage-guide/text-generation/structured-output",
+          "fetched_url": "https://mimo.mi.com/docs/en-US/quick-start/usage-guide/text-generation/structured-output",
+          "sha256": "1085b93ed416fe64b43e654be1434073de59432030863cf7e02d1da33c0a293a",
+          "status": 200,
+          "marker": "OpenAI-compatible API",
+          "registry": {
+            "name": "openai",
+            "version": "7.32.0",
+            "repository": {
+              "url": "git+https://github.com/openai/openai-node.git",
+              "type": "git"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          },
+          "verification": "Primary vendor compatibility guide read via web page extraction; raw HTML digest is a retrieval trace, not a claim of a live inference test."
+        }
+      ]
+    },
+    {
+      "id": "@ai-sdk/openai-compatible-xiaomi-documented-chat-protocol",
+      "sdk": "@ai-sdk/openai-compatible",
+      "owners": [
+        "xiaomi"
+      ],
+      "types": [
+        "chat"
+      ],
+      "model_protocols": {
+        "mimo-v2-flash": [
+          "chat"
+        ],
+        "mimo-v2-pro": [
+          "chat"
+        ]
+      },
+      "protocol_basis": "Vendor explicitly documents OpenAI-compatible Chat Completions. These model API types come from their official model sources; SDK supports arbitrary model IDs for the same wire protocol. Retired models remain historical API references.",
+      "basis": "vendor-compatibility-guide-and-sdk-protocol",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+          "fetched_url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+          "sha256": "3f9bf1ba772f4124fda670ac1f37794870e059c2732a48004cd6e252fab82fd2",
+          "status": 200,
+          "marker": "@ai-sdk/openai-compatible",
+          "registry": {
+            "name": "@ai-sdk/openai-compatible",
+            "version": "3.0.68",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/openai-compatible"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        },
+        {
+          "url": "https://mimo.mi.com/docs/en-US/quick-start/usage-guide/text-generation/structured-output",
+          "fetched_url": "https://mimo.mi.com/docs/en-US/quick-start/usage-guide/text-generation/structured-output",
+          "sha256": "1085b93ed416fe64b43e654be1434073de59432030863cf7e02d1da33c0a293a",
+          "status": 200,
+          "marker": "OpenAI-compatible API",
+          "registry": {
+            "name": "@ai-sdk/openai-compatible",
+            "version": "3.0.68",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/openai-compatible"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          },
+          "verification": "Primary vendor compatibility guide read via web page extraction; raw HTML digest is a retrieval trace, not a claim of a live inference test."
+        }
+      ]
+    },
+    {
+      "id": "@ai-sdk/openai-xiaomi-documented-chat-protocol",
+      "sdk": "@ai-sdk/openai",
+      "owners": [
+        "xiaomi"
+      ],
+      "types": [
+        "chat"
+      ],
+      "model_protocols": {
+        "mimo-v2-flash": [
+          "chat"
+        ],
+        "mimo-v2-pro": [
+          "chat"
+        ]
+      },
+      "protocol_basis": "Vendor explicitly documents OpenAI-compatible Chat Completions. These model API types come from their official model sources; SDK supports arbitrary model IDs for the same wire protocol. Retired models remain historical API references.",
+      "basis": "vendor-compatibility-guide-and-sdk-protocol",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+          "sha256": "5ac12a1d17998d174f94fe0e193067cc3c46699999544ca0444bbe4aafc88876",
+          "status": 200,
+          "marker": "@ai-sdk/openai",
+          "registry": {
+            "name": "@ai-sdk/openai",
+            "version": "4.0.92",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/openai"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          },
+          "sha256_scope": "first 2000000 bytes of HTTP payload"
+        },
+        {
+          "url": "https://mimo.mi.com/docs/en-US/quick-start/usage-guide/text-generation/structured-output",
+          "fetched_url": "https://mimo.mi.com/docs/en-US/quick-start/usage-guide/text-generation/structured-output",
+          "sha256": "1085b93ed416fe64b43e654be1434073de59432030863cf7e02d1da33c0a293a",
+          "status": 200,
+          "marker": "OpenAI-compatible API",
+          "registry": {
+            "name": "@ai-sdk/openai",
+            "version": "4.0.92",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/openai"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          },
+          "verification": "Primary vendor compatibility guide read via web page extraction; raw HTML digest is a retrieval trace, not a claim of a live inference test."
+        }
+      ]
+    },
+    {
+      "id": "openai-perplexity-documented-chat-protocol",
+      "sdk": "openai",
+      "owners": [
+        "perplexity"
+      ],
+      "types": [
+        "chat"
+      ],
+      "model_protocols": {
+        "llama-3-sonar-large-32k-chat": [
+          "chat"
+        ],
+        "llama-3-sonar-large-32k-online": [
+          "chat"
+        ],
+        "llama-3-sonar-small-32k-chat": [
+          "chat"
+        ],
+        "llama-3-sonar-small-32k-online": [
+          "chat"
+        ],
+        "llama-3.1-sonar-huge-128k-online": [
+          "chat"
+        ],
+        "llama-3.1-sonar-large-128k-online": [
+          "chat"
+        ],
+        "llama-3.1-sonar-small-128k-online": [
+          "chat"
+        ],
+        "pplx-7b-chat": [
+          "chat"
+        ],
+        "pplx-7b-online": [
+          "chat"
+        ],
+        "r1-1776": [
+          "chat"
+        ],
+        "sonar-reasoning": [
+          "chat"
+        ]
+      },
+      "protocol_basis": "Vendor explicitly documents OpenAI-compatible Chat Completions. These model API types come from their official model sources; SDK supports arbitrary model IDs for the same wire protocol. Retired models remain historical API references.",
+      "basis": "vendor-compatibility-guide-and-sdk-protocol",
+      "sources": [
+        {
+          "url": "https://github.com/openai/openai-node",
+          "fetched_url": "https://raw.githubusercontent.com/openai/openai-node/master/README.md",
+          "sha256": "4ed0e79b7b3415fda8a39ac9a3c4491f8dfa3214b2a1b027abf0ac748bf46762",
+          "status": 200,
+          "marker": "openai",
+          "registry": {
+            "name": "openai",
+            "version": "7.32.0",
+            "repository": {
+              "url": "git+https://github.com/openai/openai-node.git",
+              "type": "git"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        },
+        {
+          "url": "https://docs.perplexity.ai/docs/sonar/quickstart",
+          "fetched_url": "https://docs.perplexity.ai/docs/sonar/quickstart",
+          "sha256": "b22acdf689a5a44ae8a9a07215fd31e0be864e8e081ff6ad1733e50aa00d0def",
+          "status": 200,
+          "marker": "OpenAI-compatible API",
+          "registry": {
+            "name": "openai",
+            "version": "7.32.0",
+            "repository": {
+              "url": "git+https://github.com/openai/openai-node.git",
+              "type": "git"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          },
+          "verification": "Primary vendor compatibility guide read via web page extraction; raw HTML digest is a retrieval trace, not a claim of a live inference test."
+        }
+      ]
+    },
+    {
+      "id": "@ai-sdk/openai-compatible-perplexity-documented-chat-protocol",
+      "sdk": "@ai-sdk/openai-compatible",
+      "owners": [
+        "perplexity"
+      ],
+      "types": [
+        "chat"
+      ],
+      "model_protocols": {
+        "llama-3-sonar-large-32k-chat": [
+          "chat"
+        ],
+        "llama-3-sonar-large-32k-online": [
+          "chat"
+        ],
+        "llama-3-sonar-small-32k-chat": [
+          "chat"
+        ],
+        "llama-3-sonar-small-32k-online": [
+          "chat"
+        ],
+        "llama-3.1-sonar-huge-128k-online": [
+          "chat"
+        ],
+        "llama-3.1-sonar-large-128k-online": [
+          "chat"
+        ],
+        "llama-3.1-sonar-small-128k-online": [
+          "chat"
+        ],
+        "pplx-7b-chat": [
+          "chat"
+        ],
+        "pplx-7b-online": [
+          "chat"
+        ],
+        "r1-1776": [
+          "chat"
+        ],
+        "sonar-reasoning": [
+          "chat"
+        ]
+      },
+      "protocol_basis": "Vendor explicitly documents OpenAI-compatible Chat Completions. These model API types come from their official model sources; SDK supports arbitrary model IDs for the same wire protocol. Retired models remain historical API references.",
+      "basis": "vendor-compatibility-guide-and-sdk-protocol",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+          "fetched_url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+          "sha256": "3f9bf1ba772f4124fda670ac1f37794870e059c2732a48004cd6e252fab82fd2",
+          "status": 200,
+          "marker": "@ai-sdk/openai-compatible",
+          "registry": {
+            "name": "@ai-sdk/openai-compatible",
+            "version": "3.0.68",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/openai-compatible"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          }
+        },
+        {
+          "url": "https://docs.perplexity.ai/docs/sonar/quickstart",
+          "fetched_url": "https://docs.perplexity.ai/docs/sonar/quickstart",
+          "sha256": "b22acdf689a5a44ae8a9a07215fd31e0be864e8e081ff6ad1733e50aa00d0def",
+          "status": 200,
+          "marker": "OpenAI-compatible API",
+          "registry": {
+            "name": "@ai-sdk/openai-compatible",
+            "version": "3.0.68",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/openai-compatible"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          },
+          "verification": "Primary vendor compatibility guide read via web page extraction; raw HTML digest is a retrieval trace, not a claim of a live inference test."
+        }
+      ]
+    },
+    {
+      "id": "@ai-sdk/openai-perplexity-documented-chat-protocol",
+      "sdk": "@ai-sdk/openai",
+      "owners": [
+        "perplexity"
+      ],
+      "types": [
+        "chat"
+      ],
+      "model_protocols": {
+        "llama-3-sonar-large-32k-chat": [
+          "chat"
+        ],
+        "llama-3-sonar-large-32k-online": [
+          "chat"
+        ],
+        "llama-3-sonar-small-32k-chat": [
+          "chat"
+        ],
+        "llama-3-sonar-small-32k-online": [
+          "chat"
+        ],
+        "llama-3.1-sonar-huge-128k-online": [
+          "chat"
+        ],
+        "llama-3.1-sonar-large-128k-online": [
+          "chat"
+        ],
+        "llama-3.1-sonar-small-128k-online": [
+          "chat"
+        ],
+        "pplx-7b-chat": [
+          "chat"
+        ],
+        "pplx-7b-online": [
+          "chat"
+        ],
+        "r1-1776": [
+          "chat"
+        ],
+        "sonar-reasoning": [
+          "chat"
+        ]
+      },
+      "protocol_basis": "Vendor explicitly documents OpenAI-compatible Chat Completions. These model API types come from their official model sources; SDK supports arbitrary model IDs for the same wire protocol. Retired models remain historical API references.",
+      "basis": "vendor-compatibility-guide-and-sdk-protocol",
+      "sources": [
+        {
+          "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+          "fetched_url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+          "sha256": "5ac12a1d17998d174f94fe0e193067cc3c46699999544ca0444bbe4aafc88876",
+          "status": 200,
+          "marker": "@ai-sdk/openai",
+          "registry": {
+            "name": "@ai-sdk/openai",
+            "version": "4.0.92",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/openai"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          },
+          "sha256_scope": "first 2000000 bytes of HTTP payload"
+        },
+        {
+          "url": "https://docs.perplexity.ai/docs/sonar/quickstart",
+          "fetched_url": "https://docs.perplexity.ai/docs/sonar/quickstart",
+          "sha256": "b22acdf689a5a44ae8a9a07215fd31e0be864e8e081ff6ad1733e50aa00d0def",
+          "status": 200,
+          "marker": "OpenAI-compatible API",
+          "registry": {
+            "name": "@ai-sdk/openai",
+            "version": "4.0.92",
+            "repository": {
+              "url": "https://github.com/vercel/ai",
+              "type": "git",
+              "directory": "packages/openai"
+            },
+            "status": 200,
+            "license": "Apache-2.0"
+          },
+          "verification": "Primary vendor compatibility guide read via web page extraction; raw HTML digest is a retrieval trace, not a claim of a live inference test."
+        }
+      ]
+    }
+  ]
+}

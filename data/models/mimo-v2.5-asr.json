@@ -8,6 +8,11 @@
     "types": [
       "chat",
       "audio"
+    ],
+    "sdk": [
+      "@ai-sdk/openai",
+      "@ai-sdk/openai-compatible",
+      "openai"
     ]
   },
   "limits": {
@@ -67,6 +72,36 @@
       "title": "模型发布 | Xiaomi MiMo",
       "url": "https://mimo.mi.com/docs/zh-CN/updates/model",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai-compatible (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://mimo.mi.com/docs/en-US/quick-start/usage-guide/text-generation/structured-output",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai-compatible (api.sdk only)",
+      "url": "https://mimo.mi.com/docs/en-US/quick-start/usage-guide/text-generation/structured-output",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://mimo.mi.com/docs/en-US/quick-start/usage-guide/text-generation/structured-output",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

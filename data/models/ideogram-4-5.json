@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "images"
+    ],
+    "sdk": [
+      "@image-sdk/sdk"
     ]
   },
   "limits": {
@@ -75,6 +78,11 @@
       "title": "Ideogram API pricing (dynamic table, lowest text-to-image tier)",
       "url": "https://ideogram.ai/pricing/?pricing_tab=api",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @image-sdk/sdk (api.sdk only)",
+      "url": "https://github.com/Adarsh-Me/Image-SDK",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

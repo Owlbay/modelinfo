@@ -8,6 +8,13 @@
     "types": [
       "chat",
       "messages"
+    ],
+    "sdk": [
+      "@ai-sdk/anthropic",
+      "@ai-sdk/openai",
+      "@ai-sdk/openai-compatible",
+      "@anthropic-ai/sdk",
+      "openai"
     ]
   },
   "limits": {
@@ -68,6 +75,46 @@
       "title": "LongCat-2.5-Preview Pricing | LongCat API Docs",
       "url": "https://longcat.chat/platform/docs/pricing/longcat-2.5",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai-compatible (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @anthropic-ai/sdk (api.sdk only)",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/anthropic (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/anthropic",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://longcat.chat/platform/docs/APIDocs.html",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai-compatible (api.sdk only)",
+      "url": "https://longcat.chat/platform/docs/APIDocs.html",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://longcat.chat/platform/docs/APIDocs.html",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

@@ -7,6 +7,10 @@
   "api": {
     "types": [
       "video"
+    ],
+    "sdk": [
+      "@ai-sdk/alibaba",
+      "dashscope-sdk-official"
     ]
   },
   "limits": {
@@ -68,6 +72,16 @@
       "title": "Alibaba Cloud Model Studio API Reference — happyoyster-directing-create-world-api-reference",
       "url": "https://www.alibabacloud.com/help/en/model-studio/happyoyster-directing-create-world-api-reference",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @ai-sdk/alibaba (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/alibaba",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — dashscope-sdk-official (api.sdk only)",
+      "url": "https://github.com/dashscope/dashscope-sdk-nodejs",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

@@ -7,6 +7,10 @@
   "api": {
     "types": [
       "chat"
+    ],
+    "sdk": [
+      "@ai-sdk/amazon-bedrock",
+      "@aws-sdk/client-bedrock-runtime"
     ]
   },
   "limits": {
@@ -84,6 +88,21 @@
       "title": "Amazon Bedrock Pricing",
       "url": "https://aws.amazon.com/bedrock/pricing/",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "models.dev — SDK npm mapping (api.sdk only)",
+      "url": "https://models.dev/api.json",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @aws-sdk/client-bedrock-runtime (api.sdk only)",
+      "url": "https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/bedrock-runtime/",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/amazon-bedrock (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/amazon-bedrock",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

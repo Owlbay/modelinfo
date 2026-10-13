@@ -67,7 +67,7 @@ const groups: Array<{ title: string; rows: Array<[string, Value]> }> = [
       [f.output, { kind: 'mods', v: m.modalities.output }],
     ],
   },
-  { title: g.api, rows: [[f.types, { kind: 'tags', v: m.api.types }]] },
+  { title: g.api, rows: [[f.types, { kind: 'tags', v: m.api.types }], [f.sdk, { kind: 'tags', v: m.api.sdk }]] },
   {
     title: g.reasoning,
     rows: [
@@ -273,6 +273,7 @@ const verified = tm.verified(m.info.verified_at ?? '—');
   /* 接口类型、能力、思考等级：小方框标签，与模态图标同一描边 */
   .tags { display: flex; flex-wrap: wrap; gap: var(--sp-1); }
   .tag {
+    max-width: 100%;
     display: inline-flex;
     align-items: center;
     min-height: 20px;

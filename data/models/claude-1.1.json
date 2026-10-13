@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "completions"
+    ],
+    "sdk": [
+      "@anthropic-ai/sdk"
     ]
   },
   "limits": {
@@ -42,6 +45,11 @@
       "title": "Model deprecations | Claude Platform Docs",
       "url": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @anthropic-ai/sdk (api.sdk only)",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

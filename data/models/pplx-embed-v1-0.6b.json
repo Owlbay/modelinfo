@@ -7,6 +7,12 @@
   "api": {
     "types": [
       "embeddings"
+    ],
+    "sdk": [
+      "@ai-sdk/openai",
+      "@ai-sdk/openai-compatible",
+      "@ai-sdk/perplexity",
+      "openai"
     ]
   },
   "limits": {
@@ -74,6 +80,26 @@
       "title": "Introducing pplx-embed | Perplexity API Platform Forum",
       "url": "https://community.perplexity.ai/t/introducing-pplx-embed-state-of-the-art-embedding-models-for-web-scale-retrieval/4732",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @ai-sdk/perplexity (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/perplexity",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai-compatible (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

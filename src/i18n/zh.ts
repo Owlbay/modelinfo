@@ -96,6 +96,7 @@ export const zh = {
     keyStats: { context: '上下文', output: '最大输出', inputPrice: '输入价', outputPrice: '输出价', released: '发布日期' },
     fields: {
       types: '接口类型',
+      sdk: 'SDK',
       context: '上下文',
       maxInput: '最大输入',
       maxOutput: '最大输出',
@@ -119,7 +120,7 @@ export const zh = {
     providers: (n: number) => `${n} 个 Provider`,
     json: 'JSON',
     standard: '标准格式',
-    sources: '官方来源',
+    sources: '数据来源',
   },
   compare: {
     title: '模型比较',
@@ -238,6 +239,7 @@ export const zh = {
       created: '发布时间，Unix 秒',
       owned_by: '模型厂商，不是转售商或网关',
       api: 'chat · messages · responses · generate · batch · embeddings 等',
+      sdk: '支持模型接口的 SDK npm 包名数组（可含导出子路径）；可同时包含 AI SDK 适配器和厂商 SDK，未知为 []。',
       context: '输入与输出合计上限（Token）',
       input: '官方单独声明的最大输入',
       output: '最大输出',
@@ -254,7 +256,7 @@ export const zh = {
     sdkComment: '# OpenAI SDK 会请求 {base_url}/models',
     dataNotes: [
       '价格取模型厂商第一方报价；不同区域与转售平台价格可能不同，以 Provider 账单为准。',
-      '每个模型页列出全部官方来源与核验日期。',
+      '每个模型页列出模型参数和 SDK 的来源与获取日期。',
       '数据维护在 GitHub 仓库的 data/models 目录，欢迎提交更正：',
     ],
   },

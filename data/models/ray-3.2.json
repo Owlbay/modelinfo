@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "video"
+    ],
+    "sdk": [
+      "luma-agents"
     ]
   },
   "limits": {
@@ -76,6 +79,11 @@
       "title": "Luma Introduces Ray3.2 Model and API",
       "url": "https://lumalabs.ai/news/introducing-ray-3-2",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — luma-agents (api.sdk only)",
+      "url": "https://github.com/lumalabs/luma-agents-typescript",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

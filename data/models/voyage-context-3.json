@@ -7,6 +7,10 @@
   "api": {
     "types": [
       "embeddings"
+    ],
+    "sdk": [
+      "@ai-sdk/voyage",
+      "voyageai"
     ]
   },
   "limits": {
@@ -64,6 +68,16 @@
       "title": "Voyage AI Blog: voyage-context-3",
       "url": "https://blog.voyageai.com/2025/07/23/voyage-context-3",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — voyageai (api.sdk only)",
+      "url": "https://github.com/voyage-ai/typescript-sdk",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/voyage (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/voyage",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

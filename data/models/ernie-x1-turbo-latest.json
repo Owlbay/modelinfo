@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "chat"
+    ],
+    "sdk": [
+      "@baiducloud/qianfan"
     ]
   },
   "limits": {
@@ -54,6 +57,11 @@
       "title": "存档 模型列表 | 百度千帆（原网址 https://cloud.baidu.com/doc/qianfan/s/rmh4stp0j）",
       "url": "https://web.archive.org/web/20251210233646/https://cloud.baidu.com/doc/qianfan/s/rmh4stp0j",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @baiducloud/qianfan (api.sdk only)",
+      "url": "https://github.com/baidubce/bce-qianfan-sdk/tree/main/javascript",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

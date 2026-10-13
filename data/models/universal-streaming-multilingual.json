@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "realtime"
+    ],
+    "sdk": [
+      "assemblyai"
     ]
   },
   "limits": {
@@ -64,6 +67,11 @@
       "title": "Official model release announcement",
       "url": "https://www.assemblyai.com/blog/introducing-multilingual-universal-streaming",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — assemblyai (api.sdk only)",
+      "url": "https://github.com/AssemblyAI/assemblyai-node-sdk",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

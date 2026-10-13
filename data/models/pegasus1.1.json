@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "generate"
+    ],
+    "sdk": [
+      "twelvelabs-js"
     ]
   },
   "limits": {
@@ -48,6 +51,11 @@
       "title": "Release notes | TwelveLabs Docs",
       "url": "https://docs.twelvelabs.io/docs/get-started/release-notes",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — twelvelabs-js (api.sdk only)",
+      "url": "https://github.com/twelvelabs-io/twelvelabs-js",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

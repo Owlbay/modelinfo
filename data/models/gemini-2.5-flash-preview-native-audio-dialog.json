@@ -7,6 +7,10 @@
   "api": {
     "types": [
       "realtime"
+    ],
+    "sdk": [
+      "@ai-sdk/google",
+      "@google/genai"
     ]
   },
   "limits": {
@@ -53,6 +57,16 @@
       "title": "Official API reference",
       "url": "https://ai.google.dev/api/live",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @google/genai (api.sdk only)",
+      "url": "https://github.com/googleapis/js-genai",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/google (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/google",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

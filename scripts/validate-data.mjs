@@ -49,7 +49,8 @@ for (const file of files) {
   if (!/^[a-z0-9-]+$/.test(m.owned_by ?? '')) e('owned_by 只能是小写字母数字 -');
   else if (!VENDORS.has(m.owned_by)) e(`owned_by "${m.owned_by}" 未在 data/vendors/ 登记（需新增 data/vendors/${m.owned_by}.json）`);
   if (!m.name) e('name 必填');
-  if (!Array.isArray(m.api?.types) || !m.api.types.length || m.api.types.some((t) => !API.includes(t)) || Object.keys(m.api).join() !== 'types') e(`api 只含 types，取值 ${API.join('|')}`);
+  if (!Array.isArray(m.api?.types) || !m.api.types.length || m.api.types.some((t) => !API.includes(t)) || Object.keys(m.api).join() !== 'types,sdk') e(`api 按顺序包含 types、sdk；types 取值 ${API.join('|')}`);
+  if (!Array.isArray(m.api?.sdk) || m.api.sdk.some((sdk) => typeof sdk !== 'string' || !/^(?:@[a-z0-9._-]+\/)?[a-z0-9._-]+(?:\/[a-z0-9._-]+)*$/.test(sdk)) || new Set(m.api.sdk).size !== m.api.sdk.length) e('api.sdk 为不重复的 SDK npm 包名数组（可含导出子路径），未知为 []');
   const tok = (v) => v === null || (Number.isInteger(v) && v > 0);
   if (!m.limits || Object.keys(m.limits).join() !== 'context,input,output' || !['context', 'input', 'output'].every((k) => tok(m.limits[k]))) e('limits 为 {context,input,output}，正整数或 null');
   const checkLimitRelations = (limits, where) => {

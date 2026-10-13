@@ -7,6 +7,10 @@
   "api": {
     "types": [
       "realtime"
+    ],
+    "sdk": [
+      "@ai-sdk/openai",
+      "openai"
     ]
   },
   "limits": {
@@ -64,6 +68,16 @@
       "title": "存档：OpenAI o1 and new tools for developers（原网址 https://openai.com/index/o1-and-new-tools-for-developers/）",
       "url": "https://web.archive.org/web/20241219042329/https://openai.com/index/o1-and-new-tools-for-developers/",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

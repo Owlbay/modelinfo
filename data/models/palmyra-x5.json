@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "chat"
+    ],
+    "sdk": [
+      "writer-sdk"
     ]
   },
   "limits": {
@@ -79,6 +82,11 @@
       "title": "Palmyra X5 press release | WRITER",
       "url": "https://writer.com/blog/long-context-palmyra-x5-press-release/",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — writer-sdk (api.sdk only)",
+      "url": "https://github.com/writer/writer-node",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

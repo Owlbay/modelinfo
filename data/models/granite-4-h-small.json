@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "chat"
+    ],
+    "sdk": [
+      "@ibm-cloud/watsonx-ai"
     ]
   },
   "limits": {
@@ -73,6 +76,11 @@
       "title": "IBM Granite 4.0 announcement - IBM",
       "url": "https://www.ibm.com/new/announcements/ibm-granite-4-0-hyper-efficient-high-performance-hybrid-models",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @ibm-cloud/watsonx-ai (api.sdk only)",
+      "url": "https://github.com/IBM/watsonx-ai-node-sdk",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

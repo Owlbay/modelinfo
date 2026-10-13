@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "chat"
+    ],
+    "sdk": [
+      "@baiducloud/qianfan"
     ]
   },
   "limits": {
@@ -54,6 +57,11 @@
       "title": "模型更新记录 | 百度千帆",
       "url": "https://cloud.baidu.com/doc/qianfan/s/Kmh4stnjp",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @baiducloud/qianfan (api.sdk only)",
+      "url": "https://github.com/baidubce/bce-qianfan-sdk/tree/main/javascript",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

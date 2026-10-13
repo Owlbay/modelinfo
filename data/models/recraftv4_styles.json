@@ -7,6 +7,12 @@
   "api": {
     "types": [
       "images"
+    ],
+    "sdk": [
+      "@ai-sdk/openai",
+      "@ai-sdk/openai-compatible",
+      "@image-sdk/sdk",
+      "openai"
     ]
   },
   "limits": {
@@ -70,6 +76,26 @@
       "title": "Official release announcement",
       "url": "https://www.recraft.ai/blog/recraft-v4-styles",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai-compatible (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @image-sdk/sdk (api.sdk only)",
+      "url": "https://github.com/Adarsh-Me/Image-SDK",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

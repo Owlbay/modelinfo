@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "messages"
+    ],
+    "sdk": [
+      "@anthropic-ai/sdk"
     ]
   },
   "limits": {
@@ -62,6 +65,11 @@
       "title": "Introducing the next generation of Claude | Anthropic News",
       "url": "https://www.anthropic.com/news/claude-3-family",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @anthropic-ai/sdk (api.sdk only)",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

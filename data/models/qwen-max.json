@@ -7,6 +7,13 @@
   "api": {
     "types": [
       "chat"
+    ],
+    "sdk": [
+      "@ai-sdk/alibaba",
+      "@ai-sdk/openai",
+      "@ai-sdk/openai-compatible",
+      "dashscope-sdk-official",
+      "openai"
     ]
   },
   "limits": {
@@ -65,6 +72,31 @@
       "title": "Model Studio model pricing | Alibaba Cloud",
       "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
       "retrieved_at": "2026-10-10"
+    },
+    {
+      "title": "SDK support — @ai-sdk/alibaba (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/alibaba",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai-compatible (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/openai-compatible-providers",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — dashscope-sdk-official (api.sdk only)",
+      "url": "https://github.com/dashscope/dashscope-sdk-nodejs",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

@@ -8,6 +8,9 @@
     "types": [
       "moderation",
       "batch"
+    ],
+    "sdk": [
+      "openai"
     ]
   },
   "limits": {
@@ -75,6 +78,11 @@
       "title": "Models | OpenAI API",
       "url": "https://developers.openai.com/api/docs/models/all",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

@@ -8,6 +8,9 @@
     "types": [
       "messages",
       "batch"
+    ],
+    "sdk": [
+      "@anthropic-ai/sdk"
     ]
   },
   "limits": {
@@ -72,6 +75,11 @@
       "title": "存档：官方模型发布/价格文档（原网址 https://docs.anthropic.com/en/release-notes/api）",
       "url": "https://web.archive.org/web/20241201015946/https://docs.anthropic.com/en/release-notes/api",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @anthropic-ai/sdk (api.sdk only)",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

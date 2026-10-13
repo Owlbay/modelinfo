@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "audio"
+    ],
+    "sdk": [
+      "dashscope-sdk-official"
     ]
   },
   "limits": {
@@ -29,7 +32,7 @@
   "pricing": {
     "currency": "CNY",
     "unit": "second",
-    "input": 8e-05,
+    "input": 0.00008,
     "output": null,
     "cache_read": null,
     "cache_write": null
@@ -64,6 +67,11 @@
       "title": "Alibaba Cloud Model Studio API Reference — paraformer-recorded-speech-recognition-restful-api",
       "url": "https://www.alibabacloud.com/help/en/model-studio/paraformer-recorded-speech-recognition-restful-api",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — dashscope-sdk-official (api.sdk only)",
+      "url": "https://github.com/dashscope/dashscope-sdk-nodejs",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

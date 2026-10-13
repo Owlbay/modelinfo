@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "rerank"
+    ],
+    "sdk": [
+      "contextual-client"
     ]
   },
   "limits": {
@@ -64,6 +67,11 @@
       "title": "Open-Sourcing Reranker v2 | Contextual AI",
       "url": "https://contextual.ai/blog/rerank-v2",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — contextual-client (api.sdk only)",
+      "url": "https://github.com/ContextualAI/contextual-client-node",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

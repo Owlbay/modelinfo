@@ -7,6 +7,9 @@
   "api": {
     "types": [
       "video"
+    ],
+    "sdk": [
+      "@runwayml/sdk"
     ]
   },
   "limits": {
@@ -64,6 +67,11 @@
       "title": "存档：Pricing | Runway API（原网址 https://docs.dev.runwayml.com/guides/pricing/）",
       "url": "https://web.archive.org/web/20260420145731/https://docs.dev.runwayml.com/guides/pricing/",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — @runwayml/sdk (api.sdk only)",
+      "url": "https://github.com/runwayml/sdk-node",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [

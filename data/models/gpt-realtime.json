@@ -7,6 +7,10 @@
   "api": {
     "types": [
       "realtime"
+    ],
+    "sdk": [
+      "@ai-sdk/openai",
+      "openai"
     ]
   },
   "limits": {
@@ -65,6 +69,16 @@
       "title": "Official model release / pricing documentation",
       "url": "https://openai.com/index/introducing-gpt-realtime/",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "SDK support — openai (api.sdk only)",
+      "url": "https://github.com/openai/openai-node",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "SDK support — @ai-sdk/openai (api.sdk only)",
+      "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
+      "retrieved_at": "2026-10-13"
     }
   ],
   "providers": [
