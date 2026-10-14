@@ -1,0 +1,2518 @@
+{
+  "generated_at": "2026-10-14T02:40:54.963Z",
+  "source_directory": "data/models",
+  "scope": "Local model records only. Null is not an error: values may be unpublished, inapplicable, mixed-price, historical, or conflicting.",
+  "modalities": "modalities.input and modalities.output are required non-empty arrays, so they are not listed as null gaps.",
+  "all": {
+    "models": 1299,
+    "statuses": {
+      "preview": 34,
+      "active": 713,
+      "deprecated": 79,
+      "retired": 473
+    },
+    "null_fields": {
+      "limits.context": 715,
+      "limits.input": 1033,
+      "limits.output": 900,
+      "pricing": 377,
+      "reasoning.supported": 801,
+      "info.release_date": 326,
+      "info.knowledge_cutoff": 1142,
+      "info.description": 177,
+      "info.docs": 16,
+      "info.verified_at": 0
+    },
+    "pricing_components_null_when_priced": {
+      "input": 180,
+      "output": 201,
+      "cache_read": 682,
+      "cache_write": 870
+    },
+    "features_empty": 805,
+    "reasoning_true_efforts_empty": 213,
+    "sources_empty": 0,
+    "providers_empty": 15
+  },
+  "callable": {
+    "models": 826,
+    "statuses": {
+      "preview": 34,
+      "active": 713,
+      "deprecated": 79
+    },
+    "null_fields": {
+      "limits.context": 440,
+      "limits.input": 639,
+      "limits.output": 553,
+      "pricing": 168,
+      "reasoning.supported": 456,
+      "info.release_date": 181,
+      "info.knowledge_cutoff": 720,
+      "info.description": 22,
+      "info.docs": 0,
+      "info.verified_at": 0
+    },
+    "pricing_components_null_when_priced": {
+      "input": 152,
+      "output": 189,
+      "cache_read": 478,
+      "cache_write": 618
+    },
+    "features_empty": 469,
+    "reasoning_true_efforts_empty": 131,
+    "sources_empty": 0,
+    "providers_empty": 0
+  },
+  "vendors": {
+    "ai21": {
+      "models": 7,
+      "statuses": {
+        "active": 2,
+        "retired": 5
+      },
+      "null_fields": {
+        "limits.context": 1,
+        "limits.input": 7,
+        "limits.output": 5,
+        "pricing": 0,
+        "reasoning.supported": 5,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 3,
+        "info.description": 5,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 7,
+        "cache_write": 7
+      },
+      "features_empty": 5,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 0,
+        "limits.input": 2,
+        "limits.output": 0,
+        "pricing": 0,
+        "reasoning.supported": 0,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 0,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "aisingapore": {
+      "models": 4,
+      "statuses": {
+        "active": 4
+      },
+      "null_fields": {
+        "limits.context": 0,
+        "limits.input": 4,
+        "limits.output": 4,
+        "pricing": 4,
+        "reasoning.supported": 3,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 4,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 0
+      },
+      "features_empty": 3,
+      "reasoning_true_efforts_empty": 1,
+      "callable_null_fields": {
+        "limits.context": 0,
+        "limits.input": 4,
+        "limits.output": 4,
+        "pricing": 4,
+        "reasoning.supported": 3,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 4,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "alibaba": {
+      "models": 211,
+      "statuses": {
+        "active": 134,
+        "retired": 77
+      },
+      "null_fields": {
+        "limits.context": 111,
+        "limits.input": 105,
+        "limits.output": 116,
+        "pricing": 31,
+        "reasoning.supported": 56,
+        "info.release_date": 19,
+        "info.knowledge_cutoff": 211,
+        "info.description": 51,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 46,
+        "output": 33,
+        "cache_read": 165,
+        "cache_write": 166
+      },
+      "features_empty": 133,
+      "reasoning_true_efforts_empty": 45,
+      "callable_null_fields": {
+        "limits.context": 85,
+        "limits.input": 79,
+        "limits.output": 91,
+        "pricing": 15,
+        "reasoning.supported": 23,
+        "info.release_date": 11,
+        "info.knowledge_cutoff": 134,
+        "info.description": 15,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "amazon": {
+      "models": 12,
+      "statuses": {
+        "active": 9,
+        "retired": 3
+      },
+      "null_fields": {
+        "limits.context": 7,
+        "limits.input": 12,
+        "limits.output": 7,
+        "pricing": 1,
+        "reasoning.supported": 4,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 8,
+        "info.description": 3,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 2,
+        "output": 4,
+        "cache_read": 7,
+        "cache_write": 11
+      },
+      "features_empty": 7,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 4,
+        "limits.input": 9,
+        "limits.output": 4,
+        "pricing": 0,
+        "reasoning.supported": 1,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 5,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "ant": {
+      "models": 10,
+      "statuses": {
+        "active": 6,
+        "deprecated": 2,
+        "retired": 2
+      },
+      "null_fields": {
+        "limits.context": 5,
+        "limits.input": 10,
+        "limits.output": 10,
+        "pricing": 5,
+        "reasoning.supported": 4,
+        "info.release_date": 1,
+        "info.knowledge_cutoff": 10,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 5
+      },
+      "features_empty": 4,
+      "reasoning_true_efforts_empty": 5,
+      "callable_null_fields": {
+        "limits.context": 3,
+        "limits.input": 8,
+        "limits.output": 8,
+        "pricing": 3,
+        "reasoning.supported": 3,
+        "info.release_date": 1,
+        "info.knowledge_cutoff": 8,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "anthropic": {
+      "models": 33,
+      "statuses": {
+        "active": 13,
+        "deprecated": 1,
+        "retired": 19
+      },
+      "null_fields": {
+        "limits.context": 6,
+        "limits.input": 19,
+        "limits.output": 6,
+        "pricing": 5,
+        "reasoning.supported": 10,
+        "info.release_date": 7,
+        "info.knowledge_cutoff": 10,
+        "info.description": 24,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 5,
+        "cache_write": 5
+      },
+      "features_empty": 10,
+      "reasoning_true_efforts_empty": 7,
+      "callable_null_fields": {
+        "limits.context": 0,
+        "limits.input": 0,
+        "limits.output": 0,
+        "pricing": 0,
+        "reasoning.supported": 0,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 0,
+        "info.description": 5,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "assemblyai": {
+      "models": 5,
+      "statuses": {
+        "active": 5
+      },
+      "null_fields": {
+        "limits.context": 5,
+        "limits.input": 5,
+        "limits.output": 5,
+        "pricing": 0,
+        "reasoning.supported": 5,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 5,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 5,
+        "cache_read": 5,
+        "cache_write": 5
+      },
+      "features_empty": 5,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 5,
+        "limits.input": 5,
+        "limits.output": 5,
+        "pricing": 0,
+        "reasoning.supported": 5,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 5,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "baichuan": {
+      "models": 3,
+      "statuses": {
+        "active": 2,
+        "retired": 1
+      },
+      "null_fields": {
+        "limits.context": 1,
+        "limits.input": 3,
+        "limits.output": 1,
+        "pricing": 0,
+        "reasoning.supported": 1,
+        "info.release_date": 3,
+        "info.knowledge_cutoff": 3,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 3,
+        "cache_write": 3
+      },
+      "features_empty": 1,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 0,
+        "limits.input": 2,
+        "limits.output": 0,
+        "pricing": 0,
+        "reasoning.supported": 0,
+        "info.release_date": 2,
+        "info.knowledge_cutoff": 2,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "baidu": {
+      "models": 84,
+      "statuses": {
+        "preview": 1,
+        "active": 6,
+        "deprecated": 8,
+        "retired": 69
+      },
+      "null_fields": {
+        "limits.context": 70,
+        "limits.input": 71,
+        "limits.output": 71,
+        "pricing": 59,
+        "reasoning.supported": 75,
+        "info.release_date": 24,
+        "info.knowledge_cutoff": 84,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 1,
+        "output": 3,
+        "cache_read": 22,
+        "cache_write": 25
+      },
+      "features_empty": 72,
+      "reasoning_true_efforts_empty": 7,
+      "callable_null_fields": {
+        "limits.context": 3,
+        "limits.input": 4,
+        "limits.output": 4,
+        "pricing": 0,
+        "reasoning.supported": 9,
+        "info.release_date": 5,
+        "info.knowledge_cutoff": 15,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "black-forest-labs": {
+      "models": 13,
+      "statuses": {
+        "preview": 1,
+        "active": 12
+      },
+      "null_fields": {
+        "limits.context": 13,
+        "limits.input": 13,
+        "limits.output": 13,
+        "pricing": 1,
+        "reasoning.supported": 13,
+        "info.release_date": 1,
+        "info.knowledge_cutoff": 13,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 12,
+        "output": 0,
+        "cache_read": 12,
+        "cache_write": 12
+      },
+      "features_empty": 13,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 13,
+        "limits.input": 13,
+        "limits.output": 13,
+        "pricing": 1,
+        "reasoning.supported": 13,
+        "info.release_date": 1,
+        "info.knowledge_cutoff": 13,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "bytedance": {
+      "models": 63,
+      "statuses": {
+        "active": 16,
+        "deprecated": 7,
+        "retired": 40
+      },
+      "null_fields": {
+        "limits.context": 52,
+        "limits.input": 53,
+        "limits.output": 53,
+        "pricing": 23,
+        "reasoning.supported": 36,
+        "info.release_date": 57,
+        "info.knowledge_cutoff": 63,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 15,
+        "output": 1,
+        "cache_read": 23,
+        "cache_write": 40
+      },
+      "features_empty": 53,
+      "reasoning_true_efforts_empty": 4,
+      "callable_null_fields": {
+        "limits.context": 12,
+        "limits.input": 13,
+        "limits.output": 13,
+        "pricing": 0,
+        "reasoning.supported": 0,
+        "info.release_date": 17,
+        "info.knowledge_cutoff": 23,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "cartesia": {
+      "models": 7,
+      "statuses": {
+        "active": 4,
+        "deprecated": 2,
+        "retired": 1
+      },
+      "null_fields": {
+        "limits.context": 7,
+        "limits.input": 7,
+        "limits.output": 7,
+        "pricing": 7,
+        "reasoning.supported": 7,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 7,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 0
+      },
+      "features_empty": 7,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 6,
+        "limits.input": 6,
+        "limits.output": 6,
+        "pricing": 6,
+        "reasoning.supported": 6,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 6,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "cohere": {
+      "models": 42,
+      "statuses": {
+        "active": 31,
+        "retired": 11
+      },
+      "null_fields": {
+        "limits.context": 2,
+        "limits.input": 42,
+        "limits.output": 20,
+        "pricing": 14,
+        "reasoning.supported": 40,
+        "info.release_date": 7,
+        "info.knowledge_cutoff": 34,
+        "info.description": 11,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 17,
+        "cache_read": 28,
+        "cache_write": 28
+      },
+      "features_empty": 34,
+      "reasoning_true_efforts_empty": 2,
+      "callable_null_fields": {
+        "limits.context": 2,
+        "limits.input": 31,
+        "limits.output": 15,
+        "pricing": 13,
+        "reasoning.supported": 29,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 23,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "contextual-ai": {
+      "models": 3,
+      "statuses": {
+        "active": 3
+      },
+      "null_fields": {
+        "limits.context": 0,
+        "limits.input": 3,
+        "limits.output": 3,
+        "pricing": 1,
+        "reasoning.supported": 3,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 3,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 2,
+        "cache_read": 2,
+        "cache_write": 2
+      },
+      "features_empty": 3,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 0,
+        "limits.input": 3,
+        "limits.output": 3,
+        "pricing": 1,
+        "reasoning.supported": 3,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 3,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "deepgram": {
+      "models": 17,
+      "statuses": {
+        "active": 17
+      },
+      "null_fields": {
+        "limits.context": 17,
+        "limits.input": 17,
+        "limits.output": 17,
+        "pricing": 11,
+        "reasoning.supported": 17,
+        "info.release_date": 11,
+        "info.knowledge_cutoff": 17,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 6,
+        "cache_read": 6,
+        "cache_write": 6
+      },
+      "features_empty": 17,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 17,
+        "limits.input": 17,
+        "limits.output": 17,
+        "pricing": 11,
+        "reasoning.supported": 17,
+        "info.release_date": 11,
+        "info.knowledge_cutoff": 17,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "deepseek": {
+      "models": 4,
+      "statuses": {
+        "active": 2,
+        "retired": 2
+      },
+      "null_fields": {
+        "limits.context": 0,
+        "limits.input": 4,
+        "limits.output": 0,
+        "pricing": 0,
+        "reasoning.supported": 0,
+        "info.release_date": 1,
+        "info.knowledge_cutoff": 4,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 4
+      },
+      "features_empty": 0,
+      "reasoning_true_efforts_empty": 1,
+      "callable_null_fields": {
+        "limits.context": 0,
+        "limits.input": 2,
+        "limits.output": 0,
+        "pricing": 0,
+        "reasoning.supported": 0,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 2,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "elevenlabs": {
+      "models": 18,
+      "statuses": {
+        "active": 18
+      },
+      "null_fields": {
+        "limits.context": 18,
+        "limits.input": 18,
+        "limits.output": 18,
+        "pricing": 2,
+        "reasoning.supported": 18,
+        "info.release_date": 4,
+        "info.knowledge_cutoff": 18,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 3,
+        "output": 13,
+        "cache_read": 16,
+        "cache_write": 16
+      },
+      "features_empty": 15,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 18,
+        "limits.input": 18,
+        "limits.output": 18,
+        "pricing": 2,
+        "reasoning.supported": 18,
+        "info.release_date": 4,
+        "info.knowledge_cutoff": 18,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "google": {
+      "models": 94,
+      "statuses": {
+        "preview": 11,
+        "active": 20,
+        "deprecated": 16,
+        "retired": 47
+      },
+      "null_fields": {
+        "limits.context": 62,
+        "limits.input": 30,
+        "limits.output": 46,
+        "pricing": 33,
+        "reasoning.supported": 29,
+        "info.release_date": 5,
+        "info.knowledge_cutoff": 65,
+        "info.description": 43,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 15,
+        "output": 2,
+        "cache_read": 43,
+        "cache_write": 61
+      },
+      "features_empty": 48,
+      "reasoning_true_efforts_empty": 25,
+      "callable_null_fields": {
+        "limits.context": 27,
+        "limits.input": 7,
+        "limits.output": 15,
+        "pricing": 13,
+        "reasoning.supported": 7,
+        "info.release_date": 1,
+        "info.knowledge_cutoff": 29,
+        "info.description": 2,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "huawei": {
+      "models": 2,
+      "statuses": {
+        "active": 2
+      },
+      "null_fields": {
+        "limits.context": 0,
+        "limits.input": 0,
+        "limits.output": 0,
+        "pricing": 0,
+        "reasoning.supported": 0,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 2,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 2
+      },
+      "features_empty": 0,
+      "reasoning_true_efforts_empty": 2,
+      "callable_null_fields": {
+        "limits.context": 0,
+        "limits.input": 0,
+        "limits.output": 0,
+        "pricing": 0,
+        "reasoning.supported": 0,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 2,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "ibm": {
+      "models": 11,
+      "statuses": {
+        "active": 2,
+        "retired": 9
+      },
+      "null_fields": {
+        "limits.context": 9,
+        "limits.input": 10,
+        "limits.output": 11,
+        "pricing": 4,
+        "reasoning.supported": 11,
+        "info.release_date": 2,
+        "info.knowledge_cutoff": 11,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 1,
+        "cache_read": 7,
+        "cache_write": 7
+      },
+      "features_empty": 10,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 0,
+        "limits.input": 1,
+        "limits.output": 2,
+        "pricing": 0,
+        "reasoning.supported": 2,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 2,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "ideogram": {
+      "models": 4,
+      "statuses": {
+        "active": 4
+      },
+      "null_fields": {
+        "limits.context": 4,
+        "limits.input": 4,
+        "limits.output": 4,
+        "pricing": 0,
+        "reasoning.supported": 4,
+        "info.release_date": 2,
+        "info.knowledge_cutoff": 4,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 4,
+        "output": 0,
+        "cache_read": 4,
+        "cache_write": 4
+      },
+      "features_empty": 4,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 4,
+        "limits.input": 4,
+        "limits.output": 4,
+        "pricing": 0,
+        "reasoning.supported": 4,
+        "info.release_date": 2,
+        "info.knowledge_cutoff": 4,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "iflytek": {
+      "models": 9,
+      "statuses": {
+        "active": 9
+      },
+      "null_fields": {
+        "limits.context": 5,
+        "limits.input": 4,
+        "limits.output": 5,
+        "pricing": 5,
+        "reasoning.supported": 7,
+        "info.release_date": 6,
+        "info.knowledge_cutoff": 9,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 4,
+        "cache_write": 4
+      },
+      "features_empty": 4,
+      "reasoning_true_efforts_empty": 1,
+      "callable_null_fields": {
+        "limits.context": 5,
+        "limits.input": 4,
+        "limits.output": 5,
+        "pricing": 5,
+        "reasoning.supported": 7,
+        "info.release_date": 6,
+        "info.knowledge_cutoff": 9,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "inception": {
+      "models": 3,
+      "statuses": {
+        "active": 3
+      },
+      "null_fields": {
+        "limits.context": 0,
+        "limits.input": 3,
+        "limits.output": 0,
+        "pricing": 0,
+        "reasoning.supported": 1,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 3,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 3
+      },
+      "features_empty": 0,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 0,
+        "limits.input": 3,
+        "limits.output": 0,
+        "pricing": 0,
+        "reasoning.supported": 1,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 3,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "jina": {
+      "models": 16,
+      "statuses": {
+        "active": 14,
+        "deprecated": 2
+      },
+      "null_fields": {
+        "limits.context": 1,
+        "limits.input": 6,
+        "limits.output": 15,
+        "pricing": 0,
+        "reasoning.supported": 16,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 16,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 15,
+        "cache_read": 16,
+        "cache_write": 16
+      },
+      "features_empty": 13,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 1,
+        "limits.input": 6,
+        "limits.output": 15,
+        "pricing": 0,
+        "reasoning.supported": 16,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 16,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "kuaishou": {
+      "models": 19,
+      "statuses": {
+        "active": 9,
+        "retired": 10
+      },
+      "null_fields": {
+        "limits.context": 19,
+        "limits.input": 19,
+        "limits.output": 19,
+        "pricing": 12,
+        "reasoning.supported": 18,
+        "info.release_date": 5,
+        "info.knowledge_cutoff": 19,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 6,
+        "output": 0,
+        "cache_read": 6,
+        "cache_write": 7
+      },
+      "features_empty": 18,
+      "reasoning_true_efforts_empty": 1,
+      "callable_null_fields": {
+        "limits.context": 9,
+        "limits.input": 9,
+        "limits.output": 9,
+        "pricing": 2,
+        "reasoning.supported": 8,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 9,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "leonardo": {
+      "models": 2,
+      "statuses": {
+        "active": 2
+      },
+      "null_fields": {
+        "limits.context": 2,
+        "limits.input": 2,
+        "limits.output": 2,
+        "pricing": 2,
+        "reasoning.supported": 2,
+        "info.release_date": 1,
+        "info.knowledge_cutoff": 2,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 0
+      },
+      "features_empty": 2,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 2,
+        "limits.input": 2,
+        "limits.output": 2,
+        "pricing": 2,
+        "reasoning.supported": 2,
+        "info.release_date": 1,
+        "info.knowledge_cutoff": 2,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "lightricks": {
+      "models": 6,
+      "statuses": {
+        "active": 4,
+        "retired": 2
+      },
+      "null_fields": {
+        "limits.context": 6,
+        "limits.input": 6,
+        "limits.output": 6,
+        "pricing": 2,
+        "reasoning.supported": 6,
+        "info.release_date": 2,
+        "info.knowledge_cutoff": 6,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 4,
+        "output": 0,
+        "cache_read": 4,
+        "cache_write": 4
+      },
+      "features_empty": 6,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 4,
+        "limits.input": 4,
+        "limits.output": 4,
+        "pricing": 0,
+        "reasoning.supported": 4,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 4,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "luma": {
+      "models": 3,
+      "statuses": {
+        "active": 3
+      },
+      "null_fields": {
+        "limits.context": 3,
+        "limits.input": 3,
+        "limits.output": 3,
+        "pricing": 0,
+        "reasoning.supported": 3,
+        "info.release_date": 2,
+        "info.knowledge_cutoff": 3,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 3,
+        "output": 0,
+        "cache_read": 3,
+        "cache_write": 3
+      },
+      "features_empty": 3,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 3,
+        "limits.input": 3,
+        "limits.output": 3,
+        "pricing": 0,
+        "reasoning.supported": 3,
+        "info.release_date": 2,
+        "info.knowledge_cutoff": 3,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "meituan": {
+      "models": 7,
+      "statuses": {
+        "preview": 1,
+        "active": 1,
+        "retired": 5
+      },
+      "null_fields": {
+        "limits.context": 5,
+        "limits.input": 7,
+        "limits.output": 5,
+        "pricing": 6,
+        "reasoning.supported": 3,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 7,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 1
+      },
+      "features_empty": 5,
+      "reasoning_true_efforts_empty": 4,
+      "callable_null_fields": {
+        "limits.context": 0,
+        "limits.input": 2,
+        "limits.output": 0,
+        "pricing": 1,
+        "reasoning.supported": 0,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 2,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "meta": {
+      "models": 8,
+      "statuses": {
+        "active": 8
+      },
+      "null_fields": {
+        "limits.context": 3,
+        "limits.input": 8,
+        "limits.output": 8,
+        "pricing": 1,
+        "reasoning.supported": 3,
+        "info.release_date": 2,
+        "info.knowledge_cutoff": 8,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 1,
+        "output": 1,
+        "cache_read": 2,
+        "cache_write": 7
+      },
+      "features_empty": 1,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 3,
+        "limits.input": 8,
+        "limits.output": 8,
+        "pricing": 1,
+        "reasoning.supported": 3,
+        "info.release_date": 2,
+        "info.knowledge_cutoff": 8,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "microsoft": {
+      "models": 9,
+      "statuses": {
+        "preview": 9
+      },
+      "null_fields": {
+        "limits.context": 4,
+        "limits.input": 9,
+        "limits.output": 9,
+        "pricing": 3,
+        "reasoning.supported": 9,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 9,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 3,
+        "cache_read": 6,
+        "cache_write": 6
+      },
+      "features_empty": 9,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 4,
+        "limits.input": 9,
+        "limits.output": 9,
+        "pricing": 3,
+        "reasoning.supported": 9,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 9,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "minimax": {
+      "models": 22,
+      "statuses": {
+        "active": 19,
+        "retired": 3
+      },
+      "null_fields": {
+        "limits.context": 14,
+        "limits.input": 22,
+        "limits.output": 14,
+        "pricing": 3,
+        "reasoning.supported": 3,
+        "info.release_date": 5,
+        "info.knowledge_cutoff": 22,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 5,
+        "output": 6,
+        "cache_read": 11,
+        "cache_write": 12
+      },
+      "features_empty": 10,
+      "reasoning_true_efforts_empty": 8,
+      "callable_null_fields": {
+        "limits.context": 11,
+        "limits.input": 19,
+        "limits.output": 11,
+        "pricing": 0,
+        "reasoning.supported": 0,
+        "info.release_date": 2,
+        "info.knowledge_cutoff": 19,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "mistral": {
+      "models": 59,
+      "statuses": {
+        "preview": 1,
+        "active": 16,
+        "retired": 42
+      },
+      "null_fields": {
+        "limits.context": 8,
+        "limits.input": 59,
+        "limits.output": 58,
+        "pricing": 14,
+        "reasoning.supported": 50,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 59,
+        "info.description": 5,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 10,
+        "cache_read": 37,
+        "cache_write": 45
+      },
+      "features_empty": 14,
+      "reasoning_true_efforts_empty": 6,
+      "callable_null_fields": {
+        "limits.context": 5,
+        "limits.input": 17,
+        "limits.output": 17,
+        "pricing": 1,
+        "reasoning.supported": 14,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 17,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "mixedbread": {
+      "models": 2,
+      "statuses": {
+        "active": 2
+      },
+      "null_fields": {
+        "limits.context": 2,
+        "limits.input": 2,
+        "limits.output": 2,
+        "pricing": 2,
+        "reasoning.supported": 2,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 2,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 0
+      },
+      "features_empty": 2,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 2,
+        "limits.input": 2,
+        "limits.output": 2,
+        "pricing": 2,
+        "reasoning.supported": 2,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 2,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "moonshot": {
+      "models": 19,
+      "statuses": {
+        "active": 4,
+        "retired": 15
+      },
+      "null_fields": {
+        "limits.context": 2,
+        "limits.input": 19,
+        "limits.output": 18,
+        "pricing": 15,
+        "reasoning.supported": 11,
+        "info.release_date": 2,
+        "info.knowledge_cutoff": 19,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 3
+      },
+      "features_empty": 7,
+      "reasoning_true_efforts_empty": 7,
+      "callable_null_fields": {
+        "limits.context": 0,
+        "limits.input": 4,
+        "limits.output": 3,
+        "pricing": 0,
+        "reasoning.supported": 0,
+        "info.release_date": 1,
+        "info.knowledge_cutoff": 4,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "naver": {
+      "models": 3,
+      "statuses": {
+        "active": 3
+      },
+      "null_fields": {
+        "limits.context": 0,
+        "limits.input": 0,
+        "limits.output": 0,
+        "pricing": 0,
+        "reasoning.supported": 0,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 3,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 3,
+        "cache_write": 3
+      },
+      "features_empty": 0,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 0,
+        "limits.input": 0,
+        "limits.output": 0,
+        "pricing": 0,
+        "reasoning.supported": 0,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 3,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "nomic": {
+      "models": 2,
+      "statuses": {
+        "active": 2
+      },
+      "null_fields": {
+        "limits.context": 0,
+        "limits.input": 2,
+        "limits.output": 2,
+        "pricing": 2,
+        "reasoning.supported": 2,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 2,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 0
+      },
+      "features_empty": 2,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 0,
+        "limits.input": 2,
+        "limits.output": 2,
+        "pricing": 2,
+        "reasoning.supported": 2,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 2,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "nvidia": {
+      "models": 22,
+      "statuses": {
+        "preview": 1,
+        "active": 20,
+        "deprecated": 1
+      },
+      "null_fields": {
+        "limits.context": 11,
+        "limits.input": 20,
+        "limits.output": 16,
+        "pricing": 22,
+        "reasoning.supported": 16,
+        "info.release_date": 7,
+        "info.knowledge_cutoff": 22,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 0
+      },
+      "features_empty": 18,
+      "reasoning_true_efforts_empty": 5,
+      "callable_null_fields": {
+        "limits.context": 11,
+        "limits.input": 20,
+        "limits.output": 16,
+        "pricing": 22,
+        "reasoning.supported": 16,
+        "info.release_date": 7,
+        "info.knowledge_cutoff": 22,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "openai": {
+      "models": 118,
+      "statuses": {
+        "active": 44,
+        "deprecated": 25,
+        "retired": 49
+      },
+      "null_fields": {
+        "limits.context": 41,
+        "limits.input": 97,
+        "limits.output": 38,
+        "pricing": 15,
+        "reasoning.supported": 72,
+        "info.release_date": 17,
+        "info.knowledge_cutoff": 35,
+        "info.description": 17,
+        "info.docs": 16,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 4,
+        "output": 12,
+        "cache_read": 53,
+        "cache_write": 96
+      },
+      "features_empty": 33,
+      "reasoning_true_efforts_empty": 22,
+      "callable_null_fields": {
+        "limits.context": 18,
+        "limits.input": 50,
+        "limits.output": 18,
+        "pricing": 9,
+        "reasoning.supported": 34,
+        "info.release_date": 2,
+        "info.knowledge_cutoff": 15,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "perplexity": {
+      "models": 19,
+      "statuses": {
+        "active": 4,
+        "deprecated": 4,
+        "retired": 11
+      },
+      "null_fields": {
+        "limits.context": 8,
+        "limits.input": 19,
+        "limits.output": 19,
+        "pricing": 10,
+        "reasoning.supported": 18,
+        "info.release_date": 13,
+        "info.knowledge_cutoff": 19,
+        "info.description": 11,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 4,
+        "cache_read": 9,
+        "cache_write": 9
+      },
+      "features_empty": 15,
+      "reasoning_true_efforts_empty": 1,
+      "callable_null_fields": {
+        "limits.context": 4,
+        "limits.input": 8,
+        "limits.output": 8,
+        "pricing": 0,
+        "reasoning.supported": 8,
+        "info.release_date": 2,
+        "info.knowledge_cutoff": 8,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "pfn": {
+      "models": 1,
+      "statuses": {
+        "active": 1
+      },
+      "null_fields": {
+        "limits.context": 0,
+        "limits.input": 1,
+        "limits.output": 0,
+        "pricing": 0,
+        "reasoning.supported": 0,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 1,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 1,
+        "cache_write": 1
+      },
+      "features_empty": 0,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 0,
+        "limits.input": 1,
+        "limits.output": 0,
+        "pricing": 0,
+        "reasoning.supported": 0,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 1,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "pixverse": {
+      "models": 5,
+      "statuses": {
+        "active": 5
+      },
+      "null_fields": {
+        "limits.context": 5,
+        "limits.input": 5,
+        "limits.output": 5,
+        "pricing": 5,
+        "reasoning.supported": 5,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 5,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 0
+      },
+      "features_empty": 5,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 5,
+        "limits.input": 5,
+        "limits.output": 5,
+        "pricing": 5,
+        "reasoning.supported": 5,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 5,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "recraft": {
+      "models": 21,
+      "statuses": {
+        "active": 21
+      },
+      "null_fields": {
+        "limits.context": 21,
+        "limits.input": 21,
+        "limits.output": 21,
+        "pricing": 0,
+        "reasoning.supported": 21,
+        "info.release_date": 11,
+        "info.knowledge_cutoff": 21,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 21,
+        "output": 0,
+        "cache_read": 21,
+        "cache_write": 21
+      },
+      "features_empty": 21,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 21,
+        "limits.input": 21,
+        "limits.output": 21,
+        "pricing": 0,
+        "reasoning.supported": 21,
+        "info.release_date": 11,
+        "info.knowledge_cutoff": 21,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "reka": {
+      "models": 2,
+      "statuses": {
+        "active": 2
+      },
+      "null_fields": {
+        "limits.context": 1,
+        "limits.input": 2,
+        "limits.output": 1,
+        "pricing": 0,
+        "reasoning.supported": 0,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 2,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 2,
+        "cache_write": 2
+      },
+      "features_empty": 0,
+      "reasoning_true_efforts_empty": 1,
+      "callable_null_fields": {
+        "limits.context": 1,
+        "limits.input": 2,
+        "limits.output": 1,
+        "pricing": 0,
+        "reasoning.supported": 0,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 2,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "runway": {
+      "models": 9,
+      "statuses": {
+        "active": 7,
+        "retired": 2
+      },
+      "null_fields": {
+        "limits.context": 9,
+        "limits.input": 9,
+        "limits.output": 9,
+        "pricing": 1,
+        "reasoning.supported": 9,
+        "info.release_date": 3,
+        "info.knowledge_cutoff": 9,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 8,
+        "output": 0,
+        "cache_read": 8,
+        "cache_write": 8
+      },
+      "features_empty": 9,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 7,
+        "limits.input": 7,
+        "limits.output": 7,
+        "pricing": 1,
+        "reasoning.supported": 7,
+        "info.release_date": 2,
+        "info.knowledge_cutoff": 7,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "sakana": {
+      "models": 1,
+      "statuses": {
+        "active": 1
+      },
+      "null_fields": {
+        "limits.context": 1,
+        "limits.input": 1,
+        "limits.output": 1,
+        "pricing": 0,
+        "reasoning.supported": 0,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 1,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 1
+      },
+      "features_empty": 0,
+      "reasoning_true_efforts_empty": 1,
+      "callable_null_fields": {
+        "limits.context": 1,
+        "limits.input": 1,
+        "limits.output": 1,
+        "pricing": 0,
+        "reasoning.supported": 0,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 1,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "sarvam": {
+      "models": 10,
+      "statuses": {
+        "active": 9,
+        "retired": 1
+      },
+      "null_fields": {
+        "limits.context": 7,
+        "limits.input": 10,
+        "limits.output": 10,
+        "pricing": 3,
+        "reasoning.supported": 8,
+        "info.release_date": 6,
+        "info.knowledge_cutoff": 10,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 5,
+        "cache_read": 5,
+        "cache_write": 7
+      },
+      "features_empty": 8,
+      "reasoning_true_efforts_empty": 2,
+      "callable_null_fields": {
+        "limits.context": 7,
+        "limits.input": 9,
+        "limits.output": 9,
+        "pricing": 2,
+        "reasoning.supported": 8,
+        "info.release_date": 5,
+        "info.knowledge_cutoff": 9,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "sensetime": {
+      "models": 21,
+      "statuses": {
+        "preview": 1,
+        "active": 20
+      },
+      "null_fields": {
+        "limits.context": 21,
+        "limits.input": 21,
+        "limits.output": 21,
+        "pricing": 1,
+        "reasoning.supported": 20,
+        "info.release_date": 20,
+        "info.knowledge_cutoff": 21,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 5,
+        "output": 11,
+        "cache_read": 20,
+        "cache_write": 20
+      },
+      "features_empty": 12,
+      "reasoning_true_efforts_empty": 1,
+      "callable_null_fields": {
+        "limits.context": 21,
+        "limits.input": 21,
+        "limits.output": 21,
+        "pricing": 1,
+        "reasoning.supported": 20,
+        "info.release_date": 20,
+        "info.knowledge_cutoff": 21,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "shengshu": {
+      "models": 12,
+      "statuses": {
+        "active": 12
+      },
+      "null_fields": {
+        "limits.context": 12,
+        "limits.input": 12,
+        "limits.output": 12,
+        "pricing": 12,
+        "reasoning.supported": 12,
+        "info.release_date": 6,
+        "info.knowledge_cutoff": 12,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 0
+      },
+      "features_empty": 12,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 12,
+        "limits.input": 12,
+        "limits.output": 12,
+        "pricing": 12,
+        "reasoning.supported": 12,
+        "info.release_date": 6,
+        "info.knowledge_cutoff": 12,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "shlab": {
+      "models": 7,
+      "statuses": {
+        "active": 6,
+        "deprecated": 1
+      },
+      "null_fields": {
+        "limits.context": 3,
+        "limits.input": 7,
+        "limits.output": 7,
+        "pricing": 7,
+        "reasoning.supported": 1,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 7,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 0
+      },
+      "features_empty": 0,
+      "reasoning_true_efforts_empty": 6,
+      "callable_null_fields": {
+        "limits.context": 3,
+        "limits.input": 7,
+        "limits.output": 7,
+        "pricing": 7,
+        "reasoning.supported": 1,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 7,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "soniox": {
+      "models": 3,
+      "statuses": {
+        "active": 3
+      },
+      "null_fields": {
+        "limits.context": 3,
+        "limits.input": 3,
+        "limits.output": 3,
+        "pricing": 0,
+        "reasoning.supported": 3,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 3,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 3,
+        "cache_write": 3
+      },
+      "features_empty": 3,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 3,
+        "limits.input": 3,
+        "limits.output": 3,
+        "pricing": 0,
+        "reasoning.supported": 3,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 3,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "speechmatics": {
+      "models": 5,
+      "statuses": {
+        "active": 5
+      },
+      "null_fields": {
+        "limits.context": 5,
+        "limits.input": 5,
+        "limits.output": 5,
+        "pricing": 0,
+        "reasoning.supported": 5,
+        "info.release_date": 3,
+        "info.knowledge_cutoff": 5,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 5,
+        "cache_read": 5,
+        "cache_write": 5
+      },
+      "features_empty": 5,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 5,
+        "limits.input": 5,
+        "limits.output": 5,
+        "pricing": 0,
+        "reasoning.supported": 5,
+        "info.release_date": 3,
+        "info.knowledge_cutoff": 5,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "stability": {
+      "models": 8,
+      "statuses": {
+        "active": 8
+      },
+      "null_fields": {
+        "limits.context": 8,
+        "limits.input": 8,
+        "limits.output": 8,
+        "pricing": 0,
+        "reasoning.supported": 8,
+        "info.release_date": 1,
+        "info.knowledge_cutoff": 8,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 8,
+        "output": 0,
+        "cache_read": 8,
+        "cache_write": 8
+      },
+      "features_empty": 8,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 8,
+        "limits.input": 8,
+        "limits.output": 8,
+        "pricing": 0,
+        "reasoning.supported": 8,
+        "info.release_date": 1,
+        "info.knowledge_cutoff": 8,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "stepfun": {
+      "models": 37,
+      "statuses": {
+        "preview": 5,
+        "active": 20,
+        "retired": 12
+      },
+      "null_fields": {
+        "limits.context": 26,
+        "limits.input": 36,
+        "limits.output": 36,
+        "pricing": 6,
+        "reasoning.supported": 31,
+        "info.release_date": 31,
+        "info.knowledge_cutoff": 37,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 2,
+        "output": 11,
+        "cache_read": 13,
+        "cache_write": 31
+      },
+      "features_empty": 29,
+      "reasoning_true_efforts_empty": 2,
+      "callable_null_fields": {
+        "limits.context": 20,
+        "limits.input": 24,
+        "limits.output": 24,
+        "pricing": 4,
+        "reasoning.supported": 20,
+        "info.release_date": 20,
+        "info.knowledge_cutoff": 25,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "tencent": {
+      "models": 34,
+      "statuses": {
+        "preview": 3,
+        "active": 16,
+        "retired": 15
+      },
+      "null_fields": {
+        "limits.context": 24,
+        "limits.input": 20,
+        "limits.output": 20,
+        "pricing": 3,
+        "reasoning.supported": 24,
+        "info.release_date": 11,
+        "info.knowledge_cutoff": 34,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 3,
+        "output": 2,
+        "cache_read": 29,
+        "cache_write": 31
+      },
+      "features_empty": 28,
+      "reasoning_true_efforts_empty": 6,
+      "callable_null_fields": {
+        "limits.context": 9,
+        "limits.input": 5,
+        "limits.output": 5,
+        "pricing": 0,
+        "reasoning.supported": 11,
+        "info.release_date": 9,
+        "info.knowledge_cutoff": 19,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "twelvelabs": {
+      "models": 7,
+      "statuses": {
+        "active": 4,
+        "retired": 3
+      },
+      "null_fields": {
+        "limits.context": 5,
+        "limits.input": 7,
+        "limits.output": 6,
+        "pricing": 7,
+        "reasoning.supported": 7,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 7,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 0
+      },
+      "features_empty": 5,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 2,
+        "limits.input": 4,
+        "limits.output": 3,
+        "pricing": 4,
+        "reasoning.supported": 4,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 4,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "typhoon": {
+      "models": 4,
+      "statuses": {
+        "active": 4
+      },
+      "null_fields": {
+        "limits.context": 4,
+        "limits.input": 4,
+        "limits.output": 4,
+        "pricing": 4,
+        "reasoning.supported": 3,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 4,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 0
+      },
+      "features_empty": 2,
+      "reasoning_true_efforts_empty": 1,
+      "callable_null_fields": {
+        "limits.context": 4,
+        "limits.input": 4,
+        "limits.output": 4,
+        "pricing": 4,
+        "reasoning.supported": 3,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 4,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "upstage": {
+      "models": 13,
+      "statuses": {
+        "active": 9,
+        "deprecated": 3,
+        "retired": 1
+      },
+      "null_fields": {
+        "limits.context": 9,
+        "limits.input": 13,
+        "limits.output": 13,
+        "pricing": 2,
+        "reasoning.supported": 7,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 8,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 6,
+        "cache_read": 7,
+        "cache_write": 11
+      },
+      "features_empty": 7,
+      "reasoning_true_efforts_empty": 2,
+      "callable_null_fields": {
+        "limits.context": 8,
+        "limits.input": 12,
+        "limits.output": 12,
+        "pricing": 1,
+        "reasoning.supported": 7,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 7,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "voyage": {
+      "models": 18,
+      "statuses": {
+        "active": 18
+      },
+      "null_fields": {
+        "limits.context": 0,
+        "limits.input": 18,
+        "limits.output": 18,
+        "pricing": 2,
+        "reasoning.supported": 18,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 18,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 16,
+        "cache_read": 16,
+        "cache_write": 16
+      },
+      "features_empty": 18,
+      "reasoning_true_efforts_empty": 0,
+      "callable_null_fields": {
+        "limits.context": 0,
+        "limits.input": 18,
+        "limits.output": 18,
+        "pricing": 2,
+        "reasoning.supported": 18,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 18,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "writer": {
+      "models": 3,
+      "statuses": {
+        "active": 1,
+        "deprecated": 2
+      },
+      "null_fields": {
+        "limits.context": 1,
+        "limits.input": 3,
+        "limits.output": 0,
+        "pricing": 0,
+        "reasoning.supported": 2,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 3,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 3,
+        "cache_write": 3
+      },
+      "features_empty": 0,
+      "reasoning_true_efforts_empty": 1,
+      "callable_null_fields": {
+        "limits.context": 1,
+        "limits.input": 3,
+        "limits.output": 0,
+        "pricing": 0,
+        "reasoning.supported": 2,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 3,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "xai": {
+      "models": 23,
+      "statuses": {
+        "active": 15,
+        "deprecated": 1,
+        "retired": 7
+      },
+      "null_fields": {
+        "limits.context": 9,
+        "limits.input": 23,
+        "limits.output": 23,
+        "pricing": 2,
+        "reasoning.supported": 9,
+        "info.release_date": 6,
+        "info.knowledge_cutoff": 22,
+        "info.description": 7,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 6,
+        "output": 1,
+        "cache_read": 7,
+        "cache_write": 21
+      },
+      "features_empty": 2,
+      "reasoning_true_efforts_empty": 6,
+      "callable_null_fields": {
+        "limits.context": 8,
+        "limits.input": 16,
+        "limits.output": 16,
+        "pricing": 1,
+        "reasoning.supported": 8,
+        "info.release_date": 5,
+        "info.knowledge_cutoff": 15,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "xiaomi": {
+      "models": 12,
+      "statuses": {
+        "active": 7,
+        "deprecated": 2,
+        "retired": 3
+      },
+      "null_fields": {
+        "limits.context": 3,
+        "limits.input": 12,
+        "limits.output": 3,
+        "pricing": 4,
+        "reasoning.supported": 3,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 12,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 0,
+        "output": 1,
+        "cache_read": 2,
+        "cache_write": 8
+      },
+      "features_empty": 3,
+      "reasoning_true_efforts_empty": 5,
+      "callable_null_fields": {
+        "limits.context": 0,
+        "limits.input": 9,
+        "limits.output": 0,
+        "pricing": 3,
+        "reasoning.supported": 0,
+        "info.release_date": 0,
+        "info.knowledge_cutoff": 9,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    },
+    "zhipu": {
+      "models": 48,
+      "statuses": {
+        "active": 40,
+        "deprecated": 2,
+        "retired": 6
+      },
+      "null_fields": {
+        "limits.context": 14,
+        "limits.input": 48,
+        "limits.output": 18,
+        "pricing": 3,
+        "reasoning.supported": 22,
+        "info.release_date": 22,
+        "info.knowledge_cutoff": 48,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      },
+      "pricing_components_null_when_priced": {
+        "input": 6,
+        "output": 5,
+        "cache_read": 23,
+        "cache_write": 45
+      },
+      "features_empty": 22,
+      "reasoning_true_efforts_empty": 25,
+      "callable_null_fields": {
+        "limits.context": 13,
+        "limits.input": 42,
+        "limits.output": 17,
+        "pricing": 2,
+        "reasoning.supported": 21,
+        "info.release_date": 19,
+        "info.knowledge_cutoff": 42,
+        "info.description": 0,
+        "info.docs": 0,
+        "info.verified_at": 0
+      }
+    }
+  }
+}
