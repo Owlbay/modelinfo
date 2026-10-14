@@ -68,7 +68,7 @@
 
 部分模型的发布日期、知识截止、思考等级与价格官方未公布，当前为 `null`。可在各模型详情页查看具体字段，官方更新后按上述流程补录。
 
-运行 `node scripts/audit-data.mjs` 输出全库及各厂商的字段空缺、状态统计和待核验 ID 清单（JSON）。这是本地完整性清单，空值可能不适用或官方未公布，不能当作错误率，也不能当作已完成官方全量核验的证明。`deprecated` 仍可调用，统计时与 `retired` 分开。
+运行 `node scripts/audit-data.mjs` 输出全库及各厂商的字段空缺、状态统计和待核验 ID 清单（JSON）。`node scripts/completeness.mjs` 在此基础上按厂商列出 limits、pricing 各分项、reasoning、features、info 与 sources 的空缺；`--vendor`、`--ids`、`--markdown` 可缩小范围或改成表格。这是本地完整性清单，空值可能不适用或官方未公布，不能当作错误率，也不能当作已完成官方全量核验的证明。`deprecated` 仍可调用，统计时与 `retired` 分开。
 
 本轮价格与发布日期补录见 [2026-10-11 逐型号核验记录](audits/pricing-release-2026-10-11.json)：记录补录前后数值、剩余缺项、原因与官方资料入口。该记录是当日快照；后续维护以 `data/models/` 为准。历史存档价格仅代表对应快照，不表示已下线模型仍可购买。已检索未找到、资料获取失败与官方明确未公布须区分，不能将空值统一描述为“官方未公布”。
 
