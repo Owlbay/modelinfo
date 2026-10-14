@@ -15,6 +15,7 @@
 | `pnpm preview` | 构建后用 wrangler 按 Cloudflare 规则本地预览（`_headers`、`_redirects` 生效），http://localhost:8787 |
 | `pnpm deploy` | 构建并发布到 Cloudflare，见 [deployment.md](deployment.md) |
 | `node scripts/validate-data.mjs [文件...]` | 只校验数据文件，适合批量编辑数据时快速自检 |
+| `pnpm test` | 运行 `scripts/*.test.mjs`，含 `check-official.test.mjs` |
 | `node scripts/check-official.mjs [文件...]` | 检查官方域名来源、日期时效、价格与上下文范围。`--cross` 与第三方对照，只打印差异 |
 
 ## 目录

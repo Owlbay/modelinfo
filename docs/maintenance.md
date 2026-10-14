@@ -53,12 +53,12 @@
 
 `node scripts/check-official.mjs [文件...]` 在 `validate-data.mjs` 之外再检查四件事，不改数据：
 
-1. **官方域名**：除标题含 `api.sdk only` 的 SDK 来源和 `models.dev` 外，至少一条 `sources` 的主机名属于该厂商。允许的主机来自 `data/vendors/<id>.json` 的官网，以及脚本里的文档站补充表（如 `ai.google.dev`、`docs.mistral.ai`）。`web.archive.org` 只在被存档的原地址属于这些主机时算数。
-2. **日期**：`sources[].retrieved_at` 必须是真实的 `YYYY-MM-DD`；`info.verified_at` 同样，或为 `null`。二者都不能晚于运行当天。早于 `--max-age` 天（默认 180）只警告；加上 `--strict` 时警告也失败。
+1. **官方域名**：除标题含 `api.sdk only` 的 SDK 来源，以及 `models.dev`、`ai-sdk.dev` 外，至少一条 `sources` 的主机名属于该厂商。允许的主机来自 `data/vendors/<id>.json` 的官网，以及脚本里的文档站补充表（如 `ai.google.dev`、`docs.mistral.ai`）。官网主机升到注册域时，`com.cn`、`co.jp`、`github.io` 这类公共后缀会再向前取一段，不会把整个后缀放行。`web.archive.org` 只在被存档的原地址属于这些主机时算数。
+2. **日期**：`sources[].retrieved_at` 必须是真实的 `YYYY-MM-DD`；`info.verified_at` 同样，或为 `null`。比 UTC 当天晚超过 1 天则失败；晚 1 天仍通过，避免 UTC+8 早晨把本地今天判成未来。早于 `--max-age` 天（默认 180）只警告；加上 `--strict` 时警告也失败。`--max-age` 不是非负整数时直接退出。
 3. **数值范围**：价格不为负，币种为三个大写字母，单位属于接口规范中的计价单位，`limits.input` 与 `limits.output` 不超过 `limits.context`。
 4. **必填字段**：公开字段和维护字段 `aliases`、`sources`、`providers` 必须存在。字段顺序和枚举仍由 `validate-data.mjs` 把关。
 
-`node scripts/check-official.mjs --cross [--report 路径]` 会下载 models.dev、OpenRouter 和 LiteLLM，按模型 ID 或别名精确匹配后写出差异。它只提示 1000/1024、折扣价和图像/文本计价口径可能不同，不自动改 JSON。网络失败时退出码为 2。
+`node scripts/check-official.mjs --cross [--report 路径]` 会下载 models.dev、OpenRouter 和 LiteLLM，按厂商前缀加模型 ID 或别名匹配后写出差异。同名键保留先写入的记录。LiteLLM 的 `max_tokens` 对照 `limits.context`，`max_input_tokens` 只对照 `limits.input`。它只提示 1000/1024、折扣价和图像/文本计价口径可能不同，不自动改 JSON。网络失败时退出码为 2。`pnpm test` 会执行 `scripts/*.test.mjs`，其中包括 `scripts/check-official.test.mjs`。
 
 ## 批量采集
 

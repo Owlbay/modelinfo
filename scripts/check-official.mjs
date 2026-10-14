@@ -7,12 +7,13 @@
  *   node scripts/check-official.mjs [--strict] [--max-age 180] [文件...]
  *   node scripts/check-official.mjs --cross [--report 路径]
  *
- * 退出码 1：缺官方域名来源、日期非法或晚于今天、价格为负、币种或单位非法、
- *           上下文小于输入或输出上限。
+ * 退出码 1：缺官方域名来源、日期非法或比 UTC 今天晚超过 1 天、价格为负、币种或单位非法、
+ *           上下文小于输入或输出上限，或 --max-age 不是非负整数。
  * 警告默认不失败：verified_at 或 retrieved_at 早于 --max-age 天（默认 180）。
- * --strict 把警告也当作失败。
+ * --strict 把警告也当作失败。日期比 UTC 今天晚 1 天仍通过，避免 UTC+8 早晨把本地今天判成未来。
  *
- * --cross 下载 models.dev、OpenRouter、LiteLLM，按模型 ID 精确匹配后打印差异。
+ * --cross 下载 models.dev、OpenRouter、LiteLLM，按厂商前缀加模型 ID 或别名匹配后打印差异。
+ * 同名键不覆盖。LiteLLM 的 max_input_tokens 只和 limits.input 比较，不当作上下文。
  * 差异只作提示，不改数据，也不因此失败。网络失败时退出码为 2。
  */
 import fs from 'node:fs';
@@ -61,8 +62,27 @@ export const EXTRA_HOSTS = {
   zhipu: ['z.ai', 'bigmodel.cn'],
 };
 
+/** 多段公共后缀。不能把后缀本身当成可继承的厂商域名。 */
+const PUBLIC_SUFFIXES = [
+  'com.cn', 'net.cn', 'org.cn', 'gov.cn', 'ac.cn',
+  'co.jp', 'ne.jp', 'or.jp', 'ac.jp',
+  'co.uk', 'org.uk', 'ac.uk', 'gov.uk',
+  'com.au', 'net.au', 'org.au',
+  'co.kr', 'ne.kr', 'or.kr',
+  'com.tw', 'com.hk', 'com.sg', 'co.za', 'com.br',
+  'github.io',
+];
+
 export function todayUtc(now = new Date()) {
   return now.toISOString().slice(0, 10);
+}
+
+/** UTC 日历日加减天数。YYYY-MM-DD 字符串比较与时间顺序一致。 */
+export function shiftDate(iso, days) {
+  const date = parseDay(iso);
+  if (!date) return '';
+  date.setUTCDate(date.getUTCDate() + days);
+  return date.toISOString().slice(0, 10);
 }
 
 export function hostOf(url) {
@@ -81,14 +101,29 @@ export function unwrapArchive(url) {
   return match ? match[1] : url;
 }
 
+export function isPublicSuffix(host) {
+  return PUBLIC_SUFFIXES.includes(host);
+}
+
+/** 注册域：普通域名取最后两段；公共后缀再向前取一段。后缀本身不返回。 */
+export function registrableDomain(host) {
+  if (!host || isPublicSuffix(host)) return '';
+  for (const suffix of PUBLIC_SUFFIXES) {
+    if (host.endsWith(`.${suffix}`)) {
+      const name = host.slice(0, -(suffix.length + 1)).split('.').pop();
+      return name ? `${name}.${suffix}` : '';
+    }
+  }
+  const labels = host.split('.');
+  return labels.length >= 2 ? labels.slice(-2).join('.') : host;
+}
+
 export function vendorHosts(vendorUrl, ownedBy) {
   const hosts = new Set(EXTRA_HOSTS[ownedBy] ?? []);
   const host = hostOf(vendorUrl);
-  if (host) {
-    hosts.add(host);
-    const labels = host.split('.');
-    if (labels.length >= 2) hosts.add(labels.slice(-2).join('.'));
-  }
+  if (host && !isPublicSuffix(host)) hosts.add(host);
+  const domain = registrableDomain(host);
+  if (domain) hosts.add(domain);
   return hosts;
 }
 
@@ -168,7 +203,8 @@ export function checkModel(model, vendorUrl, options = {}) {
   if (!(verified === null || verified === undefined || parseDay(verified))) error('info.verified_at 须为合法的 YYYY-MM-DD 或 null');
   if (parseDay(verified)) {
     const age = ageDays(verified, today);
-    if (age < 0) error(`info.verified_at ${verified} 晚于 ${today}`);
+    const horizon = shiftDate(today, 1);
+    if (horizon && verified > horizon) error(`info.verified_at ${verified} 晚于 ${today}`);
     else if (age > maxAge) warn(`info.verified_at ${verified} 已超过 ${maxAge} 天`);
   }
 
@@ -181,13 +217,14 @@ export function checkModel(model, vendorUrl, options = {}) {
     if (!parseDay(source?.retrieved_at)) error(`sources[${index}].retrieved_at 须为合法的 YYYY-MM-DD`);
     else {
       const age = ageDays(source.retrieved_at, today);
-      if (age < 0) error(`sources[${index}].retrieved_at ${source.retrieved_at} 晚于 ${today}`);
+      const horizon = shiftDate(today, 1);
+      if (horizon && source.retrieved_at > horizon) error(`sources[${index}].retrieved_at ${source.retrieved_at} 晚于 ${today}`);
       else if (age > maxAge) warn(`sources[${index}].retrieved_at ${source.retrieved_at} 已超过 ${maxAge} 天`);
     }
     if (!isSdkOnlySource(source) && hostMatches(source?.url, hosts)) official += 1;
   }
   if (sources.length && official === 0) {
-    error(`sources 中没有 ${model.owned_by} 的官方域名链接（SDK 与 models.dev 来源不算）`);
+    error(`sources 中没有 ${model.owned_by} 的官方域名链接（SDK、models.dev 与 ai-sdk.dev 来源不算）`);
   }
   return { errors, warnings };
 }
@@ -215,17 +252,53 @@ function perMillion(perToken) {
   return number == null ? null : Math.round(number * 1e6 * 1e6) / 1e6;
 }
 
+/** 第三方目录里的厂商前缀。只用于和 owned_by 对齐，不把别家的同名 ID 配进来。 */
+const PROVIDER_ALIASES = {
+  google: ['google', 'gemini'],
+  alibaba: ['alibaba', 'qwen', 'dashscope'],
+  amazon: ['amazon', 'amazon-nova', 'bedrock'],
+  anthropic: ['anthropic'],
+  bytedance: ['bytedance', 'volcengine', 'doubao'],
+  cohere: ['cohere'],
+  deepseek: ['deepseek'],
+  meta: ['meta', 'meta-llama', 'meta_llama', 'llama'],
+  microsoft: ['microsoft', 'azure', 'azure_ai'],
+  minimax: ['minimax'],
+  mistral: ['mistral', 'mistralai'],
+  moonshot: ['moonshot', 'moonshotai'],
+  openai: ['openai'],
+  perplexity: ['perplexity'],
+  sakana: ['sakana'],
+  tencent: ['tencent', 'tencent-tokenhub', 'hunyuan'],
+  upstage: ['upstage'],
+  xai: ['xai', 'x-ai'],
+  xiaomi: ['xiaomi', 'mimo'],
+  zhipu: ['zhipu', 'zai', 'z-ai'],
+  nvidia: ['nvidia'],
+  inception: ['inception'],
+  ai21: ['ai21'],
+  baidu: ['baidu', 'qianfan'],
+};
+
+export function providerAliases(ownedBy) {
+  const id = String(ownedBy ?? '').toLowerCase();
+  return new Set([id, ...(PROVIDER_ALIASES[id] ?? [])]);
+}
+
 export function indexThirdParty(kind, payload) {
   const rows = new Map();
   const put = (id, fields) => {
     if (!id || typeof id !== 'string') return;
-    rows.set(id.toLowerCase(), { id, ...fields });
+    const key = id.toLowerCase();
+    if (rows.has(key)) return;
+    rows.set(key, { id, ...fields });
   };
   if (kind === 'models.dev' && payload && typeof payload === 'object') {
-    for (const provider of Object.values(payload)) {
+    for (const [providerId, provider] of Object.entries(payload)) {
       const models = provider?.models ?? {};
       for (const [id, model] of Object.entries(models)) {
-        put(model?.id || id, {
+        const modelId = model?.id || id;
+        put(`${providerId}/${modelId}`, {
           input: asNumber(model?.cost?.input),
           output: asNumber(model?.cost?.output),
           context: asNumber(model?.limit?.context),
@@ -247,16 +320,13 @@ export function indexThirdParty(kind, payload) {
   if (kind === 'litellm' && payload && typeof payload === 'object') {
     for (const [id, model] of Object.entries(payload)) {
       if (!model || typeof model !== 'object' || id.startsWith('sample_spec')) continue;
-      put(model.litellm_provider ? `${model.litellm_provider}/${id}` : id, {
+      const provider = typeof model.litellm_provider === 'string' ? model.litellm_provider : '';
+      const key = provider && !id.toLowerCase().startsWith(`${provider.toLowerCase()}/`) ? `${provider}/${id}` : id;
+      put(key, {
         input: perMillion(model.input_cost_per_token),
         output: perMillion(model.output_cost_per_token),
-        context: asNumber(model.max_input_tokens ?? model.max_tokens),
-        maxOutput: asNumber(model.max_output_tokens),
-      });
-      put(id, {
-        input: perMillion(model.input_cost_per_token),
-        output: perMillion(model.output_cost_per_token),
-        context: asNumber(model.max_input_tokens ?? model.max_tokens),
+        context: asNumber(model.max_tokens),
+        maxInput: asNumber(model.max_input_tokens),
         maxOutput: asNumber(model.max_output_tokens),
       });
     }
@@ -266,9 +336,13 @@ export function indexThirdParty(kind, payload) {
 
 export function matchThirdParty(model, rows) {
   const keys = [model.id, ...(model.aliases ?? [])].map((id) => String(id).toLowerCase());
-  for (const [key, row] of rows) {
-    const bare = key.includes('/') ? key.slice(key.lastIndexOf('/') + 1) : key;
-    if (keys.includes(key) || keys.includes(bare)) return row;
+  const aliases = providerAliases(model.owned_by);
+  for (const key of keys) {
+    if (rows.has(key)) return rows.get(key);
+    for (const prefix of aliases) {
+      const hit = rows.get(`${prefix}/${key}`);
+      if (hit) return hit;
+    }
   }
   return null;
 }
@@ -278,6 +352,7 @@ export function crossRows(model, labeledRows) {
     ['pricing.input', model.pricing?.input, 'input'],
     ['pricing.output', model.pricing?.output, 'output'],
     ['limits.context', model.limits?.context, 'context'],
+    ['limits.input', model.limits?.input, 'maxInput'],
     ['limits.output', model.limits?.output, 'maxOutput'],
   ];
   const diffs = [];
@@ -315,14 +390,17 @@ function modelFiles(args) {
   return fs.readdirSync(MODEL_DIR).filter((name) => name.endsWith('.json')).map((name) => path.join(MODEL_DIR, name));
 }
 
-function parseArgs(argv) {
-  const options = { strict: false, maxAgeDays: 180, cross: false, report: '', files: [] };
+export function parseArgs(argv) {
+  const options = { strict: false, maxAgeDays: 180, cross: false, report: '', files: [], error: '' };
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i];
     if (arg === '--strict') options.strict = true;
     else if (arg === '--cross') options.cross = true;
-    else if (arg === '--max-age') options.maxAgeDays = Number(argv[++i]);
-    else if (arg === '--report') options.report = argv[++i];
+    else if (arg === '--max-age') {
+      const raw = argv[++i];
+      if (!/^\d+$/.test(raw ?? '')) options.error = '--max-age 须为非负整数';
+      else options.maxAgeDays = Number(raw);
+    } else if (arg === '--report') options.report = argv[++i];
     else options.files.push(arg);
   }
   return options;
@@ -350,6 +428,10 @@ async function runCross(files) {
 
 async function main() {
   const options = parseArgs(process.argv.slice(2));
+  if (options.error) {
+    console.error(options.error);
+    process.exit(1);
+  }
   const vendors = loadVendors();
   const files = modelFiles(options.files);
   const today = todayUtc();

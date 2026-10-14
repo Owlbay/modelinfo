@@ -7,6 +7,7 @@ import {
   hostMatches,
   indexThirdParty,
   isSdkOnlySource,
+  parseArgs,
   unwrapArchive,
   vendorHosts,
 } from './check-official.mjs';
@@ -49,15 +50,40 @@ test('rejects a model whose only links are aggregators', () => {
   assert.match(result.errors.join('\n'), /官方域名/);
 });
 
-test('rejects a future verification date, a negative price, and an output above the context', () => {
-  const result = checkModel(model({
+test('rejects a date more than one day ahead, a negative price, and an output above the context', () => {
+  const tomorrow = checkModel(model({
     info: { verified_at: '2026-10-14' },
+  }), vendorUrl, { today: '2026-10-13' });
+  assert.equal(tomorrow.errors.some((message) => message.includes('晚于')), false);
+  const result = checkModel(model({
+    info: { verified_at: '2026-10-15' },
     limits: { context: 100, input: null, output: 200 },
     pricing: { currency: 'USD', unit: '1M_tokens', input: -1, output: 2, cache_read: null, cache_write: null },
   }), vendorUrl, { today: '2026-10-13' });
   assert.match(result.errors.join('\n'), /晚于/);
   assert.match(result.errors.join('\n'), /pricing.input/);
   assert.match(result.errors.join('\n'), /limits.output/);
+});
+
+test('public suffixes do not authorize every host under that suffix', () => {
+  const cn = vendorHosts('https://docs.vendor.com.cn/models', 'unknown-vendor');
+  assert.equal(hostMatches('https://evil.com.cn/pricing', cn), false);
+  assert.equal(hostMatches('https://api.vendor.com.cn/v1', cn), true);
+  const io = vendorHosts('https://qwenlm.github.io/blog', 'unknown-vendor');
+  assert.equal(hostMatches('https://other.github.io/x', io), false);
+  assert.equal(hostMatches('https://qwenlm.github.io/blog/post', io), true);
+  const jp = vendorHosts('https://docs.example.co.jp/models', 'unknown-vendor');
+  assert.equal(hostMatches('https://other.co.jp/pricing', jp), false);
+  assert.equal(hostMatches('https://api.example.co.jp/v1', jp), true);
+});
+
+test('rejects a non-integer max age', () => {
+  assert.match(parseArgs(['--max-age', 'abc']).error, /非负整数/);
+  assert.match(parseArgs(['--max-age', '-1']).error, /非负整数/);
+  assert.match(parseArgs(['--max-age', '1.5']).error, /非负整数/);
+  assert.match(parseArgs(['--max-age']).error, /非负整数/);
+  assert.equal(parseArgs(['--max-age', '0']).maxAgeDays, 0);
+  assert.equal(parseArgs(['--max-age', '90']).error, '');
 });
 
 test('stale dates warn and do not become errors', () => {
@@ -81,4 +107,41 @@ test('cross comparison notes notation and discount gaps without editing values',
   assert.equal(diffs.some((diff) => diff.field === 'pricing.input' && diff.candidate === 1), true);
   assert.equal(diffs.some((diff) => diff.field === 'limits.output'), true);
   assert.equal(local.pricing.input, 2);
+});
+
+test('cross match does not take another provider or treat max input as context', () => {
+  const mixed = indexThirdParty('litellm', {
+    'gpt-4': {
+      litellm_provider: 'azure',
+      input_cost_per_token: 0.000001,
+      output_cost_per_token: 0.000002,
+      max_input_tokens: 4000,
+      max_tokens: 4000,
+      max_output_tokens: 1000,
+    },
+    'openai/gpt-4': {
+      litellm_provider: 'openai',
+      input_cost_per_token: 0.00003,
+      output_cost_per_token: 0.00006,
+      max_input_tokens: 4000,
+      max_tokens: 8192,
+      max_output_tokens: 4096,
+    },
+  });
+  const local = model({
+    id: 'gpt-4',
+    owned_by: 'openai',
+    limits: { context: 8192, input: 8192, output: 4096 },
+    pricing: { currency: 'USD', unit: '1M_tokens', input: 30, output: 60, cache_read: null, cache_write: null },
+  });
+  const diffs = crossRows(local, [['litellm', mixed]]);
+  assert.equal(diffs.some((diff) => diff.remoteId.startsWith('azure/')), false);
+  assert.equal(diffs.some((diff) => diff.field === 'limits.context'), false);
+  assert.equal(diffs.some((diff) => diff.field === 'limits.input' && diff.candidate === 4000), true);
+  const dev = indexThirdParty('models.dev', {
+    azure: { models: { 'gpt-4': { id: 'gpt-4', cost: { input: 1, output: 2 }, limit: { context: 4000, output: 1000 } } } },
+    openai: { models: { 'gpt-4': { id: 'gpt-4', cost: { input: 30, output: 60 }, limit: { context: 8192, output: 4096 } } } },
+  });
+  const devDiffs = crossRows(local, [['models.dev', dev]]);
+  assert.equal(devDiffs.length, 0);
 });
