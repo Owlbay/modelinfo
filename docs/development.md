@@ -15,6 +15,8 @@
 | `pnpm preview` | 构建后用 wrangler 按 Cloudflare 规则本地预览（`_headers`、`_redirects` 生效），http://localhost:8787 |
 | `pnpm deploy` | 构建并发布到 Cloudflare，见 [deployment.md](deployment.md) |
 | `node scripts/validate-data.mjs [文件...]` | 只校验数据文件，适合批量编辑数据时快速自检 |
+| `pnpm test` | 运行 `scripts/*.test.mjs`，含 `check-official.test.mjs` |
+| `node scripts/check-official.mjs [文件...]` | 检查官方域名来源、日期时效、价格与上下文范围。`--cross` 与第三方对照，只打印差异 |
 
 ## 目录
 
@@ -32,7 +34,7 @@ src/components/           顶栏、页脚、字墙、搜索、分区、列表行
 src/scripts/              客户端脚本：主题、快捷键、复制、比较选择（compare-store.ts，localStorage）
 src/styles/               tokens.css（设计 token）、base、utilities、motion
 public/                   _headers（CORS、缓存）、_redirects（/v1/models 重写）
-scripts/                  check-design.mjs（设计约束）、validate-data.mjs（数据校验）
+scripts/                  check-design.mjs（设计约束）、validate-data.mjs（数据校验）、check-official.mjs（官方来源与范围）
 ```
 
 ## 代码边界
