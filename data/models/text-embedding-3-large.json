@@ -49,7 +49,7 @@
     "knowledge_cutoff": "2021-09",
     "description": "Most capable embedding model for both English and non-English tasks.",
     "docs": "https://developers.openai.com/api/docs/models/text-embedding-3-large",
-    "verified_at": "2026-10-11"
+    "verified_at": "2026-10-13"
   },
   "aliases": [],
   "translations": {
@@ -79,9 +79,9 @@
       "retrieved_at": "2026-10-11"
     },
     {
-      "title": "Vector embeddings | OpenAI API",
+      "title": "Embeddings guide（text-embedding-3-large 最大输入 8192）| OpenAI API",
       "url": "https://developers.openai.com/api/docs/guides/embeddings",
-      "retrieved_at": "2026-10-11"
+      "retrieved_at": "2026-10-13"
     },
     {
       "title": "models.dev — SDK npm mapping (api.sdk only)",

@@ -6,7 +6,8 @@
   "name": "Gemini 3.1 Flash Image Preview",
   "api": {
     "types": [
-      "generate"
+      "generate",
+      "batch"
     ],
     "sdk": [
       "@ai-sdk/google",
@@ -15,13 +16,14 @@
   },
   "limits": {
     "context": null,
-    "input": null,
-    "output": null
+    "input": 131072,
+    "output": 32768
   },
   "modalities": {
     "input": [
       "text",
-      "image"
+      "image",
+      "document"
     ],
     "output": [
       "text",
@@ -29,25 +31,27 @@
     ]
   },
   "reasoning": {
-    "supported": null,
+    "supported": true,
     "efforts": []
   },
   "pricing": {
     "currency": "USD",
     "unit": "1M_tokens",
-    "input": 0.25,
+    "input": 0.5,
     "output": 60,
     "cache_read": null,
     "cache_write": null
   },
-  "features": [],
+  "features": [
+    "batch"
+  ],
   "info": {
     "status": "retired",
     "release_date": "2026-02-26",
-    "knowledge_cutoff": null,
+    "knowledge_cutoff": "2025-01",
     "description": null,
     "docs": "https://ai.google.dev/gemini-api/docs/deprecations",
-    "verified_at": "2026-10-11"
+    "verified_at": "2026-10-13"
   },
   "aliases": [],
   "sources": [
@@ -70,6 +74,16 @@
       "title": "Gemini API pricing — archived March 1, 2026 (standard image output)",
       "url": "https://web.archive.org/web/20260301172429/https://ai.google.dev/gemini-api/docs/pricing",
       "retrieved_at": "2026-10-11"
+    },
+    {
+      "title": "Gemini 3.1 Flash Image Preview model card — archived May 21, 2026（知识截止 2025-01，输入含 PDF）",
+      "url": "https://web.archive.org/web/20260521181054/https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-image-preview",
+      "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "Gemini API pricing — archived May 21, 2026 (standard vs batch)",
+      "url": "https://web.archive.org/web/20260521030432/https://ai.google.dev/gemini-api/docs/pricing",
+      "retrieved_at": "2026-10-13"
     },
     {
       "title": "models.dev — SDK npm mapping (api.sdk only)",

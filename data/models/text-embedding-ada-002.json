@@ -49,7 +49,7 @@
     "knowledge_cutoff": null,
     "description": "Older embedding model.",
     "docs": "https://developers.openai.com/api/docs/models/text-embedding-ada-002",
-    "verified_at": "2026-10-11"
+    "verified_at": "2026-10-13"
   },
   "aliases": [],
   "translations": {
@@ -79,9 +79,9 @@
       "retrieved_at": "2026-10-11"
     },
     {
-      "title": "Vector embeddings | OpenAI API",
+      "title": "Embeddings guide（text-embedding-ada-002 最大输入 8192）| OpenAI API",
       "url": "https://developers.openai.com/api/docs/guides/embeddings",
-      "retrieved_at": "2026-10-11"
+      "retrieved_at": "2026-10-13"
     },
     {
       "title": "Official model release / pricing documentation",

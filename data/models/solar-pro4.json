@@ -18,7 +18,7 @@
   "limits": {
     "context": null,
     "input": null,
-    "output": null
+    "output": 131072
   },
   "modalities": {
     "input": [
@@ -59,7 +59,7 @@
     "knowledge_cutoff": "2026-02",
     "description": "Upstage flagship Solar model specialized for agentic use, with reasoning, tool calling and structured outputs.",
     "docs": "https://console.upstage.ai/docs/models/solar-pro-4",
-    "verified_at": "2026-10-11"
+    "verified_at": "2026-10-13"
   },
   "aliases": [
     "solar-pro4-260806"
@@ -96,9 +96,9 @@
       "retrieved_at": "2026-10-11"
     },
     {
-      "title": "Official API reference",
+      "title": "Responses API（max_output_tokens 最大 131072，适用于 solar-pro4）| Upstage",
       "url": "https://console.upstage.ai/api/responses",
-      "retrieved_at": "2026-10-11"
+      "retrieved_at": "2026-10-13"
     },
     {
       "title": "SDK support — openai (api.sdk only)",
