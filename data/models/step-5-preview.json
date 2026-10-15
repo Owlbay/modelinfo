@@ -58,14 +58,14 @@
     "status": "preview",
     "release_date": "2026-09-20",
     "knowledge_cutoff": null,
-    "description": "StepFun flagship sparse MoE for agentic work, with 600B total parameters and 27B active, a 1,000,000-token context, and text, image, and video input. The Chinese pay-as-you-go standard price is CNY 7 per million input tokens, CNY 0.70 per million cache-hit tokens, and CNY 20 per million output tokens. The cache-hit rate changed from 0.35 to 0.70 at 2026-10-14 00:30 Beijing time; accounts that had already called this model on the pay-as-you-go API before then still pay 0.35. The international platform lists USD 1.00 / 0.10 / 2.70 per million tokens. Chat Completions max_tokens defaults to unlimited, which conflicts with the 64k maximum-output row, so the output limit is unset. The announcement schedules open weights for 2026-10-15 and does not name a repository.",
+    "description": "Flagship multimodal reasoning model for agentic work with a 1M-token context.",
     "docs": "https://platform.stepfun.com/docs/zh/guides/models/step-5-preview",
     "verified_at": "2026-10-15"
   },
   "aliases": [],
   "translations": {
     "zh": {
-      "description": "阶跃星辰面向智能体工作的旗舰稀疏 MoE，总参数 600B、激活 27B，上下文 1,000,000 tokens，输入为文本、图像和视频。国内按量付费标准价为每百万 token 输入 7 元、缓存命中 0.70 元、输出 20 元。缓存命中价自北京时间 2026-10-14 00:30 起由 0.35 元调整为 0.70 元；该时间前已通过按量付费 API 调用过该模型的账户仍为 0.35 元。国际站标价为每百万 token 1.00 / 0.10 / 2.70 美元。Chat Completions 的 max_tokens 默认不设上限，与规格表中的 64k 最大输出冲突，因此输出上限留空。公告写明 2026-10-15 开放权重，未给出仓库名。"
+      "description": "面向智能体工作的旗舰多模态推理模型，上下文 1M tokens。"
     }
   },
   "sources": [

@@ -55,14 +55,14 @@
     "status": "active",
     "release_date": "2026-10-14",
     "knowledge_cutoff": null,
-    "description": "Agentic model for professional knowledge work, post-trained from GLM-5.3 Flash. Text and image input with text output; the Responses API rejects images. Reasoning is required, with efforts low, high, and max, and the default is max. The output ceiling is 32,768 tokens including reasoning. The context window size is not stated. Standard price is $0.15 input, $0.03 cached input, and $0.50 output per million tokens; reasoning tokens are billed as output. The OpenAI SDK base URL is https://api.paperinstruments.com/v1. The Anthropic SDK base URL is https://api.paperinstruments.com.",
+    "description": "We present Ultramarine 1 Flash, an agentic model for professional knowledge work.",
     "docs": "https://docs.paperinstruments.com/docs/ultramarine",
     "verified_at": "2026-10-15"
   },
   "aliases": [],
   "translations": {
     "zh": {
-      "description": "面向专业知识工作的智能体模型，在 GLM-5.3 Flash 上继续后训练。输入为文本和图像，输出为文本；Responses API 不接受图像。必须开启推理，档位为 low、high、max，默认 max。输出上限为 32,768 tokens，含推理。上下文窗口长度未公布。标准价为每百万 token 输入 $0.15、缓存输入 $0.03、输出 $0.50；推理 token 按输出计费。OpenAI SDK 的 base URL 为 https://api.paperinstruments.com/v1。Anthropic SDK 的 base URL 为 https://api.paperinstruments.com。"
+      "description": "我们推出 Ultramarine 1 Flash，一款面向专业知识工作的智能体模型。"
     }
   },
   "sources": [
@@ -104,14 +104,32 @@
       "base_url": "https://api.paperinstruments.com/v1",
       "endpoints": {
         "chat": "POST /chat/completions",
-        "responses": "POST /responses",
         "messages": "POST /messages"
       },
       "reasoning_param": "reasoning_effort",
       "reasoning_params": {
         "chat": "reasoning_effort",
-        "responses": "reasoning.effort",
         "messages": "output_config.effort"
+      }
+    },
+    {
+      "id": "paperinstruments",
+      "model": "ultramarine-1-flash",
+      "base_url": "https://api.paperinstruments.com/v1",
+      "endpoints": {
+        "responses": "POST /responses"
+      },
+      "reasoning_param": "reasoning.effort",
+      "reasoning_params": {
+        "responses": "reasoning.effort"
+      },
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
       }
     }
   ]

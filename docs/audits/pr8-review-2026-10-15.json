@@ -1,0 +1,32 @@
+{
+  "verified_at": "2026-10-15",
+  "scope": "Review corrections for PR #8; model records remain the source of truth.",
+  "findings": [
+    {
+      "model": "grok-voice-3.0",
+      "field": "info.release_date",
+      "value": "2026-10-14",
+      "source": "https://x.ai/news/grok-voice-3",
+      "note": "Dated launch announcement explicitly says API available today. Mixed minute/message pricing remains null."
+    },
+    {
+      "model": "ultramarine-1-flash",
+      "field": "providers[].modalities",
+      "note": "Responses explicitly rejects images; Chat Completions and Messages support images. Separate provider records preserve the protocol-specific restriction.",
+      "source": "https://docs.paperinstruments.com/docs/ultramarine/responses"
+    },
+    {
+      "model": "step-5-preview",
+      "field": "limits.output",
+      "value": null,
+      "note": "The model card says 64k. An unlimited default max_tokens parameter does not negate the model limit. The repository requires exact figures for StepFun and no explicit 64000/65536 value was confirmed, so retain null without claiming contradictory limits.",
+      "source": "https://platform.stepfun.com/docs/zh/guides/models/step-5-preview"
+    },
+    {
+      "model": "step-5-preview",
+      "field": "pricing",
+      "note": "Chinese standard price is CNY 7 input, 0.70 cache read and 20 output per million tokens; provider uses api.stepfun.com. Grandfathered discounts and international USD prices are not substituted.",
+      "source": "https://platform.stepfun.com/docs/zh/guides/pricing/details"
+    }
+  ]
+}

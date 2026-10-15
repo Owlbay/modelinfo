@@ -1,7 +1,7 @@
 {
   "id": "grok-voice-3.0",
   "object": "model",
-  "created": null,
+  "created": 1791936000,
   "owned_by": "xai",
   "name": "Grok Voice 3.0",
   "api": {
@@ -41,9 +41,9 @@
   ],
   "info": {
     "status": "active",
-    "release_date": null,
+    "release_date": "2026-10-14",
     "knowledge_cutoff": null,
-    "description": "Speech-to-speech model for real-time voice agents. grok-voice-latest points to this model, and grok-voice-2.0 is deprecated at the same price. Audio is billed at $0.08 per minute ($4.80 per hour). Each text conversation.item.create costs $0.004, except function_call_output items and items whose content is audio. Sessions using server_vad are billed for session duration; push-to-talk sessions are billed only for audio sent and received. reasoning.effort defaults to high; none turns reasoning off. The model page lists us-east-1, eu-west-1, and us-saltlake-2.",
+    "description": "The world’s most intelligent voice model.",
     "docs": "https://docs.x.ai/developers/models/grok-voice-3.0",
     "verified_at": "2026-10-15"
   },
@@ -52,7 +52,7 @@
   ],
   "translations": {
     "zh": {
-      "description": "用于实时语音智能体的语音到语音模型。grok-voice-latest 指向该模型，grok-voice-2.0 已弃用且价格相同。音频按每分钟 $0.08（每小时 $4.80）计费。每条文本 conversation.item.create 为 $0.004，function_call_output 以及内容为音频的条目除外。使用 server_vad 的会话按会话时长计费；按键说话的会话只按发出和收到的音频计费。reasoning.effort 默认为 high，none 关闭推理。模型页列出 us-east-1、eu-west-1 与 us-saltlake-2。"
+      "description": "全球最智能的语音模型。"
     }
   },
   "sources": [
