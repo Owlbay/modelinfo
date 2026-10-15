@@ -30,7 +30,7 @@
     ]
   },
   "reasoning": {
-    "supported": false,
+    "supported": null,
     "efforts": []
   },
   "pricing": null,
@@ -44,7 +44,7 @@
     "knowledge_cutoff": "2023-10-01",
     "description": "A cost-efficient version of GPT Audio",
     "docs": "https://developers.openai.com/api/docs/models/gpt-audio-mini",
-    "verified_at": "2026-10-14"
+    "verified_at": "2026-10-15"
   },
   "aliases": [
     "gpt-audio-mini-2025-10-06",

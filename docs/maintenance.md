@@ -37,6 +37,7 @@
 | 1K = 1000 | OpenAI、Anthropic、xAI、Amazon、Cohere（对话与向量；重排模型文档写明 4096） |
 | 按模型给出精确数字 | 阿里、MiniMax、阶跃、Meta |
 
+- **思考支持**：`reasoning.supported` 只有官方明确说明支持或不支持时才写 `true` / `false`；模型页未出现 reasoning、未列推理参数，不能据此把未知值改为 `false`。
 - **思考等级**：`reasoning.efforts` 只写 API 可传的确切取值；只有开关或 Token 预算时为空数组。
 - **能力**：`features` 只列文档明确支持的能力；未写明的不列。
 - **协议差异**：只有官方明确列出的模型才标注 Responses 支持，不能从同系列其他模型外推。Google Interactions 使用 `interactions`，不标成 `responses`。同一 provider 的思考参数按协议不同时可用 `reasoning_params` 分别登记。

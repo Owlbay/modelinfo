@@ -30,7 +30,7 @@
     ]
   },
   "reasoning": {
-    "supported": false,
+    "supported": null,
     "efforts": []
   },
   "pricing": null,
@@ -44,7 +44,7 @@
     "knowledge_cutoff": "2023-10-01",
     "description": "Model capable of realtime text and audio inputs and outputs",
     "docs": "https://developers.openai.com/api/docs/models/gpt-realtime",
-    "verified_at": "2026-10-14"
+    "verified_at": "2026-10-15"
   },
   "aliases": [
     "gpt-realtime-2025-08-28"

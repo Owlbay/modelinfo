@@ -28,7 +28,7 @@
     ]
   },
   "reasoning": {
-    "supported": false,
+    "supported": null,
     "efforts": []
   },
   "pricing": {
@@ -46,7 +46,7 @@
     "knowledge_cutoff": "2021-09-01",
     "description": "Legacy GPT model for cheaper chat and non-chat tasks",
     "docs": "https://developers.openai.com/api/docs/models/gpt-3.5-turbo-16k-0613",
-    "verified_at": "2026-10-14"
+    "verified_at": "2026-10-15"
   },
   "aliases": [],
   "translations": {
