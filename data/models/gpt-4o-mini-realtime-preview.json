@@ -43,7 +43,7 @@
     "knowledge_cutoff": "2023-10-01",
     "description": "Smaller realtime model for text and audio inputs and outputs",
     "docs": "https://developers.openai.com/api/docs/models/gpt-4o-mini-realtime-preview",
-    "verified_at": "2026-10-11"
+    "verified_at": "2026-10-15"
   },
   "aliases": [
     "gpt-4o-mini-realtime-preview-2024-12-17"
@@ -57,7 +57,7 @@
     {
       "title": "GPT-4o Mini Realtime Model | OpenAI API",
       "url": "https://developers.openai.com/api/docs/models/gpt-4o-mini-realtime-preview",
-      "retrieved_at": "2026-10-11"
+      "retrieved_at": "2026-10-15"
     },
     {
       "title": "Deprecations | OpenAI API",

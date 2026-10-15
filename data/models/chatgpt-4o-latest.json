@@ -50,7 +50,7 @@
     "knowledge_cutoff": "2023-10-01",
     "description": "GPT-4o model used in ChatGPT",
     "docs": "https://developers.openai.com/api/docs/models/chatgpt-4o-latest",
-    "verified_at": "2026-10-11"
+    "verified_at": "2026-10-15"
   },
   "aliases": [],
   "translations": {
@@ -62,7 +62,7 @@
     {
       "title": "ChatGPT-4o Model | OpenAI API",
       "url": "https://developers.openai.com/api/docs/models/chatgpt-4o-latest",
-      "retrieved_at": "2026-10-11"
+      "retrieved_at": "2026-10-15"
     },
     {
       "title": "Deprecations | OpenAI API",

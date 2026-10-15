@@ -55,7 +55,7 @@
     "knowledge_cutoff": "2023-10-01",
     "description": "Fast, affordable small model for focused tasks.",
     "docs": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
-    "verified_at": "2026-10-10"
+    "verified_at": "2026-10-15"
   },
   "aliases": [
     "gpt-4o-mini-2024-07-18"
@@ -69,7 +69,7 @@
     {
       "title": "GPT-4o Mini Model | OpenAI API",
       "url": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-15"
     },
     {
       "title": "Pricing | OpenAI API",

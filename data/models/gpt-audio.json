@@ -44,7 +44,7 @@
     "knowledge_cutoff": "2023-10-01",
     "description": "For audio inputs and outputs with Chat Completions API",
     "docs": "https://developers.openai.com/api/docs/models/gpt-audio",
-    "verified_at": "2026-10-11"
+    "verified_at": "2026-10-15"
   },
   "aliases": [
     "gpt-audio-2025-08-28"
@@ -58,7 +58,7 @@
     {
       "title": "gpt-audio Model | OpenAI API",
       "url": "https://developers.openai.com/api/docs/models/gpt-audio.md",
-      "retrieved_at": "2026-10-11"
+      "retrieved_at": "2026-10-14"
     },
     {
       "title": "Deprecations | OpenAI API",

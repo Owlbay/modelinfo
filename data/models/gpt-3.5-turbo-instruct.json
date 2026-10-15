@@ -46,7 +46,7 @@
     "knowledge_cutoff": "2021-09-01",
     "description": "An older model only compatible with the legacy Completions endpoint",
     "docs": "https://developers.openai.com/api/docs/models/gpt-3.5-turbo-instruct",
-    "verified_at": "2026-10-11"
+    "verified_at": "2026-10-15"
   },
   "aliases": [],
   "translations": {
@@ -58,7 +58,7 @@
     {
       "title": "gpt-3.5-turbo-instruct Model | OpenAI API",
       "url": "https://developers.openai.com/api/docs/models/gpt-3.5-turbo-instruct",
-      "retrieved_at": "2026-10-11"
+      "retrieved_at": "2026-10-15"
     },
     {
       "title": "Deprecations | OpenAI API",

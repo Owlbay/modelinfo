@@ -44,7 +44,7 @@
     "knowledge_cutoff": "2024-09-30",
     "description": "Voice model for audio-in, audio-out use with Chat Completions.",
     "docs": "https://developers.openai.com/api/docs/models/gpt-audio-1.5",
-    "verified_at": "2026-10-11"
+    "verified_at": "2026-10-15"
   },
   "aliases": [],
   "translations": {
@@ -56,7 +56,7 @@
     {
       "title": "GPT-Audio-1.5 Model | OpenAI API",
       "url": "https://developers.openai.com/api/docs/models/gpt-audio-1.5",
-      "retrieved_at": "2026-10-11"
+      "retrieved_at": "2026-10-15"
     },
     {
       "title": "Pricing | OpenAI API",

@@ -49,7 +49,7 @@
     "knowledge_cutoff": "2023-10-01",
     "description": "Fast, affordable small model for web search",
     "docs": "https://developers.openai.com/api/docs/models/gpt-4o-mini-search-preview",
-    "verified_at": "2026-10-11"
+    "verified_at": "2026-10-15"
   },
   "aliases": [
     "gpt-4o-mini-search-preview-2025-03-11"
@@ -63,7 +63,7 @@
     {
       "title": "GPT-4o Mini Search Preview Model | OpenAI API",
       "url": "https://developers.openai.com/api/docs/models/gpt-4o-mini-search-preview",
-      "retrieved_at": "2026-10-11"
+      "retrieved_at": "2026-10-15"
     },
     {
       "title": "Deprecations | OpenAI API",

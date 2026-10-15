@@ -44,11 +44,16 @@
     "status": "retired",
     "release_date": "2023-06-13",
     "knowledge_cutoff": "2021-09-01",
-    "description": null,
+    "description": "Legacy GPT model for cheaper chat and non-chat tasks",
     "docs": "https://developers.openai.com/api/docs/models/gpt-3.5-turbo-16k-0613",
-    "verified_at": "2026-10-11"
+    "verified_at": "2026-10-15"
   },
   "aliases": [],
+  "translations": {
+    "zh": {
+      "description": "用于更低成本对话与非对话任务的旧版 GPT 模型。"
+    }
+  },
   "sources": [
     {
       "title": "Deprecations | OpenAI API",
@@ -58,7 +63,7 @@
     {
       "title": "gpt-3.5-turbo-16k-0613 Model | OpenAI API",
       "url": "https://developers.openai.com/api/docs/models/gpt-3.5-turbo-16k-0613.md",
-      "retrieved_at": "2026-10-11"
+      "retrieved_at": "2026-10-14"
     },
     {
       "title": "Official model release / pricing documentation",

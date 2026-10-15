@@ -44,7 +44,7 @@
     "knowledge_cutoff": "2023-10-01",
     "description": "Model capable of realtime text and audio inputs and outputs",
     "docs": "https://developers.openai.com/api/docs/models/gpt-realtime",
-    "verified_at": "2026-10-11"
+    "verified_at": "2026-10-15"
   },
   "aliases": [
     "gpt-realtime-2025-08-28"
@@ -58,7 +58,7 @@
     {
       "title": "gpt-realtime Model | OpenAI API",
       "url": "https://developers.openai.com/api/docs/models/gpt-realtime.md",
-      "retrieved_at": "2026-10-11"
+      "retrieved_at": "2026-10-14"
     },
     {
       "title": "Deprecations | OpenAI API",
