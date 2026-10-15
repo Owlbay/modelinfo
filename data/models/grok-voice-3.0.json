@@ -1,0 +1,101 @@
+{
+  "id": "grok-voice-3.0",
+  "object": "model",
+  "created": null,
+  "owned_by": "xai",
+  "name": "Grok Voice 3.0",
+  "api": {
+    "types": [
+      "realtime"
+    ],
+    "sdk": [
+      "openai"
+    ]
+  },
+  "limits": {
+    "context": null,
+    "input": null,
+    "output": null
+  },
+  "modalities": {
+    "input": [
+      "text",
+      "audio"
+    ],
+    "output": [
+      "text",
+      "audio"
+    ]
+  },
+  "reasoning": {
+    "supported": true,
+    "efforts": [
+      "high",
+      "none"
+    ]
+  },
+  "pricing": null,
+  "features": [
+    "tools",
+    "streaming"
+  ],
+  "info": {
+    "status": "active",
+    "release_date": null,
+    "knowledge_cutoff": null,
+    "description": "Speech-to-speech model for real-time voice agents. grok-voice-latest points to this model, and grok-voice-2.0 is deprecated at the same price. Audio is billed at $0.08 per minute ($4.80 per hour). Each text conversation.item.create costs $0.004, except function_call_output items and items whose content is audio. Sessions using server_vad are billed for session duration; push-to-talk sessions are billed only for audio sent and received. reasoning.effort defaults to high; none turns reasoning off. The model page lists us-east-1, eu-west-1, and us-saltlake-2.",
+    "docs": "https://docs.x.ai/developers/models/grok-voice-3.0",
+    "verified_at": "2026-10-15"
+  },
+  "aliases": [
+    "grok-voice-latest"
+  ],
+  "translations": {
+    "zh": {
+      "description": "用于实时语音智能体的语音到语音模型。grok-voice-latest 指向该模型，grok-voice-2.0 已弃用且价格相同。音频按每分钟 $0.08（每小时 $4.80）计费。每条文本 conversation.item.create 为 $0.004，function_call_output 以及内容为音频的条目除外。使用 server_vad 的会话按会话时长计费；按键说话的会话只按发出和收到的音频计费。reasoning.effort 默认为 high，none 关闭推理。模型页列出 us-east-1、eu-west-1 与 us-saltlake-2。"
+    }
+  },
+  "sources": [
+    {
+      "title": "Grok Voice 3.0 | xAI Docs",
+      "url": "https://docs.x.ai/developers/models/grok-voice-3.0",
+      "retrieved_at": "2026-10-15"
+    },
+    {
+      "title": "Speech to Speech | xAI Docs",
+      "url": "https://docs.x.ai/developers/model-capabilities/audio/speech-to-speech",
+      "retrieved_at": "2026-10-15"
+    },
+    {
+      "title": "Pricing（Speech to Speech grok-voice-3.0 为 $0.08/min 另加文本输入 $0.004）| xAI Docs",
+      "url": "https://docs.x.ai/developers/pricing",
+      "retrieved_at": "2026-10-15"
+    },
+    {
+      "title": "Speech to Speech Pricing and Rate Limits | xAI Docs",
+      "url": "https://docs.x.ai/developers/models/speech-to-speech",
+      "retrieved_at": "2026-10-15"
+    },
+    {
+      "title": "Release Notes（grok-voice-3.0 可用，grok-voice-latest 指向它，grok-voice-2.0 弃用）| xAI Docs",
+      "url": "https://docs.x.ai/developers/release-notes",
+      "retrieved_at": "2026-10-15"
+    },
+    {
+      "title": "Introducing Grok Voice 3.0",
+      "url": "https://x.ai/news/grok-voice-3",
+      "retrieved_at": "2026-10-15"
+    }
+  ],
+  "providers": [
+    {
+      "id": "xai",
+      "model": "grok-voice-3.0",
+      "base_url": "wss://api.x.ai",
+      "endpoints": {
+        "realtime": "WS /v1/realtime"
+      },
+      "reasoning_param": "reasoning.effort"
+    }
+  ]
+}

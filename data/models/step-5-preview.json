@@ -20,7 +20,7 @@
   "limits": {
     "context": 1000000,
     "input": 1000000,
-    "output": 65536
+    "output": null
   },
   "modalities": {
     "input": [
@@ -41,11 +41,11 @@
     ]
   },
   "pricing": {
-    "currency": "USD",
+    "currency": "CNY",
     "unit": "1M_tokens",
-    "input": 1,
-    "output": 2.7,
-    "cache_read": 0.1,
+    "input": 7,
+    "output": 20,
+    "cache_read": 0.7,
     "cache_write": null
   },
   "features": [
@@ -58,21 +58,51 @@
     "status": "preview",
     "release_date": "2026-09-20",
     "knowledge_cutoff": null,
-    "description": "Flagship multimodal reasoning model for agentic work with a 1M-token context.",
-    "docs": "https://platform.stepfun.ai/docs/en/guides/models/step-5-preview",
-    "verified_at": "2026-10-11"
+    "description": "StepFun flagship sparse MoE for agentic work, with 600B total parameters and 27B active, a 1,000,000-token context, and text, image, and video input. The Chinese pay-as-you-go standard price is CNY 7 per million input tokens, CNY 0.70 per million cache-hit tokens, and CNY 20 per million output tokens. The cache-hit rate changed from 0.35 to 0.70 at 2026-10-14 00:30 Beijing time; accounts that had already called this model on the pay-as-you-go API before then still pay 0.35. The international platform lists USD 1.00 / 0.10 / 2.70 per million tokens. Chat Completions max_tokens defaults to unlimited, which conflicts with the 64k maximum-output row, so the output limit is unset. The announcement schedules open weights for 2026-10-15 and does not name a repository.",
+    "docs": "https://platform.stepfun.com/docs/zh/guides/models/step-5-preview",
+    "verified_at": "2026-10-15"
   },
   "aliases": [],
   "translations": {
     "zh": {
-      "description": "面向智能体工作的旗舰多模态推理模型，上下文 1M tokens。"
+      "description": "阶跃星辰面向智能体工作的旗舰稀疏 MoE，总参数 600B、激活 27B，上下文 1,000,000 tokens，输入为文本、图像和视频。国内按量付费标准价为每百万 token 输入 7 元、缓存命中 0.70 元、输出 20 元。缓存命中价自北京时间 2026-10-14 00:30 起由 0.35 元调整为 0.70 元；该时间前已通过按量付费 API 调用过该模型的账户仍为 0.35 元。国际站标价为每百万 token 1.00 / 0.10 / 2.70 美元。Chat Completions 的 max_tokens 默认不设上限，与规格表中的 64k 最大输出冲突，因此输出上限留空。公告写明 2026-10-15 开放权重，未给出仓库名。"
     }
   },
   "sources": [
     {
-      "title": "Step Platform pricing | StepFun Documentation",
+      "title": "API 定价（step-5-preview 标准价输入 7、缓存命中 0.70、输出 20 元／百万 tokens）| StepFun",
+      "url": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+      "retrieved_at": "2026-10-15"
+    },
+    {
+      "title": "Step 5 Preview | StepFun 开放平台",
+      "url": "https://platform.stepfun.com/docs/zh/guides/models/step-5-preview",
+      "retrieved_at": "2026-10-15"
+    },
+    {
+      "title": "阶跃发布旗舰模型 Step 5 Preview",
+      "url": "https://www.stepfun.com/news/step-5-preview",
+      "retrieved_at": "2026-10-15"
+    },
+    {
+      "title": "Step 5 Preview | StepFun",
+      "url": "https://www.stepfun.com/step-5-preview",
+      "retrieved_at": "2026-10-15"
+    },
+    {
+      "title": "Chat Completions API | StepFun 开放平台",
+      "url": "https://platform.stepfun.com/docs/zh/api-reference/chat/chat-completion-create",
+      "retrieved_at": "2026-10-15"
+    },
+    {
+      "title": "Messages API | StepFun 开放平台",
+      "url": "https://platform.stepfun.com/docs/zh/api-reference/chat/messages-create",
+      "retrieved_at": "2026-10-15"
+    },
+    {
+      "title": "Pricing and Rate Limits（国际站 step-5-preview 为 $1.00 / $0.10 / $2.70）| StepFun",
       "url": "https://platform.stepfun.ai/docs/en/guides/pricing/details",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-15"
     },
     {
       "title": "Model overview | StepFun Documentation",
@@ -87,7 +117,7 @@
     {
       "title": "Step 5 Preview | StepFun Documentation",
       "url": "https://platform.stepfun.ai/docs/en/guides/models/step-5-preview",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-15"
     },
     {
       "title": "Messages API | StepFun Documentation",
@@ -134,12 +164,16 @@
     {
       "id": "stepfun",
       "model": "step-5-preview",
-      "base_url": "https://api.stepfun.ai",
+      "base_url": "https://api.stepfun.com",
       "endpoints": {
         "chat": "POST /v1/chat/completions",
         "messages": "POST /v1/messages"
       },
-      "reasoning_param": "reasoning_effort"
+      "reasoning_param": "reasoning_effort",
+      "reasoning_params": {
+        "chat": "reasoning_effort",
+        "messages": "output_config.effort"
+      }
     }
   ]
 }
