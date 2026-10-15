@@ -145,3 +145,30 @@ test('cross match does not take another provider or treat max input as context',
   const devDiffs = crossRows(local, [['models.dev', dev]]);
   assert.equal(devDiffs.length, 0);
 });
+
+test('cross comparison skips incompatible prices but still reports token limits', () => {
+  const catalogs = [
+    ['models.dev', { google: { models: { 'gemini-example': {
+      cost: { input: 1, output: 2 }, limit: { context: 2048, output: 256 },
+    } } } }],
+    ['openrouter', { data: [{ id: 'google/gemini-example',
+      pricing: { prompt: '0.000001', completion: '0.000002' }, context_length: 2048,
+    }] }],
+    ['litellm', { 'gemini-example': { litellm_provider: 'google',
+      input_cost_per_token: 0.000001, output_cost_per_token: 0.000002, max_tokens: 2048,
+    } }],
+  ];
+  for (const [source, payload] of catalogs) {
+    const rows = indexThirdParty(source, payload);
+    for (const [currency, unit] of [['CNY', '1M_tokens'], ['USD', '1M_characters'], ['USD', 'minute'], ['USD', 'page']]) {
+      const local = model({ pricing: { currency, unit, input: 7, output: 20, cache_read: null, cache_write: null } });
+      const before = JSON.stringify(local);
+      const diffs = crossRows(local, [[source, rows]]);
+      assert.equal(diffs.some((diff) => diff.field.startsWith('pricing.')), false, `${source}: ${currency}/${unit}`);
+      assert.equal(diffs.some((diff) => diff.field === 'limits.context'), true);
+      assert.equal(JSON.stringify(local), before);
+    }
+    const usd = model({ pricing: { currency: 'USD', unit: '1M_tokens', input: 7, output: 20, cache_read: null, cache_write: null } });
+    assert.equal(crossRows(usd, [[source, rows]]).some((diff) => diff.field === 'pricing.input'), true);
+  }
+});

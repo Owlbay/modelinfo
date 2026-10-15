@@ -291,7 +291,8 @@ export function indexThirdParty(kind, payload) {
     if (!id || typeof id !== 'string') return;
     const key = id.toLowerCase();
     if (rows.has(key)) return;
-    rows.set(key, { id, ...fields });
+    // 这里只读取三个目录的美元 Token 报价，不转换币种或字符/媒体计价。
+    rows.set(key, { id, currency: 'USD', unit: '1M_tokens', ...fields });
   };
   if (kind === 'models.dev' && payload && typeof payload === 'object') {
     for (const [providerId, provider] of Object.entries(payload)) {
@@ -360,6 +361,8 @@ export function crossRows(model, labeledRows) {
     const remote = matchThirdParty(model, rows);
     if (!remote) continue;
     for (const [field, current, remoteKey] of fields) {
+      if (field.startsWith('pricing.') &&
+          (model.pricing?.currency !== remote.currency || model.pricing?.unit !== remote.unit)) continue;
       const candidate = remote[remoteKey];
       if (current == null || candidate == null || current === candidate) continue;
       diffs.push({

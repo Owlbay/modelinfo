@@ -59,7 +59,7 @@
 3. **数值范围**：价格不为负，币种为三个大写字母，单位属于接口规范中的计价单位，`limits.input` 与 `limits.output` 不超过 `limits.context`。
 4. **必填字段**：公开字段和维护字段 `aliases`、`sources`、`providers` 必须存在。字段顺序和枚举仍由 `validate-data.mjs` 把关。
 
-`node scripts/check-official.mjs --cross [--report 路径]` 会下载 models.dev、OpenRouter 和 LiteLLM，按厂商前缀加模型 ID 或别名匹配后写出差异。同名键保留先写入的记录。LiteLLM 的 `max_tokens` 对照 `limits.context`，`max_input_tokens` 只对照 `limits.input`。它只提示 1000/1024、折扣价和图像/文本计价口径可能不同，不自动改 JSON。网络失败时退出码为 2。`pnpm test` 会执行 `scripts/*.test.mjs`，其中包括 `scripts/check-official.test.mjs`。
+`node scripts/check-official.mjs --cross [--report 路径]` 会下载 models.dev、OpenRouter 和 LiteLLM，按厂商前缀加模型 ID 或别名匹配后写出差异。同名键保留先写入的记录。价格只比较相同币种和单位：这三个目录读取的是 USD / `1M_tokens`，本地人民币、字符、分钟、页等报价跳过价格比较，但仍核对 Token 上下限；不做汇率或跨单位换算。LiteLLM 的 `max_tokens` 对照 `limits.context`，`max_input_tokens` 只对照 `limits.input`。它只提示 1000/1024、折扣价和图像/文本计价口径可能不同，不自动改 JSON。网络失败时退出码为 2。`pnpm test` 会执行 `scripts/*.test.mjs`，其中包括 `scripts/check-official.test.mjs`。
 
 ## 批量采集
 
