@@ -52,18 +52,23 @@
     "status": "retired",
     "release_date": "2024-11-18",
     "knowledge_cutoff": null,
-    "description": null,
+    "description": "Our first frontier-class multimodal model released November 2024.",
     "docs": "https://docs.mistral.ai/models/pixtral-large-24-11",
-    "verified_at": "2026-10-11"
+    "verified_at": "2026-10-15"
   },
   "aliases": [
     "pixtral-large-latest"
   ],
+  "translations": {
+    "zh": {
+      "description": "2024 年 11 月发布的首个前沿多模态模型。"
+    }
+  },
   "sources": [
     {
       "title": "Pixtral Large | Mistral Docs",
       "url": "https://docs.mistral.ai/models/pixtral-large-24-11",
-      "retrieved_at": "2026-10-11"
+      "retrieved_at": "2026-10-14"
     },
     {
       "title": "Models overview（含 Deprecation 与 Retirement 日期表） | Mistral Docs",
@@ -104,6 +109,11 @@
       "title": "SDK support — @ai-sdk/openai (api.sdk only)",
       "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
       "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "Pixtral Large | Mistral Docs (official Markdown)",
+      "url": "https://docs.mistral.ai/models/pixtral-large-24-11.md",
+      "retrieved_at": "2026-10-15"
     }
   ],
   "providers": [

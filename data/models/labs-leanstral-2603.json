@@ -34,7 +34,14 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 0,
+    "output": 0,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [
     "tools",
     "structured_output"
@@ -45,7 +52,7 @@
     "knowledge_cutoff": null,
     "description": "Our first open-source code agent designed for Lean 4, built for formal proof engineering in realistic repositories. 119B parameters with 6.5B active.",
     "docs": "https://docs.mistral.ai/models/leanstral-26-03",
-    "verified_at": "2026-10-11"
+    "verified_at": "2026-10-15"
   },
   "aliases": [],
   "translations": {
@@ -57,7 +64,7 @@
     {
       "title": "Leanstral | Mistral Docs",
       "url": "https://docs.mistral.ai/models/leanstral-26-03",
-      "retrieved_at": "2026-10-11"
+      "retrieved_at": "2026-10-14"
     },
     {
       "title": "Models overview（含 Deprecation 与 Retirement 日期表） | Mistral Docs",
@@ -93,6 +100,11 @@
       "title": "SDK support — @ai-sdk/openai (api.sdk only)",
       "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
       "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "Leanstral | Mistral Docs (official Markdown)",
+      "url": "https://docs.mistral.ai/models/leanstral-26-03.md",
+      "retrieved_at": "2026-10-15"
     }
   ],
   "providers": [

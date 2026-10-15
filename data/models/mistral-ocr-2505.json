@@ -24,7 +24,8 @@
       "document"
     ],
     "output": [
-      "text"
+      "text",
+      "image"
     ]
   },
   "reasoning": {
@@ -48,7 +49,7 @@
     "knowledge_cutoff": null,
     "description": "Our OCR service powering our Document AI stack that enables our users to extract interleaved text and images",
     "docs": "https://docs.mistral.ai/models/ocr-2-25-05",
-    "verified_at": "2026-10-11"
+    "verified_at": "2026-10-15"
   },
   "aliases": [],
   "translations": {
@@ -60,7 +61,7 @@
     {
       "title": "OCR 2 | Mistral Docs",
       "url": "https://docs.mistral.ai/models/ocr-2-25-05",
-      "retrieved_at": "2026-10-11"
+      "retrieved_at": "2026-10-14"
     },
     {
       "title": "Models overview（含 Deprecation 与 Retirement 日期表） | Mistral Docs",
@@ -81,6 +82,11 @@
       "title": "SDK support — @mistralai/mistralai (api.sdk only)",
       "url": "https://github.com/mistralai/client-ts",
       "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "OCR 2 | Mistral Docs (official Markdown)",
+      "url": "https://docs.mistral.ai/models/ocr-2-25-05.md",
+      "retrieved_at": "2026-10-15"
     }
   ],
   "providers": [

@@ -34,7 +34,14 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 0,
+    "output": 0,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [
     "tools",
     "structured_output"
@@ -45,7 +52,7 @@
     "knowledge_cutoff": null,
     "description": "An updated Lean 4 formal proof engineering model optimised for automated theorem proving and autoformalization. 119B total parameters, 6.5B active.",
     "docs": "https://docs.mistral.ai/models/leanstral-1-5",
-    "verified_at": "2026-10-11"
+    "verified_at": "2026-10-15"
   },
   "aliases": [],
   "translations": {
@@ -57,7 +64,7 @@
     {
       "title": "Leanstral 1.5 | Mistral Docs",
       "url": "https://docs.mistral.ai/models/leanstral-1-5",
-      "retrieved_at": "2026-10-11"
+      "retrieved_at": "2026-10-14"
     },
     {
       "title": "Models overview（含 Deprecation 与 Retirement 日期表） | Mistral Docs",
@@ -93,6 +100,11 @@
       "title": "SDK support — @ai-sdk/openai (api.sdk only)",
       "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
       "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "Leanstral 1.5 | Mistral Docs (official Markdown)",
+      "url": "https://docs.mistral.ai/models/leanstral-1-5.md",
+      "retrieved_at": "2026-10-15"
     }
   ],
   "providers": [

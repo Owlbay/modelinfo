@@ -34,7 +34,14 @@
     "supported": null,
     "efforts": []
   },
-  "pricing": null,
+  "pricing": {
+    "currency": "USD",
+    "unit": "1M_tokens",
+    "input": 0.1,
+    "output": 0.3,
+    "cache_read": null,
+    "cache_write": null
+  },
   "features": [
     "tools",
     "structured_output",
@@ -46,7 +53,7 @@
     "knowledge_cutoff": null,
     "description": "A 24B text model, open source model that excels at using tools to explore codebases, editing multiple files and power software engineering agents.",
     "docs": "https://docs.mistral.ai/models/devstral-small-1-0-25-05",
-    "verified_at": "2026-10-11"
+    "verified_at": "2026-10-15"
   },
   "aliases": [],
   "translations": {
@@ -58,7 +65,7 @@
     {
       "title": "Devstral Small 1.0 | Mistral Docs",
       "url": "https://docs.mistral.ai/models/devstral-small-1-0-25-05",
-      "retrieved_at": "2026-10-11"
+      "retrieved_at": "2026-10-14"
     },
     {
       "title": "Models overview（含 Deprecation 与 Retirement 日期表） | Mistral Docs",
@@ -99,6 +106,11 @@
       "title": "SDK support — @ai-sdk/openai (api.sdk only)",
       "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
       "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "Devstral Small 1.0 | Mistral Docs (official Markdown)",
+      "url": "https://docs.mistral.ai/models/devstral-small-1-0-25-05.md",
+      "retrieved_at": "2026-10-15"
     }
   ],
   "providers": [
