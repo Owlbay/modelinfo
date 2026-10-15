@@ -49,7 +49,7 @@
     "knowledge_cutoff": null,
     "description": "OCR service powering Mistral's Document AI stack that extracts interleaved text and images.",
     "docs": "https://docs.mistral.ai/models/ocr-3-25-12",
-    "verified_at": "2026-10-14"
+    "verified_at": "2026-10-15"
   },
   "aliases": [],
   "translations": {
@@ -87,6 +87,11 @@
       "title": "SDK support — @mistralai/mistralai (api.sdk only)",
       "url": "https://github.com/mistralai/client-ts",
       "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "Mistral OCR 3 | Mistral Docs (official Markdown)",
+      "url": "https://docs.mistral.ai/models/ocr-3-25-12.md",
+      "retrieved_at": "2026-10-15"
     }
   ],
   "providers": [

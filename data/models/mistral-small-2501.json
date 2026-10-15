@@ -53,7 +53,7 @@
     "knowledge_cutoff": null,
     "description": "A small efficient and powerfull 24B open model for personal or commercial use.",
     "docs": "https://docs.mistral.ai/models/mistral-small-3-0-25-01",
-    "verified_at": "2026-10-14"
+    "verified_at": "2026-10-15"
   },
   "aliases": [],
   "translations": {
@@ -101,6 +101,11 @@
       "title": "SDK support — @ai-sdk/openai (api.sdk only)",
       "url": "https://ai-sdk.dev/providers/ai-sdk-providers/openai",
       "retrieved_at": "2026-10-13"
+    },
+    {
+      "title": "Mistral Small 3.0 | Mistral Docs (official Markdown)",
+      "url": "https://docs.mistral.ai/models/mistral-small-3-0-25-01.md",
+      "retrieved_at": "2026-10-15"
     }
   ],
   "providers": [
