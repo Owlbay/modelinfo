@@ -41,11 +41,9 @@
     "knowledge_cutoff": null,
     "description": "xAI speech-to-speech voice model with improved intelligence, transcription accuracy and conversational capabilities.",
     "docs": "https://docs.x.ai/developers/models/grok-voice-think-fast-2.0",
-    "verified_at": "2026-10-11"
+    "verified_at": "2026-10-15"
   },
-  "aliases": [
-    "grok-voice-latest"
-  ],
+  "aliases": [],
   "translations": {
     "zh": {
       "description": "xAI 语音到语音模型，智能水平、转写准确率和对话能力均有提升。"
@@ -63,9 +61,9 @@
       "retrieved_at": "2026-10-11"
     },
     {
-      "title": "Release Notes | xAI Docs",
+      "title": "Release Notes（grok-voice-latest 现指向 grok-voice-3.0）| xAI Docs",
       "url": "https://docs.x.ai/developers/release-notes",
-      "retrieved_at": "2026-10-11"
+      "retrieved_at": "2026-10-15"
     },
     {
       "title": "Introducing Grok Voice Think Fast 2.0",

@@ -20,7 +20,7 @@
   "limits": {
     "context": 1000000,
     "input": 1000000,
-    "output": 65536
+    "output": null
   },
   "modalities": {
     "input": [
@@ -41,11 +41,11 @@
     ]
   },
   "pricing": {
-    "currency": "USD",
+    "currency": "CNY",
     "unit": "1M_tokens",
-    "input": 1,
-    "output": 2.7,
-    "cache_read": 0.1,
+    "input": 7,
+    "output": 20,
+    "cache_read": 0.7,
     "cache_write": null
   },
   "features": [
@@ -59,8 +59,8 @@
     "release_date": "2026-09-20",
     "knowledge_cutoff": null,
     "description": "Flagship multimodal reasoning model for agentic work with a 1M-token context.",
-    "docs": "https://platform.stepfun.ai/docs/en/guides/models/step-5-preview",
-    "verified_at": "2026-10-11"
+    "docs": "https://platform.stepfun.com/docs/zh/guides/models/step-5-preview",
+    "verified_at": "2026-10-15"
   },
   "aliases": [],
   "translations": {
@@ -70,9 +70,39 @@
   },
   "sources": [
     {
-      "title": "Step Platform pricing | StepFun Documentation",
+      "title": "API 定价（step-5-preview 标准价输入 7、缓存命中 0.70、输出 20 元／百万 tokens）| StepFun",
+      "url": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+      "retrieved_at": "2026-10-15"
+    },
+    {
+      "title": "Step 5 Preview | StepFun 开放平台",
+      "url": "https://platform.stepfun.com/docs/zh/guides/models/step-5-preview",
+      "retrieved_at": "2026-10-15"
+    },
+    {
+      "title": "阶跃发布旗舰模型 Step 5 Preview",
+      "url": "https://www.stepfun.com/news/step-5-preview",
+      "retrieved_at": "2026-10-15"
+    },
+    {
+      "title": "Step 5 Preview | StepFun",
+      "url": "https://www.stepfun.com/step-5-preview",
+      "retrieved_at": "2026-10-15"
+    },
+    {
+      "title": "Chat Completions API | StepFun 开放平台",
+      "url": "https://platform.stepfun.com/docs/zh/api-reference/chat/chat-completion-create",
+      "retrieved_at": "2026-10-15"
+    },
+    {
+      "title": "Messages API | StepFun 开放平台",
+      "url": "https://platform.stepfun.com/docs/zh/api-reference/chat/messages-create",
+      "retrieved_at": "2026-10-15"
+    },
+    {
+      "title": "Pricing and Rate Limits（国际站 step-5-preview 为 $1.00 / $0.10 / $2.70）| StepFun",
       "url": "https://platform.stepfun.ai/docs/en/guides/pricing/details",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-15"
     },
     {
       "title": "Model overview | StepFun Documentation",
@@ -87,7 +117,7 @@
     {
       "title": "Step 5 Preview | StepFun Documentation",
       "url": "https://platform.stepfun.ai/docs/en/guides/models/step-5-preview",
-      "retrieved_at": "2026-10-10"
+      "retrieved_at": "2026-10-15"
     },
     {
       "title": "Messages API | StepFun Documentation",
@@ -134,12 +164,16 @@
     {
       "id": "stepfun",
       "model": "step-5-preview",
-      "base_url": "https://api.stepfun.ai",
+      "base_url": "https://api.stepfun.com",
       "endpoints": {
         "chat": "POST /v1/chat/completions",
         "messages": "POST /v1/messages"
       },
-      "reasoning_param": "reasoning_effort"
+      "reasoning_param": "reasoning_effort",
+      "reasoning_params": {
+        "chat": "reasoning_effort",
+        "messages": "output_config.effort"
+      }
     }
   ]
 }
